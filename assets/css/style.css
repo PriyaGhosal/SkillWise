@@ -599,8 +599,16 @@ body.nav-active { overflow: hidden; }
 \*-----------------------------------*/
 
 .footer-top .container {
-  display: grid;
+  display: flex;
   gap: 24px;
+  justify-content: space-around;
+}
+
+.footer-logo-text{
+  display: flex;
+  width: 300px;
+  flex-direction: column;
+  
 }
 
 .footer-text { margin-block: 40px 32px; }
@@ -619,7 +627,14 @@ body.nav-active { overflow: hidden; }
   gap: 16px;
 }
 
-.footer-top .grid-list .img-cover { border-radius: var(--radius-6); }
+#footer-logo{
+  width:100px;
+  height:100px;
+}
+.footer-top .grid-list .img-cover { 
+  width:80px; 
+  height:80px;
+  border-radius: var(--radius-6); }
 
 .footer-bottom {
   padding-block: 32px;
@@ -651,7 +666,6 @@ body.nav-active { overflow: hidden; }
     width: 160px;
     flex-shrink: 0;
   }
-
 }
 
 
@@ -679,14 +693,6 @@ body.nav-active { overflow: hidden; }
   }
 
   .card { padding: 32px; }
-
-
-
-  /**
-   * FOOTER
-   */
-
-  .footer-top .container { grid-template-columns: 1fr 1fr; }
 
 }
 
@@ -738,6 +744,8 @@ body.nav-active { overflow: hidden; }
    */
 
   .cta { padding-block: 78px; }
+
+  
 
 }
 
@@ -838,16 +846,6 @@ body.nav-active { overflow: hidden; }
     margin-block: 40px 48px;
   }
 
-
-
-  /**
-   * FOOTER
-   */
-
-  .footer-top .container { grid-template-columns: 1fr 0.5fr 0.5fr 0.8fr; }
-
-  .footer-brand { padding-inline-end: 24px; }
-
 }
 
 
@@ -912,12 +910,104 @@ body.nav-active { overflow: hidden; }
 
   .cta .btn { margin-inline: 0; }
 
+}
 
 
-  /**
-   * FOOTER
+/**
+   * Media Quries For Footer
    */
 
-  .footer .container { gap: 48px; }
 
+
+@media(max-width:992px){
+
+  .footer-logo-text{
+   flex-direction: row;
+   width: fit-content;
+   align-items: center;
+   justify-content: center;
+   gap: 30px;
+ }
+ .footer-top .container{
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 30px;
+ }
+
+ /* Can be used if wanting a more linear Instagram post feed but as a viewer I like the grid better
+  .footer-top .grid-list {
+  grid-template-columns: repeat(6, 1fr);
+  gap: 16px;
+} */
+
+
+ .footer-list{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: fit-content;
+   gap: 30px;
+   width:max-content
+ }
+  .footer-list-title{
+   display: none;
+ } 
+ 
+ .social-list{
+  padding-top: 20px;
+  align-items: center;
+  justify-content: center;
+ }
+
+ ul.footer-list.instagram > li > p.footer-list-title {
+  display: block;
+  margin-bottom: 5px;
+}
+
+
+}
+
+
+@media(max-width:768px) {
+
+  .footer-list li a.title-sm {
+    font-size: 1.3rem;
+}
+
+.footer-list.instagram li p.headline-sm{
+  font-size: 1.7rem;
+  margin-top:10px
+}
+
+.footer-top .container{
+  gap: 20px;
+}
+
+.footer-logo-text p.title-sm{
+  font-size: 1.3rem;
+}
+#footer-logo{
+  width: 60px;
+  height: 60px;
+}
+}
+
+
+@media (max-width: 575px){
+.footer-list{
+  gap:10px
+}
+.footer-list li a.title-sm {
+  font-size: 1.0rem;
+}
+.footer-top .container{
+  gap: 15px;
+}
+.social-list{
+  padding-top: 0;
+}
+.footer-bottom p{
+  font-size: 1.0rem;
+}
 }
