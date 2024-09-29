@@ -1,6 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+<style>
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  background-color: #FF6F61; 
+  color: #FFFFFF; 
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 16px 25px;
+  border-radius: 50%; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  cursor: pointer;
+  z-index: 5;
+  transition: opacity 0.3s, visibility 0.3s;
+  opacity: 0;
+  visibility: hidden;
+}
 
+#scrollToTopBtn.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+#scrollToTopBtn:hover {
+  background-color: #002147; 
+  box-shadow: 0 0 0 2px #FFFFFF, 0 0 0 5px #FF6F61; 
+}
+
+</style>
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -890,6 +919,7 @@
   </footer>
 
 
+  <button id="scrollToTopBtn" title="Go to top">↑</button>
 
 
 
@@ -903,7 +933,25 @@
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script>
+    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
 
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 300) {
+    scrollToTopBtn.classList.add("show");
+  } else {
+    scrollToTopBtn.classList.remove("show");
+  }
+});
+
+scrollToTopBtn.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});
+
+  </script>
 </body>
 
 </html>
