@@ -64,3 +64,22 @@ const headerActive = function () {
 }
 
 window.addEventListener("scroll", headerActive);
+
+document.getElementById("feedbackForm").addEventListener("submit", function(event) {
+  event.preventDefault(); // Prevent form submission
+
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const message = document.getElementById("message").value;
+
+  // Here you can handle the form submission, e.g., send to server or save in local storage
+  console.log("Feedback submitted:", { name, email, message });
+
+  // Display success message
+  const feedbackResponse = document.getElementById("feedbackResponse");
+  feedbackResponse.innerHTML = "Thank you for your feedback, " + name + "!";
+  feedbackResponse.classList.remove("hidden");
+
+  // Reset the form
+  document.getElementById("feedbackForm").reset();
+});

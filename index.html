@@ -1,6 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <style>
+ .feedback {
+  background-color: var(--light-gray);
+  padding: 40px 16px;
+  border-radius: var(--radius-8);
+  box-shadow: var(--shadow-2);
+}
+.submitbtn {
+  background-color: #FF6F61;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: var(--radius-4);
+  cursor: pointer;
+  transition: background-color var(--transition);
+  margin-top: 15px;
+} 
+
+.submitbtn:hover {
+  background-color: #d65a4a; /* Darker shade of #FF6F61 */
+}
+
+
+
+.feedback-form {
+  margin-top: 20px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--roman-silver);
+  border-radius: var(--radius-4);
+  font-size: 1.6rem;
+  margin-block: 8px;
+  transition: border-color var(--transition);
+}
+
+.input-field:focus {
+  border-color: var(--light-coral);
+  outline: none;
+}
+
+@media (min-width: 768px) {
+  .feedback .grid-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .feedback .card {
+    padding: 20px;
+  }
+}
+
+
 #scrollToTopBtn {
   position: fixed;
   bottom: 32px;
@@ -14,7 +68,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
   cursor: pointer;
   z-index: 5;
-  transition: opacity 0.3s, visibility 0.3s;
+  transition: opacity 0.3s, visibility 0.2s;
   opacity: 0;
   visibility: hidden;
 }
@@ -746,6 +800,34 @@
   </main>
 
 
+<!-- Feedback section -->
+
+<section class="feedback section">
+  <div class="container">
+    <h2 class="headline-md text-center section-title">We Value Your Feedback</h2>
+    <p class="section-subtitle text-center">Share your thoughts about our courses and services.</p>
+    <form class="feedback-form">
+      <div class="grid-list">
+        <div class="card">
+          <label for="name" class="title-sm">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required class="input-field"/>
+        </div>
+        <div class="card">
+          <label for="email" class="title-sm">Your Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required class="input-field"/>
+        </div>
+        <div class="card" style="grid-column: span 2;">
+          <label for="feedback" class="title-sm">Your Feedback</label>
+          <textarea id="feedback" name="feedback" rows="4" placeholder="Write your feedback here..." required class="input-field"></textarea>
+        </div>
+      </div>
+      <div class="text-center">
+        <button type="submit" class="btn btn-secondary submitbtn">Submit Feedback</button>
+      </div>
+    </form>
+  </div>
+</section>
+
 
 
 
@@ -917,7 +999,7 @@
     </div>
 
   </footer>
-
+  
 
   <button id="scrollToTopBtn" title="Go to top">↑</button>
 
