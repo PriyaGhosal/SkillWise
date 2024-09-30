@@ -921,3 +921,12 @@ body.nav-active { overflow: hidden; }
   .footer .container { gap: 48px; }
 
 }
+
+/* navbar logo  */
+.navbar-logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%; 
+  object-fit: cover;  
+  
+}
