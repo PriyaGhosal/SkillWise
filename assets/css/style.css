@@ -575,6 +575,65 @@ body.nav-active { overflow: hidden; }
 
 
 
+/* counter */
+
+
+/* .count{
+  min-height: 40vh;
+} */
+
+.counter{
+  height: 40vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.box{
+  display: flex;
+  flex-direction: column;
+  gap: 2%;
+  width: 35vw;
+  
+  height: 40%;
+  background-color: rgb(235, 238, 238);
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  color: black;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.box > div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box > i{
+  font-size: 1.5em;
+}
+
+.box > div > h1{
+  font-size: 120% ;
+  font-weight: 900;
+}
+
+.box > div > p{
+  font-size: small;
+}
+
+
+
+
+
+
+
+
 
 /*-----------------------------------*\
   #CTA
@@ -680,6 +739,22 @@ body.nav-active { overflow: hidden; }
 
   .card { padding: 32px; }
 
+  .counter{
+    height: 60vh;
+  }
+
+  .box > i{
+    font-size: 2em;
+  }
+  
+  .box > div > h1{
+    font-size: 150% ;
+  }
+  
+  .box > div > p{
+    font-size: medium;
+  }
+
 
 
   /**
@@ -718,6 +793,28 @@ body.nav-active { overflow: hidden; }
      */
 
     --section-padding: 80px;
+
+
+    .counter{
+      height: 60vh;
+    }
+
+    .box{
+      flex-direction: row;
+      gap: 15%;
+    }
+  
+    .box > i{
+      font-size: 3em;
+    }
+    
+    .box > div > h1{
+      font-size: 150% ;
+    }
+    
+    .box > div > p{
+      font-size: medium;
+    }
 
   }
 
@@ -765,6 +862,21 @@ body.nav-active { overflow: hidden; }
      */
 
     --section-padding: 120px;
+
+
+    .counter{
+      height: 50vh;
+    }
+
+    .box{
+      width: 20vw;
+      height: 35vh;
+      flex-direction: column;
+    }
+  
+    .box > div > h1{
+      font-size: 200% ;
+    }
 
   }
 
@@ -839,6 +951,9 @@ body.nav-active { overflow: hidden; }
   }
 
 
+  
+
+
 
   /**
    * FOOTER
@@ -894,6 +1009,10 @@ body.nav-active { overflow: hidden; }
 
   .about .container { grid-template-columns: 1fr 0.7fr; }
 
+
+
+
+ 
 
 
   /**
