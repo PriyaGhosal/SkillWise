@@ -1,0 +1,16 @@
+{
+  "name": "skillwise",
+  "version": "1.0.0",
+  "description": "SkillWise",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "live-server": "^1.2.1" 
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
