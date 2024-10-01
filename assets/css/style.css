@@ -334,7 +334,7 @@ body.nav-active { overflow: hidden; }
   top: 0;
   left: 0;
   width: 100%;
-  padding-block: 32px;
+  padding-block: 15px;
   z-index: 4;
 }
 
