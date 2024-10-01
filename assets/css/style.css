@@ -391,7 +391,9 @@ body.nav-active { overflow: hidden; }
   transition: var(--transition);
 }
 
-.navbar-link:is(:hover, :focus-visible) { color: var(--oxford-blue); }
+.navbar-link:is(:hover, :focus-visible) { 
+  color: var(--oxford-blue);
+}
 
 .overlay {
   position: fixed;
@@ -655,6 +657,9 @@ body.nav-active { overflow: hidden; }
   padding-block: 32px;
   text-align: center;
   border-block-start: 1px solid var(--black_10);
+}
+.footer-link:is(:hover, :focus-visible) { 
+  color: var(--oxford-blue);
 }
 
 .copyright { font-weight: var(--fw-500); }
