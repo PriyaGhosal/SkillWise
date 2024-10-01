@@ -34,14 +34,11 @@
   <link rel="preload" as="image" href="./assets/images/hero-banner.png">
   <link rel="preload" as="image" href="./assets/images/hero-bg.png">
 
-
 <!-- 
   - font awesome cdn 
 -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
-
+  <script src="config.js"></script>
 </head>
 
 <body>
@@ -72,7 +69,7 @@
       <nav class="navbar" data-navbar>
 
         <div class="navbar-top">
-          <a >
+          <a>
             <img src="./assets/images/Skillwise_logo.jpg" width="50" height="10" alt="SkillWise home">
           </a>
 
@@ -117,7 +114,6 @@
 
 
 
-
   <main>
     <article>
 
@@ -125,7 +121,7 @@
         - #HERO
       -->
 
-      <section class="section hero has-bg-image" aria-labelledby="hero-label"
+      <section id="home" class="section hero has-bg-image" aria-labelledby="hero-label"
         style="background-image: url('./assets/images/hero-bg.png')">
         <div class="container">
 
@@ -162,7 +158,7 @@
         - #CATEGORY
       -->
 
-      <section class="section category has-bg-image" aria-labelledby="category-label"
+      <section  id="courses"  class="section category has-bg-image" aria-labelledby="category-label"
         style="background-image: url('./assets/images/category-bg.png')">
         <div class="container">
 
@@ -187,8 +183,8 @@
 
                   <p class="title-sm">68 Courses</p>
                 </div>
-
-                <a href="#" class="layer-link" aria-label="Data Science Category"></a>
+                  
+                <a href="data-science.html" class="layer-link" aria-label="Data Science Category"></a>
 
               </div>
             </li>
@@ -302,7 +298,7 @@
         - #ABOUT
       -->
 
-      <section class="section about" aria-labelledby="about-label">
+      <section id="about" class="section about" aria-labelledby="about-label">
         <div class="container">
 
           <figure class="about-banner">
@@ -376,7 +372,7 @@
         - #COURSE
       -->
 
-      <section class="section course has-bg-image" aria-labelledby="course-label"
+      <section  id="pricing" class="section course has-bg-image" aria-labelledby="course-label"
         style="background-image: url('./assets/images/course-bg.png')">
         <div class="container">
 
@@ -757,9 +753,77 @@
         </div>
       </section>
 
+
+
+
+      <!-- 
+        - #BLOG
+      -->
+
+      <section class="section blog has-bg-image" aria-labelledby="blog-label" style="background-image: url('./assets/images/course-bg.png')">
+
+        <div class="container">
+
+          <p class="title-sm text-center section-subtitle" id="category-label">Featured Blogs</p>
+
+          <h2 class="headline-md text-center section-title">
+            Learn with <span class="span has-after">Articles</span>
+          </h2>
+
+          <ul class="grid-list">
+            <li class="card-container">
+              <div class="card blog-card">
+                <figure class="card-banner">
+                  <img src="./assets/images/course-1.png" width="370" height="248" loading="lazy"
+                      alt="Basic Fundamentals of Interior & Graphics Design" class="img-cover">
+                </figure>
+                <div class="card-content">
+                  <h3 class="title-lg card-title">
+                    The Future of Data Science: Trends and Opportunities
+                  </h3>
+                  <p class="title-sm">Explore the emerging trends in data science and how they are shaping industries globally.</p>
+                  <a href="#">Read More ...</a>
+                </div>
+              </div>
+            </li>
+            <li class="card-container">
+              <div class="card blog-card">
+                <figure class="card-banner">
+                  <img src="./assets/images/course-2.png" width="370" height="248" loading="lazy"
+                      alt="Basic Fundamentals of Interior & Graphics Design" class="img-cover">
+                </figure>
+                <div class="card-content">
+                  <h3 class="title-lg card-title">
+                    Marketing in the Digital Age: Strategies that Work
+                  </h3>
+                  <p class="title-sm">Discover how digital marketing is evolving with new platforms and technologies.</p>
+                  <a href="#">Read More ...</a>
+                </div>
+              </div>
+            </li>
+            <li class="card-container">
+              <div class="card blog-card">
+                <figure class="card-banner">
+                  <img src="./assets/images/course-6.png" width="370" height="248" loading="lazy"
+                      alt="Basic Fundamentals of Interior & Graphics Design" class="img-cover">
+                </figure>
+                <div class="card-content">
+                  <h3 class="title-lg card-title">
+                    Creative Journey: A Guide to Graphic Design Success
+                  </h3>
+                  <p class="title-sm">Learn how to navigate the world of graphic design, from basic principles to advanced techniques.</p>
+                  <a href="#">Read More ...</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <a href="#" class="btn btn-primary">View All Blogs</a>
+        </div>
+      </section>
+
     </article>
   </main>
-
 
 
 
@@ -768,19 +832,21 @@
     - #FOOTER
   -->
 
-  <footer class="footer has-bg-image" style="background-image: url('./assets/images/footer-bg.png')">
+  <footer id="contact" class="footer has-bg-image" style="background-image: url('./assets/images/footer-bg.png')">
 
     <div class="section footer-top">
       <div class="container">
 
         <div class="footer-brand">
 
-          <a >
+          <a>
             <img src="./assets/images/Skillwise_logo.jpg" width="200" height="200" alt="SkillWise home">
           </a>
 
           <p class="title-sm footer-text">
-            Stay updated with the latest from SkillWise! Follow us on LinkedIn, Twitter, and Instagram for exciting content, course announcements, and learning tips. Don’t miss out—subscribe today and join our growing community!
+            Stay updated with the latest from SkillWise! Follow us on LinkedIn, Twitter, and Instagram for exciting
+            content, course announcements, and learning tips. Don’t miss out—subscribe today and join our growing
+            community!
 
           </p>
 
@@ -794,7 +860,7 @@
 
             <li>
               <a href="#" class="social-link">
-                <img src="./assets/images/twitter.svg" width="40" height="40" loading="lazy" alt="twitter">
+                <img src="./assets/images/X-logo.svg" width="40" height="40" loading="lazy" alt="X logo">
               </a>
             </li>
 
@@ -821,27 +887,27 @@
           </li>
 
           <li>
-            <a href="#" class="title-sm footer-link">Home</a>
+            <a href="#home" class="title-sm footer-link">Home</a>
           </li>
 
           <li>
-            <a href="#" class="title-sm footer-link">About Us</a>
+            <a href="#about" class="title-sm footer-link">About Us</a>
           </li>
 
           <li>
-            <a href="#" class="title-sm footer-link">Pricing</a>
+            <a href="#pricing" class="title-sm footer-link">Pricing</a>
           </li>
 
           <li>
-            <a href="#" class="title-sm footer-link">Courses</a>
+            <a href="#courses" class="title-sm footer-link">Courses</a>
           </li>
 
           <li>
-            <a href="#" class="title-sm footer-link">Contact Us</a>
+            <a href="#contact" class="title-sm footer-link">Contact Us</a>
           </li>
 
           <li>
-            <a href="#" class="title-sm footer-link">Blog</a>
+            <a href="#blog" class="title-sm footer-link">Blog</a>
           </li>
 
         </ul>
@@ -857,11 +923,11 @@
           </li>
 
           <li>
-            <a href="#" class="title-sm footer-link">Tearms of Use</a>
+            <a href="#" class="title-sm footer-link">Terms of Use</a>
           </li>
 
           <li>
-            <a href="#" class="title-sm footer-link">Tearm & Condition</a>
+            <a href="#" class="title-sm footer-link">Terms & Condition</a>
           </li>
 
           <li>
@@ -921,6 +987,27 @@
       </div>
     </div>
 
+    <!-- 
+    - #Contact Us
+  -->
+
+    <section class="cta" aria-labelledby="cta-label">
+      <div class="container">
+
+        <h2 class="headline-md section-title" id="cta-label">
+          Contact Us
+        </h2>
+
+        <form id="contact-form">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message" placeholder="Your Message" required></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+
+
     <div class="footer-bottom">
       <div class="container">
 
@@ -941,6 +1028,22 @@
    - custom js link
   -->
   <script src="./assets/js/script.js"></script>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>
+    (function () {
+      emailjs.init(CONFIG.USER_ID_KEY);
+    })();
+
+    document.getElementById('contact-form').addEventListener('submit', function (event) {
+      event.preventDefault();
+      emailjs.sendForm(CONFIG.SERVICE_ID, CONFIG.TEMPLATE_ID_KEY, this)
+        .then(function () {
+          alert('Email sent successfully!');
+        }, function (error) {
+          alert('Failed to send email. Error: ' + JSON.stringify(error));
+        });
+    });
+  </script>
 
   <!-- 
     - ionicon
