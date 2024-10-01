@@ -6,20 +6,14 @@
  * copyright 2024 Priya Ghosal
  */
 
-
-
-
-
 /*-----------------------------------*\
   #CUSTOM PROPERTY
 \*-----------------------------------*/
 
 :root {
-
   /**
    * colors
    */
-
   --selective-yellow: hsl(42, 100%, 56%);
   --roman-silver: hsl(240, 6%, 51%);
   --roman-silver_10: hsla(240, 6%, 51%, 0.1);
@@ -34,7 +28,6 @@
   /**
    * typography
    */
-
   --ff-gilroy: "Gilroy", sans-serif;
 
   --headline-lg: 4.8rem;
@@ -43,7 +36,7 @@
   --title-lg: 2.2rem;
   --title-md: 2rem;
   --title-sm: 1.8rem;
-  
+
   --fw-500: 500;
   --fw-600: 600;
   --fw-700: 700;
@@ -51,20 +44,17 @@
   /**
    * spacing
    */
-
   --section-padding: 56px;
 
   /**
    * box shadow
    */
-
   --shadow-1: 0px 35px 65px -10px hsla(0, 0%, 0%, 0.05);
   --shadow-2: 0 10px 40px hsla(0, 0%, 0%, 0.06);
 
   /**
    * border radius
    */
-
   --radius-4: 4px;
   --radius-6: 6px;
   --radius-8: 8px;
@@ -73,16 +63,10 @@
   /**
    * transition
    */
-
   --transition: 0.25s ease;
   --cubic-in: cubic-bezier(0.51, 0.03, 0.64, 0.28);
   --cubic-out: cubic-bezier(0.05, 0.83, 0.52, 0.97);
-
 }
-
-
-
-
 
 /*-----------------------------------*\
   #RESET
@@ -129,16 +113,12 @@ body {
   color: var(--roman-silver);
   font-size: 1.6rem;
   line-height: 1.5;
-  overflow: hidden;
+  overflow-y: auto;
 }
 
 body.loaded { overflow: visible; }
 
 body.nav-active { overflow: hidden; }
-
-
-
-
 
 /*-----------------------------------*\
   #REUSED STYLE
@@ -282,10 +262,6 @@ body.nav-active { overflow: hidden; }
   object-fit: cover;
 }
 
-
-
-
-
 /*-----------------------------------*\
   #PRELOADER
 \*-----------------------------------*/
@@ -322,10 +298,6 @@ body.nav-active { overflow: hidden; }
   100% { transform: rotate(1turn); }
 }
 
-
-
-
-
 /*-----------------------------------*\
   #HEADER
 \*-----------------------------------*/
@@ -337,7 +309,7 @@ body.nav-active { overflow: hidden; }
   top: 0;
   left: 0;
   width: 100%;
-  padding-block: 32px;
+  padding-block: 15px;
   z-index: 4;
 }
 
@@ -383,550 +355,120 @@ body.nav-active { overflow: hidden; }
   transform: translateX(320px);
 }
 
-.navbar-top { margin-block-end: 34px; }
+.navbar-top { margin-block-end: 40px; }
 
-.nav-close-btn ion-icon { --ionicon-stroke-width: 35px; }
+.navbar .nav-list { display: flex; flex-direction: column; gap: 24px; }
 
-.navbar-item:not(:last-child) { border-block-end: 1px solid var(--black_10); }
-
-.navbar-link {
-  padding-block: 8px;
-  transition: var(--transition);
+.navbar .nav-list .btn {
+  padding: 12px 24px;
+  border-radius: var(--radius-6);
 }
 
-.navbar-link:is(:hover, :focus-visible) { color: var(--oxford-blue); }
+.navbar .nav-list .nav-link { color: var(--oxford-blue); }
 
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background-color: var(--black);
-  opacity: 0;
-  visibility: hidden;
-  transition: var(--transition);
+.navbar .nav-list .nav-link:hover { color: var(--light-coral); }
+
+.navbar .nav-list .nav-link.active { color: var(--light-coral); }
+
+.section-burger {
+  display: flex;
+  justify-content: flex-end;
 }
-
-.overlay.active {
-  opacity: 0.6;
-  visibility: visible;
-}
-
-
-
-
 
 /*-----------------------------------*\
   #HERO
 \*-----------------------------------*/
 
-.hero-banner { display: none; }
-
-.hero { padding-block-start: calc(var(--pt, 96px) + var(--section-padding)); }
-
-.hero .title-md {
-  font-weight: var(--fw-500);
-  padding-inline-start: 16px;
-  margin-block: 24px 44px;
-}
-
-.hero .title-md::before {
-  top: 0;
-  left: 0;
-  width: 2px;
-  height: 100%;
-  background-color: var(--light-coral);
-}
-
-.hero .btn-group {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-}
-
-
-
-
-
-/*-----------------------------------*\
-  #CATEGORY
-\*-----------------------------------*/
-
-.category .grid-list { padding-block: 40px 52px; }
-
-.category-card {
-  display: flex;
-  align-items: flex-start;
-  gap: 20px;
-  border-inline-start: 4px solid transparent;
-}
-
-.category-card:is(:hover, :focus-within) { border-color: var(--light-coral); }
-
-.category-card .title-sm { margin-block-start: 4px; }
-
-.category .btn { margin-inline: auto; }
-
-
-
-
-
-/*-----------------------------------*\
-  #ABOUT
-\*-----------------------------------*/
-
-.about .container {
-  display: grid;
-  gap: 30px;
-}
-
-.about .section-text,
-.progress-list li:not(:last-child) { margin-block-end: 32px; }
-
-.progress-label-wrapper {
-  display: flex;
-  justify-content: space-between;
-  margin-block-end: 8px;
-}
-
-.progress-label-wrapper .title-sm {
-  color: var(--oxford-blue);
-  font-weight: var(-fw-600);
-}
-
-.progress {
-  background-color: var(--roman-silver_10);
-  height: 6px;
-  border-radius: var(--radius-6);
-}
-
-.progress-fill {
-  height: 100%;
-  border-radius: inherit;
-}
-
-.progress-fill.red {
-  background-color: var(--light-coral);
-  width: 86%;
-}
-
-.progress-fill.green {
-  background-color: var(--keppei);
-  width: 67%;
-}
-
-.progress-fill.yellow {
-  background-color: var(--selective-yellow);
-  width: 95%;
-}
-
-
-
-
-
-/*-----------------------------------*\
-  #COURSE
-\*-----------------------------------*/
-
-.course .grid-list { padding-block: 20px 44px; }
-
-.course-card {
-  border-block-end: 4px solid transparent;
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-
-.course-card:is(:hover, :focus-within) { border-color: var(--light-coral); }
-
-.course-card .card-banner {
-  height: 160px;
-  background-color: var(--light-gray);
+.hero {
+  height: 100vh;
+  position: relative;
   overflow: hidden;
-  border-radius: var(--radius-4);
 }
 
-.course-card :is(.wrapper, .rating-wrapper) {
+.hero .bg-hero {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero .container {
+  height: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
-.course-card .wrapper {
-  justify-content: space-between;
-  gap: 16px;
-}
-
-.course-card .card-price { color: var(--light-coral); }
-
-.course-card .rating-wrapper { gap: 4px; }
-
-.course-card .card-title { margin-block: 8px 16px; }
-
-.course-card .card-meta { justify-content: flex-start; }
-
-.course-card .card-meta .title-sm {
-  display: flex;
-  gap: 8px;
-}
-
-.course .btn { margin-inline: auto; }
-
-
-
-
-
-/*-----------------------------------*\
-  #CTA
-\*-----------------------------------*/
-
-.cta {
-  background-color: var(--keppei);
-  padding: 48px 24px;
+.hero .headline-lg {
+  color: var(--white);
   text-align: center;
 }
 
-.cta .headline-md { color: var(--white); }
+.hero .btn { display: block; }
 
-.cta .btn { margin-inline: auto; }
+/*-----------------------------------*\
+  #COURSES
+\*-----------------------------------*/
 
+.courses {
+  padding-block: 80px;
+}
 
+.courses .section-title {
+  margin-block-end: 40px;
+}
 
+.courses .section-title .headline-md {
+  margin-block-end: 24px;
+}
 
+.courses .course-title { margin-bottom: 24px; }
+
+.courses .course-title .title-md { color: var(--light-coral); }
+
+.courses .course-card .card {
+  height: 100%;
+}
+
+.courses .course-card .layer-link {
+  position: relative;
+}
+
+.courses .course-card .layer-link:hover { background: rgba(255, 255, 255, 0.1); }
+
+.courses .course-card .layer-link:hover .title-lg { color: var(--light-coral); }
+
+.courses .course-card .layer-link:hover .course-title { color: var(--light-coral); }
 
 /*-----------------------------------*\
   #FOOTER
 \*-----------------------------------*/
 
-.footer-top .container {
-  display: grid;
+.footer {
+  padding: 40px 16px;
+  background-color: var(--oxford-blue);
+}
+
+.footer .section-title { color: var(--white); }
+
+.footer .footer-item { color: var(--white); }
+
+.footer .footer-item a { color: var(--white); }
+
+.footer .footer-item a:hover { color: var(--light-coral); }
+
+.footer .social-icon {
+  display: flex;
+  justify-content: center;
   gap: 24px;
 }
 
-.footer-text { margin-block: 40px 32px; }
-
-.social-list {
-  display: flex;
-  gap: 16px;
+.footer .social-icon ion-icon {
+  font-size: 32px;
+  color: var(--white);
+  transition: var(--transition);
 }
 
-.footer-list-title { margin-block-end: 32px; }
-
-.footer-link { margin-block-start: 16px; }
-
-.footer-top .grid-list {
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
-}
-
-.footer-top .grid-list .img-cover { border-radius: var(--radius-6); }
-
-.footer-bottom {
-  padding-block: 32px;
-  text-align: center;
-  border-block-start: 1px solid var(--black_10);
-}
-
-.copyright { font-weight: var(--fw-500); }
-
-
-
-
-
-/*-----------------------------------*\
-  #CONTAINER QUERIES
-\*-----------------------------------*/
-
-/**
- * container query for card
- */
-
-.card-container { container-type: inline-size; }
-
-@container (min-width: 500px) {
-
-  .course-card { flex-direction: row; }
-
-  .course-card .card-banner {
-    width: 160px;
-    flex-shrink: 0;
-  }
-
-}
-
-
-
-
-
-/*-----------------------------------*\
-  #MEDIA QUERIES
-\*-----------------------------------*/
-
-/**
- * responsive for large than 575px screen
- */
-
-@media (min-width: 575px) {
-
-  /**
-   * REUSED STYLE
-   */
-
-  .container {
-    max-width: 640px;
-    width: 100%;
-    margin-inline: auto;
-  }
-
-  .card { padding: 32px; }
-
-
-
-  /**
-   * FOOTER
-   */
-
-  .footer-top .container { grid-template-columns: 1fr 1fr; }
-
-}
-
-
-
-
-
-/**
- * responsive for large than 768px screen
- */
-
-@media (min-width: 768px) {
-
-  /**
-   * CUSTOM PROPERTY
-   */
-
-  :root {
-    
-    /**
-     * typography
-     */
-
-    --headline-lg: 6rem;
-    --headline-md: 3.8rem;
-
-    /**
-     * spacing
-     */
-
-    --section-padding: 80px;
-
-  }
-
-
-
-  /**
-   * REUSED STYLE
-   */
-
-  .container { max-width: 768px; }
-
-  .grid-list { grid-template-columns: 1fr 1fr; }
-
-
-
-  /**
-   * CTA
-   */
-
-  .cta { padding-block: 78px; }
-
-}
-
-
-
-
-
-/**
- * responsive for large than 992px screen
- */
-
-@media (min-width: 992px) {
-
-  :root {
-
-    /**
-     * typography
-     */
-
-    --headline-lg: 7.7rem;
-    --headline-md: 4.4rem;
-
-    /**
-     * spacing
-     */
-
-    --section-padding: 120px;
-
-  }
-
-
-
-  /**
-   * REUSED STYLE
-   */
-
-  .container { max-width: 1024px; }
-
-  .btn {
-    padding: 16px 32px;
-    font-size: 1.8rem;
-  }
-
-
-
-  /**
-   * HEADER
-   */
-
-  .nav-open-btn,
-  .overlay,
-  .navbar-top { display: none; }
-
-  .navbar,
-  .navbar.active {
-    all: unset;
-    display: block;
-  }
-
-  .navbar-list {
-    display: flex;
-    gap: 8px;
-  }
-
-  .navbar-item:not(:last-child) { border-block-end: none; }
-
-  .navbar-link { padding: 8px 16px; }
-
-  .header .btn {
-    display: block;
-    box-shadow: none;
-  }
-
-
-
-  /**
-   * CATEGORY
-   */
-
-  .grid-list { grid-template-columns: repeat(3, 1fr); }
-
-
-
-  /**
-   * ABOUT
-   */
-
-  .about .container { grid-template-columns: 1fr 1fr; }
-
-
-
-  /**
-   * COURSE
-   */
-
-  .course .grid-list {
-    grid-template-columns: 1fr 1fr;
-    margin-block: 40px 48px;
-  }
-
-
-
-  /**
-   * FOOTER
-   */
-
-  .footer-top .container { grid-template-columns: 1fr 0.5fr 0.5fr 0.8fr; }
-
-  .footer-brand { padding-inline-end: 24px; }
-
-}
-
-
-
-
-
-/**
- * responsive for large than 1200px screen
- */
-
-@media (min-width: 1200px) {
-
-  /**
-   * REUSED STYE
-   */
-
-  .container { max-width: 1170px; }
-
-
-
-  /**
-   * HERO
-   */
-
-  .hero-banner {
-    display: block;
-    max-width: max-content;
-    margin-inline-end: -14%;
-  }
-
-  .hero .container {
-    display: grid;
-    grid-template-columns: 1fr 0.9fr;
-    gap: 48px;
-  }
-
-  .hero .title-md { margin-block: 40px 60px; }
-
-
-
-  /**
-   * ABOUT
-   */
-
-  .about .container { grid-template-columns: 1fr 0.7fr; }
-
-
-
-  /**
-   * CTA
-   */
-
-  .cta { text-align: left; }
-
-  .cta .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .cta .headline-md { max-width: 22ch; }
-
-  .cta .btn { margin-inline: 0; }
-
-
-
-  /**
-   * FOOTER
-   */
-
-  .footer .container { gap: 48px; }
-
-}
-
-/* navbar logo  */
-.navbar-logo {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%; 
-  object-fit: cover;  
-  
-}
+.footer .social-icon ion-icon:hover { color: var(--light-coral); }
