@@ -13,7 +13,7 @@ body {
   justify-content: center;
   padding: 0 10px;
   min-height: 100vh;
-  background: #6320ee;
+  background: #6234be;
 }
 
 .container {
@@ -82,14 +82,17 @@ li,
   transition: transform 0.2s ease;
   justify-content: center;
 }
+
 .controls .row.from .icons {
   padding-right: 15px;
   border-right: 1px solid #ccc;
 }
+
 .controls .row.to .icons {
   padding-left: 15px;
   border-left: 1px solid #ccc;
 }
+
 .controls .row select {
   color: #333;
   border: none;
@@ -98,34 +101,42 @@ li,
   background: none;
   padding-left: 5px;
 }
+
 .text-input textarea::-webkit-scrollbar {
   width: 4px;
 }
+
 .controls .row select::-webkit-scrollbar {
   width: 8px;
 }
+
 .text-input textarea::-webkit-scrollbar-track,
 .controls .row select::-webkit-scrollbar-track {
   background: #fff;
 }
+
 .text-input textarea::-webkit-scrollbar-thumb {
   background: #ddd;
   border-radius: 8px;
 }
+
 .controls .row select::-webkit-scrollbar-thumb {
   background: #999;
   border-radius: 8px;
   border-right: 2px solid #ffffff;
 }
+
 .controls .exchange {
   color: #adadad;
   cursor: pointer;
   font-size: 1.7rem;
   transition: transform 0.2s ease;
 }
+
 .controls ion-icon:active {
   transform: scale(0.9);
 }
+
 .container button {
   width: 100%;
   padding: 14px;
@@ -143,31 +154,39 @@ li,
   .container {
     padding: 20px;
   }
+
   .wrapper .text-input {
     flex-direction: column;
   }
+
   .text-input .to-text {
     border-left: 0px;
     border-top: 1px solid #ccc;
   }
+
   .text-input textarea {
     height: 200px;
   }
+
   .controls .row .icons {
     display: inline-flex;
     flex-direction: column;
   }
+
   .container button {
     padding: 13px;
     font-size: 1.2rem;
   }
+
   .controls .row select {
     font-size: 1.2rem;
   }
+
   .controls .exchange {
     font-size: 1.2rem;
   }
 }
+
 @media screen and (max-width: 1250px) {
   .container {
     zoom: 0.7;
