@@ -1,6 +1,4 @@
-'use strict';
-
-
+"use strict";
 
 /**
  * add eventListener on multiple elements
@@ -10,9 +8,7 @@ const addEventOnElements = function (elements, eventType, callback) {
   for (let i = 0, len = elements.length; i < len; i++) {
     elements[i].addEventListener(eventType, callback);
   }
-}
-
-
+};
 
 /**
  * PRELOADER
@@ -27,8 +23,6 @@ window.addEventListener("load", function () {
   document.body.classList.add("loaded");
 });
 
-
-
 /**
  * NAVBAR TOGGLER FOR MOBILE
  */
@@ -41,15 +35,13 @@ const toggleNavbar = function () {
   navbar.classList.toggle("active");
   overlay.classList.toggle("active");
   document.body.classList.toggle("nav-active");
-}
+};
 
 addEventOnElements(navTogglers, "click", toggleNavbar);
 
-
-
 /**
  * HEADER
- * 
+ *
  * add active class on header when window scroll down to 100px
  */
 
@@ -61,6 +53,52 @@ const headerActive = function () {
   } else {
     header.classList.remove("active");
   }
-}
+};
 
 window.addEventListener("scroll", headerActive);
+
+/**
+ * HEADER
+ *
+ * scroll effect on click on menu
+ */
+
+function easeInOutQuad(t) {
+  return t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
+}
+
+function smoothScroll(target, duration, offset = 0) {
+  const targetPosition = target.getBoundingClientRect().top - offset;
+  const startPosition = window.pageYOffset;
+  let startTime = null;
+
+  function animation(currentTime) {
+    if (startTime === null) startTime = currentTime;
+    const timeElapsed = currentTime - startTime;
+    const run = easeInOutQuad(timeElapsed / duration);
+
+    window.scrollTo(0, startPosition + targetPosition * run);
+
+    if (timeElapsed < duration) requestAnimationFrame(animation);
+  }
+
+  requestAnimationFrame(animation);
+}
+
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    const target = document.querySelector(this.getAttribute("href"));
+
+    if (target) {
+      //const offset = 100;
+      const menuHeight = document.querySelector("#top-menu").offsetHeight;
+      setTimeout(() => {
+        smoothScroll(target, 1000, menuHeight); // Custom scroll duration (1000ms = 1s)
+      }, 500); // Delay before the scroll starts (500ms)
+    } else {
+      console.error(`Target section ${this.getAttribute("href")} not found.`);
+    }
+  });
+});
