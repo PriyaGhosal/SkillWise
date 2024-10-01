@@ -43,7 +43,7 @@
   --title-lg: 2.2rem;
   --title-md: 2rem;
   --title-sm: 1.8rem;
-  
+
   --fw-500: 500;
   --fw-600: 600;
   --fw-700: 700;
@@ -137,7 +137,30 @@ body.loaded { overflow: visible; }
 body.nav-active { overflow: hidden; }
 
 
+/*-----------------------------------*\
+  #Scroll to top
+\*-----------------------------------*/
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: none;
+    width: 50px;
+    height: 50px;
+    background-color: lightcoral;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
 
+#scrollToTopBtn:hover {
+    background-color: #0C1327;
+}
 
 
 /*-----------------------------------*\
@@ -281,9 +304,6 @@ body.nav-active { overflow: hidden; }
   height: 100%;
   object-fit: cover;
 }
-
-
-
 
 
 /*-----------------------------------*\
@@ -705,7 +725,7 @@ body.nav-active { overflow: hidden; }
    */
 
   :root {
-    
+
     /**
      * typography
      */
