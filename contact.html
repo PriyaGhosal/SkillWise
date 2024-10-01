@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | SkillWise</title>
+  <link rel="stylesheet" href="./assets/css/style.css"> 
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <script>
+    function showThankYouMessage() {
+      alert("Thank you for contacting us! We will get back to you shortly.");
+    }
+  </script>
+  <style>
+  
+    .contact-us {
+      padding: 40px 0;
+      background-color: #f9f9f9;
+      text-align: center;
+    }
+    .contact-form {
+      max-width: 600px;
+      margin: 0 auto;
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 16px;
+      transition: border-color 0.3s;
+    }
+    .form-group input:focus,
+    .form-group textarea:focus {
+      border-color: #007bff;
+      outline: none;
+    }
+    .btn-primary {
+      background-color: #007bff;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s;
+    }
+    .btn-primary:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header" data-header>
+    <div class="container">
+      <a href="index.html">
+        <img src="./assets/images/Skillwise_logo.jpg" width="50" height="10" alt="SkillWise Logo">
+      </a>
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+          <li class="navbar-item"><a href="index.html" class="navbar-link title-sm" data-nav-link>Home</a></li>
+          <li class="navbar-item"><a href="courses.html" class="navbar-link title-sm" data-nav-link>Courses</a></li>
+          <li class="navbar-item"><a href="blog.html" class="navbar-link title-sm" data-nav-link>Blog</a></li>
+          <li class="navbar-item"><a href="contact.html" class="navbar-link title-sm" data-nav-link>Contact Us</a></li>
+        </ul>
+      </nav>
+      <a href="#" class="btn btn-secondary">Start Free Trial</a>
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+      <div class="overlay" data-overlay data-nav-toggler></div>
+    </div>
+  </header>
+
+
+  <section class="section contact-us" aria-labelledby="contact-us-label">
+    <div class="container" style="margin-top: 60px;">
+      <h1 class="headline-md text-center" id="contact-us-label">Contact Us</h1>
+      <p class="title-sm text-center">We'd love to hear from you! Please fill out the form below.</p>
+
+      <form action="javascript:void(0);" class="contact-form" onsubmit="showThankYouMessage();">
+        <div class="form-group">
+          <label for="name" class="title-sm">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email" class="title-sm">Your Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="message" class="title-sm">Your Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer has-bg-image" style="background-image: url('./assets/images/footer-bg.png')">
+    <div class="container">
+      <div class="footer-brand">
+        <a href="index.html">
+          <img src="./assets/images/Skillwise_logo.jpg" width="200" height="200" alt="SkillWise home">
+        </a>
+        <p class="title-sm footer-text">Stay updated with the latest from SkillWise! Follow us on social media.</p>
+      </div>
+
+      <ul class="social-list">
+        <li><a href="#" class="social-link"><img src="./assets/images/facebook.svg" width="40" height="40" alt="facebook"></a></li>
+        <li><a href="#" class="social-link"><img src="./assets/images/twitter.svg" width="40" height="40" alt="twitter"></a></li>
+        <li><a href="#" class="social-link"><img src="./assets/images/instagram.svg" width="40" height="40" alt="instagram"></a></li>
+      </ul>
+
+      <p class="copyright">© 2024 SkillWise | All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="./assets/js/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
