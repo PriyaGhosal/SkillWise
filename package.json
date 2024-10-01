@@ -1,0 +1,14 @@
+{
+  "name": "skillwise",
+  "version": "1.0.0",
+  "description": "A platform for skill development and collaboration",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Vansh Chitransh",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.0"
+  }
+}
