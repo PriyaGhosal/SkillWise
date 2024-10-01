@@ -1,0 +1,7 @@
+Title:
+Add Box Styling to Navbar Links for Improved Navigation on SkillWise
+
+Description:
+To enhance navigation clarity and improve the visual structure of the SkillWise website, I propose adding box styling around the navbar links, such as Home, About, Courses, and more. This design enhancement will make the navigation links more distinct, helping users easily identify and access key sections of the site. The box styling will integrate with the existing website theme, ensuring a cohesive design while also boosting user interaction and providing a more organized layout.
+
+Kindly assign me this issue under Hacktoberfest 2024.
