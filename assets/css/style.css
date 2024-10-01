@@ -955,3 +955,29 @@ body.dark-mode h1{
   color: var(--oxford-blue);
 }
 
+
+}
+form {
+  max-width: 400px;
+  margin: auto;
+}
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #0056b3;
+}
+
