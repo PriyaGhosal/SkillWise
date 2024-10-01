@@ -573,9 +573,6 @@ body.nav-active { overflow: hidden; }
 .course .btn { margin-inline: auto; }
 
 
-
-
-
 /*-----------------------------------*\
   #CTA
 \*-----------------------------------*/
@@ -591,8 +588,44 @@ body.nav-active { overflow: hidden; }
 .cta .btn { margin-inline: auto; }
 
 
+/*-----------------------------------*\
+  #BLOG
+\*-----------------------------------*/
 
+.blog .grid-list { padding-block: 20px 44px; }
 
+.blog-card {
+  border-block-end: 4px solid transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.blog-card:is(:hover, :focus-within) { border-color: var(--light-coral); }
+
+.blog-card .card-banner {
+  height: 160px;
+  background-color: var(--light-gray);
+  overflow: hidden;
+  border-radius: var(--radius-4);
+}
+
+.blog-card p{
+  text-align: justify;
+  margin: 13px auto;
+}
+
+.blog .grid-list{
+  padding-top: 45px;
+  padding-bottom: 50px;
+}
+
+.blog-card a{
+  color: var(--light-coral);
+  font-size: 20px;
+}
+
+.blog .btn { margin-inline: auto; }
 
 /*-----------------------------------*\
   #FOOTER
