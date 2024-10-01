@@ -33,7 +33,7 @@
   -->
   <link rel="preload" as="image" href="./assets/images/hero-banner.png">
   <link rel="preload" as="image" href="./assets/images/hero-bg.png">
-
+  <script src="config.js"></script>
 </head>
 
 <body>
@@ -64,7 +64,7 @@
       <nav class="navbar" data-navbar>
 
         <div class="navbar-top">
-          <a >
+          <a>
             <img src="./assets/images/Skillwise_logo.jpg" width="50" height="10" alt="SkillWise home">
           </a>
 
@@ -105,7 +105,6 @@
 
     </div>
   </header>
-
 
 
 
@@ -719,7 +718,6 @@
 
 
 
-
   <!-- 
     - #FOOTER
   -->
@@ -731,12 +729,14 @@
 
         <div class="footer-brand">
 
-          <a >
+          <a>
             <img src="./assets/images/Skillwise_logo.jpg" width="200" height="200" alt="SkillWise home">
           </a>
 
           <p class="title-sm footer-text">
-            Stay updated with the latest from SkillWise! Follow us on LinkedIn, Twitter, and Instagram for exciting content, course announcements, and learning tips. Don’t miss out—subscribe today and join our growing community!
+            Stay updated with the latest from SkillWise! Follow us on LinkedIn, Twitter, and Instagram for exciting
+            content, course announcements, and learning tips. Don’t miss out—subscribe today and join our growing
+            community!
 
           </p>
 
@@ -877,6 +877,27 @@
       </div>
     </div>
 
+    <!-- 
+    - #Contact Us
+  -->
+
+    <section class="cta" aria-labelledby="cta-label">
+      <div class="container">
+
+        <h2 class="headline-md section-title" id="cta-label">
+          Contact Us
+        </h2>
+
+        <form id="contact-form">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message" placeholder="Your Message" required></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+
+
     <div class="footer-bottom">
       <div class="container">
 
@@ -897,6 +918,22 @@
    - custom js link
   -->
   <script src="./assets/js/script.js"></script>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>
+    (function () {
+      emailjs.init(CONFIG.USER_ID_KEY);
+    })();
+
+    document.getElementById('contact-form').addEventListener('submit', function (event) {
+      event.preventDefault();
+      emailjs.sendForm(CONFIG.SERVICE_ID, CONFIG.TEMPLATE_ID_KEY, this)
+        .then(function () {
+          alert('Email sent successfully!');
+        }, function (error) {
+          alert('Failed to send email. Error: ' + JSON.stringify(error));
+        });
+    });
+  </script>
 
   <!-- 
     - ionicon
