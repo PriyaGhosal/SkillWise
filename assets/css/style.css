@@ -1086,19 +1086,43 @@ body.dark-mode h1{
   color: var(--oxford-blue);
 }
 
-}
+
 form {
   max-width: 400px;
   margin: auto;
 }
 input,
 textarea {
-  width: 100%;
+  min-width: 600px;
   padding: 10px;
   margin: 5px 0;
   border: 1px solid #ccc;
   border-radius: 5px;
+  font-family: var(--ff-gilroy);
+  outline: none;
+  background-color: rgba(228, 228, 228, 0.745);
+  font-size: 15px;
 }
+
+input:focus,
+textarea:focus{
+  background-color: white;
+}
+
+input{
+  min-height: 50px;
+}
+
+textarea{
+  min-height: 150px;
+  max-width: 100%;
+}
+
+.submit{
+  min-width: 600px;
+  width: 100%;
+}
+
 button {
   margin: auto;
   padding: 10px;
@@ -1215,9 +1239,8 @@ button:hover {
   padding: 24px 46px 24px 26px;
 }
 
-=======
 
-}
+
 
 
 @media(max-width:768px) {
