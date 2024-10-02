@@ -46,10 +46,36 @@ const toggleNavbar = function () {
 addEventOnElements(navTogglers, "click", toggleNavbar);
 
 
+/**
+ * SCROLL TO TOP
+ */
+
+const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+window.onscroll = function() {
+    toggleScrollButton();
+};
+
+function toggleScrollButton() {
+    const scrollHeight = document.documentElement.scrollHeight;
+    const scrollPosition = window.scrollY || document.documentElement.scrollTop;
+    const scrollThreshold = scrollHeight * 0.1; // 10% of the page height
+
+    if (scrollPosition > scrollThreshold) {
+        scrollToTopBtn.style.display = "block";
+    } else {
+        scrollToTopBtn.style.display = "none";
+    }
+}
+
+scrollToTopBtn.addEventListener('click', function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
 
 /**
  * HEADER
- * 
+ *
  * add active class on header when window scroll down to 100px
  */
 
