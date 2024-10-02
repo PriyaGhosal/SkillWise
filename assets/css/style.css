@@ -1181,10 +1181,10 @@ button:hover {
 
 .searchButton {
   color: white;
-  position: absolute;
+  position: relative;
   right: 8px;
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   background: var(--gradient-2, linear-gradient(90deg, var(--light-coral) 20%, var(--selective-yellow) 100%));
   border: 0;
@@ -1212,7 +1212,14 @@ button:hover {
   outline: none;
   color: var(--light-coral);
   font-size: 15px;
-  padding: 24px 46px 24px 26px;
+  padding:8px;
+}
+
+.svgxml
+{
+  position:absolute;
+  top:0;
+  left:0;
 }
 
 =======
