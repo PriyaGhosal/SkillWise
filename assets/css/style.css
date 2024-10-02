@@ -27,6 +27,9 @@
   --white: hsl(0, 0%, 100%);
   --black: hsl(0, 0%, 0%);
   --black_10: hsla(0, 0%, 0%, 0.1);
+  --dark-oxford-blue: hsl(224, 53%, 20%); 
+
+
 
   /**
    * typography
@@ -677,6 +680,97 @@ body.nav-active { overflow: hidden; }
 .copyright { font-weight: var(--fw-500); }
 
 
+#instapost1 {
+  transition: transform 0.3s ease; 
+}
+
+#instapost1:hover {
+  transform: scale(1.15); 
+}
+
+#instapost2 {
+  transition: transform 0.3s ease; 
+}
+
+#instapost2:hover {
+  transform: scale(1.15); 
+}
+
+#instapost3 {
+  transition: transform 0.3s ease; 
+}
+
+#instapost3:hover {
+  transform: scale(1.15); 
+}
+
+#instapost4 {
+  transition: transform 0.3s ease; 
+}
+
+#instapost4:hover {
+  transform: scale(1.15); 
+}
+
+#instapost5 {
+  transition: transform 0.3s ease; 
+}
+
+#instapost5:hover {
+  transform: scale(1.15); 
+}
+
+#instapost6 {
+  transition: transform 0.3s ease; 
+}
+
+#instapost6:hover {
+  transform: scale(1.15); 
+}
+
+
+#footer-logo {
+  transition: transform 0.3s ease; 
+}
+
+#footer-logo:hover {
+  transform: scale(1.05); 
+}
+
+#social-link1 {
+  transition: transform 0.3s ease; 
+}
+
+#social-link1:hover {
+  transform: scale(1.1); 
+}
+
+#social-link2 {
+  transition: transform 0.3s ease; 
+}
+
+#social-link2:hover {
+  transform: scale(1.1); 
+}
+
+#social-link3 {
+  transition: transform 0.3s ease; 
+}
+
+#social-link3:hover {
+  transform: scale(1.1); 
+}
+
+#social-link4 {
+  transition: transform 0.3s ease; 
+}
+
+#social-link4:hover {
+  transform: scale(1.1); 
+}
+
+
+
 
 
 
@@ -876,6 +970,14 @@ body.nav-active { overflow: hidden; }
     grid-template-columns: 1fr 1fr;
     margin-block: 40px 48px;
   }
+
+  /**
+   * FOOTER
+   */
+
+  .footer-top .container { grid-template-columns: 1fr 0.5fr 0.5fr 0.8fr; }
+
+  .footer-brand { padding-inline-end: 24px; }
 }
 
 
@@ -1054,6 +1156,64 @@ button:hover {
   margin-bottom: 5px;
 }
 
+}
+
+/* Search Bar */
+/* From Uiverse.io by OnlyCodeChannel */ 
+.navRightSide{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.searchBox {
+  display: flex;
+  max-width: 250px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  background: var(--black);
+  border-radius: 50px;
+  position: relative;
+}
+
+.searchButton {
+  color: white;
+  position: absolute;
+  right: 8px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--gradient-2, linear-gradient(90deg, var(--light-coral) 20%, var(--selective-yellow) 100%));
+  border: 0;
+  display: inline-block;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+}
+/*hover effect*/
+.SearchBTN:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 10px 20px;
+  transform: translateY(-3px);
+}
+/*button pressing effect*/
+.SearchBTN:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+.searchInput::placeholder{
+  color: var(--light-coral)
+}
+.searchInput {
+  border: none;
+  background: none;
+  outline: none;
+  color: var(--light-coral);
+  font-size: 15px;
+  padding: 24px 46px 24px 26px;
+}
+
+=======
 
 }
 
