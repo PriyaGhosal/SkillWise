@@ -123,7 +123,21 @@
               <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
             </button>
           </div>
+            <button
+              class="nav-close-btn"
+              aria-label="close menu"
+              data-nav-toggler
+            >
+              <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
 
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="#home" class="navbar-link title-sm" data-nav-link
+                >Home</a
+              >
+            </li>
           <ul class="navbar-list">
             <li class="navbar-item">
               <a href="#home" class="navbar-link title-sm" data-nav-link
@@ -136,13 +150,26 @@
                 >About</a
               >
             </li>
+            <li class="navbar-item">
+              <a href="#about" class="navbar-link title-sm" data-nav-link
+                >About</a
+              >
+            </li>
 
             <li class="navbar-item">
               <a href="#courses" class="navbar-link title-sm" data-nav-link
                 >Courses</a
               >
             </li>
+            <li class="navbar-item">
+              <a href="#courses" class="navbar-link title-sm" data-nav-link
+                >Courses</a
+              >
+            </li>
 
+            <li class="navbar-item">
+              <a href="#" class="navbar-link title-sm" data-nav-link>Blog</a>
+            </li>
             <li class="navbar-item">
               <a href="#" class="navbar-link title-sm" data-nav-link>Blog</a>
             </li>
@@ -395,10 +422,21 @@
 
                   <div>
                     <h3 class="title-lg">Modern Physics</h3>
+                  <div>
+                    <h3 class="title-lg">Modern Physics</h3>
 
                     <p class="title-sm">68 Courses</p>
                   </div>
+                    <p class="title-sm">68 Courses</p>
+                  </div>
 
+                  <a
+                    href="#"
+                    class="layer-link"
+                    aria-label="Modern Physics Category"
+                  ></a>
+                </div>
+              </li>
                   <a
                     href="#"
                     class="layer-link"
@@ -418,13 +456,35 @@
                       alt="Music Production icon"
                     />
                   </div>
+              <li>
+                <div class="card category-card">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/category-4.svg"
+                      width="72"
+                      height="72"
+                      loading="lazy"
+                      alt="Music Production icon"
+                    />
+                  </div>
 
+                  <div>
+                    <h3 class="title-lg">Music Production</h3>
                   <div>
                     <h3 class="title-lg">Music Production</h3>
 
                     <p class="title-sm">68 Courses</p>
                   </div>
+                    <p class="title-sm">68 Courses</p>
+                  </div>
 
+                  <a
+                    href="#"
+                    class="layer-link"
+                    aria-label="Music Production Category"
+                  ></a>
+                </div>
+              </li>
                   <a
                     href="#"
                     class="layer-link"
@@ -444,13 +504,35 @@
                       alt="Data Science icon"
                     />
                   </div>
+              <li>
+                <div class="card category-card">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/category-5.svg"
+                      width="72"
+                      height="72"
+                      loading="lazy"
+                      alt="Data Science icon"
+                    />
+                  </div>
 
+                  <div>
+                    <h3 class="title-lg">Data Science</h3>
                   <div>
                     <h3 class="title-lg">Data Science</h3>
 
                     <p class="title-sm">68 Courses</p>
                   </div>
+                    <p class="title-sm">68 Courses</p>
+                  </div>
 
+                  <a
+                    href="#"
+                    class="layer-link"
+                    aria-label="Data Science Category"
+                  ></a>
+                </div>
+              </li>
                   <a
                     href="#"
                     class="layer-link"
@@ -470,13 +552,36 @@
                       alt="Finances icon"
                     />
                   </div>
+              <li>
+                <div class="card category-card">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/category-6.svg"
+                      width="72"
+                      height="72"
+                      loading="lazy"
+                      alt="Finances icon"
+                    />
+                  </div>
 
+                  <div>
+                    <h3 class="title-lg">Finances</h3>
                   <div>
                     <h3 class="title-lg">Finances</h3>
 
                     <p class="title-sm">68 Courses</p>
                   </div>
+                    <p class="title-sm">68 Courses</p>
+                  </div>
 
+                  <a
+                    href="#"
+                    class="layer-link"
+                    aria-label="Finances Category"
+                  ></a>
+                </div>
+              </li>
+            </ul>
                   <a
                     href="#"
                     class="layer-link"
@@ -489,7 +594,11 @@
             <a href="#" class="btn btn-primary">View All Categories</a>
           </div>
         </section>
+            <a href="#" class="btn btn-primary">View All Categories</a>
+          </div>
+        </section>
 
+        <!-- 
         <!-- 
         - #ABOUT
       -->
@@ -518,7 +627,15 @@
               <p class="title-sm section-subtitle" id="about-label">
                 About SkillWise
               </p>
+            <div class="about-content">
+              <p class="title-sm section-subtitle" id="about-label">
+                About SkillWise
+              </p>
 
+              <h2 class="headline-md section-title">
+                We Provide The Best Online
+                <span class="span has-after">Education</span>
+              </h2>
               <h2 class="headline-md section-title">
                 We Provide The Best Online
                 <span class="span has-after">Education</span>
@@ -529,7 +646,16 @@
                 but the majority have suffered alteration in some form, by
                 injected humour.
               </p>
+              <p class="title-sm section-text">
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form, by
+                injected humour.
+              </p>
 
+              <ul class="progress-list">
+                <li>
+                  <div class="progress-label-wrapper">
+                    <p class="title-sm">Business Studies</p>
               <ul class="progress-list">
                 <li>
                   <div class="progress-label-wrapper">
@@ -537,7 +663,13 @@
 
                     <p class="title-sm">86%</p>
                   </div>
+                    <p class="title-sm">86%</p>
+                  </div>
 
+                  <div class="progress">
+                    <div class="progress-fill red"></div>
+                  </div>
+                </li>
                   <div class="progress">
                     <div class="progress-fill red"></div>
                   </div>
@@ -546,10 +678,19 @@
                 <li>
                   <div class="progress-label-wrapper">
                     <p class="title-sm">Marketing</p>
+                <li>
+                  <div class="progress-label-wrapper">
+                    <p class="title-sm">Marketing</p>
 
                     <p class="title-sm">67%</p>
                   </div>
+                    <p class="title-sm">67%</p>
+                  </div>
 
+                  <div class="progress">
+                    <div class="progress-fill green"></div>
+                  </div>
+                </li>
                   <div class="progress">
                     <div class="progress-fill green"></div>
                   </div>
@@ -558,7 +699,12 @@
                 <li>
                   <div class="progress-label-wrapper">
                     <p class="title-sm">Design & Development</p>
+                <li>
+                  <div class="progress-label-wrapper">
+                    <p class="title-sm">Design & Development</p>
 
+                    <p class="title-sm">95%</p>
+                  </div>
                     <p class="title-sm">95%</p>
                   </div>
 
@@ -570,7 +716,16 @@
             </div>
           </div>
         </section>
+                  <div class="progress">
+                    <div class="progress-fill yellow"></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
 
+        <!-- 
         <!-- 
         - #COURSE
       -->
@@ -593,6 +748,9 @@
             <h2 class="headline-md section-title text-center" id="course-label">
               Choose Unlimited <span class="span has-after">Courses</span>
             </h2>
+            <h2 class="headline-md section-title text-center" id="course-label">
+              Choose Unlimited <span class="span has-after">Courses</span>
+            </h2>
 
             <ul class="grid-list">
               <li class="card-container">
@@ -607,7 +765,23 @@
                       class="img-cover"
                     />
                   </figure>
+            <ul class="grid-list">
+              <li class="card-container">
+                <div class="card course-card">
+                  <figure class="card-banner">
+                    <img
+                      src="./assets/images/course-1.png"
+                      width="370"
+                      height="248"
+                      loading="lazy"
+                      alt="Basic Fundamentals of Interior & Graphics Design"
+                      class="img-cover"
+                    />
+                  </figure>
 
+                  <div class="card-content">
+                    <div class="wrapper">
+                      <p class="title-lg card-price">$29.28</p>
                   <div class="card-content">
                     <div class="wrapper">
                       <p class="title-lg card-price">$29.28</p>
@@ -643,7 +817,41 @@
                         />
                       </div>
                     </div>
+                      <div class="rating-wrapper">
+                        <img
+                          src="./assets/images/star-fill.svg"
+                          width="16"
+                          height="16"
+                          loading="lazy"
+                          alt=""
+                        />
+                        <img
+                          src="./assets/images/star-fill.svg"
+                          width="16"
+                          height="16"
+                          loading="lazy"
+                          alt=""
+                        />
+                        <img
+                          src="./assets/images/star-fill.svg"
+                          width="16"
+                          height="16"
+                          loading="lazy"
+                          alt=""
+                        />
+                        <img
+                          src="./assets/images/star-fill.svg"
+                          width="16"
+                          height="16"
+                          loading="lazy"
+                          alt=""
+                        />
+                      </div>
+                    </div>
 
+                    <h3 class="title-lg card-title">
+                      Basic Fundamentals of Interior & Graphics Design
+                    </h3>
                     <h3 class="title-lg card-title">
                       Basic Fundamentals of Interior & Graphics Design
                     </h3>
@@ -657,10 +865,29 @@
                           loading="lazy"
                           alt=""
                         />
+                    <div class="card-meta wrapper">
+                      <p class="title-sm">
+                        <img
+                          src="./assets/images/file-outline.svg"
+                          width="20"
+                          height="20"
+                          loading="lazy"
+                          alt=""
+                        />
 
                         <span class="span">2 Lessons</span>
                       </p>
+                        <span class="span">2 Lessons</span>
+                      </p>
 
+                      <p class="title-sm">
+                        <img
+                          src="./assets/images/user-outline.svg"
+                          width="20"
+                          height="20"
+                          loading="lazy"
+                          alt=""
+                        />
                       <p class="title-sm">
                         <img
                           src="./assets/images/user-outline.svg"
@@ -674,7 +901,18 @@
                       </p>
                     </div>
                   </div>
+                        <span class="span">4k Students</span>
+                      </p>
+                    </div>
+                  </div>
 
+                  <a
+                    href="#"
+                    class="layer-link"
+                    aria-label="Course Details, Basic Fundamentals of Interior & Graphics Design"
+                  ></a>
+                </div>
+              </li>
                   <a
                     href="#"
                     class="layer-link"
@@ -695,11 +933,57 @@
                       class="img-cover"
                     />
                   </figure>
+              <li class="card-container">
+                <div class="card course-card">
+                  <figure class="card-banner">
+                    <img
+                      src="./assets/images/course-2.png"
+                      width="370"
+                      height="248"
+                      loading="lazy"
+                      alt="Increasing Engagement with Instagram & Facebook"
+                      class="img-cover"
+                    />
+                  </figure>
 
                   <div class="card-content">
                     <div class="wrapper">
                       <p class="title-lg card-price">Free</p>
+                  <div class="card-content">
+                    <div class="wrapper">
+                      <p class="title-lg card-price">Free</p>
 
+                      <div class="rating-wrapper">
+                        <img
+                          src="./assets/images/star-fill.svg"
+                          width="16"
+                          height="16"
+                          loading="lazy"
+                          alt=""
+                        />
+                        <img
+                          src="./assets/images/star-fill.svg"
+                          width="16"
+                          height="16"
+                          loading="lazy"
+                          alt=""
+                        />
+                        <img
+                          src="./assets/images/star-fill.svg"
+                          width="16"
+                          height="16"
+                          loading="lazy"
+                          alt=""
+                        />
+                        <img
+                          src="./assets/images/star-fill.svg"
+                          width="16"
+                          height="16"
+                          loading="lazy"
+                          alt=""
+                        />
+                      </div>
+                    </div>
                       <div class="rating-wrapper">
                         <img
                           src="./assets/images/star-fill.svg"
@@ -735,7 +1019,19 @@
                     <h3 class="title-lg card-title">
                       Increasing Engagement with Instagram & Facebook
                     </h3>
+                    <h3 class="title-lg card-title">
+                      Increasing Engagement with Instagram & Facebook
+                    </h3>
 
+                    <div class="card-meta wrapper">
+                      <p class="title-sm">
+                        <img
+                          src="./assets/images/file-outline.svg"
+                          width="20"
+                          height="20"
+                          loading="lazy"
+                          alt=""
+                        />
                     <div class="card-meta wrapper">
                       <p class="title-sm">
                         <img
@@ -748,7 +1044,17 @@
 
                         <span class="span">2 Lessons</span>
                       </p>
+                        <span class="span">2 Lessons</span>
+                      </p>
 
+                      <p class="title-sm">
+                        <img
+                          src="./assets/images/user-outline.svg"
+                          width="20"
+                          height="20"
+                          loading="lazy"
+                          alt=""
+                        />
                       <p class="title-sm">
                         <img
                           src="./assets/images/user-outline.svg"
@@ -762,7 +1068,18 @@
                       </p>
                     </div>
                   </div>
+                        <span class="span">4k Students</span>
+                      </p>
+                    </div>
+                  </div>
 
+                  <a
+                    href="#"
+                    class="layer-link"
+                    aria-label="Course Details, Increasing Engagement with Instagram & Facebook"
+                  ></a>
+                </div>
+              </li>
                   <a
                     href="#"
                     class="layer-link"
@@ -783,11 +1100,57 @@
                       class="img-cover"
                     />
                   </figure>
+              <li class="card-container">
+                <div class="card course-card">
+                  <figure class="card-banner">
+                    <img
+                      src="./assets/images/course-3.png"
+                      width="370"
+                      height="248"
+                      loading="lazy"
+                      alt="Introduction to Color Theory & Basic UI/UX"
+                      class="img-cover"
+                    />
+                  </figure>
 
                   <div class="card-content">
                     <div class="wrapper">
                       <p class="title-lg card-price">$72.39</p>
+                  <div class="card-content">
+                    <div class="wrapper">
+                      <p class="title-lg card-price">$72.39</p>
 
+                      <div class="rating-wrapper">
+                        <img
+                          src="./assets/images/star-fill.svg"
+                          width="16"
+                          height="16"
+                          loading="lazy"
+                          alt=""
+                        />
+                        <img
+                          src="./assets/images/star-fill.svg"
+                          width="16"
+                          height="16"
+                          loading="lazy"
+                          alt=""
+                        />
+                        <img
+                          src="./assets/images/star-fill.svg"
+                          width="16"
+                          height="16"
+                          loading="lazy"
+                          alt=""
+                        />
+                        <img
+                          src="./assets/images/star-fill.svg"
+                          width="16"
+                          height="16"
+                          loading="lazy"
+                          alt=""
+                        />
+                      </div>
+                    </div>
                       <div class="rating-wrapper">
                         <img
                           src="./assets/images/star-fill.svg"
@@ -823,7 +1186,19 @@
                     <h3 class="title-lg card-title">
                       Introduction to Color Theory & Basic UI/UX
                     </h3>
+                    <h3 class="title-lg card-title">
+                      Introduction to Color Theory & Basic UI/UX
+                    </h3>
 
+                    <div class="card-meta wrapper">
+                      <p class="title-sm">
+                        <img
+                          src="./assets/images/file-outline.svg"
+                          width="20"
+                          height="20"
+                          loading="lazy"
+                          alt=""
+                        />
                     <div class="card-meta wrapper">
                       <p class="title-sm">
                         <img
@@ -836,7 +1211,17 @@
 
                         <span class="span">2 Lessons</span>
                       </p>
+                        <span class="span">2 Lessons</span>
+                      </p>
 
+                      <p class="title-sm">
+                        <img
+                          src="./assets/images/user-outline.svg"
+                          width="20"
+                          height="20"
+                          loading="lazy"
+                          alt=""
+                        />
                       <p class="title-sm">
                         <img
                           src="./assets/images/user-outline.svg"
@@ -850,7 +1235,18 @@
                       </p>
                     </div>
                   </div>
+                        <span class="span">4k Students</span>
+                      </p>
+                    </div>
+                  </div>
 
+                  <a
+                    href="#"
+                    class="layer-link"
+                    aria-label="Course Details, Introduction to Color Theory & Basic UI/UX"
+                  ></a>
+                </div>
+              </li>
                   <a
                     href="#"
                     class="layer-link"
@@ -871,7 +1267,22 @@
                       class="img-cover"
                     />
                   </figure>
+              <li class="card-container">
+                <div class="card course-card">
+                  <figure class="card-banner">
+                    <img
+                      src="./assets/images/course-4.png"
+                      width="370"
+                      height="248"
+                      loading="lazy"
+                      alt="Financial Security Thinking and Principles Theory"
+                      class="img-cover"
+                    />
+                  </figure>
 
+                  <div class="card-content">
+                    <div class="wrapper">
+                      <p class="title-lg card-price">$72.39</p>
                   <div class="card-content">
                     <div class="wrapper">
                       <p class="title-lg card-price">$72.39</p>
@@ -907,7 +1318,41 @@
                         />
                       </div>
                     </div>
+                      <div class="rating-wrapper">
+                        <img
+                          src="./assets/images/star-fill.svg"
+                          width="16"
+                          height="16"
+                          loading="lazy"
+                          alt=""
+                        />
+                        <img
+                          src="./assets/images/star-fill.svg"
+                          width="16"
+                          height="16"
+                          loading="lazy"
+                          alt=""
+                        />
+                        <img
+                          src="./assets/images/star-fill.svg"
+                          width="16"
+                          height="16"
+                          loading="lazy"
+                          alt=""
+                        />
+                        <img
+                          src="./assets/images/star-fill.svg"
+                          width="16"
+                          height="16"
+                          loading="lazy"
+                          alt=""
+                        />
+                      </div>
+                    </div>
 
+                    <h3 class="title-lg card-title">
+                      Financial Security Thinking and Principles Theory
+                    </h3>
                     <h3 class="title-lg card-title">
                       Financial Security Thinking and Principles Theory
                     </h3>
@@ -921,10 +1366,29 @@
                           loading="lazy"
                           alt=""
                         />
+                    <div class="card-meta wrapper">
+                      <p class="title-sm">
+                        <img
+                          src="./assets/images/file-outline.svg"
+                          width="20"
+                          height="20"
+                          loading="lazy"
+                          alt=""
+                        />
 
                         <span class="span">2 Lessons</span>
                       </p>
+                        <span class="span">2 Lessons</span>
+                      </p>
 
+                      <p class="title-sm">
+                        <img
+                          src="./assets/images/user-outline.svg"
+                          width="20"
+                          height="20"
+                          loading="lazy"
+                          alt=""
+                        />
                       <p class="title-sm">
                         <img
                           src="./assets/images/user-outline.svg"
@@ -938,7 +1402,18 @@
                       </p>
                     </div>
                   </div>
+                        <span class="span">4k Students</span>
+                      </p>
+                    </div>
+                  </div>
 
+                  <a
+                    href="#"
+                    class="layer-link"
+                    aria-label="Course Details, Financial Security Thinking and Principles Theory"
+                  ></a>
+                </div>
+              </li>
                   <a
                     href="#"
                     class="layer-link"
@@ -959,7 +1434,22 @@
                       class="img-cover"
                     />
                   </figure>
+              <li class="card-container">
+                <div class="card course-card">
+                  <figure class="card-banner">
+                    <img
+                      src="./assets/images/course-5.png"
+                      width="370"
+                      height="248"
+                      loading="lazy"
+                      alt="Logo Design: From Concept to Presentation"
+                      class="img-cover"
+                    />
+                  </figure>
 
+                  <div class="card-content">
+                    <div class="wrapper">
+                      <p class="title-lg card-price">Free</p>
                   <div class="card-content">
                     <div class="wrapper">
                       <p class="title-lg card-price">Free</p>
@@ -995,7 +1485,41 @@
                         />
                       </div>
                     </div>
+                      <div class="rating-wrapper">
+                        <img
+                          src="./assets/images/star-fill.svg"
+                          width="16"
+                          height="16"
+                          loading="lazy"
+                          alt=""
+                        />
+                        <img
+                          src="./assets/images/star-fill.svg"
+                          width="16"
+                          height="16"
+                          loading="lazy"
+                          alt=""
+                        />
+                        <img
+                          src="./assets/images/star-fill.svg"
+                          width="16"
+                          height="16"
+                          loading="lazy"
+                          alt=""
+                        />
+                        <img
+                          src="./assets/images/star-fill.svg"
+                          width="16"
+                          height="16"
+                          loading="lazy"
+                          alt=""
+                        />
+                      </div>
+                    </div>
 
+                    <h3 class="title-lg card-title">
+                      Logo Design: From Concept to Presentation
+                    </h3>
                     <h3 class="title-lg card-title">
                       Logo Design: From Concept to Presentation
                     </h3>
@@ -1009,10 +1533,29 @@
                           loading="lazy"
                           alt=""
                         />
+                    <div class="card-meta wrapper">
+                      <p class="title-sm">
+                        <img
+                          src="./assets/images/file-outline.svg"
+                          width="20"
+                          height="20"
+                          loading="lazy"
+                          alt=""
+                        />
 
                         <span class="span">2 Lessons</span>
                       </p>
+                        <span class="span">2 Lessons</span>
+                      </p>
 
+                      <p class="title-sm">
+                        <img
+                          src="./assets/images/user-outline.svg"
+                          width="20"
+                          height="20"
+                          loading="lazy"
+                          alt=""
+                        />
                       <p class="title-sm">
                         <img
                           src="./assets/images/user-outline.svg"
@@ -1026,7 +1569,18 @@
                       </p>
                     </div>
                   </div>
+                        <span class="span">4k Students</span>
+                      </p>
+                    </div>
+                  </div>
 
+                  <a
+                    href="#"
+                    class="layer-link"
+                    aria-label="Course Details, Logo Design: From Concept to Presentation"
+                  ></a>
+                </div>
+              </li>
                   <a
                     href="#"
                     class="layer-link"
@@ -1047,7 +1601,22 @@
                       class="img-cover"
                     />
                   </figure>
+              <li class="card-container">
+                <div class="card course-card">
+                  <figure class="card-banner">
+                    <img
+                      src="./assets/images/course-6.png"
+                      width="370"
+                      height="248"
+                      loading="lazy"
+                      alt="Professional Ceramic Moulding for Beginners"
+                      class="img-cover"
+                    />
+                  </figure>
 
+                  <div class="card-content">
+                    <div class="wrapper">
+                      <p class="title-lg card-price">$29.82</p>
                   <div class="card-content">
                     <div class="wrapper">
                       <p class="title-lg card-price">$29.82</p>
@@ -1083,7 +1652,41 @@
                         />
                       </div>
                     </div>
+                      <div class="rating-wrapper">
+                        <img
+                          src="./assets/images/star-fill.svg"
+                          width="16"
+                          height="16"
+                          loading="lazy"
+                          alt=""
+                        />
+                        <img
+                          src="./assets/images/star-fill.svg"
+                          width="16"
+                          height="16"
+                          loading="lazy"
+                          alt=""
+                        />
+                        <img
+                          src="./assets/images/star-fill.svg"
+                          width="16"
+                          height="16"
+                          loading="lazy"
+                          alt=""
+                        />
+                        <img
+                          src="./assets/images/star-fill.svg"
+                          width="16"
+                          height="16"
+                          loading="lazy"
+                          alt=""
+                        />
+                      </div>
+                    </div>
 
+                    <h3 class="title-lg card-title">
+                      Professional Ceramic Moulding for Beginners
+                    </h3>
                     <h3 class="title-lg card-title">
                       Professional Ceramic Moulding for Beginners
                     </h3>
@@ -1097,10 +1700,29 @@
                           loading="lazy"
                           alt=""
                         />
+                    <div class="card-meta wrapper">
+                      <p class="title-sm">
+                        <img
+                          src="./assets/images/file-outline.svg"
+                          width="20"
+                          height="20"
+                          loading="lazy"
+                          alt=""
+                        />
 
                         <span class="span">2 Lessons</span>
                       </p>
+                        <span class="span">2 Lessons</span>
+                      </p>
 
+                      <p class="title-sm">
+                        <img
+                          src="./assets/images/user-outline.svg"
+                          width="20"
+                          height="20"
+                          loading="lazy"
+                          alt=""
+                        />
                       <p class="title-sm">
                         <img
                           src="./assets/images/user-outline.svg"
@@ -1114,7 +1736,19 @@
                       </p>
                     </div>
                   </div>
+                        <span class="span">4k Students</span>
+                      </p>
+                    </div>
+                  </div>
 
+                  <a
+                    href="#"
+                    class="layer-link"
+                    aria-label="Course Details, Professional Ceramic Moulding for Beginners"
+                  ></a>
+                </div>
+              </li>
+            </ul>
                   <a
                     href="#"
                     class="layer-link"
@@ -1223,6 +1857,7 @@
 
 
 
+    <!-- 
     <!-- 
     - #FOOTER
   -->
@@ -1335,6 +1970,10 @@
               <li>
                 <p class="headline-sm footer-list-title">Links</p>
               </li>
+            <ul class="footer-list">
+              <li>
+                <p class="headline-sm footer-list-title">Links</p>
+              </li>
 
               <li>
                 <a href="#" class="title-sm footer-link">Home</a>
@@ -1385,7 +2024,14 @@
               <li>
                 <p class="headline-sm footer-list-title">Legal</p>
               </li>
+            <ul class="footer-list">
+              <li>
+                <p class="headline-sm footer-list-title">Legal</p>
+              </li>
 
+              <li>
+                <a href="#" class="title-sm footer-link">Legal</a>
+              </li>
               <li>
                 <a href="#" class="title-sm footer-link">Legal</a>
               </li>
@@ -1407,7 +2053,14 @@
               <li>
                 <a href="#" class="title-sm footer-link">Payment Method</a>
               </li>
+              <li>
+                <a href="#" class="title-sm footer-link">Payment Method</a>
+              </li>
 
+              <li>
+                <a href="#" class="title-sm footer-link">Privacy Policy</a>
+              </li>
+            </ul>
               <li>
                 <a href="#" class="title-sm footer-link">Privacy Policy</a>
               </li>
@@ -1416,7 +2069,21 @@
             <ul class="footer-list">
               <li>
                 <p class="headline-sm footer-list-title">Instagram Post</p>
+            <ul class="footer-list">
+              <li>
+                <p class="headline-sm footer-list-title">Instagram Post</p>
 
+                <ul class="grid-list">
+                  <li>
+                    <img
+                      src="./assets/images/ins-1.png"
+                      width="80"
+                      height="80"
+                      loading="lazy"
+                      alt="instagram post"
+                      class="img-cover"
+                    />
+                  </li>
                 <ul class="grid-list">
                   <li>
                     <img
@@ -1439,7 +2106,27 @@
                       class="img-cover"
                     />
                   </li>
+                  <li>
+                    <img
+                      src="./assets/images/ins-2.png"
+                      width="80"
+                      height="80"
+                      loading="lazy"
+                      alt="instagram post"
+                      class="img-cover"
+                    />
+                  </li>
 
+                  <li>
+                    <img
+                      src="./assets/images/ins-3.png"
+                      width="80"
+                      height="80"
+                      loading="lazy"
+                      alt="instagram post"
+                      class="img-cover"
+                    />
+                  </li>
                   <li>
                     <img
                       src="./assets/images/ins-3.png"
@@ -1461,7 +2148,27 @@
                       class="img-cover"
                     />
                   </li>
+                  <li>
+                    <img
+                      src="./assets/images/ins-4.png"
+                      width="80"
+                      height="80"
+                      loading="lazy"
+                      alt="instagram post"
+                      class="img-cover"
+                    />
+                  </li>
 
+                  <li>
+                    <img
+                      src="./assets/images/ins-5.png"
+                      width="80"
+                      height="80"
+                      loading="lazy"
+                      alt="instagram post"
+                      class="img-cover"
+                    />
+                  </li>
                   <li>
                     <img
                       src="./assets/images/ins-5.png"
@@ -1572,6 +2279,7 @@
   </script>
 
     <!-- 
+    <!-- 
     - ionicon
   -->
     <script
@@ -1583,4 +2291,14 @@
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
   </body>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
+
