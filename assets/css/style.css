@@ -16,10 +16,7 @@
 
 :root {
 
-  /**
-   * colors
-   */
-
+ 
   --selective-yellow: hsl(42, 100%, 56%);
   --roman-silver: hsl(240, 6%, 51%);
   --roman-silver_10: hsla(240, 6%, 51%, 0.1);
@@ -942,7 +939,50 @@ body.nav-active { overflow: hidden; }
   .cta .headline-md { max-width: 22ch; }
 
   .cta .btn { margin-inline: 0; }
+  .footer .container { gap: 48px; }
 
+}
+body.dark-mode {
+  background-color: var(--oxford-blue);
+  
+}
+
+body.dark-mode .btn {
+  background-color: var(--keppei);
+  color: var(--oxford-blue);
+}
+
+body.dark-mode #theme-toggle {
+  background-color: var(--oxford-blue);
+
+}
+
+body.dark-mode #theme-icon {
+  color: var(--white);
+}
+body.dark-mode h1{
+  color: aliceblue;
+}
+
+#theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: var(--light-gray);
+  border-radius: var(--radius-circle);
+  padding: 10px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+#theme-toggle:hover {
+  background-color: var(--roman-silver);
+}
+
+#theme-icon {
+  font-size: 24px;
+  color: var(--oxford-blue);
+}
 
 }
 form {
@@ -968,7 +1008,6 @@ button {
 button:hover {
   background-color: #0056b3;
 }
-
 @media(max-width:992px){
 
   .footer-logo-text{
@@ -1061,3 +1100,4 @@ button:hover {
   font-size: 1.0rem;
 }
 }
+
