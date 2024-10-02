@@ -9,6 +9,8 @@
   <!-- 
     - primary meta tags
   -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
   <title>SkillWise</title>
   <meta name="title" content="SkillWise">
   <meta name="description" content="This is a education html template made by Priya Ghosal">
@@ -36,7 +38,7 @@
   <script src="config.js"></script>
 </head>
 
-<body>
+<body >
 
   <!-- 
     - PRELOADER
@@ -55,6 +57,8 @@
   -->
 
   <header class="header" data-header>
+
+    
     <div class="container">
 
       <a>
@@ -62,9 +66,10 @@
       </a>
 
       <nav class="navbar" data-navbar>
+     
 
         <div class="navbar-top">
-          <a>
+
             <img src="./assets/images/Skillwise_logo.jpg" width="50" height="10" alt="SkillWise home">
           </a>
 
@@ -74,27 +79,32 @@
         </div>
 
         <ul class="navbar-list">
+          
 
           <li class="navbar-item">
-            <a href="#" class="navbar-link title-sm" data-nav-link>Home</a>
+            <a href="/index.html" class="navbar-link title-sm" data-nav-link>Home</a>
           </li>
 
           <li class="navbar-item">
-            <a href="#" class="navbar-link title-sm" data-nav-link>Courses</a>
+            <a href="/pages/courses.html" class="navbar-link title-sm" data-nav-link>Courses</a>
           </li>
 
           <li class="navbar-item">
-            <a href="#" class="navbar-link title-sm" data-nav-link>Blog</a>
+            <a href="/pages/blog.html" class="navbar-link title-sm" data-nav-link>Blog</a>
           </li>
 
           <li class="navbar-item">
-            <a href="#" class="navbar-link title-sm" data-nav-link>Contacts</a>
+            <a href="/pages/contact.html" class="navbar-link title-sm" data-nav-link>Contacts</a>
           </li>
 
           <li class="navbar-item"></li>
             <a href="./Faq.html" class="navbar-link title-sm" data-nav-link>FAQ</a>
           </li>
-
+          <div class="containers">
+            <button id="theme-toggle">
+              <ion-icon id="theme-icon" name="sunny-outline"></ion-icon>
+            </button>
+          </div>
         </ul>
 
       </nav>
@@ -137,7 +147,7 @@
             <div class="btn-group">
               <a href="#" class="btn btn-primary">Get Started Now</a>
 
-              <a href="#" class="btn btn-secondary">Get Started Now</a>
+              
             </div>
 
           </div>
@@ -314,8 +324,8 @@
             </h2>
 
             <p class="title-sm section-text">
-              There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
-              in some form, by injected humour.
+              There are numerous versions of educational content available, but the majority have suffered alteration
+              in some form, by injected humour.              
             </p>
 
             <ul class="progress-list">
@@ -790,12 +800,12 @@
 
 
 
+  <footer class="footer has-bg-image" style="background-image: url('./assets/images/footer-bg.png')">
 
-  <!-- 
-    - #FOOTER
-  -->
+
 
   <footer class="footer has-bg-image" style="background-image: url('./assets/images/footer-bg.png')">
+
 
     <div class="section footer-top">
       <div class="container">
@@ -991,6 +1001,9 @@
    - custom js link
   -->
   <script src="./assets/js/script.js"></script>
+
+  <script src="assets/js/dark.js"></script>
+
   <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
   <script>
     (function () {
@@ -1007,6 +1020,7 @@
         });
     });
   </script>
+
 
   <!-- 
     - ionicon
