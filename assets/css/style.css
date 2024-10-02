@@ -126,16 +126,13 @@ body {
   color: var(--roman-silver);
   font-size: 1.6rem;
   line-height: 1.5;
-  overflow: hidden;
+  /* overflow: hidden; */
+  overflow-y: auto;
 }
 
 body.loaded { overflow: visible; }
 
 body.nav-active { overflow: hidden; }
-
-
-
-
 
 /*-----------------------------------*\
   #REUSED STYLE
@@ -334,7 +331,7 @@ body.nav-active { overflow: hidden; }
   top: 0;
   left: 0;
   width: 100%;
-  padding-block: 32px;
+  padding-block: 15px;
   z-index: 4;
 }
 
@@ -391,7 +388,9 @@ body.nav-active { overflow: hidden; }
   transition: var(--transition);
 }
 
-.navbar-link:is(:hover, :focus-visible) { color: var(--oxford-blue); }
+.navbar-link:is(:hover, :focus-visible) { 
+  color: var(--oxford-blue);
+}
 
 .overlay {
   position: fixed;
@@ -570,9 +569,6 @@ body.nav-active { overflow: hidden; }
 .course .btn { margin-inline: auto; }
 
 
-
-
-
 /*-----------------------------------*\
   #CTA
 \*-----------------------------------*/
@@ -588,16 +584,60 @@ body.nav-active { overflow: hidden; }
 .cta .btn { margin-inline: auto; }
 
 
+/*-----------------------------------*\
+  #BLOG
+\*-----------------------------------*/
 
+.blog .grid-list { padding-block: 20px 44px; }
 
+.blog-card {
+  border-block-end: 4px solid transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.blog-card:is(:hover, :focus-within) { border-color: var(--light-coral); }
+
+.blog-card .card-banner {
+  height: 160px;
+  background-color: var(--light-gray);
+  overflow: hidden;
+  border-radius: var(--radius-4);
+}
+
+.blog-card p{
+  text-align: justify;
+  margin: 13px auto;
+}
+
+.blog .grid-list{
+  padding-top: 45px;
+  padding-bottom: 50px;
+}
+
+.blog-card a{
+  color: var(--light-coral);
+  font-size: 20px;
+}
+
+.blog .btn { margin-inline: auto; }
 
 /*-----------------------------------*\
   #FOOTER
 \*-----------------------------------*/
 
 .footer-top .container {
-  display: grid;
+  display: flex;
   gap: 24px;
+  justify-content: space-around;
+}
+
+.footer-logo-text{
+  display: flex;
+  width: 300px;
+  flex-direction: column;
+
 }
 
 .footer-text { margin-block: 40px 32px; }
@@ -616,12 +656,22 @@ body.nav-active { overflow: hidden; }
   gap: 16px;
 }
 
-.footer-top .grid-list .img-cover { border-radius: var(--radius-6); }
+#footer-logo{
+  width:100px;
+  height:100px;
+}
+.footer-top .grid-list .img-cover { 
+  width:80px; 
+  height:80px;
+  border-radius: var(--radius-6); }
 
 .footer-bottom {
   padding-block: 32px;
   text-align: center;
   border-block-start: 1px solid var(--black_10);
+}
+.footer-link:is(:hover, :focus-visible) { 
+  color: var(--oxford-blue);
 }
 
 .copyright { font-weight: var(--fw-500); }
@@ -676,14 +726,6 @@ body.nav-active { overflow: hidden; }
   }
 
   .card { padding: 32px; }
-
-
-
-  /**
-   * FOOTER
-   */
-
-  .footer-top .container { grid-template-columns: 1fr 1fr; }
 
 }
 
@@ -834,17 +876,6 @@ body.nav-active { overflow: hidden; }
     grid-template-columns: 1fr 1fr;
     margin-block: 40px 48px;
   }
-
-
-
-  /**
-   * FOOTER
-   */
-
-  .footer-top .container { grid-template-columns: 1fr 0.5fr 0.5fr 0.8fr; }
-
-  .footer-brand { padding-inline-end: 24px; }
-
 }
 
 
@@ -908,8 +939,6 @@ body.nav-active { overflow: hidden; }
   .cta .headline-md { max-width: 22ch; }
 
   .cta .btn { margin-inline: 0; }
-
-
   .footer .container { gap: 48px; }
 
 }
@@ -955,7 +984,6 @@ body.dark-mode h1{
   color: var(--oxford-blue);
 }
 
-
 }
 form {
   max-width: 400px;
@@ -979,5 +1007,97 @@ button {
 }
 button:hover {
   background-color: #0056b3;
+}
+@media(max-width:992px){
+
+  .footer-logo-text{
+   flex-direction: row;
+   width: fit-content;
+   align-items: center;
+   justify-content: center;
+   gap: 30px;
+ }
+ .footer-top .container{
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 30px;
+ }
+
+ /* Can be used if wanting a more linear Instagram post feed but as a viewer I like the grid better
+  .footer-top .grid-list {
+  grid-template-columns: repeat(6, 1fr);
+  gap: 16px;
+} */
+
+
+ .footer-list{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: fit-content;
+   gap: 30px;
+   width:max-content
+ }
+  .footer-list-title{
+   display: none;
+ } 
+
+ .social-list{
+  padding-top: 20px;
+  align-items: center;
+  justify-content: center;
+ }
+
+ ul.footer-list.instagram > li > p.footer-list-title {
+  display: block;
+  margin-bottom: 5px;
+}
+
+
+}
+
+
+@media(max-width:768px) {
+
+  .footer-list li a.title-sm {
+    font-size: 1.3rem;
+}
+
+.footer-list.instagram li p.headline-sm{
+  font-size: 1.7rem;
+  margin-top:10px
+}
+
+.footer-top .container{
+  gap: 20px;
+}
+
+.footer-logo-text p.title-sm{
+  font-size: 1.3rem;
+}
+#footer-logo{
+  width: 60px;
+  height: 60px;
+}
+}
+
+
+@media (max-width: 575px){
+.footer-list{
+  gap:10px
+}
+.footer-list li a.title-sm {
+  font-size: 1.0rem;
+}
+.footer-top .container{
+  gap: 15px;
+}
+.social-list{
+  padding-top: 0;
+}
+.footer-bottom p{
+  font-size: 1.0rem;
+}
 }
 
