@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillWise FAQ</title>
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+    <!-- 
+    - custom font link
+  -->
+    <link rel="stylesheet" href="./assets/font/font.css">
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/Faq.css">
+
+
+    <!-- 
+    - preload images
+  -->
+    <link rel="preload" as="image" href="./assets/images/faq.png">
+    <link rel="preload" as="image" href="./assets/images/hero-bg.png">
+</head>
+
+<body style="background-image: url('./assets/images/hero-bg.png');">
+    <!-- Navbar -->
+    <header class="header" data-header>
+        <div class="container">
+
+            <a>
+                <img src="./assets/images/Skillwise_logo.jpg" width="50" height="10" alt="SkillWise home">
+            </a>
+
+            <nav class="navbar" data-navbar>
+
+                <div class="navbar-top">
+                    <a>
+                        <img src="./assets/images/Skillwise_logo.jpg" width="50" height="10" alt="SkillWise home">
+                    </a>
+
+                    <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+                        <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                </div>
+
+                <ul class="navbar-list">
+
+                    <li class="navbar-item">
+                        <a href="./index.html" class="navbar-link title-sm" data-nav-link>Home</a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link title-sm" data-nav-link>Courses</a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link title-sm" data-nav-link>Blog</a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link title-sm" data-nav-link>Contacts</a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="Faq.html" class="navbar-link title-sm" data-nav-link>FAQ</a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+            <a href="#" class="btn btn-secondary">Start Free Trial</a>
+
+            <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+                <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+            </button>
+
+            <div class="overlay" data-overlay data-nav-toggler></div>
+
+        </div>
+    </header>
+    <section class="section hero has-bg-image" aria-labelledby="hero-label"
+        style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+        <div class="container" style="margin: 10rem auto 0; width:80%">
+            <div class="hero-content" style="max-width: 600px;">
+
+                <h1 class="headline-lg" id="hero-label">
+                    Frequently <span class="span">Asked</span> Questions
+                </h1>
+
+                <p class="title-md has-before">
+                    At SkillWise, we are dedicated to providing a seamless learning experience for all our users.
+                    Whether you're curious about our course offerings, payment options, or certification details, you’ll
+                    find the answers to your most common questions here. We aim to make your journey with us as smooth
+                    and enjoyable as possible, empowering you to achieve your learning goals.
+                </p>
+
+            </div>
+            <figure class="hero-banner">
+                <img src="./assets/images/faq.png" width="590" height="620" alt="hero banner" class="w-100">
+            </figure>
+
+        </div>
+    </section>
+
+    <div id="FAQ" style="margin: 17rem auto 0;">
+        <h1>
+            <p class="title">FAQ'S</p>
+        </h1>
+        <br>
+        <div class="accordian">
+
+            <div class="item">
+                <div class="FAQ-title">
+                    <p class="faqQuestion">1. What type of courses does SkillWise offer?</p>
+                    <span class="expandToggle">+</span>
+                </div>
+                <div class="FAQ-content">
+                    <p>SkillWise offers a wide range of courses across various categories, including Data Science, UI/UX
+                        Design, Modern Physics, Music Production, Finances, and more. All courses are designed by
+                        experts and provide practical knowledge for learners of all levels.</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="FAQ-title">
+                    <p class="faqQuestion">2. What payment methods are accepted?</p>
+                    <span class="expandToggle">+</span>
+                </div>
+                <div class="FAQ-content">
+                    <p>We accept a variety of payment methods including credit/debit cards, PayPal, and other online
+                        payment gateways. For more details, please refer to our Payment Method section.</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="FAQ-title">
+                    <p class="faqQuestion">3. Will I receive a certificate after completing a course?</p>
+                    <span class="expandToggle">+</span>
+                </div>
+                <div class="FAQ-content">
+                    <p>Yes! All courses provide a certificate of completion that can be downloaded and added to your
+                        resume or LinkedIn profile.</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="FAQ-title">
+                    <p class="faqQuestion">4. What should I do if I encounter issues with the course videos?</p>
+                    <span class="expandToggle">+</span>
+                </div>
+                <div class="FAQ-content">
+                    <p>If you're experiencing problems with video playback or course content, try refreshing your
+                        browser or checking your internet connection. You can also reach out to our support team for
+                        further assistance.</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="FAQ-title">
+                    <p class="faqQuestion">5. How long do I have access to a course after purchasing it?</p>
+                    <span class="expandToggle">+</span>
+                </div>
+                <div class="FAQ-content">
+                    <p>Once you purchase a course, you get lifetime access, allowing you to learn at your own pace.</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="FAQ-title">
+                    <p class="faqQuestion">6. Do I need any prerequisites to enroll in a course?</p>
+                    <span class="expandToggle">+</span>
+                </div>
+                <div class="FAQ-content">
+                    <p>Most beginner courses do not require any prerequisites, but intermediate and advanced courses
+                        might need some prior knowledge. You can find any required prerequisites mentioned in the course
+                        description.</p>
+                </div>
+            </div>
+
+            <div class="FAQ-ShowMore">
+                <button id="showMoreBtn">Show More</button>
+            </div>
+
+        </div>
+    </div>
+    <script src="./assets/js/scriptfaq.js"></script>
+</body>
+
+</html>
