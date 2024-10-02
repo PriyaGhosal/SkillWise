@@ -5,5 +5,5 @@ SkillWise is an innovative online platform designed to help learners of all ages
 Features
 Interactive and engaging courses across various fields.
 Expert instructors offering valuable insights.
-A supportive community for learners.
 Personalized learning paths to help you reach your goals.
+A supportive community for learners.
