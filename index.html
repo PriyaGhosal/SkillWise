@@ -9,6 +9,8 @@
   <!-- 
     - primary meta tags
   -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
   <title>SkillWise</title>
   <meta name="title" content="SkillWise">
   <meta name="description" content="This is a education html template made by Priya Ghosal">
@@ -36,7 +38,7 @@
   <script src="config.js"></script>
 </head>
 
-<body>
+<body >
 
   <!-- 
     - PRELOADER
@@ -55,16 +57,19 @@
   -->
 
   <header class="header" data-header>
+
+    
     <div class="container">
 
-      <a>
+      <a href="#">
         <img src="./assets/images/Skillwise_logo.jpg" width="50" height="10" alt="SkillWise home">
       </a>
 
       <nav class="navbar" data-navbar>
+     
 
         <div class="navbar-top">
-          <a>
+
             <img src="./assets/images/Skillwise_logo.jpg" width="50" height="10" alt="SkillWise home">
           </a>
 
@@ -74,32 +79,73 @@
         </div>
 
         <ul class="navbar-list">
+          
 
           <li class="navbar-item">
-            <a href="#" class="navbar-link title-sm" data-nav-link>Home</a>
+            <a href="/index.html" class="navbar-link title-sm" data-nav-link>Home</a>
           </li>
 
           <li class="navbar-item">
-            <a href="#" class="navbar-link title-sm" data-nav-link>Courses</a>
+            <a href="/pages/courses.html" class="navbar-link title-sm" data-nav-link>Courses</a>
           </li>
 
           <li class="navbar-item">
-            <a href="#" class="navbar-link title-sm" data-nav-link>Blog</a>
+            <a href="/pages/blog.html" class="navbar-link title-sm" data-nav-link>Blog</a>
           </li>
 
           <li class="navbar-item">
-            <a href="#" class="navbar-link title-sm" data-nav-link>Contacts</a>
+            <a href="/pages/contact.html" class="navbar-link title-sm" data-nav-link>Contacts</a>
           </li>
 
+          <li class="navbar-item"></li>
+            <a href="./Faq.html" class="navbar-link title-sm" data-nav-link>FAQ</a>
+          </li>
+          <div class="containers">
+            <button id="theme-toggle">
+              <ion-icon id="theme-icon" name="sunny-outline"></ion-icon>
+            </button>
+          </div>
         </ul>
 
       </nav>
+
+     <div class="navRightSide">
+      <div class="searchBox">
+        <input class="searchInput" type="text" name="" placeholder="Search something">
+        <button class="searchButton SearchBTN" href="#">
+<svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
+<g clip-path="url(#clip0_2_17)">
+<g filter="url(#filter0_d_2_17)">
+  <path d="M23.7953 23.9182L19.0585 19.1814M19.0585 19.1814C19.8188 18.4211 20.4219 17.5185 20.8333 16.5251C21.2448 15.5318 21.4566 14.4671 21.4566 13.3919C21.4566 12.3167 21.2448 11.252 20.8333 10.2587C20.4219 9.2653 19.8188 8.36271 19.0585 7.60242C18.2982 6.84214 17.3956 6.23905 16.4022 5.82759C15.4089 5.41612 14.3442 5.20435 13.269 5.20435C12.1938 5.20435 11.1291 5.41612 10.1358 5.82759C9.1424 6.23905 8.23981 6.84214 7.47953 7.60242C5.94407 9.13789 5.08145 11.2204 5.08145 13.3919C5.08145 15.5634 5.94407 17.6459 7.47953 19.1814C9.01499 20.7168 11.0975 21.5794 13.269 21.5794C15.4405 21.5794 17.523 20.7168 19.0585 19.1814Z" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" shape-rendering="crispEdges"></path>
+</g>
+</g>
+<defs>
+<filter id="filter0_d_2_17" x="-0.418549" y="3.70435" width="29.7139" height="29.7139" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+  <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+  <feOffset dy="4"></feOffset>
+  <feGaussianBlur stdDeviation="2"></feGaussianBlur>
+  <feComposite in2="hardAlpha" operator="out"></feComposite>
+  <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix>
+  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2_17"></feBlend>
+  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2_17" result="shape"></feBlend>
+</filter>
+<clipPath id="clip0_2_17">
+  <rect width="28.0702" height="28.0702" fill="white" transform="translate(0.403503 0.526367)"></rect>
+</clipPath>
+</defs>
+</svg>
+                 
+
+        </button>
+    </div>
 
       <a href="#" class="btn btn-secondary">Start Free Trial</a>
 
       <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
         <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
       </button>
+    </div>
 
       <div class="overlay" data-overlay data-nav-toggler></div>
 
@@ -133,7 +179,7 @@
             <div class="btn-group">
               <a href="#" class="btn btn-primary">Get Started Now</a>
 
-              <a href="#" class="btn btn-secondary">Get Started Now</a>
+              
             </div>
 
           </div>
@@ -245,12 +291,12 @@
               <div class="card category-card">
 
                 <div class="card-icon">
-                  <img src="./assets/images/category-5.svg" width="72" height="72" loading="lazy"
+                  <img src="./assets/images/marketing.jpeg" width="72" height="72" loading="lazy"
                     alt="Data Science icon">
                 </div>
 
                 <div>
-                  <h3 class="title-lg">Data Science</h3>
+                  <h3 class="title-lg">Digital Marketing</h3>
 
                   <p class="title-sm">68 Courses</p>
                 </div>
@@ -264,7 +310,7 @@
               <div class="card category-card">
 
                 <div class="card-icon">
-                  <img src="./assets/images/category-6.svg" width="72" height="72" loading="lazy" alt="Finances icon">
+                  <img src="./assets/images/category-5.svg" width="72" height="72" loading="lazy" alt="Finances icon">
                 </div>
 
                 <div>
@@ -310,8 +356,8 @@
             </h2>
 
             <p class="title-sm section-text">
-              There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
-              in some form, by injected humour.
+              There are numerous versions of educational content available, but the majority have suffered alteration
+              in some form, by injected humour.              
             </p>
 
             <ul class="progress-list">
@@ -707,7 +753,7 @@
             Education Is About Creating Leaders For Tomorrow
           </h2>
 
-          <a href="#" class="btn btn-tertiary">Register Today</a>
+          <a href="signin.html" class="btn btn-tertiary">Register Today</a>
 
         </div>
       </section>
@@ -786,24 +832,24 @@
 
 
 
+  <footer class="footer has-bg-image" style="background-image: url('./assets/images/footer-bg.png')">
 
-  <!-- 
-    - #FOOTER
-  -->
+
 
   <footer class="footer has-bg-image" style="background-image: url('./assets/images/footer-bg.png')">
+
 
     <div class="section footer-top">
       <div class="container">
 
         <div class="footer-brand">
           <div class="footer-logo-text">
-          <a>
-            <img id="footer-logo" src="./assets/images/Skillwise_logo.jpg" width="200" height="200" alt="SkillWise home">
+          <a href="#">
+            <img id="footer-logo" src="./assets/images/Skillwise_logo.jpg"  width="200" height="200" alt="SkillWise home">
           </a>
 
           <p class="title-sm footer-text">
-            Stay updated with the latest from SkillWise! Follow us on LinkedIn, Twitter, and Instagram for exciting
+            Stay updated with the latest from SkillWise! Follow us on LinkedIn, Twitter, Pinterest, Facebook and Instagram for exciting
             content, course announcements, and learning tips. Don’t miss out—subscribe today and join our growing
             community!
 
@@ -812,29 +858,35 @@
           <ul class="social-list">
 
             <li>
-              <a href="#" class="social-link">
+              
+              <a href="#" class="social-link" id="social-link1">
                 <img src="./assets/images/facebook.svg" width="40" height="40" loading="lazy" alt="facebook">
               </a>
             </li>
 
             <li>
-              <a href="#" class="social-link">
+              <a href="#" class="social-link" id="social-link2">
                 <img src="./assets/images/X-logo.svg" width="40" height="40" loading="lazy" alt="X logo">
               </a>
             </li>
 
             <li>
-              <a href="#" class="social-link">
+              <a href="#" class="social-link" id="social-link3">
                 <img src="./assets/images/pinterest.svg" width="40" height="40" loading="lazy" alt="pinterest">
               </a>
             </li>
 
             <li>
-              <a href="#" class="social-link">
+              <a href="#" class="social-link" id="social-link4">
                 <img src="./assets/images/instagram.svg" width="40" height="40" loading="lazy" alt="instagram">
               </a>
             </li>
 
+            <li>
+              <a href="#" class="social-link">
+                <img src="./assets/images/linkedIn.svg" width="40" height="40" loading="lazy" alt="instagram">
+              </a>
+            </li>
           </ul>
 
         </div>
@@ -882,7 +934,9 @@
           </li>
 
           <li>
-            <a href="terms.html" class="title-sm footer-link">Terms of Use</a>
+
+           <a href="terms.html" class="title-sm footer-link">Terms of Use</a>
+
           </li>
 
           <li>
@@ -903,38 +957,38 @@
 
           <li>
 
-            <p class="headline-sm footer-list-title">Instagram Post</p>
+            <p class="headline-sm footer-list-title ">Instagram Post</p>
 
             <ul class="grid-list">
 
-              <li>
+              <li id="insta1">
                 <img src="./assets/images/ins-1.png" width="80" height="80" loading="lazy" alt="instagram post"
-                  class="img-cover">
+                  class="img-cover" id="instapost1">
               </li>
 
               <li>
                 <img src="./assets/images/ins-2.png" width="80" height="80" loading="lazy" alt="instagram post"
-                  class="img-cover">
+                  class="img-cover" id="instapost2">
               </li>
 
               <li>
                 <img src="./assets/images/ins-3.png" width="80" height="80" loading="lazy" alt="instagram post"
-                  class="img-cover">
+                  class="img-cover" id="instapost3">
               </li>
 
               <li>
                 <img src="./assets/images/ins-4.png" width="80" height="80" loading="lazy" alt="instagram post"
-                  class="img-cover">
+                  class="img-cover" id="instapost4">
               </li>
 
               <li>
                 <img src="./assets/images/ins-5.png" width="80" height="80" loading="lazy" alt="instagram post"
-                  class="img-cover">
+                  class="img-cover" id="instapost5">
               </li>
 
               <li>
                 <img src="./assets/images/ins-6.png" width="80" height="80" loading="lazy" alt="instagram post"
-                  class="img-cover">
+                  class="img-cover" id="instapost6">
               </li>
 
             </ul>
@@ -987,6 +1041,9 @@
    - custom js link
   -->
   <script src="./assets/js/script.js"></script>
+
+  <script src="assets/js/dark.js"></script>
+
   <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
   <script>
     (function () {
@@ -1003,6 +1060,7 @@
         });
     });
   </script>
+
 
   <!-- 
     - ionicon
