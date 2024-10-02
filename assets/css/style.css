@@ -958,6 +958,7 @@ textarea {
   border-radius: 5px;
 }
 button {
+  margin: auto;
   padding: 10px;
   background-color: #007bff;
   color: white;
@@ -972,12 +973,13 @@ button:hover {
 @media(max-width:992px){
 
   .footer-logo-text{
-   flex-direction: row;
+   flex-direction: column;
    width: fit-content;
    align-items: center;
    justify-content: center;
-   gap: 30px;
- }
+  text-align: center; 
+  }
+  
  .footer-top .container{
    flex-direction: column;
    justify-content: center;
