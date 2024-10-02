@@ -16,7 +16,7 @@
 
 :root {
 
- 
+
   --selective-yellow: hsl(42, 100%, 56%);
   --roman-silver: hsl(240, 6%, 51%);
   --roman-silver_10: hsla(240, 6%, 51%, 0.1);
@@ -27,7 +27,7 @@
   --white: hsl(0, 0%, 100%);
   --black: hsl(0, 0%, 0%);
   --black_10: hsla(0, 0%, 0%, 0.1);
-  --dark-oxford-blue: hsl(224, 53%, 20%); 
+  --dark-oxford-blue: hsl(224, 53%, 20%);
 
 
 
@@ -43,7 +43,7 @@
   --title-lg: 2.2rem;
   --title-md: 2rem;
   --title-sm: 1.8rem;
-  
+
   --fw-500: 500;
   --fw-600: 600;
   --fw-700: 700;
@@ -320,7 +320,30 @@ body.nav-active { overflow: hidden; }
 }
 
 
+/*-----------------------------------*\
+  #SCROLL TO TOP BUTTON
+\*-----------------------------------*/
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: none;
+    width: 50px;
+    height: 50px;
+    background-color: #FF8086;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
 
+#scrollToTopBtn:hover {
+    background-color: #0C1327;
+}
 
 
 /*-----------------------------------*\
@@ -391,7 +414,7 @@ body.nav-active { overflow: hidden; }
   transition: var(--transition);
 }
 
-.navbar-link:is(:hover, :focus-visible) { 
+.navbar-link:is(:hover, :focus-visible) {
   color: var(--oxford-blue);
 }
 
@@ -663,8 +686,8 @@ body.nav-active { overflow: hidden; }
   width:100px;
   height:100px;
 }
-.footer-top .grid-list .img-cover { 
-  width:80px; 
+.footer-top .grid-list .img-cover {
+  width:80px;
   height:80px;
   border-radius: var(--radius-6); }
 
@@ -673,7 +696,7 @@ body.nav-active { overflow: hidden; }
   text-align: center;
   border-block-start: 1px solid var(--black_10);
 }
-.footer-link:is(:hover, :focus-visible) { 
+.footer-link:is(:hover, :focus-visible) {
   color: var(--oxford-blue);
 }
 
@@ -681,92 +704,92 @@ body.nav-active { overflow: hidden; }
 
 
 #instapost1 {
-  transition: transform 0.3s ease; 
+  transition: transform 0.3s ease;
 }
 
 #instapost1:hover {
-  transform: scale(1.15); 
+  transform: scale(1.15);
 }
 
 #instapost2 {
-  transition: transform 0.3s ease; 
+  transition: transform 0.3s ease;
 }
 
 #instapost2:hover {
-  transform: scale(1.15); 
+  transform: scale(1.15);
 }
 
 #instapost3 {
-  transition: transform 0.3s ease; 
+  transition: transform 0.3s ease;
 }
 
 #instapost3:hover {
-  transform: scale(1.15); 
+  transform: scale(1.15);
 }
 
 #instapost4 {
-  transition: transform 0.3s ease; 
+  transition: transform 0.3s ease;
 }
 
 #instapost4:hover {
-  transform: scale(1.15); 
+  transform: scale(1.15);
 }
 
 #instapost5 {
-  transition: transform 0.3s ease; 
+  transition: transform 0.3s ease;
 }
 
 #instapost5:hover {
-  transform: scale(1.15); 
+  transform: scale(1.15);
 }
 
 #instapost6 {
-  transition: transform 0.3s ease; 
+  transition: transform 0.3s ease;
 }
 
 #instapost6:hover {
-  transform: scale(1.15); 
+  transform: scale(1.15);
 }
 
 
 #footer-logo {
-  transition: transform 0.3s ease; 
+  transition: transform 0.3s ease;
 }
 
 #footer-logo:hover {
-  transform: scale(1.05); 
+  transform: scale(1.05);
 }
 
 #social-link1 {
-  transition: transform 0.3s ease; 
+  transition: transform 0.3s ease;
 }
 
 #social-link1:hover {
-  transform: scale(1.1); 
+  transform: scale(1.1);
 }
 
 #social-link2 {
-  transition: transform 0.3s ease; 
+  transition: transform 0.3s ease;
 }
 
 #social-link2:hover {
-  transform: scale(1.1); 
+  transform: scale(1.1);
 }
 
 #social-link3 {
-  transition: transform 0.3s ease; 
+  transition: transform 0.3s ease;
 }
 
 #social-link3:hover {
-  transform: scale(1.1); 
+  transform: scale(1.1);
 }
 
 #social-link4 {
-  transition: transform 0.3s ease; 
+  transition: transform 0.3s ease;
 }
 
 #social-link4:hover {
-  transform: scale(1.1); 
+  transform: scale(1.1);
 }
 
 
@@ -838,7 +861,7 @@ body.nav-active { overflow: hidden; }
    */
 
   :root {
-    
+
     /**
      * typography
      */
@@ -1046,7 +1069,7 @@ body.nav-active { overflow: hidden; }
 }
 body.dark-mode {
   background-color: var(--oxford-blue);
-  
+
 }
 
 body.dark-mode .btn {
@@ -1086,7 +1109,6 @@ body.dark-mode h1{
   color: var(--oxford-blue);
 }
 
-}
 form {
   max-width: 400px;
   margin: auto;
@@ -1118,9 +1140,9 @@ button:hover {
    width: fit-content;
    align-items: center;
    justify-content: center;
-  text-align: center; 
+  text-align: center;
   }
-  
+
  .footer-top .container{
    flex-direction: column;
    justify-content: center;
@@ -1145,7 +1167,7 @@ button:hover {
  }
   .footer-list-title{
    display: none;
- } 
+ }
 
  .social-list{
   padding-top: 20px;
@@ -1161,7 +1183,7 @@ button:hover {
 }
 
 /* Search Bar */
-/* From Uiverse.io by OnlyCodeChannel */ 
+/* From Uiverse.io by OnlyCodeChannel */
 .navRightSide{
   display: flex;
   justify-content: center;
@@ -1222,9 +1244,6 @@ button:hover {
   left:0;
 }
 
-=======
-
-}
 
 
 @media(max-width:768px) {
@@ -1269,4 +1288,3 @@ button:hover {
   font-size: 1.0rem;
 }
 }
-
