@@ -577,15 +577,149 @@ body.nav-active { overflow: hidden; }
 \*-----------------------------------*/
 
 .cta {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--keppei);
-  padding: 48px 24px;
-  text-align: center;
+  padding: 60px 20px; 
+  box-sizing: border-box;
 }
 
-.cta .headline-md { color: var(--white); }
 
-.cta .btn { margin-inline: auto; }
+.cta .container {
+  width: 100%;
+  max-width: 1200px; 
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  flex-wrap: wrap; 
+  gap: 5%; 
+  margin: 0;
+}
 
+
+.cta .info {
+  background-color: var(--white);
+  padding: 50px 40px; 
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+  flex: 1 1 45%; 
+  min-width: 400px; 
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 25px; 
+  text-align: left; 
+  max-width: 100%;
+}
+
+.info h2 {
+  font-size: 3.5rem; 
+  color: var(--keppei); 
+  margin-bottom: 0;
+}
+
+.info p {
+  font-size: 1.8rem; 
+  color: var(--keppei);
+  line-height: 1.8; 
+}
+
+
+.cta-btn {
+  display: flex;
+  gap: 20px;
+  margin-top: 25px;
+}
+
+
+.cta-btn .btn {
+  padding: 16px 40px; 
+  border-radius: 6px;
+  font-size: 1.5rem; 
+  cursor: pointer;
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.cta-btn .first-btn {
+  background-color: var(--keppei);
+  color: white;
+}
+
+.cta-btn .second-btn {
+  border: 2px solid var(--keppei);
+  background-color: var(--white);
+  color: var(--keppei);
+}
+
+
+.first-btn:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); 
+}
+
+.second-btn:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  color: var(--white);
+  background-color: var(--keppei);
+}
+
+
+.benefits {
+  font-size: 2.5rem; 
+  padding: 20px;
+  color: white;
+  text-align: left; 
+  flex: 1 1 45%; 
+  min-width: 300px; 
+}
+
+.benefits h3 {
+  font-size: 3rem; 
+  margin-bottom: 20px;
+}
+
+.cta-benefits {
+  display: flex;
+  flex-direction: column; 
+  gap: 20px; 
+  list-style: none; 
+  padding: 0;
+  margin: 0;
+}
+
+.cta-benefits li {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .cta .container {
+    flex-direction: column; 
+    gap: 30px; 
+  }
+
+  .info h2 {
+    font-size: 2.5rem; 
+  }
+
+  .info p, .cta-benefits li {
+    font-size: 1.4rem;
+  }
+
+  .cta-btn .btn {
+    padding: 14px 30px; 
+    font-size: 1.2rem;
+  }
+
+  .benefits h3 {
+    font-size: 2.5rem; 
+  }
+}
 
 /*-----------------------------------*\
   #BLOG
