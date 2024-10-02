@@ -6,170 +6,300 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- 
-    - primary meta tags
-  -->
-  <title>SkillWise</title>
+  <!-- Primary Meta Tags -->
+  <title>SkillWise - Copyright Policy</title>
   <meta name="title" content="SkillWise">
-  <meta name="description" content="This is a education html template made by Priya Ghosal">
+  <meta name="description" content="This is an education HTML template made by Priya Ghosal">
 
-  <!-- 
-    - favicon
-  -->
+  <!-- Favicon -->
   <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
 
-  <!-- 
-    - custom font link
-  -->
+  <!-- Custom Font Link -->
   <link rel="stylesheet" href="./assets/font/font.css">
 
-  <!-- 
-    - custom css link
-  -->
+  <!-- Custom CSS Link -->
   <link rel="stylesheet" href="./assets/css/style.css">
 
-  <!-- 
-    - preload images
-  -->
+  <!-- Preload Images -->
   <link rel="preload" as="image" href="./assets/images/hero-banner.png">
   <link rel="preload" as="image" href="./assets/images/hero-bg.png">
 
+  <!-- Internal CSS for Custom Styling -->
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h2.section-title {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #0056b3;
+      text-align: center;
+    }
+
+    /* Highlight the word 'Copyright' */
+    .highlight {
+      font-weight: bold;
+      color: #d9534f;
+    }
+
+    .policy-content {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .policy-content h2 {
+      font-size: 1.5rem;
+      color: #333;
+      margin-top: 20px;
+    }
+
+    .policy-content p {
+      font-size: 1rem;
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    .title-md {
+      font-weight: bold;
+      color: #0056b3;
+    }
+
+    a {
+      color: #0056b3;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .btn-secondary {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 1rem;
+      color: white;
+      background-color: #0056b3;
+      border-radius: 5px;
+      text-align: center;
+      text-decoration: none;
+      margin-top: 20px;
+    }
+
+    .btn-secondary:hover {
+      background-color: #004494;
+    }
+
+    .header {
+      background-color: #333;
+      padding: 10px 0;
+      position: relative; /* Added for positioning */
+      z-index: 10; /* Ensures it stays above other content */
+    }
+
+    .header img {
+      height: 50px;
+    }
+
+    .header a {
+      color: white;
+      font-size: 1.2rem;
+      text-decoration: none;
+      padding: 10px;
+      margin-right: 10px;
+    }
+
+    .preloader {
+      display: none; /* Hidden by default */
+    }
+
+    .policy-section {
+      padding: 40px 0;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    /* Navbar styling */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 10px 20px;
+      position: relative; /* Added for positioning */
+      z-index: 10; /* Ensures it stays above other content */
+    }
+
+    .navbar a {
+      color: white;
+      padding: 10px 15px;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+
+    .navbar a:hover {
+      background-color: #444;
+      border-radius: 5px;
+    }
+
+    .nav-open-btn,
+    .nav-close-btn {
+      display: none;
+    }
+
+    /* Responsive Navbar */
+    @media (max-width: 768px) {
+      .navbar {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        position: absolute; /* Changed to absolute for overlay */
+        top: 60px; /* Adjust based on header height */
+        left: 0;
+        background-color: #333;
+        padding: 10px 20px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        z-index: 10; /* Ensures it stays above other content */
+      }
+
+      .nav-open-btn {
+        display: inline-block;
+        color: white;
+        font-size: 2rem;
+        cursor: pointer;
+      }
+
+      .navbar.active {
+        display: flex;
+      }
+
+      .nav-close-btn {
+        display: inline-block;
+        color: white;
+        font-size: 2rem;
+        cursor: pointer;
+        align-self: flex-end;
+        margin-bottom: 20px;
+      }
+    }
+
+    /* Ensure that the new section is visible and well-structured */
+    .content-wrapper {
+      padding: 20px;
+      margin-top: 20px; /* Space for the navbar */
+    }
+
+    /* Prevent text from being hidden behind navbar */
+    .content-wrapper {
+      padding-top: 80px; /* Adjust this value based on navbar height */
+    }
+  </style>
 </head>
 
 <body>
 
-  <!-- 
-    - PRELOADER
-  -->
-
+  <!-- Preloader -->
   <div class="preloader" data-preloader>
     <div class="circle" data-circle></div>
   </div>
 
-
-
-
-
-  <!-- 
-    - #HEADER
-  -->
-
+  <!-- Header -->
   <header class="header" data-header>
     <div class="container">
+      <a href="#"><img src="./assets/images/Skillwise_logo.jpg" alt="SkillWise"></a>
 
-      <a>
-        <img src="./assets/images/Skillwise_logo.jpg" width="50" height="10" alt="SkillWise home">
-      </a>
-
+      <!-- Navbar -->
       <nav class="navbar" data-navbar>
-
-        <div class="navbar-top">
-          <a >
-            <img src="./assets/images/Skillwise_logo.jpg" width="50" height="10" alt="SkillWise home">
-          </a>
-
-          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
-            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
-          </button>
-        </div>
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <a href="#" class="navbar-link title-sm" data-nav-link>Home</a>
-          </li>
-
-          <li class="navbar-item">
-            <a href="#" class="navbar-link title-sm" data-nav-link>Courses</a>
-          </li>
-
-          <li class="navbar-item">
-            <a href="#" class="navbar-link title-sm" data-nav-link>Blog</a>
-          </li>
-
-          <li class="navbar-item">
-            <a href="#" class="navbar-link title-sm" data-nav-link>Contacts</a>
-          </li>
-
-        </ul>
-
+        <a href="#" class="navbar-link">Home</a>
+        <a href="#" class="navbar-link">Courses</a>
+        <a href="#" class="navbar-link">Blog</a>
+        <a href="#" class="navbar-link">Contacts</a>
+        <a href="#" class="btn btn-secondary">Start Free Trial</a>
+        <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>&#10005;</button>
       </nav>
 
-      <a href="#" class="btn btn-secondary">Start Free Trial</a>
-
-      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
-        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
-      </button>
-
-      <div class="overlay" data-overlay data-nav-toggler></div>
-
+      <!-- Open Navbar Button -->
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>&#9776;</button>
     </div>
   </header>
-<br><br><br><br><br>
+
+  <!-- Content Wrapper to prevent overlap -->
+  <div class="content-wrapper">
+    <!-- Newly Added Section (After Navbar) -->
+    <div class="container" >
+      <h1 class="headline-md section-title">
+        <span class="highlight" >Copyright Policy </span> 
+      </h1>
+      <div>
+      <h2>
+      <p class="title-md">At SkillWise, we respect intellectual property rights and strive to protect them. By using our platform, you agree to follow this policy. Please read the following points carefully:</p></h2></div>
+      
+    </div>
+  </div>
+
+  <!-- Main Section -->
   <main>
     <section class="policy-section">
       <div class="container">
-      
-        <h2 class="headline-md section-title">
-            Copyright Policy
-          </h2>
-
-        
-        <p class="title-md">At SkillWise, we respect intellectual property rights and strive to protect them. By using our platform, you agree to follow this policy. Please read the following points carefully:</p>
-        <br>
         <div class="policy-content">
-
           <h2 class="title-md">1. Ownership of Content</h2>
           <p>All content on SkillWise, including text, images, and media, is owned by SkillWise or its content partners. This content is protected by international copyright laws.</p>
-          <br>
+
           <h2 class="title-md">2. User-Generated Content</h2>
           <p>Users must own the copyright to the material they upload or have obtained permission to use it. By uploading content, you grant SkillWise a non-exclusive, worldwide license to use it on our platform.</p>
-          <br>
+
           <h2 class="title-md">3. Copyright Infringement</h2>
           <p>We take copyright violations seriously. If you believe content on SkillWise infringes your rights, please notify us. We'll take necessary actions, including removing the content if required.</p>
-          <br>
+
           <h2 class="title-md">4. Reporting Copyright Violations</h2>
           <p>To report a violation, include the following in your notice: a description of the copyrighted work, the infringing content’s location (URL), your contact information, and a statement of good faith belief in the violation.</p>
-          <br>
+
           <h2 class="title-md">5. Fair Use and Educational Purpose</h2>
           <p>We respect fair use doctrine. Users must ensure their use of copyrighted materials aligns with fair use principles, especially when utilizing content for educational purposes.</p>
-          <br>
+
           <h2 class="title-md">6. License to Access and Use</h2>
           <p>Content on SkillWise is licensed for personal, non-commercial use. Redistribution or modification of the content without permission from SkillWise or the copyright holder is prohibited.</p>
-          <br>
+
           <h2 class="title-md">7. DMCA Compliance</h2>
           <p>SkillWise complies with the DMCA and responds to valid DMCA takedown notices. Repeat infringers may be banned from our platform.</p>
-          <br>
+
           <h2 class="title-md">8. Copyright Dispute Resolution</h2>
           <p>In case of disputes, we encourage amicable resolution. However, SkillWise reserves the right to remove disputed content while an investigation is underway.</p>
-          <br>
+
           <h2 class="title-md">9. User Responsibilities</h2>
           <p>Users are responsible for ensuring their use of content complies with copyright laws. Unauthorized copying or distribution of materials is not allowed.</p>
-          <br>
-          <h2 class="title-md">10. Policy Modifications</h2>
-          <p>SkillWise may update this policy periodically. We recommend users check this page regularly to stay informed of any changes. Continued use of the platform after changes implies acceptance of the updated policy.</p>
-          <br>
+
+          <h2 class="title-md">10. Amendments</h2>
+          <p>SkillWise reserves the right to amend this policy at any time. Continued use of the platform signifies acceptance of the updated policy.</p>
         </div>
       </div>
     </section>
-    <br><br>
   </main>
-  <br><br><br><br><br>
 
-
-
-
-
-  <!-- 
-   - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
-
-  <!-- 
-    - ionicon
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 SkillWise. All Rights Reserved.</p>
+  </footer>
 
 </body>
 
