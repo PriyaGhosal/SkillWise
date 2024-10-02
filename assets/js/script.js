@@ -64,3 +64,29 @@ const headerActive = function () {
 }
 
 window.addEventListener("scroll", headerActive);
+
+
+const toggleSwitch = document.getElementById('theme-toggle');
+const lightModeLink = document.getElementById('light-mode');
+const darkModeLink = document.getElementById('dark-mode');
+
+// Check for saved user preference
+const currentTheme = localStorage.getItem('theme') || 'light';
+if (currentTheme === 'dark') {
+  darkModeLink.removeAttribute('disabled');
+  lightModeLink.setAttribute('disabled', 'true');
+  toggleSwitch.checked = true;
+}
+
+toggleSwitch.addEventListener('change', function() {
+  if (this.checked) {
+    darkModeLink.removeAttribute('disabled');
+    lightModeLink.setAttribute('disabled', 'true');
+    localStorage.setItem('theme', 'dark');
+  } else {
+    darkModeLink.setAttribute('disabled', 'true');
+    lightModeLink.removeAttribute('disabled');
+    localStorage.setItem('theme', 'light');
+  }
+});
+

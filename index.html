@@ -21,12 +21,17 @@
   <!-- 
     - custom font link
   -->
-  <link rel="stylesheet" href="./assets/font/font.css">
+  <link rel="stylesheet" href="./assets/font/font.css" >
 
   <!-- 
     - custom css link
   -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/style.css" id="light-mode">
+
+  <!-- dark mode css -->
+  <link rel="stylesheet" href="./assets/css/darkmode.css" id="dark-mode" disabled>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0" />
 
   <!-- 
     - preload images
@@ -94,6 +99,17 @@
         </ul>
 
       </nav>
+      <label class="switch">
+        <input type="checkbox" id="theme-toggle">
+        <span class="slider round">
+          <span class="material-symbols-outlined icon sun">
+            light_mode
+            </span>
+          <span class="material-symbols-outlined icon moon">
+            dark_mode
+            </span>
+        </span>
+      </label>
 
       <a href="#" class="btn btn-secondary">Start Free Trial</a>
 
@@ -102,7 +118,7 @@
       </button>
 
       <div class="overlay" data-overlay data-nav-toggler></div>
-
+    
     </div>
   </header>
 
@@ -155,7 +171,7 @@
       -->
 
       <section class="section category has-bg-image" aria-labelledby="category-label"
-        style="background-image: url('./assets/images/category-bg.png')">
+        >
         <div class="container">
 
           <p class="title-sm text-center section-subtitle" id="category-label">Course Categories</p>
@@ -369,7 +385,7 @@
       -->
 
       <section class="section course has-bg-image" aria-labelledby="course-label"
-        style="background-image: url('./assets/images/course-bg.png')">
+        >
         <div class="container">
 
           <p class="title-sm section-subtitle text-center">Featured Courses</p>
@@ -724,7 +740,7 @@
     - #FOOTER
   -->
 
-  <footer class="footer has-bg-image" style="background-image: url('./assets/images/footer-bg.png')">
+  <footer class="footer has-bg-image" >
 
     <div class="section footer-top">
       <div class="container">
