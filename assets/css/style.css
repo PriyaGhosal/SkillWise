@@ -27,6 +27,9 @@
   --white: hsl(0, 0%, 100%);
   --black: hsl(0, 0%, 0%);
   --black_10: hsla(0, 0%, 0%, 0.1);
+  --dark-oxford-blue: hsl(224, 53%, 20%); 
+
+
 
   /**
    * typography
@@ -675,6 +678,97 @@ body.nav-active { overflow: hidden; }
 }
 
 .copyright { font-weight: var(--fw-500); }
+
+
+#instapost1 {
+  transition: transform 0.3s ease; 
+}
+
+#instapost1:hover {
+  transform: scale(1.15); 
+}
+
+#instapost2 {
+  transition: transform 0.3s ease; 
+}
+
+#instapost2:hover {
+  transform: scale(1.15); 
+}
+
+#instapost3 {
+  transition: transform 0.3s ease; 
+}
+
+#instapost3:hover {
+  transform: scale(1.15); 
+}
+
+#instapost4 {
+  transition: transform 0.3s ease; 
+}
+
+#instapost4:hover {
+  transform: scale(1.15); 
+}
+
+#instapost5 {
+  transition: transform 0.3s ease; 
+}
+
+#instapost5:hover {
+  transform: scale(1.15); 
+}
+
+#instapost6 {
+  transition: transform 0.3s ease; 
+}
+
+#instapost6:hover {
+  transform: scale(1.15); 
+}
+
+
+#footer-logo {
+  transition: transform 0.3s ease; 
+}
+
+#footer-logo:hover {
+  transform: scale(1.05); 
+}
+
+#social-link1 {
+  transition: transform 0.3s ease; 
+}
+
+#social-link1:hover {
+  transform: scale(1.1); 
+}
+
+#social-link2 {
+  transition: transform 0.3s ease; 
+}
+
+#social-link2:hover {
+  transform: scale(1.1); 
+}
+
+#social-link3 {
+  transition: transform 0.3s ease; 
+}
+
+#social-link3:hover {
+  transform: scale(1.1); 
+}
+
+#social-link4 {
+  transition: transform 0.3s ease; 
+}
+
+#social-link4:hover {
+  transform: scale(1.1); 
+}
+
 
 
 
