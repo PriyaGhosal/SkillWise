@@ -566,6 +566,9 @@ body.nav-active { overflow: hidden; }
 
 .course .btn { margin-inline: auto; }
 
+.data_science_page .course-card{
+  height: 100%;
+} 
 
 /*-----------------------------------*\
   #CTA
