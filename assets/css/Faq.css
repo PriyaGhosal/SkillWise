@@ -15,7 +15,9 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
   border-radius: 8px;
 }
-
+.hero-banner{
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
 .item {
   background-color: #e7ecf5;
   margin-bottom: 10px;

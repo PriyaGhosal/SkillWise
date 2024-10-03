@@ -197,6 +197,7 @@ body.nav-active { overflow: hidden; }
 
 .btn {
   background-color: #1A1A1A;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.8);
 }
 
 
@@ -251,6 +252,7 @@ body.nav-active { overflow: hidden; }
   padding: 24px;
   border-radius: var(--radius-8);
   transition: var(--transition);
+  border-radius: 5vh ;
 }
 
 .card:is(:hover, :focus-within) { box-shadow: var(--shadow-1); }
@@ -261,8 +263,9 @@ body.nav-active { overflow: hidden; }
   left: 0;
   width: 100%;
   height: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+  border-radius: 5vh ;
 }
-
 .w-100 { width: 100%; }
 
 .img-cover {
@@ -270,11 +273,6 @@ body.nav-active { overflow: hidden; }
   height: 100%;
   object-fit: cover;
 }
-
-
-
-
-
 /*-----------------------------------*\
   #PRELOADER
 \*-----------------------------------*/
@@ -599,15 +597,19 @@ body.nav-active { overflow: hidden; }
   display: flex;
   flex-direction: column;
   gap: 24px;
+
 }
 
-.blog-card:is(:hover, :focus-within) { border-color: var(--light-coral); }
+.blog-card:is(:hover, :focus-within) {
+   border-color: var(--light-coral);
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
 
 .blog-card .card-banner {
   height: 160px;
   background-color: var(--light-gray);
   overflow: hidden;
   border-radius: var(--radius-4);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .blog-card p{
@@ -1095,7 +1097,7 @@ body.dark-mode h1{
   color: var(--oxford-blue);
 }
 
-}
+
 form {
   max-width: 400px;
   margin: auto;
@@ -1175,6 +1177,7 @@ button:hover {
   margin-bottom: 5px;
 }
 
+
 }
 
 /* Search Bar */
@@ -1245,12 +1248,6 @@ button:hover {
   top:0;
   left:0;
 }
-
-=======
-
-}
-
-
 @media(max-width:768px) {
 
   .footer-list li a.title-sm {
