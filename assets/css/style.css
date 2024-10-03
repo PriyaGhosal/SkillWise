@@ -25,6 +25,7 @@
   --light-gray: hsl(0, 0%, 80%);
   --keppei: hsl(173, 60%, 47%);
   --white: hsl(0, 0%, 100%);
+  --snow:#FFFAFA;
   --black: hsl(0, 0%, 0%);
   --black_10: hsla(0, 0%, 0%, 0.1);
   --dark-oxford-blue: hsl(224, 53%, 20%); 
@@ -125,7 +126,7 @@ html {
 }
 
 body {
-  background-color: var(--white);
+  background-color: var(--snow);
   color: var(--roman-silver);
   font-size: 1.6rem;
   line-height: 1.5;
@@ -1095,7 +1096,7 @@ body.dark-mode h1{
   color: var(--oxford-blue);
 }
 
-}
+
 form {
   max-width: 400px;
   margin: auto;
@@ -1246,9 +1247,7 @@ button:hover {
   left:0;
 }
 
-=======
 
-}
 
 
 @media(max-width:768px) {
