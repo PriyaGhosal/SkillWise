@@ -600,14 +600,20 @@ body.nav-active { overflow: hidden; }
 \*-----------------------------------*/
 
 .cta {
-  background-color: var(--keppei);
+  background-color: #008080;
   padding: 48px 24px;
   text-align: center;
 }
 
 .cta .headline-md { color: var(--white); }
 
-.cta .btn { margin-inline: auto; }
+.cta .btn { margin-inline: auto; 
+  color: var(--white);
+  background-color: var(--light-coral); 
+}
+.cta .btn:is(:hover, :focus-within) { 
+  box-shadow: 0 0 0 2px var(--white), 0 0 0 5px var(--light-coral);
+   }
 
 
 /*-----------------------------------*\
