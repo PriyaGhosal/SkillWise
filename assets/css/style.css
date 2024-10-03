@@ -141,7 +141,10 @@ body.nav-active { overflow: hidden; }
   #REUSED STYLE
 \*-----------------------------------*/
 
-.container { padding-inline: 16px; }
+.container { 
+  padding-inline: 16px;
+  overflow: hidden;
+}
 
 .headline-lg,
 .headline-md,
@@ -1156,9 +1159,9 @@ button:hover {
    display: flex;
    align-items: center;
    justify-content: center;
-   width: fit-content;
    gap: 30px;
-   width:max-content
+   width:100%;
+   flex-wrap: wrap;
  }
   .footer-list-title{
    display: none;
