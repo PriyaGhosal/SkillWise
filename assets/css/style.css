@@ -769,6 +769,13 @@ body.nav-active { overflow: hidden; }
 #social-link4:hover {
   transform: scale(1.1); 
 }
+#social-link5 {
+  transition: transform 0.3s ease;
+}
+
+#social-link5:hover {
+  transform: scale(1.1);
+}
 
 
 
