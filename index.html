@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!--
+  <!-- 
     - primary meta tags
   -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -15,23 +15,22 @@
   <meta name="title" content="SkillWise">
   <meta name="description" content="This is a education html template made by Priya Ghosal">
 
-  <!--
+  <!-- 
     - favicon
   -->
   <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
 
-  <!--
+  <!-- 
     - custom font link
   -->
   <link rel="stylesheet" href="./assets/font/font.css">
 
-  <!--
+  <!-- 
     - custom css link
   -->
-    <link rel="stylesheet" href="./assets/css/counter.css">
   <link rel="stylesheet" href="./assets/css/style.css">
 
-  <!--
+  <!-- 
     - preload images
   -->
   <link rel="preload" as="image" href="./assets/images/hero-banner.png">
@@ -39,9 +38,12 @@
   <script src="config.js"></script>
 </head>
 
+<!-- Animation on Scroll -->
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 <body >
 
-  <!--
+  <!-- 
     - PRELOADER
   -->
 
@@ -53,21 +55,21 @@
 
 
 
-  <!--
+  <!-- 
     - #HEADER
   -->
 
   <header class="header" data-header>
 
-
-    <div class="container">
+    
+    <div class="container" >
 
       <a href="#">
         <img src="./assets/images/Skillwise_logo.jpg" width="50" height="10" alt="SkillWise home">
       </a>
 
       <nav class="navbar" data-navbar>
-
+     
 
         <div class="navbar-top">
 
@@ -80,7 +82,7 @@
         </div>
 
         <ul class="navbar-list">
-
+          
 
           <li class="navbar-item">
             <a href="#home" class="navbar-link title-sm" data-nav-link>Home</a>
@@ -136,7 +138,7 @@
 </clipPath>
 </defs>
 </svg>
-
+                 
 
         </button>
     </div>
@@ -159,7 +161,7 @@
   <main>
     <article>
 
-      <!--
+      <!-- 
         - #HERO
       -->
 
@@ -169,23 +171,23 @@
 
           <div class="hero-content">
 
-            <h1 class="headline-lg" id="hero-label">
+            <h1 class="headline-lg" id="hero-label" data-aos="zoom-out">
               Better <span class="span">Learning Future</span> Starts With SkillWise
             </h1>
 
-            <p class="title-md has-before">
+            <p class="title-md has-before"  data-aos="fade-right">
               It is long established fact that reader distracted by the readable content.
             </p>
 
-            <div class="btn-group">
+            <div class="btn-group" data-aos="flip-down">
               <a href="#" class="btn btn-primary">Get Started Now</a>
 
-
+              
             </div>
 
           </div>
 
-          <figure class="hero-banner">
+          <figure class="hero-banner" data-aos="fade-left">
             <img src="./assets/images/hero-banner.png" width="590" height="620" alt="hero banner" class="w-100">
           </figure>
 
@@ -196,7 +198,7 @@
 
 
 
-      <!--
+      <!-- 
         - #CATEGORY
       -->
 
@@ -204,19 +206,19 @@
         style="background-image: url('./assets/images/category-bg.png')">
         <div class="container">
 
-          <p class="title-sm text-center section-subtitle" id="category-label">Course Categories</p>
+          <p class="title-sm text-center section-subtitle" id="category-label" data-aos="flip-down">Course Categories</p>
 
-          <h2 class="headline-md text-center section-title">
+          <h2 class="headline-md text-center section-title" data-aos="fade-down">
             Browse Top <span class="span has-after">Categories</span>
           </h2>
 
           <ul class="grid-list">
 
             <li>
-              <div class="card category-card">
+              <div class="card category-card" data-aos="fade-right">
 
                 <div class="card-icon">
-                  <img src="./assets/images/category-1.svg" width="65" height="65" loading="lazy"
+                  <img src="./assets/images/category-1.svg" width="72" height="72" loading="lazy"
                     alt="Data Science icon">
                 </div>
 
@@ -225,17 +227,17 @@
 
                   <p class="title-sm">68 Courses</p>
                 </div>
-
+                  
                 <a href="data-science.html" class="layer-link" aria-label="Data Science Category"></a>
 
               </div>
             </li>
 
             <li>
-              <div class="card category-card">
+              <div class="card category-card" data-aos="fade-right">
 
                 <div class="card-icon">
-                  <img src="./assets/images/category-2.svg" width="65" height="65" loading="lazy"
+                  <img src="./assets/images/category-2.svg" width="72" height="72" loading="lazy"
                     alt="UI/UX Design icon">
                 </div>
 
@@ -251,10 +253,10 @@
             </li>
 
             <li>
-              <div class="card category-card">
+              <div class="card category-card" data-aos="fade-right">
 
                 <div class="card-icon">
-                  <img src="./assets/images/category-3.svg" width="65" height="65" loading="lazy"
+                  <img src="./assets/images/category-3.svg" width="72" height="72" loading="lazy"
                     alt="Modern Physics icon">
                 </div>
 
@@ -270,10 +272,10 @@
             </li>
 
             <li>
-              <div class="card category-card">
+              <div class="card category-card" data-aos="fade-right">
 
                 <div class="card-icon">
-                  <img src="./assets/images/category-4.svg" width="65" height="65 " loading="lazy"
+                  <img src="./assets/images/category-4.svg" width="72" height="72" loading="lazy"
                     alt="Music Production icon">
                 </div>
 
@@ -289,10 +291,10 @@
             </li>
 
             <li>
-              <div class="card category-card">
+              <div class="card category-card" data-aos="fade-right">
 
                 <div class="card-icon">
-                  <img src="./assets/images/category-5.svg" width="65" height="65" loading="lazy"
+                  <img src="./assets/images/marketing.jpeg" width="72" height="72" loading="lazy"
                     alt="Data Science icon">
                 </div>
 
@@ -308,10 +310,10 @@
             </li>
 
             <li>
-              <div class="card category-card">
+              <div class="card category-card" data-aos="fade-right">
 
                 <div class="card-icon">
-                  <img src="./assets/images/category-6.svg" width="65" height="65" loading="lazy" alt="Finances icon">
+                  <img src="./assets/images/category-5.svg" width="72" height="72" loading="lazy" alt="Finances icon">
                 </div>
 
                 <div>
@@ -327,7 +329,7 @@
 
           </ul>
 
-          <a href="#" class="btn btn-primary">View All Categories</a>
+          <a href="#" class="btn btn-primary" data-aos="flip-left">View All Categories</a>
 
         </div>
       </section>
@@ -336,19 +338,23 @@
 
 
 
-      <!--
+      <!-- 
         - #ABOUT
       -->
 
       <section id="about" class="section about" aria-labelledby="about-label">
         <div class="container">
 
-          <figure class="about-banner">
+          <figure class="about-banner" data-aos="fade-down"
+          data-aos-offset="200"
+          data-aos-easing="ease-in-sine">
             <img src="./assets/images/about-banner.png" width="775" height="685" loading="lazy" alt="about banner"
               class="w-100">
           </figure>
 
-          <div class="about-content">
+          <div class="about-content" data-aos="fade-up"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine">
 
             <p class="title-sm section-subtitle" id="about-label">About SkillWise</p>
 
@@ -358,7 +364,7 @@
 
             <p class="title-sm section-text">
               There are numerous versions of educational content available, but the majority have suffered alteration
-              in some form, by injected humour.
+              in some form, by injected humour.              
             </p>
 
             <ul class="progress-list">
@@ -410,7 +416,7 @@
 
 
 
-      <!--
+      <!-- 
         - #COURSE
       -->
 
@@ -420,14 +426,14 @@
 
           <p class="title-sm section-subtitle text-center">Featured Courses</p>
 
-          <h2 class="headline-md section-title text-center" id="course-label">
+          <h2 class="headline-md section-title text-center" id="course-label" data-aos="fade-down">
             Choose Unlimited <span class="span has-after">Courses</span>
           </h2>
 
           <ul class="grid-list">
 
             <li class="card-container">
-              <div class="card course-card">
+              <div class="card course-card" data-aos="fade-right">
 
                 <figure class="card-banner">
                   <img src="./assets/images/course-1.png" width="370" height="248" loading="lazy"
@@ -478,7 +484,7 @@
             </li>
 
             <li class="card-container">
-              <div class="card course-card">
+              <div class="card course-card" data-aos="fade-left">
 
                 <figure class="card-banner">
                   <img src="./assets/images/course-2.png" width="370" height="248" loading="lazy"
@@ -529,7 +535,7 @@
             </li>
 
             <li class="card-container">
-              <div class="card course-card">
+              <div class="card course-card" data-aos="fade-right">
 
                 <figure class="card-banner">
                   <img src="./assets/images/course-3.png" width="370" height="248" loading="lazy"
@@ -580,7 +586,7 @@
             </li>
 
             <li class="card-container">
-              <div class="card course-card">
+              <div class="card course-card" data-aos="fade-left">
 
                 <figure class="card-banner">
                   <img src="./assets/images/course-4.png" width="370" height="248" loading="lazy"
@@ -631,7 +637,7 @@
             </li>
 
             <li class="card-container">
-              <div class="card course-card">
+              <div class="card course-card" data-aos="fade-right">
 
                 <figure class="card-banner">
                   <img src="./assets/images/course-5.png" width="370" height="248" loading="lazy"
@@ -682,7 +688,7 @@
             </li>
 
             <li class="card-container">
-              <div class="card course-card">
+              <div class="card course-card" data-aos="fade-left">
 
                 <figure class="card-banner">
                   <img src="./assets/images/course-6.png" width="370" height="248" loading="lazy"
@@ -734,62 +740,27 @@
 
           </ul>
 
-          <a href="#" class="btn btn-primary">View All Courses</a>
+          <a href="#" class="btn btn-primary" data-aos="zoom-out">View All Courses</a>
 
         </div>
       </section>
+
+
+
 
 
       <!-- 
-        - #COUNTER
-      -->
-
-      <section>
-        <div class="counter">
-          <div class="box one">
-            <i class="fa-solid fa-user-graduate"></i>
-            <div>
-              <h1 data-count="1000">0 +</h1>
-              <p>Students</p>
-            </div>
-          </div>
-          <div class="box two">
-            <i class="fa-solid fa-laptop-code"></i>
-            <div>
-              <h1 data-count="100">0 +</h1>
-              <p>Courses</p>
-            </div>
-          </div>
-          <div class="box three">
-            <i class="fa-regular fa-clock"></i>
-            <div>
-              <h1 data-count="15000">0 +</h1>
-              <p>Learning Hours</p>
-            </div>
-          </div>
-          <div class="box four">
-            <i class="fa-solid fa-users"></i>
-            <div>
-              <h1 data-count="2000">0 +</h1>
-              <p>Visitors</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-
-      <!--
         - #CTA
       -->
 
       <section class="cta" aria-labelledby="cta-label">
         <div class="container">
 
-          <h2 class="headline-md section-title" id="cta-label">
+          <h2 class="headline-md section-title" id="cta-label" data-aos="zoom-in">
             Education Is About Creating Leaders For Tomorrow
           </h2>
 
-          <a href="signin.html" class="btn btn-tertiary">Register Today</a>
+          <a href="signin.html" class="btn btn-tertiary" data-aos="fade-left">Register Today</a>
 
         </div>
       </section>
@@ -797,7 +768,7 @@
 
 
 
-      <!--
+      <!-- 
         - #BLOG
       -->
 
@@ -807,12 +778,14 @@
 
           <p class="title-sm text-center section-subtitle" id="category-label">Featured Blogs</p>
 
-          <h2 class="headline-md text-center section-title">
+          <h2 class="headline-md text-center section-title" data-aos="fade-down">
             Learn with <span class="span has-after">Articles</span>
           </h2>
 
           <ul class="grid-list">
-            <li class="card-container">
+            <li class="card-container" data-aos="fade-right"
+            data-aos-offset="100"
+            data-aos-easing="ease-in-sine">
               <div class="card blog-card">
                 <figure class="card-banner">
                   <img src="./assets/images/course-1.png" width="370" height="248" loading="lazy"
@@ -827,7 +800,9 @@
                 </div>
               </div>
             </li>
-            <li class="card-container">
+            <li class="card-container" data-aos="fade-right"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine">
               <div class="card blog-card">
                 <figure class="card-banner">
                   <img src="./assets/images/course-2.png" width="370" height="248" loading="lazy"
@@ -842,7 +817,9 @@
                 </div>
               </div>
             </li>
-            <li class="card-container">
+            <li class="card-container"data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
               <div class="card blog-card">
                 <figure class="card-banner">
                   <img src="./assets/images/course-6.png" width="370" height="248" loading="lazy"
@@ -859,7 +836,7 @@
             </li>
           </ul>
 
-          <a href="./pages/blog.html" class="btn btn-primary">View All Blogs</a>
+          <a href="./pages/blog.html" class="btn btn-primary" data-aos="zoom-in">View All Blogs</a>
         </div>
       </section>
 
@@ -894,7 +871,7 @@
           <ul class="social-list">
 
             <li>
-
+              
               <a href="#" class="social-link" id="social-link1">
                 <img src="./assets/images/facebook.svg" width="40" height="40" loading="lazy" alt="facebook">
               </a>
@@ -1040,21 +1017,18 @@
       </div>
     </div>
 
-    <!-- Scroll to Top Button -->
-    <button id="scrollToTopBtn" title="Go to top">↑</button>
-
-    <!--
+    <!-- 
     - #Contact Us
   -->
 
     <section id="contact" class="cta" aria-labelledby="cta-label">
       <div class="container">
 
-        <h2 class="headline-md section-title" id="cta-label">
+        <h2 class="headline-md section-title" id="cta-label" data-aos="fade-right">
           Contact Us
         </h2>
 
-        <form id="contact-form">
+        <form id="contact-form" data-aos="fade-left">
           <input type="text" name="name" placeholder="Your Name" required>
           <input type="email" name="email" placeholder="Your Email" required>
           <textarea name="message" placeholder="Your Message" required></textarea>
@@ -1080,11 +1054,11 @@
 
 
 
-  <!--
+  <!-- 
    - custom js link
   -->
   <script src="./assets/js/script.js"></script>
-  <script src="./assets/js/counter.js"></script>
+
   <script src="assets/js/dark.js"></script>
 
   <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
@@ -1104,8 +1078,14 @@
     });
   </script>
 
+  <!-- Animation on Scroll -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
-  <!--
+
+  <!-- 
     - ionicon
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
