@@ -1077,6 +1077,11 @@ body.dark-mode .btn {
   color: var(--oxford-blue);
 }
 
+body.dark-mode .btn-tertiary {
+  background-color: var(--oxford-blue);
+  color: var(--white);
+}
+
 body.dark-mode #theme-toggle {
   background-color: var(--oxford-blue);
 
