@@ -4,7 +4,7 @@
   "description": "A platform for skill development and collaboration",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node server.js"
   },
   "author": "Vansh Chitransh",
   "license": "ISC",

@@ -23,25 +23,28 @@
   <!-- 
     - custom font link
   -->
-  <link rel="stylesheet" href="./assets/font/font.css">
+  <link rel="stylesheet" href="/font/font.css">
 
   <!-- 
     - custom css link
   -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="/css/style.css">
 
   <!-- 
     - preload images
   -->
-  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
-  <link rel="preload" as="image" href="./assets/images/hero-bg.png">
-  <script src="config.js"></script>
+  <link rel="preload" as="image" href="/images/hero-banner.png">
+  <link rel="preload" as="image" href="/images/hero-bg.png">
+
 </head>
 
 <!-- Animation on Scroll -->
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 <body >
+
+  <script src="path/to/config.js"></script>
+<script src="path/to/other-script.js"></script>
 
   <!-- 
     - PRELOADER
@@ -65,7 +68,7 @@
     <div class="container" >
 
       <a href="#">
-        <img src="./assets/images/Skillwise_logo-removebg-preview.png" width="50" height="10" alt="SkillWise home">
+        <img src="/images/Skillwise_logo-removebg-preview.png" width="50" height="10" alt="SkillWise home">
       </a>
 
       <nav class="navbar" data-navbar>
@@ -73,7 +76,7 @@
 
         <div class="navbar-top">
 
-            <img src="./assets/images/Skillwise_logo.jpg" width="50" height="10" alt="SkillWise home">
+            <img src="/images/Skillwise_logo.jpg" width="50" height="10" alt="SkillWise home">
           </a>
 
           <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
@@ -172,7 +175,7 @@
       -->
 
       <section id="home" class="section hero has-bg-image" aria-labelledby="hero-label"
-        style="background-image: url('./assets/images/hero-bg.png')">
+        style="background-image: url('/images/hero-bg.png')">
         <div class="container">
 
           <div class="hero-content">
@@ -194,7 +197,7 @@
           </div>
 
           <figure class="hero-banner" data-aos="fade-left">
-            <img src="./assets/images/hero-banner.png" width="590" height="620" alt="hero banner" class="w-100">
+            <img src="/images/hero-banner.png" width="590" height="620" alt="hero banner" class="w-100">
           </figure>
 
         </div>
@@ -209,7 +212,7 @@
       -->
 
       <section    class="section category has-bg-image" aria-labelledby="category-label"
-        style="background-image: url('./assets/images/category-bg.png')">
+        style="background-image: url('/images/category-bg.png')">
         <div class="container">
 
           <p class="title-sm text-center section-subtitle" id="category-label" data-aos="flip-down">Course Categories</p>
@@ -224,7 +227,7 @@
               <div class="card category-card" data-aos="fade-right">
 
                 <div class="card-icon">
-                  <img src="./assets/images/category-1.svg" width="72" height="72" loading="lazy"
+                  <img src="/images/category-1.svg" width="72" height="72" loading="lazy"
                     alt="Data Science icon">
                 </div>
 
@@ -243,7 +246,7 @@
               <div class="card category-card" data-aos="fade-right">
 
                 <div class="card-icon">
-                  <img src="./assets/images/category-2.svg" width="72" height="72" loading="lazy"
+                  <img src="/images/category-2.svg" width="72" height="72" loading="lazy"
                     alt="UI/UX Design icon">
                 </div>
 
@@ -262,7 +265,7 @@
               <div class="card category-card" data-aos="fade-right">
 
                 <div class="card-icon">
-                  <img src="./assets/images/category-3.svg" width="72" height="72" loading="lazy"
+                  <img src="/images/category-3.svg" width="72" height="72" loading="lazy"
                     alt="Modern Physics icon">
                 </div>
 
@@ -281,7 +284,7 @@
               <div class="card category-card" data-aos="fade-right">
 
                 <div class="card-icon">
-                  <img src="./assets/images/category-4.svg" width="72" height="72" loading="lazy"
+                  <img src="/images/category-4.svg" width="72" height="72" loading="lazy"
                     alt="Music Production icon">
                 </div>
 
@@ -300,7 +303,7 @@
               <div class="card category-card" data-aos="fade-right">
 
                 <div class="card-icon">
-                  <img src="./assets/images/marketing.jpeg" width="72" height="72" loading="lazy"
+                  <img src="/images/marketing.jpeg" width="72" height="72" loading="lazy"
                     alt="Data Science icon">
                 </div>
 
@@ -319,7 +322,7 @@
               <div class="card category-card" data-aos="fade-right">
 
                 <div class="card-icon">
-                  <img src="./assets/images/category-5.svg" width="72" height="72" loading="lazy" alt="Finances icon">
+                  <img src="/images/category-5.svg" width="72" height="72" loading="lazy" alt="Finances icon">
                 </div>
 
                 <div>
@@ -354,7 +357,7 @@
           <figure class="about-banner" data-aos="fade-down"
           data-aos-offset="200"
           data-aos-easing="ease-in-sine">
-            <img src="./assets/images/about-banner.png" width="775" height="685" loading="lazy" alt="about banner"
+            <img src="/images/about-banner.png" width="775" height="685" loading="lazy" alt="about banner"
               class="w-100">
           </figure>
 
@@ -427,7 +430,7 @@
       -->
 
       <section id="courses" id="pricing" class="section course has-bg-image" aria-labelledby="course-label"
-        style="background-image: url('./assets/images/course-bg.png')">
+        style="background-image: url('/images/course-bg.png')">
         <div class="container">
 
           <p class="title-sm section-subtitle text-center">Featured Courses</p>
@@ -442,7 +445,7 @@
               <div class="card course-card" data-aos="fade-right">
 
                 <figure class="card-banner">
-                  <img src="./assets/images/course-1.png" width="370" height="248" loading="lazy"
+                  <img src="/images/course-1.png" width="370" height="248" loading="lazy"
                     alt="Basic Fundamentals of Interior & Graphics Design" class="img-cover">
                 </figure>
 
@@ -453,10 +456,10 @@
                     <p class="title-lg card-price">$29.28</p>
 
                     <div class="rating-wrapper">
-                      <img src="./assets/images/star-fill.svg" width="16" height="16" loading="lazy" alt="">
-                      <img src="./assets/images/star-fill.svg" width="16" height="16" loading="lazy" alt="">
-                      <img src="./assets/images/star-fill.svg" width="16" height="16" loading="lazy" alt="">
-                      <img src="./assets/images/star-fill.svg" width="16" height="16" loading="lazy" alt="">
+                      <img src="/images/star-fill.svg" width="16" height="16" loading="lazy" alt="">
+                      <img src="/images/star-fill.svg" width="16" height="16" loading="lazy" alt="">
+                      <img src="/images/star-fill.svg" width="16" height="16" loading="lazy" alt="">
+                      <img src="/images/star-fill.svg" width="16" height="16" loading="lazy" alt="">
                     </div>
 
                   </div>
@@ -468,13 +471,13 @@
                   <div class="card-meta wrapper">
 
                     <p class="title-sm">
-                      <img src="./assets/images/file-outline.svg" width="20" height="20" loading="lazy" alt="">
+                      <img src="/images/file-outline.svg" width="20" height="20" loading="lazy" alt="">
 
                       <span class="span">2 Lessons</span>
                     </p>
 
                     <p class="title-sm">
-                      <img src="./assets/images/user-outline.svg" width="20" height="20" loading="lazy" alt="">
+                      <img src="/images/user-outline.svg" width="20" height="20" loading="lazy" alt="">
 
                       <span class="span">4k Students</span>
                     </p>
@@ -493,7 +496,7 @@
               <div class="card course-card" data-aos="fade-left">
 
                 <figure class="card-banner">
-                  <img src="./assets/images/course-2.png" width="370" height="248" loading="lazy"
+                  <img src="/images/course-2.png" width="370" height="248" loading="lazy"
                     alt="Increasing Engagement with Instagram & Facebook" class="img-cover">
                 </figure>
 
@@ -504,10 +507,10 @@
                     <p class="title-lg card-price">Free</p>
 
                     <div class="rating-wrapper">
-                      <img src="./assets/images/star-fill.svg" width="16" height="16" loading="lazy" alt="">
-                      <img src="./assets/images/star-fill.svg" width="16" height="16" loading="lazy" alt="">
-                      <img src="./assets/images/star-fill.svg" width="16" height="16" loading="lazy" alt="">
-                      <img src="./assets/images/star-fill.svg" width="16" height="16" loading="lazy" alt="">
+                      <img src="/images/star-fill.svg" width="16" height="16" loading="lazy" alt="">
+                      <img src="/images/star-fill.svg" width="16" height="16" loading="lazy" alt="">
+                      <img src="/images/star-fill.svg" width="16" height="16" loading="lazy" alt="">
+                      <img src="/images/star-fill.svg" width="16" height="16" loading="lazy" alt="">
                     </div>
 
                   </div>
@@ -519,13 +522,13 @@
                   <div class="card-meta wrapper">
 
                     <p class="title-sm">
-                      <img src="./assets/images/file-outline.svg" width="20" height="20" loading="lazy" alt="">
+                      <img src="/images/file-outline.svg" width="20" height="20" loading="lazy" alt="">
 
                       <span class="span">2 Lessons</span>
                     </p>
 
                     <p class="title-sm">
-                      <img src="./assets/images/user-outline.svg" width="20" height="20" loading="lazy" alt="">
+                      <img src="/images/user-outline.svg" width="20" height="20" loading="lazy" alt="">
 
                       <span class="span">4k Students</span>
                     </p>
@@ -544,7 +547,7 @@
               <div class="card course-card" data-aos="fade-right">
 
                 <figure class="card-banner">
-                  <img src="./assets/images/course-3.png" width="370" height="248" loading="lazy"
+                  <img src="/images/course-3.png" width="370" height="248" loading="lazy"
                     alt="Introduction to Color Theory & Basic UI/UX" class="img-cover">
                 </figure>
 
@@ -555,10 +558,10 @@
                     <p class="title-lg card-price">$72.39</p>
 
                     <div class="rating-wrapper">
-                      <img src="./assets/images/star-fill.svg" width="16" height="16" loading="lazy" alt="">
-                      <img src="./assets/images/star-fill.svg" width="16" height="16" loading="lazy" alt="">
-                      <img src="./assets/images/star-fill.svg" width="16" height="16" loading="lazy" alt="">
-                      <img src="./assets/images/star-fill.svg" width="16" height="16" loading="lazy" alt="">
+                      <img src="/images/star-fill.svg" width="16" height="16" loading="lazy" alt="">
+                      <img src="/images/star-fill.svg" width="16" height="16" loading="lazy" alt="">
+                      <img src="/images/star-fill.svg" width="16" height="16" loading="lazy" alt="">
+                      <img src="/images/star-fill.svg" width="16" height="16" loading="lazy" alt="">
                     </div>
 
                   </div>
@@ -570,13 +573,13 @@
                   <div class="card-meta wrapper">
 
                     <p class="title-sm">
-                      <img src="./assets/images/file-outline.svg" width="20" height="20" loading="lazy" alt="">
+                      <img src="/images/file-outline.svg" width="20" height="20" loading="lazy" alt="">
 
                       <span class="span">2 Lessons</span>
                     </p>
 
                     <p class="title-sm">
-                      <img src="./assets/images/user-outline.svg" width="20" height="20" loading="lazy" alt="">
+                      <img src="/images/user-outline.svg" width="20" height="20" loading="lazy" alt="">
 
                       <span class="span">4k Students</span>
                     </p>
@@ -595,7 +598,7 @@
               <div class="card course-card" data-aos="fade-left">
 
                 <figure class="card-banner">
-                  <img src="./assets/images/course-4.png" width="370" height="248" loading="lazy"
+                  <img src="/images/course-4.png" width="370" height="248" loading="lazy"
                     alt="Financial Security Thinking and Principles Theory" class="img-cover">
                 </figure>
 
@@ -606,10 +609,10 @@
                     <p class="title-lg card-price">$72.39</p>
 
                     <div class="rating-wrapper">
-                      <img src="./assets/images/star-fill.svg" width="16" height="16" loading="lazy" alt="">
-                      <img src="./assets/images/star-fill.svg" width="16" height="16" loading="lazy" alt="">
-                      <img src="./assets/images/star-fill.svg" width="16" height="16" loading="lazy" alt="">
-                      <img src="./assets/images/star-fill.svg" width="16" height="16" loading="lazy" alt="">
+                      <img src="/images/star-fill.svg" width="16" height="16" loading="lazy" alt="">
+                      <img src="/images/star-fill.svg" width="16" height="16" loading="lazy" alt="">
+                      <img src="/images/star-fill.svg" width="16" height="16" loading="lazy" alt="">
+                      <img src="/images/star-fill.svg" width="16" height="16" loading="lazy" alt="">
                     </div>
 
                   </div>
@@ -621,13 +624,13 @@
                   <div class="card-meta wrapper">
 
                     <p class="title-sm">
-                      <img src="./assets/images/file-outline.svg" width="20" height="20" loading="lazy" alt="">
+                      <img src="/images/file-outline.svg" width="20" height="20" loading="lazy" alt="">
 
                       <span class="span">2 Lessons</span>
                     </p>
 
                     <p class="title-sm">
-                      <img src="./assets/images/user-outline.svg" width="20" height="20" loading="lazy" alt="">
+                      <img src="/images/user-outline.svg" width="20" height="20" loading="lazy" alt="">
 
                       <span class="span">4k Students</span>
                     </p>
@@ -646,7 +649,7 @@
               <div class="card course-card" data-aos="fade-right">
 
                 <figure class="card-banner">
-                  <img src="./assets/images/course-5.png" width="370" height="248" loading="lazy"
+                  <img src="/images/course-5.png" width="370" height="248" loading="lazy"
                     alt="Logo Design: From Concept to Presentation" class="img-cover">
                 </figure>
 
@@ -657,10 +660,10 @@
                     <p class="title-lg card-price">Free</p>
 
                     <div class="rating-wrapper">
-                      <img src="./assets/images/star-fill.svg" width="16" height="16" loading="lazy" alt="">
-                      <img src="./assets/images/star-fill.svg" width="16" height="16" loading="lazy" alt="">
-                      <img src="./assets/images/star-fill.svg" width="16" height="16" loading="lazy" alt="">
-                      <img src="./assets/images/star-fill.svg" width="16" height="16" loading="lazy" alt="">
+                      <img src="/images/star-fill.svg" width="16" height="16" loading="lazy" alt="">
+                      <img src="/images/star-fill.svg" width="16" height="16" loading="lazy" alt="">
+                      <img src="/images/star-fill.svg" width="16" height="16" loading="lazy" alt="">
+                      <img src="/images/star-fill.svg" width="16" height="16" loading="lazy" alt="">
                     </div>
 
                   </div>
@@ -672,13 +675,13 @@
                   <div class="card-meta wrapper">
 
                     <p class="title-sm">
-                      <img src="./assets/images/file-outline.svg" width="20" height="20" loading="lazy" alt="">
+                      <img src="/images/file-outline.svg" width="20" height="20" loading="lazy" alt="">
 
                       <span class="span">2 Lessons</span>
                     </p>
 
                     <p class="title-sm">
-                      <img src="./assets/images/user-outline.svg" width="20" height="20" loading="lazy" alt="">
+                      <img src="/images/user-outline.svg" width="20" height="20" loading="lazy" alt="">
 
                       <span class="span">4k Students</span>
                     </p>
@@ -697,7 +700,7 @@
               <div class="card course-card" data-aos="fade-left">
 
                 <figure class="card-banner">
-                  <img src="./assets/images/course-6.png" width="370" height="248" loading="lazy"
+                  <img src="/images/course-6.png" width="370" height="248" loading="lazy"
                     alt="Professional Ceramic Moulding for Beginners" class="img-cover">
                 </figure>
 
@@ -708,10 +711,10 @@
                     <p class="title-lg card-price">$29.82</p>
 
                     <div class="rating-wrapper">
-                      <img src="./assets/images/star-fill.svg" width="16" height="16" loading="lazy" alt="">
-                      <img src="./assets/images/star-fill.svg" width="16" height="16" loading="lazy" alt="">
-                      <img src="./assets/images/star-fill.svg" width="16" height="16" loading="lazy" alt="">
-                      <img src="./assets/images/star-fill.svg" width="16" height="16" loading="lazy" alt="">
+                      <img src="/images/star-fill.svg" width="16" height="16" loading="lazy" alt="">
+                      <img src="/images/star-fill.svg" width="16" height="16" loading="lazy" alt="">
+                      <img src="/images/star-fill.svg" width="16" height="16" loading="lazy" alt="">
+                      <img src="/images/star-fill.svg" width="16" height="16" loading="lazy" alt="">
                     </div>
 
                   </div>
@@ -723,13 +726,13 @@
                   <div class="card-meta wrapper">
 
                     <p class="title-sm">
-                      <img src="./assets/images/file-outline.svg" width="20" height="20" loading="lazy" alt="">
+                      <img src="/images/file-outline.svg" width="20" height="20" loading="lazy" alt="">
 
                       <span class="span">2 Lessons</span>
                     </p>
 
                     <p class="title-sm">
-                      <img src="./assets/images/user-outline.svg" width="20" height="20" loading="lazy" alt="">
+                      <img src="/images/user-outline.svg" width="20" height="20" loading="lazy" alt="">
 
                       <span class="span">4k Students</span>
                     </p>
@@ -778,7 +781,7 @@
         - #BLOG
       -->
 
-      <section id="blog" class="section blog has-bg-image" aria-labelledby="blog-label" style="background-image: url('./assets/images/course-bg.png')">
+      <section id="blog" class="section blog has-bg-image" aria-labelledby="blog-label" style="background-image: url('/images/course-bg.png')">
 
         <div class="container" >
 
@@ -794,7 +797,7 @@
             data-aos-easing="ease-in-sine">
               <div class="card blog-card">
                 <figure class="card-banner">
-                  <img src="./assets/images/course-1.png" width="370" height="248" loading="lazy"
+                  <img src="/images/course-1.png" width="370" height="248" loading="lazy"
                       alt="Basic Fundamentals of Interior & Graphics Design" class="img-cover">
                 </figure>
                 <div class="card-content">
@@ -811,7 +814,7 @@
             data-aos-easing="ease-in-sine">
               <div class="card blog-card">
                 <figure class="card-banner">
-                  <img src="./assets/images/course-2.png" width="370" height="248" loading="lazy"
+                  <img src="/images/course-2.png" width="370" height="248" loading="lazy"
                       alt="Basic Fundamentals of Interior & Graphics Design" class="img-cover">
                 </figure>
                 <div class="card-content">
@@ -828,7 +831,7 @@
             data-aos-easing="ease-in-sine">
               <div class="card blog-card">
                 <figure class="card-banner">
-                  <img src="./assets/images/course-6.png" width="370" height="248" loading="lazy"
+                  <img src="/images/course-6.png" width="370" height="248" loading="lazy"
                       alt="Basic Fundamentals of Interior & Graphics Design" class="img-cover">
                 </figure>
                 <div class="card-content">
@@ -851,11 +854,11 @@
 
 
 
-  <footer class="footer has-bg-image" style="background-image: url('./assets/images/footer-bg.png')">
+  <footer class="footer has-bg-image" style="background-image: url('/images/footer-bg.png')">
 
 
 
-  <footer class="footer has-bg-image" style="background-image: url('./assets/images/footer-bg.png')">
+  <footer class="footer has-bg-image" style="background-image: url('/images/footer-bg.png')">
 
 
     <div class="section footer-top">
@@ -864,7 +867,7 @@
         <div class="footer-brand">
           <div class="footer-logo-text">
           <a href="#">
-            <img id="footer-logo" src="./assets/images/Skillwise_logo.jpg"  width="200" height="200" alt="SkillWise home">
+            <img id="footer-logo" src="/images/Skillwise_logo.jpg"  width="200" height="200" alt="SkillWise home">
           </a>
 
           <p class="title-sm footer-text">
@@ -879,31 +882,31 @@
             <li>
               
               <a href="#" class="social-link" id="social-link1">
-                <img src="./assets/images/facebook.svg" width="40" height="40" loading="lazy" alt="facebook">
+                <img src="/images/facebook.svg" width="40" height="40" loading="lazy" alt="facebook">
               </a>
             </li>
 
             <li>
               <a href="#" class="social-link" id="social-link2">
-                <img src="./assets/images/X-logo.svg" width="40" height="40" loading="lazy" alt="X logo">
+                <img src="/images/X-logo.svg" width="40" height="40" loading="lazy" alt="X logo">
               </a>
             </li>
 
             <li>
               <a href="#" class="social-link" id="social-link3">
-                <img src="./assets/images/pinterest.svg" width="40" height="40" loading="lazy" alt="pinterest">
+                <img src="/images/pinterest.svg" width="40" height="40" loading="lazy" alt="pinterest">
               </a>
             </li>
 
             <li>
               <a href="#" class="social-link" id="social-link4">
-                <img src="./assets/images/instagram.svg" width="40" height="40" loading="lazy" alt="instagram">
+                <img src="/images/instagram.svg" width="40" height="40" loading="lazy" alt="instagram">
               </a>
             </li>
 
             <li>
               <a href="#" class="social-link" id="social-link5">
-                <img src="./assets/images/linkedIn.svg" width="40" height="40" loading="lazy" alt="linkedin">
+                <img src="/images/linkedIn.svg" width="40" height="40" loading="lazy" alt="linkedin">
               </a>
             </li>
           </ul>
@@ -989,32 +992,32 @@
             <ul class="grid-list">
 
               <li id="insta1">
-                <img src="./assets/images/ins-1.png" width="80" height="80" loading="lazy" alt="instagram post"
+                <img src="/images/ins-1.png" width="80" height="80" loading="lazy" alt="instagram post"
                   class="img-cover" id="instapost1">
               </li>
 
               <li>
-                <img src="./assets/images/ins-2.png" width="80" height="80" loading="lazy" alt="instagram post"
+                <img src="/images/ins-2.png" width="80" height="80" loading="lazy" alt="instagram post"
                   class="img-cover" id="instapost2">
               </li>
 
               <li>
-                <img src="./assets/images/ins-3.png" width="80" height="80" loading="lazy" alt="instagram post"
+                <img src="/images/ins-3.png" width="80" height="80" loading="lazy" alt="instagram post"
                   class="img-cover" id="instapost3">
               </li>
 
               <li>
-                <img src="./assets/images/ins-4.png" width="80" height="80" loading="lazy" alt="instagram post"
+                <img src="/images/ins-4.png" width="80" height="80" loading="lazy" alt="instagram post"
                   class="img-cover" id="instapost4">
               </li>
 
               <li>
-                <img src="./assets/images/ins-5.png" width="80" height="80" loading="lazy" alt="instagram post"
+                <img src="/images/ins-5.png" width="80" height="80" loading="lazy" alt="instagram post"
                   class="img-cover" id="instapost5">
               </li>
 
               <li>
-                <img src="./assets/images/ins-6.png" width="80" height="80" loading="lazy" alt="instagram post"
+                <img src="/images/ins-6.png" width="80" height="80" loading="lazy" alt="instagram post"
                   class="img-cover" id="instapost6">
               </li>
 
@@ -1067,9 +1070,9 @@
   <!-- 
    - custom js link
   -->
-  <script src="./assets/js/script.js"></script>
+  <script src="/js/script.js"></script>
 
-  <script src="assets/js/dark.js"></script>
+  <script src/js/dark.js"></script>
 
   <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
   <script>
