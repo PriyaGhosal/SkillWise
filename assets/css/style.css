@@ -462,7 +462,53 @@ body.nav-active { overflow: hidden; }
 
 .category .btn { margin-inline: auto; }
 
+#top_categories1 {
+  transition: transform 0.3s ease;
+}
 
+#top_categories1:hover {
+  transform: scale(1.02);
+}
+
+#top_categories2 {
+  transition: transform 0.3s ease;
+}
+
+#top_categories2:hover {
+  transform: scale(1.02);
+}
+
+#top_categories3 {
+  transition: transform 0.3s ease;
+}
+
+#top_categories3:hover {
+  transform: scale(1.02);
+}
+
+#top_categories4 {
+  transition: transform 0.3s ease;
+}
+
+#top_categories4:hover {
+  transform: scale(1.02);
+}
+
+#top_categories5 {
+  transition: transform 0.3s ease;
+}
+
+#top_categories5:hover {
+  transform: scale(1.02);
+}
+
+#top_categories6 {
+  transition: transform 0.3s ease;
+}
+
+#top_categories6:hover {
+  transform: scale(1.02);
+}
 
 
 
@@ -566,6 +612,55 @@ body.nav-active { overflow: hidden; }
 
 .course .btn { margin-inline: auto; }
 
+#choose_courses1 {
+  transition: transform 0.3s ease;
+}
+
+#choose_courses1:hover {
+  transform: scale(1.01);
+}
+
+#choose_courses2 {
+  transition: transform 0.3s ease;
+}
+
+#choose_courses2:hover {
+  transform: scale(1.01);
+}
+
+#choose_courses3 {
+  transition: transform 0.3s ease;
+}
+
+#choose_courses3:hover {
+  transform: scale(1.01);
+}
+
+#choose_courses4 {
+  transition: transform 0.3s ease;
+}
+
+#choose_courses4:hover {
+  transform: scale(1.01);
+}
+
+#choose_courses5 {
+  transition: transform 0.3s ease;
+}
+
+#choose_courses5:hover {
+  transform: scale(1.01);
+}
+
+#choose_courses6 {
+  transition: transform 0.3s ease;
+}
+
+#choose_courses6:hover {
+  transform: scale(1.01);
+}
+
+
 
 /*-----------------------------------*\
   #CTA
@@ -587,6 +682,14 @@ body.nav-active { overflow: hidden; }
   box-shadow: 0 0 0 2px var(--white), 0 0 0 5px var(--light-coral);
    }
 
+
+   #Register_today {
+    transition: transform 0.3s ease;
+  }
+  
+  #Register_today:hover {
+    transform: scale(1.05);
+  }
 
 /*-----------------------------------*\
   #BLOG
