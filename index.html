@@ -65,7 +65,22 @@
     <div class="container" >
 
       <a href="#">
-        <img src="./assets/images/Skillwise_logo-removebg-preview.png" width="50" height="10" alt="SkillWise home">
+        <img id="logo-light" src="./assets/images/Skillwise_logo-removebg-preview.png" width="50" height="10" alt="SkillWise home" 
+     style="display: none; background-color: #fff; padding: 5px; border-radius: 5px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
+
+<img id="logo-dark" src="./assets/images/Skillwise_logo-darkmode.png" width="50" height="10" alt="SkillWise home" 
+     style="display: none; background-color: #444; padding: 5px; border-radius: 5px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);">
+
+<script>
+  
+  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    document.getElementById('logo-dark').style.display = 'inline';
+  } else {
+    document.getElementById('logo-light').style.display = 'inline';
+  }
+</script>
+
+
       </a>
 
       <nav class="navbar" data-navbar>
