@@ -1098,7 +1098,7 @@ body.dark-mode h1{
   color: var(--oxford-blue);
 }
 
-}
+
 form {
   max-width: 400px;
   margin: auto;
@@ -1249,9 +1249,6 @@ button:hover {
   left:0;
 }
 
-=======
-
-}
 
 
 @media(max-width:768px) {
