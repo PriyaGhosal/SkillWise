@@ -1292,3 +1292,69 @@ button:hover {
 }
 }
 
+.follow-title {
+  margin: 0; /* Remove margin from title */
+  font-size: 24px; /* Increased font size for better visibility */
+  font-weight: bold; /* Bold text */
+  letter-spacing: 1px; /* Spacing between letters */
+  text-transform: uppercase; /* Uppercase for style */
+  color: #222; /* Dark text color */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.follow-title:hover {
+  color: #ffcc00; /* Change color on hover */
+  transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+.social-icons {
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center the icons */
+  gap: 20px; /* Space between icons */
+  margin-top: 5px; /* Space above icons */
+}
+
+.social-icon {
+  color: #222; /* Icon color set to dark */
+  font-size: 36px; /* Increased icon size for visibility */
+  transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition */
+  position: relative; /* Positioning for animations */
+  will-change: transform; /* Hint browser for optimization */
+}
+
+.social-icon:hover {
+  color: #ffcc00; /* Change color on hover to a bright color for visibility */
+  transform: translateY(-5px) scale(1.2); /* Lift and scale effect on hover */
+}
+
+.copyright {
+  margin: 0; /* Remove margin */
+  font-size: 14px; /* Font size */
+  color: #222; /* Dark color for copyright text */
+  opacity: 0.8; /* Slightly faded for contrast */
+  animation: fadeInUp 0.8s ease; /* Fade and slide-up animation */
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px); /* Slide up from below */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+  .follow-title {
+    font-size: 20px; /* Smaller font on mobile */
+  }
+  .social-icon {
+    font-size: 28px; /* Adjust icon size for mobile */
+  }
+} 
+
