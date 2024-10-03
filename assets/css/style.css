@@ -349,8 +349,7 @@ body.nav-active { overflow: hidden; }
   align-items: center;
 }
 
-.nav-open-btn,
-.nav-close-btn { font-size: 32px; }
+
 
 .navbar {
   position: fixed;
@@ -375,6 +374,10 @@ body.nav-active { overflow: hidden; }
 .navbar-top { margin-block-end: 34px; }
 
 .nav-close-btn ion-icon { --ionicon-stroke-width: 35px; }
+
+.nav-close-btn{
+  margin:0px;
+}
 
 .navbar-item:not(:last-child) { border-block-end: 1px solid var(--black_10); }
 
@@ -1120,6 +1123,14 @@ button:hover {
    align-items: center;
    gap: 30px;
  }
+ #theme-toggle{
+  right:125px;
+  top:5px
+ 
+
+ }
+
+ 
 
  /* Can be used if wanting a more linear Instagram post feed but as a viewer I like the grid better
   .footer-top .grid-list {
