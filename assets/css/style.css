@@ -16,10 +16,7 @@
 
 :root {
 
-  /**
-   * colors
-   */
-
+ 
   --selective-yellow: hsl(42, 100%, 56%);
   --roman-silver: hsl(240, 6%, 51%);
   --roman-silver_10: hsla(240, 6%, 51%, 0.1);
@@ -30,6 +27,9 @@
   --white: hsl(0, 0%, 100%);
   --black: hsl(0, 0%, 0%);
   --black_10: hsla(0, 0%, 0%, 0.1);
+  --dark-oxford-blue: hsl(224, 53%, 20%); 
+
+
 
   /**
    * typography
@@ -196,18 +196,10 @@ body.nav-active { overflow: hidden; }
 }
 
 .btn {
-  --bg: var(--light-coral);
-  max-width: max-content;
-  background-color: var(--bg);
-  color: var(--white);
-  font-weight: var(--fw-500);
-  padding: 12px 24px;
-  border-radius: var(--radius-6);
-  transition: var(--transition);
-  outline: none;
+  background-color: #1A1A1A;
 }
 
-.btn-secondary { --bg: var(--oxford-blue); }
+
 
 :is(.btn-primary, .btn-secondary):is(:hover, :focus-visible) {
   box-shadow: 0 0 0 2px var(--white), 0 0 0 5px var(--bg);
@@ -357,8 +349,7 @@ body.nav-active { overflow: hidden; }
   align-items: center;
 }
 
-.nav-open-btn,
-.nav-close-btn { font-size: 32px; }
+
 
 .navbar {
   position: fixed;
@@ -383,6 +374,10 @@ body.nav-active { overflow: hidden; }
 .navbar-top { margin-block-end: 34px; }
 
 .nav-close-btn ion-icon { --ionicon-stroke-width: 35px; }
+
+.nav-close-btn{
+  margin:0px;
+}
 
 .navbar-item:not(:last-child) { border-block-end: 1px solid var(--black_10); }
 
@@ -701,14 +696,20 @@ button:hover {
 \*-----------------------------------*/
 
 .cta {
-  background-color: var(--keppei);
+  background-color: #008080;
   padding: 48px 24px;
   text-align: center;
 }
 
 .cta .headline-md { color: var(--white); }
 
-.cta .btn { margin-inline: auto; }
+.cta .btn { margin-inline: auto; 
+  color: var(--white);
+  background-color: var(--light-coral); 
+}
+.cta .btn:is(:hover, :focus-within) { 
+  box-shadow: 0 0 0 2px var(--white), 0 0 0 5px var(--light-coral);
+   }
 
 
 /*-----------------------------------*\
@@ -802,6 +803,104 @@ button:hover {
 }
 
 .copyright { font-weight: var(--fw-500); }
+
+
+#instapost1 {
+  transition: transform 0.3s ease; 
+}
+
+#instapost1:hover {
+  transform: scale(1.15); 
+}
+
+#instapost2 {
+  transition: transform 0.3s ease; 
+}
+
+#instapost2:hover {
+  transform: scale(1.15); 
+}
+
+#instapost3 {
+  transition: transform 0.3s ease; 
+}
+
+#instapost3:hover {
+  transform: scale(1.15); 
+}
+
+#instapost4 {
+  transition: transform 0.3s ease; 
+}
+
+#instapost4:hover {
+  transform: scale(1.15); 
+}
+
+#instapost5 {
+  transition: transform 0.3s ease; 
+}
+
+#instapost5:hover {
+  transform: scale(1.15); 
+}
+
+#instapost6 {
+  transition: transform 0.3s ease; 
+}
+
+#instapost6:hover {
+  transform: scale(1.15); 
+}
+
+
+#footer-logo {
+  transition: transform 0.3s ease; 
+}
+
+#footer-logo:hover {
+  transform: scale(1.05); 
+}
+
+#social-link1 {
+  transition: transform 0.3s ease; 
+}
+
+#social-link1:hover {
+  transform: scale(1.1); 
+}
+
+#social-link2 {
+  transition: transform 0.3s ease; 
+}
+
+#social-link2:hover {
+  transform: scale(1.1); 
+}
+
+#social-link3 {
+  transition: transform 0.3s ease; 
+}
+
+#social-link3:hover {
+  transform: scale(1.1); 
+}
+
+#social-link4 {
+  transition: transform 0.3s ease; 
+}
+
+#social-link4:hover {
+  transform: scale(1.1); 
+}
+#social-link5 {
+  transition: transform 0.3s ease;
+}
+
+#social-link5:hover {
+  transform: scale(1.1);
+}
+
 
 
 
@@ -943,8 +1042,10 @@ button:hover {
   .container { max-width: 1024px; }
 
   .btn {
-    padding: 16px 32px;
+    padding: 10px 22px;
     font-size: 1.8rem;
+    border-radius: 10px;
+    color: #fff;
   }
 
 
@@ -1003,6 +1104,14 @@ button:hover {
     grid-template-columns: 1fr 1fr;
     margin-block: 40px 48px;
   }
+
+  /**
+   * FOOTER
+   */
+
+  .footer-top .container { grid-template-columns: 1fr 0.5fr 0.5fr 0.8fr; }
+
+  .footer-brand { padding-inline-end: 24px; }
 }
 
 
@@ -1066,7 +1175,49 @@ button:hover {
   .cta .headline-md { max-width: 22ch; }
 
   .cta .btn { margin-inline: 0; }
+  .footer .container { gap: 48px; }
 
+}
+body.dark-mode {
+  background-color: var(--oxford-blue);
+  
+}
+
+body.dark-mode .btn {
+  background-color: var(--keppei);
+  color: var(--oxford-blue);
+}
+
+body.dark-mode #theme-toggle {
+  background-color: var(--oxford-blue);
+
+}
+
+body.dark-mode #theme-icon {
+  color: var(--white);
+}
+body.dark-mode h1{
+  color: aliceblue;
+}
+
+#theme-toggle {
+  /* position: fixed; */
+  
+  background-color: var(--light-gray);
+  border-radius: var(--radius-circle);
+  padding: 10px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+#theme-toggle:hover {
+  background-color: var(--roman-silver);
+}
+
+#theme-icon {
+  font-size: 24px;
+  color: var(--oxford-blue);
+}
 
 }
 form {
@@ -1082,6 +1233,7 @@ textarea {
   border-radius: 5px;
 }
 button {
+  margin: auto;
   padding: 10px;
   background-color: #007bff;
   color: white;
@@ -1092,22 +1244,30 @@ button {
 button:hover {
   background-color: #0056b3;
 }
-
 @media(max-width:992px){
 
   .footer-logo-text{
-   flex-direction: row;
+   flex-direction: column;
    width: fit-content;
    align-items: center;
    justify-content: center;
-   gap: 30px;
- }
+  text-align: center; 
+  }
+  
  .footer-top .container{
    flex-direction: column;
    justify-content: center;
    align-items: center;
    gap: 30px;
  }
+ #theme-toggle{
+  right:125px;
+  top:5px
+ 
+
+ }
+
+ 
 
  /* Can be used if wanting a more linear Instagram post feed but as a viewer I like the grid better
   .footer-top .grid-list {
@@ -1139,6 +1299,78 @@ button:hover {
   margin-bottom: 5px;
 }
 
+}
+
+/* Search Bar */
+/* From Uiverse.io by OnlyCodeChannel */ 
+.navRightSide{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.searchBox {
+  display: flex;
+  max-width: 250px;
+  height: 45px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  background: var(--black);
+  border-radius: 50px;
+  position: relative;
+}
+
+.searchButton {
+  color: white;
+  position: relative;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--gradient-2, linear-gradient(90deg, var(--light-coral) 20%, var(--selective-yellow) 100%));
+  border: 0;
+  display: inline-block;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+}
+.searchButton svg{
+  position: absolute;
+  top:5px;
+  right:3px;
+}
+/*hover effect*/
+.SearchBTN:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 10px 20px;
+  transform: translateY(-3px);
+}
+/*button pressing effect*/
+.SearchBTN:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+.searchInput::placeholder{
+  color: var(--light-coral)
+}
+.searchInput {
+  border: none;
+  background: none;
+  outline: none;
+  color: var(--light-coral);
+  font-size: 15px;
+  padding:8px;
+}
+
+.svgxml
+{
+  position:absolute;
+  top:0;
+  left:0;
+}
+
+=======
 
 }
 
@@ -1185,3 +1417,4 @@ button:hover {
   font-size: 1.0rem;
 }
 }
+
