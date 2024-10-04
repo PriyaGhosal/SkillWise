@@ -651,6 +651,10 @@ body.nav-active { overflow: hidden; }
   gap: 16px;
 }
 
+.social-list li img{
+  border-radius: 5px;
+}
+
 .footer-list-title { margin-block-end: 32px; }
 
 .footer-link { margin-block-start: 16px; }
