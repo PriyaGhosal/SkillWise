@@ -443,9 +443,133 @@ body.nav-active { overflow: hidden; }
   flex-wrap: wrap;
   gap: 12px;
 }
+ 
+.feedback-Section{
+  display: flex;
+  flex-direction: column;
+  border:1px solid black;
+  padding: 3rem;
+}
+
+.feedback-button {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background-color: hsl(357, 100%, 75%);
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+
+.feedback-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.emojis {
+  font-size: 30px;
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.emoji {
+  cursor: pointer;
+  margin: 0 10px;
+  transition: transform 0.2s;
+}
+
+.emoji:hover {
+  transform: scale(1.2);
+}
+
+.emoji.selected {
+  border: 1px solid black; /* Highlight selected emoji */
+  border-radius: 5px;
+}
 
 
+.buttons{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
+textarea, input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.feedbackPopUp{
+  position: fixed;
+  transform: translate(120%);
+  transition: all 1s ease-in-out;
+  right: 20px;
+  bottom: 100px;
+  background-color: hsl(357, 100%, 75%);
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+
+.PopUpDisplay{
+  transition: all 1.5s ease-in-out;
+  transform: translate(0);
+}
 
 
 /*-----------------------------------*\
