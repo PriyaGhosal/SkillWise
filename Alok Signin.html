@@ -1,0 +1,178 @@
+<html lang="en"><head></head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillWise - Sign In</title>
+    <link rel="stylesheet" href="assets/css/signin.css">
+    <style>
+        /*  updation by Alok Pandey for Hactoberfest 2024 Multi-color changing blue background and many more pull requests and updation we'll contribute   */
+        @keyframes gradientAnimation {
+            0% {
+                background-color: #0052d4; /* Blue */
+            }
+            25% {
+                background-color: #65c6f2; /* Light Blue */
+            }
+            50% {
+                background-color: #0f2027; /* Dark Teal */
+            }
+            75% {
+                background-color: #2b5876; /* Blue Grey */
+            }
+            100% {
+                background-color: #0052d4; /* Blue */
+            }
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            animation: gradientAnimation 15s ease infinite; /* Add animation */
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+        .form-container {
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white for contrast */
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+        }
+        .logo {
+            width: 100px;
+            margin-bottom: 20px;
+        }
+        h1 {
+            margin-bottom: 10px;
+            font-size: 24px;
+            color: #333;
+        }
+        .brand {
+            color: #0052d4; /* Blue brand color */
+        }
+        p {
+            margin-bottom: 30px;
+            color: #666;
+        }
+        .input-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+        input[type="text"], input[type="email"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+            background-color: #f9f9f9;
+        }
+        .signin-btn {
+            background-color: #0052d4; /* Original button color */
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 12px;
+            width: 100%;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, color 0.3s ease; /* Add color transition */
+        }
+        /* Hover effect for the sign-in button */
+        .signin-btn:hover {
+            background-color: #000; /* Change background to black */
+            color: #fff; /* Keep text white */
+        }
+        .signup-link {
+            margin-top: 20px;
+            color: #666;
+        }
+        .signup-link a {
+            color: #0052d4; /* Blue link color */
+            text-decoration: none;
+        }
+        .signup-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <!-- Add SkillWise Icon/Logo -->
+            <img src="assets/images/Skillwise_logo.jpg" alt="SkillWise Logo" class="logo">
+            
+            <h1>Welcome to <span class="brand">SkillWise</span></h1>
+            <p>Sign in to access your learning dashboard</p>
+            
+            <form action="#" method="POST">
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="Enter your username" required="">
+                </div>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required="">
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required="">
+                </div>
+                <button type="submit" class="signin-btn">Sign In</button>
+                <p class="signup-link">Don't have an account? <a href="#">Sign up here</a></p>
+            </form>
+        </div>
+    </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
