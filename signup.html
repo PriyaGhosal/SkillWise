@@ -3,22 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SkillWise - Sign In</title>
-    <link rel="stylesheet" href="assets/css/signin.css">
+    <title>SkillWise - Sign Up</title>
+    <link rel="stylesheet" href="assets/css/signup.css">
 </head>
 <body>
     <div class="container">
         <div class="form-container">
-            <!-- Add SkillWise Icon/Logo -->
+            
             <img src="assets/images/Skillwise_logo.jpg" alt="SkillWise Logo" class="logo">
             
-            <h1>Welcome to <span class="brand">SkillWise</span></h1>
-            <p>Sign in to access your learning dashboard</p>
+            <h1>SignUp to <span class="brand">SkillWise</span></h1>
+            <p>Join now to start your learning journey !</p>
             
             <form action="#" method="POST">
                 <div class="input-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="Enter your Full Name" required>
+                </div>
+                <div class="input-group">
                     <label for="username">Username</label>
-                    <input type="text" id="username" name="username" placeholder="Enter your username" required>
+                    <input type="text" id="username" name="username" placeholder="Enter a unique username" required>
                 </div>
                 <div class="input-group">
                     <label for="email">Email</label>
@@ -26,10 +30,11 @@
                 </div>
                 <div class="input-group">
                     <label for="password">Password</label>
-                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                    <input type="password" id="password" name="password" placeholder="Set your password" required>
                 </div>
-                <button type="submit" class="signin-btn">Sign In</button>
-                <p class="signup-link">Don't have an account? <a href="/signup.html">Sign up here</a></p>
+
+                <button type="submit" class="signup-btn">Sign Up</button>
+                
             </form>
         </div>
     </div>
