@@ -199,7 +199,10 @@ body.nav-active { overflow: hidden; }
   background-color: #1A1A1A;
 }
 
-
+.btn-secondary:hover {
+  background-color: #3A3A3A;
+  box-shadow: 0 0 0 2px var(--white), 0 0 0 5px var(--bg); 
+}
 
 :is(.btn-primary, .btn-secondary):is(:hover, :focus-visible) {
   box-shadow: 0 0 0 2px var(--white), 0 0 0 5px var(--bg);
