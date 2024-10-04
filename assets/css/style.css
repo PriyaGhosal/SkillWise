@@ -1107,6 +1107,10 @@ textarea {
   margin: 5px 0;
   border: 1px solid #ccc;
   border-radius: 5px;
+  resize: vertical;
+}
+textarea {
+  height: 100px;
 }
 button {
   margin: auto;
@@ -1245,11 +1249,6 @@ button:hover {
   top:0;
   left:0;
 }
-
-=======
-
-}
-
 
 @media(max-width:768px) {
 
