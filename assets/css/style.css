@@ -226,6 +226,10 @@ body.nav-active { overflow: hidden; }
 
 .section-title { margin-block-end: 24px; }
 
+body.dark-mode .section-title {
+  color: var(--white);
+}
+
 .headline-md .has-after { padding-block-end: 8px; }
 
 .headline-md .has-after::after {
@@ -484,9 +488,13 @@ body.nav-active { overflow: hidden; }
   margin-block-end: 8px;
 }
 
-.progress-label-wrapper .title-sm {
-  color: var(--oxford-blue);
+body.dark-mode .progress-label-wrapper .title-sm {
+  color: var(--white);
   font-weight: var(-fw-600);
+}
+
+body.dark-mode headline-md text-center section-title aos-init aos-animate{
+  color: var(--white);
 }
 
 .progress {
@@ -1095,7 +1103,6 @@ body.dark-mode h1{
   color: var(--oxford-blue);
 }
 
-}
 form {
   max-width: 400px;
   margin: auto;
