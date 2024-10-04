@@ -1,6 +1,4 @@
-'use strict';
-
-
+"use strict";
 
 /**
  * add eventListener on multiple elements
@@ -10,9 +8,7 @@ const addEventOnElements = function (elements, eventType, callback) {
   for (let i = 0, len = elements.length; i < len; i++) {
     elements[i].addEventListener(eventType, callback);
   }
-}
-
-
+};
 
 /**
  * PRELOADER
@@ -27,8 +23,6 @@ window.addEventListener("load", function () {
   document.body.classList.add("loaded");
 });
 
-
-
 /**
  * NAVBAR TOGGLER FOR MOBILE
  */
@@ -41,15 +35,13 @@ const toggleNavbar = function () {
   navbar.classList.toggle("active");
   overlay.classList.toggle("active");
   document.body.classList.toggle("nav-active");
-}
+};
 
 addEventOnElements(navTogglers, "click", toggleNavbar);
 
-
-
 /**
  * HEADER
- * 
+ *
  * add active class on header when window scroll down to 100px
  */
 
@@ -61,6 +53,4 @@ const headerActive = function () {
   } else {
     header.classList.remove("active");
   }
-}
-
-window.addEventListener("scroll", headerActive);
+};
