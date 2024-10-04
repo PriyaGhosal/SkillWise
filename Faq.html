@@ -24,6 +24,10 @@
   -->
     <link rel="preload" as="image" href="./assets/images/faq.png">
     <link rel="preload" as="image" href="./assets/images/hero-bg.png">
+
+    <!-- Animation on Scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body style="background-image: url('./assets/images/hero-bg.png');">
@@ -31,7 +35,7 @@
     <header class="header" data-header>
         <div class="container">
 
-            <a>
+            <a href="./index.html">
                 <img src="./assets/images/Skillwise_logo.jpg" width="50" height="10" alt="SkillWise home">
             </a>
 
@@ -54,15 +58,15 @@
                     </li>
 
                     <li class="navbar-item">
-                        <a href="#" class="navbar-link title-sm" data-nav-link>Courses</a>
+                        <a href="./index.html#courses" class="navbar-link title-sm" data-nav-link>Courses</a>
                     </li>
 
                     <li class="navbar-item">
-                        <a href="#" class="navbar-link title-sm" data-nav-link>Blog</a>
+                        <a href="./index.html#blog" class="navbar-link title-sm" data-nav-link>Blog</a>
                     </li>
 
                     <li class="navbar-item">
-                        <a href="#" class="navbar-link title-sm" data-nav-link>Contacts</a>
+                        <a href="./index.html#contact" class="navbar-link title-sm" data-nav-link>Contacts</a>
                     </li>
 
                     <li class="navbar-item">
@@ -73,7 +77,7 @@
 
             </nav>
 
-            <a href="#" class="btn btn-secondary">Start Free Trial</a>
+            <a href="./signin.html" class="btn btn-secondary">Start Free Trial</a>
 
             <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
                 <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
@@ -88,11 +92,11 @@
         <div class="container" style="margin: 10rem auto 0; width:80%">
             <div class="hero-content" style="max-width: 600px;">
 
-                <h1 class="headline-lg" id="hero-label">
+                <h1 class="headline-lg" id="hero-label" data-aos="zoom-in">
                     Frequently <span class="span">Asked</span> Questions
                 </h1>
 
-                <p class="title-md has-before">
+                <p class="title-md has-before" data-aos="fade-right">
                     At SkillWise, we are dedicated to providing a seamless learning experience for all our users.
                     Whether you're curious about our course offerings, payment options, or certification details, you’ll
                     find the answers to your most common questions here. We aim to make your journey with us as smooth
@@ -100,7 +104,7 @@
                 </p>
 
             </div>
-            <figure class="hero-banner">
+            <figure class="hero-banner" data-aos="zoom-out-up">
                 <img src="./assets/images/faq.png" width="590" height="620" alt="hero banner" class="w-100">
             </figure>
 
@@ -108,13 +112,13 @@
     </section>
 
     <div id="FAQ" style="margin: 17rem auto 0;">
-        <h1>
+        <h1 data-aos="zoom-in">
             <p class="title">FAQ'S</p>
         </h1>
         <br>
         <div class="accordian">
 
-            <div class="item">
+            <div class="item" data-aos="fade-down">
                 <div class="FAQ-title">
                     <p class="faqQuestion">1. What type of courses does SkillWise offer?</p>
                     <span class="expandToggle">+</span>
@@ -125,7 +129,7 @@
                         experts and provide practical knowledge for learners of all levels.</p>
                 </div>
             </div>
-            <div class="item">
+            <div class="item" data-aos="fade-down">
                 <div class="FAQ-title">
                     <p class="faqQuestion">2. What payment methods are accepted?</p>
                     <span class="expandToggle">+</span>
@@ -136,7 +140,7 @@
                 </div>
             </div>
 
-            <div class="item">
+            <div class="item" data-aos="fade-down">
                 <div class="FAQ-title">
                     <p class="faqQuestion">3. Will I receive a certificate after completing a course?</p>
                     <span class="expandToggle">+</span>
@@ -147,7 +151,7 @@
                 </div>
             </div>
 
-            <div class="item">
+            <div class="item" data-aos="fade-down">
                 <div class="FAQ-title">
                     <p class="faqQuestion">4. What should I do if I encounter issues with the course videos?</p>
                     <span class="expandToggle">+</span>
@@ -159,7 +163,7 @@
                 </div>
             </div>
 
-            <div class="item">
+            <div class="item" data-aos="fade-down">
                 <div class="FAQ-title">
                     <p class="faqQuestion">5. How long do I have access to a course after purchasing it?</p>
                     <span class="expandToggle">+</span>
@@ -169,7 +173,7 @@
                 </div>
             </div>
 
-            <div class="item">
+            <div class="item" data-aos="fade-down">
                 <div class="FAQ-title">
                     <p class="faqQuestion">6. Do I need any prerequisites to enroll in a course?</p>
                     <span class="expandToggle">+</span>
@@ -187,6 +191,11 @@
 
         </div>
     </div>
+    <!-- Animation on Scroll -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="./assets/js/scriptfaq.js"></script>
 </body>
 
