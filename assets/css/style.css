@@ -804,6 +804,10 @@ body.nav-active { overflow: hidden; }
 }
 
 
+.card-container:hover{
+  transform:  scale(1.07);
+}
+
 
 
 
