@@ -10,6 +10,8 @@
     - primary meta tags
   -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles.css">
   <title>SkillWise</title>
   <meta name="title" content="SkillWise">
@@ -1030,23 +1032,51 @@
     <!-- 
     - #Contact Us
   -->
-
-    <section id="contact" class="cta" aria-labelledby="cta-label">
-      <div class="container">
-
-        <h2 class="headline-md section-title" id="cta-label" data-aos="fade-right">
-          Contact Us
-        </h2>
-
-        <form id="contact-form" data-aos="fade-left">
-          <input type="text" name="name" placeholder="Your Name" required>
-          <input type="email" name="email" placeholder="Your Email" required>
-          <textarea name="message" placeholder="Your Message" required></textarea>
-          <button type="submit">Send</button>
+ <!--Issue #243-->
+  <section id="contact" class="cta" aria-labelledby="cta-label" style="background-color: #00796b; padding: 3rem 0;">
+    <div class="container" style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+      
+      <!-- Contact Us Heading -->
+      <h2 class="headline-md section-title" id="cta-label" data-aos="fade-right" 
+        style="font-family: 'Pacifico', cursive; color: white; font-size: 3.5rem; margin-bottom: 2rem; text-decoration: underline; text-decoration-color: #6dd5ed; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);">
+      Contact Us
+    </h2>
+      <!-- Form Wrapper -->
+      <div style="background: rgba(255, 255, 255, 0.1); padding: 2rem; border-radius: 15px; width: 100%; max-width: 600px; box-shadow: 0 8px 16px rgba(0,0,0,0.2);">
+  
+        <!-- Contact Form -->
+        <form id="contact-form" data-aos="fade-left" style="display: flex; flex-direction: column; gap: 1.5rem;">
+          
+          <!-- Name Input -->
+          <input type="text" name="name" placeholder="Your Name" required 
+                 style="padding: 1rem; font-size: 1.2rem; border: 2px solid #ffffff; background: transparent; color: white; border-radius: 10px; outline: none; transition: border 0.3s ease-in-out; width: 100%;">
+          
+          <!-- Email Input -->
+          <input type="email" name="email" placeholder="Your Email" required 
+                 style="padding: 1rem; font-size: 1.2rem; border: 2px solid #ffffff; background: transparent; color: white; border-radius: 10px; outline: none; transition: border 0.3s ease-in-out; width: 100%;">
+          
+          <!-- Message Textarea -->
+          <textarea name="message" placeholder="Your Message" required 
+                    style="padding: 1rem; font-size: 1.2rem; border: 2px solid #ffffff; background: transparent; color: white; border-radius: 10px; outline: none; min-height: 150px; transition: border 0.3s ease-in-out; width: 100%;"></textarea>
+          
+          <!-- Send Button -->
+          <button type="submit" style="padding: 1rem 2rem; background: linear-gradient(90deg, #2193b0, #6dd5ed); color: white; border: none; border-radius: 10px; cursor: pointer; transition: transform 0.3s ease, background 0.3s ease; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+            Send <i class="fas fa-paper-plane"></i>
+          </button>
+  
         </form>
       </div>
-    </section>
-
+      
+    </div>
+  </section>
+  
+  <style>
+    input::placeholder, textarea::placeholder {
+      font-size: 1.2rem; 
+      color: rgba(255, 255, 255, 0.7); 
+    }
+  </style>
+  
 
     <div class="footer-bottom">
       <div class="container">
