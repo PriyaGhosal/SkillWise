@@ -349,45 +349,96 @@ body.nav-active { overflow: hidden; }
   align-items: center;
 }
 
-
-
 .navbar {
   position: fixed;
   top: 0;
   left: -320px;
   max-width: 320px;
-  width: 100%;
   background-color: var(--white);
   height: 100vh;
   padding: 40px 16px;
   z-index: 2;
-  transition: 0.25s var(--cubic-in);
+  transition: transform 0.25s var(--cubic-in);
   visibility: hidden;
 }
 
 .navbar.active {
-  transition: 0.5s var(--cubic-out);
+  transition: transform 0.5s var(--cubic-out);
   visibility: visible;
   transform: translateX(320px);
 }
 
-.navbar-top { margin-block-end: 34px; }
-
-.nav-close-btn ion-icon { --ionicon-stroke-width: 35px; }
-
-.nav-close-btn{
-  margin:0px;
+.navbar-top {
+  margin-block-end: 34px;
 }
 
-.navbar-item:not(:last-child) { border-block-end: 1px solid var(--black_10); }
+.nav-close-btn ion-icon {
+  --ionicon-stroke-width: 35px;
+}
+
+.nav-close-btn {
+  margin: 0;
+}
+
+.navbar-item:not(:last-child) {
+  border-block-end: 1px solid var(--black-10);
+  border-style:hidden; /* added for consistency */
+}
 
 .navbar-link {
   padding-block: 8px;
-  transition: var(--transition);
+  transition: color var(--transition);
 }
 
-.navbar-link:is(:hover, :focus-visible) { 
+.navbar-link:is(:hover, :focus-visible) {
   color: var(--oxford-blue);
+}
+
+/* SEARCHBUTTON CSS*/
+.navRightSide {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.searchBox {
+  display: flex;
+  align-items: center;
+  background-color: var(--white);
+  border: 1px solid var(--black-10);
+  border-radius: 4px;
+  padding: 8px;
+  width: 250px; /* adjust the width as needed */
+}
+
+.searchInput {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.searchButton {
+  background-color: var(--oxford-blue);
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.searchButton:hover {
+  background-color: var(--oxford-blue-dark);
+}
+
+.searchButton svg {
+  fill: var(--white);
+  width: 20px;
+  height: 20px;
+}
+
+.searchButton svg path {
+  stroke-width: 3;
 }
 
 .overlay {
@@ -407,9 +458,59 @@ body.nav-active { overflow: hidden; }
   visibility: visible;
 }
 
+/* Button CSS */
 
+.btn {
+  display: inline-block;
+  padding: 8px 16px;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
 
+.btn-secondary:hover {
+  background-color: var(--dark-oxford-blue);
+}
 
+.nav-open-btn {
+  background-color: transparent;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.nav-open-btn ion-icon {
+  font-size: 24px;
+  color: var(--black-60);
+}
+
+.nav-open-btn:hover ion-icon {
+  color: var(--black-80);
+}
+
+.containers {
+  display: flex;
+  align-items: center;
+}
+
+#theme-toggle {
+  background-color: transparent;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+}
+
+#theme-icon {
+  font-size: 24px;
+  color: var(--black-60);
+}
+
+#theme-toggle:hover #theme-icon {
+  color: var(--black-80);
+}
 
 /*-----------------------------------*\
   #HERO
