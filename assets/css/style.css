@@ -806,6 +806,9 @@ body.nav-active { overflow: hidden; }
 
 .card-container:hover{
   transform:  scale(1.07);
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px rgb(213, 96, 96);
 }
 
 
