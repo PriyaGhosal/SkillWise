@@ -212,6 +212,13 @@ body.nav-active { overflow: hidden; }
 
 .btn-secondary { --bg: var(--oxford-blue); }
 
+
+.btn.btn-secondary {
+  margin-right: auto; 
+  margin-left: 120px;  
+}
+
+
 :is(.btn-primary, .btn-secondary):is(:hover, :focus-visible) {
   box-shadow: 0 0 0 2px var(--white), 0 0 0 5px var(--bg);
 }
@@ -221,6 +228,61 @@ body.nav-active { overflow: hidden; }
   color: var(--oxford-blue);
   font-weight: var(--fw-600);
 }
+
+
+
+.top-right-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  display: inline-block;
+}
+
+.top-right-image {
+  position:absolute ;
+  top: 0;
+  right: 0;
+  z-index: -10; 
+  width: 70px; 
+  height: auto;
+  transition: transform 0.3s ease; 
+  padding: 4px;
+}
+
+.top-right-image:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.settings-popup {
+  display: none;
+  position: absolute;
+  top: 110%; 
+  right: 0;
+  background-color: #d1edef;
+  border: 1px solid #200f0f;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 20;
+}
+
+.top-right-wrapper:hover .settings-popup {
+  display: block;
+}
+
+.settings-popup a {
+  display: block;
+  padding: 5px;
+  text-decoration: none;
+  color: #333;
+  transition: background-color 0.2s ease;
+}
+
+.settings-popup a:hover {
+  background-color: #e5a0a0;
+}
+
 
 :is(.headline-lg, .headline-md) .span {
   color: var(--light-coral);
