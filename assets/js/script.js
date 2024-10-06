@@ -1,6 +1,4 @@
-'use strict';
-
-
+"use strict";
 
 /**
  * add eventListener on multiple elements
@@ -10,9 +8,7 @@ const addEventOnElements = function (elements, eventType, callback) {
   for (let i = 0, len = elements.length; i < len; i++) {
     elements[i].addEventListener(eventType, callback);
   }
-}
-
-
+};
 
 /**
  * PRELOADER
@@ -27,8 +23,6 @@ window.addEventListener("load", function () {
   document.body.classList.add("loaded");
 });
 
-
-
 /**
  * NAVBAR TOGGLER FOR MOBILE
  */
@@ -41,15 +35,13 @@ const toggleNavbar = function () {
   navbar.classList.toggle("active");
   overlay.classList.toggle("active");
   document.body.classList.toggle("nav-active");
-}
+};
 
 addEventOnElements(navTogglers, "click", toggleNavbar);
 
-
-
 /**
  * HEADER
- * 
+ *
  * add active class on header when window scroll down to 100px
  */
 
@@ -61,6 +53,42 @@ const headerActive = function () {
   } else {
     header.classList.remove("active");
   }
-}
+};
 
 window.addEventListener("scroll", headerActive);
+
+const searchButton = document.querySelector(".searchButton");
+const searchInput = document.querySelector(".searchInput");
+let isSearchVisible = false;
+
+searchButton.addEventListener("click", () => {
+  if (window.innerWidth < 768) {
+    if (!isSearchVisible) {
+      searchInput.style.width = "145px";
+      isSearchVisible = true;
+    } else {
+      // Perform search action here
+      console.log("Searching for:", searchInput.value);
+    }
+  } else {
+    // Perform search action here for larger screens
+    console.log("Searching for:", searchInput.value);
+  }
+});
+
+window.addEventListener("resize", () => {
+  if (window.innerWidth >= 768) {
+    searchInput.style.width = "145px";
+    isSearchVisible = true;
+  } else if (!isSearchVisible) {
+    searchInput.style.width = "0";
+  }
+});
+
+// Close search on clicking outside
+document.addEventListener("click", (event) => {
+  if (!event.target.closest(".searchBox") && window.innerWidth < 768) {
+    searchInput.style.width = "0";
+    isSearchVisible = false;
+  }
+});
