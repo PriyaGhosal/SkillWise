@@ -5,8 +5,8 @@ themeToggleButton.addEventListener('click', () => {
   document.body.classList.toggle('dark-mode');
 
   if (document.body.classList.contains('dark-mode')) {
-    themeIcon.name = 'moon-outline';
+    themeIcon.setAttribute('name', 'moon-outline');  // Use setAttribute to change the icon
   } else {
-    themeIcon.name = 'sunny-outline';
+    themeIcon.setAttribute('name', 'sunny-outline');
   }
 });
