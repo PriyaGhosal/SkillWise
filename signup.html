@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SkillWise - Sign Up</title>
     <link rel="stylesheet" href="assets/css/signin.css">
+    <title>SkillWise - Sign up</title>
+    <link rel="stylesheet" href="assets/css/signin.css">
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
 </head>
 <body>
     <div class="container">
@@ -19,6 +22,17 @@
                 <div class="input-group">
                     <label for="username">Username</label>
                     <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            <h1>Welcome to <span class="brand">SkillWise</span></h1>
+            <p><strong>Sign-Up</strong> to Create your personal learning dashboard Account</p>
+            
+            <form action="#" method="POST">
+                <div class="input-group">
+                    <label for="username">Full Name</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Create your username" required>
+                </div>
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="Create your username" required>
                 </div>
                 <div class="input-group">
                     <label for="email">Email</label>
@@ -57,5 +71,10 @@
             window.location.href = 'signin.html';
         });
     </script>
+                <button type="submit" class="signin-btn">Sign In</button>
+                <p class="signup-link">Already have an account? <a href="./signin.html">Sign in here</a></p>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
