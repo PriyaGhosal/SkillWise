@@ -148,10 +148,7 @@
     
 
 
-    <div id="userGreeting">
-      <span class="user-icon" id="userIcon"></span> <!-- Placeholder for user icon -->
-      <span id="greetingText"></span> <!-- Placeholder for greeting text -->
-  </div>
+      <a href="./signin.html" class="btn btn-secondary">Start Free Trial</a>
 
       <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
         <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
@@ -1082,23 +1079,23 @@
 
   <script src="assets/js/dark.js"></script>
 
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
   <script>
-    // Function to display the user's first letter of the username
-    function displayUserGreeting() {
-        const storedUser = JSON.parse(localStorage.getItem('user'));
-        if (storedUser) {
-            const firstLetter = storedUser.username.charAt(0).toUpperCase();
-            const iconElement = document.getElementById('userIcon');
-            const greetingElement = document.getElementById('greetingText');
-            
-            iconElement.textContent = firstLetter; // Set the first letter as icon text
-            greetingElement.textContent = `Hello, ${storedUser.username}!`; // Greeting message
-        }
-    }
+    (function () {
+      emailjs.init(CONFIG.USER_ID_KEY);
+    })();
 
-    // Call the function on page load
-    displayUserGreeting();
-</script>
+    document.getElementById('contact-form').addEventListener('submit', function (event) {
+      event.preventDefault();
+      emailjs.sendForm(CONFIG.SERVICE_ID, CONFIG.TEMPLATE_ID_KEY, this)
+        .then(function () {
+          alert('Email sent successfully!');
+        }, function (error) {
+          alert('Failed to send email. Error: ' + JSON.stringify(error));
+        });
+    });
+  </script>
+
   <!-- Animation on Scroll -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
