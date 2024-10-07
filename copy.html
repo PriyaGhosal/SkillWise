@@ -328,15 +328,53 @@
   <!-- Header -->
   <header class="header">
     <div class="container">
-      <a href="#"><img src="./assets/images/Skillwise_logo.jpg" alt="SkillWise Logo"></a>
-      <nav class="navbar">
-        <a href="#">Home</a>
-        <a href="#">Courses</a>
-        <a href="#">Blog</a>
-        <a href="#">Contacts</a>
-        <a href="#" class="btn-secondary">Start Free Trial</a>
+
+      <a>
+        <img src="./assets/images/Skillwise_logo.jpg" width="50" height="10" alt="SkillWise home">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <a >
+            <img src="./assets/images/Skillwise_logo.jpg" width="50" height="10" alt="SkillWise home">
+          </a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link title-sm" data-nav-link>Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link title-sm" data-nav-link>Courses</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link title-sm" data-nav-link>Blog</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link title-sm" data-nav-link>Contacts</a>
+          </li>
+
+        </ul>
+
       </nav>
-      <button class="nav-open-btn">&#9776;</button>
+
+      <a href="#" class="btn btn-secondary">Start Free Trial</a>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+      <div class="overlay" data-overlay data-nav-toggler></div>
+
     </div>
   </header>
 

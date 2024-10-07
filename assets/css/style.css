@@ -25,6 +25,7 @@
   --light-gray: hsl(0, 0%, 80%);
   --keppei: hsl(173, 60%, 47%);
   --white: hsl(0, 0%, 100%);
+  --snow:#FFFAFA;
   --black: hsl(0, 0%, 0%);
   --black_10: hsla(0, 0%, 0%, 0.1);
   --dark-oxford-blue: hsl(224, 53%, 20%); 
@@ -125,7 +126,7 @@ html {
 }
 
 body {
-  background-color: var(--white);
+  background-color: var(--snow);
   color: var(--roman-silver);
   font-size: 1.6rem;
   line-height: 1.5;
@@ -196,18 +197,10 @@ body.nav-active { overflow: hidden; }
 }
 
 .btn {
-  --bg: var(--light-coral);
-  max-width: max-content;
-  background-color: var(--bg);
-  color: var(--white);
-  font-weight: var(--fw-500);
-  padding: 12px 24px;
-  border-radius: var(--radius-6);
-  transition: var(--transition);
-  outline: none;
+  background-color: #1A1A1A;
 }
 
-.btn-secondary { --bg: var(--oxford-blue); }
+
 
 :is(.btn-primary, .btn-secondary):is(:hover, :focus-visible) {
   box-shadow: 0 0 0 2px var(--white), 0 0 0 5px var(--bg);
@@ -323,6 +316,7 @@ body.nav-active { overflow: hidden; }
 
 
 
+
 /*-----------------------------------*\
   #HEADER
 \*-----------------------------------*/
@@ -357,8 +351,7 @@ body.nav-active { overflow: hidden; }
   align-items: center;
 }
 
-.nav-open-btn,
-.nav-close-btn { font-size: 32px; }
+
 
 .navbar {
   position: fixed;
@@ -383,6 +376,10 @@ body.nav-active { overflow: hidden; }
 .navbar-top { margin-block-end: 34px; }
 
 .nav-close-btn ion-icon { --ionicon-stroke-width: 35px; }
+
+.nav-close-btn{
+  margin:0px;
+}
 
 .navbar-item:not(:last-child) { border-block-end: 1px solid var(--black_10); }
 
@@ -577,14 +574,20 @@ body.nav-active { overflow: hidden; }
 \*-----------------------------------*/
 
 .cta {
-  background-color: var(--keppei);
+  background-color: #008080;
   padding: 48px 24px;
   text-align: center;
 }
 
 .cta .headline-md { color: var(--white); }
 
-.cta .btn { margin-inline: auto; }
+.cta .btn { margin-inline: auto; 
+  color: var(--white);
+  background-color: var(--light-coral); 
+}
+.cta .btn:is(:hover, :focus-within) { 
+  box-shadow: 0 0 0 2px var(--white), 0 0 0 5px var(--light-coral);
+   }
 
 
 /*-----------------------------------*\
@@ -768,6 +771,13 @@ body.nav-active { overflow: hidden; }
 #social-link4:hover {
   transform: scale(1.1); 
 }
+#social-link5 {
+  transition: transform 0.3s ease;
+}
+
+#social-link5:hover {
+  transform: scale(1.1);
+}
 
 
 
@@ -910,8 +920,10 @@ body.nav-active { overflow: hidden; }
   .container { max-width: 1024px; }
 
   .btn {
-    padding: 16px 32px;
+    padding: 10px 22px;
     font-size: 1.8rem;
+    border-radius: 10px;
+    color: #fff;
   }
 
 
@@ -1067,9 +1079,8 @@ body.dark-mode h1{
 }
 
 #theme-toggle {
-  position: fixed;
-  top: 20px;
-  right: 20px;
+  /* position: fixed; */
+  
   background-color: var(--light-gray);
   border-radius: var(--radius-circle);
   padding: 10px;
@@ -1086,7 +1097,7 @@ body.dark-mode h1{
   color: var(--oxford-blue);
 }
 
-}
+
 form {
   max-width: 400px;
   margin: auto;
@@ -1127,6 +1138,14 @@ button:hover {
    align-items: center;
    gap: 30px;
  }
+ #theme-toggle{
+  right:125px;
+  top:5px
+ 
+
+ }
+
+ 
 
  /* Can be used if wanting a more linear Instagram post feed but as a viewer I like the grid better
   .footer-top .grid-list {
@@ -1168,9 +1187,11 @@ button:hover {
   align-items: center;
   gap: 10px;
 }
+
 .searchBox {
   display: flex;
   max-width: 250px;
+  height: 45px;
   align-items: center;
   justify-content: space-between;
   gap: 8px;
@@ -1181,15 +1202,20 @@ button:hover {
 
 .searchButton {
   color: white;
-  position: absolute;
+  position: relative;
   right: 8px;
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   background: var(--gradient-2, linear-gradient(90deg, var(--light-coral) 20%, var(--selective-yellow) 100%));
   border: 0;
   display: inline-block;
   transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+}
+.searchButton svg{
+  position: absolute;
+  top:5px;
+  right:3px;
 }
 /*hover effect*/
 .SearchBTN:hover {
@@ -1212,12 +1238,17 @@ button:hover {
   outline: none;
   color: var(--light-coral);
   font-size: 15px;
-  padding: 24px 46px 24px 26px;
+  padding:8px;
 }
 
-=======
-
+.svgxml
+{
+  position:absolute;
+  top:0;
+  left:0;
 }
+
+
 
 
 @media(max-width:768px) {

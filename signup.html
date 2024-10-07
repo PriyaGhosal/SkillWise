@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SkillWise - Sign In</title>
+    <title>SkillWise - Sign up</title>
     <link rel="stylesheet" href="assets/css/signin.css">
   <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
 </head>
@@ -14,12 +14,16 @@
             <img src="assets/images/Skillwise_logo.jpg" alt="SkillWise Logo" class="logo">
             
             <h1>Welcome to <span class="brand">SkillWise</span></h1>
-            <p><strong>Sign in</strong> to access your learning dashboard</p>
+            <p><strong>Sign-Up</strong> to Create your personal learning dashboard Account</p>
             
             <form action="#" method="POST">
                 <div class="input-group">
+                    <label for="username">Full Name</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Create your username" required>
+                </div>
+                <div class="input-group">
                     <label for="username">Username</label>
-                    <input type="text" id="username" name="username" placeholder="Enter your username" required>
+                    <input type="text" id="username" name="username" placeholder="Create your username" required>
                 </div>
                 <div class="input-group">
                     <label for="email">Email</label>
@@ -30,7 +34,7 @@
                     <input type="password" id="password" name="password" placeholder="Enter your password" required>
                 </div>
                 <button type="submit" class="signin-btn">Sign In</button>
-                <p class="signup-link">Don't have an account? <a href="./signup.html">Sign up here</a></p>
+                <p class="signup-link">Already have an account? <a href="./signin.html">Sign in here</a></p>
             </form>
         </div>
     </div>
