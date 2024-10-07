@@ -1055,7 +1055,7 @@
         </form>
       </div>
     </section>
-
+     
 
     <div class="footer-bottom">
       <div class="container">
@@ -1094,7 +1094,69 @@
           alert('Failed to send email. Error: ' + JSON.stringify(error));
         });
     });
+
+    // Function to create a scroll button for each section
+function createScrollButton(section) {
+  let scrollTopBtn = document.createElement("button");
+  scrollTopBtn.className = "scrollTopBtn";
+  scrollTopBtn.innerText = "Top";
+  scrollTopBtn.onclick = function () {
+    section.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+  section.appendChild(scrollTopBtn);
+}
+
+// Add scroll button to each section
+document.querySelectorAll("section").forEach((section) => {
+  createScrollButton(section);
+});
+
+// Show the button when scrolling down within the specific section
+window.onscroll = function () {
+  document.querySelectorAll("section").forEach((section) => {
+    let scrollTopBtn = section.querySelector(".scrollTopBtn");
+    let rect = section.getBoundingClientRect();
+
+    // Check if section is in the viewport and if scrolled down a bit
+    if (rect.top < window.innerHeight && rect.bottom > 0) {
+      if (window.scrollY > section.offsetTop + 10) {
+        scrollTopBtn.style.display = "block";
+      } else {
+        scrollTopBtn.style.display = "none";
+      }
+    } else {
+      scrollTopBtn.style.display = "none";
+    }
+  });
+};
+
+
+
   </script>
+  <style>
+    /* Style for the scroll button */
+.scrollTopBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed position */
+  bottom: 20px;
+  right: 0px; /* Right-end of the page */
+  z-index: 99; /* Make sure it stays on top */
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #555; /* Button color */
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px; /* Rounded corners */
+  margin-right: 20px; /* Add some space from the page border */
+}
+
+.scrollTopBtn:hover {
+  background-color: #333; /* Darker color on hover */
+}
+
+  </style>
 
   <!-- Animation on Scroll -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
