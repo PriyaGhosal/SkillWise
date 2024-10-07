@@ -1,480 +1,112 @@
-<div align="center">
 
-# `SkillWise`
-
-<br>
-<img src='./readme-images/desktop.png'>
-<br>
-
-*<i>SkillWise is an innovative online platform designed to help learners of all ages acquire new skills and knowledge. With a wide range of engaging courses and expert instructors, SkillWise provides the tools you need to succeed in today’s competitive world.</i>*
-
-<br>
-
-<table align="center">
-    <thead align="center">
-        <tr border: 1px;>
-            <td><b>🌟 Stars</b></td>
-            <td><b>🍴 Forks</b></td>
-            <td><b>🐛 Issues</b></td>
-            <td><b>🔔 Open PRs</b></td>
-            <td><b>🔕 Close PRs</b></td>
-        </tr>
-     </thead>
-    <tbody>
-         <tr>
-            <td><img alt="Stars" src="https://img.shields.io/github/stars/PriyaGhosal/SkillWise?style=flat&logo=github"/></td>
-            <td><img alt="Forks" src="https://img.shields.io/github/forks/PriyaGhosal/SkillWise?style=flat&logo=github"/></td>
-            <td><img alt="Issues" src="https://img.shields.io/github/issues/PriyaGhosal/SkillWise?style=flat&logo=github"/></td>
-            <td><img alt="Open Pull Requests" src="https://img.shields.io/github/issues-pr/PriyaGhosal/SkillWise?style=flat&logo=github"/></td>
-            <td><img alt="Close Pull Requests" src="https://img.shields.io/github/issues-pr-closed/PriyaGhosal/SkillWise?style=flat&color=critical&logo=github"/></td>
-        </tr>
-    </tbody>
-</table>
-</div>
-<br>
+# **SkillWise**📘✨
 
 
+SkillWise is an innovative online platform designed to help learners of all ages acquire new skills and knowledge. With a wide range of engaging courses and expert instructors, SkillWise provides the tools you need to succeed in today’s competitive world. 
 
-Welcome to **SkillWise**, an innovative online platform designed to help learners of all ages acquire new skills and knowledge. With a wide range of engaging courses and expert instructors, SkillWise provides the tools you need to succeed in today’s competitive world.
+With our expert instructors, real-world projects, and a supportive learning community, SkillWise empowers individuals to achieve personal and professional success.
 
-## Features
 
-- **Interactive Courses**: Engaging and interactive courses across various fields.
-- **Expert Instructors**: Learn from industry experts who offer valuable insights.
-- **Supportive Community**: Join a community of learners who support each other.
-- **Personalized Learning Paths**: Tailored learning paths to help you reach your goals.
+## Features💡
+- 📚**Interactive and Engaging Courses:** Immerse yourself in dynamic learning experiences that combine theory with practical application.
+- 👩‍🏫**Expert Instructors:** Learn from seasoned professionals who are passionate about their subjects and dedicated to your success.
+- 🌐**Supportive Community:** Connect with like-minded learners, share insights, and build valuable relationships.
+- 🎯**Personalized Learning Paths:** Tailor your learning journey to your specific goals and interests with our personalized learning paths.
+- ⏳**Flexible Learning:** Study at your own pace and on your preferred devices.
+- 💼**Real-World Projects:** Apply your knowledge through hands-on projects that simulate real-world scenarios.
 
-## Prerequisites
+## Hacktoberfest 2024 🎉
 
-Ensure you have the following installed:
+SkillWise is excited to participate in Hacktoberfest 2024! We invite developers and open-source enthusiasts to contribute to our project this October, celebrating the spirit of collaboration and innovation in open source. 
 
-- **Git**: Version control system to manage and track changes in your codebase. [Download Git](https://git-scm.com/downloads)
-- **Node.js**: JavaScript runtime environment to run the project. [Download Node.js](https://nodejs.org/)
-- **npm**: Node package manager to install dependencies. It comes bundled with Node.js.
-- **Web Browser**: A modern web browser like Google Chrome or Firefox for testing the application.
+Join us in making a real-world impact while enhancing your skills in software development 💻. Let’s work together to create an engaging learning platform that empowers learners everywhere!
 
-## Getting Started
+## How to Contribute 🌍
 
-## Getting Started
+Want to make a difference? Contributing to **WildGuard** is simple and impactful! Here's how you can get involved:
 
-Follow these steps to start your learning journey with SkillWise:
+- **Fork & Star** ⭐ the repository to show your support.
+- **Submit a Pull Request** 🔄 with your changes—whether it's fixing a bug or adding an exciting new feature.
+- **Follow the Guidelines** 📜 to ensure that your PR aligns with our contribution standards.
 
-1. **Sign Up**: Create your SkillWise account by visiting our [sign-up page](#).
-2. **Browse Courses**: Discover a variety of courses across different fields. Use the search and filter options to find courses that match your interests.
-3. **Enroll**: Join the courses that interest you by clicking the "Enroll" button on the course page.
-4. **Learn and Grow**: Start learning at your own pace. Track your progress through the course dashboard and complete assignments to reinforce your knowledge.
+Every contribution, no matter the size, plays a crucial role in enhancing our educational platform and empowering learners to achieve their goals! 📚✨
 
-Enjoy your learning experience with SkillWise!
 
-## Contributing
+## Tech Stack Behind SkillWise 💻
 
-We welcome contributions from the community. To contribute, follow these detailed steps:
+WildGuard is powered by modern web technologies to deliver a seamless and impactful experience. Here's the stack that brings it all to life:
 
-1. **Fork the Repository**:
-    - Navigate to the repository on GitHub.
-    - Click the [Fork](https://github.com/PriyaGhosal/SkillWise/fork) button at the top right of the page to create a copy of the repository under your GitHub account.
-    - For more information, see [GitHub's Forking Guide](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo).
+- **HTML** 🌐  
+  Lays the foundation by structuring the content of the website.
+  
+- **CSS** 🎨  
+  Brings the site to life with visually stunning and responsive styles.
+  
+- **JavaScript** ⚡  
+  Adds dynamic features and interactivity, ensuring a smooth user experience.
 
-2. **Clone the Forked Repository**:
-    - Open your terminal or command prompt.
-    - Clone your forked repository to your local machine using the command:
-      ```bash
-      git clone https://github.com/your-username/SkillWise.git
-      ```
-    - Replace `your-username` with your GitHub username.
+## Why SkillWise❤️
+At SkillWise, we’re committed to transforming learning through immersive and tailored experiences. Catering to all ages and skill levels, our platform offers diverse interactive courses. We believe in personalized learning paths that adapt to your needs. With expert instructors, real-world projects, and a supportive community, we empower you to succeed.🥇
 
-3. **Create a New Branch**:
-    - Navigate to the repository directory:
-      ```bash
-      cd SkillWise
-      ```
-    - Create a new branch for your feature or bug fix:
-      ```bash
-      git checkout -b feature-branch
-      ```
-    - Replace `feature-branch` with a descriptive name for your branch.
+Our mission is to bridge the gap between theoretical knowledge and practical application, ensuring that our learners not only acquire new skills but also feel confident in applying them in real-life situations.💡
 
-4. **Make Your Changes**:
-    - Implement your changes or additions in the codebase.
-    - Ensure your changes follow the project's coding standards and guidelines.
+We are more than just an educational platform—we are a community of lifelong learners, dedicated to making education accessible, engaging, and impactful.🌍✨
 
-5. **Commit Your Changes**:
-    - Stage your changes:
-      ```bash
-      git add .
-      ```
-    - Commit your changes with a meaningful commit message:
-      ```bash
-      git commit -m 'Add some feature'
-      ```
-    - Replace `'Add some feature'` with a descriptive message about your changes.
+## Get in Touch with Us 💬 
 
-6. **Push to the Branch**:
-    - Push your changes to your forked repository on GitHub:
-      ```bash
-      git push origin feature-branch
-      ```
+Do you have questions, ideas, or simply want to get involved in our mission? We'd love to hear from you!
 
-7. **Open a Pull Request**:
-    - Navigate to the original repository on GitHub.
-    - Click the "Compare & pull request" button next to your recently pushed branch.
-    - Provide a clear and detailed description of your changes in the pull request.
-    - Submit the pull request for review.
+🌐 **Visit our website:** [SkillWise](https://skillwise-delta.vercel.app/#)  
+📧 **Contact us:** Reach out directly through our website for more information.  
+📱 **Follow us on social media** for the latest updates, campaigns, and conservation efforts.
 
-For more detailed instructions, refer to [GitHub's Guide on Creating a Pull Request](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
+**Join a community of lifelong learners dedicated to accessible and engaging education. With flexible options and hands-on projects, SkillWise equips you to thrive in today’s dynamic world! 🌍✨** 🌱🌍
 
-Thank you for your contributions to SkillWise!
+## Deployment 🚀
 
-# Contributors
+You can run SkillWise on your local machine by following these steps:
 
-<!-- readme: contributors -start -->
-<table>
-	<tbody>
-		<tr>
-            <td align="center">
-                <a href="https://github.com/PriyaGhosal">
-                    <img src="https://avatars.githubusercontent.com/u/162816363?v=4" width="100;" alt="PriyaGhosal"/>
-                    <br />
-                    <sub><b>Priya Ghosal</b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/yeshwanth-ds">
-                    <img src="https://avatars.githubusercontent.com/u/119668086?v=4" width="100;" alt="yeshwanth-ds"/>
-                    <br />
-                    <sub><b>Yeshwanth</b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/anuragverma108">
-                    <img src="https://avatars.githubusercontent.com/u/129655645?v=4" width="100;" alt="anuragverma108"/>
-                    <br />
-                    <sub><b>Anurag Verma</b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/yashksaini-coder">
-                    <img src="https://avatars.githubusercontent.com/u/115717039?v=4" width="100;" alt="yashksaini-coder"/>
-                    <br />
-                    <sub><b>Yash Kumar Saini</b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/UdaySharmaGitHub">
-                    <img src="https://avatars.githubusercontent.com/u/132534225?v=4" width="100;" alt="UdaySharmaGitHub"/>
-                    <br />
-                    <sub><b>Uday Sharma</b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/kavya-r30">
-                    <img src="https://avatars.githubusercontent.com/u/161142013?v=4" width="100;" alt="kavya-r30"/>
-                    <br />
-                    <sub><b>kavya-r30</b></sub>
-                </a>
-            </td>
-		</tr>
-		<tr>
-            <td align="center">
-                <a href="https://github.com/1nsh">
-                    <img src="https://avatars.githubusercontent.com/u/168742283?v=4" width="100;" alt="1nsh"/>
-                    <br />
-                    <sub><b>Vansh Chitransh</b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/codeforlifeee">
-                    <img src="https://avatars.githubusercontent.com/u/168173457?v=4" width="100;" alt="codeforlifeee"/>
-                    <br />
-                    <sub><b>Tejas Surya</b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/ankit071105">
-                    <img src="https://avatars.githubusercontent.com/u/139707943?v=4" width="100;" alt="ankit071105"/>
-                    <br />
-                    <sub><b>Ankit Kumar</b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/kanduru-abhiram">
-                    <img src="https://avatars.githubusercontent.com/u/85011280?v=4" width="100;" alt="kanduru-abhiram"/>
-                    <br />
-                    <sub><b>K Abhiram</b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/SunkaraboinaPraveenKumar">
-                    <img src="https://avatars.githubusercontent.com/u/160092930?v=4" width="100;" alt="SunkaraboinaPraveenKumar"/>
-                    <br />
-                    <sub><b>SunkaraboinaPraveenKumar</b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/SiddhanthKapoor">
-                    <img src="https://avatars.githubusercontent.com/u/177930064?v=4" width="100;" alt="SiddhanthKapoor"/>
-                    <br />
-                    <sub><b>SiddhanthKapoor</b></sub>
-                </a>
-            </td>
-		</tr>
-		<tr>
-            <td align="center">
-                <a href="https://github.com/Nikhileshmauje">
-                    <img src="https://avatars.githubusercontent.com/u/118903685?v=4" width="100;" alt="Nikhileshmauje"/>
-                    <br />
-                    <sub><b>NikhileshM24</b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/megh-bari">
-                    <img src="https://avatars.githubusercontent.com/u/142393952?v=4" width="100;" alt="megh-bari"/>
-                    <br />
-                    <sub><b>Megh Bari</b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/Sankar-1110">
-                    <img src="https://avatars.githubusercontent.com/u/143268107?v=4" width="100;" alt="Sankar-1110"/>
-                    <br />
-                    <sub><b>NAKKA  SAI SANKAR</b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/karraharichandana">
-                    <img src="https://avatars.githubusercontent.com/u/146167641?v=4" width="100;" alt="karraharichandana"/>
-                    <br />
-                    <sub><b>karraharichandana</b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/Sayantan1024">
-                    <img src="https://avatars.githubusercontent.com/u/139146243?v=4" width="100;" alt="Sayantan1024"/>
-                    <br />
-                    <sub><b>Sayantan Saha</b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/SreyaSudheeran">
-                    <img src="https://avatars.githubusercontent.com/u/157779286?v=4" width="100;" alt="SreyaSudheeran"/>
-                    <br />
-                    <sub><b>Sreya Sudheeran</b></sub>
-                </a>
-            </td>
-		</tr>
-		<tr>
-            <td align="center">
-                <a href="https://github.com/shobhit15082003">
-                    <img src="https://avatars.githubusercontent.com/u/124374867?v=4" width="100;" alt="shobhit15082003"/>
-                    <br />
-                    <sub><b>shobhit15082003</b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/shivamnayak201019">
-                    <img src="https://avatars.githubusercontent.com/u/125451145?v=4" width="100;" alt="shivamnayak201019"/>
-                    <br />
-                    <sub><b>shivamnayak201019</b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/TeamSelenium">
-                    <img src="https://avatars.githubusercontent.com/u/32784221?v=4" width="100;" alt="TeamSelenium"/>
-                    <br />
-                    <sub><b>TeamSelenium</b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/Mritunjaii">
-                    <img src="https://avatars.githubusercontent.com/u/101278178?v=4" width="100;" alt="Mritunjaii"/>
-                    <br />
-                    <sub><b>Mritunjai</b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/Yaser-2004">
-                    <img src="https://avatars.githubusercontent.com/u/133482087?v=4" width="100;" alt="Yaser-2004"/>
-                    <br />
-                    <sub><b>Yaser-2004</b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/anshumangahlot">
-                    <img src="https://avatars.githubusercontent.com/u/178735564?v=4" width="100;" alt="anshumangahlot"/>
-                    <br />
-                    <sub><b>anshumangahlot</b></sub>
-                </a>
-            </td>
-		</tr>
-		<tr>
-            <td align="center">
-                <a href="https://github.com/jaideepjaison">
-                    <img src="https://avatars.githubusercontent.com/u/53474748?v=4" width="100;" alt="jaideepjaison"/>
-                    <br />
-                    <sub><b>Jaison Lobo</b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/lord-cyclone100">
-                    <img src="https://avatars.githubusercontent.com/u/121711381?v=4" width="100;" alt="lord-cyclone100"/>
-                    <br />
-                    <sub><b>Sangneel Deb</b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/mitgajera">
-                    <img src="https://avatars.githubusercontent.com/u/144581159?v=4" width="100;" alt="mitgajera"/>
-                    <br />
-                    <sub><b>Mit Gajera</b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/nitesh2920">
-                    <img src="https://avatars.githubusercontent.com/u/89625680?v=4" width="100;" alt="nitesh2920"/>
-                    <br />
-                    <sub><b>Nitesh Tiwari</b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/rahulbamnuya">
-                    <img src="https://avatars.githubusercontent.com/u/129646171?v=4" width="100;" alt="rahulbamnuya"/>
-                    <br />
-                    <sub><b>rahulbamnuya</b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/sainKunal">
-                    <img src="https://avatars.githubusercontent.com/u/166685451?v=4" width="100;" alt="sainKunal"/>
-                    <br />
-                    <sub><b>Kunal Kumar</b></sub>
-                </a>
-            </td>
-		</tr>
-		<tr>
-            <td align="center">
-                <a href="https://github.com/srinivasthedeveloper">
-                    <img src="https://avatars.githubusercontent.com/u/42977810?v=4" width="100;" alt="srinivasthedeveloper"/>
-                    <br />
-                    <sub><b>SRINIVAStheDEVELOPER</b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/swamimalode07">
-                    <img src="https://avatars.githubusercontent.com/u/139348491?v=4" width="100;" alt="swamimalode07"/>
-                    <br />
-                    <sub><b>Swami Malode</b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/tejasbenibagde">
-                    <img src="https://avatars.githubusercontent.com/u/124677750?v=4" width="100;" alt="tejasbenibagde"/>
-                    <br />
-                    <sub><b>Tejas Benibagde</b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/umakant3525">
-                    <img src="https://avatars.githubusercontent.com/u/132107464?v=4" width="100;" alt="umakant3525"/>
-                    <br />
-                    <sub><b>Umakant Shinde</b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/realvishalrana">
-                    <img src="https://avatars.githubusercontent.com/u/60568083?v=4" width="100;" alt="realvishalrana"/>
-                    <br />
-                    <sub><b>Vishal Rana</b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/Shivaraj2003">
-                    <img src="https://avatars.githubusercontent.com/u/96361349?v=4" width="100;" alt="Shivaraj2003"/>
-                    <br />
-                    <sub><b>Shivaraj Shetty</b></sub>
-                </a>
-            </td>
-		</tr>
-		<tr>
-            <td align="center">
-                <a href="https://github.com/RAGHAVS1304">
-                    <img src="https://avatars.githubusercontent.com/u/119474871?v=4" width="100;" alt="RAGHAVS1304"/>
-                    <br />
-                    <sub><b>Raghav</b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/rajputpritesh1">
-                    <img src="https://avatars.githubusercontent.com/u/98505834?v=4" width="100;" alt="rajputpritesh1"/>
-                    <br />
-                    <sub><b>Pritesh Rajput</b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/MohammedDayan03">
-                    <img src="https://avatars.githubusercontent.com/u/172948937?v=4" width="100;" alt="MohammedDayan03"/>
-                    <br />
-                    <sub><b>MohammedDayan03</b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/Irtesaam">
-                    <img src="https://avatars.githubusercontent.com/u/96732970?v=4" width="100;" alt="Irtesaam"/>
-                    <br />
-                    <sub><b>Irtesaam Atfi</b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/Gauravtb2253">
-                    <img src="https://avatars.githubusercontent.com/u/114927759?v=4" width="100;" alt="Gauravtb2253"/>
-                    <br />
-                    <sub><b>Gaurav Bomble</b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/iAmDiksha">
-                    <img src="https://avatars.githubusercontent.com/u/89463068?v=4" width="100;" alt="iAmDiksha"/>
-                    <br />
-                    <sub><b>Diksha Jain</b></sub>
-                </a>
-            </td>
-		</tr>
-		<tr>
-            <td align="center">
-                <a href="https://github.com/Deepak0yadav">
-                    <img src="https://avatars.githubusercontent.com/u/182261278?v=4" width="100;" alt="Deepak0yadav"/>
-                    <br />
-                    <sub><b>Deepak yadav</b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/AnshDwivedi03">
-                    <img src="https://avatars.githubusercontent.com/u/138333395?v=4" width="100;" alt="AnshDwivedi03"/>
-                    <br />
-                    <sub><b>Ansh Dwivedi</b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/SinghaAnirban005">
-                    <img src="https://avatars.githubusercontent.com/u/143536290?v=4" width="100;" alt="SinghaAnirban005"/>
-                    <br />
-                    <sub><b>Anirban Singha</b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/abhipariharr">
-                    <img src="https://avatars.githubusercontent.com/u/114382172?v=4" width="100;" alt="abhipariharr"/>
-                    <br />
-                    <sub><b>Abhishek parihar</b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/Aakansha-Chavan">
-                    <img src="https://avatars.githubusercontent.com/u/181594189?v=4" width="100;" alt="Aakansha-Chavan"/>
-                    <br />
-                    <sub><b>Aakansha-Chavan</b></sub>
-                </a>
-            </td>
-		</tr>
-	<tbody>
-</table>
-<!-- readme: contributors -end -->
+### Steps to Install
+
+1. **Clone the Repository**
+
+   ```bash
+   git clonehttps://github.com/purnima2904/SkillWise.git
+
+2. **Open the Project**
+
+Locate the `index.html` file in the project folder and open it in your preferred web browser.
+
+3. **Run the Project**
+
+Simply open `index.html` in your browser, and the SkillWise website will be up and running!
+
+
+
+## FAQs
+
+#### 1. What is SkillWise?
+SkillWise is an online learning platform that offers interactive courses across various fields, catering to learners of all ages and skill levels.
+
+#### 2. How do I enroll in a course?
+Simply create an account, browse our course catalog, and click "Enroll" on the course you want to take.
+
+#### 3. Are the courses free?
+Many courses are free, but some may require payment for premium content and resources.
+
+#### 4. Can I learn at my own pace?
+Absolutely! SkillWise offers flexible learning paths, allowing you to study at your convenience.
+
+#### 5. How can I contact support?
+You can reach out to our support team through the contact form on our website or via email.
+## **SkillWise LOGO**
+![Logo](https://skillwise-delta.vercel.app/assets/images/Skillwise_logo-removebg-preview.png)
+
+To visit our website, click on this link : [SkillWise](https://skillwise-delta.vercel.app/#)
+
+
+## License📜
+This project is licensed under the MIT License. For more details, see the [License](https://choosealicense.com/licenses/mit/) file.
+
+## Screenshots🖼
+To view website , click here : [images](https://imgur.com/a/sVF1mS2). This link will direct you to a collection of images showcasing the features or layout of your website.
