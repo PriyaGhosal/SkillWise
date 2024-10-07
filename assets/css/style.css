@@ -441,6 +441,7 @@ body.nav-active { overflow: hidden; }
 .hero .btn-group {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 12px;
 }
 
