@@ -7,3 +7,7 @@ Interactive and engaging courses across various fields.
 Expert instructors offering valuable insights.
 A supportive community for learners.
 Personalized learning paths to help you reach your goals.
+
+## please read the contributing rules before making a contribution
+
+Read the [contributing](https://github.com/PriyaGhosal/SkillWise/contribute.md) rules who are new to Open-Source contribution
