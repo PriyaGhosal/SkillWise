@@ -1129,26 +1129,67 @@ body.dark-mode h1 {
 }
 
 /* Existing styles for dark mode */
-body.dark-mode.navbar {
-  background-color: var(--oxford-blue); /* Dark background for the navbar */
-  color: var(--white);
+/* Dark Mode (Add a white box around the navbar) */
+body.dark-mode .navbar {
+  background-color: var(--white); /* White background for the navbar */
+  color: var(
+    --oxford-blue
+  ); /* Dark text color to contrast the white background */
+  padding: 15px; /* Padding around the navbar content */
+  border-radius: 12px; /* Rounded corners for the white box */
+  box-shadow: 0 6px 12px rgba(255, 255, 255, 0.3); /* Light shadow effect for the box */
+  display: inline-block; /* Make the box fit the content */
+  width: fit-content; /* Ensure the box fits the content */
 }
 
-/* Add a box (background) around the navbar buttons */
+/* Box surrounding the navbar items in dark mode */
 body.dark-mode .navbar-list {
-  background-color: var(--keppei); /* Box background in dark mode */
-  padding: 10px;
-  border-radius: 8px; /* Rounded corners for the box */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add a shadow to make the box stand out */
+  padding: 10px; /* Padding around the navbar links inside the box */
+  border-radius: 8px; /* Additional rounding for the navbar list */
+  display: flex; /* Horizontal display of navbar items */
+  gap: 15px; /* Space between the navbar links */
 }
 
+/* Navbar links in dark mode */
 body.dark-mode .navbar-link {
-  color: var(--white); /* Ensure the links are visible */
+  color: var(--oxford-blue); /* Dark text color for contrast */
+  padding: 8px 16px; /* Padding for clickable area */
+  text-decoration: none; /* Remove underline from links */
+  background-color: transparent; /* No background by default */
+  border-radius: 6px; /* Slight rounding for links */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
 }
 
+/* Hover effect in dark mode */
 body.dark-mode .navbar-link:hover {
-  background-color: var(--oxford-blue); /* Highlight the buttons on hover */
-  color: var(--white); /* Keep the text white on hover */
+  background-color: var(--light-background-hover); /* Light hover background */
+  color: var(--oxford-blue); /* Dark text color on hover */
+  border-radius: 5px; /* Consistent with other elements */
+}
+
+/* Default Light Theme (No box) */
+.navbar {
+  background-color: var(
+    --light-background
+  ); /* Light background for the navbar */
+  color: var(--dark-text); /* Dark text color */
+  padding: 0; /* No padding for box-less design */
+  box-shadow: none; /* No shadow in light mode */
+  border-radius: 0; /* No rounding */
+}
+
+.navbar-list {
+  padding: 0; /* No padding */
+  gap: 15px; /* Keep spacing between items */
+}
+
+.navbar-link {
+  color: var(--dark-text); /* Dark text for visibility */
+}
+
+.navbar-link:hover {
+  background-color: var(--light-background-hover); /* Highlight on hover */
+  color: var(--dark-text); /* Keep the text dark */
 }
 
 form {
@@ -1241,7 +1282,8 @@ button:hover {
   align-items: center;
   justify-content: space-between;
   gap: 8px;
-  background: var(--black);
+
+  background: var(--light-gray);
   border-radius: 50px;
   position: relative;
 }
@@ -1285,7 +1327,7 @@ button:hover {
   border: none;
   background: none;
   outline: none;
-  color: var(--light-coral);
+  color: black;
   font-size: 15px;
   padding: 8px;
 }
