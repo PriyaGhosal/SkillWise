@@ -19,6 +19,7 @@
   --light-gray: hsl(0, 0%, 80%);
   --keppei: hsl(173, 60%, 47%);
   --white: hsl(0, 0%, 100%);
+  --snow: #fffafa;
   --black: hsl(0, 0%, 0%);
   --black_10: hsla(0, 0%, 0%, 0.1);
   --dark-oxford-blue: hsl(224, 53%, 20%);
@@ -118,7 +119,7 @@ html {
 }
 
 body {
-  background-color: var(--white);
+  background-color: var(--snow);
   color: var(--roman-silver);
   font-size: 1.6rem;
   line-height: 1.5;
@@ -1149,6 +1150,7 @@ body.dark-mode .navbar-link:hover {
   background-color: var(--oxford-blue); /* Highlight the buttons on hover */
   color: var(--white); /* Keep the text white on hover */
 }
+
 form {
   max-width: 400px;
   margin: auto;

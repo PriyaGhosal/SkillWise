@@ -63,4 +63,8 @@ const headerActive = function () {
   }
 }
 
+// dynamically updating year in footer for copyright
+document.getElementById('year').textContent = new Date().getFullYear();
+
+
 window.addEventListener("scroll", headerActive);
