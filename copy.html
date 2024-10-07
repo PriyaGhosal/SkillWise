@@ -5,35 +5,37 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Primary Meta Tags -->
   <title>SkillWise - Copyright Policy Page</title>
-  <meta name="title" content="SkillWise">
-  <meta name="description" content="This is an education HTML template made by Priya Ghosal">
 
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
-
-  <!-- Custom Font Link -->
-  <link rel="stylesheet" href="./assets/font/font.css">
-
-  <!-- Custom CSS Link -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-
-  <!-- Preload Images -->
-  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
-  <link rel="preload" as="image" href="./assets/images/hero-bg.png">
-
-  <!-- Internal CSS for Custom Styling -->
+  <!-- Internal CSS for Dark Mode, Animations, and UI Enhancements -->
   <style>
     /* General Styles */
+    :root {
+      --light-bg-color: #fef6e4; /* Peach Background */
+      --light-text-color: #2d3748;
+      --light-heading-color: #ff4d6d;
+      --dark-bg-color: #1a202c;
+      --dark-text-color: #f7fafc;
+      --dark-heading-color: #90cdf4;
+      --primary-accent: #4299e1;
+      --secondary-accent: #ff6b81; /* Lighter Peach Tone */
+      --highlight-yellow: #ffd700;
+    }
+
     body {
       font-family: 'Roboto', sans-serif;
-      background-color: #f3f4f6;
-      color: #2d3748;
+      background-color: var(--light-bg-color);
+      color: var(--light-text-color);
       margin: 0;
       padding: 0;
-      line-height: 1.7;
+      transition: all 0.3s ease;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    body.dark-mode {
+      background-color: var(--dark-bg-color);
+      color: var(--dark-text-color);
     }
 
     .container {
@@ -42,222 +44,118 @@
       padding: 20px;
     }
 
-    /* Centered Page Heading - Copyright Policy */
+    /* Heading Styling */
     h1 {
       text-align: center;
-      font-size: 3rem;
-      color: #2c5282;
-      margin-top: 30px;
-      margin-bottom: 50px;
-      font-weight: bold;
-      background: linear-gradient(90deg, #4299e1, #2b6cb0);
+      font-size: 3.5rem;
+      font-weight: 700;
+      background: linear-gradient(90deg, #ff4d6d, #2b6cb0, #ffd700);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-      letter-spacing: 2px;
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
       padding-bottom: 10px;
-      border-bottom: 2px solid #2c5282;
+      border-bottom: 2px solid var(--highlight-yellow);
+      transition: all 0.3s ease;
+      letter-spacing: 0.05em;
+      opacity: 0;
+      animation: fadeIn 1s ease forwards;
     }
 
-    h2.section-title {
-      font-size: 2.5rem;
-      color: #2c5282;
-      text-align: center;
-      margin-bottom: 20px;
+    body.dark-mode h1 {
+      border-bottom-color: var(--dark-heading-color);
     }
 
-    .highlight {
-      color: #e53e3e;
-      font-weight: bold;
-    }
-
+    /* Policy Content Styling */
     .policy-content {
-      background-color: #fff;
+      background-color: var(--secondary-accent);
       padding: 40px;
-      border-radius: 10px;
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-      margin-bottom: 40px;
-    }
-
-    .policy-content h2 {
-      font-size: 1.75rem;
-      color: #2d3748;
-      margin-bottom: 10px;
-    }
-
-    .policy-content p {
-      font-size: 1.125rem;
-      color: #4a5568;
-      margin-bottom: 20px;
-    }
-
-    a {
-      color: #3182ce;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    .btn-secondary {
-      display: inline-block;
-      padding: 8px 20px;
-      font-size: 1rem;
-      color: white;
-      background-color: #2c5282;
-      border-radius: 5px;
-      text-align: center;
-      text-decoration: none;
-      margin-top: 20px;
-      transition: background-color 0.3s ease;
-    }
-
-    .btn-secondary:hover {
-      background-color: #2a4365;
-    }
-
-    /* Header */
-    .header {
-      background-color: #2d3748;
-      padding: 10px 0;
-    }
-
-    .header img {
-      height: 40px;
-    }
-
-    .header a {
-      color: white;
-      font-size: 1rem;
-      text-decoration: none;
-      padding: 8px 12px;
-    }
-
-    .navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0 10px;
-    }
-
-    .navbar a {
-      padding: 10px 15px;
-    }
-
-    /* Footer */
-    footer {
-      background-color: #2d3748;
-      color: white;
-      padding: 20px;
-      text-align: center;
-      font-size: 0.875rem;
-    }
-
-    /* Content Wrapper */
-    .content-wrapper {
-      padding: 60px 0;
-    }
-  </style>
-  <style>
-    /* General Styles */
-    body {
-      font-family: 'Roboto', sans-serif;
-      background-color: #f3f4f6;
-      color: #2d3748;
-      margin: 0;
-      padding: 0;
-      line-height: 1.7;
-    }
-
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-
-    /* Centered Page Heading */
-    h1 {
-      text-align: center;
-      font-size: 3rem;
-      color: #2c5282;
-      margin-top: 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
       margin-bottom: 50px;
+      transition: all 0.3s ease;
+      backdrop-filter: blur(5px);
+      opacity: 0;
+      animation: slideIn 1s ease forwards 0.3s;
     }
 
-    h2.section-title {
-      font-size: 2.5rem;
-      color: #2c5282;
-      text-align: center;
-      margin-bottom: 20px;
+    body.dark-mode .policy-content {
+      background-color: #2d3748;
+      box-shadow: 0 6px 20px rgba(255, 255, 255, 0.1);
     }
 
-    .highlight {
-      color: #e53e3e;
-      font-weight: bold;
+    h2 {
+      font-size: 2rem;
+      color: var(--highlight-yellow);
+      margin-top: 25px;
     }
 
-    .policy-content {
-      background-color: #fff;
-      padding: 40px;
-      border-radius: 10px;
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-      margin-bottom: 40px;
+    body.dark-mode h2 {
+      color: var(--dark-heading-color);
     }
 
-    .policy-content h2 {
-      font-size: 1.75rem;
-      color: #2d3748;
-      margin-bottom: 10px;
-    }
-
-    .policy-content p {
+    p {
       font-size: 1.125rem;
-      color: #4a5568;
       margin-bottom: 20px;
     }
 
     a {
-      color: #3182ce;
+      color: var(--highlight-yellow);
       text-decoration: none;
+      font-weight: bold;
     }
 
     a:hover {
       text-decoration: underline;
+      color: var(--secondary-accent);
     }
 
-    .btn-secondary {
-      display: inline-block;
-      padding: 8px 20px;
-      font-size: 1rem;
+    /* Fixed Dark Mode Toggle Button */
+    .toggle-dark-mode {
+      background-color: var(--secondary-accent);
       color: white;
-      background-color: #2c5282;
-      border-radius: 5px;
-      text-align: center;
-      text-decoration: none;
-      margin-top: 20px;
-      transition: background-color 0.3s ease;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1rem;
+      font-weight: 600;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      position: fixed;
+      top: 15px;
+      right: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      z-index: 1000; /* Ensure it's above other elements */
     }
 
-    .btn-secondary:hover {
-      background-color: #2a4365;
+    .toggle-dark-mode:hover {
+      background-color: var(--primary-accent);
+      transform: scale(1.05);
     }
 
     /* Header */
     .header {
-      background-color: #2d3748;
-      padding: 10px 0;
+      background-color: var(--light-heading-color);
+      padding: 12px 0;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      opacity: 0;
+      animation: fadeIn 1s ease forwards 0.5s;
+    }
+
+    body.dark-mode .header {
+      background-color: var(--dark-heading-color);
     }
 
     .header img {
-      height: 40px;
+      height: 50px;
     }
 
     .header a {
       color: white;
       font-size: 1rem;
       text-decoration: none;
-      padding: 8px 12px;
+      padding: 8px 15px;
+      font-weight: 500;
     }
 
     .navbar {
@@ -268,28 +166,23 @@
     }
 
     .navbar a {
-      padding: 10px 15px;
-    }
-
-    /* Responsive Navigation */
-    @media (max-width: 768px) {
-      .navbar {
-        flex-direction: column;
-      }
-
-      .nav-open-btn {
-        font-size: 2rem;
-        color: white;
-      }
+      padding: 12px 20px;
     }
 
     /* Footer */
     footer {
-      background-color: #2d3748;
+      background-color: var(--light-heading-color);
       color: white;
-      padding: 20px;
+      padding: 25px;
       text-align: center;
-      font-size: 0.875rem;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+      opacity: 0;
+      animation: fadeIn 1s ease forwards 0.8s;
+    }
+
+    body.dark-mode footer {
+      background-color: var(--dark-heading-color);
     }
 
     /* Content Wrapper */
@@ -297,89 +190,59 @@
       padding: 60px 0;
     }
 
-    /* Navbar Button */
-    .nav-open-btn {
-      display: none;
+    /* Scroll Animation */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
-    /* Mobile styles */
-    @media (max-width: 768px) {
-      .nav-open-btn {
-        display: block;
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateX(-100%);
       }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
 
-      .navbar {
-        display: none;
-      }
-
-      .navbar.active {
-        display: flex;
-        flex-direction: column;
-        background-color: #2d3748;
-        width: 100%;
-        padding: 10px 0;
-      }
+    /* Hover Effects on Content */
+    .policy-content:hover {
+      transform: scale(1.02);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
   </style>
 </head>
 
 <body>
 
+  <!-- Fixed Dark Mode Toggle Button -->
+  <button class="toggle-dark-mode" id="dark-mode-toggle">🌙 Toggle Vibes</button>
+
   <!-- Header -->
   <header class="header">
     <div class="container">
-
-      <a>
-        <img src="./assets/images/Skillwise_logo.jpg" width="50" height="10" alt="SkillWise home">
-      </a>
-
-      <nav class="navbar" data-navbar>
-
-        <div class="navbar-top">
-          <a >
-            <img src="./assets/images/Skillwise_logo.jpg" width="50" height="10" alt="SkillWise home">
-          </a>
-
-          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
-            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
-          </button>
-        </div>
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <a href="#" class="navbar-link title-sm" data-nav-link>Home</a>
-          </li>
-
-          <li class="navbar-item">
-            <a href="#" class="navbar-link title-sm" data-nav-link>Courses</a>
-          </li>
-
-          <li class="navbar-item">
-            <a href="#" class="navbar-link title-sm" data-nav-link>Blog</a>
-          </li>
-
-          <li class="navbar-item">
-            <a href="#" class="navbar-link title-sm" data-nav-link>Contacts</a>
-          </li>
-
-        </ul>
-
+      <a href="#"><img src="./assets/images/Skillwise_logo.jpg" alt="SkillWise Logo"></a>
+      <nav class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Courses</a>
+        <a href="#">Blog</a>
+        <a href="#">Contacts</a>
+        <a href="#" class="btn-secondary">Start Free Trial 🚀</a>
       </nav>
-
-      <a href="#" class="btn btn-secondary">Start Free Trial</a>
-
-      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
-        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
-      </button>
-
-      <div class="overlay" data-overlay data-nav-toggler></div>
-
     </div>
   </header>
 
-  <!-- Content -->
-  <div class="content-wrapper">
+   <!-- Content -->
+   <div class="content-wrapper">
     <div class="container">
       <h1>Copyright Policy</h1>
       <div class="policy-content">
@@ -418,8 +281,18 @@
 
   <!-- Footer -->
   <footer>
-    &copy; 2024 SkillWise. All Rights Reserved.
+    &copy; 2024 SkillWise. All Rights Reserved. ✌️
   </footer>
+
+  <!-- JavaScript for Dark Mode Toggle -->
+  <script>
+    const toggleButton = document.getElementById('dark-mode-toggle');
+    const body = document.body;
+
+    toggleButton.addEventListener('click', () => {
+      body.classList.toggle('dark-mode');
+    });
+  </script>
 
 </body>
 
