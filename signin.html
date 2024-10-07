@@ -12,8 +12,11 @@
         <div class="form-container">
             <!-- Add SkillWise Icon/Logo -->
             <img src="assets/images/Skillwise_logo.jpg" alt="SkillWise Logo" class="logo">
-            
+
             <h1>Welcome to <span class="brand">SkillWise</span></h1>
+            <p>Sign in to access your learning dashboard</p>
+
+            <form id="signinForm">
             <p><strong>Sign in</strong> to access your learning dashboard</p>
             
             <form action="#" method="POST">
@@ -30,9 +33,36 @@
                     <input type="password" id="password" name="password" placeholder="Enter your password" required>
                 </div>
                 <button type="submit" class="signin-btn">Sign In</button>
+                <p class="signup-link">Don't have an account? <a href="signup.html">Sign up here</a></p>
                 <p class="signup-link">Don't have an account? <a href="./signup.html">Sign up here</a></p>
             </form>
         </div>
     </div>
+
+    <script>
+        document.getElementById('signinForm').addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent default form submission
+
+            // Get user input
+            const username = document.getElementById('username').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            // Retrieve user from local storage
+            const storedUser = JSON.parse(localStorage.getItem('user'));
+
+            // Validate user credentials
+            if (storedUser) {
+                if (storedUser.username === username && storedUser.email === email && storedUser.password === password) {
+                    alert("Sign in successful!"); // Alert for successful sign in
+                    window.location.href = 'index.html'; // Redirect to index.html
+                } else {
+                    alert("Incorrect credentials. Please try again."); // Alert for incorrect credentials
+                }
+            } else {
+                alert("No user found. Please sign up first."); // Alert if no user is found
+            }
+        });
+    </script>
 </body>
 </html>
