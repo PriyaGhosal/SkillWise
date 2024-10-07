@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SkillWise - Sign In</title>
+    <title>SkillWise - Sign Up</title>
     <link rel="stylesheet" href="assets/css/signin.css">
 </head>
 <body>
@@ -11,11 +11,11 @@
         <div class="form-container">
             <!-- Add SkillWise Icon/Logo -->
             <img src="assets/images/Skillwise_logo.jpg" alt="SkillWise Logo" class="logo">
-
-            <h1>Welcome to <span class="brand">SkillWise</span></h1>
-            <p>Sign in to access your learning dashboard</p>
-
-            <form id="signinForm">
+            
+            <h1>Create an Account for <span class="brand">SkillWise</span></h1>
+            <p>Sign up to access your learning dashboard</p>
+            
+            <form id="signupForm">
                 <div class="input-group">
                     <label for="username">Username</label>
                     <input type="text" id="username" name="username" placeholder="Enter your username" required>
@@ -28,14 +28,14 @@
                     <label for="password">Password</label>
                     <input type="password" id="password" name="password" placeholder="Enter your password" required>
                 </div>
-                <button type="submit" class="signin-btn">Sign In</button>
-                <p class="signup-link">Don't have an account? <a href="signup.html">Sign up here</a></p>
+                <button type="submit" class="signin-btn">Sign Up</button>
+                <p class="signin-link">Already have an account? <a href="signin.html">Sign in here</a></p>
             </form>
         </div>
     </div>
 
     <script>
-        document.getElementById('signinForm').addEventListener('submit', function (event) {
+        document.getElementById('signupForm').addEventListener('submit', function (event) {
             event.preventDefault(); // Prevent default form submission
 
             // Get user input
@@ -43,20 +43,18 @@
             const email = document.getElementById('email').value;
             const password = document.getElementById('password').value;
 
-            // Retrieve user from local storage
-            const storedUser = JSON.parse(localStorage.getItem('user'));
+            // Create user object
+            const user = {
+                username: username,
+                email: email,
+                password: password,
+            };
 
-            // Validate user credentials
-            if (storedUser) {
-                if (storedUser.username === username && storedUser.email === email && storedUser.password === password) {
-                    alert("Sign in successful!"); // Alert for successful sign in
-                    window.location.href = 'index.html'; // Redirect to index.html
-                } else {
-                    alert("Incorrect credentials. Please try again."); // Alert for incorrect credentials
-                }
-            } else {
-                alert("No user found. Please sign up first."); // Alert if no user is found
-            }
+            // Store user in local storage (you can use session storage for a temporary solution)
+            localStorage.setItem('user', JSON.stringify(user));
+
+            // Redirect to index.html after sign-up
+            window.location.href = 'signin.html';
         });
     </script>
 </body>

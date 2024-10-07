@@ -9,6 +9,7 @@
   "author": "Vansh Chitransh",
   "license": "ISC",
   "dependencies": {
+    "@clerk/clerk-js": "^5.26.1",
     "express": "^4.21.0"
   }
 }
