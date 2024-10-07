@@ -422,7 +422,8 @@ body.nav-active { overflow: hidden; }
 
 .hero-banner { display: none; }
 
-.hero { padding-block-start: calc(var(--pt, 96px) + var(--section-padding)); }
+.hero { padding-block-start: calc(var(--pt, 96px) + var(--section-padding)); 
+}
 
 .hero .title-md {
   font-weight: var(--fw-500);
