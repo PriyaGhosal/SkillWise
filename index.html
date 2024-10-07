@@ -10,7 +10,7 @@
     - primary meta tags
   -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="stylesheet" href="styles.css">
+  <!-- <link rel="stylesheet" href="style.css"> -->
   <title>SkillWise</title>
   <meta name="title" content="SkillWise">
   <meta name="description" content="This is a education html template made by Priya Ghosal">
@@ -28,7 +28,12 @@
   <!-- 
     - custom css link
   -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/style.css" id="theme-style">
+
+  <!-- 
+    -dark mode css link disabled
+   -->
+  <!-- <link rel="stylesheet" href="./assets/css/darkmode.css" id="theme-style" > -->
 
   <!-- 
     - preload images
@@ -209,10 +214,10 @@
       -->
 
       <section    class="section category has-bg-image" aria-labelledby="category-label"
-        style="background-image: url('./assets/images/category-bg.png')">
+         >
         <div class="container">
 
-          <p class="title-sm text-center section-subtitle" id="category-label" data-aos="flip-down">Course Categories</p>
+          <p id="keppi" class="title-sm text-center section-subtitle keppi" id="category-label" data-aos="flip-down">Course Categories</p>
 
           <h2 class="headline-md text-center section-title" data-aos="fade-down">
             Browse Top <span class="span has-after">Categories</span>
@@ -250,10 +255,10 @@
                 <div>
                   <h3 class="title-lg">UI/UX Design</h3>
 
-                  <p class="title-sm">68 Courses</p>
+                  <p class="title-sm">6 Courses</p>
                 </div>
 
-                <a href="#" class="layer-link" aria-label="UI/UX Design Category"></a>
+                <a href="uiux.html" class="layer-link" aria-label="UI/UX Design Category"></a>
 
               </div>
             </li>
@@ -362,7 +367,7 @@
           data-aos-offset="300"
           data-aos-easing="ease-in-sine">
 
-            <p class="title-sm section-subtitle" id="about-label" style="font-size: 28px;">About SkillWise</p>
+            <p id="keppi" class="title-sm section-subtitle keppi" id="about-label" style="font-size: 28px;">About SkillWise</p>
 
             <h2 class="headline-md section-title">
               We Provide The Best Online <span class="span has-after">Education</span>
@@ -427,10 +432,10 @@
       -->
 
       <section id="courses" id="pricing" class="section course has-bg-image" aria-labelledby="course-label"
-        style="background-image: url('./assets/images/course-bg.png')">
+        >
         <div class="container">
 
-          <p class="title-sm section-subtitle text-center">Featured Courses</p>
+          <p id="keppi" class="title-sm section-subtitle text-center ">Featured Courses</p>
 
           <h2 class="headline-md section-title text-center" id="course-label" data-aos="fade-down">
             Choose Unlimited <span class="span has-after">Courses</span>
@@ -778,11 +783,11 @@
         - #BLOG
       -->
 
-      <section id="blog" class="section blog has-bg-image" aria-labelledby="blog-label" style="background-image: url('./assets/images/course-bg.png')">
+      <section id="blog" class="section blog has-bg-image" aria-labelledby="blog-label" >
 
         <div class="container" >
 
-          <p class="title-sm text-center section-subtitle" id="category-label">Featured Blogs</p>
+          <p id="keppi" class="title-sm text-center section-subtitle" id="category-label">Featured Blogs</p>
 
           <h2 class="headline-md text-center section-title" data-aos="fade-down">
             Learn with <span class="span has-after">Articles</span>
@@ -851,11 +856,11 @@
 
 
 
-  <footer class="footer has-bg-image" style="background-image: url('./assets/images/footer-bg.png')">
+  
 
 
 
-  <footer class="footer has-bg-image" style="background-image: url('./assets/images/footer-bg.png')">
+  <footer class="footer has-bg-image" >
 
 
     <div class="section footer-top">
@@ -967,7 +972,7 @@
           </li>
 
           <li>
-            <a href="#" class="title-sm footer-link">Terms & Condition</a>
+            <a href="Terms_&_Condition.html" class="title-sm footer-link">Terms & Condition</a>
           </li>
 
           <!-- <li>
@@ -975,7 +980,11 @@
           </li> -->
 
           <li>
-            <a href="#" class="title-sm footer-link">Privacy Policy</a>
+            <a href="PrivacyPolicy.html" class="title-sm footer-link">Privacy Policy</a>
+          </li>
+
+          <li>
+            <a href="copy.html" class="title-sm footer-link">Copyright Policy</a>
           </li>
 
         </ul>
@@ -1027,7 +1036,7 @@
       </div>
     </div>
 
-    <!-- 
+  <!--
     - #Contact Us
   -->
 
@@ -1046,14 +1055,13 @@
         </form>
       </div>
     </section>
-     
+
 
     <div class="footer-bottom">
       <div class="container">
-
         <p class="copyright">
-         <a href="copy.html"> © Copyright Policy 2024 </a>  All Rights Reserved by Priya Ghosal
-        </p>
+          <a href="copy.html"> © Copyright Policy <time id="year"></time> </a> All Rights Reserved by Priya Ghosal
+      </p>
 
       </div>
     </div>
@@ -1086,69 +1094,7 @@
           alert('Failed to send email. Error: ' + JSON.stringify(error));
         });
     });
-
-    // Function to create a scroll button for each section
-function createScrollButton(section) {
-  let scrollTopBtn = document.createElement("button");
-  scrollTopBtn.className = "scrollTopBtn";
-  scrollTopBtn.innerText = "Top";
-  scrollTopBtn.onclick = function () {
-    section.scrollIntoView({ behavior: "smooth", block: "start" });
-  };
-  section.appendChild(scrollTopBtn);
-}
-
-// Add scroll button to each section
-document.querySelectorAll("section").forEach((section) => {
-  createScrollButton(section);
-});
-
-// Show the button when scrolling down within the specific section
-window.onscroll = function () {
-  document.querySelectorAll("section").forEach((section) => {
-    let scrollTopBtn = section.querySelector(".scrollTopBtn");
-    let rect = section.getBoundingClientRect();
-
-    // Check if section is in the viewport and if scrolled down a bit
-    if (rect.top < window.innerHeight && rect.bottom > 0) {
-      if (window.scrollY > section.offsetTop + 10) {
-        scrollTopBtn.style.display = "block";
-      } else {
-        scrollTopBtn.style.display = "none";
-      }
-    } else {
-      scrollTopBtn.style.display = "none";
-    }
-  });
-};
-
-
-
   </script>
-  <style>
-    /* Style for the scroll button */
-.scrollTopBtn {
-  display: none; /* Hidden by default */
-  position: fixed; /* Fixed position */
-  bottom: 20px;
-  right: 0px; /* Right-end of the page */
-  z-index: 99; /* Make sure it stays on top */
-  font-size: 18px;
-  border: none;
-  outline: none;
-  background-color: #555; /* Button color */
-  color: white;
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 10px; /* Rounded corners */
-  margin-right: 20px; /* Add some space from the page border */
-}
-
-.scrollTopBtn:hover {
-  background-color: #333; /* Darker color on hover */
-}
-
-  </style>
 
   <!-- Animation on Scroll -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -1162,7 +1108,7 @@ window.onscroll = function () {
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+<script src="./assets/js/ScrollToTop.js"></script>
 </body>
 
 </html>
