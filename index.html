@@ -10,7 +10,7 @@
     - primary meta tags
   -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="stylesheet" href="styles.css">
+  <!-- <link rel="stylesheet" href="style.css"> -->
   <title>SkillWise</title>
   <meta name="title" content="SkillWise">
   <meta name="description" content="This is a education html template made by Priya Ghosal">
@@ -28,7 +28,12 @@
   <!-- 
     - custom css link
   -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/style.css" id="theme-style">
+
+  <!-- 
+    -dark mode css link disabled
+   -->
+  <!-- <link rel="stylesheet" href="./assets/css/darkmode.css" id="theme-style" > -->
 
   <!-- 
     - preload images
@@ -37,6 +42,9 @@
   <link rel="preload" as="image" href="./assets/images/hero-bg.png">
   <script src="config.js"></script>
 </head>
+
+<!-- Animation on Scroll -->
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 <body >
 
@@ -59,10 +67,10 @@
   <header class="header" data-header>
 
     
-    <div class="container">
+    <div class="container" >
 
       <a href="#">
-        <img src="./assets/images/Skillwise_logo.jpg" width="50" height="10" alt="SkillWise home">
+        <img src="./assets/images/Skillwise_logo-removebg-preview.png" width="50" height="10" alt="SkillWise home">
       </a>
 
       <nav class="navbar" data-navbar>
@@ -82,29 +90,25 @@
           
 
           <li class="navbar-item">
-            <a href="/index.html" class="navbar-link title-sm" data-nav-link>Home</a>
+            <a href="#home" class="navbar-link title-sm" data-nav-link>Home</a>
           </li>
 
           <li class="navbar-item">
-            <a href="/pages/courses.html" class="navbar-link title-sm" data-nav-link>Courses</a>
+            <a href="#courses" class="navbar-link title-sm" data-nav-link>Courses</a>
           </li>
 
           <li class="navbar-item">
-            <a href="/pages/blog.html" class="navbar-link title-sm" data-nav-link>Blog</a>
+            <a href="#blog" class="navbar-link title-sm" data-nav-link>Blog</a>
           </li>
 
           <li class="navbar-item">
-            <a href="/pages/contact.html" class="navbar-link title-sm" data-nav-link>Contacts</a>
+            <a href="#contact" class="navbar-link title-sm" data-nav-link>Contacts</a>
           </li>
 
           <li class="navbar-item"></li>
             <a href="./Faq.html" class="navbar-link title-sm" data-nav-link>FAQ</a>
           </li>
-          <div class="containers">
-            <button id="theme-toggle">
-              <ion-icon id="theme-icon" name="sunny-outline"></ion-icon>
-            </button>
-          </div>
+          
         </ul>
 
       </nav>
@@ -113,7 +117,9 @@
       <div class="searchBox">
         <input class="searchInput" type="text" name="" placeholder="Search something">
         <button class="searchButton SearchBTN" href="#">
-<svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
+
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 29 29"  fill="none">
+
 <g clip-path="url(#clip0_2_17)">
 <g filter="url(#filter0_d_2_17)">
   <path d="M23.7953 23.9182L19.0585 19.1814M19.0585 19.1814C19.8188 18.4211 20.4219 17.5185 20.8333 16.5251C21.2448 15.5318 21.4566 14.4671 21.4566 13.3919C21.4566 12.3167 21.2448 11.252 20.8333 10.2587C20.4219 9.2653 19.8188 8.36271 19.0585 7.60242C18.2982 6.84214 17.3956 6.23905 16.4022 5.82759C15.4089 5.41612 14.3442 5.20435 13.269 5.20435C12.1938 5.20435 11.1291 5.41612 10.1358 5.82759C9.1424 6.23905 8.23981 6.84214 7.47953 7.60242C5.94407 9.13789 5.08145 11.2204 5.08145 13.3919C5.08145 15.5634 5.94407 17.6459 7.47953 19.1814C9.01499 20.7168 11.0975 21.5794 13.269 21.5794C15.4405 21.5794 17.523 20.7168 19.0585 19.1814Z" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" shape-rendering="crispEdges"></path>
@@ -139,12 +145,20 @@
 
         </button>
     </div>
+    
 
-      <a href="#" class="btn btn-secondary">Start Free Trial</a>
+
+      <a href="./signin.html" class="btn btn-secondary">Start Free Trial</a>
 
       <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
         <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
       </button>
+      <div class="containers">
+        <button id="theme-toggle">
+          <ion-icon id="theme-icon" name="sunny-outline"></ion-icon>
+        </button>
+      </div>
+     
     </div>
 
       <div class="overlay" data-overlay data-nav-toggler></div>
@@ -168,15 +182,15 @@
 
           <div class="hero-content">
 
-            <h1 class="headline-lg" id="hero-label">
+            <h1 class="headline-lg" id="hero-label" data-aos="zoom-out">
               Better <span class="span">Learning Future</span> Starts With SkillWise
             </h1>
 
-            <p class="title-md has-before">
+            <p class="title-md has-before"  data-aos="fade-right">
               It is long established fact that reader distracted by the readable content.
             </p>
 
-            <div class="btn-group">
+            <div class="btn-group" data-aos="flip-down">
               <a href="#" class="btn btn-primary">Get Started Now</a>
 
               
@@ -184,7 +198,7 @@
 
           </div>
 
-          <figure class="hero-banner">
+          <figure class="hero-banner" data-aos="fade-left">
             <img src="./assets/images/hero-banner.png" width="590" height="620" alt="hero banner" class="w-100">
           </figure>
 
@@ -199,20 +213,20 @@
         - #CATEGORY
       -->
 
-      <section  id="courses"  class="section category has-bg-image" aria-labelledby="category-label"
-        style="background-image: url('./assets/images/category-bg.png')">
+      <section    class="section category has-bg-image" aria-labelledby="category-label"
+         >
         <div class="container">
 
-          <p class="title-sm text-center section-subtitle" id="category-label">Course Categories</p>
+          <p id="keppi" class="title-sm text-center section-subtitle keppi" id="category-label" data-aos="flip-down">Course Categories</p>
 
-          <h2 class="headline-md text-center section-title">
+          <h2 class="headline-md text-center section-title" data-aos="fade-down">
             Browse Top <span class="span has-after">Categories</span>
           </h2>
 
           <ul class="grid-list">
 
             <li>
-              <div class="card category-card">
+              <div class="card category-card" data-aos="fade-right">
 
                 <div class="card-icon">
                   <img src="./assets/images/category-1.svg" width="72" height="72" loading="lazy"
@@ -231,7 +245,7 @@
             </li>
 
             <li>
-              <div class="card category-card">
+              <div class="card category-card" data-aos="fade-right">
 
                 <div class="card-icon">
                   <img src="./assets/images/category-2.svg" width="72" height="72" loading="lazy"
@@ -241,16 +255,16 @@
                 <div>
                   <h3 class="title-lg">UI/UX Design</h3>
 
-                  <p class="title-sm">68 Courses</p>
+                  <p class="title-sm">6 Courses</p>
                 </div>
 
-                <a href="#" class="layer-link" aria-label="UI/UX Design Category"></a>
+                <a href="uiux.html" class="layer-link" aria-label="UI/UX Design Category"></a>
 
               </div>
             </li>
 
             <li>
-              <div class="card category-card">
+              <div class="card category-card" data-aos="fade-right">
 
                 <div class="card-icon">
                   <img src="./assets/images/category-3.svg" width="72" height="72" loading="lazy"
@@ -269,7 +283,7 @@
             </li>
 
             <li>
-              <div class="card category-card">
+              <div class="card category-card" data-aos="fade-right">
 
                 <div class="card-icon">
                   <img src="./assets/images/category-4.svg" width="72" height="72" loading="lazy"
@@ -288,7 +302,7 @@
             </li>
 
             <li>
-              <div class="card category-card">
+              <div class="card category-card" data-aos="fade-right">
 
                 <div class="card-icon">
                   <img src="./assets/images/marketing.jpeg" width="72" height="72" loading="lazy"
@@ -307,7 +321,7 @@
             </li>
 
             <li>
-              <div class="card category-card">
+              <div class="card category-card" data-aos="fade-right">
 
                 <div class="card-icon">
                   <img src="./assets/images/category-5.svg" width="72" height="72" loading="lazy" alt="Finances icon">
@@ -326,7 +340,7 @@
 
           </ul>
 
-          <a href="#" class="btn btn-primary">View All Categories</a>
+          <a href="#" class="btn btn-primary" data-aos="flip-left">View All Categories</a>
 
         </div>
       </section>
@@ -342,14 +356,18 @@
       <section id="about" class="section about" aria-labelledby="about-label">
         <div class="container">
 
-          <figure class="about-banner">
+          <figure class="about-banner" data-aos="fade-down"
+          data-aos-offset="200"
+          data-aos-easing="ease-in-sine">
             <img src="./assets/images/about-banner.png" width="775" height="685" loading="lazy" alt="about banner"
               class="w-100">
           </figure>
 
-          <div class="about-content">
+          <div class="about-content" data-aos="fade-up"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine">
 
-            <p class="title-sm section-subtitle" id="about-label">About SkillWise</p>
+            <p id="keppi" class="title-sm section-subtitle keppi" id="about-label" style="font-size: 28px;">About SkillWise</p>
 
             <h2 class="headline-md section-title">
               We Provide The Best Online <span class="span has-after">Education</span>
@@ -413,20 +431,20 @@
         - #COURSE
       -->
 
-      <section  id="pricing" class="section course has-bg-image" aria-labelledby="course-label"
-        style="background-image: url('./assets/images/course-bg.png')">
+      <section id="courses" id="pricing" class="section course has-bg-image" aria-labelledby="course-label"
+        >
         <div class="container">
 
-          <p class="title-sm section-subtitle text-center">Featured Courses</p>
+          <p id="keppi" class="title-sm section-subtitle text-center ">Featured Courses</p>
 
-          <h2 class="headline-md section-title text-center" id="course-label">
+          <h2 class="headline-md section-title text-center" id="course-label" data-aos="fade-down">
             Choose Unlimited <span class="span has-after">Courses</span>
           </h2>
 
           <ul class="grid-list">
 
             <li class="card-container">
-              <div class="card course-card">
+              <div class="card course-card" data-aos="fade-right">
 
                 <figure class="card-banner">
                   <img src="./assets/images/course-1.png" width="370" height="248" loading="lazy"
@@ -477,7 +495,7 @@
             </li>
 
             <li class="card-container">
-              <div class="card course-card">
+              <div class="card course-card" data-aos="fade-left">
 
                 <figure class="card-banner">
                   <img src="./assets/images/course-2.png" width="370" height="248" loading="lazy"
@@ -528,7 +546,7 @@
             </li>
 
             <li class="card-container">
-              <div class="card course-card">
+              <div class="card course-card" data-aos="fade-right">
 
                 <figure class="card-banner">
                   <img src="./assets/images/course-3.png" width="370" height="248" loading="lazy"
@@ -579,7 +597,7 @@
             </li>
 
             <li class="card-container">
-              <div class="card course-card">
+              <div class="card course-card" data-aos="fade-left">
 
                 <figure class="card-banner">
                   <img src="./assets/images/course-4.png" width="370" height="248" loading="lazy"
@@ -630,7 +648,7 @@
             </li>
 
             <li class="card-container">
-              <div class="card course-card">
+              <div class="card course-card" data-aos="fade-right">
 
                 <figure class="card-banner">
                   <img src="./assets/images/course-5.png" width="370" height="248" loading="lazy"
@@ -681,7 +699,7 @@
             </li>
 
             <li class="card-container">
-              <div class="card course-card">
+              <div class="card course-card" data-aos="fade-left">
 
                 <figure class="card-banner">
                   <img src="./assets/images/course-6.png" width="370" height="248" loading="lazy"
@@ -733,7 +751,7 @@
 
           </ul>
 
-          <a href="#" class="btn btn-primary">View All Courses</a>
+          <a href="#" class="btn btn-primary" data-aos="zoom-out">View All Courses</a>
 
         </div>
       </section>
@@ -749,11 +767,11 @@
       <section class="cta" aria-labelledby="cta-label">
         <div class="container">
 
-          <h2 class="headline-md section-title" id="cta-label">
+          <h2 class="headline-md section-title" id="cta-label" data-aos="zoom-in">
             Education Is About Creating Leaders For Tomorrow
           </h2>
 
-          <a href="signin.html" class="btn btn-tertiary">Register Today</a>
+          <a href="signin.html" class="btn btn-tertiary" data-aos="fade-left">Register Today</a>
 
         </div>
       </section>
@@ -765,18 +783,20 @@
         - #BLOG
       -->
 
-      <section class="section blog has-bg-image" aria-labelledby="blog-label" style="background-image: url('./assets/images/course-bg.png')">
+      <section id="blog" class="section blog has-bg-image" aria-labelledby="blog-label" >
 
-        <div class="container">
+        <div class="container" >
 
-          <p class="title-sm text-center section-subtitle" id="category-label">Featured Blogs</p>
+          <p id="keppi" class="title-sm text-center section-subtitle" id="category-label">Featured Blogs</p>
 
-          <h2 class="headline-md text-center section-title">
+          <h2 class="headline-md text-center section-title" data-aos="fade-down">
             Learn with <span class="span has-after">Articles</span>
           </h2>
 
           <ul class="grid-list">
-            <li class="card-container">
+            <li class="card-container" data-aos="fade-right"
+            data-aos-offset="100"
+            data-aos-easing="ease-in-sine">
               <div class="card blog-card">
                 <figure class="card-banner">
                   <img src="./assets/images/course-1.png" width="370" height="248" loading="lazy"
@@ -787,11 +807,13 @@
                     The Future of Data Science: Trends and Opportunities
                   </h3>
                   <p class="title-sm">Explore the emerging trends in data science and how they are shaping industries globally.</p>
-                  <a href="#">Read More ...</a>
+                  <a href="./pages/blog.html">Read More ...</a>
                 </div>
               </div>
             </li>
-            <li class="card-container">
+            <li class="card-container" data-aos="fade-right"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine">
               <div class="card blog-card">
                 <figure class="card-banner">
                   <img src="./assets/images/course-2.png" width="370" height="248" loading="lazy"
@@ -802,11 +824,13 @@
                     Marketing in the Digital Age: Strategies that Work
                   </h3>
                   <p class="title-sm">Discover how digital marketing is evolving with new platforms and technologies.</p>
-                  <a href="#">Read More ...</a>
+                  <a href="./pages/blog.html">Read More ...</a>
                 </div>
               </div>
             </li>
-            <li class="card-container">
+            <li class="card-container"data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
               <div class="card blog-card">
                 <figure class="card-banner">
                   <img src="./assets/images/course-6.png" width="370" height="248" loading="lazy"
@@ -817,13 +841,13 @@
                     Creative Journey: A Guide to Graphic Design Success
                   </h3>
                   <p class="title-sm">Learn how to navigate the world of graphic design, from basic principles to advanced techniques.</p>
-                  <a href="#">Read More ...</a>
+                  <a href="./pages/blog.html">Read More ...</a>
                 </div>
               </div>
             </li>
           </ul>
 
-          <a href="#" class="btn btn-primary">View All Blogs</a>
+          <a href="./pages/blog.html" class="btn btn-primary" data-aos="zoom-in">View All Blogs</a>
         </div>
       </section>
 
@@ -832,11 +856,11 @@
 
 
 
-  <footer class="footer has-bg-image" style="background-image: url('./assets/images/footer-bg.png')">
+  
 
 
 
-  <footer class="footer has-bg-image" style="background-image: url('./assets/images/footer-bg.png')">
+  <footer class="footer has-bg-image" >
 
 
     <div class="section footer-top">
@@ -883,8 +907,8 @@
             </li>
 
             <li>
-              <a href="#" class="social-link">
-                <img src="./assets/images/linkedIn.svg" width="40" height="40" loading="lazy" alt="instagram">
+              <a href="#" class="social-link" id="social-link5">
+                <img src="./assets/images/linkedIn.svg" width="40" height="40" loading="lazy" alt="linkedin">
               </a>
             </li>
           </ul>
@@ -920,33 +944,47 @@
           <li>
             <a href="#blog" class="title-sm footer-link">Blog</a>
           </li>
+          <li>
+            <a href="#" class="title-sm footer-link">Payment Method</a>
+          </li>
+
 
         </ul>
 
         <ul class="footer-list">
 
           <li>
-            <p class="headline-sm footer-list-title">Legal</p>
+            <p class="headline-sm footer-list-title">Consumer Information</p>
           </li>
 
+          <!-- <li>
+            <a href="#" class="title-sm footer-link">Legal</a>
+          </li> -->
+          
           <li>
             <a href="#" class="title-sm footer-link">Legal</a>
           </li>
 
           <li>
-            <a href="./pages/term.html" class="title-sm footer-link">Terms of Use</a>
+
+           <a href="terms.html" class="title-sm footer-link">Terms of Use</a>
+
           </li>
 
           <li>
-            <a href="#" class="title-sm footer-link">Terms & Condition</a>
+            <a href="Terms_&_Condition.html" class="title-sm footer-link">Terms & Condition</a>
           </li>
 
-          <li>
+          <!-- <li>
             <a href="#" class="title-sm footer-link">Payment Method</a>
+          </li> -->
+
+          <li>
+            <a href="PrivacyPolicy.html" class="title-sm footer-link">Privacy Policy</a>
           </li>
 
           <li>
-            <a href="#" class="title-sm footer-link">Privacy Policy</a>
+            <a href="copy.html" class="title-sm footer-link">Copyright Policy</a>
           </li>
 
         </ul>
@@ -998,18 +1036,18 @@
       </div>
     </div>
 
-    <!-- 
+  <!--
     - #Contact Us
   -->
 
     <section id="contact" class="cta" aria-labelledby="cta-label">
       <div class="container">
 
-        <h2 class="headline-md section-title" id="cta-label">
+        <h2 class="headline-md section-title" id="cta-label" data-aos="fade-right">
           Contact Us
         </h2>
 
-        <form id="contact-form">
+        <form id="contact-form" data-aos="fade-left">
           <input type="text" name="name" placeholder="Your Name" required>
           <input type="email" name="email" placeholder="Your Email" required>
           <textarea name="message" placeholder="Your Message" required></textarea>
@@ -1021,10 +1059,9 @@
 
     <div class="footer-bottom">
       <div class="container">
-
         <p class="copyright">
-         <a href="copy.html"> © Copyright Policy 2024 </a>  All Rights Reserved by Priya Ghosal
-        </p>
+          <a href="copy.html"> © Copyright Policy <time id="year"></time> </a> All Rights Reserved by Priya Ghosal
+      </p>
 
       </div>
     </div>
@@ -1059,13 +1096,19 @@
     });
   </script>
 
+  <!-- Animation on Scroll -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
 
   <!-- 
     - ionicon
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+<script src="./assets/js/ScrollToTop.js"></script>
 </body>
 
 </html>
