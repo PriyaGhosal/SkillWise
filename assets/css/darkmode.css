@@ -8,7 +8,7 @@
     --light-white:#FFFFF0;
     --light-gray:#d3d3d3;
     --oxford-blue:#1a1f4d;
-    --black:#121212;
+    --black:#1e1e1e;
     --light-black:#2C2C2C;
     --charcoal-black:#3C3C3C;
     --roman-silver: #5A5A5A ;
@@ -1496,4 +1496,107 @@ body.nav-active { overflow: hidden; }
   .footer-bottom p{
     font-size: 1.0rem;
   }
+  }.header1{
+    animation-name: pulse1;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
   }
+  .header2{
+    animation-name: pulse2;
+    animation-duration: 1.8s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+  .header3{
+    animation-name: pulse3;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+  .header4{
+    animation-name: pulse4;
+    animation-duration: 1.8s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+  .header5{
+    animation-name: pulse5;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+  .header6{
+    animation-name: pulse6;
+    animation-duration: 1.8s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes pulse1{
+    0%{
+      transform: translateY(-3.5px);
+    }
+    50%{
+      transform: translateY(0px);
+    }
+    100%{
+      transform: translateY(-3.5px);
+    }
+  }
+  @keyframes pulse2{
+    0%{
+      transform: translateY(-5px);
+    }
+    50%{
+      transform: translateY(0px);
+    }
+    100%{
+      transform: translateY(-5px);
+    }
+  }
+  @keyframes pulse3{
+    0%{
+      transform: translateY(-3.5px);
+    }
+    50%{
+      transform: translateY(0px);
+    }
+    100%{
+      transform: translateY(-3.5px);
+    }
+  }
+  @keyframes pulse4{
+    0%{
+      transform: translateY(-5px);
+    }
+    50%{
+      transform: translateY(0px);
+    }
+    100%{
+      transform: translateY(-5px);
+    }
+  }
+  @keyframes pulse5{
+    0%{
+      transform: translateY(-3.5px);
+    }
+    50%{
+      transform: translateY(0px);
+    }
+    100%{
+      transform: translateY(-3.5px);
+    }
+  }
+  @keyframes pulse6{
+    0%{
+      transform: translateY(-5px);
+    }
+    50%{
+      transform: translateY(0px);
+    }
+    100%{
+      transform: translateY(-5px);
+    }
+  }
+  
