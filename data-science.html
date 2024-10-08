@@ -7,15 +7,17 @@
     <meta name="description" content="Explore our data science courses covering data analysis, machine learning, deep learning, and more. Enroll now and build your data science skills.">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+    <!-- Animation on Scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
     <section class="section courses has-bg-image">
         <div class="container">
 
-            <p class="title-sm text-center section-subtitle" id="data-science-label">Explore Courses</p>
+            <p class="title-sm text-center section-subtitle" id="data-science-label" >Explore Courses</p>
 
-            <h2 class="headline-md text-center section-title">
+            <h2 class="headline-md text-center section-title" data-aos="fade-down">
                 Data Science <span class="span has-after">Courses</span>
             </h2>
 
@@ -27,7 +29,7 @@
 
             <ul class="grid-list">
                 <li>
-                    <div class="card course-card">
+                    <div class="card course-card" data-aos="zoom-out-down">
                         <div class="card-icon">
                             <img src="./assets/images/data-science/image1.jpg" width="300" height="100" loading="lazy"
                                 alt="Introduction to Data Science course overview image">
@@ -41,7 +43,7 @@
                 </li>
 
                 <li>
-                    <div class="card course-card">
+                    <div class="card course-card" data-aos="zoom-out-down">
                         <div class="card-icon">
                             <img src="./assets/images/data-science/image2.png" width="300" height="100" loading="lazy"
                                 alt="Data Analysis with Python course overview image">
@@ -55,7 +57,7 @@
                 </li>
 
                 <li>
-                    <div class="card course-card">
+                    <div class="card course-card" data-aos="zoom-out-down">
                         <div class="card-icon">
                             <img src="./assets/images/data-science/image5.png" width="300" height="100" loading="lazy"
                                 alt="Data Visualization with Tableau course overview image">
@@ -69,7 +71,7 @@
                 </li>
 
                 <li>
-                    <div class="card course-card">
+                    <div class="card course-card" data-aos="zoom-out-down">
                         <div class="card-icon">
                             <img src="./assets/images/data-science/image3.jpg" width="300" height="100" loading="lazy"
                                 alt="Machine Learning Basics course overview image">
@@ -83,7 +85,7 @@
                 </li>
 
                 <li>
-                    <div class="card course-card">
+                    <div class="card course-card" data-aos="zoom-out-down">
                         <div class="card-icon">
                             <img src="./assets/images/data-science/image4.jpg" width="300" height="100" loading="lazy"
                                 alt="Deep Learning Specialization course overview image">
@@ -98,10 +100,17 @@
 
             </ul>
 
-            <a href="enroll.html" class="btn btn-primary">Enroll in a Course</a>
+            <a href="enroll.html" class="btn btn-primary" data-aos="zoom-out">Enroll in a Course</a>
 
         </div>
     </section>
+
+
+    <!-- Animation on Scroll -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 </html>
