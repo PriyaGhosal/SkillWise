@@ -139,6 +139,13 @@ Thank you for your contributions to SkillWise!
                 </a>
             </td>
             <td align="center">
+                <a href="https://github.com/RAVICHANDRALS507/">
+                    <img src="https://avatars.githubusercontent.com/u/79781219?s=400&u=30ecd66a55b16911326bb5f8844d304e31fe3519&v=4" width="100;" alt="Vinay"/>
+                    <br />
+                    <sub><b>RAVICHANDRA L S</b></sub>
+                </a>
+            </td>
+            <td align="center">
                 <a href="https://github.com/yeshwanth-ds">
                     <img src="https://avatars.githubusercontent.com/u/119668086?v=4" width="100;" alt="yeshwanth-ds"/>
                     <br />
