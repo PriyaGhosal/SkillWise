@@ -1088,16 +1088,40 @@ body.nav-active {
     gap: 48px;
   }
 }
+/* Ge
+neral dark mode settings */
+body.dark-mode .navbar {
+  background-color: var(
+    --keppei
+  ); /* Background color for navbar in dark mode */
+  color: var(--white); /* Text color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Optional shadow for better visibility */
+}
 
 body.dark-mode {
   background-color: var(--oxford-blue);
 }
 
-body.dark-mode .btn {
+/* Navbar list background in dark mode */
+body.dark-mode.navbar {
+  background-color: var(--oxford-blue);
+  color: var(--white);
+}
+/* Button styles in dark mode */
+body.dark-mode .navbar a:hover {
   background-color: var(--keppei);
-  color: var(--oxford-blue);
+  color: var(--white);
 }
 
+/* Hover effect for navbar buttons */
+body.dark-mode .navbar a {
+  color: var(--white);
+}
+/* Other styles */
+body.dark-mode .btn:hover {
+  background-color: var(--white);
+  color: var(--oxford-blue);
+}
 body.dark-mode #theme-toggle {
   background-color: var(--oxford-blue);
 }
@@ -1105,10 +1129,10 @@ body.dark-mode #theme-toggle {
 body.dark-mode #theme-icon {
   color: var(--white);
 }
+
 body.dark-mode h1 {
   color: aliceblue;
 }
-
 #theme-toggle {
   /* position: fixed; */
 
@@ -1127,44 +1151,25 @@ body.dark-mode h1 {
   font-size: 24px;
   color: var(--oxford-blue);
 }
-
-/* Existing styles for dark mode */
-/* Dark Mode (Add a white box around the navbar) */
-body.dark-mode .navbar {
-  background-color: var(--white); /* White background for the navbar */
-  color: var(
-    --oxford-blue
-  ); /* Dark text color to contrast the white background */
-  padding: 15px; /* Padding around the navbar content */
-  border-radius: 12px; /* Rounded corners for the white box */
-  box-shadow: 0 6px 12px rgba(255, 255, 255, 0.3); /* Light shadow effect for the box */
-  display: inline-block; /* Make the box fit the content */
-  width: fit-content; /* Ensure the box fits the content */
+body.dark-mode.navbar {
+  background-color: var(--oxford-blue);
+  color: var(--white);
 }
 
-/* Box surrounding the navbar items in dark mode */
-body.dark-mode .navbar-list {
-  padding: 10px; /* Padding around the navbar links inside the box */
-  border-radius: 8px; /* Additional rounding for the navbar list */
-  display: flex; /* Horizontal display of navbar items */
-  gap: 15px; /* Space between the navbar links */
+body.dark-mode .navbar a:hover {
+  background-color: var(--keppei);
+  color: var(--white);
 }
 
 /* Navbar links in dark mode */
-body.dark-mode .navbar-link {
-  color: var(--oxford-blue); /* Dark text color for contrast */
-  padding: 8px 16px; /* Padding for clickable area */
-  text-decoration: none; /* Remove underline from links */
-  background-color: transparent; /* No background by default */
-  border-radius: 6px; /* Slight rounding for links */
-  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+body.dark-mode .navbar a {
+  color: var(--white);
 }
 
 /* Hover effect in dark mode */
-body.dark-mode .navbar-link:hover {
-  background-color: var(--light-background-hover); /* Light hover background */
-  color: var(--oxford-blue); /* Dark text color on hover */
-  border-radius: 5px; /* Consistent with other elements */
+body.dark-mode .btn:hover {
+  background-color: var(--white);
+  color: var(--oxford-blue);
 }
 
 /* Default Light Theme (No box) */

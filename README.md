@@ -6,7 +6,7 @@
 <img src='./readme-images/desktop.png'>
 <br>
 
-*<i>SkillWise is an innovative online platform designed to help learners of all ages acquire new skills and knowledge. With a wide range of engaging courses and expert instructors, SkillWise provides the tools you need to succeed in today’s competitive world.</i>*
+_<i>SkillWise is an innovative online platform designed to help learners of all ages acquire new skills and knowledge. With a wide range of engaging courses and expert instructors, SkillWise provides the tools you need to succeed in today’s competitive world.</i>_
 
 <br>
 
@@ -32,8 +32,6 @@
 </table>
 </div>
 <br>
-
-
 
 Welcome to **SkillWise**, an innovative online platform designed to help learners of all ages acquire new skills and knowledge. With a wide range of engaging courses and expert instructors, SkillWise provides the tools you need to succeed in today’s competitive world.
 
@@ -71,55 +69,61 @@ Enjoy your learning experience with SkillWise!
 We welcome contributions from the community. To contribute, follow these detailed steps:
 
 1. **Fork the Repository**:
-    - Navigate to the repository on GitHub.
-    - Click the [Fork](https://github.com/PriyaGhosal/SkillWise/fork) button at the top right of the page to create a copy of the repository under your GitHub account.
-    - For more information, see [GitHub's Forking Guide](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo).
+
+   - Navigate to the repository on GitHub.
+   - Click the [Fork](https://github.com/PriyaGhosal/SkillWise/fork) button at the top right of the page to create a copy of the repository under your GitHub account.
+   - For more information, see [GitHub's Forking Guide](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo).
 
 2. **Clone the Forked Repository**:
-    - Open your terminal or command prompt.
-    - Clone your forked repository to your local machine using the command:
-      ```bash
-      git clone https://github.com/your-username/SkillWise.git
-      ```
-    - Replace `your-username` with your GitHub username.
+
+   - Open your terminal or command prompt.
+   - Clone your forked repository to your local machine using the command:
+     ```bash
+     git clone https://github.com/your-username/SkillWise.git
+     ```
+   - Replace `your-username` with your GitHub username.
 
 3. **Create a New Branch**:
-    - Navigate to the repository directory:
-      ```bash
-      cd SkillWise
-      ```
-    - Create a new branch for your feature or bug fix:
-      ```bash
-      git checkout -b feature-branch
-      ```
-    - Replace `feature-branch` with a descriptive name for your branch.
+
+   - Navigate to the repository directory:
+     ```bash
+     cd SkillWise
+     ```
+   - Create a new branch for your feature or bug fix:
+     ```bash
+     git checkout -b feature-branch
+     ```
+   - Replace `feature-branch` with a descriptive name for your branch.
 
 4. **Make Your Changes**:
-    - Implement your changes or additions in the codebase.
-    - Ensure your changes follow the project's coding standards and guidelines.
+
+   - Implement your changes or additions in the codebase.
+   - Ensure your changes follow the project's coding standards and guidelines.
 
 5. **Commit Your Changes**:
-    - Stage your changes:
-      ```bash
-      git add .
-      ```
-    - Commit your changes with a meaningful commit message:
-      ```bash
-      git commit -m 'Add some feature'
-      ```
-    - Replace `'Add some feature'` with a descriptive message about your changes.
+
+   - Stage your changes:
+     ```bash
+     git add .
+     ```
+   - Commit your changes with a meaningful commit message:
+     ```bash
+     git commit -m 'Add some feature'
+     ```
+   - Replace `'Add some feature'` with a descriptive message about your changes.
 
 6. **Push to the Branch**:
-    - Push your changes to your forked repository on GitHub:
-      ```bash
-      git push origin feature-branch
-      ```
+
+   - Push your changes to your forked repository on GitHub:
+     ```bash
+     git push origin feature-branch
+     ```
 
 7. **Open a Pull Request**:
-    - Navigate to the original repository on GitHub.
-    - Click the "Compare & pull request" button next to your recently pushed branch.
-    - Provide a clear and detailed description of your changes in the pull request.
-    - Submit the pull request for review.
+   - Navigate to the original repository on GitHub.
+   - Click the "Compare & pull request" button next to your recently pushed branch.
+   - Provide a clear and detailed description of your changes in the pull request.
+   - Submit the pull request for review.
 
 For more detailed instructions, refer to [GitHub's Guide on Creating a Pull Request](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
 
