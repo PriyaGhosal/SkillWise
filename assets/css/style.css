@@ -388,49 +388,17 @@ body.nav-active { overflow: hidden; }
   margin-block-end: 34px; 
 }
 
-.nav-close-btn ion-icon { 
-  --ionicon-stroke-width: 35px; 
-}
+.nav-close-btn ion-icon { --ionicon-stroke-width: 35px; }
 
-.navbar-list {
-  display: flex;
-  gap: 20px; /* Adjusts space between each item */
-}
-
-.navbar-item {
-  list-style: none;
-}
+.navbar-item:not(:last-child) { border-block-end: 1px solid var(--black_10); }
 
 .navbar-link {
   padding: 8px 16px;
   transition: var(--transition);
-  text-decoration: none;
-  color: var(--oxford-blue);
-  background-color: var(--white);
-  border-radius: 8px;
-  transition: color 0.3s ease, background-color 0.3s ease;
 }
 
 .navbar-link:is(:hover, :focus-visible) { 
-  color: var(--white); /* Text color on hover */
-  background-color: #FF8086; /* Background color on hover */
-}
-
-/* Start Free Trial Button */
-.start-free-trial-btn {
-  background-color: var(--black);
-  color: var(--white);
-  padding: 10px 20px;
-  border-radius: 8px;
-  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-  text-decoration: none;
-}
-
-.start-free-trial-btn:hover {
-  background-color: #FF8086; /* Change background color on hover */
-  transform: scale(1.05); /* Slightly enlarge button on hover */
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow to make it pop */
-  color: var(--white); /* Ensure text remains visible */
+  color: var(--oxford-blue);
 }
 
 .overlay {
@@ -449,6 +417,8 @@ body.nav-active { overflow: hidden; }
   opacity: 0.6;
   visibility: visible;
 }
+
+
 
 
 
