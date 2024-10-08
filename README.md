@@ -7,7 +7,6 @@
 <br>
 
 _<i>SkillWise is an innovative online platform designed to help learners of all ages acquire new skills and knowledge. With a wide range of engaging courses and expert instructors, SkillWise provides the tools you need to succeed in today’s competitive world.</i>_
-<br>With our expert instructors, real-world projects, and a supportive learning community, SkillWise empowers individuals to achieve personal and professional success.
 
 <br>
 
@@ -47,11 +46,12 @@ _<i>SkillWise is an innovative online platform designed to help learners of all 
 At **SkillWise** , we’re committed to transforming learning through immersive and tailored experiences. Catering to all ages and skill levels, our platform offers diverse interactive courses. We believe in personalized learning paths that adapt to your needs. With expert instructors, real-world projects, and a supportive community, we empower you to succeed.🥇
 
 Our mission is to bridge the gap between theoretical knowledge and practical application, ensuring that our learners not only acquire new skills but also feel confident in applying them in real-life situations.💡
-=======
+
 Welcome to **SkillWise**, an innovative online platform designed to help learners of all ages acquire new skills and knowledge. With a wide range of engaging courses and expert instructors, SkillWise provides the tools you need to succeed in today’s competitive world.
 
-
 We are more than just an educational platform—we are a community of lifelong learners, dedicated to making education accessible, engaging, and impactful.🌍✨
+
+With our expert instructors, real-world projects, and a supportive learning community, SkillWise empowers individuals to achieve personal and professional success.
 
 ## Prerequisites🛠️
 
