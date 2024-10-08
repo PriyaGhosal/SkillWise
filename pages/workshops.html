@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Events & Workshops</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Include FullCalendar CSS -->
+    <link href='https://cdn.jsdelivr.net/npm/fullcalendar@6.0.0/main.min.css' rel='stylesheet' />
+    <link rel="stylesheet" href="../assets/css/workshops.css" />
+
+</head>
+<body>
+    <header>
+        <h1>Live Events & Workshops</h1>
+    </header>
+
+    <!-- Upcoming Events Section -->
+    <section id="upcoming-events">
+        <h2>Upcoming Events</h2>
+        <div class="event-list">
+            <!-- Event List (will be generated dynamically) -->
+        </div>
+    </section>
+
+    <!-- Event Calendar Section -->
+    <section id="event-calendar">
+        <h2>Event Calendar</h2>
+        <div id="calendar"></div>
+    </section>
+
+    <!-- Past Events Section -->
+    <section id="past-events">
+        <h2>Past Events</h2>
+        <div class="past-event-list">
+            <!-- Past Event Recordings (will be generated dynamically) -->
+        </div>
+    </section>
+
+    <!-- Include FullCalendar JS and our script -->
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.0.0/main.min.js'></script>
+    <script src="scripts.js"></script>
+    <script src="../assets/js/workshops.js"></script>
+</body>
+</html>
