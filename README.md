@@ -6,7 +6,7 @@
 <img src='./readme-images/desktop.png'>
 <br>
 
-*<i>SkillWise is an innovative online platform designed to help learners of all ages acquire new skills and knowledge. With a wide range of engaging courses and expert instructors, SkillWise provides the tools you need to succeed in today’s competitive world.</i>*
+_<i>SkillWise is an innovative online platform designed to help learners of all ages acquire new skills and knowledge. With a wide range of engaging courses and expert instructors, SkillWise provides the tools you need to succeed in today’s competitive world.</i>_
 
 <br>
 
@@ -32,8 +32,6 @@
 </table>
 </div>
 <br>
-
-
 
 Welcome to **SkillWise**, an innovative online platform designed to help learners of all ages acquire new skills and knowledge. With a wide range of engaging courses and expert instructors, SkillWise provides the tools you need to succeed in today’s competitive world.
 
@@ -71,55 +69,61 @@ Enjoy your learning experience with SkillWise!
 We welcome contributions from the community. To contribute, follow these detailed steps:
 
 1. **Fork the Repository**:
-    - Navigate to the repository on GitHub.
-    - Click the [Fork](https://github.com/PriyaGhosal/SkillWise/fork) button at the top right of the page to create a copy of the repository under your GitHub account.
-    - For more information, see [GitHub's Forking Guide](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo).
+
+   - Navigate to the repository on GitHub.
+   - Click the [Fork](https://github.com/PriyaGhosal/SkillWise/fork) button at the top right of the page to create a copy of the repository under your GitHub account.
+   - For more information, see [GitHub's Forking Guide](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo).
 
 2. **Clone the Forked Repository**:
-    - Open your terminal or command prompt.
-    - Clone your forked repository to your local machine using the command:
-      ```bash
-      git clone https://github.com/your-username/SkillWise.git
-      ```
-    - Replace `your-username` with your GitHub username.
+
+   - Open your terminal or command prompt.
+   - Clone your forked repository to your local machine using the command:
+     ```bash
+     git clone https://github.com/your-username/SkillWise.git
+     ```
+   - Replace `your-username` with your GitHub username.
 
 3. **Create a New Branch**:
-    - Navigate to the repository directory:
-      ```bash
-      cd SkillWise
-      ```
-    - Create a new branch for your feature or bug fix:
-      ```bash
-      git checkout -b feature-branch
-      ```
-    - Replace `feature-branch` with a descriptive name for your branch.
+
+   - Navigate to the repository directory:
+     ```bash
+     cd SkillWise
+     ```
+   - Create a new branch for your feature or bug fix:
+     ```bash
+     git checkout -b feature-branch
+     ```
+   - Replace `feature-branch` with a descriptive name for your branch.
 
 4. **Make Your Changes**:
-    - Implement your changes or additions in the codebase.
-    - Ensure your changes follow the project's coding standards and guidelines.
+
+   - Implement your changes or additions in the codebase.
+   - Ensure your changes follow the project's coding standards and guidelines.
 
 5. **Commit Your Changes**:
-    - Stage your changes:
-      ```bash
-      git add .
-      ```
-    - Commit your changes with a meaningful commit message:
-      ```bash
-      git commit -m 'Add some feature'
-      ```
-    - Replace `'Add some feature'` with a descriptive message about your changes.
+
+   - Stage your changes:
+     ```bash
+     git add .
+     ```
+   - Commit your changes with a meaningful commit message:
+     ```bash
+     git commit -m 'Add some feature'
+     ```
+   - Replace `'Add some feature'` with a descriptive message about your changes.
 
 6. **Push to the Branch**:
-    - Push your changes to your forked repository on GitHub:
-      ```bash
-      git push origin feature-branch
-      ```
+
+   - Push your changes to your forked repository on GitHub:
+     ```bash
+     git push origin feature-branch
+     ```
 
 7. **Open a Pull Request**:
-    - Navigate to the original repository on GitHub.
-    - Click the "Compare & pull request" button next to your recently pushed branch.
-    - Provide a clear and detailed description of your changes in the pull request.
-    - Submit the pull request for review.
+   - Navigate to the original repository on GitHub.
+   - Click the "Compare & pull request" button next to your recently pushed branch.
+   - Provide a clear and detailed description of your changes in the pull request.
+   - Submit the pull request for review.
 
 For more detailed instructions, refer to [GitHub's Guide on Creating a Pull Request](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
 
@@ -160,40 +164,26 @@ Thank you for your contributions to SkillWise!
                 </a>
             </td>
             <td align="center">
+                <a href="https://github.com/rahul-chakradhari">
+                    <img src="https://avatars.githubusercontent.com/u/96400194?v=4" width="100;" alt="rahul-chakradhari"/>
+                    <br />
+                    <sub><b>Rahul Chakradhari</b></sub>
+                </a>
+            </td>
+            <td align="center">
                 <a href="https://github.com/UdaySharmaGitHub">
                     <img src="https://avatars.githubusercontent.com/u/132534225?v=4" width="100;" alt="UdaySharmaGitHub"/>
                     <br />
                     <sub><b>Uday Sharma</b></sub>
                 </a>
             </td>
+		</tr>
+		<tr>
             <td align="center">
                 <a href="https://github.com/kavya-r30">
                     <img src="https://avatars.githubusercontent.com/u/161142013?v=4" width="100;" alt="kavya-r30"/>
                     <br />
                     <sub><b>kavya-r30</b></sub>
-                </a>
-            </td>
-		</tr>
-		<tr>
-            <td align="center">
-                <a href="https://github.com/1nsh">
-                    <img src="https://avatars.githubusercontent.com/u/168742283?v=4" width="100;" alt="1nsh"/>
-                    <br />
-                    <sub><b>Vansh Chitransh</b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/codeforlifeee">
-                    <img src="https://avatars.githubusercontent.com/u/168173457?v=4" width="100;" alt="codeforlifeee"/>
-                    <br />
-                    <sub><b>Tejas Surya</b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/ankit071105">
-                    <img src="https://avatars.githubusercontent.com/u/139707943?v=4" width="100;" alt="ankit071105"/>
-                    <br />
-                    <sub><b>Ankit Kumar</b></sub>
                 </a>
             </td>
             <td align="center">
@@ -211,14 +201,42 @@ Thank you for your contributions to SkillWise!
                 </a>
             </td>
             <td align="center">
-                <a href="https://github.com/Sayantan1024">
-                    <img src="https://avatars.githubusercontent.com/u/139146243?v=4" width="100;" alt="Sayantan1024"/>
+                <a href="https://github.com/ankit071105">
+                    <img src="https://avatars.githubusercontent.com/u/139707943?v=4" width="100;" alt="ankit071105"/>
                     <br />
-                    <sub><b>Sayantan Saha</b></sub>
+                    <sub><b>Ankit Kumar</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/codeforlifeee">
+                    <img src="https://avatars.githubusercontent.com/u/168173457?v=4" width="100;" alt="codeforlifeee"/>
+                    <br />
+                    <sub><b>Tejas Surya</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/1nsh">
+                    <img src="https://avatars.githubusercontent.com/u/168742283?v=4" width="100;" alt="1nsh"/>
+                    <br />
+                    <sub><b>Vansh Chitransh</b></sub>
                 </a>
             </td>
 		</tr>
 		<tr>
+            <td align="center">
+                <a href="https://github.com/Durgaprasad-Developer">
+                    <img src="https://avatars.githubusercontent.com/u/177651977?v=4" width="100;" alt="Durgaprasad-Developer"/>
+                    <br />
+                    <sub><b>Durgaprasad-Developer</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/Nikhileshmauje">
+                    <img src="https://avatars.githubusercontent.com/u/118903685?v=4" width="100;" alt="Nikhileshmauje"/>
+                    <br />
+                    <sub><b>NikhileshM24</b></sub>
+                </a>
+            </td>
             <td align="center">
                 <a href="https://github.com/SiddhanthKapoor">
                     <img src="https://avatars.githubusercontent.com/u/177930064?v=4" width="100;" alt="SiddhanthKapoor"/>
@@ -227,10 +245,10 @@ Thank you for your contributions to SkillWise!
                 </a>
             </td>
             <td align="center">
-                <a href="https://github.com/Nikhileshmauje">
-                    <img src="https://avatars.githubusercontent.com/u/118903685?v=4" width="100;" alt="Nikhileshmauje"/>
+                <a href="https://github.com/Sayantan1024">
+                    <img src="https://avatars.githubusercontent.com/u/139146243?v=4" width="100;" alt="Sayantan1024"/>
                     <br />
-                    <sub><b>NikhileshM24</b></sub>
+                    <sub><b>Sayantan Saha</b></sub>
                 </a>
             </td>
             <td align="center">
@@ -247,6 +265,8 @@ Thank you for your contributions to SkillWise!
                     <sub><b>karraharichandana</b></sub>
                 </a>
             </td>
+		</tr>
+		<tr>
             <td align="center">
                 <a href="https://github.com/Sankar-1110">
                     <img src="https://avatars.githubusercontent.com/u/143268107?v=4" width="100;" alt="Sankar-1110"/>
@@ -261,13 +281,18 @@ Thank you for your contributions to SkillWise!
                     <sub><b>Megh Bari</b></sub>
                 </a>
             </td>
-		</tr>
-		<tr>
             <td align="center">
                 <a href="https://github.com/shobhit15082003">
                     <img src="https://avatars.githubusercontent.com/u/124374867?v=4" width="100;" alt="shobhit15082003"/>
                     <br />
                     <sub><b>shobhit15082003</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/shivamnayak201019">
+                    <img src="https://avatars.githubusercontent.com/u/125451145?v=4" width="100;" alt="shivamnayak201019"/>
+                    <br />
+                    <sub><b>shivamnayak201019</b></sub>
                 </a>
             </td>
             <td align="center">
@@ -284,18 +309,20 @@ Thank you for your contributions to SkillWise!
                     <sub><b>Mritunjai</b></sub>
                 </a>
             </td>
+		</tr>
+		<tr>
+            <td align="center">
+                <a href="https://github.com/Shobhit1729Aryan">
+                    <img src="https://avatars.githubusercontent.com/u/182258530?v=4" width="100;" alt="Shobhit1729Aryan"/>
+                    <br />
+                    <sub><b>Shobhit Aryan</b></sub>
+                </a>
+            </td>
             <td align="center">
                 <a href="https://github.com/TeamSelenium">
                     <img src="https://avatars.githubusercontent.com/u/32784221?v=4" width="100;" alt="TeamSelenium"/>
                     <br />
                     <sub><b>TeamSelenium</b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/shivamnayak201019">
-                    <img src="https://avatars.githubusercontent.com/u/125451145?v=4" width="100;" alt="shivamnayak201019"/>
-                    <br />
-                    <sub><b>shivamnayak201019</b></sub>
                 </a>
             </td>
             <td align="center">
@@ -305,8 +332,6 @@ Thank you for your contributions to SkillWise!
                     <sub><b>Yaser-2004</b></sub>
                 </a>
             </td>
-		</tr>
-		<tr>
             <td align="center">
                 <a href="https://github.com/anshumangahlot">
                     <img src="https://avatars.githubusercontent.com/u/178735564?v=4" width="100;" alt="anshumangahlot"/>
@@ -328,6 +353,8 @@ Thank you for your contributions to SkillWise!
                     <sub><b>Sangneel Deb</b></sub>
                 </a>
             </td>
+		</tr>
+		<tr>
             <td align="center">
                 <a href="https://github.com/mitgajera">
                     <img src="https://avatars.githubusercontent.com/u/144581159?v=4" width="100;" alt="mitgajera"/>
@@ -349,8 +376,6 @@ Thank you for your contributions to SkillWise!
                     <sub><b>rahulbamnuya</b></sub>
                 </a>
             </td>
-		</tr>
-		<tr>
             <td align="center">
                 <a href="https://github.com/sainKunal">
                     <img src="https://avatars.githubusercontent.com/u/166685451?v=4" width="100;" alt="sainKunal"/>
@@ -372,6 +397,8 @@ Thank you for your contributions to SkillWise!
                     <sub><b>Swami Malode</b></sub>
                 </a>
             </td>
+		</tr>
+		<tr>
             <td align="center">
                 <a href="https://github.com/tejasbenibagde">
                     <img src="https://avatars.githubusercontent.com/u/124677750?v=4" width="100;" alt="tejasbenibagde"/>
@@ -393,8 +420,6 @@ Thank you for your contributions to SkillWise!
                     <sub><b>Vishal Rana</b></sub>
                 </a>
             </td>
-		</tr>
-		<tr>
             <td align="center">
                 <a href="https://github.com/Shivaraj2003">
                     <img src="https://avatars.githubusercontent.com/u/96361349?v=4" width="100;" alt="Shivaraj2003"/>
@@ -416,6 +441,8 @@ Thank you for your contributions to SkillWise!
                     <sub><b>Pritesh Rajput</b></sub>
                 </a>
             </td>
+		</tr>
+		<tr>
             <td align="center">
                 <a href="https://github.com/MohammedDayan03">
                     <img src="https://avatars.githubusercontent.com/u/172948937?v=4" width="100;" alt="MohammedDayan03"/>
@@ -437,8 +464,6 @@ Thank you for your contributions to SkillWise!
                     <sub><b>Irtesaam Atfi</b></sub>
                 </a>
             </td>
-		</tr>
-		<tr>
             <td align="center">
                 <a href="https://github.com/Gauravtb2253">
                     <img src="https://avatars.githubusercontent.com/u/114927759?v=4" width="100;" alt="Gauravtb2253"/>
@@ -460,6 +485,8 @@ Thank you for your contributions to SkillWise!
                     <sub><b>Deepak yadav</b></sub>
                 </a>
             </td>
+		</tr>
+		<tr>
             <td align="center">
                 <a href="https://github.com/AnshDwivedi03">
                     <img src="https://avatars.githubusercontent.com/u/138333395?v=4" width="100;" alt="AnshDwivedi03"/>
