@@ -594,6 +594,53 @@ button:hover {
 
 .category .btn { margin-inline: auto; }
 
+#card-category-card1 {
+  transition: transform 0.3s ease; 
+}
+
+#card-category-card1:hover {
+  transform: scale(1.04); 
+}
+
+#card-category-card2 {
+  transition: transform 0.3s ease; 
+}
+
+#card-category-card2:hover {
+  transform: scale(1.04); 
+}
+
+#card-category-card3 {
+  transition: transform 0.3s ease; 
+}
+
+#card-category-card3:hover {
+  transform: scale(1.04); 
+}
+
+#card-category-card4 {
+  transition: transform 0.3s ease; 
+}
+
+#card-category-card4:hover {
+  transform: scale(1.04); 
+}
+
+#card-category-card5 {
+  transition: transform 0.3s ease; 
+}
+
+#card-category-card5:hover {
+  transform: scale(1.04); 
+}
+
+#card-category-card6 {
+  transition: transform 0.3s ease; 
+}
+
+#card-category-card6:hover {
+  transform: scale(1.04); 
+}
 
 
 
