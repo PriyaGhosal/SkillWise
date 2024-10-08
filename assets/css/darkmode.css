@@ -1497,3 +1497,6 @@ body.nav-active { overflow: hidden; }
     font-size: 1.0rem;
   }
   }
+  [alt="X logo"] {
+    background-color: white;
+  }
