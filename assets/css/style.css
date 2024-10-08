@@ -327,8 +327,11 @@ body.nav-active { overflow: hidden; }
   #HEADER
 \*-----------------------------------*/
 
+
 .header .btn { 
+  
   display: none; 
+
 }
 
 .header {
@@ -388,18 +391,62 @@ body.nav-active { overflow: hidden; }
   margin-block-end: 34px; 
 }
 
-.nav-close-btn ion-icon { --ionicon-stroke-width: 35px; }
+.nav-close-btn ion-icon { 
+  --ionicon-stroke-width: 35px; 
+}
 
-.navbar-item:not(:last-child) { border-block-end: 1px solid var(--black_10); }
+.navbar-item:not(:last-child) { 
+  border-block-end: 1px solid var(--black_10); 
+}
 
 .navbar-link {
   padding: 8px 16px;
   transition: var(--transition);
+  color: var(--black); 
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  perspective: 500px; 
 }
 
-.navbar-link:is(:hover, :focus-visible) { 
-  color: var(--oxford-blue);
+
+.navbar-link:hover {
+  transform: translateZ(15px) scale(1.05); 
+  background-color: #FF8086; 
+  color: white; 
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
 }
+
+
+.active-page {
+  color: #FF8086; 
+  font-weight: bold; 
+  transform: translateZ(15px) scale(1.05); 
+}
+
+/* Remove box shadow on hover */
+.navbar-link:hover::before {
+  box-shadow: none;
+}
+
+
+.navbar-link {
+  box-shadow: none; 
+}
+
+
+.btn-secondary {
+  transition: transform 0.3s ease;
+  background-color: var(--btn-bg-color); 
+  padding: 12px 25px;
+  color: white;
+}
+
+.btn-secondary:hover {
+  transform: translateZ(15px) scale(1.05); 
+  background-color: var(--btn-hover-color); 
+}
+
 
 .overlay {
   position: fixed;
@@ -419,7 +466,17 @@ body.nav-active { overflow: hidden; }
 }
 
 
-
+:root {
+  --primary-color: #ff6347; 
+  --black: #000;
+  --white: #fff; 
+  --btn-bg-color: #000; 
+  --btn-hover-color: #444; 
+  --shadow-2: 0 4px 10px rgba(0, 0, 0, 0.1); 
+  --transition: all 0.3s ease; 
+  --cubic-in: cubic-bezier(0.4, 0, 0.2, 1);
+  --cubic-out: cubic-bezier(0.0, 0, 0.2, 1); 
+}
 
 
 /*-----------------------------------*\
