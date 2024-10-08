@@ -206,7 +206,51 @@
       </section>
 
 
+     <!--
+        Feedback Section
+      -->
+      <div class="feedback-button" id="feedbackButton">Feedback</div>
+    <div class="feedback-modal" id="feedbackModal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h2>We Value Your Feedback</h2>
+            <form id="feedbackForm">
+                <div class="step" id="step1">
+                    <h3>How do you feel?</h3>
+                    <div class="emojis">
+                        <span class="emoji" data-value="happy">😀</span>
+                        <span class="emoji" data-value="neutral">😐</span>
+                        <span class="emoji" data-value="sad">😢</span>
+                    </div>
+                    <button type="button" id="nextToFeedback">Next</button>
+                </div>
 
+                <div class="step" id="step2" style="display: none;">
+                    <h3>Your Feedback</h3>
+                    <textarea id="feedback" rows="5" placeholder="Write your feedback here..." required></textarea>
+                    <div class="buttons">
+                      <button type="button" id="nextToEmail">Next</button>
+                    <button type="button" id="backToEmoji">Back</button>
+                    </div>
+                </div>
+
+                <div class="step" id="step3" style="display: none;">
+                    <h3>Your Email</h3>
+                    <input type="email" id="email" placeholder="Enter your email" required />
+                   <div class="buttons">
+                    <button type="submit" id="submitForm">Submit Feedback</button>
+                    <button type="button" id="backToFeedback">Back</button>
+                   </div>
+                </div>
+              </form>
+        </div>
+    </div>
+
+
+    <div class="feedbackPopUp">
+      Thank you for your Feedback
+    </div>
+    
 
 
       <!-- 
