@@ -10,7 +10,8 @@
     - primary meta tags
   -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="stylesheet" href="styles.css">
+<!--   <link rel="stylesheet" href="style.css"> -->
+  <link rel="stylesheet" href="style.css">
   <title>SkillWise</title>
   <meta name="title" content="SkillWise">
   <meta name="description" content="This is a education html template made by Priya Ghosal">
@@ -28,7 +29,12 @@
   <!-- 
     - custom css link
   -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/style.css" id="theme-style">
+
+  <!-- 
+    -dark mode css link disabled
+   -->
+  <!-- <link rel="stylesheet" href="./assets/css/darkmode.css" id="theme-style" > -->
 
   <!-- 
     - preload images
@@ -146,6 +152,7 @@
           </button>
         </div>
 
+      <a href="./signin.html" class="btn btn-secondary">Start Free Trial</a>
 
 
         <div id="userGreeting">
@@ -210,12 +217,53 @@
       </section>
 
 
-
-
-
-      <!-- 
-        - #CATEGORY
+     <!--
+        Feedback Section
       -->
+      <div class="feedback-button" id="feedbackButton">Feedback</div>
+    <div class="feedback-modal" id="feedbackModal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h2>We Value Your Feedback</h2>
+            <form id="feedbackForm">
+                <div class="step" id="step1">
+                    <h3>How do you feel?</h3>
+                    <div class="emojis">
+                        <span class="emoji" data-value="happy">😀</span>
+                        <span class="emoji" data-value="neutral">😐</span>
+                        <span class="emoji" data-value="sad">😢</span>
+                    </div>
+                    <button type="button" id="nextToFeedback">Next</button>
+                </div>
+
+                <div class="step" id="step2" style="display: none;">
+                    <h3>Your Feedback</h3>
+                    <textarea id="feedback" rows="5" placeholder="Write your feedback here..." required></textarea>
+                    <div class="buttons">
+                      <button type="button" id="nextToEmail">Next</button>
+                    <button type="button" id="backToEmoji">Back</button>
+                    </div>
+                </div>
+
+                <div class="step" id="step3" style="display: none;">
+                    <h3>Your Email</h3>
+                    <input type="email" id="email" placeholder="Enter your email" required />
+                   <div class="buttons">
+                    <button type="submit" id="submitForm">Submit Feedback</button>
+                    <button type="button" id="backToFeedback">Back</button>
+                   </div>
+                </div>
+              </form>
+        </div>
+    </div>
+
+
+    <div class="feedbackPopUp">
+      Thank you for your Feedback
+    </div>
+    
+
+
 
       <section class="section category has-bg-image" aria-labelledby="category-label"
         style="background-image: url('./assets/images/category-bg.png')">
@@ -223,9 +271,13 @@
 
           <p class="title-sm text-center section-subtitle" id="category-label" data-aos="flip-down">Course Categories
           </p>
+      <section    class="section category has-bg-image" aria-labelledby="category-label">
+        <div class="container">
+
+          <p id="keppi" class="title-sm text-center section-subtitle keppi" id="category-label" data-aos="flip-down">Course Categories</p>
 
           <h2 class="headline-md text-center section-title" data-aos="fade-down">
-            Browse Top <span class="span has-after">Categories</span>
+           <div class="headline"> Browse Top <span class="span has-after">Categories</span></div>
           </h2>
 
           <ul class="grid-list">
@@ -260,10 +312,10 @@
                 <div>
                   <h3 class="title-lg">UI/UX Design</h3>
 
-                  <p class="title-sm">68 Courses</p>
+                  <p class="title-sm">6 Courses</p>
                 </div>
 
-                <a href="#" class="layer-link" aria-label="UI/UX Design Category"></a>
+                <a href="uiux.html" class="layer-link" aria-label="UI/UX Design Category"></a>
 
               </div>
             </li>
@@ -282,7 +334,7 @@
                   <p class="title-sm">68 Courses</p>
                 </div>
 
-                <a href="#" class="layer-link" aria-label="Modern Physics Category"></a>
+                <a href="modern_physics.html" class="layer-link" aria-label="Modern Physics Category"></a>
 
               </div>
             </li>
@@ -301,7 +353,7 @@
                   <p class="title-sm">68 Courses</p>
                 </div>
 
-                <a href="#" class="layer-link" aria-label="Music Production Category"></a>
+                <a href="music.html" class="layer-link" aria-label="Music Production Category"></a>
 
               </div>
             </li>
@@ -320,7 +372,7 @@
                   <p class="title-sm">68 Courses</p>
                 </div>
 
-                <a href="#" class="layer-link" aria-label="Data Science Category"></a>
+                <a href="marketing.html" class="layer-link" aria-label="Data Science Category"></a>
 
               </div>
             </li>
@@ -338,7 +390,7 @@
                   <p class="title-sm">68 Courses</p>
                 </div>
 
-                <a href="#" class="layer-link" aria-label="Finances Category"></a>
+                <a href="finance.html" class="layer-link" aria-label="Finances Category"></a>
 
               </div>
             </li>
@@ -368,7 +420,7 @@
 
           <div class="about-content" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine">
 
-            <p class="title-sm section-subtitle" id="about-label" style="font-size: 28px;">About SkillWise</p>
+            <p id="keppi" class="title-sm section-subtitle keppi" id="about-label" style="font-size: 28px;">About SkillWise</p>
 
             <h2 class="headline-md section-title">
               We Provide The Best Online <span class="span has-after">Education</span>
@@ -433,20 +485,21 @@
       -->
 
       <section id="courses" id="pricing" class="section course has-bg-image" aria-labelledby="course-label"
-        style="background-image: url('./assets/images/course-bg.png')">
+        >
         <div class="container">
 
-          <p class="title-sm section-subtitle text-center">Featured Courses</p>
+          <p id="keppi" class="title-sm section-subtitle text-center ">Featured Courses</p>
 
           <h2 class="headline-md section-title text-center" id="course-label" data-aos="fade-down">
-            Choose Unlimited <span class="span has-after">Courses</span>
+           <div class="headline">Choose Unlimited <span class="span has-after">Courses</span</div> >
           </h2>
 
           <ul class="grid-list">
 
             <li class="card-container">
+               <div class="header1">
               <div class="card course-card" data-aos="fade-right">
-
+               
                 <figure class="card-banner">
                   <img src="./assets/images/course-1.png" width="370" height="248" loading="lazy"
                     alt="Basic Fundamentals of Interior & Graphics Design" class="img-cover">
@@ -487,15 +540,16 @@
 
                   </div>
 
-                </div>
+                </div></div>
 
                 <a href="#" class="layer-link"
                   aria-label="Course Details, Basic Fundamentals of Interior & Graphics Design"></a>
 
-              </div>
+              </div> 
             </li>
 
             <li class="card-container">
+              <div class="header2">
               <div class="card course-card" data-aos="fade-left">
 
                 <figure class="card-banner">
@@ -538,7 +592,7 @@
 
                   </div>
 
-                </div>
+                </div></div>
 
                 <a href="#" class="layer-link"
                   aria-label="Course Details, Increasing Engagement with Instagram & Facebook"></a>
@@ -547,6 +601,7 @@
             </li>
 
             <li class="card-container">
+              <div class="header3">
               <div class="card course-card" data-aos="fade-right">
 
                 <figure class="card-banner">
@@ -589,7 +644,7 @@
 
                   </div>
 
-                </div>
+                </div></div>
 
                 <a href="#" class="layer-link"
                   aria-label="Course Details, Introduction to Color Theory & Basic UI/UX"></a>
@@ -598,6 +653,7 @@
             </li>
 
             <li class="card-container">
+              <div class="header4">
               <div class="card course-card" data-aos="fade-left">
 
                 <figure class="card-banner">
@@ -640,7 +696,7 @@
 
                   </div>
 
-                </div>
+                </div></div>
 
                 <a href="#" class="layer-link"
                   aria-label="Course Details, Financial Security Thinking and Principles Theory"></a>
@@ -649,6 +705,7 @@
             </li>
 
             <li class="card-container">
+              <div class="header5">
               <div class="card course-card" data-aos="fade-right">
 
                 <figure class="card-banner">
@@ -691,7 +748,7 @@
 
                   </div>
 
-                </div>
+                </div></div>
 
                 <a href="#" class="layer-link"
                   aria-label="Course Details, Logo Design: From Concept to Presentation"></a>
@@ -700,6 +757,8 @@
             </li>
 
             <li class="card-container">
+              <div class="header6">
+
               <div class="card course-card" data-aos="fade-left">
 
                 <figure class="card-banner">
@@ -742,8 +801,8 @@
 
                   </div>
 
-                </div>
-
+                </div></div>
+              </li>
                 <a href="#" class="layer-link"
                   aria-label="Course Details, Professional Ceramic Moulding for Beginners"></a>
 
@@ -779,17 +838,71 @@
 
 
 
-
-      <!-- 
-        - #BLOG
-      -->
+      <div class="parent"> 
+        <div class="scroll-container">
+          <h2 id="Trust">Trusted by Organizations</h2>
+              <div class="scroll" style="--time:20s">
+                <div>
+                    <span><img src="./assets/images/google" alt="google Logo">Google</span>
+                    <span><img src="./assets/images/youtube.jpg" alt="youtube Logo">Youtube</span>
+                    <span><img src="./assets/images/twitter.png" alt="twitter Logo">Twitter</span>
+                    <span><img src="./assets/images/reddit.jpg" alt="reddit Logo">Reddit</span>
+                    <span><img src="./assets/images/IBM_logo.jpg" alt="ibm Logo">IBM</span>
+                    <span><img src="./assets/images/target_logo.jpg" alt="target Logo">Target</span>
+                    <span><img src="./assets/images/salesforce_logo.jpg" alt="salesforce_logo Logo">Salesforce</span>
+                    <span><img src="./assets/images/meta_logo.jpg" alt="meta Logo">Meta</span>
+                    <span><img src="./assets/images/amazon_logo.jpg" alt="amazon Logo">Amazon</span>
+                    <span><img src="./assets/images/adobe.jpg" alt="adobe Logo">Adobe</span>
+                </div>
+                <div>
+                    <span><img src="./assets/images/google" alt="google Logo">Google</span>
+                    <span><img src="./assets/images/youtube.jpg" alt="youtube Logo">Youtube</span>
+                    <span><img src="./assets/images/twitter.png" alt="twitter Logo">Twitter</span>
+                    <span><img src="./assets/images/reddit.jpg" alt="reddit Logo">Reddit</span>
+                    <span><img src="./assets/images/IBM_logo.jpg" alt="ibm Logo">IBM</span>
+                    <span><img src="./assets/images/target_logo.jpg" alt="target Logo">Target</span>
+                    <span><img src="./assets/images/salesforce_logo.jpg" alt="salesforce_logo Logo">Salesforce</span>
+                    <span><img src="./assets/images/meta_logo.jpg" alt="meta Logo">Meta</span>
+                    <span><img src="./assets/images/amazon_logo.jpg" alt="amazon Logo">Amazon</span>
+                    <span><img src="./assets/images/adobe.jpg" alt="adobe Logo">Adobe</span>
+                </div>
+              </div>
+              <div class="scroll" style="--time:40s">
+                <div>
+                    <span><img src="./assets/images/google" alt="google Logo">Google</span>
+                    <span><img src="./assets/images/youtube.jpg" alt="youtube Logo">Youtube</span>
+                    <span><img src="./assets/images/twitter.png" alt="twitter Logo">Twitter</span>
+                    <span><img src="./assets/images/reddit.jpg" alt="reddit Logo">Reddit</span>
+                    <span><img src="./assets/images/IBM_logo.jpg" alt="ibm Logo">IBM</span>
+                    <span><img src="./assets/images/target_logo.jpg" alt="target Logo">Target</span>
+                    <span><img src="./assets/images/salesforce_logo.jpg" alt="salesforce_logo Logo">Salesforce</span>
+                    <span><img src="./assets/images/meta_logo.jpg" alt="meta Logo">Meta</span>
+                    <span><img src="./assets/images/amazon_logo.jpg" alt="amazon Logo">Amazon</span>
+                    <span><img src="./assets/images/adobe.jpg" alt="adobe Logo">Adobe</span>
+                </div>
+                <div>
+                    <span><img src="./assets/images/google" alt="google Logo">Google</span>
+                    <span><img src="./assets/images/youtube.jpg" alt="youtube Logo">Youtube</span>
+                    <span><img src="./assets/images/twitter.png" alt="twitter Logo">Twitter</span>
+                    <span><img src="./assets/images/reddit.jpg" alt="reddit Logo">Reddit</span>
+                    <span><img src="./assets/images/IBM_logo.jpg" alt="ibm Logo">IBM</span>
+                    <span><img src="./assets/images/target_logo.jpg" alt="target Logo">Target</span>
+                    <span><img src="./assets/images/salesforce_logo.jpg" alt="salesforce_logo Logo">Salesforce</span>
+                    <span><img src="./assets/images/meta_logo.jpg" alt="meta Logo">Meta</span>
+                    <span><img src="./assets/images/amazon_logo.jpg" alt="amazon Logo">Amazon</span>
+                    <span><img src="./assets/images/adobe.jpg" alt="adobe Logo">Adobe</span>
+                </div>
+            </div> 
+        </div>
+      </div>
 
       <section id="blog" class="section blog has-bg-image" aria-labelledby="blog-label"
         style="background-image: url('./assets/images/course-bg.png')">
+      <section id="blog" class="section blog has-bg-image" aria-labelledby="blog-label" >
 
         <div class="container">
 
-          <p class="title-sm text-center section-subtitle" id="category-label">Featured Blogs</p>
+          <p id="keppi" class="title-sm text-center section-subtitle" id="category-label">Featured Blogs</p>
 
           <h2 class="headline-md text-center section-title" data-aos="fade-down">
             Learn with <span class="span has-after">Articles</span>
@@ -855,11 +968,9 @@
 
 
 
-  <footer class="footer has-bg-image" style="background-image: url('./assets/images/footer-bg.png')">
-
-
-
+  
     <footer class="footer has-bg-image" style="background-image: url('./assets/images/footer-bg.png')">
+  <footer class="footer has-bg-image" >
 
 
       <div class="section footer-top">
@@ -971,6 +1082,9 @@
               <a href="terms.html" class="title-sm footer-link">Terms of Use</a>
 
             </li>
+          <li>
+            <a href="Terms_&_Condition.html" class="title-sm footer-link">Terms & Condition</a>
+          </li>
 
             <li>
               <a href="#" class="title-sm footer-link">Terms & Condition</a>
@@ -983,6 +1097,10 @@
             <li>
               <a href="#" class="title-sm footer-link">Privacy Policy</a>
             </li>
+          <li>
+            <a href="PrivacyPolicy.html" class="title-sm footer-link">Privacy Policy</a>
+          </li>
+
 
             <li>
               <a href="copy.html" class="title-sm footer-link">Copyright Policy</a>
@@ -1077,7 +1195,6 @@
    - custom js link
   -->
     <script src="./assets/js/script.js"></script>
-
     <script src="assets/js/dark.js"></script>
     <script>
       function displayUserGreeting() {
@@ -1106,14 +1223,35 @@
     <script>
       AOS.init();
     </script>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>
+    (function () {
+      emailjs.init(CONFIG.USER_ID_KEY);
+    })();
 
+    document.getElementById('contact-form').addEventListener('submit', function (event) {
+      event.preventDefault();
+      emailjs.sendForm(CONFIG.SERVICE_ID, CONFIG.TEMPLATE_ID_KEY, this)
+        .then(function () {
+          alert('Email sent successfully!');
+        }, function (error) {
+          alert('Failed to send email. Error: ' + JSON.stringify(error));
+        });
+    });
+  </script>
 
-    <!-- 
-    - ionicon
-  -->
+  <!-- Animation on Scroll -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="./assets/js/ScrollToTop.js"></script>
 </body>
 
 </html>

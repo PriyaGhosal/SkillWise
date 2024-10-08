@@ -3,21 +3,40 @@ document.addEventListener("DOMContentLoaded", () => {
     const showMoreBtn = document.getElementById("showMoreBtn");
     let showMore = false;
   
-    items.forEach((item, index) => {
-      item.querySelector(".FAQ-title").addEventListener("click", () => {
-        if (item.classList.contains("selected")) {
-          item.classList.remove("selected");
-          item.querySelector(".FAQ-content").classList.remove("show");
-        } else {
-          document.querySelectorAll(".item").forEach((el) => {
-            el.classList.remove("selected");
-            el.querySelector(".FAQ-content").classList.remove("show");
-          });
-          item.classList.add("selected");
-          item.querySelector(".FAQ-content").classList.add("show");
+    items.forEach((item) => {
+      const title = item.querySelector(".FAQ-title");
+      const content = item.querySelector(".FAQ-content");
+      const expandIcon = item.querySelector(".expand");
+      const revertIcon = item.querySelector(".revert");
+    
+      title.addEventListener("click", () => {
+        const isOpen = item.classList.contains("selected");
+    
+        // Close all open items
+        closeAllItems();
+    
+        if (!isOpen) {
+          // Open the clicked item
+          openItem(item, expandIcon, revertIcon, content);
         }
       });
     });
+
+    function closeAllItems() {
+      items.forEach((el) => {
+        el.classList.remove("selected");
+        el.querySelector(".FAQ-content").classList.remove("show");
+        el.querySelector(".expand").style.display = "flex"; // Show plus icon
+        el.querySelector(".revert").style.display = "none"; // Hide minus icon
+      });
+    }
+    
+    function openItem(item, expandIcon, revertIcon, content) {
+      item.classList.add("selected");
+      content.classList.add("show");
+      expandIcon.style.display = "none"; // Hide plus icon
+      revertIcon.style.display = "flex"; // Show minus icon
+    }
   
     showMoreBtn.addEventListener("click", () => {
       showMore = !showMore;

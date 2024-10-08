@@ -68,3 +68,77 @@ document.getElementById('year').textContent = new Date().getFullYear();
 
 
 window.addEventListener("scroll", headerActive);
+
+
+// Feedback Section
+let selectedEmotion = '';
+
+document.getElementById('feedbackButton').onclick = function() {
+    document.getElementById('feedbackModal').style.display = 'flex';
+}
+
+document.getElementById('closeModal').onclick = function() {
+    document.getElementById('feedbackModal').style.display = 'none';
+}
+
+document.getElementById('nextToFeedback').onclick = function() {
+    const selectedEmoji = document.querySelector('.emoji.selected');
+    if (!selectedEmoji) {
+        alert('Please select an emotion!');
+        return;
+    }
+    selectedEmotion = selectedEmoji.dataset.value;
+    document.getElementById('step1').style.display = 'none';
+    document.getElementById('step2').style.display = 'block';
+}
+
+document.querySelectorAll('.emoji').forEach(emoji => {
+    emoji.onclick = function() {
+        document.querySelectorAll('.emoji').forEach(e => e.classList.remove('selected'));
+        emoji.classList.add('selected');
+    }
+});
+
+document.getElementById('nextToEmail').onclick = function() {
+    if (!document.getElementById('feedback').value) {
+        alert('Please provide your feedback!');
+        return;
+    }
+    document.getElementById('step2').style.display = 'none';
+    document.getElementById('step3').style.display = 'block';
+}
+
+document.getElementById('backToEmoji').onclick = function() {
+    document.getElementById('step2').style.display = 'none';
+    document.getElementById('step1').style.display = 'block';
+}
+
+document.getElementById('backToFeedback').onclick = function() {
+    document.getElementById('step3').style.display = 'none';
+    document.getElementById('step2').style.display = 'block';
+}
+
+window.onload = () => {
+  if (sessionStorage.getItem('showPopUp') === 'true') {
+      popUpDisplay();
+      sessionStorage.removeItem('showPopUp'); 
+  }
+};
+
+document.getElementById('feedbackForm').onsubmit = function(event) {
+  event.preventDefault();
+  document.getElementById('feedbackForm').reset();
+  document.getElementById('feedbackModal').style.display = 'none';
+
+  sessionStorage.setItem('showPopUp', 'true'); // Set a flag to show pop-up after reload
+  window.location.reload(); 
+};
+
+const popUpDisplay = () => {
+  setTimeout(() => {
+      document.querySelector('.feedbackPopUp').style.transform = 'translate(0)';
+      setTimeout(() => {
+          document.querySelector('.feedbackPopUp').style.transform = 'translate(120%)';
+      }, 3000);
+  }, 1000);
+};
