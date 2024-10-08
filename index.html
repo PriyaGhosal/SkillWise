@@ -993,31 +993,31 @@
 
             <li>
               
-              <a href="#" class="social-link" id="social-link1">
+              <a href="https://www.facebook.com" class="social-link" id="social-link1">
                 <img src="./assets/images/facebook.svg" width="40" height="40" loading="lazy" alt="facebook">
               </a>
             </li>
 
             <li>
-              <a href="#" class="social-link" id="social-link2">
+              <a href="https://www.x.com" class="social-link" id="social-link2">
                 <img src="./assets/images/X-logo.svg" width="40" height="40" loading="lazy" alt="X logo">
               </a>
             </li>
 
             <li>
-              <a href="#" class="social-link" id="social-link3">
+              <a href="https://www.pinterest.com" class="social-link" id="social-link3">
                 <img src="./assets/images/pinterest.svg" width="40" height="40" loading="lazy" alt="pinterest">
               </a>
             </li>
 
             <li>
-              <a href="#" class="social-link" id="social-link4">
+              <a href="https://www.instagram.com" class="social-link" id="social-link4">
                 <img src="./assets/images/instagram.svg" width="40" height="40" loading="lazy" alt="instagram">
               </a>
             </li>
 
             <li>
-              <a href="#" class="social-link" id="social-link5">
+              <a href="https://www.linkedin.com" class="social-link" id="social-link5">
                 <img src="./assets/images/linkedIn.svg" width="40" height="40" loading="lazy" alt="linkedin">
               </a>
             </li>
@@ -1185,26 +1185,20 @@
   <!-- 
    - custom js link
   -->
-  <script src="./assets/js/script.js"></script>
+  <!-- Custom JS Links -->
+<script src="./assets/js/script.js"></script>
+<script src="assets/js/dark.js"></script>
 
-  <script src="assets/js/dark.js"></script>
+<!-- EmailJS Functionality -->
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script src="./assets/js/email.js"></script> <!-- New email.js file -->
 
-  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-  <script>
-    (function () {
-      emailjs.init(CONFIG.USER_ID_KEY);
-    })();
+<!-- Animation on Scroll -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 
-    document.getElementById('contact-form').addEventListener('submit', function (event) {
-      event.preventDefault();
-      emailjs.sendForm(CONFIG.SERVICE_ID, CONFIG.TEMPLATE_ID_KEY, this)
-        .then(function () {
-          alert('Email sent successfully!');
-        }, function (error) {
-          alert('Failed to send email. Error: ' + JSON.stringify(error));
-        });
-    });
-  </script>
 
   <!-- Animation on Scroll -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
