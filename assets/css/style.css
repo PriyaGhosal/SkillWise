@@ -655,13 +655,23 @@ button:hover {
   #COURSE
 \*-----------------------------------*/
 
-.course .grid-list { padding-block: 20px 44px; }
-
+.course .grid-list { padding-block: 20px 44px;
+}
+.heading1{
+  height: 200px;
+}
+.heading2{
+  height: 206px;
+}
+.image2{
+  height: 200px;
+}
 .course-card {
   border-block-end: 4px solid transparent;
   display: flex;
   flex-direction: column;
   gap: 24px;
+  
 }
 
 .course-card:is(:hover, :focus-within) { border-color: var(--light-coral); }
@@ -1651,4 +1661,125 @@ button:hover {
   font-size: 1.0rem;
 }
 }
-
+.headline{
+  animation-name: pulse;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+@keyframes pulse{
+  0%{
+    transform: translateY(-3.5px);
+  }
+  50%{
+    transform: translateY(0px);
+  }
+  100%{
+    transform: translateY(-3.5px);
+  }
+}
+body{
+  background-color: #ffede7;
+}
+.header1{
+  animation-name: pulse1;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+.header2{
+  animation-name: pulse2;
+  animation-duration: 1.8s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+.header3{
+  animation-name: pulse3;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+.header4{
+  animation-name: pulse4;
+  animation-duration: 1.8s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+.header5{
+  animation-name: pulse5;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+.header6{
+  animation-name: pulse6;
+  animation-duration: 1.8s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+@keyframes pulse1{
+  0%{
+    transform: translateY(-3.5px);
+  }
+  50%{
+    transform: translateY(0px);
+  }
+  100%{
+    transform: translateY(-3.5px);
+  }
+}
+@keyframes pulse2{
+  0%{
+    transform: translateY(-5px);
+  }
+  50%{
+    transform: translateY(0px);
+  }
+  100%{
+    transform: translateY(-5px);
+  }
+}
+@keyframes pulse3{
+  0%{
+    transform: translateY(-3.5px);
+  }
+  50%{
+    transform: translateY(0px);
+  }
+  100%{
+    transform: translateY(-3.5px);
+  }
+}
+@keyframes pulse4{
+  0%{
+    transform: translateY(-5px);
+  }
+  50%{
+    transform: translateY(0px);
+  }
+  100%{
+    transform: translateY(-5px);
+  }
+}
+@keyframes pulse5{
+  0%{
+    transform: translateY(-3.5px);
+  }
+  50%{
+    transform: translateY(0px);
+  }
+  100%{
+    transform: translateY(-3.5px);
+  }
+}
+@keyframes pulse6{
+  0%{
+    transform: translateY(-5px);
+  }
+  50%{
+    transform: translateY(0px);
+  }
+  100%{
+    transform: translateY(-5px);
+  }
+}
