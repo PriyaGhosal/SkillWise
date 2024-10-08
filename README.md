@@ -6,7 +6,7 @@
 <img src='./readme-images/desktop.png'>
 <br>
 
-*<i>**SkillWise** is an innovative online platform designed to help learners of all ages acquire new skills and knowledge. With a wide range of engaging courses and expert instructors, SkillWise provides the tools you need to succeed in today’s competitive world. <br> With our expert instructors, real-world projects, and a supportive learning community, SkillWise empowers individuals to achieve personal and professional success.</i>*
+_<i>SkillWise is an innovative online platform designed to help learners of all ages acquire new skills and knowledge. With a wide range of engaging courses and expert instructors, SkillWise provides the tools you need to succeed in today’s competitive world.</i>_
 
 <br>
 
