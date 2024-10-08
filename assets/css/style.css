@@ -142,7 +142,9 @@ body.nav-active { overflow: hidden; }
   #REUSED STYLE
 \*-----------------------------------*/
 
-.container { padding-inline: 16px; }
+.container { 
+  /* padding-inline: 16px; */
+ }
 
 .headline-lg,
 .headline-md,
@@ -176,7 +178,9 @@ body.nav-active { overflow: hidden; }
   font-weight: var(--fw-500);
 }
 
-.section { padding-block: var(--section-padding); }
+.section { 
+  padding-block: var(--section-padding);
+ }
 
 .has-bg-image {
   background-repeat: no-repeat;
@@ -225,7 +229,9 @@ body.nav-active { overflow: hidden; }
 
 .text-center { text-align: center; }
 
-.section-title { margin-block-end: 24px; }
+.section-title { 
+  /* margin-block-end: 24px; */
+ }
 
 .headline-md .has-after { padding-block-end: 8px; }
 
@@ -525,7 +531,9 @@ body.nav-active { overflow: hidden; }
   #COURSE
 \*-----------------------------------*/
 
-.course .grid-list { padding-block: 20px 44px; }
+.course .grid-list { 
+  /* padding-block: 20px 44px;  */
+}
 
 .course-card {
   border-block-end: 4px solid transparent;
@@ -566,7 +574,10 @@ body.nav-active { overflow: hidden; }
   gap: 8px;
 }
 
-.course .btn { margin-inline: auto; }
+.course .btn { 
+  width: 20%;
+  margin-left: 80%;
+ }
 
 
 /*-----------------------------------*\
