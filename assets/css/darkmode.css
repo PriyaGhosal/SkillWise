@@ -98,6 +98,7 @@ button {
   cursor: pointer;
 }
 
+
 html {
   font-family: var(--ff-gilroy);
   font-size: 10px;
@@ -426,9 +427,38 @@ body.nav-active { overflow: hidden; }
     gap: 12px;
   }
   
-  
-  
-  
+.button-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+.btn-primary {
+    position: relative; /* Positioning for the arrows */
+    padding: 10px 50px; /* Add padding to make space for the arrows */
+    transition: color 0.3s ease; /* Smooth transition for text color */
+    font-size: 16px; /* Adjust font size as needed */
+}
+
+.btn-primary::after {
+    content: ' ⪢'; /* Two arrows as content */
+    position: absolute; /* Position it absolutely */
+    right: 5px; /* Position on the right side */
+    top: 50%; /* Center vertically */
+    transform: translateY(-55%); /* Adjust vertical position */
+    opacity: 0; /* Start with the arrows hidden */
+    transition: opacity 0.3s ease; /* Smooth transition for opacity */
+}
+
+.btn-primary:hover {
+    color: #ffffff; /* Change text color on hover (optional) */
+}
+
+.btn-primary:hover::after {
+    opacity: 1; /* Show the arrows on hover */
+}
   
   /*-----------------------------------*\
     #CATEGORY
