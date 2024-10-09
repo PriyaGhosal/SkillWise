@@ -35,6 +35,49 @@
     <link rel="preload" as="image" href="../assets/images/hero-banner.png" />
     <link rel="preload" as="image" href="../assets/images/hero-bg.png" />
   </head>
+  <style>
+    .card {
+      width: 100%;
+    }
+    .grid-list {
+      display: grid !important;
+      grid-template-columns: repeat(3, 1fr) !important;
+      gap: 20px;
+    }
+
+    .design {
+      font-size: 30px;
+      margin-top: 25px;
+    }
+
+    .section-title {
+      /* margin-block-end: 24px; */
+      margin-top: 150px;
+    }
+
+    .button-container {
+      display: flex;
+      gap: 10px; /* Adjust the space between buttons */
+    }
+
+    .en {
+      /* padding: 10px 20px; */
+      background-color: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    .section {
+      padding-block: 0;
+    }
+
+    .course .grid-list {
+      margin-block: 0;
+    }
+
+
+  </style>
   <body>
     <!-- 
     - PRELOADER
@@ -115,7 +158,7 @@
           </ul>
         </nav>
 
-        <a href="./signin.html" class="btn btn-secondary">Start Free Trial</a>
+        <a href="../signin.html" class="btn btn-secondary">Start Free Trial</a>
 
         <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
           <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
@@ -125,6 +168,1789 @@
       </div>
     </header>
 
+    <section
+      id="courses"
+      id="pricing"
+      class="section course has-bg-image"
+      aria-labelledby="course-label"
+    >
+      <div class="container">
+        <!-- <p id="keppi" class="title-sm section-subtitle text-center">Featured Courses</p> -->
+        <h2
+          class="headline-md section-title text-center"
+          id="course-label"
+          data-aos="fade-down"
+        >
+          Courses <span class="span has-after"> Offered</span>
+        </h2>
+        <h2 class="design">Design</h2>
+        <ul class="grid-list">
+          <li class="card-container">
+            <div class="card course-card" data-aos="fade-right">
+              <figure class="card-banner">
+                <img
+                  src="../assets/images/course-1.png"
+                  width="370"
+                  height="248"
+                  loading="lazy"
+                  alt="Basic Fundamentals of Interior & Graphics Design"
+                  class="img-cover"
+                />
+              </figure>
+              <div class="card-content">
+                <div class="wrapper">
+                  <p class="title-lg card-price">$29.28</p>
+                  <div class="rating-wrapper">
+                    <img
+                      src="../assets/images/star-fill.svg"
+                      width="16"
+                      height="16"
+                      loading="lazy"
+                      alt=""
+                    />
+                    <img
+                      src="../assets/images/star-fill.svg"
+                      width="16"
+                      height="16"
+                      loading="lazy"
+                      alt=""
+                    />
+                    <img
+                      src="../assets/images/star-fill.svg"
+                      width="16"
+                      height="16"
+                      loading="lazy"
+                      alt=""
+                    />
+                    <img
+                      src="../assets/images/star-fill.svg"
+                      width="16"
+                      height="16"
+                      loading="lazy"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <h3 class="title-lg card-title">
+                  Basic Fundamentals of Interior & Graphics Design
+                </h3>
+                <div class="card-meta wrapper">
+                  <p class="title-sm">
+                    <img
+                      src="../assets/images/file-outline.svg"
+                      width="20"
+                      height="20"
+                      loading="lazy"
+                      alt=""
+                    />
+                    <span class="span">2 Lessons</span>
+                  </p>
+                  <p class="title-sm">
+                    <img
+                      src="../assets/images/user-outline.svg"
+                      width="20"
+                      height="20"
+                      loading="lazy"
+                      alt=""
+                    />
+                    <span class="span">4k Students</span>
+                  </p>
+                </div>
+              </div>
+              <a
+                href="#"
+                class="layer-link"
+                aria-label="Course Details, Basic Fundamentals of Interior & Graphics Design"
+              ></a>
+              <div class="button-container">
+                <button class="en">Add To Cart</button>
+                <button class="en">Enroll Now</button>
+                <!-- <button class="en">Read More</button> -->
+              </div>
+            </div>
+          </li>
+
+          <!-- Card 2 -->
+          <li class="card-container">
+            <div class="card course-card" data-aos="fade-left">
+              <figure class="card-banner">
+                <img
+                  src="../assets/images/course-2.png"
+                  width="370"
+                  height="248"
+                  loading="lazy"
+                  alt="Introduction to Adobe Illustrator"
+                  class="img-cover"
+                />
+              </figure>
+              <div class="card-content">
+                <div class="wrapper">
+                  <p class="title-lg card-price">$40.00</p>
+                  <div class="rating-wrapper">
+                    <img
+                      src="../assets/images/star-fill.svg"
+                      width="16"
+                      height="16"
+                      loading="lazy"
+                      alt=""
+                    />
+                    <img
+                      src="../assets/images/star-fill.svg"
+                      width="16"
+                      height="16"
+                      loading="lazy"
+                      alt=""
+                    />
+                    <img
+                      src="../assets/images/star-fill.svg"
+                      width="16"
+                      height="16"
+                      loading="lazy"
+                      alt=""
+                    />
+                    <img
+                      src="../assets/images/star-fill.svg"
+                      width="16"
+                      height="16"
+                      loading="lazy"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <h3 class="title-lg card-title">
+                  Introduction to Adobe Illustrator
+                </h3>
+                <div class="card-meta wrapper">
+                  <p class="title-sm">
+                    <img
+                      src="../assets/images/file-outline.svg"
+                      width="20"
+                      height="20"
+                      loading="lazy"
+                      alt=""
+                    />
+                    <span class="span">4 Lessons</span>
+                  </p>
+                  <p class="title-sm">
+                    <img
+                      src="../assets/images/user-outline.svg"
+                      width="20"
+                      height="20"
+                      loading="lazy"
+                      alt=""
+                    />
+                    <span class="span">8k Students</span>
+                  </p>
+                </div>
+              </div>
+              <a
+                href="#"
+                class="layer-link"
+                aria-label="Course Details, Introduction to Adobe Illustrator"
+              ></a>
+              <div class="button-container">
+                <button class="en">Add To Cart</button>
+                <button class="en">Enroll Now</button>
+                <!-- <button class="en">Read More</button> -->
+              </div>
+            </div>
+          </li>
+
+          <!-- Card 3 -->
+          <li class="card-container">
+            <div class="card course-card" data-aos="fade-right">
+              <figure class="card-banner">
+                <img
+                  src="../assets/images/course-3.png"
+                  width="370"
+                  height="248"
+                  loading="lazy"
+                  alt="Typography & Font Design Basics"
+                  class="img-cover"
+                />
+              </figure>
+              <div class="card-content">
+                <div class="wrapper">
+                  <p class="title-lg card-price">Free</p>
+                  <div class="rating-wrapper">
+                    <img
+                      src="../assets/images/star-fill.svg"
+                      width="16"
+                      height="16"
+                      loading="lazy"
+                      alt=""
+                    />
+                    <img
+                      src="../assets/images/star-fill.svg"
+                      width="16"
+                      height="16"
+                      loading="lazy"
+                      alt=""
+                    />
+                    <img
+                      src="../assets/images/star-fill.svg"
+                      width="16"
+                      height="16"
+                      loading="lazy"
+                      alt=""
+                    />
+                    <img
+                      src="../assets/images/star-fill.svg"
+                      width="16"
+                      height="16"
+                      loading="lazy"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <h3 class="title-lg card-title">
+                  Typography & Font Design Basics
+                </h3>
+                <div class="card-meta wrapper">
+                  <p class="title-sm">
+                    <img
+                      src="../assets/images/file-outline.svg"
+                      width="20"
+                      height="20"
+                      loading="lazy"
+                      alt=""
+                    />
+                    <span class="span">3 Lessons</span>
+                  </p>
+                  <p class="title-sm">
+                    <img
+                      src="../assets/images/user-outline.svg"
+                      width="20"
+                      height="20"
+                      loading="lazy"
+                      alt=""
+                    />
+                    <span class="span">10k Students</span>
+                  </p>
+                </div>
+              </div>
+              <a
+                href="#"
+                class="layer-link"
+                aria-label="Course Details, Typography & Font Design Basics"
+              ></a>
+              <div class="button-container">
+                <button class="en">Add To Cart</button>
+                <button class="en">Enroll Now</button>
+                <!-- <button class="en">Read More</button> -->
+              </div>
+            </div>
+          </li>
+
+          <!-- Card 4 -->
+          <li class="card-container">
+            <div class="card course-card" data-aos="fade-left">
+              <figure class="card-banner">
+                <img
+                  src="../assets/images/course-4.png"
+                  width="370"
+                  height="248"
+                  loading="lazy"
+                  alt="Advanced Logo Design Techniques"
+                  class="img-cover"
+                />
+              </figure>
+              <div class="card-content">
+                <div class="wrapper">
+                  <p class="title-lg card-price">$50.00</p>
+                  <div class="rating-wrapper">
+                    <img
+                      src="../assets/images/star-fill.svg"
+                      width="16"
+                      height="16"
+                      loading="lazy"
+                      alt=""
+                    />
+                    <img
+                      src="../assets/images/star-fill.svg"
+                      width="16"
+                      height="16"
+                      loading="lazy"
+                      alt=""
+                    />
+                    <img
+                      src="../assets/images/star-fill.svg"
+                      width="16"
+                      height="16"
+                      loading="lazy"
+                      alt=""
+                    />
+                    <img
+                      src="../assets/images/star-fill.svg"
+                      width="16"
+                      height="16"
+                      loading="lazy"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <h3 class="title-lg card-title">
+                  Advanced Logo Design Techniques
+                </h3>
+                <div class="card-meta wrapper">
+                  <p class="title-sm">
+                    <img
+                      src="../assets/images/file-outline.svg"
+                      width="20"
+                      height="20"
+                      loading="lazy"
+                      alt=""
+                    />
+                    <span class="span">7 Lessons</span>
+                  </p>
+                  <p class="title-sm">
+                    <img
+                      src="../assets/images/user-outline.svg"
+                      width="20"
+                      height="20"
+                      loading="lazy"
+                      alt=""
+                    />
+                    <span class="span">5k Students</span>
+                  </p>
+                </div>
+              </div>
+              <a
+                href="#"
+                class="layer-link"
+                aria-label="Course Details, Advanced Logo Design Techniques"
+              ></a>
+              <div class="button-container">
+                <button class="en">Add To Cart</button>
+                <button class="en">Enroll Now</button>
+                <!-- <button class="en">Read More</button> -->
+              </div>
+            </div>
+          </li>
+
+          <!-- Card 5 -->
+          <li class="card-container">
+            <div class="card course-card" data-aos="fade-right">
+              <figure class="card-banner">
+                <img
+                  src="../assets/images/course-5.png"
+                  width="370"
+                  height="248"
+                  loading="lazy"
+                  alt="Designing User Interfaces for Web & Mobile"
+                  class="img-cover"
+                />
+              </figure>
+              <div class="card-content">
+                <div class="wrapper">
+                  <p class="title-lg card-price">$60.00</p>
+                  <div class="rating-wrapper">
+                    <img
+                      src="../assets/images/star-fill.svg"
+                      width="16"
+                      height="16"
+                      loading="lazy"
+                      alt=""
+                    />
+                    <img
+                      src="../assets/images/star-fill.svg"
+                      width="16"
+                      height="16"
+                      loading="lazy"
+                      alt=""
+                    />
+                    <img
+                      src="../assets/images/star-fill.svg"
+                      width="16"
+                      height="16"
+                      loading="lazy"
+                      alt=""
+                    />
+                    <img
+                      src="../assets/images/star-fill.svg"
+                      width="16"
+                      height="16"
+                      loading="lazy"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <h3 class="title-lg card-title">
+                  Designing User Interfaces for Web & Mobile
+                </h3>
+                <div class="card-meta wrapper">
+                  <p class="title-sm">
+                    <img
+                      src="../assets/images/file-outline.svg"
+                      width="20"
+                      height="20"
+                      loading="lazy"
+                      alt=""
+                    />
+                    <span class="span">6 Lessons</span>
+                  </p>
+                  <p class="title-sm">
+                    <img
+                      src="../assets/images/user-outline.svg"
+                      width="20"
+                      height="20"
+                      loading="lazy"
+                      alt=""
+                    />
+                    <span class="span">12k Students</span>
+                  </p>
+                </div>
+              </div>
+              <a
+                href="#"
+                class="layer-link"
+                aria-label="Course Details, Designing User Interfaces for Web & Mobile"
+              ></a>
+              <div class="button-container">
+                <button class="en">Add To Cart</button>
+                <button class="en">Enroll Now</button>
+                <!-- <button class="en">Read More</button> -->
+              </div>
+            </div>
+          </li>
+        </ul>
+        <!-- <a href="#" class="btn btn-primary" data-aos="zoom-out">View All Courses</a> -->
+      </div>
+    </section>
+
+    <!-- Section 2 -->
+    <section
+      id="courses"
+      id="pricing"
+      class="section course has-bg-image"
+      aria-labelledby="course-label"
+    >
+      <div class="container">
+        <!-- <p id="keppi" class="title-sm section-subtitle text-center">Featured Courses</p> -->
+        <!-- <h2
+          class="headline-md section-title text-center"
+          id="course-label"
+          data-aos="fade-down"
+        >
+          Courses <span class="span has-after"> Offered</span>
+        </h2> -->
+        <h2 class="design">Designing</h2>
+        <ul class="grid-list">
+          <li class="card-container">
+            <div class="card course-card" data-aos="fade-right">
+              <figure class="card-banner">
+                <img
+                  src="https://pixelmechanics.com.sg/wp-content/uploads/2019/06/html5-logo-for-web-development.png"
+                  width="370"
+                  height="248"
+                  loading="lazy"
+                  alt="Basic Fundamentals of Interior & Graphics Design"
+                  class="img-cover"
+                />
+              </figure>
+              <div class="card-content">
+                <div class="wrapper">
+                  <p class="title-lg card-price">Free</p>
+                  <div class="rating-wrapper">
+                    <img
+                      src="../assets/images/star-fill.svg"
+                      width="16"
+                      height="16"
+                      loading="lazy"
+                      alt=""
+                    />
+                    <img
+                      src="../assets/images/star-fill.svg"
+                      width="16"
+                      height="16"
+                      loading="lazy"
+                      alt=""
+                    />
+                    <img
+                      src="../assets/images/star-fill.svg"
+                      width="16"
+                      height="16"
+                      loading="lazy"
+                      alt=""
+                    />
+                    <img
+                      src="../assets/images/star-fill.svg"
+                      width="16"
+                      height="16"
+                      loading="lazy"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <h3 class="title-lg card-title">Learn HTML in 30 Days</h3>
+                <div class="card-meta wrapper">
+                  <p class="title-sm">
+                    <img
+                      src="../assets/images/file-outline.svg"
+                      width="20"
+                      height="20"
+                      loading="lazy"
+                      alt=""
+                    />
+                    <span class="span">2 Lessons</span>
+                  </p>
+                  <p class="title-sm">
+                    <img
+                      src="../assets/images/user-outline.svg"
+                      width="20"
+                      height="20"
+                      loading="lazy"
+                      alt=""
+                    />
+                    <span class="span">4k Students</span>
+                  </p>
+                </div>
+              </div>
+              <a
+                href="#"
+                class="layer-link"
+                aria-label="Course Details, Basic Fundamentals of Interior & Graphics Design"
+              ></a>
+              <div class="button-container">
+                <button class="en">Add To Cart</button>
+                <button class="en">Enroll Now</button>
+                <!-- <button class="en">Read More</button> -->
+              </div>
+            </div>
+          </li>
+
+          <!-- Card 2 -->
+          <li class="card-container">
+            <div class="card course-card" data-aos="fade-left">
+              <figure class="card-banner">
+                <img
+                  src="https://tse1.mm.bing.net/th?id=OIP.dlN3XoOEiJxtzCtbKUBNAQHaE8&pid=Api&P=0&h=180"
+                  width="370"
+                  height="248"
+                  loading="lazy"
+                  alt="Introduction to Adobe Illustrator"
+                  class="img-cover"
+                />
+              </figure>
+              <div class="card-content">
+                <div class="wrapper">
+                  <p class="title-lg card-price">Free</p>
+                  <div class="rating-wrapper">
+                    <img
+                      src="../assets/images/star-fill.svg"
+                      width="16"
+                      height="16"
+                      loading="lazy"
+                      alt=""
+                    />
+                    <img
+                      src="../assets/images/star-fill.svg"
+                      width="16"
+                      height="16"
+                      loading="lazy"
+                      alt=""
+                    />
+                    <img
+                      src="../assets/images/star-fill.svg"
+                      width="16"
+                      height="16"
+                      loading="lazy"
+                      alt=""
+                    />
+                    <img
+                      src="../assets/images/star-fill.svg"
+                      width="16"
+                      height="16"
+                      loading="lazy"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <h3 class="title-lg card-title">Learn CSS in 30 Days</h3>
+                <div class="card-meta wrapper">
+                  <p class="title-sm">
+                    <img
+                      src="../assets/images/file-outline.svg"
+                      width="20"
+                      height="20"
+                      loading="lazy"
+                      alt=""
+                    />
+                    <span class="span">4 Lessons</span>
+                  </p>
+                  <p class="title-sm">
+                    <img
+                      src="../assets/images/user-outline.svg"
+                      width="20"
+                      height="20"
+                      loading="lazy"
+                      alt=""
+                    />
+                    <span class="span">8k Students</span>
+                  </p>
+                </div>
+              </div>
+              <a
+                href="#"
+                class="layer-link"
+                aria-label="Course Details, Introduction to Adobe Illustrator"
+              ></a>
+              <div class="button-container">
+                <button class="en">Add To Cart</button>
+                <button class="en">Enroll Now</button>
+                <!-- <button class="en">Read More</button> -->
+              </div>
+            </div>
+          </li>
+
+          <!-- Card 3 -->
+          <li class="card-container">
+            <div class="card course-card" data-aos="fade-right">
+              <figure class="card-banner">
+                <img
+                  src="https://thumbs.dreamstime.com/b/javascript-logo-editorial-illustrative-white-background-javascript-logo-editorial-illustrative-white-background-eps-download-208329460.jpg"
+                  width="370"
+                  height="248"
+                  loading="lazy"
+                  alt="Typography & Font Design Basics"
+                  class="img-cover"
+                />
+              </figure>
+              <div class="card-content">
+                <div class="wrapper">
+                  <p class="title-lg card-price">Free</p>
+                  <div class="rating-wrapper">
+                    <img
+                      src="../assets/images/star-fill.svg"
+                      width="16"
+                      height="16"
+                      loading="lazy"
+                      alt=""
+                    />
+                    <img
+                      src="../assets/images/star-fill.svg"
+                      width="16"
+                      height="16"
+                      loading="lazy"
+                      alt=""
+                    />
+                    <img
+                      src="../assets/images/star-fill.svg"
+                      width="16"
+                      height="16"
+                      loading="lazy"
+                      alt=""
+                    />
+                    <img
+                      src="../assets/images/star-fill.svg"
+                      width="16"
+                      height="16"
+                      loading="lazy"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <h3 class="title-lg card-title">JavaScript 0 to Hero</h3>
+                <div class="card-meta wrapper">
+                  <p class="title-sm">
+                    <img
+                      src="../assets/images/file-outline.svg"
+                      width="20"
+                      height="20"
+                      loading="lazy"
+                      alt=""
+                    />
+                    <span class="span">3 Lessons</span>
+                  </p>
+                  <p class="title-sm">
+                    <img
+                      src="../assets/images/user-outline.svg"
+                      width="20"
+                      height="20"
+                      loading="lazy"
+                      alt=""
+                    />
+                    <span class="span">10k Students</span>
+                  </p>
+                </div>
+              </div>
+              <a
+                href="#"
+                class="layer-link"
+                aria-label="Course Details, Typography & Font Design Basics"
+              ></a>
+              <div class="button-container">
+                <button class="en">Add To Cart</button>
+                <button class="en">Enroll Now</button>
+                <!-- <button class="en">Read More</button> -->
+              </div>
+            </div>
+          </li>
+
+          <!-- Card 4 -->
+          <li class="card-container">
+            <div class="card course-card" data-aos="fade-left">
+              <figure class="card-banner">
+                <img
+                  src="https://tse2.mm.bing.net/th?id=OIP.EntHChgUyirgbZ9A3zTxkAHaFj&pid=Api&P=0&h=180"
+                  width="370"
+                  height="248"
+                  loading="lazy"
+                  alt="Advanced Logo Design Techniques"
+                  class="img-cover"
+                />
+              </figure>
+              <div class="card-content">
+                <div class="wrapper">
+                  <p class="title-lg card-price">$50.00</p>
+                  <div class="rating-wrapper">
+                    <img
+                      src="../assets/images/star-fill.svg"
+                      width="16"
+                      height="16"
+                      loading="lazy"
+                      alt=""
+                    />
+                    <img
+                      src="../assets/images/star-fill.svg"
+                      width="16"
+                      height="16"
+                      loading="lazy"
+                      alt=""
+                    />
+                    <img
+                      src="../assets/images/star-fill.svg"
+                      width="16"
+                      height="16"
+                      loading="lazy"
+                      alt=""
+                    />
+                    <img
+                      src="../assets/images/star-fill.svg"
+                      width="16"
+                      height="16"
+                      loading="lazy"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <h3 class="title-lg card-title">Introduction to React</h3>
+                <div class="card-meta wrapper">
+                  <p class="title-sm">
+                    <img
+                      src="../assets/images/file-outline.svg"
+                      width="20"
+                      height="20"
+                      loading="lazy"
+                      alt=""
+                    />
+                    <span class="span">7 Lessons</span>
+                  </p>
+                  <p class="title-sm">
+                    <img
+                      src="../assets/images/user-outline.svg"
+                      width="20"
+                      height="20"
+                      loading="lazy"
+                      alt=""
+                    />
+                    <span class="span">5k Students</span>
+                  </p>
+                </div>
+              </div>
+              <a
+                href="#"
+                class="layer-link"
+                aria-label="Course Details, Advanced Logo Design Techniques"
+              ></a>
+              <div class="button-container">
+                <button class="en">Add To Cart</button>
+                <button class="en">Enroll Now</button>
+                <!-- <button class="en">Read More</button> -->
+              </div>
+            </div>
+          </li>
+
+          <!-- Card 5 -->
+          <li class="card-container">
+            <div class="card course-card" data-aos="fade-right">
+              <figure class="card-banner">
+                <img
+                  src="https://tse1.mm.bing.net/th?id=OIP.s5j5kFK-urpNTrVLlv9-ogHaEK&pid=Api&P=0&h=180"
+                  width="370"
+                  height="248"
+                  loading="lazy"
+                  alt="Designing User Interfaces for Web & Mobile"
+                  class="img-cover"
+                />
+              </figure>
+              <div class="card-content">
+                <div class="wrapper">
+                  <p class="title-lg card-price">$60.00</p>
+                  <div class="rating-wrapper">
+                    <img
+                      src="../assets/images/star-fill.svg"
+                      width="16"
+                      height="16"
+                      loading="lazy"
+                      alt=""
+                    />
+                    <img
+                      src="../assets/images/star-fill.svg"
+                      width="16"
+                      height="16"
+                      loading="lazy"
+                      alt=""
+                    />
+                    <img
+                      src="../assets/images/star-fill.svg"
+                      width="16"
+                      height="16"
+                      loading="lazy"
+                      alt=""
+                    />
+                    <img
+                      src="../assets/images/star-fill.svg"
+                      width="16"
+                      height="16"
+                      loading="lazy"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <h3 class="title-lg card-title">Begineer Level Node.js</h3>
+                <div class="card-meta wrapper">
+                  <p class="title-sm">
+                    <img
+                      src="../assets/images/file-outline.svg"
+                      width="20"
+                      height="20"
+                      loading="lazy"
+                      alt=""
+                    />
+                    <span class="span">6 Lessons</span>
+                  </p>
+                  <p class="title-sm">
+                    <img
+                      src="../assets/images/user-outline.svg"
+                      width="20"
+                      height="20"
+                      loading="lazy"
+                      alt=""
+                    />
+                    <span class="span">12k Students</span>
+                  </p>
+                </div>
+              </div>
+              <a
+                href="#"
+                class="layer-link"
+                aria-label="Course Details, Designing User Interfaces for Web & Mobile"
+              ></a>
+              <div class="button-container">
+                <button class="en">Add To Cart</button>
+                <button class="en">Enroll Now</button>
+                <!-- <button class="en">Read More</button> -->
+              </div>
+            </div>
+          </li>
+        </ul>
+        <!-- <a href="#" class="btn btn-primary" data-aos="zoom-out">View All Courses</a> -->
+      </div>
+    </section>
+
+    <!-- Section 3 -->
+    <section
+      id="courses"
+      id="pricing"
+      class="section course has-bg-image"
+      aria-labelledby="course-label"
+    >
+      <div class="container">
+        <!-- <p id="keppi" class="title-sm section-subtitle text-center">Featured Courses</p> -->
+        <!-- <h2
+          class="headline-md section-title text-center"
+          id="course-label"
+          data-aos="fade-down"
+        >
+          Courses <span class="span has-after"> Offered</span>
+        </h2> -->
+        <h2 class="design">Programming Languages</h2>
+        <ul class="grid-list">
+          <li class="card-container">
+            <div class="card course-card" data-aos="fade-right">
+              <figure class="card-banner">
+                <img
+                  src="https://tse1.mm.bing.net/th?id=OIP.n8pa_ux7uUyU9CJrzb1scAHaHa&pid=Api&P=0&h=180"
+                  width="370"
+                  height="248"
+                  loading="lazy"
+                  alt="Basic Fundamentals of Interior & Graphics Design"
+                  class="img-cover"
+                />
+              </figure>
+              <div class="card-content">
+                <div class="wrapper">
+                  <p class="title-lg card-price">$100</p>
+                  <div class="rating-wrapper">
+                    <img
+                      src="../assets/images/star-fill.svg"
+                      width="16"
+                      height="16"
+                      loading="lazy"
+                      alt=""
+                    />
+                    <img
+                      src="../assets/images/star-fill.svg"
+                      width="16"
+                      height="16"
+                      loading="lazy"
+                      alt=""
+                    />
+                    <img
+                      src="../assets/images/star-fill.svg"
+                      width="16"
+                      height="16"
+                      loading="lazy"
+                      alt=""
+                    />
+                    <img
+                      src="../assets/images/star-fill.svg"
+                      width="16"
+                      height="16"
+                      loading="lazy"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <h3 class="title-lg card-title">Advance Level Java</h3>
+                <div class="card-meta wrapper">
+                  <p class="title-sm">
+                    <img
+                      src="../assets/images/file-outline.svg"
+                      width="20"
+                      height="20"
+                      loading="lazy"
+                      alt=""
+                    />
+                    <span class="span">2 Lessons</span>
+                  </p>
+                  <p class="title-sm">
+                    <img
+                      src="../assets/images/user-outline.svg"
+                      width="20"
+                      height="20"
+                      loading="lazy"
+                      alt=""
+                    />
+                    <span class="span">4k Students</span>
+                  </p>
+                </div>
+              </div>
+              <a
+                href="#"
+                class="layer-link"
+                aria-label="Course Details, Basic Fundamentals of Interior & Graphics Design"
+              ></a>
+              <div class="button-container">
+                <button class="en">Add To Cart</button>
+                <button class="en">Enroll Now</button>
+                <!-- <button class="en">Read More</button> -->
+              </div>
+            </div>
+          </li>
+
+          <!-- Card 2 -->
+          <li class="card-container">
+            <div class="card course-card" data-aos="fade-left">
+              <figure class="card-banner">
+                <img
+                  src="https://cdn.pvs-studio.com/import/docx/blog/1080_Whats_New_In_NET8/image1.png?ver=11-15-2023-10-55-26"
+                  width="370"
+                  height="248"
+                  loading="lazy"
+                  alt="Introduction to Adobe Illustrator"
+                  class="img-cover"
+                />
+              </figure>
+              <div class="card-content">
+                <div class="wrapper">
+                  <p class="title-lg card-price">$30</p>
+                  <div class="rating-wrapper">
+                    <img
+                      src="../assets/images/star-fill.svg"
+                      width="16"
+                      height="16"
+                      loading="lazy"
+                      alt=""
+                    />
+                    <img
+                      src="../assets/images/star-fill.svg"
+                      width="16"
+                      height="16"
+                      loading="lazy"
+                      alt=""
+                    />
+                    <img
+                      src="../assets/images/star-fill.svg"
+                      width="16"
+                      height="16"
+                      loading="lazy"
+                      alt=""
+                    />
+                    <img
+                      src="../assets/images/star-fill.svg"
+                      width="16"
+                      height="16"
+                      loading="lazy"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <h3 class="title-lg card-title">Introduction to .NET</h3>
+                <div class="card-meta wrapper">
+                  <p class="title-sm">
+                    <img
+                      src="../assets/images/file-outline.svg"
+                      width="20"
+                      height="20"
+                      loading="lazy"
+                      alt=""
+                    />
+                    <span class="span">4 Lessons</span>
+                  </p>
+                  <p class="title-sm">
+                    <img
+                      src="../assets/images/user-outline.svg"
+                      width="20"
+                      height="20"
+                      loading="lazy"
+                      alt=""
+                    />
+                    <span class="span">8k Students</span>
+                  </p>
+                </div>
+              </div>
+              <a
+                href="#"
+                class="layer-link"
+                aria-label="Course Details, Introduction to Adobe Illustrator"
+              ></a>
+              <div class="button-container">
+                <button class="en">Add To Cart</button>
+                <button class="en">Enroll Now</button>
+                <!-- <button class="en">Read More</button> -->
+              </div>
+            </div>
+          </li>
+
+          <!-- Card 3 -->
+          <li class="card-container">
+            <div class="card course-card" data-aos="fade-right">
+              <figure class="card-banner">
+                <img
+                  src="https://tse3.mm.bing.net/th?id=OIP.e0KVUv64gRiJd3ElIFlZhQHaDH&pid=Api&P=0&h=180"
+                  width="370"
+                  height="248"
+                  loading="lazy"
+                  alt="Typography & Font Design Basics"
+                  class="img-cover"
+                />
+              </figure>
+              <div class="card-content">
+                <div class="wrapper">
+                  <p class="title-lg card-price">Free</p>
+                  <div class="rating-wrapper">
+                    <img
+                      src="../assets/images/star-fill.svg"
+                      width="16"
+                      height="16"
+                      loading="lazy"
+                      alt=""
+                    />
+                    <img
+                      src="../assets/images/star-fill.svg"
+                      width="16"
+                      height="16"
+                      loading="lazy"
+                      alt=""
+                    />
+                    <img
+                      src="../assets/images/star-fill.svg"
+                      width="16"
+                      height="16"
+                      loading="lazy"
+                      alt=""
+                    />
+                    <img
+                      src="../assets/images/star-fill.svg"
+                      width="16"
+                      height="16"
+                      loading="lazy"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <h3 class="title-lg card-title">Introduction to C++</h3>
+                <div class="card-meta wrapper">
+                  <p class="title-sm">
+                    <img
+                      src="../assets/images/file-outline.svg"
+                      width="20"
+                      height="20"
+                      loading="lazy"
+                      alt=""
+                    />
+                    <span class="span">3 Lessons</span>
+                  </p>
+                  <p class="title-sm">
+                    <img
+                      src="../assets/images/user-outline.svg"
+                      width="20"
+                      height="20"
+                      loading="lazy"
+                      alt=""
+                    />
+                    <span class="span">10k Students</span>
+                  </p>
+                </div>
+              </div>
+              <a
+                href="#"
+                class="layer-link"
+                aria-label="Course Details, Typography & Font Design Basics"
+              ></a>
+              <div class="button-container">
+                <button class="en">Add To Cart</button>
+                <button class="en">Enroll Now</button>
+                <!-- <button class="en">Read More</button> -->
+              </div>
+            </div>
+          </li>
+
+          <!-- Card 4 -->
+          <li class="card-container">
+            <div class="card course-card" data-aos="fade-left">
+              <figure class="card-banner">
+                <img
+                  src="https://cdn.dribbble.com/users/2241064/screenshots/6345071/aiml_-_logo-03.png"
+                  width="370"
+                  height="248"
+                  loading="lazy"
+                  alt="Advanced Logo Design Techniques"
+                  class="img-cover"
+                />
+              </figure>
+              <div class="card-content">
+                <div class="wrapper">
+                  <p class="title-lg card-price">$50.00</p>
+                  <div class="rating-wrapper">
+                    <img
+                      src="../assets/images/star-fill.svg"
+                      width="16"
+                      height="16"
+                      loading="lazy"
+                      alt=""
+                    />
+                    <img
+                      src="../assets/images/star-fill.svg"
+                      width="16"
+                      height="16"
+                      loading="lazy"
+                      alt=""
+                    />
+                    <img
+                      src="../assets/images/star-fill.svg"
+                      width="16"
+                      height="16"
+                      loading="lazy"
+                      alt=""
+                    />
+                    <img
+                      src="../assets/images/star-fill.svg"
+                      width="16"
+                      height="16"
+                      loading="lazy"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <h3 class="title-lg card-title">Advanced AI/ML</h3>
+                <div class="card-meta wrapper">
+                  <p class="title-sm">
+                    <img
+                      src="../assets/images/file-outline.svg"
+                      width="20"
+                      height="20"
+                      loading="lazy"
+                      alt=""
+                    />
+                    <span class="span">7 Lessons</span>
+                  </p>
+                  <p class="title-sm">
+                    <img
+                      src="../assets/images/user-outline.svg"
+                      width="20"
+                      height="20"
+                      loading="lazy"
+                      alt=""
+                    />
+                    <span class="span">5k Students</span>
+                  </p>
+                </div>
+              </div>
+              <a
+                href="#"
+                class="layer-link"
+                aria-label="Course Details, Advanced Logo Design Techniques"
+              ></a>
+              <div class="button-container">
+                <button class="en">Add To Cart</button>
+                <button class="en">Enroll Now</button>
+                <!-- <button class="en">Read More</button> -->
+              </div>
+            </div>
+          </li>
+
+          <!-- Card 5 -->
+          <li class="card-container">
+            <div class="card course-card" data-aos="fade-right">
+              <figure class="card-banner">
+                <img
+                  src="https://tse4.mm.bing.net/th?id=OIP.aI1WJfbiCsD4-qRH4qa8EwHaEP&pid=Api&P=0&h=180"
+                  width="370"
+                  height="248"
+                  loading="lazy"
+                  alt="Designing User Interfaces for Web & Mobile"
+                  class="img-cover"
+                />
+              </figure>
+              <div class="card-content">
+                <div class="wrapper">
+                  <p class="title-lg card-price">Free</p>
+                  <div class="rating-wrapper">
+                    <img
+                      src="../assets/images/star-fill.svg"
+                      width="16"
+                      height="16"
+                      loading="lazy"
+                      alt=""
+                    />
+                    <img
+                      src="../assets/images/star-fill.svg"
+                      width="16"
+                      height="16"
+                      loading="lazy"
+                      alt=""
+                    />
+                    <img
+                      src="../assets/images/star-fill.svg"
+                      width="16"
+                      height="16"
+                      loading="lazy"
+                      alt=""
+                    />
+                    <img
+                      src="../assets/images/star-fill.svg"
+                      width="16"
+                      height="16"
+                      loading="lazy"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <h3 class="title-lg card-title">Intro to C Language</h3>
+                <div class="card-meta wrapper">
+                  <p class="title-sm">
+                    <img
+                      src="../assets/images/file-outline.svg"
+                      width="20"
+                      height="20"
+                      loading="lazy"
+                      alt=""
+                    />
+                    <span class="span">6 Lessons</span>
+                  </p>
+                  <p class="title-sm">
+                    <img
+                      src="../assets/images/user-outline.svg"
+                      width="20"
+                      height="20"
+                      loading="lazy"
+                      alt=""
+                    />
+                    <span class="span">12k Students</span>
+                  </p>
+                </div>
+              </div>
+              <a
+                href="#"
+                class="layer-link"
+                aria-label="Course Details, Designing User Interfaces for Web & Mobile"
+              ></a>
+              <div class="button-container">
+                <button class="en">Add To Cart</button>
+                <button class="en">Enroll Now</button>
+                <!-- <button class="en">Read More</button> -->
+              </div>
+            </div>
+          </li>
+        </ul>
+        <!-- <a href="#" class="btn btn-primary" data-aos="zoom-out">View All Courses</a> -->
+      </div>
+    </section>
+
+    <!-- Section 4 -->
+    <section
+    id="courses"
+    id="pricing"
+    class="section course has-bg-image"
+    aria-labelledby="course-label"
+  >
+    <div class="container">
+      <!-- <p id="keppi" class="title-sm section-subtitle text-center">Featured Courses</p> -->
+      <!-- <h2
+        class="headline-md section-title text-center"
+        id="course-label"
+        data-aos="fade-down"
+      >
+        Courses <span class="span has-after"> Offered</span>
+      </h2> -->
+      <h2 class="design">Software Tools</h2>
+      <ul class="grid-list">
+        <li class="card-container">
+          <div class="card course-card" data-aos="fade-right">
+            <figure class="card-banner">
+              <img
+                src="https://tse3.mm.bing.net/th?id=OIP.PvqHkumoeOX3ZXuwjJ-whgHaFR&pid=Api&P=0&h=180"
+                width="370"
+                height="248"
+                loading="lazy"
+                alt="Basic Fundamentals of Interior & Graphics Design"
+                class="img-cover"
+              />
+            </figure>
+            <div class="card-content">
+              <div class="wrapper">
+                <p class="title-lg card-price">Free</p>
+                <div class="rating-wrapper">
+                  <img
+                    src="../assets/images/star-fill.svg"
+                    width="16"
+                    height="16"
+                    loading="lazy"
+                    alt=""
+                  />
+                  <img
+                    src="../assets/images/star-fill.svg"
+                    width="16"
+                    height="16"
+                    loading="lazy"
+                    alt=""
+                  />
+                  <img
+                    src="../assets/images/star-fill.svg"
+                    width="16"
+                    height="16"
+                    loading="lazy"
+                    alt=""
+                  />
+                  <img
+                    src="../assets/images/star-fill.svg"
+                    width="16"
+                    height="16"
+                    loading="lazy"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <h3 class="title-lg card-title">Intro to GIT & GITHUB</h3>
+              <div class="card-meta wrapper">
+                <p class="title-sm">
+                  <img
+                    src="../assets/images/file-outline.svg"
+                    width="20"
+                    height="20"
+                    loading="lazy"
+                    alt=""
+                  />
+                  <span class="span">2 Lessons</span>
+                </p>
+                <p class="title-sm">
+                  <img
+                    src="../assets/images/user-outline.svg"
+                    width="20"
+                    height="20"
+                    loading="lazy"
+                    alt=""
+                  />
+                  <span class="span">4k Students</span>
+                </p>
+              </div>
+            </div>
+            <a
+              href="#"
+              class="layer-link"
+              aria-label="Course Details, Basic Fundamentals of Interior & Graphics Design"
+            ></a>
+            <div class="button-container">
+              <button class="en">Add To Cart</button>
+              <button class="en">Enroll Now</button>
+              <!-- <button class="en">Read More</button> -->
+            </div>
+          </div>
+        </li>
+
+        <!-- Card 2 -->
+        <li class="card-container">
+          <div class="card course-card" data-aos="fade-left">
+            <figure class="card-banner">
+              <img
+                src="https://tse3.mm.bing.net/th?id=OIP.Y-l1bx5-iK787Qg4r5aaOQHaEf&pid=Api&P=0&h=180"
+                width="370"
+                height="248"
+                loading="lazy"
+                alt="Introduction to Adobe Illustrator"
+                class="img-cover"
+              />
+            </figure>
+            <div class="card-content">
+              <div class="wrapper">
+                <p class="title-lg card-price">$30</p>
+                <div class="rating-wrapper">
+                  <img
+                    src="../assets/images/star-fill.svg"
+                    width="16"
+                    height="16"
+                    loading="lazy"
+                    alt=""
+                  />
+                  <img
+                    src="../assets/images/star-fill.svg"
+                    width="16"
+                    height="16"
+                    loading="lazy"
+                    alt=""
+                  />
+                  <img
+                    src="../assets/images/star-fill.svg"
+                    width="16"
+                    height="16"
+                    loading="lazy"
+                    alt=""
+                  />
+                  <img
+                    src="../assets/images/star-fill.svg"
+                    width="16"
+                    height="16"
+                    loading="lazy"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <h3 class="title-lg card-title">Introduction to Ubunto</h3>
+              <div class="card-meta wrapper">
+                <p class="title-sm">
+                  <img
+                    src="../assets/images/file-outline.svg"
+                    width="20"
+                    height="20"
+                    loading="lazy"
+                    alt=""
+                  />
+                  <span class="span">4 Lessons</span>
+                </p>
+                <p class="title-sm">
+                  <img
+                    src="../assets/images/user-outline.svg"
+                    width="20"
+                    height="20"
+                    loading="lazy"
+                    alt=""
+                  />
+                  <span class="span">8k Students</span>
+                </p>
+              </div>
+            </div>
+            <a
+              href="#"
+              class="layer-link"
+              aria-label="Course Details, Introduction to Adobe Illustrator"
+            ></a>
+            <div class="button-container">
+              <button class="en">Add To Cart</button>
+              <button class="en">Enroll Now</button>
+              <!-- <button class="en">Read More</button> -->
+            </div>
+          </div>
+        </li>
+
+        <!-- Card 3 -->
+        <li class="card-container">
+          <div class="card course-card" data-aos="fade-right">
+            <figure class="card-banner">
+              <img
+                src="https://nanohub.org/app/site/groups/29044/uploads/jupyter.png"
+                width="370"
+                height="248"
+                loading="lazy"
+                alt="Typography & Font Design Basics"
+                class="img-cover"
+              />
+            </figure>
+            <div class="card-content">
+              <div class="wrapper">
+                <p class="title-lg card-price">Free</p>
+                <div class="rating-wrapper">
+                  <img
+                    src="../assets/images/star-fill.svg"
+                    width="16"
+                    height="16"
+                    loading="lazy"
+                    alt=""
+                  />
+                  <img
+                    src="../assets/images/star-fill.svg"
+                    width="16"
+                    height="16"
+                    loading="lazy"
+                    alt=""
+                  />
+                  <img
+                    src="../assets/images/star-fill.svg"
+                    width="16"
+                    height="16"
+                    loading="lazy"
+                    alt=""
+                  />
+                  <img
+                    src="../assets/images/star-fill.svg"
+                    width="16"
+                    height="16"
+                    loading="lazy"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <h3 class="title-lg card-title">How to use JupyterNoteBook</h3>
+              <div class="card-meta wrapper">
+                <p class="title-sm">
+                  <img
+                    src="../assets/images/file-outline.svg"
+                    width="20"
+                    height="20"
+                    loading="lazy"
+                    alt=""
+                  />
+                  <span class="span">3 Lessons</span>
+                </p>
+                <p class="title-sm">
+                  <img
+                    src="../assets/images/user-outline.svg"
+                    width="20"
+                    height="20"
+                    loading="lazy"
+                    alt=""
+                  />
+                  <span class="span">10k Students</span>
+                </p>
+              </div>
+            </div>
+            <a
+              href="#"
+              class="layer-link"
+              aria-label="Course Details, Typography & Font Design Basics"
+            ></a>
+            <div class="button-container">
+              <button class="en">Add To Cart</button>
+              <button class="en">Enroll Now</button>
+              <!-- <button class="en">Read More</button> -->
+            </div>
+          </div>
+        </li>
+
+        <!-- Card 4 -->
+        <li class="card-container">
+          <div class="card course-card" data-aos="fade-left">
+            <figure class="card-banner">
+              <img
+                src="https://tse1.mm.bing.net/th?id=OIP.uUgF-ABD871N9wfmjCVnqwHaEK&pid=Api&P=0&h=180"
+                width="370"
+                height="248"
+                loading="lazy"
+                alt="Advanced Logo Design Techniques"
+                class="img-cover"
+              />
+            </figure>
+            <div class="card-content">
+              <div class="wrapper">
+                <p class="title-lg card-price">Free</p>
+                <div class="rating-wrapper">
+                  <img
+                    src="../assets/images/star-fill.svg"
+                    width="16"
+                    height="16"
+                    loading="lazy"
+                    alt=""
+                  />
+                  <img
+                    src="../assets/images/star-fill.svg"
+                    width="16"
+                    height="16"
+                    loading="lazy"
+                    alt=""
+                  />
+                  <img
+                    src="../assets/images/star-fill.svg"
+                    width="16"
+                    height="16"
+                    loading="lazy"
+                    alt=""
+                  />
+                  <img
+                    src="../assets/images/star-fill.svg"
+                    width="16"
+                    height="16"
+                    loading="lazy"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <h3 class="title-lg card-title">Intro to VsCode</h3>
+              <div class="card-meta wrapper">
+                <p class="title-sm">
+                  <img
+                    src="../assets/images/file-outline.svg"
+                    width="20"
+                    height="20"
+                    loading="lazy"
+                    alt=""
+                  />
+                  <span class="span">7 Lessons</span>
+                </p>
+                <p class="title-sm">
+                  <img
+                    src="../assets/images/user-outline.svg"
+                    width="20"
+                    height="20"
+                    loading="lazy"
+                    alt=""
+                  />
+                  <span class="span">5k Students</span>
+                </p>
+              </div>
+            </div>
+            <a
+              href="#"
+              class="layer-link"
+              aria-label="Course Details, Advanced Logo Design Techniques"
+            ></a>
+            <div class="button-container">
+              <button class="en">Add To Cart</button>
+              <button class="en">Enroll Now</button>
+              <!-- <button class="en">Read More</button> -->
+            </div>
+          </div>
+        </li>
+
+        <!-- Card 5 -->
+        <li class="card-container">
+          <div class="card course-card" data-aos="fade-right">
+            <figure class="card-banner">
+              <img
+                src="https://tse3.mm.bing.net/th?id=OIP.tqDq5lnjXt_bLLAUxnjDbwHaDt&pid=Api&P=0&h=180"
+                width="370"
+                height="248"
+                loading="lazy"
+                alt="Designing User Interfaces for Web & Mobile"
+                class="img-cover"
+              />
+            </figure>
+            <div class="card-content">
+              <div class="wrapper">
+                <p class="title-lg card-price">Free</p>
+                <div class="rating-wrapper">
+                  <img
+                    src="../assets/images/star-fill.svg"
+                    width="16"
+                    height="16"
+                    loading="lazy"
+                    alt=""
+                  />
+                  <img
+                    src="../assets/images/star-fill.svg"
+                    width="16"
+                    height="16"
+                    loading="lazy"
+                    alt=""
+                  />
+                  <img
+                    src="../assets/images/star-fill.svg"
+                    width="16"
+                    height="16"
+                    loading="lazy"
+                    alt=""
+                  />
+                  <img
+                    src="../assets/images/star-fill.svg"
+                    width="16"
+                    height="16"
+                    loading="lazy"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <h3 class="title-lg card-title">Intro to Android-Studio</h3>
+              <div class="card-meta wrapper">
+                <p class="title-sm">
+                  <img
+                    src="../assets/images/file-outline.svg"
+                    width="20"
+                    height="20"
+                    loading="lazy"
+                    alt=""
+                  />
+                  <span class="span">6 Lessons</span>
+                </p>
+                <p class="title-sm">
+                  <img
+                    src="../assets/images/user-outline.svg"
+                    width="20"
+                    height="20"
+                    loading="lazy"
+                    alt=""
+                  />
+                  <span class="span">12k Students</span>
+                </p>
+              </div>
+            </div>
+            <a
+              href="#"
+              class="layer-link"
+              aria-label="Course Details, Designing User Interfaces for Web & Mobile"
+            ></a>
+            <div class="button-container">
+              <button class="en">Add To Cart</button>
+              <button class="en">Enroll Now</button>
+              <!-- <button class="en">Read More</button> -->
+            </div>
+          </div>
+        </li>
+      </ul>
+      <!-- <a href="#" class="btn btn-primary" data-aos="zoom-out">View All Courses</a> -->
+    </div>
+  </section>
+
+  <div class="footer-bottom">
+    <div class="container">
+      <p class="copyright">
+        <a href="copy.html"> © Copyright Policy <time id="year"></time> </a> All Rights Reserved by Priya Ghosal
+    </p>
+
+    </div>
+  </div>
+
+</footer>
     <!-- 
    - custom js link
   -->
