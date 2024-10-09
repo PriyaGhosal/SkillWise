@@ -1450,7 +1450,7 @@ body.nav-active { overflow: hidden; }
     outline: none;
     color: var(--light-coral);
     font-size: 15px;
-    padding:8px;
+    padding:20px;
   }
   
   .svgxml
