@@ -102,7 +102,7 @@ a {
 }
 
 img {
-  height: auto;
+  height: 200px;
 }
 
 button {
@@ -257,6 +257,7 @@ body.nav-active {
 }
 
 .card {
+  height:380px;
   position: relative;
   background-color: var(--white);
   padding: 24px;
@@ -1375,6 +1376,7 @@ button:hover {
 
   .container {
     max-width: 1024px;
+    
   }
 
   .btn {
@@ -1940,4 +1942,7 @@ body{
     transform: translateY(-5px);
   }
 }
-
+body{
+  overflow: auto;
+}
+  
