@@ -9,6 +9,9 @@
 /*-----------------------------------*\
   #CUSTOM PROPERTY
 \*-----------------------------------*/
+body, html {
+  overflow: auto !important;
+}
 
 :root {
   --selective-yellow: hsl(42, 100%, 56%);
