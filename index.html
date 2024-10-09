@@ -10,7 +10,8 @@
     - primary meta tags
   -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <!-- <link rel="stylesheet" href="style.css"> -->
+<!--   <link rel="stylesheet" href="style.css"> -->
+  <link rel="stylesheet" href="style.css">
   <title>SkillWise</title>
   <meta name="title" content="SkillWise">
   <meta name="description" content="This is a education html template made by Priya Ghosal">
@@ -206,7 +207,51 @@
       </section>
 
 
+     <!--
+        Feedback Section
+      -->
+      <div class="feedback-button" id="feedbackButton">Feedback</div>
+    <div class="feedback-modal" id="feedbackModal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h2>We Value Your Feedback</h2>
+            <form id="feedbackForm">
+                <div class="step" id="step1">
+                    <h3>How do you feel?</h3>
+                    <div class="emojis">
+                        <span class="emoji" data-value="happy">😀</span>
+                        <span class="emoji" data-value="neutral">😐</span>
+                        <span class="emoji" data-value="sad">😢</span>
+                    </div>
+                    <button type="button" id="nextToFeedback">Next</button>
+                </div>
 
+                <div class="step" id="step2" style="display: none;">
+                    <h3>Your Feedback</h3>
+                    <textarea id="feedback" rows="5" placeholder="Write your feedback here..." required></textarea>
+                    <div class="buttons">
+                      <button type="button" id="nextToEmail">Next</button>
+                    <button type="button" id="backToEmoji">Back</button>
+                    </div>
+                </div>
+
+                <div class="step" id="step3" style="display: none;">
+                    <h3>Your Email</h3>
+                    <input type="email" id="email" placeholder="Enter your email" required />
+                   <div class="buttons">
+                    <button type="submit" id="submitForm">Submit Feedback</button>
+                    <button type="button" id="backToFeedback">Back</button>
+                   </div>
+                </div>
+              </form>
+        </div>
+    </div>
+
+
+    <div class="feedbackPopUp">
+      Thank you for your Feedback
+    </div>
+    
 
 
       <!-- 
@@ -220,7 +265,7 @@
           <p id="keppi" class="title-sm text-center section-subtitle keppi" id="category-label" data-aos="flip-down">Course Categories</p>
 
           <h2 class="headline-md text-center section-title" data-aos="fade-down">
-            Browse Top <span class="span has-after">Categories</span>
+           <div class="headline"> Browse Top <span class="span has-after">Categories</span></div>
           </h2>
 
           <ul class="grid-list">
@@ -277,7 +322,7 @@
                   <p class="title-sm">68 Courses</p>
                 </div>
 
-                <a href="#" class="layer-link" aria-label="Modern Physics Category"></a>
+                <a href="modern_physics.html" class="layer-link" aria-label="Modern Physics Category"></a>
 
               </div>
             </li>
@@ -296,7 +341,7 @@
                   <p class="title-sm">68 Courses</p>
                 </div>
 
-                <a href="#" class="layer-link" aria-label="Music Production Category"></a>
+                <a href="music.html" class="layer-link" aria-label="Music Production Category"></a>
 
               </div>
             </li>
@@ -315,7 +360,7 @@
                   <p class="title-sm">68 Courses</p>
                 </div>
 
-                <a href="#" class="layer-link" aria-label="Data Science Category"></a>
+                <a href="marketing.html" class="layer-link" aria-label="Data Science Category"></a>
 
               </div>
             </li>
@@ -333,7 +378,7 @@
                   <p class="title-sm">68 Courses</p>
                 </div>
 
-                <a href="#" class="layer-link" aria-label="Finances Category"></a>
+                <a href="finance.html" class="layer-link" aria-label="Finances Category"></a>
 
               </div>
             </li>
@@ -438,14 +483,15 @@
           <p id="keppi" class="title-sm section-subtitle text-center ">Featured Courses</p>
 
           <h2 class="headline-md section-title text-center" id="course-label" data-aos="fade-down">
-            Choose Unlimited <span class="span has-after">Courses</span>
+           <div class="headline">Choose Unlimited <span class="span has-after">Courses</span</div> >
           </h2>
 
           <ul class="grid-list">
 
             <li class="card-container">
+               <div class="header1">
               <div class="card course-card" data-aos="fade-right">
-
+               
                 <figure class="card-banner">
                   <img src="./assets/images/course-1.png" width="370" height="248" loading="lazy"
                     alt="Basic Fundamentals of Interior & Graphics Design" class="img-cover">
@@ -486,15 +532,16 @@
 
                   </div>
 
-                </div>
+                </div></div>
 
                 <a href="#" class="layer-link"
                   aria-label="Course Details, Basic Fundamentals of Interior & Graphics Design"></a>
 
-              </div>
+              </div> 
             </li>
 
             <li class="card-container">
+              <div class="header2">
               <div class="card course-card" data-aos="fade-left">
 
                 <figure class="card-banner">
@@ -537,7 +584,7 @@
 
                   </div>
 
-                </div>
+                </div></div>
 
                 <a href="#" class="layer-link"
                   aria-label="Course Details, Increasing Engagement with Instagram & Facebook"></a>
@@ -546,6 +593,7 @@
             </li>
 
             <li class="card-container">
+              <div class="header3">
               <div class="card course-card" data-aos="fade-right">
 
                 <figure class="card-banner">
@@ -588,7 +636,7 @@
 
                   </div>
 
-                </div>
+                </div></div>
 
                 <a href="#" class="layer-link"
                   aria-label="Course Details, Introduction to Color Theory & Basic UI/UX"></a>
@@ -597,6 +645,7 @@
             </li>
 
             <li class="card-container">
+              <div class="header4">
               <div class="card course-card" data-aos="fade-left">
 
                 <figure class="card-banner">
@@ -639,7 +688,7 @@
 
                   </div>
 
-                </div>
+                </div></div>
 
                 <a href="#" class="layer-link"
                   aria-label="Course Details, Financial Security Thinking and Principles Theory"></a>
@@ -648,6 +697,7 @@
             </li>
 
             <li class="card-container">
+              <div class="header5">
               <div class="card course-card" data-aos="fade-right">
 
                 <figure class="card-banner">
@@ -690,7 +740,7 @@
 
                   </div>
 
-                </div>
+                </div></div>
 
                 <a href="#" class="layer-link"
                   aria-label="Course Details, Logo Design: From Concept to Presentation"></a>
@@ -699,6 +749,8 @@
             </li>
 
             <li class="card-container">
+              <div class="header6">
+
               <div class="card course-card" data-aos="fade-left">
 
                 <figure class="card-banner">
@@ -741,8 +793,8 @@
 
                   </div>
 
-                </div>
-
+                </div></div>
+              </li>
                 <a href="#" class="layer-link"
                   aria-label="Course Details, Professional Ceramic Moulding for Beginners"></a>
 
@@ -777,6 +829,64 @@
       </section>
 
 
+
+      <div class="parent"> 
+        <div class="scroll-container">
+          <h2 id="Trust">Trusted by Organizations</h2>
+              <div class="scroll" style="--time:20s">
+                <div>
+                    <span><img src="./assets/images/google" alt="google Logo">Google</span>
+                    <span><img src="./assets/images/youtube.jpg" alt="youtube Logo">Youtube</span>
+                    <span><img src="./assets/images/twitter.png" alt="twitter Logo">Twitter</span>
+                    <span><img src="./assets/images/reddit.jpg" alt="reddit Logo">Reddit</span>
+                    <span><img src="./assets/images/IBM_logo.jpg" alt="ibm Logo">IBM</span>
+                    <span><img src="./assets/images/target_logo.jpg" alt="target Logo">Target</span>
+                    <span><img src="./assets/images/salesforce_logo.jpg" alt="salesforce_logo Logo">Salesforce</span>
+                    <span><img src="./assets/images/meta_logo.jpg" alt="meta Logo">Meta</span>
+                    <span><img src="./assets/images/amazon_logo.jpg" alt="amazon Logo">Amazon</span>
+                    <span><img src="./assets/images/adobe.jpg" alt="adobe Logo">Adobe</span>
+                </div>
+                <div>
+                    <span><img src="./assets/images/google" alt="google Logo">Google</span>
+                    <span><img src="./assets/images/youtube.jpg" alt="youtube Logo">Youtube</span>
+                    <span><img src="./assets/images/twitter.png" alt="twitter Logo">Twitter</span>
+                    <span><img src="./assets/images/reddit.jpg" alt="reddit Logo">Reddit</span>
+                    <span><img src="./assets/images/IBM_logo.jpg" alt="ibm Logo">IBM</span>
+                    <span><img src="./assets/images/target_logo.jpg" alt="target Logo">Target</span>
+                    <span><img src="./assets/images/salesforce_logo.jpg" alt="salesforce_logo Logo">Salesforce</span>
+                    <span><img src="./assets/images/meta_logo.jpg" alt="meta Logo">Meta</span>
+                    <span><img src="./assets/images/amazon_logo.jpg" alt="amazon Logo">Amazon</span>
+                    <span><img src="./assets/images/adobe.jpg" alt="adobe Logo">Adobe</span>
+                </div>
+              </div>
+              <div class="scroll" style="--time:40s">
+                <div>
+                    <span><img src="./assets/images/google" alt="google Logo">Google</span>
+                    <span><img src="./assets/images/youtube.jpg" alt="youtube Logo">Youtube</span>
+                    <span><img src="./assets/images/twitter.png" alt="twitter Logo">Twitter</span>
+                    <span><img src="./assets/images/reddit.jpg" alt="reddit Logo">Reddit</span>
+                    <span><img src="./assets/images/IBM_logo.jpg" alt="ibm Logo">IBM</span>
+                    <span><img src="./assets/images/target_logo.jpg" alt="target Logo">Target</span>
+                    <span><img src="./assets/images/salesforce_logo.jpg" alt="salesforce_logo Logo">Salesforce</span>
+                    <span><img src="./assets/images/meta_logo.jpg" alt="meta Logo">Meta</span>
+                    <span><img src="./assets/images/amazon_logo.jpg" alt="amazon Logo">Amazon</span>
+                    <span><img src="./assets/images/adobe.jpg" alt="adobe Logo">Adobe</span>
+                </div>
+                <div>
+                    <span><img src="./assets/images/google" alt="google Logo">Google</span>
+                    <span><img src="./assets/images/youtube.jpg" alt="youtube Logo">Youtube</span>
+                    <span><img src="./assets/images/twitter.png" alt="twitter Logo">Twitter</span>
+                    <span><img src="./assets/images/reddit.jpg" alt="reddit Logo">Reddit</span>
+                    <span><img src="./assets/images/IBM_logo.jpg" alt="ibm Logo">IBM</span>
+                    <span><img src="./assets/images/target_logo.jpg" alt="target Logo">Target</span>
+                    <span><img src="./assets/images/salesforce_logo.jpg" alt="salesforce_logo Logo">Salesforce</span>
+                    <span><img src="./assets/images/meta_logo.jpg" alt="meta Logo">Meta</span>
+                    <span><img src="./assets/images/amazon_logo.jpg" alt="amazon Logo">Amazon</span>
+                    <span><img src="./assets/images/adobe.jpg" alt="adobe Logo">Adobe</span>
+                </div>
+            </div> 
+        </div>
+      </div>
 
 
       <!-- 
@@ -883,31 +993,31 @@
 
             <li>
               
-              <a href="#" class="social-link" id="social-link1">
+              <a href="https://www.facebook.com" class="social-link" id="social-link1">
                 <img src="./assets/images/facebook.svg" width="40" height="40" loading="lazy" alt="facebook">
               </a>
             </li>
 
             <li>
-              <a href="#" class="social-link" id="social-link2">
+              <a href="https://www.x.com" class="social-link" id="social-link2">
                 <img src="./assets/images/X-logo.svg" width="40" height="40" loading="lazy" alt="X logo">
               </a>
             </li>
 
             <li>
-              <a href="#" class="social-link" id="social-link3">
+              <a href="https://www.pinterest.com" class="social-link" id="social-link3">
                 <img src="./assets/images/pinterest.svg" width="40" height="40" loading="lazy" alt="pinterest">
               </a>
             </li>
 
             <li>
-              <a href="#" class="social-link" id="social-link4">
+              <a href="https://www.instagram.com" class="social-link" id="social-link4">
                 <img src="./assets/images/instagram.svg" width="40" height="40" loading="lazy" alt="instagram">
               </a>
             </li>
 
             <li>
-              <a href="#" class="social-link" id="social-link5">
+              <a href="https://www.linkedin.com" class="social-link" id="social-link5">
                 <img src="./assets/images/linkedIn.svg" width="40" height="40" loading="lazy" alt="linkedin">
               </a>
             </li>
@@ -1075,26 +1185,20 @@
   <!-- 
    - custom js link
   -->
-  <script src="./assets/js/script.js"></script>
+  <!-- Custom JS Links -->
+<script src="./assets/js/script.js"></script>
+<script src="assets/js/dark.js"></script>
 
-  <script src="assets/js/dark.js"></script>
+<!-- EmailJS Functionality -->
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script src="./assets/js/email.js"></script> <!-- New email.js file -->
 
-  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-  <script>
-    (function () {
-      emailjs.init(CONFIG.USER_ID_KEY);
-    })();
+<!-- Animation on Scroll -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 
-    document.getElementById('contact-form').addEventListener('submit', function (event) {
-      event.preventDefault();
-      emailjs.sendForm(CONFIG.SERVICE_ID, CONFIG.TEMPLATE_ID_KEY, this)
-        .then(function () {
-          alert('Email sent successfully!');
-        }, function (error) {
-          alert('Failed to send email. Error: ' + JSON.stringify(error));
-        });
-    });
-  </script>
 
   <!-- Animation on Scroll -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
