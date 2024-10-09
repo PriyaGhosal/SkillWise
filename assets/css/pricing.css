@@ -1,0 +1,83 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+body{
+    background-color:#ffede7;
+}
+.container1{
+    width:90%;
+    margin:auto;
+ 
+ 
+
+
+}
+.price{
+    width:100%;
+    text-align:center;
+    margin-top:10px;
+}
+.banner{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    height:60px;
+   
+    margin-top:30px;
+}
+.card-body{
+    padding:0px;
+    text-align:center;
+}
+.price{
+    font-size:45px;
+}
+.card-subtitle{
+    font-size:18px;
+   
+}
+.card-text{
+
+    font-size:22px;
+   
+    margin-top:20px;         
+    margin-bottom:20px;
+}
+.btn-success{
+    margin-top:30px;
+    margin-bottom:20px;
+    padding:10px 15px;
+    font-weight:700;
+    font-size:18px;
+}
+
+.banner{
+    color:white;
+    font-size:26px;
+    font-weight:600;
+}
+.ribbon {
+    width: 100px;
+    height: 60px;
+    overflow: hidden;
+    position: absolute;
+    top: 30px;
+    right: 0px;
+}
+
+.ribbon span {
+    position: absolute;
+    display: block;
+    width: 140px;
+    padding: 10px 0;
+    background-color: red;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    transform: rotate(45deg);
+    top: 8px;
+    right: -30px;
+}
