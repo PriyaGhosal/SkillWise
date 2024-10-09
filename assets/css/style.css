@@ -630,6 +630,54 @@ button:hover {
   margin-inline: auto;
 }
 
+#category-card1{
+  transition: transform 0.3s ease;
+}
+
+#category-card1:hover {
+  transform: scale(1.025);
+}
+
+#category-card2{
+  transition: transform 0.3s ease;
+}
+
+#category-card2:hover {
+  transform: scale(1.025);
+}
+
+#category-card3{
+  transition: transform 0.3s ease;
+}
+
+#category-card3:hover {
+  transform: scale(1.025);
+}
+
+#category-card4{
+  transition: transform 0.3s ease;
+}
+
+#category-card4:hover {
+  transform: scale(1.025);
+}
+
+#category-card5{
+  transition: transform 0.3s ease;
+}
+
+#category-card5:hover {
+  transform: scale(1.025);
+}
+
+#category-card6{
+  transition: transform 0.3s ease;
+}
+
+#category-card6:hover {
+  transform: scale(1.025);
+}
+
 /*-----------------------------------*\
   #ABOUT
 \*-----------------------------------*/
