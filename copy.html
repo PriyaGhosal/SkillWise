@@ -5,171 +5,294 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkillWise - Copyright Policy Page</title>
 
-  <!-- 
-    - primary meta tags
-  -->
-  <title>SkillWise</title>
-  <meta name="title" content="SkillWise">
-  <meta name="description" content="This is a education html template made by Priya Ghosal">
+  <!-- Internal CSS for Dark Mode, Animations, and UI Enhancements -->
+  <style>
+    /* General Styles */
+    :root {
+      --light-bg-color: #e0f7fa; /* Light Ocean Tint */
+      --light-text-color: #2d3748;
+      --light-heading-color: #00838f; /* Ocean Shade */
+      --dark-bg-color: #004d40; /* Dark Ocean Tint */
+      --dark-text-color: #f7fafc;
+      --dark-heading-color: #90cdf4; /* Lighter Ocean Shade */
+      --primary-accent: #81c784; /* Light Green */
+      --secondary-accent: #ff6b81; /* Lighter Peach Tone */
+      --highlight-yellow: #ffd700; /* Highlight Color */
+    }
 
-  <!-- 
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: var(--light-bg-color);
+      color: var(--light-text-color);
+      margin: 0;
+      padding: 0;
+      transition: all 0.3s ease;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
 
-  <!-- 
-    - custom font link
-  -->
-  <link rel="stylesheet" href="./assets/font/font.css">
+    body.dark-mode {
+      background-color: var(--dark-bg-color);
+      color: var(--dark-text-color);
+    }
 
-  <!-- 
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
 
-  <!-- 
-    - preload images
-  -->
-  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
-  <link rel="preload" as="image" href="./assets/images/hero-bg.png">
+    /* Heading Styling */
+    h1 {
+      text-align: center;
+      font-size: 3.5rem;
+      font-weight: 700;
+      background: linear-gradient(90deg, #00838f, #81c784, #ffd700);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--highlight-yellow);
+      transition: all 0.3s ease;
+      letter-spacing: 0.05em;
+      opacity: 0;
+      animation: fadeIn 1s ease forwards;
+    }
 
+    body.dark-mode h1 {
+      border-bottom-color: var(--dark-heading-color);
+    }
+
+    /* Policy Content Styling */
+    .policy-content {
+      background-color: rgba(129, 199, 132, 0.8); /* Light Green with Opacity */
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+      margin-bottom: 50px;
+      transition: all 0.3s ease;
+      backdrop-filter: blur(5px);
+      opacity: 0;
+      animation: slideIn 1s ease forwards 0.3s;
+    }
+
+    body.dark-mode .policy-content {
+      background-color: rgba(0, 77, 64, 0.9); /* Dark Ocean Tint with Opacity */
+      box-shadow: 0 6px 20px rgba(255, 255, 255, 0.1);
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: var(--highlight-yellow);
+      margin-top: 25px;
+    }
+
+    body.dark-mode h2 {
+      color: var(--dark-heading-color);
+    }
+
+    p {
+      font-size: 1.125rem;
+      margin-bottom: 20px;
+    }
+
+    a {
+      color: var(--highlight-yellow);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color: var(--secondary-accent);
+    }
+
+    /* Fixed Dark Mode Toggle Button */
+    .toggle-dark-mode {
+      background-color: var(--secondary-accent);
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1rem;
+      font-weight: 600;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      position: fixed;
+      top: 15px;
+      right: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      z-index: 1000; /* Ensure it's above other elements */
+    }
+
+    .toggle-dark-mode:hover {
+      background-color: var(--primary-accent);
+      transform: scale(1.05);
+    }
+
+    /* Header */
+    .header {
+      background-color: var(--light-heading-color);
+      padding: 12px 0;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      opacity: 0;
+      animation: fadeIn 1s ease forwards 0.5s;
+    }
+
+    body.dark-mode .header {
+      background-color: var(--dark-heading-color);
+    }
+
+    .header img {
+      height: 50px;
+    }
+
+    .header a {
+      color: white;
+      font-size: 1rem;
+      text-decoration: none;
+      padding: 8px 15px;
+      font-weight: 500;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 10px;
+    }
+
+    .navbar a {
+      padding: 12px 20px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: var(--light-heading-color);
+      color: white;
+      padding: 25px;
+      text-align: center;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+      opacity: 0;
+      animation: fadeIn 1s ease forwards 0.8s;
+    }
+
+    body.dark-mode footer {
+      background-color: var(--dark-heading-color);
+    }
+
+    /* Content Wrapper */
+    .content-wrapper {
+      padding: 60px 0;
+    }
+
+    /* Scroll Animation */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateX(-100%);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    /* Hover Effects on Content */
+    .policy-content:hover {
+      transform: scale(1.02);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+  </style>
 </head>
 
 <body>
 
-  <!-- 
-    - PRELOADER
-  -->
+  <!-- Fixed Dark Mode Toggle Button -->
+  <button class="toggle-dark-mode" id="dark-mode-toggle">🌙 Toggle Vibes</button>
 
-  <div class="preloader" data-preloader>
-    <div class="circle" data-circle></div>
-  </div>
-
-
-
-
-
-  <!-- 
-    - #HEADER
-  -->
-
-  <header class="header" data-header>
+  <!-- Header -->
+  <header class="header">
     <div class="container">
-
-      <a>
-        <img src="./assets/images/Skillwise_logo.jpg" width="50" height="10" alt="SkillWise home">
-      </a>
-
-      <nav class="navbar" data-navbar>
-
-        <div class="navbar-top">
-          <a >
-            <img src="./assets/images/Skillwise_logo.jpg" width="50" height="10" alt="SkillWise home">
-          </a>
-
-          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
-            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
-          </button>
-        </div>
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <a href="./index.html" class="navbar-link title-sm" data-nav-link>Home</a>
-          </li>
-
-          <li class="navbar-item">
-            <a href="./index.html#courses" class="navbar-link title-sm" data-nav-link>Courses</a>
-          </li>
-
-          <li class="navbar-item">
-            <a href="./index.html#blog" class="navbar-link title-sm" data-nav-link>Blog</a>
-          </li>
-
-          <li class="navbar-item">
-            <a href="./index.html#contact" class="navbar-link title-sm" data-nav-link>Contacts</a>
-          </li>
-
-        </ul>
-
+      <a href="#"><img src="./assets/images/Skillwise_logo.jpg" alt="SkillWise Logo"></a>
+      <nav class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Courses</a>
+        <a href="#">Blog</a>
+        <a href="#">Contacts</a>
+        <a href="#" class="btn-secondary">Start Free Trial 🚀</a>
       </nav>
-
-      <a href="./signin.html" class="btn btn-secondary">Start Free Trial</a>
-
-      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
-        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
-      </button>
-
-      <div class="overlay" data-overlay data-nav-toggler></div>
-
     </div>
   </header>
-<br><br><br><br><br>
-  <main>
-    <section class="policy-section">
-      <div class="container">
-      
-        <h2 class="headline-md section-title">
-            Copyright Policy
-          </h2>
 
-        
-        <p class="title-md">At SkillWise, we respect intellectual property rights and strive to protect them. By using our platform, you agree to follow this policy. Please read the following points carefully:</p>
-        <br>
-        <div class="policy-content">
+   <!-- Content -->
+   <div class="content-wrapper">
+    <div class="container">
+      <h1>Copyright Policy</h1>
+      <div class="policy-content">
+        <h2>1. Ownership of Content</h2>
+        <p>All content on SkillWise, including text, images, and media, is owned by SkillWise or its content partners and is protected by copyright laws.</p>
 
-          <h2 class="title-md">1. Ownership of Content</h2>
-          <p>All content on SkillWise, including text, images, and media, is owned by SkillWise or its content partners. This content is protected by international copyright laws.</p>
-          <br>
-          <h2 class="title-md">2. User-Generated Content</h2>
-          <p>Users must own the copyright to the material they upload or have obtained permission to use it. By uploading content, you grant SkillWise a non-exclusive, worldwide license to use it on our platform.</p>
-          <br>
-          <h2 class="title-md">3. Copyright Infringement</h2>
-          <p>We take copyright violations seriously. If you believe content on SkillWise infringes your rights, please notify us. We'll take necessary actions, including removing the content if required.</p>
-          <br>
-          <h2 class="title-md">4. Reporting Copyright Violations</h2>
-          <p>To report a violation, include the following in your notice: a description of the copyrighted work, the infringing content’s location (URL), your contact information, and a statement of good faith belief in the violation.</p>
-          <br>
-          <h2 class="title-md">5. Fair Use and Educational Purpose</h2>
-          <p>We respect fair use doctrine. Users must ensure their use of copyrighted materials aligns with fair use principles, especially when utilizing content for educational purposes.</p>
-          <br>
-          <h2 class="title-md">6. License to Access and Use</h2>
-          <p>Content on SkillWise is licensed for personal, non-commercial use. Redistribution or modification of the content without permission from SkillWise or the copyright holder is prohibited.</p>
-          <br>
-          <h2 class="title-md">7. DMCA Compliance</h2>
-          <p>SkillWise complies with the DMCA and responds to valid DMCA takedown notices. Repeat infringers may be banned from our platform.</p>
-          <br>
-          <h2 class="title-md">8. Copyright Dispute Resolution</h2>
-          <p>In case of disputes, we encourage amicable resolution. However, SkillWise reserves the right to remove disputed content while an investigation is underway.</p>
-          <br>
-          <h2 class="title-md">9. User Responsibilities</h2>
-          <p>Users are responsible for ensuring their use of content complies with copyright laws. Unauthorized copying or distribution of materials is not allowed.</p>
-          <br>
-          <h2 class="title-md">10. Policy Modifications</h2>
-          <p>SkillWise may update this policy periodically. We recommend users check this page regularly to stay informed of any changes. Continued use of the platform after changes implies acceptance of the updated policy.</p>
-          <br>
-        </div>
+        <h2>2. User-Generated Content</h2>
+        <p>Users must own the copyright to the material they upload or have obtained permission to use it. By uploading content, you grant SkillWise a license to use it on our platform.</p>
+
+        <h2>3. Copyright Infringement</h2>
+        <p>If you believe content on SkillWise infringes your rights, notify us, and we will take action, including content removal if necessary.</p>
+
+        <h2>4. Reporting Copyright Violations</h2>
+        <p>To report a violation, provide a description of the copyrighted work, the infringing content’s location (URL), your contact information, and a statement of good faith belief in the violation.</p>
+
+        <h2>5. Fair Use and Educational Purpose</h2>
+        <p>Users must ensure their use of copyrighted materials aligns with fair use principles, particularly for educational purposes.</p>
+
+        <h2>6. License to Access and Use</h2>
+        <p>Content on SkillWise is for personal, non-commercial use. Redistribution or modification is prohibited without permission.</p>
+
+        <h2>7. DMCA Compliance</h2>
+        <p>SkillWise complies with the DMCA and responds to valid DMCA takedown notices. Repeat infringers may be banned.</p>
+
+        <h2>8. Copyright Dispute Resolution</h2>
+        <p>We encourage amicable resolution of disputes. However, SkillWise reserves the right to remove disputed content during an investigation.</p>
+
+        <h2>9. User Responsibilities</h2>
+        <p>Users are responsible for ensuring their use of content complies with copyright laws.</p>
+
+        <h2>10. Amendments</h2>
+        <p>SkillWise reserves the right to amend this policy at any time. Continued use of the platform signifies acceptance of the updated policy.</p>
       </div>
-    </section>
-    <br><br>
-  </main>
-  <br><br><br><br><br>
+    </div>
+  </div>
 
+  <!-- Footer -->
+  <footer>
+    &copy; 2024 SkillWise. All Rights Reserved. ✌️
+  </footer>
 
+  <!-- JavaScript for Dark Mode Toggle -->
+  <script>
+    const toggleButton = document.getElementById('dark-mode-toggle');
+    const body = document.body;
 
-
-
-  <!-- 
-   - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
-
-  <!-- 
-    - ionicon
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    toggleButton.addEventListener('click', () => {
+      body.classList.toggle('dark-mode');
+    });
+  </script>
 
 </body>
 
