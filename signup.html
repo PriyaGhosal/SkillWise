@@ -6,6 +6,7 @@
     <title>SkillWise - Sign up</title>
     <link rel="stylesheet" href="assets/css/signin.css">
   <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
 </head>
 <body>
     <div class="container">
@@ -31,12 +32,28 @@
                 </div>
                 <div class="input-group">
                     <label for="password">Password</label>
-                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
-                </div>
+                    <div class="password">
+                        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                        <i class="fa-solid fa-eye-slash" id="togglePassword"></i>
+                      </div>                </div>
                 <button type="submit" class="signin-btn">Sign In</button>
                 <p class="signup-link">Already have an account? <a href="./signin.html">Sign in here</a></p>
             </form>
         </div>
     </div>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script >
+        const togglePassword = document.querySelector("#togglePassword");
+const passwordInput = document.querySelector("#password");
+
+togglePassword.addEventListener("click", function () {
+  const type = passwordInput.getAttribute("type") === "password" ?  "text": "password";
+  passwordInput.setAttribute("type", type);
+
+  this.classList.toggle("fa-eye-slash");
+  this.classList.toggle("fa-eye");
+});
+
+    </script>
 </body>
 </html>

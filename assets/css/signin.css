@@ -60,6 +60,26 @@ p {
     border-radius: 4px;
     box-sizing: border-box;
 }
+.password{
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 12px;
+
+}
+
+.password input{
+    width: 80%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+}
+.password input:focus{
+    outline: none;
+}
+
 
 .signin-btn {
     width: 100%;
