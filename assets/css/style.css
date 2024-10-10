@@ -262,6 +262,13 @@ body.nav-active {
   padding: 24px;
   border-radius: var(--radius-8);
   transition: var(--transition);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    transition: all 0.5s;
 }
 
 .card:is(:hover, :focus-within) {
@@ -625,6 +632,54 @@ button:hover {
 
 .category .btn {
   margin-inline: auto;
+}
+
+#category-card1{
+  transition: transform 0.3s ease;
+}
+
+#category-card1:hover {
+  transform: scale(1.025);
+}
+
+#category-card2{
+  transition: transform 0.3s ease;
+}
+
+#category-card2:hover {
+  transform: scale(1.025);
+}
+
+#category-card3{
+  transition: transform 0.3s ease;
+}
+
+#category-card3:hover {
+  transform: scale(1.025);
+}
+
+#category-card4{
+  transition: transform 0.3s ease;
+}
+
+#category-card4:hover {
+  transform: scale(1.025);
+}
+
+#category-card5{
+  transition: transform 0.3s ease;
+}
+
+#category-card5:hover {
+  transform: scale(1.025);
+}
+
+#category-card6{
+  transition: transform 0.3s ease;
+}
+
+#category-card6:hover {
+  transform: scale(1.025);
 }
 
 /*-----------------------------------*\
