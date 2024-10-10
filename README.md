@@ -153,6 +153,14 @@ Thank you for your contributions to SkillWise!Every contribution, no matter the 
 <table>
 	<tbody>
 		<tr>
+	    <td align="center">
+                <a href="https://github.com/sadique-2004">
+                    <img src="[![image](https://github.com/user-attachments/assets/717c27a2-a61e-4d66-a447-efae02ef2223)](https://avatars.githubusercontent.com/u/119618428?s=400&u=af989107bb386a5d88900e694ac9447d685eed01&v=4)
+" width="100;" alt="Md sadique"/>
+                    <br />
+                    <sub><b>Md Sadique</b></sub>
+                </a>
+            </td>
             <td align="center">
                 <a href="https://github.com/PriyaGhosal">
                     <img src="https://avatars.githubusercontent.com/u/162816363?v=4" width="100;" alt="PriyaGhosal"/>
