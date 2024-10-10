@@ -1319,7 +1319,7 @@ body.nav-active { overflow: hidden; }
     margin: 5px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
-    background-color: var(--light-black);
+    background-color: #191919;
     color: var(--white);
   }
   button {
