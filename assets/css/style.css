@@ -1722,7 +1722,8 @@ button:hover {
   justify-content: space-between;
   gap: 8px;
 
-  background: var(--light-gray);
+  /* background: #FF8086; */
+  background-color: var(--light-coral);
   border-radius: 50px;
   position: relative;
 }
@@ -1760,9 +1761,11 @@ button:hover {
   transform: translateY(0);
 }
 .searchInput::placeholder {
-  color: var(--light-coral);
+  
+  color:rgba(0, 0, 0, 0.4);
 }
 .searchInput {
+  margin-left: 10px;
   border: none;
   background: none;
   outline: none;
