@@ -204,6 +204,7 @@ body.nav-active {
 
 .btn {
   background-color: #1a1a1a;
+  /* border-radius: 20px; */
 }
 
 :is(.btn-primary, .btn-secondary):is(:hover, :focus-visible) {
@@ -1382,8 +1383,18 @@ button:hover {
     font-size: 1.8rem;
     border-radius: 10px;
     color: #fff;
+    width: 75%;
+    border: 2px solid transparent; /* Initial border */
+    border-radius: 5px; /* Rounded corners */
+    transition: border 0.3s ease, transform 0.3s ease; /* Smooth transition */
+    text-align: center; /* Center the text */
   }
-
+  .btn:hover{
+    border: 2px solid white;
+    transform: scale(1.05);
+    /* background-color: whitesmoke;
+  } */
+  }
   /**
    * HEADER
    */
