@@ -1706,6 +1706,7 @@ button:hover {
 }
 .searchInput::placeholder {
   color: var(--light-coral);
+  text-align: center;
 }
 .searchInput {
   border: none;
@@ -1714,6 +1715,8 @@ button:hover {
   color: black;
   font-size: 15px;
   padding: 8px;
+
+  margin-left: 2.5rem;
 }
 
 .svgxml {
@@ -1884,5 +1887,15 @@ body{
   100%{
     transform: translateY(-5px);
   }
+}
+
+
+
+/* give some styling to Navbar UL */
+
+ul li:hover{
+  border: 1.5px solid black;
+  border-bottom: none;
+  border-radius: 1rem;
 }
 
