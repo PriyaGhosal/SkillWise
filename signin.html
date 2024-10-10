@@ -28,10 +28,22 @@
                 </div>
                 <div class="input-group">
                     <label for="password">Password</label>
-                    <div class="password">
-                        <input type="password" id="password" name="password" placeholder="Enter your password" required>
-                        <i class="fa-solid fa-eye-slash" id="togglePassword"></i>
-                      </div>
+                    <div class="password" id="pass_login">
+                       <div id="pass_login">
+                        <input type="password" id="password" name="password" placeholder="Enter your password" oninput="checkPasswordStrength()" required>
+                        <i class="fa-solid fa-eye-slash" id="togglePassword" ></i>
+                        
+                       </div>
+                    </div>
+                        <div class="strength-bar">
+                            <div id="strengthBar" class="strength-bar-inner"></div>
+                        </div>
+                        <ul class="bullet-points">
+                            <li><small>Use special characters and numbers for strong password</small></li>
+                            <li><small>Use special characters and numbers for strong password</small></li>
+                            <li><small>Use special characters and numbers for strong password</small></li>
+                            <li><small>Use special characters and numbers for strong password</small></li>
+                        </ul>
                     </div>
                 <button type="submit" class="signin-btn">Sign In</button>
                 <p class="signup-link">Don't have an account? <a href="./signup.html">Sign up here</a></p>
@@ -50,6 +62,44 @@ togglePassword.addEventListener("click", function () {
   this.classList.toggle("fa-eye-slash");
   this.classList.toggle("fa-eye");
 });
+
+function checkPasswordStrength() {
+      const password = document.getElementById('password').value;
+      const strengthBar = document.getElementById('strengthBar');
+      let strength = 0;
+
+      if (password.length >= 8) strength += 1;
+      if (/[A-Z]/.test(password)) strength += 1;
+      if (/[a-z]/.test(password)) strength += 1;
+      if (/[0-9]/.test(password)) strength += 1;
+      if (/[\W]/.test(password)) strength += 1;
+
+      switch (strength) {
+        case 1:
+          strengthBar.style.width = '20%';
+          strengthBar.style.backgroundColor = 'red';
+          break;
+        case 2:
+          strengthBar.style.width = '40%';
+          strengthBar.style.backgroundColor = 'orange';
+          break;
+        case 3:
+          strengthBar.style.width = '60%';
+          strengthBar.style.backgroundColor = 'yellow';
+          break;
+        case 4:
+          strengthBar.style.width = '80%';
+          strengthBar.style.backgroundColor = 'lightgreen';
+          break;
+        case 5:
+          strengthBar.style.width = '100%';
+          strengthBar.style.backgroundColor = 'green';
+          break;
+        default:
+          strengthBar.style.width = '0%';
+          break;
+        }
+    }
 
     </script>
 
