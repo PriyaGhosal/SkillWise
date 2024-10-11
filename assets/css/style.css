@@ -1941,3 +1941,15 @@ body{
   }
 }
 
+.card-banner {
+  margin-bottom: 15px; /* Space between image and quote */
+}
+
+.grid-list {
+  margin-top: 30px; /* Space between heading and cards */
+  margin-bottom: 30px; /* Space below cards */
+}
+
+.testimonial-content {
+  margin-bottom: 10px; /* Space between quote and name (optional) */
+}
