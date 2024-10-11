@@ -9,6 +9,70 @@ body {
     align-items: center;
     height: 100vh;
 }
+.navbar {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255,255,0.07);
+    /* backdrop-filter: blur(10px); */
+    padding: 1rem;
+}
+
+.navbar .logo {
+    font-size:2rem;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-family: oswald;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+    font-size: 1.3rem;
+    color:white;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    background-color: #ef6d90;
+    color: white;
+    border-radius: 5px;
+}
+.navbar ul li:first-child a {
+    position: relative;
+}
+
+.navbar ul li:first-child a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transition: width 0.3s ease;
+}
+
+.navbar ul li:first-child a:hover::after {
+    width: 100%;
+}
+
+
 
 .container {
     width: 100%;
