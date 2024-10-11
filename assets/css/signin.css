@@ -1,33 +1,37 @@
-/* CSS for SkillWise Sign In Page */
-body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 50%, #fecf6d 100%);
+/* Global Styles */
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 50%, #fecf6d 100%);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin: 0;
 }
 
+/* Container Styles */
 .container {
-    width: 100%;
-    max-width: 400px;
     background-color: #fff;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-}
-
-.form-container {
+    border-radius: 15px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 350px;
     text-align: center;
 }
 
+/* Logo */
 .logo {
     width: 100px;
     margin-bottom: 20px;
 }
 
+/* Heading */
 h1 {
     font-size: 24px;
     margin-bottom: 10px;
@@ -38,16 +42,19 @@ h1 {
 }
 
 p {
-    margin-bottom: 20px;
+    font-size: 14px;
     color: #666;
+    margin-bottom: 20px;
 }
 
+/* Input Group */
 .input-group {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     text-align: left;
 }
 
 .input-group label {
+    font-size: 14px;
     display: block;
     margin-bottom: 5px;
     color: #333;
@@ -57,48 +64,65 @@ p {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-.password{
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-right: 12px;
-
+    border-radius: 8px;
+    font-size: 14px;
 }
 
-.password input{
-    width: 80%;
-    padding: 10px;
-    box-sizing: border-box;
-    border: none;
-}
-.password input:focus{
+.input-group input:focus {
+    border-color: #f77c80;
     outline: none;
 }
 
+/* Password Toggle */
+.password {
+    position: relative;
+}
 
-.signin-btn {
+.password input {
     width: 100%;
     padding: 10px;
-    background-color: #f77c80;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.password i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
     cursor: pointer;
+}
+
+.password input:focus {
+    outline: none;
+}
+
+/* Button */
+.signin-btn {
+    background-color: #f77c80;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
     font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .signin-btn:hover {
-    background-color: #f77c80;
+    background-color: #f65a5d;
 }
 
+button:focus {
+    outline: none;
+}
+
+/* Sign-Up Link */
 .signup-link {
-    margin-top: 15px;
-    color: #f77c80;
+    margin-top: 20px;
+    font-size: 14px;
 }
 
 .signup-link a {
@@ -114,6 +138,7 @@ p {
 @media (max-width: 600px) {
     .container {
         padding: 15px;
+        width: 90%;
     }
 
     .logo {
