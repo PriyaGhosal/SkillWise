@@ -70,7 +70,7 @@
     <div class="container" >
 
       <a href="#">
-        <img src="../assets/images/Skillwise_logo-removebg-preview.png" width="50" height="10" alt="SkillWise home">
+        <img src="./assets/images/Skillwise_logo-removebg-preview.png" width="50" height="10" alt="SkillWise home">
       </a>
 
       <nav class="navbar" data-navbar>
@@ -78,7 +78,7 @@
 
         <div class="navbar-top">
 
-            <img src="../assets/images/Skillwise_logo.jpg" width="50" height="10" alt="SkillWise home">
+            <img src="./assets/images/Skillwise_logo.jpg" width="50" height="10" alt="SkillWise home">
           </a>
 
           <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
@@ -92,6 +92,15 @@
           <li class="navbar-item">
             <a href="#home" class="navbar-link title-sm" data-nav-link>Home</a>
           </li>
+
+
+          <li class="navbar-item">
+            <a href="#About Us" class="navbar-link title-sm" data-nav-link>About Us</a>
+          </li>
+
+
+
+      
 
           <li class="navbar-item">
             <a href="#courses" class="navbar-link title-sm" data-nav-link>Courses</a>
@@ -384,7 +393,11 @@
 
           </ul>
 
-          <a href="#" class="btn btn-primary" data-aos="flip-left">View All Categories</a>
+          <div class="button-container">
+            <a href="#" class="btn btn-primary" data-aos="zoom-in">
+                View All Categories
+            </a>
+          </div>
 
         </div>
       </section>
@@ -801,9 +814,11 @@
             </li>
 
           </ul>
-
-          <a href="#" class="btn btn-primary" data-aos="zoom-out">View All Courses</a>
-
+          <div class="button-container">
+            <a href="#" class="btn btn-primary" data-aos="zoom-in">
+                View All Courses
+            </a>
+          </div>
         </div>
       </section>
 
@@ -959,7 +974,11 @@
             </li>
           </ul>
 
-          <a href="./pages/blog.html" class="btn btn-primary" data-aos="zoom-in">View All Blogs</a>
+          <div class="button-container">
+            <a href="./pages/blog.html" class="btn btn-primary" data-aos="zoom-in">
+                View All Blogs
+            </a>
+          </div>
 
         </div>
       </section>
@@ -1079,6 +1098,61 @@
         
         </div>
       </section>
+
+      <!-- 
+        #Testimonials
+       -->
+
+       <section id="testimonials" class="section testimonials has-bg-image" aria-labelledby="testimonials-label">
+
+        <div class="container">
+          <p class="title-sm text-center section-subtitle" id="testimonials-label">What People Say</p>
+      
+          <h2 class="headline-md text-center section-title" data-aos="fade-down">
+            Hear from <span class="span has-after">Our Clients</span>
+          </h2>
+      
+          <ul class="grid-list">
+            <li class="card-container" data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine">
+              <div class="card testimonial-card">
+                <figure class="card-banner">
+                  <img src="./assets/images/testimonials/student1.jpg" width="100" height="100" loading="lazy" alt="Person giving testimonial" class="img-cover img-circle">
+                </figure>
+                <div class="card-content">
+                  <p class="testimonial-content">"The service was exceptional and exceeded all my expectations!"</p>
+                  <h3 class="title-lg card-title">John Doe</h3>
+                </div>
+              </div>
+            </li>
+            <li class="card-container" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
+              <div class="card testimonial-card">
+                <figure class="card-banner">
+                  <img src="./assets/images/testimonials/student2.jpg" width="100" height="100" loading="lazy" alt="Person giving testimonial" class="img-cover img-circle">
+                </figure>
+                <div class="card-content">
+                  <p class="testimonial-content">"Outstanding service with exceptional attention to detail and professionalism!"</p>
+                  <h3 class="title-lg card-title">Jane Smith</h3>
+                </div>
+              </div>
+            </li>
+            <li class="card-container" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+              <div class="card testimonial-card">
+                <figure class="card-banner">
+                  <img src="./assets/images/testimonials/student3.jpg" width="100" height="100" loading="lazy" alt="Person giving testimonial" class="img-cover img-circle">
+                </figure>
+                <div class="card-content">
+                  <p class="testimonial-content">"Amazing experience! I felt heard and valued as a customer. Will definitely return!"</p>
+                  <h3 class="title-lg card-title">Emily Johnson</h3>
+                </div>
+              </div>
+            </li>
+          </ul>
+      
+          <a href="./pages/testimonials.html" class="btn btn-primary" data-aos="zoom-in">See All Testimonials</a>
+        </div>
+      
+      </section>
+      
 
     </article>
   </main>
@@ -1275,14 +1349,75 @@
         <h2 class="headline-md section-title" id="cta-label" data-aos="fade-right">
           Contact Us
         </h2>
+        
+        <form id="contact-form" data-aos="fade-left" style="
+        max-width: 400px;
+        margin: 50px auto;
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        transition: box-shadow 0.3s ease;
+      " onmouseover="this.style.boxShadow='0 10px 20px rgba(0, 0, 0, 0.2)'" 
+         onmouseout="this.style.boxShadow='0 6px 12px rgba(0, 0, 0, 0.15)'"> 
+    
+        <input type="text" name="name" placeholder="Your Name" required style="
+          width: 100%;
+          padding: 12px;
+          margin: 8px 0;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          font-size: 14px;
+          color: black;
+          background-color: #f9f9f9;
+          transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        " onfocus="this.style.borderColor='#ff66b2'; this.style.boxShadow='0 0 10px rgba(255, 102, 178, 0.3)'" 
+           onblur="this.style.borderColor='#ccc'; this.style.boxShadow='none'">
+    
+        <input type="email" name="email" placeholder="Your Email" required style="
+          width: 100%;
+          padding: 12px;
+          margin: 8px 0;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          font-size: 14px;
+          color: black;
+          background-color: #f9f9f9;
+          transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        " onfocus="this.style.borderColor='#ff66b2'; this.style.boxShadow='0 0 10px rgba(255, 102, 178, 0.3)'" 
+           onblur="this.style.borderColor='#ccc'; this.style.boxShadow='none'">
+    
+        <textarea name="message" placeholder="Your Message" required style="
+          width: 100%;
+          padding: 12px;
+          margin: 8px 0;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          font-size: 14px;
+          color: black;
+          background-color: #f9f9f9;
+          height: 150px;
+          resize: none;
+          transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        " onfocus="this.style.borderColor='#ff66b2'; this.style.boxShadow='0 0 10px rgba(255, 102, 178, 0.3)'" 
+           onblur="this.style.borderColor='#ccc'; this.style.boxShadow='none'"></textarea>
+    
+        <button type="submit" style="
+          background-color: #ff66b2;
+          color: white;
+          padding: 12px;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          font-size: 16px;
+          width: 100%;
+          transition: background-color 0.3s ease, transform 0.3s ease;
+        " onmouseover="this.style.backgroundColor='#ff3385'; this.style.transform='scale(1.05)'"
+           onmouseout="this.style.backgroundColor='#ff66b2'; this.style.transform='scale(1)'">Send</button>
+      </form>
+    
 
-        <form id="contact-form" data-aos="fade-left">
-          <input type="text" name="name" placeholder="Your Name" required>
-          <input type="email" name="email" placeholder="Your Email" required>
-          <textarea name="message" placeholder="Your Message" required></textarea>
-          <button style="width: 80px ;font-size: 13px;
-           " type="submit;">Send</button>
-        </form>
+        
       </div>
     </section>
 
@@ -1291,6 +1426,8 @@
       <div class="container">
         <p class="copyright">
           <a href="copy.html"> © Copyright Policy <time id="year"></time> </a> All Rights Reserved by Priya Ghosal
+          <br>
+      Made with ♥ by Priya Ghosal
       </p>
 
       </div>
