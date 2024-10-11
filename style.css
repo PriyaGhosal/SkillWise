@@ -20,6 +20,12 @@
     text-transform: uppercase; 
   }
   
+.search-results{
+  width: 400px;
+ color: black;
+  margin-top: 50px;
+}
+
   /* Contact Form */
   #contact-form {
     display: flex;

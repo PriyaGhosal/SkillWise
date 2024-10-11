@@ -124,9 +124,9 @@
 
      <div class="navRightSide">
       <div class="searchBox">
-        <input class="searchInput" type="text" name="" placeholder="Search something">
-        <button class="searchButton SearchBTN" href="#">
-
+        <input class="searchInput" id = "search-bar" type="text" name="" placeholder="Search something">
+        <button  onclick="searchCourses()" class="searchButton SearchBTN" href="#">
+          <div class="search-results"></div>
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 29 29"  fill="none">
 
 <g clip-path="url(#clip0_2_17)">
@@ -1456,6 +1456,39 @@
   AOS.init();
 </script>
 
+
+<!-- Search funciTion -->
+<script>
+
+function searchCourses() {
+            const searchInput = document.getElementById("search-bar");
+            const searchTerm = searchInput.value.toLowerCase();
+            const resultsContainer = document.querySelector('.search-results');
+            const cards = document.querySelectorAll(".category-card");
+            resultsContainer.innerHTML = ''; // Clear previous results
+            let foundAny = false;
+
+            // Loop through all cards and toggle visibility based on search term
+            cards.forEach(card => {
+                const title = card.querySelector(".title-lg").innerText.toLowerCase();
+                const isMatch = title.includes(searchTerm);
+
+                if (isMatch) {
+                    foundAny = true;
+                    const resultCard = card.cloneNode(true); // Clone the matched card
+                    resultsContainer.appendChild(resultCard); // Add it to the results container
+                }
+            });
+
+            // Show results or no results message
+            if (!foundAny) {
+                resultsContainer.innerHTML = "<p>No courses found.</p>"; // No results message
+            }
+        }
+
+
+
+</script>
 
   <!-- Animation on Scroll -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
