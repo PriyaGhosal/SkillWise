@@ -207,7 +207,6 @@ body.nav-active {
 
 .btn {
   background-color: #1a1a1a;
-  /* border-radius: 20px; */
 }
 
 :is(.btn-primary, .btn-secondary):is(:hover, :focus-visible) {
@@ -1417,19 +1416,8 @@ button:hover {
     font-size: 1.8rem;
     border-radius: 10px;
     color: #fff;
-    width: 75%;
-    border: 2px solid transparent; 
-    border-radius: 5px; 
-    transition: border 0.3s ease, transform 0.3s ease; 
-    text-align: center; 
-   
   }
-  .btn:hover{
-    border: 2px solid white;
-    transform: scale(1.05);
-    /* background-color: whitesmoke;
-  }
-  
+
   /**
    * HEADER
    */
@@ -1769,8 +1757,7 @@ button:hover {
   justify-content: space-between;
   gap: 8px;
 
-  /* background: #FF8086; */
-  background-color: var(--light-coral);
+  background: var(--light-gray);
   border-radius: 50px;
   position: relative;
 }
@@ -1808,11 +1795,9 @@ button:hover {
   transform: translateY(0);
 }
 .searchInput::placeholder {
-  
-  color:rgba(0, 0, 0, 0.4);
+  color: var(--light-coral);
 }
 .searchInput {
-  margin-left: 10px;
   border: none;
   background: none;
   outline: none;
