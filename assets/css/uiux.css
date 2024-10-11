@@ -1,124 +1,88 @@
 body {
   font-family: Arial, sans-serif;
+  background-color: #f0f0f0; /* Light gray background */
+  color: #333;
   margin: 0;
   padding: 20px;
-  background-color: #f8fafc;
 }
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
+
+header {
+  text-align: center;
+  padding-bottom: 20px;
 }
+
 h1 {
-  text-align: left;
-  color: #1e293b;
-  margin-bottom: 20px;
+  font-size: 2.5em;
+  color: #333; /* Black text for the header */
 }
-.grid {
+
+.course-list {
+  list-style-type: none;
+  padding: 0;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
+
 .card {
-  border-radius: 8px;
+  background-color: #fff; /* White background for the cards */
+  border-radius: 10px;
   padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Darker shadow for more contrast */
   position: relative;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
+  overflow: hidden;
+  transition: transform 0.3s ease; /* Adding hover effect */
 }
+
 .card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-.card-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 10px;
-}
-.icon {
-  background-color: #ffffff;
-  border-radius: 4px;
-  padding: 10px;
-  font-size: 24px;
-  transition: transform 0.3s ease;
-}
-.card:hover .icon {
-  transform: rotate(20deg);
-}
-.arrow {
-  color: #64748b;
-  font-size: 24px;
-  transition: transform 0.3s ease;
-}
-.card:hover .arrow {
-  transform: translateX(5px);
-}
-h2 {
-  margin: 0 0 10px 0;
-  color: #1e293b;
-  font-size: 18px;
-}
-p {
-  margin: 0 0 15px 0;
-  color: #64748b;
-  font-size: 14px;
-}
-.card-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.articles {
-  color: #64748b;
-  font-size: 12px;
-}
-.buy-btn {
-  background-color: #ffffff;
-  color: #3b82f6;
-  border: none;
-  padding: 5px 10px;
-  border-radius: 20px;
-  font-size: 12px;
-  cursor: pointer;
-  transition: background-color 0.3s, transform 0.3s;
-}
-.buy-btn:hover {
-  background-color: #eff6ff;
-  transform: scale(1.1);
-}
-.buy-btn:active {
-  transform: scale(0.95);
+  transform: scale(1.05); /* Slight hover effect for interaction */
 }
 
-/* Media Queries for Responsiveness */
-@media (max-width: 992px) {
-  .grid {
-      grid-template-columns: repeat(2, 1fr); /* 2 columns on tablet screens */
-  }
+.card-icon img {
+  float: left;
+  margin-right: 20px;
 }
 
-@media (max-width: 768px) {
-  .grid {
-      grid-template-columns: 1fr; /* Single column on mobile screens */
-  }
+.title-lg {
+  font-size: 1.5em;
+  color: #333; /* Dark text for course title */
 }
 
-@media (max-width: 480px) {
-  h1 {
-      font-size: 24px;
-  }
-  h2 {
-      font-size: 16px;
-  }
-  p {
-      font-size: 12px;
-  }
-  .buy-btn {
-      font-size: 10px;
-      padding: 5px 8px;
-  }
+.title-sm {
+  font-size: 1em;
+  color: #666; /* Lighter gray for course descriptions */
+}
+
+.layer-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-indent: -9999px;
+}
+
+/* Accent elements in light pink */
+.card-icon img, h1 {
+  border-bottom: 2px solid #ff69b4; /* Soft pink border */
+}
+
+.card:hover .card {
+  background-color: #ff69b4; /* Soft pink on hover */
+}
+.buy-now-btn {
+  display: inline-block;
+  background-color: #333; /* Dark color for the button */
+  color: #fff; /* White text */
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.9em;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.buy-now-btn:hover {
+  background-color: #ff69b4; /* Soft pink color on hover */
 }
