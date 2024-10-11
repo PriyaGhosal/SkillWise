@@ -234,10 +234,6 @@ body.nav-active {
   text-align: center;
 }
 
-.section-title {
-  margin-block-end: 24px;
-}
-
 .headline-md .has-after {
   padding-block-end: 8px;
 }
@@ -1541,7 +1537,7 @@ button:hover {
 
   .cta .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
   }
 
@@ -1553,7 +1549,7 @@ button:hover {
     margin-inline: 0;
   }
   .footer .container {
-    gap: 48px;
+    gap: 1rem;
   }
 }
 /* Ge
@@ -1668,7 +1664,6 @@ body.dark-mode .btn:hover {
 
 form {
   max-width: 400px;
-  margin: auto;
 }
 input,
 textarea {
@@ -1677,6 +1672,9 @@ textarea {
   margin: 5px 0;
   border: 1px solid #ccc;
   border-radius: 5px;
+}
+.container textarea::placeholder{
+  font-family: var(--ff-gilroy);
 }
 button {
   margin: auto;

@@ -206,8 +206,6 @@ body.nav-active { overflow: hidden; }
 
 .text-center { text-align: center; }
 
-.section-title { margin-block-end: 24px; }
-
 .headline-md .has-after { padding-block-end: 8px; }
 
 .headline-md .has-after::after {
@@ -1292,16 +1290,18 @@ body.nav-active { overflow: hidden; }
   
     .cta { text-align: left; }
   
-    .cta .container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+    .cta .headline-md {width: fit-content;
     }
-  
-    .cta .headline-md { max-width: 22ch; }
-  
+    #contact .container{
+      display: flex;
+  align-items: center;
+  justify-content: center;
+    }
+    #contact .container textarea::placeholder{
+      font-family: var(--ff-gilroy);
+    }
     .cta .btn { margin-inline: 0; }
-    .footer .container { gap: 48px; }
+    .footer .container { gap: 1rem; }
   
   }
   
@@ -1340,7 +1340,6 @@ body.nav-active { overflow: hidden; }
   
   form {
     max-width: 400px;
-    margin: auto;
   }
   input,
   textarea {
