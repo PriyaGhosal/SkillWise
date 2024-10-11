@@ -571,6 +571,13 @@ Thank you for your contributions to SkillWise!Every contribution, no matter the 
                 </a>
             </td>
             <td align="center">
+                <a href="https://github.com/Adil-Khan-N">
+                    <img src="https://avatars.githubusercontent.com/u/170500024?v=4" width="100;" alt="Adil-Khan-N"/>
+                    <br />
+                    <sub><b>Adil-Khan-N</b></sub>
+                </a>
+            </td>
+            <td align="center">
                 <a href="https://github.com/Aakansha-Chavan">
                     <img src="https://avatars.githubusercontent.com/u/181594189?v=4" width="100;" alt="Aakansha-Chavan"/>
                     <br />
