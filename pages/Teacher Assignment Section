@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/pricing.css">
+
+</head>
+<body>
+    <div class="price"><h1 >Pricing</h1></div>
+    
+    <div class="container1 d-flex flex-wrap justify-content-center">
+        <div class="card mr-3 mt-3" style="width: 20rem;position: relative;">
+            <div class="ribbon"><span>40%</span></div>
+            <div class="card-body">
+              <div class="banner"  style=" background-color:rgb(55, 132, 177);" >3 Year</div>
+              <h4 class="card-subtitle mb-2 font-weight-bold mt-5">&#8377;<span class="price">129/</span>month</h4>
+              <p class="card-text font-weight-bold text-success">save &#8377;50, billed annually</p>
+              <p class="card-text font-weight-bold text-success ">Total: $4644</p>
+              <a href="#" class="card-link"><Button class="btn btn-success">BUY NOW</Button></a>
+            </div>
+        </div>
+        <div class="card mr-3 mt-3" style="width: 20rem;position: relative;">
+            <div class="ribbon"><span>30%</span></div>
+            <div class="card-body">
+              <div class="banner" style=" background-color:rgb(157, 79, 164);">2 Year</div>
+              <h4 class="card-subtitle mb-2 font-weight-bold mt-5">&#8377;<span class="price">145/</span>month</h4>
+              <p class="card-text font-weight-bold text-success">save &#8377;35, billed annually</p>
+              <p class="card-text font-weight-bold text-success ">Total: $4644</p>
+              <a href="#" class="card-link"><Button class="btn btn-success">BUY NOW</Button></a>
+            </div>
+        </div>
+        <div class="card mr-3 mt-3" style="width: 20rem;position: relative;">
+            <div class="ribbon"><span>15%</span></div>
+            <div class="card-body">
+              <div class="banner" style=" background-color:rgb(237, 162, 76);">1 Year</div>
+              <h4 class="card-subtitle mb-2 font-weight-bold mt-5">&#8377;<span class="price">160/</span>month</h4>
+              <p class="card-text font-weight-bold text-success">save &#8377;25, billed annually</p>
+              <p class="card-text font-weight-bold text-success ">Total: $4644</p>
+              <a href="#" class="card-link"><Button class="btn btn-success">BUY NOW</Button></a>
+            </div>
+        </div>
+        <div class="card mr-3 mt-3" style="width: 20rem;position: relative;">
+            <div class="card-body">
+              <div class="banner" style=" background-color:rgb(139, 183, 53);">Monthly</div>
+              <h4 class="card-subtitle mb-2 font-weight-bold mt-5">&#8377;<span class="price">165/</span>month</h4>
+              <p class="card-text font-weight-bold text-success">save &#8377; 10, billed annually</p>
+              <p class="card-text font-weight-bold text-success ">Total: $4644</p>
+              <a href="#" class="card-link"><Button class="btn btn-success">BUY NOW</Button></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Teacher Assignment Feature -->
+    <div class="teacher-assignment container mt-5">
+        <h3>Assign a Plan to Your Students</h3>
+        <form>
+            <div class="form-group">
+                <label for="teacherName">Teacher's Name</label>
+                <input type="text" class="form-control" id="teacherName" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label for="studentEmail">Student Email</label>
+                <input type="email" class="form-control" id="studentEmail" placeholder="Enter student email">
+            </div>
+            <div class="form-group">
+                <label for="selectPlan">Select Plan</label>
+                <select class="form-control" id="selectPlan">
+                    <option>3 Year Plan - &#8377;129/month</option>
+                    <option>2 Year Plan - &#8377;145/month</option>
+                    <option>1 Year Plan - &#8377;160/month</option>
+                    <option>Monthly Plan - &#8377;165/month</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Assign Plan</button>
+        </form>
+    </div>
+
+</body>
+</html>
+
+
+
+
+## New Feature:
+> Teacher Assignment Section: A form that allows teachers to assign a subscription plan to a student. This can be useful in an academic or training environment where teachers or administrators can directly control the subscription details for students.
