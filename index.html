@@ -206,51 +206,125 @@
       </section>
 
 
-     <!--
-        Feedback Section
-      -->
-      <div class="feedback-button" id="feedbackButton">Feedback</div>
-    <div class="feedback-modal" id="feedbackModal">
-        <div class="modal-content">
-            <span class="close" id="closeModal">&times;</span>
-            <h2>We Value Your Feedback</h2>
-            <form id="feedbackForm">
-                <div class="step" id="step1">
-                    <h3>How do you feel?</h3>
-                    <div class="emojis">
-                        <span class="emoji" data-value="happy">😀</span>
-                        <span class="emoji" data-value="neutral">😐</span>
-                        <span class="emoji" data-value="sad">😢</span>
-                    </div>
-                    <button type="button" id="nextToFeedback">Next</button>
-                </div>
+   <!--
+      Feedback Section
+   -->
+<div class="feedback-button" id="feedbackButton">Feedback</div>
 
-                <div class="step" id="step2" style="display: none;">
-                    <h3>Your Feedback</h3>
-                    <textarea id="feedback" rows="5" placeholder="Write your feedback here..." required></textarea>
-                    <div class="buttons">
-                      <button type="button" id="nextToEmail">Next</button>
-                    <button type="button" id="backToEmoji">Back</button>
-                    </div>
-                </div>
-
-                <div class="step" id="step3" style="display: none;">
-                    <h3>Your Email</h3>
-                    <input type="email" id="email" placeholder="Enter your email" required />
-                   <div class="buttons">
-                    <button type="submit" id="submitForm">Submit Feedback</button>
-                    <button type="button" id="backToFeedback">Back</button>
-                   </div>
-                </div>
-              </form>
+<div class="feedback-modal" id="feedbackModal">
+  <div class="modal-content">
+    <span class="close" id="closeModal">&times;</span>
+    <h2>We Value Your Feedback</h2>
+    <form id="feedbackForm">
+      <!-- Step 1: Emoji Selection -->
+      <div class="step" id="step1">
+        <h3>How do you feel?</h3>
+        <div class="emojis">
+          <span class="emoji" data-value="happy" id="happyEmoji">😀</span>
+          <span class="emoji" data-value="neutral" id="neutralEmoji">😐</span>
+          <span class="emoji" data-value="sad" id="sadEmoji">😢</span>
         </div>
-    </div>
+        <button type="button" id="nextToFeedback" class="next-btn" disabled>Next</button>
+      </div>
+
+      <!-- Step 2: Feedback Textarea -->
+      <div class="step" id="step2" style="display: none;">
+        <h3 id="feedbackPrompt">Your Feedback</h3>
+        <textarea id="feedback" rows="5" placeholder="Write your feedback here..." required></textarea>
+        <div class="buttons">
+          <button type="button" class="next-btn" id="nextToEmail">Next</button>
+          <button type="button" class="back-btn" id="backToEmoji">Back</button>
+        </div>
+      </div>
+
+      <!-- Step 3: Email Input -->
+      <div class="step" id="step3" style="display: none;">
+        <h3>Your Email</h3>
+        <input type="email" id="email" placeholder="Enter your email" required />
+        <div class="buttons">
+          <button type="submit" id="submitForm" class="submit-btn">Submit Feedback</button>
+          <button type="button" class="back-btn" id="backToFeedback">Back</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+<div class="feedbackPopUp">
+  Thank you for your Feedback
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const feedbackButton = document.getElementById('feedbackButton');
+    const feedbackModal = document.getElementById('feedbackModal');
+    const closeModal = document.getElementById('closeModal');
+    const nextToFeedback = document.getElementById('nextToFeedback');
+    const nextToEmail = document.getElementById('nextToEmail');
+    const backToEmoji = document.getElementById('backToEmoji');
+    const backToFeedback = document.getElementById('backToFeedback');
+    const feedbackPrompt = document.getElementById('feedbackPrompt');
+    const step1 = document.getElementById('step1');
+    const step2 = document.getElementById('step2');
+    const step3 = document.getElementById('step3');
+    let selectedEmoji = '';
+
+    // Open modal
+    feedbackButton.addEventListener('click', function () {
+      feedbackModal.classList.add('active');
+    });
+
+    // Close modal
+    closeModal.addEventListener('click', function () {
+      feedbackModal.classList.remove('active');
+    });
+
+    // Emoji selection logic
+    document.querySelectorAll('.emoji').forEach((emoji) => {
+      emoji.addEventListener('click', function () {
+        selectedEmoji = this.getAttribute('data-value');
+        document.querySelectorAll('.emoji').forEach((e) => e.classList.remove('selected'));
+        this.classList.add('selected');
+        nextToFeedback.disabled = false;
+      });
+    });
+
+    // Step 1: Emoji selection -> Step 2: Feedback textarea with personalized prompt
+    nextToFeedback.addEventListener('click', function () {
+      step1.style.display = 'none';
+      step2.style.display = 'block';
+
+      // Set personalized prompt based on emoji
+      if (selectedEmoji === 'happy') {
+        feedbackPrompt.textContent = "We're glad you're happy! What did you like the most?";
+      } else if (selectedEmoji === 'neutral') {
+        feedbackPrompt.textContent = 'We appreciate your feedback! What could we improve to make your experience better?';
+      } else if (selectedEmoji === 'sad') {
+        feedbackPrompt.textContent = "We're sorry to hear that! Could you let us know what went wrong?";
+      }
+    });
+
+    // Step 2: Feedback -> Step 3: Email input
+    nextToEmail.addEventListener('click', function () {
+      step2.style.display = 'none';
+      step3.style.display = 'block';
+    });
+
+    // Step 3: Back to Feedback
+    backToFeedback.addEventListener('click', function () {
+      step3.style.display = 'none';
+      step2.style.display = 'block';
+    });
+
+    // Step 2: Back to Emoji selection
+    backToEmoji.addEventListener('click', function () {
+      step2.style.display = 'none';
+      step1.style.display = 'block';
+    });
+  });
+</script>
 
 
-    <div class="feedbackPopUp">
-      Thank you for your Feedback
-    </div>
-    
 
 
       <!-- 

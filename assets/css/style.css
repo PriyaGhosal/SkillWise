@@ -507,25 +507,49 @@ body.nav-active {
   #Feedback
 \*-----------------------------------*/
 
-.feedback-Section{
+.feedback-Section {
   display: flex;
   flex-direction: column;
-  border:1px solid black;
+  border: 1px solid black;
   padding: 3rem;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 400px;
 }
 
 .feedback-button {
   position: fixed;
   left: 20px;
   bottom: 20px;
-  background-color: hsl(357, 100%, 75%);
+  background-color: hsl(357, 100%, 75%); /* Same background color */
   color: white;
   padding: 15px;
   border-radius: 5px;
   cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   z-index: 1000;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
+
+.feedback-button:hover {
+  background-color: hsl(357, 100%, 65%); /* Slightly darker for hover effect */
+  transform: translateY(-2px);
+}
+
+.next-btn,
+.back-btn,
+.submit-btn {
+  background-color: hsl(357, 100%, 75%); /* Same background color */
+  color: white;
+}
+
+.next-btn:hover,
+.back-btn:hover,
+.submit-btn:hover {
+  background-color: hsl(357, 100%, 65%);
+}
+
 
 .feedback-modal {
   display: none;
@@ -534,19 +558,24 @@ body.nav-active {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5); /* Modal background */
   justify-content: center;
   align-items: center;
   z-index: 1000;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.feedback-modal.active {
+  display: flex;
 }
 
 .modal-content {
   background-color: white;
   padding: 20px;
   border-radius: 5px;
-  width: 300px;
+  width: 350px;
   text-align: center;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
 }
 
 .close {
@@ -582,15 +611,15 @@ body.nav-active {
 }
 
 .emoji.selected {
-  border: 1px solid black; /* Highlight selected emoji */
-  border-radius: 5px;
+  border: 2px solid black; /* Highlight selected emoji */
+  border-radius: 50%;
+  padding: 10px;
 }
 
-
-.buttons{
+.buttons {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  gap: 10px;
 }
 
 textarea, input[type="email"] {
@@ -602,38 +631,39 @@ textarea, input[type="email"] {
 }
 
 button {
-  background-color: #4CAF50;
+  background-color: #4CAF50; /* Same green button */
   color: white;
   border: none;
   padding: 10px;
   border-radius: 4px;
   cursor: pointer;
+  width: 100%;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
   background-color: #45a049;
 }
 
-.feedbackPopUp{
+.feedbackPopUp {
   position: fixed;
-  transform: translate(120%);
-  transition: all 1s ease-in-out;
+  transform: translateX(120%);
+  transition: transform 0.5s ease-in-out;
   right: 20px;
   bottom: 100px;
-  background-color: hsl(357, 100%, 75%);
+  background-color: hsl(357, 100%, 75%); /* Same popup background */
   color: white;
   padding: 15px;
   border-radius: 5px;
   cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   z-index: 1000;
 }
 
-.PopUpDisplay{
-  transition: all 1.5s ease-in-out;
-  transform: translate(0);
+.feedbackPopUp.show {
+  transform: translateX(0);
 }
-
 
 
 
