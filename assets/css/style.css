@@ -1549,6 +1549,7 @@ body.dark-mode .navbar a:hover {
 
 /* Hover effect for navbar buttons */
 body.dark-mode .navbar a {
+
   color: var(--white);
 }
 /* Other styles */
