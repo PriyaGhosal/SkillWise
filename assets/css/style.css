@@ -516,7 +516,7 @@ body.nav-active {
 
 .feedback-button {
   position: fixed;
-  right: 20px;
+  left: 20px;
   bottom: 20px;
   background-color: hsl(357, 100%, 75%);
   color: white;
