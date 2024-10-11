@@ -130,6 +130,7 @@ body.nav-active { overflow: hidden; }
 .title-lg {
   color: var(--white);
   font-weight: var(--fw-700);
+  padding: 10px;
 }
 
 .headline-lg {
@@ -458,6 +459,7 @@ body.nav-active { overflow: hidden; }
 
 .btn-primary:hover::after {
     opacity: 1; /* Show the arrows on hover */
+    margin-top: 50%
 }
   
   /*-----------------------------------*\
@@ -1077,7 +1079,10 @@ body.nav-active { overflow: hidden; }
       margin-inline: auto;
     }
   
-    .card { padding: 32px; }
+    .card { 
+      padding: 32px; 
+      margin-bottom: 50px;
+    }
   
   }
   
