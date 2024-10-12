@@ -1,0 +1,38 @@
+.navbar li a {
+    position: relative;
+    font-size: 1.0em;
+    color: red;
+    text-decoration: none;
+    font-weight: bolder;
+    padding: 6px 20px;
+    transition: .5s;
+    
+}
+
+/* .navbar li a :hover{
+    color: black;
+} */
+
+.navbar-list li a span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background: red;
+    z-index: -1;
+    border-bottom: 2px solid black;
+    border-radius: 15px;
+    transform: scale(0) translateY(30px);
+    opacity: 0;
+    transition: .5s;
+
+}
+
+.navbar-list li a span:hover{
+    transform: scale(1) translateY(0);
+    opacity: 1;
+} 
+
+
+
