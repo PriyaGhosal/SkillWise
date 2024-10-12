@@ -1,37 +1,37 @@
 #contact {
     padding: 50px 0;
-    background-color: #008080; 
-    position: relative; 
+    background-color: #008080;
+    position: relative;
   }
-  
+
   #contact .container {
     max-width: 800px;
     margin: 0 auto;
     padding: 0 15px;
   }
-  
+
   /* Section Title */
   #contact h2 {
-    font-size: 3.5rem; 
+    font-size: 3.5rem;
     text-align: center;
     margin-bottom: 80px;
-    color: #d6eaff; 
-    font-weight: bold; 
-    text-transform: uppercase; 
+    color: #d6eaff;
+    font-weight: bold;
+    text-transform: uppercase;
   }
-  
+
   /* Contact Form */
   #contact-form {
     display: flex;
     flex-direction: column;
-    gap: 20px; 
-    background-color: #ffffff; 
-    border-radius: 8px; 
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
-    padding: 30px; 
+    gap: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
     width:160%;
   }
-  
+
   /* Input Fields */
   #contact-form input[type="text"],
   #contact-form input[type="email"],
@@ -40,47 +40,47 @@
     padding: 15px;
     font-size: 1rem;
     border: 1px solid #ddd;
-    border-radius: 5px; 
-    transition: border-color 0.3s, box-shadow 0.3s; 
+    border-radius: 5px;
+    transition: border-color 0.3s, box-shadow 0.3s;
   }
-  
+
   /* Input Focus Effects */
   #contact-form input:focus,
   #contact-form textarea:focus {
-    border-color: #3498db; 
+    border-color: #3498db;
     box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
     outline: none;
   }
-  
+
   /* Textarea */
   #contact-form textarea {
-    height: 150px; 
+    height: 150px;
     resize: none;
   }
-  
+
   /* Submit Button */
   #contact-form button {
-    background-color: #3498db; 
-    color: #fff; 
+    background-color: #3498db;
+    color: #fff;
     width:250px;
     padding: 15px;
     font-size: 1rem;
-    border: none; 
-    border-radius: 5px; 
-    cursor: pointer; 
-    transition: background-color 0.3s, transform 0.2s; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
   }
-  
+
   /* Button Hover Effects */
   #contact-form button:hover {
-    background-color: #2980b9; 
-    transform: translateY(-2px); 
+    background-color: #2980b9;
+    transform: translateY(-2px);
   }
-  
+
   /* Button Focus Effect */
   #contact-form button:focus {
-    outline: none; 
-    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5); 
+    outline: none;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
   }
  /* Container for the events */
 .event-list {
