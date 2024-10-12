@@ -82,4 +82,88 @@
     outline: none; 
     box-shadow: 0 0 5px rgba(52, 152, 219, 0.5); 
   }
-  
+ /* Container for the events */
+.event-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Adds more space between the event items */
+  margin-bottom: 20px;
+}
+
+/* Individual event item */
+.event-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px; /* Increased padding for more space */
+  border: 2px solid var(--roman-silver); /* Border matching roman silver */
+  border-radius: 12px; /* Slightly more rounded corners */
+  background-color: var(--roman-silver_10); /* Light transparent background */
+  color: var(--roman-silver); /* Text color using roman silver */
+  transition: background-color 0.3s ease;
+  font-size: 1.4rem; /* Bigger font size for better readability */
+}
+
+/* Event date box styling */
+.event-date-box {
+  background-color: var(--light-coral); /* Light coral background for date box */
+  padding: 15px; /* Increased padding for a larger box */
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 90px; /* Slightly larger date box */
+}
+
+.event-month {
+  font-size: 1.8rem; /* Bigger size for the month */
+  font-weight: bold;
+  color: var(--oxford-blue); /* Oxford blue text color */
+}
+
+.event-day {
+  font-size: 3.2rem; /* Bigger size for the day */
+  font-weight: bold;
+  color: var(--oxford-blue); /* Oxford blue text */
+}
+
+/* Event details styling */
+.event-details {
+  flex-grow: 1;
+  margin-left: 30px; /* More space between date and details */
+}
+
+.event-title {
+  font-size: 2rem; /* Larger font size for titles */
+  font-weight: 700; /* Bolder font for event titles */
+  color: var(--light-coral); /* Light coral for event titles */
+}
+
+.event-description {
+  font-size: 1.4rem; /* Larger description font size */
+  color: var(--oxford-blue); /* Roman silver for descriptions */
+}
+
+/* Event button */
+.event-button {
+  background-color: transparent;
+  border: 2px solid var(--keppei); /* Keppei color for button borders */
+  padding: 16px 28px; /* Bigger padding for a larger button */
+  border-radius: 10px;
+  font-size: 1.4rem; /* Larger font size for buttons */
+  color: var(--keppei); /* Keppei color for the text */
+  text-decoration: none;
+  font-weight: bold; /* Bolder button text */
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.event-button:hover {
+  background-color: var(--keppei); /* Keppei background on hover */
+  color: var(--oxford-blue); /* Oxford blue text on hover */
+  transform: scale(1.1); /* Slightly bigger button on hover */
+}
+
+/* Hover effect for event items */
+.event-item:hover {
+  transform: scale(1.03); /* Slightly enlarges the event item on hover */
+}
