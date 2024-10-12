@@ -1,0 +1,25 @@
+.form-container {
+    display: flex;
+    border: 2px ;
+    margin-top: 45px;
+    margin-left: 345px;
+    width: 500px;
+    height: 100px;
+  
+    height: 50%; /* Optional: Set a height for the container */
+    background-color: beige;
+    justify-content: center;
+    align-items: center;
+}
+   
+.fitem{
+    justify-content:center; 
+    align-items: center;
+
+}
+#calculator{
+   text-align: center;
+}
+input{
+    min-width: 100%;
+}
