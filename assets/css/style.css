@@ -585,6 +585,19 @@ body.nav-active {
   border: 1px solid black; /* Highlight selected emoji */
   border-radius: 5px;
 }
+/* Star Rating */
+.star-rating {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  gap: 10px; 
+}
+
+.star {
+  font-size: 2rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
 
 
 .buttons{
