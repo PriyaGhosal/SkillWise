@@ -226,7 +226,7 @@ body.nav-active {
 
 .section-subtitle {
   font-weight: var(--fw-600);
-  color: var(--keppei);
+  color: black;
   margin-block-end: 4px;
 }
 
