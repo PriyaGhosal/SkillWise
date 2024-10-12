@@ -1,0 +1,844 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillWise - About Us</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css" id="theme-style">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<!--   <link rel="stylesheet" href="style.css"> -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./assets/font/font.css">
+  <link rel="stylesheet" href="./assets/css/style.css" id="theme-style">
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+  <link rel="preload" as="image" href="./assets/images/hero-bg.png">
+  <script src="config.js"></script>
+  
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+        
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        nav li {
+            margin-right: 20px;
+        }
+        
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        .hero {
+            background-image: linear-gradient(to bottom, #f7f7f7, #fff);
+            padding: 5em;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        
+        .mission {
+            padding: 2em;
+        }
+        
+        .mission h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        .features {
+            padding: 2em;
+            background-color: #f7f7f7;
+        }
+        
+        .features ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .features li {
+            margin: 20px;
+            width: calc(25% - 20px);
+        }
+        
+        .features i {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        .features h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        
+        .testimonials {
+            padding: 2em;
+            background-color: #fff;
+        }
+        
+        .testimonials h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background-color: #f7f7f7; */
+}
+
+
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: #ccc;
+}
+
+nav a.active {
+    color: #66d9ef;
+}
+
+.hero {
+    background-image: linear-gradient(to bottom, #f7f7f7, #fff);
+    padding: 5em;
+    text-align: center;
+    background-image: url('hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #333;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hero button {
+    background-color: #66d9ef;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin: 20px 0;
+}
+
+h2 {
+    color: #007BFF;
+}
+#contact {
+    padding: 50px 0;
+    background-color: #008080; 
+    position: relative; 
+  }
+  
+  #contact .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  /* Section Title */
+  #contact h2 {
+    font-size: 3.5rem; 
+    text-align: center;
+    margin-bottom: 80px;
+    color: #d6eaff; 
+    font-weight: bold; 
+    text-transform: uppercase; 
+  }
+  
+  /* Contact Form */
+  #contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+    background-color: #ffffff; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+    padding: 30px; 
+    width:160%;
+  }
+  
+  /* Input Fields */
+  #contact-form input[type="text"],
+  #contact-form input[type="email"],
+  #contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px; 
+    transition: border-color 0.3s, box-shadow 0.3s; 
+  }
+  
+  /* Input Focus Effects */
+  #contact-form input:focus,
+  #contact-form textarea:focus {
+    border-color: #3498db; 
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+    outline: none;
+  }
+  
+  /* Textarea */
+  #contact-form textarea {
+    height: 150px; 
+    resize: none;
+  }
+  
+  /* Submit Button */
+  #contact-form button {
+    background-color: #3498db; 
+    color: #fff; 
+    width:250px;
+    padding: 15px;
+    font-size: 1rem;
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s, transform 0.2s; 
+  }
+  
+  /* Button Hover Effects */
+  #contact-form button:hover {
+    background-color: #2980b9; 
+    transform: translateY(-2px); 
+  }
+  
+  /* Button Focus Effect */
+  #contact-form button:focus {
+    outline: none; 
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5); 
+  }
+  
+
+        
+        </style>
+       
+   
+      
+      <!-- Animation on Scroll -->
+      
+      
+</head>
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<body>
+   
+
+<!-- Animation on Scroll -->
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+
+
+
+
+
+    
+    <header class="header" data-header>
+
+    
+        <div class="container" >
+    
+          <a href="#">
+            <img src="./assets/images/Skillwise_logo-removebg-preview.png" width="50" height="10" alt="SkillWise home">
+          </a>
+    
+          <nav class="navbar" data-navbar>
+         
+    
+            <div class="navbar-top">
+    
+                <img src="./assets/images/Skillwise_logo.jpg" width="50" height="10" alt="SkillWise home">
+              </a>
+    
+              <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+                <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+              </button>
+            </div>
+    
+            <ul class="navbar-list">
+              
+    
+              <li class="navbar-item">
+                <a href="index.html" class="navbar-link title-sm" data-nav-link>Home</a>
+              </li>
+    
+    
+              <li class="navbar-item">
+                <a href="#About Us" class="navbar-link title-sm" data-nav-link>About Us</a>
+              </li>
+    
+    
+    
+          
+    
+              <!-- <li class="navbar-item">
+                <a href="#courses" class="navbar-link title-sm" data-nav-link>Courses</a>
+              </li>
+     -->
+              <!-- <li class="navbar-item">
+                <a href="#blog" class="navbar-link title-sm" data-nav-link>Blog</a>
+              </li> -->
+    
+              <li class="navbar-item">
+                <a href="#contact" class="navbar-link title-sm" data-nav-link>Contacts</a>
+              </li>
+    
+              <li class="navbar-item"></li>
+                <a href="Faq.html" class="navbar-link title-sm" data-nav-link>FAQ</a>
+              </li>
+              
+            </ul>
+    
+          </nav>
+    
+         <div class="navRightSide">
+          <div class="searchBox">
+            <input class="searchInput" type="text" name="" placeholder="Search something">
+            <button class="searchButton SearchBTN" href="#">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 29 29"  fill="none">
+    
+    <g clip-path="url(#clip0_2_17)">
+    <g filter="url(#filter0_d_2_17)">
+      <path d="M23.7953 23.9182L19.0585 19.1814M19.0585 19.1814C19.8188 18.4211 20.4219 17.5185 20.8333 16.5251C21.2448 15.5318 21.4566 14.4671 21.4566 13.3919C21.4566 12.3167 21.2448 11.252 20.8333 10.2587C20.4219 9.2653 19.8188 8.36271 19.0585 7.60242C18.2982 6.84214 17.3956 6.23905 16.4022 5.82759C15.4089 5.41612 14.3442 5.20435 13.269 5.20435C12.1938 5.20435 11.1291 5.41612 10.1358 5.82759C9.1424 6.23905 8.23981 6.84214 7.47953 7.60242C5.94407 9.13789 5.08145 11.2204 5.08145 13.3919C5.08145 15.5634 5.94407 17.6459 7.47953 19.1814C9.01499 20.7168 11.0975 21.5794 13.269 21.5794C15.4405 21.5794 17.523 20.7168 19.0585 19.1814Z" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" shape-rendering="crispEdges"></path>
+    </g>
+    </g>
+    <defs>
+    <filter id="filter0_d_2_17" x="-0.418549" y="3.70435" width="29.7139" height="29.7139" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+      <feOffset dy="4"></feOffset>
+      <feGaussianBlur stdDeviation="2"></feGaussianBlur>
+      <feComposite in2="hardAlpha" operator="out"></feComposite>
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2_17"></feBlend>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2_17" result="shape"></feBlend>
+    </filter>
+    <clipPath id="clip0_2_17">
+      <rect width="28.0702" height="28.0702" fill="white" transform="translate(0.403503 0.526367)"></rect>
+    </clipPath>
+    </defs>
+    </svg>
+                     
+    
+            </button>
+        </div>
+        
+    
+    
+          <a href="../signin.html" class="btn btn-secondary">Start Free Trial</a>
+    
+          <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+            <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+          </button>
+          <div class="containers">
+            <button id="theme-toggle">
+              <ion-icon id="theme-icon" name="sunny-outline"></ion-icon>
+            </button>
+          </div>
+         
+        </div>
+    
+          <div class="overlay" data-overlay data-nav-toggler></div>
+    
+        </div>
+      </header>
+    <main>
+        <section class="hero">
+            <h1>Welcome to SkillWise</h1>
+            <p>Transforming learning through immersive and tailored experiences.</p>
+            <button>Explore Courses</button>
+        </section>
+        <section id="features" >
+            <h2 class="text-2xl font-semibold text-blue-600 mb-4">Features</h2>
+            <ul class="list-disc list-inside">
+                <li>📚 <strong>Interactive and Engaging Courses:</strong> Immerse yourself in dynamic learning experiences that combine theory with practical application.</li>
+                <li>👩‍🏫 <strong>Expert Instructors:</strong> Learn from seasoned professionals who are passionate about their subjects and dedicated to your success.</li>
+                <li>🌐 <strong>Supportive Community:</strong> Connect with like-minded learners, share insights, and build valuable relationships.</li>
+                <li>🎯 <strong>Personalized Learning Paths:</strong> Tailor your learning journey to your specific goals and interests.</li>
+                <li>⏳ <strong>Flexible Learning:</strong> Study at your own pace and on your preferred devices.</li>
+                <li>💼 <strong>Real-World Projects:</strong> Apply your knowledge through hands-on projects that simulate real-world scenarios.</li>
+            </ul>
+        </section>
+        <section id="mission" >
+            <h2 class="text-2xl font-semibold text-blue-600 mb-4">Our Mission</h2>
+            <p class="bg-white p-4 rounded shadow-md">At SkillWise, we’re committed to transforming learning through immersive and tailored experiences. We aim to bridge the gap between theoretical knowledge and practical application, ensuring that our learners acquire new skills with confidence.</p>
+        </section>
+
+        <section id="community" >
+            <h2 class="text-2xl font-semibold text-blue-600 mb-4">Join Our Community</h2>
+            <p class="bg-white p-4 rounded shadow-md">We are a community of lifelong learners dedicated to making education accessible, engaging, and impactful. With expert instructors, real-world projects, and a supportive environment, SkillWise empowers individuals to achieve personal and professional success.</p>
+        </section>
+        
+        <!-- <section class="my-6">
+            <h2 class="text-2xl font-semibold text-blue-600 mb-4">Our Team</h2>
+            <img height=150px" src="https://skillwise.net/wp-content/uploads/2019/10/15-0-0-0-10000-10000-536.jpg"   alt="SkillWise Team" class="rounded-lg shadow-md w-full h-auto">
+        </section> -->
+        <section class="features">
+            <h2>What We Offer</h2>
+            <ul>
+                <li>
+                    <i class="fas fa-book"></i>
+                    <h3>Interactive Courses</h3>
+                    <p>Dynamic learning experiences combining theory and practice.</p>
+                </li>
+                <li>
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <h3>Expert Instructors</h3>
+                    <p>Seasoned professionals passionate about their subjects.</p>
+                </li>
+                <li>
+                    <i class="fas fa-users"></i>
+                    <h3>Supportive Community</h3>
+                    <p>Connect with like-minded learners and build valuable relationships.</p>
+                </li>
+                <li>
+                    <i class="fas fa-cog"></i>
+                    <h3>Personalized Learning</h3>
+                    <p>Tailor your learning journey to your specific goals.</p>
+                </li>
+            </ul>
+        </section>
+        <section class="testimonials">
+            <h2>What Our Learners Say</h2>
+            <div class="testimonial">
+                <p>"SkillWise has helped me gain practical skills and confidence in my field." - John D.</p>
+            </div>
+            <div class="testimonial">
+                <p>"The instructors are knowledgeable and supportive, making learning enjoyable." - Emily K.</p>
+            </div>
+        </section>
+    </main>
+       <!--
+        Feedback Section
+      -->
+      <div class="feedback-button" id="feedbackButton">Feedback</div>
+    <div class="feedback-modal" id="feedbackModal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h2>We Value Your Feedback</h2>
+            <form id="feedbackForm">
+                <div class="step" id="step1">
+                    <h3>How do you feel?</h3>
+                    <div class="emojis">
+                        <span class="emoji" data-value="happy">😀</span>
+                        <span class="emoji" data-value="neutral">😐</span>
+                        <span class="emoji" data-value="sad">😢</span>
+                    </div>
+                    <button type="button" id="nextToFeedback">Next</button>
+                </div>
+
+                <div class="step" id="step2" style="display: none;">
+                    <h3>Your Feedback</h3>
+                    <textarea id="feedback" rows="5" placeholder="Write your feedback here..." required></textarea>
+                    <div class="buttons">
+                      <button type="button" id="nextToEmail">Next</button>
+                    <button type="button" id="backToEmoji">Back</button>
+                    </div>
+                </div>
+
+                <div class="step" id="step3" style="display: none;">
+                    <h3>Your Email</h3>
+                    <input type="email" id="email" placeholder="Enter your email" required />
+                   <div class="buttons">
+                    <button type="submit" id="submitForm">Submit Feedback</button>
+                    <button type="button" id="backToFeedback">Back</button>
+                   </div>
+                </div>
+              </form>
+        </div>
+    </div>
+
+
+    <div class="feedbackPopUp">
+      Thank you for your Feedback
+    </div>
+    <footer class="footer has-bg-image" >
+
+
+        <div class="section footer-top">
+          <div class="container">
+    
+            <div class="footer-brand">
+              <div class="footer-logo-text">
+              <a href="#">
+                <img id="footer-logo" src="./assets/images/Skillwise_logo-removebg-preview.png"  width="200" height="200" alt="SkillWise home">
+              </a>
+    
+              <p class="title-sm footer-text">
+                Stay updated with the latest from SkillWise! Follow us on LinkedIn, Twitter, Pinterest, Facebook and Instagram for exciting
+                content, course announcements, and learning tips. Don’t miss out—subscribe today and join our growing
+                community!
+    
+              </p>
+              </div>
+              <ul class="social-list">
+    
+                <li>
+                  
+                  <a href="https://www.facebook.com" class="social-link" id="social-link1">
+                    <img src="./assets/images/facebook.svg" width="40" height="40" loading="lazy" alt="facebook">
+                  </a>
+                </li>
+    
+                <li>
+                  <a href="https://www.x.com" class="social-link" id="social-link2">
+                    <img src="./assets/images/X-logo.svg" width="40" height="40" loading="lazy" alt="X logo">
+                  </a>
+                </li>
+    
+                <li>
+                  <a href="https://www.pinterest.com" class="social-link" id="social-link3">
+                    <img src="./assets/images/pinterest.svg" width="40" height="40" loading="lazy" alt="pinterest">
+                  </a>
+                </li>
+    
+                <li>
+                  <a href="https://www.instagram.com" class="social-link" id="social-link4">
+                    <img src="./assets/images/instagram.svg" width="40" height="40" loading="lazy" alt="instagram">
+                  </a>
+                </li>
+    
+                <li>
+                  <a href="https://www.linkedin.com" class="social-link" id="social-link5">
+                    <img src="./assets/images/linkedIn.svg" width="40" height="40" loading="lazy" alt="linkedin">
+                  </a>
+                </li>
+              </ul>
+    
+            </div>
+    
+            <ul class="footer-list">
+    
+              <li>
+                <p class="headline-sm footer-list-title">Links</p>
+              </li>
+    
+              <li>
+                <a href="#home" class="title-sm footer-link">Home</a>
+              </li>
+    
+              <li>
+                <a href="#about" class="title-sm footer-link">About Us</a>
+              </li>
+    
+              <li>
+                <a href="./pages/pricing.html" class="title-sm footer-link">Pricing</a>
+              </li>
+    
+              <li>
+                <a href="#courses" class="title-sm footer-link">Courses</a>
+              </li>
+    
+              <li>
+                <a href="#contact" class="title-sm footer-link">Contact Us</a>
+              </li>
+    
+              <li>
+                <a href="#blog" class="title-sm footer-link">Blog</a>
+              </li>
+              <li>
+                <a href="#" class="title-sm footer-link">Payment Method</a>
+              </li>
+    
+    
+            </ul>
+    
+            <ul class="footer-list">
+    
+              <li>
+                <p class="headline-sm footer-list-title">Consumer Information</p>
+              </li>
+    
+             
+              
+              <li>
+                <a href="#" class="title-sm footer-link">Legal</a>
+              </li>
+    
+              <li>
+    
+               <a href="terms.html" class="title-sm footer-link">Terms of Use</a>
+    
+              </li>
+    
+              <li>
+                <a href="Terms_&_Condition.html" class="title-sm footer-link">Terms & Condition</a>
+              </li>
+    
+              <!-- <li>
+                <a href="#" class="title-sm footer-link">Payment Method</a>
+              </li> -->
+    
+              <li>
+                <a href="PrivacyPolicy.html" class="title-sm footer-link">Privacy Policy</a>
+              </li>
+    
+              <li>
+                <a href="copy.html" class="title-sm footer-link">Copyright Policy</a>
+              </li>
+    
+            </ul>
+    
+            <ul class="footer-list">
+    
+              <li>
+    
+                <p class="headline-sm footer-list-title ">Instagram Post</p>
+    
+                <ul class="grid-list">
+    
+                  <li id="insta1">
+                    <img src="./assets/images/ins-1.png" width="80" height="80" loading="lazy" alt="instagram post"
+                      class="img-cover" id="instapost1">
+                  </li>
+    
+                  <li>
+                    <img src="./assets/images/ins-2.png" width="80" height="80" loading="lazy" alt="instagram post"
+                      class="img-cover" id="instapost2">
+                  </li>
+    
+                  <li>
+                    <img src="./assets/images/ins-3.png" width="80" height="80" loading="lazy" alt="instagram post"
+                      class="img-cover" id="instapost3">
+                  </li>
+    
+                  <li>
+                    <img src="./assets/images/ins-4.png" width="80" height="80" loading="lazy" alt="instagram post"
+                      class="img-cover" id="instapost4">
+                  </li>
+    
+                  <li>
+                    <img src="./assets/images/ins-5.png" width="80" height="80" loading="lazy" alt="instagram post"
+                      class="img-cover" id="instapost5">
+                  </li>
+    
+                  <li>
+                    <img src="./assets/images/ins-6.png" width="80" height="80" loading="lazy" alt="instagram post"
+                      class="img-cover" id="instapost6">
+                  </li>
+    
+                </ul>
+    
+              </li>
+    
+            </ul>
+    
+          </div>
+        </div>
+    
+      <!--
+        - #Contact Us
+      -->
+      <section id="contact" class="cta" aria-labelledby="cta-label">
+        <div class="container">
+  
+          <h2 class="headline-md section-title" id="cta-label" data-aos="fade-right">
+            Contact Us
+          </h2>
+          
+          <form id="contact-form" data-aos="fade-left" style="
+          max-width: 400px;
+          margin: 50px auto;
+          background-color: white;
+          padding: 20px;
+          border-radius: 10px;
+          box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+          transition: box-shadow 0.3s ease;
+        " onmouseover="this.style.boxShadow='0 10px 20px rgba(0, 0, 0, 0.2)'" 
+           onmouseout="this.style.boxShadow='0 6px 12px rgba(0, 0, 0, 0.15)'"> 
+      
+          <input type="text" name="name" placeholder="Your Name" required style="
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+            color: black;
+            background-color: #f9f9f9;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+          " onfocus="this.style.borderColor='#ff66b2'; this.style.boxShadow='0 0 10px rgba(255, 102, 178, 0.3)'" 
+             onblur="this.style.borderColor='#ccc'; this.style.boxShadow='none'">
+      
+          <input type="email" name="email" placeholder="Your Email" required style="
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+            color: black;
+            background-color: #f9f9f9;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+          " onfocus="this.style.borderColor='#ff66b2'; this.style.boxShadow='0 0 10px rgba(255, 102, 178, 0.3)'" 
+             onblur="this.style.borderColor='#ccc'; this.style.boxShadow='none'">
+      
+          <textarea name="message" placeholder="Your Message" required style="
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+            color: black;
+            background-color: #f9f9f9;
+            height: 150px;
+            resize: none;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+          " onfocus="this.style.borderColor='#ff66b2'; this.style.boxShadow='0 0 10px rgba(255, 102, 178, 0.3)'" 
+             onblur="this.style.borderColor='#ccc'; this.style.boxShadow='none'"></textarea>
+      
+          <button type="submit" style="
+            background-color: #ff66b2;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+          " onmouseover="this.style.backgroundColor='#ff3385'; this.style.transform='scale(1.05)'"
+             onmouseout="this.style.backgroundColor='#ff66b2'; this.style.transform='scale(1)'">Send</button>
+        </form>
+      
+  
+          
+        </div>
+      </section>
+    
+    
+        <div class="footer-bottom">
+          <div class="container">
+            <p class="copyright">
+              <a href="copy.html"> © Copyright Policy <time id="year"></time> </a> All Rights Reserved by Priya Ghosal
+              <br>
+          Made with ♥ by Priya Ghosal
+          </p>
+    
+          </div>
+        </div>
+    
+      </footer>
+    
+    <script>
+        // This script can be used for future interactivity
+document.addEventListener("DOMContentLoaded", () => {
+    console.log("SkillWise About Us page loaded.");
+});
+        
+
+    </script>
+    <script src="./assets/js/script.js"></script>
+    <script src="assets/js/dark.js"></script>
+    
+    <!-- EmailJS Functionality -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="./assets/js/email.js"></script> <!-- New email.js file -->
+    
+    <!-- Animation on Scroll -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    
+    
+      <!-- Animation on Scroll -->
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+    
+      <script src="./assets/js/blogs.js"></script>
+    
+      <!-- 
+        - ionicon
+      -->
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="./assets/js/ScrollToTop.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
