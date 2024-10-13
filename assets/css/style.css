@@ -1535,12 +1535,6 @@ button:hover {
     text-align: left;
   }
 
-  .cta .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
   .cta .headline-md {
     max-width: 22ch;
   }
