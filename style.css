@@ -1,84 +1,169 @@
 #contact {
-  padding: 50px 0;
-  background-color: #008080;
-  position: relative;
-}
-
-#contact .container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
-/* Section Title */
-#contact h2 {
-  font-size: 3.5rem;
-  text-align: center;
-  margin-bottom: 80px;
-  color: white;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-/* Contact Form */
-#contact-form {
+    padding: 50px 0;
+    background-color: #008080; 
+    position: relative; 
+  }
+  
+  #contact .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  /* Section Title */
+  #contact h2 {
+    font-size: 3.5rem; 
+    text-align: center;
+    margin-bottom: 80px;
+    color: #d6eaff; 
+    font-weight: bold; 
+    text-transform: uppercase; 
+  }
+  
+  /* Contact Form */
+  #contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+    background-color: #ffffff; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+    padding: 30px; 
+    width:160%;
+  }
+  
+  /* Input Fields */
+  #contact-form input[type="text"],
+  #contact-form input[type="email"],
+  #contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px; 
+    transition: border-color 0.3s, box-shadow 0.3s; 
+  }
+  
+  /* Input Focus Effects */
+  #contact-form input:focus,
+  #contact-form textarea:focus {
+    border-color: #3498db; 
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+    outline: none;
+  }
+  
+  /* Textarea */
+  #contact-form textarea {
+    height: 150px; 
+    resize: none;
+  }
+  
+  /* Submit Button */
+  #contact-form button {
+    background-color: #3498db; 
+    color: #fff; 
+    width:250px;
+    padding: 15px;
+    font-size: 1rem;
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s, transform 0.2s; 
+  }
+  
+  /* Button Hover Effects */
+  #contact-form button:hover {
+    background-color: #2980b9; 
+    transform: translateY(-2px); 
+  }
+  
+  /* Button Focus Effect */
+  #contact-form button:focus {
+    outline: none; 
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5); 
+  }
+ /* Container for the events */
+.event-list {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  background-color: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  padding: 30px;
-  width: 160%;
+  gap: 15px; /* Adds more space between the event items */
+  margin-bottom: 20px;
 }
 
-/* Input Fields */
-#contact-form input[type="text"],
-#contact-form input[type="email"],
-#contact-form textarea {
-  width: 100%;
-  padding: 15px;
-  font-size: 1rem;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  transition: border-color 0.3s, box-shadow 0.3s;
+/* Individual event item */
+.event-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px; /* Increased padding for more space */
+  border: 2px solid var(--roman-silver); /* Border matching roman silver */
+  border-radius: 12px; /* Slightly more rounded corners */
+  background-color: var(--roman-silver_10); /* Light transparent background */
+  color: var(--roman-silver); /* Text color using roman silver */
+  transition: background-color 0.3s ease;
+  font-size: 1.4rem; /* Bigger font size for better readability */
 }
 
-/* Input Focus Effects */
-#contact-form input:focus,
-#contact-form textarea:focus {
-  border-color: #3498db;
-  box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
-  outline: none;
+/* Event date box styling */
+.event-date-box {
+  background-color: var(--light-coral); /* Light coral background for date box */
+  padding: 15px; /* Increased padding for a larger box */
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 90px; /* Slightly larger date box */
 }
 
-/* Textarea */
-#contact-form textarea {
-  height: 150px;
-  resize: none;
+.event-month {
+  font-size: 1.8rem; /* Bigger size for the month */
+  font-weight: bold;
+  color: var(--oxford-blue); /* Oxford blue text color */
 }
 
-/* Submit Button */
-#contact-form button {
-  background-color: #3498db;
-  color: #fff;
-  width: 250px;
-  padding: 15px;
-  font-size: 1rem;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s, transform 0.2s;
+.event-day {
+  font-size: 3.2rem; /* Bigger size for the day */
+  font-weight: bold;
+  color: var(--oxford-blue); /* Oxford blue text */
 }
 
-/* Button Hover Effects */
-#contact-form button:hover {
-  background-color: #2980b9;
-  transform: translateY(-2px);
+/* Event details styling */
+.event-details {
+  flex-grow: 1;
+  margin-left: 30px; /* More space between date and details */
 }
 
-/* Button Focus Effect */
-#contact-form button:focus {
-  outline: none;
-  box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+.event-title {
+  font-size: 2rem; /* Larger font size for titles */
+  font-weight: 700; /* Bolder font for event titles */
+  color: var(--light-coral); /* Light coral for event titles */
+}
+
+.event-description {
+  font-size: 1.4rem; /* Larger description font size */
+  color: var(--oxford-blue); /* Roman silver for descriptions */
+}
+
+/* Event button */
+.event-button {
+  background-color: transparent;
+  border: 2px solid var(--keppei); /* Keppei color for button borders */
+  padding: 16px 28px; /* Bigger padding for a larger button */
+  border-radius: 10px;
+  font-size: 1.4rem; /* Larger font size for buttons */
+  color: var(--keppei); /* Keppei color for the text */
+  text-decoration: none;
+  font-weight: bold; /* Bolder button text */
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.event-button:hover {
+  background-color: var(--keppei); /* Keppei background on hover */
+  color: var(--oxford-blue); /* Oxford blue text on hover */
+  transform: scale(1.1); /* Slightly bigger button on hover */
+}
+
+/* Hover effect for event items */
+.event-item:hover {
+  transform: scale(1.03); /* Slightly enlarges the event item on hover */
 }

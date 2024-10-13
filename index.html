@@ -67,7 +67,7 @@
   <header class="header" data-header>
 
 
-    <div class="container">
+    <div class="container" style="margin-left: 13rem;">
 
       <a href="#">
         <img src="./assets/images/Skillwise_logo-removebg-preview.png" width="50" height="10" alt="SkillWise home">
@@ -86,10 +86,10 @@
           </button>
         </div>
 
-        <ul class="navbar-list">
+        <ul class="navbar-list" style="width: 50vw;">
 
 
-          <li class="navbar-item">
+          <li class="navbar-item" style="margin-left: 1rem;">
             <a href="#home" class="navbar-link title-sm" data-nav-link>Home</a>
           </li>
 
@@ -118,11 +118,16 @@
           <a href="../Faq.html" class="navbar-link title-sm" data-nav-link>FAQ</a>
           </li>
 
+
+          <li class="navbar-item"></li>
+          <a href="/signin.html" class="navbar-link title-sm" data-nav-link>LogIn</a>
+          </li>
+
         </ul>
 
       </nav>
 
-      <div class="navRightSide">
+      <!-- <div class="navRightSide">
         <div class="searchBox">
           <input class="searchInput" type="text" name="" placeholder="Search something">
           <button class="searchButton SearchBTN" href="#">
@@ -162,17 +167,18 @@
 
 
 
-        <a href="../signin.html" class="btn btn-secondary">Start Free Trial</a>
 
-        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
-          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+
+      </div> -->
+      <a href="../signin.html" class="btn">Start Free Trial</a>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+      <div class="containers">
+        <button id="theme-toggle">
+          <ion-icon id="theme-icon" name="sunny-outline"></ion-icon>
         </button>
-        <div class="containers">
-          <button id="theme-toggle">
-            <ion-icon id="theme-icon" name="sunny-outline"></ion-icon>
-          </button>
-        </div>
-
       </div>
 
       <div class="overlay" data-overlay data-nav-toggler></div>
@@ -1163,7 +1169,63 @@
         </div>
 
       </section>
-
+      
+      <section id="events" class="section events" aria-labelledby="events-label">
+        <div class="container">
+          <p class="title-sm text-center section-subtitle" id="events-label">Upcoming Workshops</p>
+      
+          <h2 class="headline-md text-center section-title" data-aos="fade-down">
+            Join Our Skill Development <span class="span has-after">Events</span>
+          </h2>
+      
+          <div class="event-list">
+            <!-- Event 1 -->
+            <div class="event-item" data-aos="fade-right">
+              <div class="event-date-box">
+                <p class="event-month">Oct</p>
+                <p class="event-day">20</p>
+              </div>
+              <div class="event-details">
+                <h3 class="event-title">Web Development Bootcamp</h3>
+                <p class="event-description">Join our intensive bootcamp to learn HTML, CSS, and JavaScript in just one week!</p>
+              </div>
+              <a href="#" class="event-button">View Event</a>
+            </div>
+      
+            <!-- Event 2 -->
+            <div class="event-item" data-aos="fade-right">
+              <div class="event-date-box">
+                <p class="event-month">Nov</p>
+                <p class="event-day">05</p>
+              </div>
+              <div class="event-details">
+                <h3 class="event-title">Data Science Workshop</h3>
+                <p class="event-description">Discover the world of data science with hands-on projects and expert guidance.</p>
+              </div>
+              <a href="#" class="event-button">View Event</a>
+            </div>
+      
+            <!-- Event 3 -->
+            <div class="event-item" data-aos="fade-right">
+              <div class="event-date-box">
+                <p class="event-month">Dec</p>
+                <p class="event-day">15</p>
+              </div>
+              <div class="event-details">
+                <h3 class="event-title">Creative Design Thinking</h3>
+                <p class="event-description">Learn innovative design principles and enhance your creative problem-solving skills.</p>
+              </div>
+              <a href="#" class="event-button">View Event</a>
+            </div>
+          </div>
+      
+          <a href="./pages/events.html" class="btn btn-primary see-all" data-aos="zoom-in">View All Workshops</a>
+        </div>
+      </section>
+      
+      
+      
+      
 
     </article>
   </main>
@@ -1371,7 +1433,8 @@
       " onmouseover="this.style.boxShadow='0 10px 20px rgba(0, 0, 0, 0.2)'"
           onmouseout="this.style.boxShadow='0 6px 12px rgba(0, 0, 0, 0.15)'">
 
-          <input type="text" name="name" placeholder="Your Name" required style="
+          <input type="text" name="name" placeholder="Your Name" required  required pattern="[a-zA-Z ]+" oninvalid="this.setCustomValidity('Numbers and Symbols are not allowed')" 
+          oninput="this.setCustomValidity('')" style="
           width: 100%;
           padding: 12px;
           margin: 8px 0;
