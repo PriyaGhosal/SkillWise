@@ -130,6 +130,7 @@ body.nav-active { overflow: hidden; }
 .title-lg {
   color: var(--white);
   font-weight: var(--fw-700);
+  padding: 10px;
 }
 
 .headline-lg {
@@ -225,6 +226,7 @@ body.nav-active { overflow: hidden; }
 .grid-list {
   display: grid;
   gap: 28px;
+  margin-bottom: 30px;
 }
 
 .card {
