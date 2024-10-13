@@ -6,18 +6,33 @@
 
 /* Section Title */
 #contact h2 {
-  color: #d6eaff;
   font-size: 4.5rem;
+  text-align: center;
+  color: white;
   font-weight: bold;
   text-transform: uppercase;
-  margin-top: 1.1rem;
+}
+#contact .container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Section Title */
+#contact h2 {
+  font-size: 3.5rem;
+  text-align: center;
+  margin-bottom: 80px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 /* Contact Form */
 #contact-form {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
   background-color: #ffffff;
   border-radius: 8px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);

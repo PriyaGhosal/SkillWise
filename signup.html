@@ -20,7 +20,8 @@
             <form action="#" method="POST">
                 <div class="input-group">
                     <label for="username">Full Name</label>
-                    <input type="text" id="fullname" name="fullname" placeholder="Create your username" required>
+                    <input type="text" id="fullname" name="fullname" placeholder="Create your username" required required pattern="[a-zA-Z ]+" oninvalid="this.setCustomValidity('Numbers and Symbols are not allowed')" 
+                    oninput="this.setCustomValidity('')">
                 </div>
                 <div class="input-group">
                     <label for="username">Username</label>

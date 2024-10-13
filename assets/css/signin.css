@@ -128,3 +128,20 @@ p {
         font-size: 14px;
     }
 }
+
+.strength-bar {
+    width: 100%;
+    height: 3px;
+    background-color: #ddd;
+    margin-top: 10px;
+  }
+  .strength-bar-inner {
+    height: 100%;
+    width: 0%;
+    background-color: red;
+    transition: width 0.3s ease;
+  }
+  .suggestion {
+    display: flex;
+    align-items: flex-start;
+  }
