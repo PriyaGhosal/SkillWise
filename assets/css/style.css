@@ -142,6 +142,37 @@ body.nav-active {
 /*-----------------------------------*\
   #REUSED STYLE
 \*-----------------------------------*/
+/* Styling for the navbar links */
+.navbar-link {
+  position: relative;
+  display: inline-block;
+  color: #333; /* Adjust the color as needed */
+  text-decoration: none;
+  font-weight: 500;
+  padding-bottom: 5px;
+}
+
+/* Underline effect */
+.navbar-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ff69b4; /* Pink color for the underline */
+  transition: width 0.3s ease-in-out;
+}
+
+/* Hover effect to show the underline */
+.navbar-link:hover::after {
+  width: 100%;
+}
+
+/* Adjust color on hover if needed */
+.navbar-link:hover {
+  color: #ff69b4; /* Optionally change text color to pink on hover */
+}
 
 .container {
   padding-inline: 16px;
