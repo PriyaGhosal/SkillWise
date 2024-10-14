@@ -167,3 +167,27 @@
 .event-item:hover {
   transform: scale(1.03); /* Slightly enlarges the event item on hover */
 }
+
+
+#search-results{
+  position:absolute;
+  left: -100px;
+  width: 350px;
+ color: black;
+  margin-top: 50px;
+
+}
+
+#freeTrial{
+  position: absolute;
+ right: 80px;
+
+
+}
+
+#theme-toggle{
+  position: absolute;
+  right: 5px;
+  top: 20px;
+  
+}

@@ -127,10 +127,12 @@
 
       </nav>
 
-      <!-- <div class="navRightSide">
+<div class="navRightSide">
         <div class="searchBox">
-          <input class="searchInput" type="text" name="" placeholder="Search something">
-          <button class="searchButton SearchBTN" href="#">
+          <input class="searchInput" id = "search-bar" type="text" name="" placeholder="Search something">
+        <button  onclick="searchCourses()" class="searchButton SearchBTN" href="#">
+          <div id="search-results"></div>
+
 
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 29 29" fill="none">
 
@@ -167,10 +169,8 @@
 
 
 
-
-
-      </div> -->
-      <a href="../signin.html" class="btn">Start Free Trial</a>
+      </div>
+      <a href="../signin.html" class="btn" id = "freeTrial">Start Free Trial</a>
 
       <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
         <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
@@ -1513,7 +1513,33 @@
 
 
 
+   <!--JS for searching courses -->
+ <script>
+    
+        // Define searchCourses function
+        function searchCourses() {
+    const searchTerm = document.getElementById('search-bar').value.toLowerCase();
+    const courses = document.querySelectorAll('.category-card');
+    const resultsDiv = document.getElementById('search-results');
+    resultsDiv.innerHTML = ''; // Clear previous results
+    let found = false; // Flag to track if any course is found
 
+    courses.forEach((course) => {
+        const courseTitle = course.querySelector('.title-lg').innerText.toLowerCase();
+        if (courseTitle.includes(searchTerm)) {
+            const resultCard = course.cloneNode(true); // Clone the course card
+            resultsDiv.appendChild(resultCard); // Show matching result at the top
+            found = true; // Set flag to true if a course is found
+        }
+    });
+
+    // If no courses match, show "No results found"
+    if (!found) {
+        resultsDiv.innerHTML = '<p>No results found</p>';
+    }
+}
+
+    </script>
 
   <!-- 
    - custom js link
