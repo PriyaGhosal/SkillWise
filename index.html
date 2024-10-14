@@ -1419,16 +1419,21 @@
   -->
 
     <section id="contact" class="cta" aria-labelledby="cta-label">
-      <div class="container">
-
-        <h2 class="headline-md section-title" id="cta-label" data-aos="fade-right">
-          Contact Us
+     
+      <div class="container" style="align-items: center;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;">
+  
+        <h2 class="headline-md section-title" id="cta-label" data-aos="fade-right" style="font-size: clamp(4rem, 100px, 3vw);">
+          Contact Us.
         </h2>
-
+        
         <form id="contact-form" data-aos="fade-left" style="
-        max-width: 400px;
-        margin: 50px auto;
-        background-color: white;
+        max-width: 90%;
+        width: 400px;
+        background-color: #2e2e2e87;
         padding: 20px;
         border-radius: 10px;
         box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
@@ -1475,10 +1480,10 @@
           height: 150px;
           resize: none;
           transition: border-color 0.3s ease, box-shadow 0.3s ease;
-        " onfocus="this.style.borderColor='#ff66b2'; this.style.boxShadow='0 0 10px rgba(255, 102, 178, 0.3)'"
-            onblur="this.style.borderColor='#ccc'; this.style.boxShadow='none'"></textarea>
-
-          <button type="submit" style="
+        " onfocus="this.style.borderColor='#ff66b2'; this.style.boxShadow='0 0 10px rgba(255, 102, 178, 0.3)'" 
+           onblur="this.style.borderColor='#ccc'; this.style.boxShadow='none'"></textarea>
+    
+        <button type="submit" style="
           background-color: #ff66b2;
           color: white;
           padding: 12px;
