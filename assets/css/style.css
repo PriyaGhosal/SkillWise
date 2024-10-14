@@ -152,6 +152,12 @@ body.nav-active {
   font-weight: 500;
   padding-bottom: 5px;
 }
+.navbar-list a{
+  margin-top:10px;
+  margin-left:-10px;
+  margin-right: 5px
+  
+}
 
 /* Underline effect */
 .navbar-link::after {
@@ -236,7 +242,16 @@ body.nav-active {
   content: "";
   position: absolute;
 }
+#freeTrial{
+  width:max-content;
+  right:70px;
+  top:20%
+  
 
+}
+#logo-image{
+  margin-left: -60px ;
+  margin-top: -20px;}
 .btn {
   background-color: #1a1a1a;
 }
@@ -394,6 +409,7 @@ body.nav-active {
 
   .searchBox {
     background: hsl(0deg 89.85% 94.83%);
+    
   }
 }
 
@@ -412,7 +428,9 @@ body.nav-active {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
 }
+
 
 .navbar {
   position: fixed;
@@ -445,6 +463,7 @@ body.nav-active {
 .nav-close-btn {
   margin: 0px;
 }
+
 
 .navbar-item:not(:last-child) {
   border-block-end: 1px solid var(--black_10);
@@ -1834,9 +1853,12 @@ button:hover {
   justify-content: space-between;
   gap: 8px;
 
+
   background: white;
   border-radius: 50px;
   position: relative;
+  right:70px;
+  top:-10px
 }
 
 .searchButton {
