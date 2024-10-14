@@ -9,7 +9,8 @@
 /*-----------------------------------*\
   #CUSTOM PROPERTY
 \*-----------------------------------*/
-body, html {
+body,
+html {
   overflow: auto !important;
 }
 
@@ -154,7 +155,7 @@ body.nav-active {
 
 /* Underline effect */
 .navbar-link::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 0;
   height: 2px;
@@ -265,10 +266,6 @@ body.nav-active {
   text-align: center;
 }
 
-.section-title {
-  margin-block-end: 24px;
-}
-
 .headline-md .has-after {
   padding-block-end: 8px;
 }
@@ -296,7 +293,11 @@ body.nav-active {
   padding: 24px;
   border-radius: var(--radius-8);
   transition: var(--transition);
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-radius: 20px;
@@ -383,7 +384,6 @@ body.nav-active {
   width: 100%;
   padding-block: 15px;
   z-index: 4;
-
 }
 
 .header.active {
@@ -395,7 +395,6 @@ body.nav-active {
   .searchBox {
     background: hsl(0deg 89.85% 94.83%);
   }
-
 }
 
 @keyframes headerActive {
@@ -533,7 +532,7 @@ body.nav-active {
 }
 
 .btn-primary::after {
-  content: ' ⪢';
+  content: " ⪢";
   /* Two arrows as content */
   position: absolute;
   /* Position it absolutely */
@@ -643,14 +642,14 @@ body.nav-active {
   border-radius: 5px;
 }
 
-
 .buttons {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-textarea, input[type="email"] {
+textarea,
+input[type="email"] {
   width: 100%;
   padding: 10px;
   margin: 10px 0;
@@ -659,7 +658,7 @@ textarea, input[type="email"] {
 }
 
 button {
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
   border: none;
   padding: 10px;
@@ -690,9 +689,6 @@ button:hover {
   transition: all 1.5s ease-in-out;
   transform: translate(0);
 }
-
-
-
 
 /*-----------------------------------*\
   #CATEGORY
@@ -824,11 +820,9 @@ button:hover {
   #COURSE
 \*-----------------------------------*/
 
-
 .course .grid-list {
   padding-block: 20px 44px;
 }
-
 
 .course .grid-list {
   padding-block: 20px 44px;
@@ -851,7 +845,6 @@ button:hover {
   display: flex;
   flex-direction: column;
   gap: 24px;
-
 }
 
 .course-card:is(:hover, :focus-within) {
@@ -913,6 +906,9 @@ button:hover {
 .cta .headline-md {
   color: var(--white);
 }
+#contact-form textarea::placeholder {
+  font-family: var(--ff-gilroy);
+}
 
 .cta .btn {
   margin-inline: auto;
@@ -923,7 +919,6 @@ button:hover {
 .cta .btn:is(:hover, :focus-within) {
   box-shadow: 0 0 0 2px var(--white), 0 0 0 5px var(--light-coral);
 }
-
 
 .parent {
   display: flex;
@@ -953,7 +948,13 @@ button:hover {
   position: relative;
   display: flex;
   overflow: hidden;
-  -webkit-mask-image: linear-gradient(90deg, transparent, #fff 20%, #fff 80%, transparent);
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    transparent,
+    #fff 20%,
+    #fff 80%,
+    transparent
+  );
 }
 
 .scroll span img {
@@ -967,12 +968,12 @@ button:hover {
 .scroll div {
   white-space: nowrap;
   animation: scroll var(--time) linear infinite;
-  animation-delay: calc(var(--time)*-1);
+  animation-delay: calc(var(--time) * -1);
 }
 
 .scroll div:nth-child(2) {
   animation: scroll2 var(--time) linear infinite;
-  animation-delay: calc(var(--time)/-2);
+  animation-delay: calc(var(--time) / -2);
 }
 
 @keyframes scroll {
@@ -1033,7 +1034,6 @@ button:hover {
     text-align: center;
     margin: 10px;
   }
-
 }
 
 @keyframes slide {
@@ -1150,7 +1150,6 @@ button:hover {
     margin: 0 10px;
   }
 }
-
 
 /*-----------------------------------*\
   #BLOG
@@ -1604,12 +1603,6 @@ button:hover {
     text-align: left;
   }
 
-  .cta .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
   .cta .headline-md {
     max-width: 22ch;
   }
@@ -1619,7 +1612,7 @@ button:hover {
   }
 
   .footer .container {
-    gap: 48px;
+    gap: 1rem;
   }
 }
 
@@ -1652,7 +1645,6 @@ body.dark-mode .navbar a:hover {
 
 /* Hover effect for navbar buttons */
 body.dark-mode .navbar a {
-
   color: var(--white);
 }
 
@@ -1749,7 +1741,6 @@ body.dark-mode .btn:hover {
 
 form {
   max-width: 400px;
-  margin: auto;
 }
 
 input,
@@ -1760,7 +1751,6 @@ textarea {
   border: 1px solid #ccc;
   border-radius: 5px;
 }
-
 button {
   margin: auto;
   padding: 10px;
@@ -1821,7 +1811,7 @@ button:hover {
     justify-content: center;
   }
 
-  ul.footer-list.instagram>li>p.footer-list-title {
+  ul.footer-list.instagram > li > p.footer-list-title {
     display: block;
     margin-bottom: 5px;
   }
@@ -1856,8 +1846,10 @@ button:hover {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background: var(--gradient-2,
-      linear-gradient(90deg, var(--light-coral) 20%, var(--selective-yellow) 100%));
+  background: var(
+    --gradient-2,
+    linear-gradient(90deg, var(--light-coral) 20%, var(--selective-yellow) 100%)
+  );
   border: 0;
   display: inline-block;
   transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
