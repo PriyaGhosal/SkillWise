@@ -141,7 +141,7 @@
 
 .event-description {
   font-size: 1.4rem; /* Larger description font size */
-  color: var(--oxford-blue); /* Roman silver for descriptions */
+  color: rgba(240, 74, 74, 0.862) /* Roman silver for descriptions */
 }
 
 /* Event button */
