@@ -12,9 +12,7 @@
   
   /* Section Title */
   #contact h2 {
-    font-size: 3.5rem; 
     text-align: center;
-    margin-bottom: 80px;
     color: #d6eaff; 
     font-weight: bold; 
     text-transform: uppercase; 
@@ -141,7 +139,7 @@
 
 .event-description {
   font-size: 1.4rem; /* Larger description font size */
-  color: var(--oxford-blue); /* Roman silver for descriptions */
+  color: rgba(240, 74, 74, 0.862) /* Roman silver for descriptions */
 }
 
 /* Event button */
@@ -166,4 +164,28 @@
 /* Hover effect for event items */
 .event-item:hover {
   transform: scale(1.03); /* Slightly enlarges the event item on hover */
+}
+
+
+#search-results{
+  position:absolute;
+  left: -100px;
+  width: 350px;
+ color: black;
+  margin-top: 50px;
+
+}
+
+#freeTrial{
+  position: absolute;
+ right: 80px;
+
+
+}
+
+#theme-toggle{
+  position: absolute;
+  right: 5px;
+  top: 20px;
+  
 }
