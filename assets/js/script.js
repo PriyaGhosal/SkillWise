@@ -33,17 +33,26 @@ window.addEventListener("load", function () {
  * NAVBAR TOGGLER FOR MOBILE
  */
 
+// Select elements
 const navbar = document.querySelector("[data-navbar]");
 const navTogglers = document.querySelectorAll("[data-nav-toggler]");
 const overlay = document.querySelector("[data-overlay]");
 
-const toggleNavbar = function () {
+// Function to toggle the 'active' class on navbar, overlay, and body
+const toggleNavbar = () => {
   navbar.classList.toggle("active");
   overlay.classList.toggle("active");
   document.body.classList.toggle("nav-active");
 }
 
-addEventOnElements(navTogglers, "click", toggleNavbar);
+// Attach click event to each nav-toggler element
+navTogglers.forEach(toggler => toggler.addEventListener("click", toggleNavbar));
+
+
+document.querySelector("[data-nav-toggler]").addEventListener("click", function() {
+  document.body.classList.toggle("nav-active");
+});
+
 
 
 
@@ -68,3 +77,77 @@ document.getElementById('year').textContent = new Date().getFullYear();
 
 
 window.addEventListener("scroll", headerActive);
+
+
+// Feedback Section
+let selectedEmotion = '';
+
+document.getElementById('feedbackButton').onclick = function() {
+    document.getElementById('feedbackModal').style.display = 'flex';
+}
+
+document.getElementById('closeModal').onclick = function() {
+    document.getElementById('feedbackModal').style.display = 'none';
+}
+
+document.getElementById('nextToFeedback').onclick = function() {
+    const selectedEmoji = document.querySelector('.emoji.selected');
+    if (!selectedEmoji) {
+        alert('Please select an emotion!');
+        return;
+    }
+    selectedEmotion = selectedEmoji.dataset.value;
+    document.getElementById('step1').style.display = 'none';
+    document.getElementById('step2').style.display = 'block';
+}
+
+document.querySelectorAll('.emoji').forEach(emoji => {
+    emoji.onclick = function() {
+        document.querySelectorAll('.emoji').forEach(e => e.classList.remove('selected'));
+        emoji.classList.add('selected');
+    }
+});
+
+document.getElementById('nextToEmail').onclick = function() {
+    if (!document.getElementById('feedback').value) {
+        alert('Please provide your feedback!');
+        return;
+    }
+    document.getElementById('step2').style.display = 'none';
+    document.getElementById('step3').style.display = 'block';
+}
+
+document.getElementById('backToEmoji').onclick = function() {
+    document.getElementById('step2').style.display = 'none';
+    document.getElementById('step1').style.display = 'block';
+}
+
+document.getElementById('backToFeedback').onclick = function() {
+    document.getElementById('step3').style.display = 'none';
+    document.getElementById('step2').style.display = 'block';
+}
+
+window.onload = () => {
+  if (sessionStorage.getItem('showPopUp') === 'true') {
+      popUpDisplay();
+      sessionStorage.removeItem('showPopUp'); 
+  }
+};
+
+document.getElementById('feedbackForm').onsubmit = function(event) {
+  event.preventDefault();
+  document.getElementById('feedbackForm').reset();
+  document.getElementById('feedbackModal').style.display = 'none';
+
+  sessionStorage.setItem('showPopUp', 'true'); // Set a flag to show pop-up after reload
+  window.location.reload(); 
+};
+
+const popUpDisplay = () => {
+  setTimeout(() => {
+      document.querySelector('.feedbackPopUp').style.transform = 'translate(0)';
+      setTimeout(() => {
+          document.querySelector('.feedbackPopUp').style.transform = 'translate(120%)';
+      }, 3000);
+  }, 1000);
+};

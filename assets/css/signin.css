@@ -9,6 +9,73 @@ body {
     align-items: center;
     height: 100vh;
 }
+.navbar {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255,255,0.07);
+    /* backdrop-filter: blur(10px); */
+    padding: 1rem;
+}
+
+.navbar .logo {
+    font-size:2rem;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+    font-size: 1.3rem;
+    color:white;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    background-color: #FEAFBF;
+    color: white;
+    border-radius: 5px;
+}
+.nav-link {
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 2px;
+  }
+
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .nav-link:hover::after {
+    visibility: visible;
+    transform: scaleX(1);
+  }
 
 .container {
     width: 100%;
@@ -60,6 +127,26 @@ p {
     border-radius: 4px;
     box-sizing: border-box;
 }
+.password{
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 12px;
+
+}
+
+.password input{
+    width: 80%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+}
+.password input:focus{
+    outline: none;
+}
+
 
 .signin-btn {
     width: 100%;
@@ -108,3 +195,20 @@ p {
         font-size: 14px;
     }
 }
+
+.strength-bar {
+    width: 100%;
+    height: 3px;
+    background-color: #ddd;
+    margin-top: 10px;
+  }
+  .strength-bar-inner {
+    height: 100%;
+    width: 0%;
+    background-color: red;
+    transition: width 0.3s ease;
+  }
+  .suggestion {
+    display: flex;
+    align-items: flex-start;
+  }
