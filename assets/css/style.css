@@ -921,6 +921,56 @@ button:hover {
   font-family: var(--ff-gilroy);
 }
 
+  .livecounting {
+  margin-top: 100px;
+  }
+
+
+  .livecounting-container {
+    display: flex;
+    gap: 30px; 
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .live-count {
+    min-width: 200px;
+    height: 150px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .live-count-emoji {
+    font-size: 30px;
+    color: black;
+  }
+
+  .live-count-text-count {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+  }
+
+  .live-count-text-wrapper {
+    font-size: 14px;
+    color: gray;
+  }
+
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+  }
 .cta .btn {
   margin-inline: auto;
   color: var(--white);
