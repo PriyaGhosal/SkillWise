@@ -147,11 +147,16 @@ body.nav-active {
 .navbar-link {
   position: relative;
   display: inline-block;
-  color: #333; /* Adjust the color as needed */
+  color: #545454; /* Default color for the regular navbar */
   text-decoration: none;
   font-weight: 500;
   padding-bottom: 5px;
 }
+body.nav-active .navbar-list .navbar-link {
+  color: #4c4b4b; /* Set a different color for hamburger items */
+}
+
+
 
 /* Underline effect */
 .navbar-link::after {
@@ -165,15 +170,16 @@ body.nav-active {
   transition: width 0.3s ease-in-out;
 }
 
-/* Hover effect to show the underline */
+/* Hover effect to show the underline and change text color */
 .navbar-link:hover::after {
   width: 100%;
 }
 
-/* Adjust color on hover if needed */
 .navbar-link:hover {
-  color: #ff69b4; /* Optionally change text color to pink on hover */
+  color: #ff69b4; /* Change text color to pink on hover */
+  transition: color 0.3s ease-in-out; /* Smooth transition for the text color */
 }
+
 
 .container {
   padding-inline: 16px;
@@ -213,6 +219,7 @@ body.nav-active {
 .title-sm {
   font-size: var(--title-sm);
   font-weight: var(--fw-500);
+  /* color: #FF69B4; */
 }
 
 .section {
@@ -453,6 +460,7 @@ body.nav-active {
 .navbar-link {
   padding-block: 8px;
   transition: var(--transition);
+  padding-left: 1rem;
 }
 
 .navbar-link:is(:hover, :focus-visible) {
@@ -463,17 +471,20 @@ body.nav-active {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 50%;
   height: 100vh;
-  background-color: var(--black);
+  background-color: white;
+
   opacity: 0;
   visibility: hidden;
   transition: var(--transition);
+  /* z-index: 999; */
 }
 
 .overlay.active {
-  opacity: 0.6;
+  opacity: 1;
   visibility: visible;
+  backdrop-filter: blur(15);
 }
 
 /*-----------------------------------*\
@@ -1616,8 +1627,7 @@ button:hover {
   }
 }
 
-/* Ge
-neral dark mode settings */
+/* General dark mode settings */
 body.dark-mode .navbar {
   background-color: var(--keppei);
   /* Background color for navbar in dark mode */
@@ -1727,10 +1737,10 @@ body.dark-mode .btn:hover {
   /* Keep spacing between items */
 }
 
-.navbar-link {
-  color: var(--dark-text);
+/* .navbar-link {
+  color: var(--white);
   /* Dark text for visibility */
-}
+/* } */ */
 
 .navbar-link:hover {
   background-color: var(--light-background-hover);
@@ -1765,7 +1775,7 @@ button:hover {
   background-color: #0056b3;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1037px) {
   .footer-logo-text {
     flex-direction: column;
     width: fit-content;
