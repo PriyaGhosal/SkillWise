@@ -65,42 +65,27 @@
     - #HEADER
   -->
   <header class="header" data-header>
-
-
-    <div class="container" style="margin-left: 13rem;">
-
+    <div class="navbarContain" style="margin-left: 13rem;">
       <a href="#">
         <img src="./assets/images/Skillwise_logo-removebg-preview.png" width="50" height="10" alt="SkillWise home">
       </a>
-
       <nav class="navbar" data-navbar>
-
-
         <div class="navbar-top">
-
           <img src="./assets/images/Skillwise_logo.jpg" width="50" height="10" alt="SkillWise home">
-          </a>
-
           <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
             <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
           </button>
         </div>
 
-        <ul class="navbar-list" style="width: 50vw;">
+        <ul class="navbar-list">
 
-
-          <li class="navbar-item" style="margin-left: 1rem;">
+          <li class="navbar-item">
             <a href="#home" class="navbar-link title-sm" data-nav-link>Home</a>
           </li>
-
 
           <li class="navbar-item">
             <a href="#about" class="navbar-link title-sm" data-nav-link>About Us</a>
           </li>
-
-
-
-
 
           <li class="navbar-item">
             <a href="#courses" class="navbar-link title-sm" data-nav-link>Courses</a>
@@ -114,75 +99,63 @@
             <a href="#contact" class="navbar-link title-sm" data-nav-link>Contacts</a>
           </li>
 
-          <li class="navbar-item"></li>
-          <a href="../Faq.html" class="navbar-link title-sm" data-nav-link>FAQ</a>
+          <li class="navbar-item">
+            <a href="../Faq.html" class="navbar-link title-sm" data-nav-link>FAQ</a>
           </li>
 
-
-          <li class="navbar-item"></li>
-          <a href="/signin.html" class="navbar-link title-sm" data-nav-link>LogIn</a>
+          <li class="navbar-item">
+            <a href="/signin.html" class="navbar-link title-sm" data-nav-link>LogIn</a>
           </li>
-
-        </ul>
-
-      </nav>
-
-<div class="navRightSide">
-        <div class="searchBox">
-          <input class="searchInput" id = "search-bar" type="text" name="" placeholder="Search something">
-        <button  onclick="searchCourses()" class="searchButton SearchBTN" href="#">
-          <div id="search-results"></div>
-
-
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 29 29" fill="none">
-
-              <g clip-path="url(#clip0_2_17)">
-                <g filter="url(#filter0_d_2_17)">
-                  <path
-                    d="M23.7953 23.9182L19.0585 19.1814M19.0585 19.1814C19.8188 18.4211 20.4219 17.5185 20.8333 16.5251C21.2448 15.5318 21.4566 14.4671 21.4566 13.3919C21.4566 12.3167 21.2448 11.252 20.8333 10.2587C20.4219 9.2653 19.8188 8.36271 19.0585 7.60242C18.2982 6.84214 17.3956 6.23905 16.4022 5.82759C15.4089 5.41612 14.3442 5.20435 13.269 5.20435C12.1938 5.20435 11.1291 5.41612 10.1358 5.82759C9.1424 6.23905 8.23981 6.84214 7.47953 7.60242C5.94407 9.13789 5.08145 11.2204 5.08145 13.3919C5.08145 15.5634 5.94407 17.6459 7.47953 19.1814C9.01499 20.7168 11.0975 21.5794 13.269 21.5794C15.4405 21.5794 17.523 20.7168 19.0585 19.1814Z"
-                    stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
-                    shape-rendering="crispEdges"></path>
+          <li class="navbar-item">
+            <div class="navRightSide">
+                <div class="searchBox">
+            <input class="searchInput" id = "search-bar" type="text" name="" placeholder="Search something">
+          <button  onclick="searchCourses()" class="searchButton SearchBTN" href="#">
+            <div id="search-results"></div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 29 29" fill="none">
+  
+                <g clip-path="url(#clip0_2_17)">
+                  <g filter="url(#filter0_d_2_17)">
+                    <path
+                      d="M23.7953 23.9182L19.0585 19.1814M19.0585 19.1814C19.8188 18.4211 20.4219 17.5185 20.8333 16.5251C21.2448 15.5318 21.4566 14.4671 21.4566 13.3919C21.4566 12.3167 21.2448 11.252 20.8333 10.2587C20.4219 9.2653 19.8188 8.36271 19.0585 7.60242C18.2982 6.84214 17.3956 6.23905 16.4022 5.82759C15.4089 5.41612 14.3442 5.20435 13.269 5.20435C12.1938 5.20435 11.1291 5.41612 10.1358 5.82759C9.1424 6.23905 8.23981 6.84214 7.47953 7.60242C5.94407 9.13789 5.08145 11.2204 5.08145 13.3919C5.08145 15.5634 5.94407 17.6459 7.47953 19.1814C9.01499 20.7168 11.0975 21.5794 13.269 21.5794C15.4405 21.5794 17.523 20.7168 19.0585 19.1814Z"
+                      stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+                      shape-rendering="crispEdges"></path>
+                  </g>
                 </g>
-              </g>
-              <defs>
-                <filter id="filter0_d_2_17" x="-0.418549" y="3.70435" width="29.7139" height="29.7139"
-                  filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                  <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                    result="hardAlpha"></feColorMatrix>
-                  <feOffset dy="4"></feOffset>
-                  <feGaussianBlur stdDeviation="2"></feGaussianBlur>
-                  <feComposite in2="hardAlpha" operator="out"></feComposite>
-                  <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix>
-                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2_17"></feBlend>
-                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2_17" result="shape"></feBlend>
-                </filter>
-                <clipPath id="clip0_2_17">
-                  <rect width="28.0702" height="28.0702" fill="white" transform="translate(0.403503 0.526367)"></rect>
-                </clipPath>
-              </defs>
-            </svg>
-
-
-          </button>
+                <defs>
+                  <filter id="filter0_d_2_17" x="-0.418549" y="3.70435" width="29.7139" height="29.7139"
+                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                      result="hardAlpha"></feColorMatrix>
+                    <feOffset dy="4"></feOffset>
+                    <feGaussianBlur stdDeviation="2"></feGaussianBlur>
+                    <feComposite in2="hardAlpha" operator="out"></feComposite>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix>
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2_17"></feBlend>
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2_17" result="shape"></feBlend>
+                  </filter>
+                  <clipPath id="clip0_2_17">
+                    <rect width="28.0702" height="28.0702" fill="white" transform="translate(0.403503 0.526367)"></rect>
+                  </clipPath>
+                </defs>
+              </svg>
+            </button>
+          </div>
         </div>
-
-
-
-      </div>
+        </li>
+      </ul>
+    </nav>
+    <div class="containers">
       <a href="../signin.html" class="btn" id = "freeTrial">Start Free Trial</a>
-
+      <button id="theme-toggle">
+        <ion-icon id="theme-icon" name="sunny-outline"></ion-icon>
+      </button>
+    </div>
       <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
         <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
       </button>
-      <div class="containers">
-        <button id="theme-toggle">
-          <ion-icon id="theme-icon" name="sunny-outline"></ion-icon>
-        </button>
-      </div>
-
       <div class="overlay" data-overlay data-nav-toggler></div>
-
     </div>
   </header>
 

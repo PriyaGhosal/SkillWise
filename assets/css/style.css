@@ -434,6 +434,9 @@ body.nav-active .navbar-list .navbar-link {
   transition: 0.25s var(--cubic-in);
   visibility: hidden;
 }
+.navbarContain{
+  display: flex;
+}
 
 .navbar.active {
   transition: 0.5s var(--cubic-out);
@@ -1416,6 +1419,12 @@ button:hover {
 /**
  * responsive for large than 768px screen
  */
+ .nav-open-btn{
+  position: absolute;
+  right:0;
+  margin-right: 5vw;
+  margin-top: 0.8vw;
+ }
 
 @media (min-width: 768px) {
   /**
@@ -1462,7 +1471,7 @@ button:hover {
  * responsive for large than 992px screen
  */
 
-@media (min-width: 992px) {
+@media (min-width: 1360px) {
   :root {
     /**
      * typography
@@ -1511,7 +1520,7 @@ button:hover {
 
   .navbar-list {
     display: flex;
-    gap: 8px;
+    gap: 1vw;
   }
 
   .navbar-item:not(:last-child) {
@@ -1677,8 +1686,6 @@ body.dark-mode h1 {
 }
 
 #theme-toggle {
-  /* position: fixed; */
-
   background-color: var(--light-gray);
   border-radius: var(--radius-circle);
   padding: 10px;
@@ -1722,7 +1729,7 @@ body.dark-mode .btn:hover {
   /* Light background for the navbar */
   color: var(--dark-text);
   /* Dark text color */
-  padding: 0;
+  width:90vw;
   /* No padding for box-less design */
   box-shadow: none;
   /* No shadow in light mode */
@@ -1731,11 +1738,9 @@ body.dark-mode .btn:hover {
 }
 
 .navbar-list {
-  padding: 0;
-  /* No padding */
-  gap: 15px;
-  /* Keep spacing between items */
+  width:100%; 
 }
+
 
 /* .navbar-link {
   color: var(--white);
