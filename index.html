@@ -86,7 +86,7 @@
           </button>
         </div>
 
-        <ul class="navbar-list">
+        <ul class="navbar-list" style="width: 50vw;">
 
 
           <li class="navbar-item" style="margin-left: 1rem;">
@@ -122,19 +122,16 @@
           <li class="navbar-item"></li>
           <a href="/signin.html" class="navbar-link title-sm" data-nav-link>LogIn</a>
           </li>
-          <li class="navbar-item"></li>
-          <a href="/SkillWise/careers.html" class="navbar-link title-sm" data-nav-link>Careers</a>
-          </li>
 
         </ul>
 
       </nav>
 
-      <div class="navRightSide">
+<div class="navRightSide">
         <div class="searchBox">
-          <input class="searchInput" id="search-bar" type="text" name="" placeholder="Search something">
-          <button onclick="searchCourses()" class="searchButton SearchBTN" href="#">
-            <div id="search-results"></div>
+          <input class="searchInput" id = "search-bar" type="text" name="" placeholder="Search something">
+        <button  onclick="searchCourses()" class="searchButton SearchBTN" href="#">
+          <div id="search-results"></div>
 
 
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 29 29" fill="none">
@@ -173,7 +170,7 @@
 
 
       </div>
-      <a href="../signin.html" class="btn" id="freeTrial">Start Free Trial</a>
+      <a href="../signin.html" class="btn" id = "freeTrial">Start Free Trial</a>
 
       <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
         <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
@@ -1172,15 +1169,15 @@
         </div>
 
       </section>
-
+      
       <section id="events" class="section events" aria-labelledby="events-label">
         <div class="container">
           <p class="title-sm text-center section-subtitle" id="events-label">Upcoming Workshops</p>
-
+      
           <h2 class="headline-md text-center section-title" data-aos="fade-down">
             Join Our Skill Development <span class="span has-after">Events</span>
           </h2>
-
+      
           <div class="event-list">
             <!-- Event 1 -->
             <div class="event-item" data-aos="fade-right">
@@ -1190,12 +1187,11 @@
               </div>
               <div class="event-details">
                 <h3 class="event-title">Web Development Bootcamp</h3>
-                <p class="event-description">Join our intensive bootcamp to learn HTML, CSS, and JavaScript in just one
-                  week!</p>
+                <p class="event-description">Join our intensive bootcamp to learn HTML, CSS, and JavaScript in just one week!</p>
               </div>
               <a href="#" class="event-button">View Event</a>
             </div>
-
+      
             <!-- Event 2 -->
             <div class="event-item" data-aos="fade-right">
               <div class="event-date-box">
@@ -1204,12 +1200,11 @@
               </div>
               <div class="event-details">
                 <h3 class="event-title">Data Science Workshop</h3>
-                <p class="event-description">Discover the world of data science with hands-on projects and expert
-                  guidance.</p>
+                <p class="event-description">Discover the world of data science with hands-on projects and expert guidance.</p>
               </div>
               <a href="#" class="event-button">View Event</a>
             </div>
-
+      
             <!-- Event 3 -->
             <div class="event-item" data-aos="fade-right">
               <div class="event-date-box">
@@ -1218,20 +1213,19 @@
               </div>
               <div class="event-details">
                 <h3 class="event-title">Creative Design Thinking</h3>
-                <p class="event-description">Learn innovative design principles and enhance your creative
-                  problem-solving skills.</p>
+                <p class="event-description">Learn innovative design principles and enhance your creative problem-solving skills.</p>
               </div>
               <a href="#" class="event-button">View Event</a>
             </div>
           </div>
-
+      
           <a href="./pages/events.html" class="btn btn-primary see-all" data-aos="zoom-in">View All Workshops</a>
         </div>
       </section>
-
-
-
-
+      
+      
+      
+      
 
     </article>
   </main>
@@ -1425,18 +1419,17 @@
   -->
 
     <section id="contact" class="cta" aria-labelledby="cta-label">
-
+     
       <div class="container" style="align-items: center;
       justify-content: center;
       display: flex;
       flex-direction: column;
       gap: 10px;">
-
-        <h2 class="headline-md section-title" id="cta-label" data-aos="fade-right"
-          style="font-size: clamp(4rem, 100px, 3vw);">
+  
+        <h2 class="headline-md section-title" id="cta-label" data-aos="fade-right" style="font-size: clamp(4rem, 100px, 3vw);">
           Contact Us.
         </h2>
-
+        
         <form id="contact-form" data-aos="fade-left" style="
         max-width: 90%;
         width: 400px;
@@ -1448,9 +1441,8 @@
       " onmouseover="this.style.boxShadow='0 10px 20px rgba(0, 0, 0, 0.2)'"
           onmouseout="this.style.boxShadow='0 6px 12px rgba(0, 0, 0, 0.15)'">
 
-          <input type="text" name="name" placeholder="Your Name" required required pattern="[a-zA-Z ]+"
-            oninvalid="this.setCustomValidity('Numbers and Symbols are not allowed')"
-            oninput="this.setCustomValidity('')" style="
+          <input type="text" name="name" placeholder="Your Name" required  required pattern="[a-zA-Z ]+" oninvalid="this.setCustomValidity('Numbers and Symbols are not allowed')" 
+          oninput="this.setCustomValidity('')" style="
           width: 100%;
           padding: 12px;
           margin: 8px 0;
@@ -1488,10 +1480,10 @@
           height: 150px;
           resize: none;
           transition: border-color 0.3s ease, box-shadow 0.3s ease;
-        " onfocus="this.style.borderColor='#ff66b2'; this.style.boxShadow='0 0 10px rgba(255, 102, 178, 0.3)'"
-            onblur="this.style.borderColor='#ccc'; this.style.boxShadow='none'"></textarea>
-
-          <button type="submit" style="
+        " onfocus="this.style.borderColor='#ff66b2'; this.style.boxShadow='0 0 10px rgba(255, 102, 178, 0.3)'" 
+           onblur="this.style.borderColor='#ccc'; this.style.boxShadow='none'"></textarea>
+    
+        <button type="submit" style="
           background-color: #ff66b2;
           color: white;
           padding: 12px;
@@ -1526,33 +1518,33 @@
 
 
 
-  <!--JS for searching courses -->
-  <script>
+   <!--JS for searching courses -->
+ <script>
+    
+        // Define searchCourses function
+        function searchCourses() {
+    const searchTerm = document.getElementById('search-bar').value.toLowerCase();
+    const courses = document.querySelectorAll('.category-card');
+    const resultsDiv = document.getElementById('search-results');
+    resultsDiv.innerHTML = ''; // Clear previous results
+    let found = false; // Flag to track if any course is found
 
-    // Define searchCourses function
-    function searchCourses() {
-      const searchTerm = document.getElementById('search-bar').value.toLowerCase();
-      const courses = document.querySelectorAll('.category-card');
-      const resultsDiv = document.getElementById('search-results');
-      resultsDiv.innerHTML = ''; // Clear previous results
-      let found = false; // Flag to track if any course is found
-
-      courses.forEach((course) => {
+    courses.forEach((course) => {
         const courseTitle = course.querySelector('.title-lg').innerText.toLowerCase();
         if (courseTitle.includes(searchTerm)) {
-          const resultCard = course.cloneNode(true); // Clone the course card
-          resultsDiv.appendChild(resultCard); // Show matching result at the top
-          found = true; // Set flag to true if a course is found
+            const resultCard = course.cloneNode(true); // Clone the course card
+            resultsDiv.appendChild(resultCard); // Show matching result at the top
+            found = true; // Set flag to true if a course is found
         }
-      });
+    });
 
-      // If no courses match, show "No results found"
-      if (!found) {
+    // If no courses match, show "No results found"
+    if (!found) {
         resultsDiv.innerHTML = '<p>No results found</p>';
-      }
     }
+}
 
-  </script>
+    </script>
 
   <!-- 
    - custom js link
