@@ -142,9 +142,9 @@ Thank you for your contributions to SkillWise!Every contribution, no matter the 
 
 ## Website Preview🖼
 <br>
-<img src='./readme-images/home.png'>
-<img src='./readme-images/courses.png'>
-<img src='./readme-images/c-info.png'>
+<img src='home.png'>
+<img src='courses.png'>
+<img src='info.png'>
 <br>
 
 # Contributors
