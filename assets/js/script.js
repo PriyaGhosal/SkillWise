@@ -33,17 +33,26 @@ window.addEventListener("load", function () {
  * NAVBAR TOGGLER FOR MOBILE
  */
 
+// Select elements
 const navbar = document.querySelector("[data-navbar]");
 const navTogglers = document.querySelectorAll("[data-nav-toggler]");
 const overlay = document.querySelector("[data-overlay]");
 
-const toggleNavbar = function () {
+// Function to toggle the 'active' class on navbar, overlay, and body
+const toggleNavbar = () => {
   navbar.classList.toggle("active");
   overlay.classList.toggle("active");
   document.body.classList.toggle("nav-active");
 }
 
-addEventOnElements(navTogglers, "click", toggleNavbar);
+// Attach click event to each nav-toggler element
+navTogglers.forEach(toggler => toggler.addEventListener("click", toggleNavbar));
+
+
+document.querySelector("[data-nav-toggler]").addEventListener("click", function() {
+  document.body.classList.toggle("nav-active");
+});
+
 
 
 
