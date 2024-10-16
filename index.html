@@ -60,18 +60,22 @@
 
 
 
-
-  <!-- 
+    <!-- 
     - #HEADER
   -->
   <header class="header" data-header>
-    <div class="navbarContain" style="margin-left: 13rem;">
+
+    <div class="container" style="margin-left: 13rem;">
+
       <a href="#">
         <img src="./assets/images/Skillwise_logo-removebg-preview.png" width="50" height="10" alt="SkillWise home">
       </a>
+
       <nav class="navbar" data-navbar>
+
         <div class="navbar-top">
           <img src="./assets/images/Skillwise_logo.jpg" width="50" height="10" alt="SkillWise home">
+          </a>
           <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
             <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
           </button>
@@ -79,16 +83,18 @@
 
         <ul class="navbar-list">
 
-          <li class="navbar-item">
+
+          <li class="navbar-item" >
             <a href="#home" class="navbar-link title-sm" data-nav-link>Home</a>
           </li>
+
 
           <li class="navbar-item">
             <a href="#about" class="navbar-link title-sm" data-nav-link>About Us</a>
           </li>
 
           <li class="navbar-item">
-            <a href="#courses" class="navbar-link title-sm" data-nav-link>Courses</a>
+            <a href="#courses" class="navbar-link title-sm" data-nav-link>Course/Mentor</a>
           </li>
 
           <li class="navbar-item">
@@ -99,21 +105,25 @@
             <a href="#contact" class="navbar-link title-sm" data-nav-link>Contacts</a>
           </li>
 
-          <li class="navbar-item">
-            <a href="../Faq.html" class="navbar-link title-sm" data-nav-link>FAQ</a>
+          <li class="navbar-item"></li>
+          <a href="../Faq.html" class="navbar-link title-sm" data-nav-link>FAQ</a>
           </li>
 
-          <li class="navbar-item">
-            <a href="/signin.html" class="navbar-link title-sm" data-nav-link>LogIn</a>
+
+          <li class="navbar-item"></li>
+          <a href="/signin.html" class="navbar-link title-sm" data-nav-link>Login/Register</a>
+          </li>
+
+           <li class="navbar-item"></li>
+          <a href="/careers.html" class="navbar-link title-sm" data-nav-link>Careers</a>
           </li>
           <li class="navbar-item">
-            <div class="navRightSide">
-                <div class="searchBox">
+          <div class="searchBox">
             <input class="searchInput" id = "search-bar" type="text" name="" placeholder="Search something">
           <button  onclick="searchCourses()" class="searchButton SearchBTN" href="#">
             <div id="search-results"></div>
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 29 29" fill="none">
-  
+    
                 <g clip-path="url(#clip0_2_17)">
                   <g filter="url(#filter0_d_2_17)">
                     <path
@@ -140,21 +150,22 @@
                   </clipPath>
                 </defs>
               </svg>
+    
             </button>
           </div>
-        </div>
-        </li>
-      </ul>
-    </nav>
-    <div class="containers">
+          </li>
+        </ul>
+      </nav>
       <a href="../signin.html" class="btn" id = "freeTrial">Start Free Trial</a>
-      <button id="theme-toggle">
-        <ion-icon id="theme-icon" name="sunny-outline"></ion-icon>
-      </button>
-    </div>
+
       <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
         <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
       </button>
+      <div class="containers">
+        <button id="theme-toggle">
+          <ion-icon id="theme-icon" name="sunny-outline"></ion-icon>
+        </button>
+      </div>
       <div class="overlay" data-overlay data-nav-toggler></div>
     </div>
   </header>
