@@ -86,6 +86,7 @@
   flex-direction: column;
   gap: 15px; /* Adds more space between the event items */
   margin-bottom: 20px;
+  margin-top:20px;
 }
 
 /* Individual event item */
@@ -101,6 +102,22 @@
   transition: background-color 0.3s ease;
   font-size: 1.4rem; /* Bigger font size for better readability */
 }
+
+/* Media Queries for small screens */
+@media (max-width: 768px) {
+  .event-item {
+    flex-direction: column; /* Stacks items vertically */
+    text-align: center; /* Centers text for better layout on small screens */
+  }
+
+  .event-button {
+    margin-top: 15px; /* Adds space between details and button on small screens */
+  }
+  .event-title{
+    margin-top:10px;
+  }
+}
+
 
 /* Event date box styling */
 .event-date-box {
