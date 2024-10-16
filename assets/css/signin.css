@@ -1,7 +1,7 @@
-/* CSS for SkillWise Sign In Page */
+/* Full-Page Gradient Background */
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 50%, #fecf6d 100%);
+    background: linear-gradient(135deg, #f9a8d4, #fef2f8);
     margin: 0;
     padding: 0;
     display: flex;
@@ -9,92 +9,81 @@ body {
     align-items: center;
     height: 100vh;
 }
-.navbar {
+
+/* Back Button */
+.back-btn {
     position: absolute;
-    top:0;
-    left:0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgba(255, 255,255,0.07);
-    /* backdrop-filter: blur(10px); */
-    padding: 1rem;
-}
-
-.navbar .logo {
-    font-size:2rem;
-    color: #fff;
-    font-weight: 700;
-    text-decoration: none;
-    font-family: sans-serif;
-}
-
-.navbar ul {
-    list-style: none;
-    display: flex;
-}
-
-.navbar ul li {
-    margin-left: 20px;
-    font-size: 1.3rem;
-    color:white;
-}
-
-.navbar ul li a {
-    text-decoration: none;
-    color: #fff;
-    padding: 0.5rem 1rem;
-    transition: background-color 0.3s ease;
-}
-
-.navbar ul li a:hover {
-    background-color: #FEAFBF;
-    color: white;
+    top: 20px;
+    left: 20px;
+    background-color: #fff;
+    color: #f77c80;
+    border: none;
+    padding: 10px 15px;
     border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
-.nav-link {
-    text-decoration: none;
-    position: relative;
-    padding-bottom: 2px;
-  }
 
-  .nav-link::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: rgb(255, 255, 255);
-    visibility: hidden;
-    transform: scaleX(0);
-    transition: all 0.3s ease-in-out;
-  }
+.back-btn:hover {
+    background-color: #f56565;
+    color:#fff;
+}
 
-  .nav-link:hover::after {
-    visibility: visible;
-    transform: scaleX(1);
-  }
-
+/* Container Styling */
 .container {
     width: 100%;
-    max-width: 400px;
+    max-width: 500px;
     background-color: #fff;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-}
-
-.form-container {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
     text-align: center;
 }
 
-.logo {
-    width: 100px;
+/* Logo Floating Animation */
+.logo-wrapper {
+    position: relative;
     margin-bottom: 20px;
+    background-color: #fef2f8;
+    border-radius: 50%;
+    padding: 20px;
+    transition: background-color 0.5s, transform 0.5s;
+    display: inline-block;
 }
 
+.logo-wrapper:hover {
+    background-color: white;
+    transform: scale(1.1) translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes slow-shiver {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-1px);
+    }
+    50% {
+        transform: translateX(1px);
+    }
+    75% {
+        transform: translateX(-0.5px);
+    }
+}
+
+/* Apply shiver effect to the logo */
+.logo {
+    width: 100px;
+    margin: 0 auto 20px;
+    animation: slow-shiver 1s infinite ease-in-out;
+}
+
+
+/* Typography */
 h1 {
     font-size: 24px;
     margin-bottom: 10px;
@@ -109,6 +98,7 @@ p {
     color: #666;
 }
 
+/* Input Groups */
 .input-group {
     margin-bottom: 15px;
     text-align: left;
@@ -127,42 +117,45 @@ p {
     border-radius: 4px;
     box-sizing: border-box;
 }
-.password{
-    border: 1px solid #ccc;
-    border-radius: 4px;
+
+/* Password Visibility Toggle */
+.password {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
     padding-right: 12px;
-
 }
 
-.password input{
+.password input {
     width: 80%;
-    padding: 10px;
-    box-sizing: border-box;
     border: none;
+    padding: 10px;
 }
-.password input:focus{
+
+.password input:focus {
     outline: none;
 }
 
-
+/* Button Styles */
 .signin-btn {
     width: 100%;
     padding: 10px;
     background-color: #f77c80;
-    color: #fff;
+    color: white;
     border: none;
     border-radius: 4px;
-    cursor: pointer;
     font-size: 16px;
+    cursor: pointer;
 }
 
 .signin-btn:hover {
-    background-color: #f77c80;
+    background-color: #f56565;
+    color:#fff;
 }
 
+/* Signup Link */
 .signup-link {
     margin-top: 15px;
     color: #f77c80;
@@ -177,38 +170,46 @@ p {
     text-decoration: underline;
 }
 
-/* Responsive Design */
-@media (max-width: 600px) {
-    .container {
-        padding: 15px;
-    }
-
-    .logo {
-        width: 80px;
-    }
-
-    h1 {
-        font-size: 20px;
-    }
-
-    .signin-btn {
-        font-size: 14px;
-    }
-}
-
+/* Strength Bar */
 .strength-bar {
     width: 100%;
-    height: 3px;
+    height: 4px;
     background-color: #ddd;
     margin-top: 10px;
-  }
-  .strength-bar-inner {
+}
+
+.strength-bar-inner {
     height: 100%;
     width: 0%;
     background-color: red;
     transition: width 0.3s ease;
-  }
-  .suggestion {
-    display: flex;
-    align-items: flex-start;
-  }
+}
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+.fade-out {
+    opacity: 1;
+    animation: fadeOut 0.5s ease-in-out forwards;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Fade-out animation */
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}

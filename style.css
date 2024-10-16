@@ -189,3 +189,42 @@
   top: 20px;
   
 }
+/* Navbar links */
+.navbar-link {
+  margin-left: 20px; /* Added margin to the "About Us" */
+}
+
+/* Search box size adjustment */
+.searchBox .searchInput {
+  width: 300px;  /* Increased width for the search bar */
+  padding: 10px; /* Better padding for input field */
+}
+
+/* Dark mode button styling */
+#theme-toggle {
+  margin-right: 20px; /* Ensure proper spacing */
+}
+
+/* Free Trial button */
+#freeTrial {
+  padding: 10px 20px; /* Adds proper padding */
+  margin-left: 10px; /* Space between dark mode toggle and free trial */
+  background-color: black; /* Custom background */
+  color: #dddF; /* Text color */
+}
+
+/* Container styles for proper positioning */
+.containers {
+  display: inline-block;
+  margin-right: 15px;
+}
+ /* Zoom effect for the Start Free Trial button */
+#freeTrial {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#freeTrial:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adds a shadow for depth */
+}
+

@@ -3,69 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SkillWise - Sign up</title>
+    <title>SkillWise - Sign Up</title>
     <link rel="stylesheet" href="assets/css/signin.css">
-  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
 </head>
-<body>
-    <header>
-        <nav class="navbar">
-          <a href="./index.html" class="logo">SkillWise</a>
-          <ul style="margin-right: 2rem;">
-            <li>
-              <a href="./index.html" class="nav-link" style="margin-right: 0.5rem;">Home</a>
-              <i class="fa-solid fa-house"></i>
-            </li>
-          </ul>
-        </nav>
-      </header>
+<body class="fade-in">
+
+    <button id="back" class="back-btn">
+        <i class="fa-solid fa-arrow-left"></i> Back
+    </button>
+
     <div class="container">
         <div class="form-container">
-            <!-- Add SkillWise Icon/Logo -->
             <img src="assets/images/Skillwise_logo.jpg" alt="SkillWise Logo" class="logo">
-            
+
             <h1>Welcome to <span class="brand">SkillWise</span></h1>
-            <p><strong>Sign-Up</strong> to Create your personal learning dashboard Account</p>
-            
+            <p><strong>Sign-Up</strong> to create your personal learning dashboard account</p>
+
             <form action="#" method="POST">
                 <div class="input-group">
-                    <label for="username">Full Name</label>
-                    <input type="text" id="fullname" name="fullname" placeholder="Create your username" required required pattern="[a-zA-Z ]+" oninvalid="this.setCustomValidity('Numbers and Symbols are not allowed')" 
-                    oninput="this.setCustomValidity('')">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" 
+                           required pattern="[a-zA-Z ]+" 
+                           oninvalid="this.setCustomValidity('Numbers and symbols are not allowed')" 
+                           oninput="this.setCustomValidity('')">
                 </div>
+
                 <div class="input-group">
                     <label for="username">Username</label>
                     <input type="text" id="username" name="username" placeholder="Create your username" required>
                 </div>
+
                 <div class="input-group">
                     <label for="email">Email</label>
                     <input type="email" id="email" name="email" placeholder="Enter your email" required>
                 </div>
+
                 <div class="input-group">
                     <label for="password">Password</label>
                     <div class="password">
                         <input type="password" id="password" name="password" placeholder="Enter your password" required>
                         <i class="fa-solid fa-eye-slash" id="togglePassword"></i>
-                      </div>                </div>
-                <button type="submit" class="signin-btn">Sign In</button>
-                <p class="signup-link">Already have an account? <a href="./signin.html">Sign in here</a></p>
+                    </div>
+                </div>
+
+                <button type="submit" class="signin-btn">Sign Up</button>
+                <p class="signup-link">Already have an account? 
+                    <a href="./signin.html" class="transition-link">Sign in here</a>
+                </p>
             </form>
         </div>
     </div>
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script >
+
+    <script>
+        // Back Button: Redirect to Homepage
+        document.getElementById('back').addEventListener('click', () => {
+            window.location.href = 'index.html'; // Adjust if your homepage URL differs
+        });
+
+        // Password Visibility Toggle
         const togglePassword = document.querySelector("#togglePassword");
-const passwordInput = document.querySelector("#password");
+        const passwordInput = document.querySelector("#password");
 
-togglePassword.addEventListener("click", function () {
-  const type = passwordInput.getAttribute("type") === "password" ?  "text": "password";
-  passwordInput.setAttribute("type", type);
+        togglePassword.addEventListener("click", function () {
+            const type = passwordInput.getAttribute("type") === "password" ? "text" : "password";
+            passwordInput.setAttribute("type", type);
+            this.classList.toggle("fa-eye-slash");
+            this.classList.toggle("fa-eye");
+        });
 
-  this.classList.toggle("fa-eye-slash");
-  this.classList.toggle("fa-eye");
-});
-
+        // Smooth Page Transition for "Sign In" Link
+        const links = document.querySelectorAll('.transition-link');
+        links.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                document.body.classList.add('fade-out');
+                setTimeout(() => {
+                    window.location.href = link.href;
+                }, 500); // Adjust duration to match CSS animation
+            });
+        });
     </script>
+
 </body>
 </html>
