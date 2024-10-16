@@ -1,0 +1,40 @@
+* {
+    font-size: large;
+}
+
+body {
+    margin-top: 180px;
+}
+
+.application-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 500px;
+}
+
+.helpful-buttons {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.helpful-btn {
+    padding: 5px 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.helpful-btn:hover {
+    background-color: #0056b3;
+}
+
+.helpful-result {
+    margin-left: 10px;
+    font-weight: bold;
+}
