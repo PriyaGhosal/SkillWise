@@ -178,14 +178,17 @@
 
 #freeTrial{
   position: absolute;
- right: 80px;
+right:40px;
+top:110px;
+ max-width: 170px;
+ max-height: 50px;
 
 
 }
 
 #theme-toggle{
   position: absolute;
-  right: 5px;
-  top: 20px;
+  right: 25px;
+  top: 17px;
   
 }

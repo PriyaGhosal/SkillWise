@@ -65,81 +65,54 @@
     - #HEADER
   -->
   <header class="header" data-header>
-
-
-    <div class="container" style="margin-left: 13rem;">
-
+    <div class="container" style="margin-left: 13rem; display: flex; justify-content: space-between; align-items: center;">
+      
       <a href="#">
         <img src="./assets/images/Skillwise_logo-removebg-preview.png" width="50" height="10" alt="SkillWise home">
       </a>
-
+  
       <nav class="navbar" data-navbar>
-
-
         <div class="navbar-top">
-
           <img src="./assets/images/Skillwise_logo.jpg" width="50" height="10" alt="SkillWise home">
-          </a>
-
           <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
             <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
           </button>
         </div>
-
+  
         <ul class="navbar-list">
-
-
           <li class="navbar-item" style="margin-left: 1rem;">
             <a href="#home" class="navbar-link title-sm" data-nav-link>Home</a>
           </li>
-
-
           <li class="navbar-item">
             <a href="#about" class="navbar-link title-sm" data-nav-link>About Us</a>
           </li>
-
-
-
-
-
           <li class="navbar-item">
             <a href="#courses" class="navbar-link title-sm" data-nav-link>Course/Mentor</a>
           </li>
-
           <li class="navbar-item">
             <a href="#blog" class="navbar-link title-sm" data-nav-link>Blog</a>
           </li>
-
           <li class="navbar-item">
             <a href="#contact" class="navbar-link title-sm" data-nav-link>Contacts</a>
           </li>
-
-          <li class="navbar-item"></li>
-          <a href="../Faq.html" class="navbar-link title-sm" data-nav-link>FAQ</a>
+          <li class="navbar-item">
+            <a href="../Faq.html" class="navbar-link title-sm" data-nav-link>FAQ</a>
           </li>
-
-
-          <li class="navbar-item"></li>
-          <a href="/signin.html" class="navbar-link title-sm" data-nav-link>Login/Register</a>
+          <li class="navbar-item">
+            <a href="/signin.html" class="navbar-link title-sm" data-nav-link>Login/Register</a>
           </li>
-
-           <li class="navbar-item"></li>
-          <a href="/careers.html" class="navbar-link title-sm" data-nav-link>Careers</a>
+          <li class="navbar-item">
+            <a href="/careers.html" class="navbar-link title-sm" data-nav-link>Careers</a>
           </li>
-
         </ul>
-
       </nav>
-
-<div class="navRightSide">
+  
+      <div class="navRightSide" style="display: flex; align-items: center;">
         <div class="searchBox">
-          <input class="searchInput" id = "search-bar" type="text" name="" placeholder="Search something">
-        <button  onclick="searchCourses()" class="searchButton SearchBTN" href="#">
-          <div id="search-results"></div>
-
-
+          <input class="searchInput" id="search-bar" type="text" name="" placeholder="Search something">
+          <button onclick="searchCourses()" class="searchButton SearchBTN" href="#">
+            <div id="search-results"></div>
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 29 29" fill="none">
-
               <g clip-path="url(#clip0_2_17)">
                 <g filter="url(#filter0_d_2_17)">
                   <path
@@ -148,34 +121,13 @@
                     shape-rendering="crispEdges"></path>
                 </g>
               </g>
-              <defs>
-                <filter id="filter0_d_2_17" x="-0.418549" y="3.70435" width="29.7139" height="29.7139"
-                  filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                  <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                    result="hardAlpha"></feColorMatrix>
-                  <feOffset dy="4"></feOffset>
-                  <feGaussianBlur stdDeviation="2"></feGaussianBlur>
-                  <feComposite in2="hardAlpha" operator="out"></feComposite>
-                  <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix>
-                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2_17"></feBlend>
-                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2_17" result="shape"></feBlend>
-                </filter>
-                <clipPath id="clip0_2_17">
-                  <rect width="28.0702" height="28.0702" fill="white" transform="translate(0.403503 0.526367)"></rect>
-                </clipPath>
-              </defs>
             </svg>
-
-
           </button>
         </div>
-
-
-
+  
+        <a href="../signin.html" class="btn" id="freeTrial" style="margin-left: 1rem;">Start Free Trial</a>
       </div>
-      <a href="../signin.html" class="btn" id = "freeTrial">Start Free Trial</a>
-
+  
       <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
         <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
       </button>
@@ -184,11 +136,11 @@
           <ion-icon id="theme-icon" name="sunny-outline"></ion-icon>
         </button>
       </div>
-
+  
       <div class="overlay" data-overlay data-nav-toggler></div>
-
     </div>
   </header>
+  
 
 
 
