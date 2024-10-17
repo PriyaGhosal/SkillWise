@@ -1,5 +1,5 @@
 /* CSS for SkillWise Sign In Page */
-body {
+/* body {
     font-family: Arial, sans-serif;
     background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 50%, #fecf6d 100%);
     margin: 0;
@@ -8,8 +8,8 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-}
-.navbar {
+} */
+/* .navbar {
     position: absolute;
     top:0;
     left:0;
@@ -18,24 +18,23 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: rgba(255, 255,255,0.07);
-    /* backdrop-filter: blur(10px); */
     padding: 1rem;
-}
+} */
 
-.navbar .logo {
+/* .navbar .logo {
     font-size:2rem;
     color: #fff;
     font-weight: 700;
     text-decoration: none;
     font-family: sans-serif;
-}
+} */
 
-.navbar ul {
+/* .navbar ul {
     list-style: none;
     display: flex;
-}
+} */
 
-.navbar ul li {
+/* .navbar ul li {
     margin-left: 20px;
     font-size: 1.3rem;
     color:white;
@@ -57,9 +56,9 @@ body {
     text-decoration: none;
     position: relative;
     padding-bottom: 2px;
-  }
+  } */
 
-  .nav-link::after {
+  /* .nav-link::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -75,9 +74,9 @@ body {
   .nav-link:hover::after {
     visibility: visible;
     transform: scaleX(1);
-  }
+  } */
 
-.container {
+/* .container {
     width: 100%;
     max-width: 400px;
     background-color: #fff;
@@ -87,17 +86,36 @@ body {
 }
 
 .form-container {
+    text-align: center; */
+/* } */
+
+#signIn-container {
+    width: 25%;
+    margin-top: 8%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
     text-align: center;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .logo {
     width: 100px;
-    margin-bottom: 20px;
+    margin-top: 15px;
 }
 
 h1 {
     font-size: 24px;
-    margin-bottom: 10px;
+    margin-bottom: -15px;
 }
 
 .brand {
@@ -110,13 +128,12 @@ p {
 }
 
 .input-group {
-    margin-bottom: 15px;
     text-align: left;
 }
 
 .input-group label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: -3px;
     color: #333;
 }
 
@@ -147,6 +164,10 @@ p {
     outline: none;
 }
 
+.signUp-form {
+    width: 90%;
+}
+
 
 .signin-btn {
     width: 100%;
@@ -157,6 +178,7 @@ p {
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
+    justify-content: center;
 }
 
 .signin-btn:hover {
