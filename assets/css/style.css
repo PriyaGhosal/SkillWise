@@ -575,15 +575,19 @@ body.nav-active .navbar-list .navbar-link {
 \*-----------------------------------*/
 
 .feedback-Section {
-  display: flex;
-  flex-direction: column;
-  border: 1px solid black;
-  padding: 3rem;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
 }
 
 .feedback-button {
   position: fixed;
-  left: 20px;
+  right: 20px;
   bottom: 20px;
   background-color: hsl(357, 100%, 75%);
   color: white;
@@ -592,6 +596,8 @@ body.nav-active .navbar-list .navbar-link {
   cursor: pointer;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   z-index: 1000;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .feedback-modal {
@@ -607,8 +613,26 @@ body.nav-active .navbar-list .navbar-link {
   z-index: 1000;
 }
 
+.feedbackPopUp {
+  position: fixed;
+  transform: translate(120%);
+  transition: all 1s ease-in-out;
+  right: 20px;
+  bottom: 20px;
+  background-color: hsl(357, 100%, 75%);
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
 .modal-content {
   background-color: white;
+  color: #000;
   padding: 20px;
   border-radius: 5px;
   width: 300px;
@@ -625,7 +649,7 @@ body.nav-active .navbar-list .navbar-link {
 
 .close:hover,
 .close:focus {
-  color: black;
+  color: rgb(239, 10, 10);
   text-decoration: none;
   cursor: pointer;
 }
@@ -649,8 +673,7 @@ body.nav-active .navbar-list .navbar-link {
 }
 
 .emoji.selected {
-  border: 1px solid black;
-  /* Highlight selected emoji */
+  border: 1px solid black; /* Highlight selected emoji */
   border-radius: 5px;
 }
 
@@ -658,6 +681,10 @@ body.nav-active .navbar-list .navbar-link {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.buttons.center {
+  justify-content: center;
 }
 
 textarea,
@@ -680,21 +707,6 @@ button {
 
 button:hover {
   background-color: #45a049;
-}
-
-.feedbackPopUp {
-  position: fixed;
-  transform: translate(120%);
-  transition: all 1s ease-in-out;
-  right: 20px;
-  bottom: 100px;
-  background-color: hsl(357, 100%, 75%);
-  color: white;
-  padding: 15px;
-  border-radius: 5px;
-  cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  z-index: 1000;
 }
 
 .PopUpDisplay {
