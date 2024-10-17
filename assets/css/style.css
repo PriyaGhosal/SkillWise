@@ -418,7 +418,7 @@ body.nav-active .navbar-list .navbar-link {
 .header .container,
 .navbar-top {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
 }
 
@@ -967,7 +967,7 @@ button:hover {
   /* Media query for smaller screens */
   @media (max-width: 768px) {
     .container {
-      flex-direction: column;
+      flex-direction: row;
       align-items: center;
       gap: 20px;
     }
@@ -1445,22 +1445,27 @@ button:hover {
 \*-----------------------------------*/
 
 /**
- * responsive for large than 575px screen
+ * responsive for Smaller than 575px screen
  */
 
-@media (min-width: 575px) {
+@media (max-width: 575px) {
   /**
    * REUSED STYLE
    */
 
   .container {
-    max-width: 640px;
+    /* max-width: 640px; */
     width: 100%;
-    margin-inline: auto;
+    /* margin-inline: auto; */
+    margin-left: 0;
   }
 
   .card {
     padding: 32px;
+  }
+
+  .nav-open-btn{
+    margin-right: 20px;
   }
 }
 
@@ -1468,7 +1473,7 @@ button:hover {
  * responsive for large than 768px screen
  */
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   /**
    * CUSTOM PROPERTY
    */
@@ -1492,9 +1497,6 @@ button:hover {
    * REUSED STYLE
    */
 
-  .container {
-    max-width: 768px;
-  }
 
   .grid-list {
     grid-template-columns: 1fr 1fr;
@@ -1535,6 +1537,7 @@ button:hover {
 
   .container {
     max-width: 1024px;
+    margin-left: 0;
   }
 
   .btn {
@@ -1553,6 +1556,13 @@ button:hover {
   .navbar-top {
     display: none;
   }
+
+  /* .nav-open-btn{
+    display: flex;
+    justify-content: flex-end;
+    
+    align-items: end;
+  } */
 
   .navbar,
   .navbar.active {
@@ -1627,6 +1637,7 @@ button:hover {
 
   .container {
     max-width: 1170px;
+    margin-left: 0;
   }
 
   /**
@@ -1841,10 +1852,10 @@ button:hover {
     gap: 30px;
   }
 
-  #theme-toggle {
-    right: 125px;
-    top: 5px;
-  }
+  /* #theme-toggle {
+    /* right: 125px; */
+    /* top: 5px; */
+  /* } */ */
 
   /* Can be used if wanting a more linear Instagram post feed but as a viewer I like the grid better
   .footer-top .grid-list {
