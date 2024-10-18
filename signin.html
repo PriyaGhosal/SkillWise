@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SkillWise - Sign In</title>
     <link rel="stylesheet" href="assets/css/signin.css">
-    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
 </head>
 <body style="overflow: hidden;">
   <header>
@@ -36,7 +36,7 @@
                 </div>
                 <div class="input-group">
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Enter your email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Please enter a valid email address">
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
                 </div>
                 <div class="input-group">
                     <label for="password">Password</label>
@@ -45,23 +45,30 @@
                         <i class="fa-solid fa-eye-slash" id="togglePassword"></i>
                     </div>
                 </div>
+                <!-- <div class="strength-bar">
+                    <div id="strengthBar" class="strength-bar-inner"></div>
+                </div>
+                <p class="suggestion">
+                  <small>Use special characters and numbers for a strong password</small>
+                </p> -->
                 <button type="submit" class="signin-btn">Sign In</button>
                 <p class="signup-link">Don't have an account? <a href="./signup.html">Sign up here</a></p>
             </form>
         </div>
     </div>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script>
+    <script >
         const togglePassword = document.querySelector("#togglePassword");
-        const passwordInput = document.querySelector("#password");
+const passwordInput = document.querySelector("#password");
 
-        togglePassword.addEventListener("click", function () {
-            const type = passwordInput.getAttribute("type") === "password" ? "text" : "password";
-            passwordInput.setAttribute("type", type);
+togglePassword.addEventListener("click", function () {
+  const type = passwordInput.getAttribute("type") === "password" ?  "text": "password";
+  passwordInput.setAttribute("type", type);
 
-            this.classList.toggle("fa-eye-slash");
-            this.classList.toggle("fa-eye");
-        });
+  this.classList.toggle("fa-eye-slash");
+  this.classList.toggle("fa-eye");
+});
+
     </script>
 
 </body>
