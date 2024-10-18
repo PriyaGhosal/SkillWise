@@ -1,5 +1,8 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
     <style>
         body {
@@ -88,11 +91,28 @@
         .signup-link a:hover {
             text-decoration: underline;
         }
+
+        .home-button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-bottom: 15px; /* Space between Home button and form */
+        }
+
+        .home-button:hover {
+            background-color: #0056b3;
+        }
     </style>
 </head>
 <body>
 
     <div class="login-container">
+        <button class="home-button" onclick="window.location.href='./index.html'">Home</button>
         <h2>Login</h2>
         <form action="/login" method="post">
             <input type="text" name="username" placeholder="Username" required>
