@@ -4,72 +4,144 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SkillWise - Sign In</title>
-    <link rel="stylesheet" href="assets/css/signin.css">
-  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f4ff; /* Soft light blue */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .form-container {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            text-align: center;
+            opacity: 0; /* Start hidden for animation */
+            transform: translateY(20px); /* Slide effect */
+            animation: fadeInUp 0.6s forwards; /* Animation */
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .form-container h1 {
+            margin-bottom: 20px;
+            color: #1976d2; /* Dark blue */
+            font-size: 28px;
+        }
+        .form-container p {
+            margin-bottom: 30px;
+            color: #555;
+        }
+        .input-group {
+            margin-bottom: 20px;
+            position: relative;
+        }
+        .input-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+            text-align: left;
+        }
+        .input-group input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #90caf9; /* Light blue */
+            border-radius: 8px;
+            transition: border-color 0.3s;
+            font-size: 16px;
+        }
+        .input-group input:focus {
+            border-color: #1976d2; /* Dark blue on focus */
+            outline: none;
+        }
+        .password {
+            position: relative;
+        }
+        .password i {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            cursor: pointer;
+            color: #888;
+        }
+        .signin-btn {
+            width: 100%;
+            padding: 12px;
+            background-color: #1976d2; /* Dark blue */
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s, transform 0.2s; /* Added transform */
+            margin-top: 10px;
+        }
+        .signin-btn:hover {
+            background-color: #1565c0; /* Darker blue on hover */
+            transform: translateY(-2px); /* Slight lift on hover */
+        }
+        .link-container {
+            margin-top: 20px;
+            color: #555;
+        }
+        .link-container a {
+            color: #1976d2;
+            text-decoration: none;
+        }
+        .link-container a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
-<body style="overflow: hidden;">
-  <header>
-    <nav class="navbar">
-      <a href="./index.html" class="logo">SkillWise</a>
-      <ul style="margin-right: 2rem;">
-        <li>
-          <a href="./index.html" class="nav-link" style="margin-right: 0.5rem;">Home</a>
-          <i class="fa-solid fa-house"></i>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  
-    <div class="container">
-        <div class="form-container">
-            <!-- Add SkillWise Icon/Logo -->
-            <img src="assets/images/Skillwise_logo.jpg" alt="SkillWise Logo" class="logo">
-            
-            <h1>Welcome to <span class="brand">SkillWise</span></h1>
-            <p><strong>Sign in</strong> to access your learning dashboard</p>
-            
-            <form action="#" method="POST">
-                <div class="input-group">
-                    <label for="username">Username</label>
-                    <input type="text" id="username" name="username" placeholder="Enter your username" required>
+<body>
+    <div class="form-container">
+        <h1>SkillWise Sign In</h1>
+        <p><strong>Welcome Back!</strong> Please enter your details below.</p>
+        
+        <form action="#" method="POST">
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <div class="password">
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                    <i class="fa-solid fa-eye-slash" id="togglePassword"></i>
                 </div>
-                <div class="input-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
-                </div>
-                <div class="input-group">
-                    <label for="password">Password</label>
-                    <div class="password">
-                        <input type="password" id="password" name="password" placeholder="Enter your password">
-                        <i class="fa-solid fa-eye-slash" id="togglePassword"></i>
-                    </div>
-                </div>
-                <!-- <div class="strength-bar">
-                    <div id="strengthBar" class="strength-bar-inner"></div>
-                </div>
-                <p class="suggestion">
-                  <small>Use special characters and numbers for a strong password</small>
-                </p> -->
-                <button type="submit" class="signin-btn">Sign In</button>
-                <p class="signup-link">Don't have an account? <a href="./signup.html">Sign up here</a></p>
-            </form>
-        </div>
+            </div>
+            <button type="submit" class="signin-btn">Sign In</button>
+            <div class="link-container">
+                <p>Don't have an account? <a href="./signup.html">Sign up here</a></p>
+                <p><a href="./forgot-password.html">Forgot Password?</a></p>
+            </div>
+        </form>
     </div>
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script >
+
+    <script>
         const togglePassword = document.querySelector("#togglePassword");
-const passwordInput = document.querySelector("#password");
+        const passwordInput = document.querySelector("#password");
 
-togglePassword.addEventListener("click", function () {
-  const type = passwordInput.getAttribute("type") === "password" ?  "text": "password";
-  passwordInput.setAttribute("type", type);
-
-  this.classList.toggle("fa-eye-slash");
-  this.classList.toggle("fa-eye");
-});
-
+        togglePassword.addEventListener("click", function () {
+            const type = passwordInput.getAttribute("type") === "password" ? "text" : "password";
+            passwordInput.setAttribute("type", type);
+            this.classList.toggle("fa-eye-slash");
+            this.classList.toggle("fa-eye");
+        });
     </script>
-
 </body>
 </html>
