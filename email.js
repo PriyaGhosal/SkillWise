@@ -16,3 +16,15 @@
       });
   });
   
+  JavaScript to toggle dark mode
+const toggleDarkMode = () => {
+    document.body.classList.toggle('dark-mode');
+    const logo = document.getElementById('logo');
+    
+    // Change the logo based on the mode
+    if (document.body.classList.contains('dark-mode')) {
+        logo.src = 'path/to/your/logo-dark.png'; // Dark mode logo
+    } else {
+        logo.src = 'path/to/your/logo-light.png'; // Light mode logo
+    }
+};
