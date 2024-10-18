@@ -1,11 +1,129 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>UI/UX Design Courses</title>
+  
   <link rel="stylesheet" href="assets/css/uiux.css">
+
+  <style>
+    /* Global Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #42d9d1;
+      color: #ca4141;
+    }
+
+    header {
+      background-color: #c7d57c;
+      color: rgb(232, 16, 113);
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    /* Search Bar Styles */
+    .search-container {
+      display: flex;
+      justify-content: center;
+      margin: 20px 0;
+    }
+
+    .search-box {
+      padding: 10px;
+      width: 300px;
+      border: 2px solid #333;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    .search-btn {
+      padding: 10px 20px;
+      background-color: #c6d88f;
+      color: rgb(211, 114, 114);
+      border: none;
+      border-radius: 5px;
+      margin-left: 10px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .search-btn:hover {
+      background-color: #45a049;
+    }
+
+    /* Course List Styles */
+    .course-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      margin: 20px;
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .card-icon img {
+      border-radius: 10px;
+    }
+
+    .title-lg {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .title-sm {
+      font-size: 1rem;
+      margin-bottom: 15px;
+      color: #666;
+    }
+
+    .buy-now-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #ff6600;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .buy-now-btn:hover {
+      background-color: #e65c00;
+    }
+
+    .layer-link {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      text-decoration: none;
+      color: inherit;
+    }
+  </style>
 </head>
 
 <body>
@@ -13,80 +131,13 @@
     <h1>UI/UX Design Courses</h1>
   </header>
 
+  <!-- Search Bar Section -->
+  <div class="search-container">
+    <input type="text" class="search-box" placeholder="Search courses...">
+    <button class="search-btn">Search</button>
+  </div>
+
+  <!-- Courses List -->
   <ul class="course-list">
     <li class="card category-card">
       <div class="card-icon">
-        <img src="./assets/images/img1.jpg" width="72" height="72" alt="Course 1 icon">
-      </div>
-      <div>
-        <h3 class="title-lg">Intro to UI/UX Design</h3>
-        <p class="title-sm">Beginner-friendly introduction to the basics of UI/UX.</p>
-        <a href="#" class="buy-now-btn">Buy Now</a>
-      </div>
-      <a href="#" class="layer-link" aria-label="Intro to UI/UX Design"></a>
-    </li>
-
-    <li class="card category-card">
-      <div class="card-icon">
-        <img src="./assets/images/img2.jpg" width="72" height="72" alt="Course 2 icon">
-      </div>
-      <div>
-        <h3 class="title-lg">Advanced Prototyping Techniques</h3>
-        <p class="title-sm">Master advanced prototyping for smooth UI/UX transitions.</p>
-        <a href="#" class="buy-now-btn">Buy Now</a>
-      </div>
-      <a href="#" class="layer-link" aria-label="Advanced Prototyping Techniques"></a>
-    </li>
-
-    <li class="card category-card">
-      <div class="card-icon">
-        <img src="./assets/images/img3.jpg" width="72" height="72" alt="Course 3 icon">
-      </div>
-      <div>
-        <h3 class="title-lg">User Research Fundamentals</h3>
-        <p class="title-sm">Understand your users and their needs to design better experiences.</p>
-        <a href="#" class="buy-now-btn">Buy Now</a>
-      </div>
-      <a href="#" class="layer-link" aria-label="User Research Fundamentals"></a>
-    </li>
-
-    <li class="card category-card">
-      <div class="card-icon">
-        <img src="./assets/images/img4.jpg" width="72" height="72" alt="Course 4 icon">
-      </div>
-      <div>
-        <h3 class="title-lg">Design Systems & Guidelines</h3>
-        <p class="title-sm">Learn how to create consistent and scalable design systems.</p>
-        <a href="#" class="buy-now-btn">Buy Now</a>
-      </div>
-      <a href="#" class="layer-link" aria-label="Design Systems & Guidelines"></a>
-    </li>
-
-    <li class="card category-card">
-      <div class="card-icon">
-        <img src="./assets/images/img5.jpg" width="72" height="72" alt="Course 5 icon">
-      </div>
-      <div>
-        <h3 class="title-lg">UX for Mobile Devices</h3>
-        <p class="title-sm">Design user-friendly experiences for mobile applications.</p>
-        <a href="#" class="buy-now-btn">Buy Now</a>
-      </div>
-      <a href="#" class="layer-link" aria-label="UX for Mobile Devices"></a>
-    </li>
-
-    <li class="card category-card">
-      <div class="card-icon">
-        <img src="./assets/images/img6.jpg" width="72" height="72" alt="Course 6 icon">
-      </div>
-      <div>
-        <h3 class="title-lg">Web Accessibility in UI/UX</h3>
-        <p class="title-sm">Ensure your designs are accessible to all users.</p>
-        <a href="#" class="buy-now-btn">Buy Now</a>
-      </div>
-      <a href="#" class="layer-link" aria-label="Web Accessibility in UI/UX"></a>
-    </li>
-  </ul>
-
-</body>
-
-</html>
