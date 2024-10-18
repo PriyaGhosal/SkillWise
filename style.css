@@ -190,3 +190,41 @@
   top: 20px;
   
 }
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: white; /* Light mode background */
+}
+
+.logo {
+  max-width: 150px; /* Adjust size as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.content {
+  padding: 20px;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #121212; /* Dark mode background */
+  color: white; /* Dark mode text color */
+}
+
+body.dark-mode .header {
+  background-color: #1e1e1e; /* Dark mode header background */
+}
+
+body.dark-mode .logo {
+  content: url('path/to/your/logo-dark.png'); /* Dark mode logo */
+}
