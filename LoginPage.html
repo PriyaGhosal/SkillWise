@@ -5,120 +5,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
     <style>
+        /* General styles */
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .header {
+            background-color: #f5f5f5;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
 
         .login-container {
             background-color: white;
             padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-            width: 350px;
-        }
-
-        h2 {
-            text-align: center;
-            margin-bottom: 20px;
-            color: #333;
-        }
-
-        input[type="text"], input[type="password"] {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ccc;
             border-radius: 5px;
-            font-size: 14px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
 
-        .remember-me {
-            display: flex;
-            align-items: center;
-            margin: 10px 0;
-        }
-
-        .remember-me input[type="checkbox"] {
-            margin-right: 10px;
-        }
-
-        .forgot-password {
-            text-align: right;
+        .form-group {
             margin-bottom: 15px;
         }
 
-        .forgot-password a {
-            color: #007bff;
-            text-decoration: none;
-            font-size: 14px;
+        label {
+            display: block;
+            margin-bottom: 5px;
         }
 
-        .forgot-password a:hover {
-            text-decoration: underline;
-        }
-
-        button {
+        input[type="email"],
+        input[type="password"] {
             width: 100%;
             padding: 10px;
-            background-color: #28a745;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .btn {
+            background-color: #ff66b2;
             color: white;
+            padding: 12px;
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            font-size: 16px;
+            width: 100%;
         }
 
-        button:hover {
-            background-color: #218838;
-        }
-
-        .signup-link {
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        .signup-link a {
-            color: #007bff;
-            text-decoration: none;
-        }
-
-        .signup-link a:hover {
-            text-decoration: underline;
+        .btn:hover {
+            background-color: #ff3399;
         }
     </style>
 </head>
 <body>
-
+    <div class="header">
+        <h1>Login to Your Account</h1>
+    </div>
     <div class="login-container">
-        <h2>Login</h2>
-        <form action="/login" method="post">
-            <input type="text" name="username" placeholder="Username" required>
-            <input type="password" name="password" placeholder="Password" required>
-            
-            <div class="remember-me">
-                <input type="checkbox" name="remember"> <label for="remember">Remember Me</label>
+        <form>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
             </div>
-
-            <div class="forgot-password">
-                <a href="./forgot-password.html">Forgot Password?</a> <!-- Link to forgot password page -->
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" required>
             </div>
-
-            <button type="submit">Login</button>
-
-            <div class="signup-link">
-                Don't have an account? <a href="./signup.html">Sign up</a> <!-- Link to sign up page -->
-            </div>
+            <button type="submit" class="btn">Login</button>
         </form>
     </div>
-    <footer>
-        <p><a href="SkillWise/LICENSE/MIT_License.txt">MIT License</a></p>
-    </footer>
-
 </body>
 </html>
