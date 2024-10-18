@@ -159,13 +159,33 @@
     body.dark-mode footer {
       background-color: var(--dark-heading-color);
     }
+    
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2.5rem;
+      }
+      
+      h2 {
+        font-size: 1.6rem;
+      }
+      
+      p {
+        font-size: 1rem;
+      }
+      
+      .navbar {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
   </style>
 </head>
 
 <body>
 
   <!-- Fixed Dark Mode Toggle Button -->
-  <button class="toggle-dark-mode" id="dark-mode-toggle">🌙 Toggle Mode</button>
+  <button class="toggle-dark-mode" id="dark-mode-toggle" aria-label="Toggle Dark Mode">🌙 Toggle Mode</button>
 
   <!-- Header -->
   <header class="header">
