@@ -1,6 +1,6 @@
 <div align="center">
 
-# `SkillWise Sankar`
+# `SkillWise`
 
 <br>
 <img src='./readme-images/desktop.png'>
