@@ -395,6 +395,7 @@ body.nav-active {
 }
 
 .navbar-item:not(:last-child) {
+  width: 22rem;
   border-block-end: 1px solid var(--black_10);
 }
 
@@ -423,6 +424,7 @@ body.nav-active {
 .overlay.active {
   opacity: 0.6;
   visibility: visible;
+  width: 25rem;
 }
 
 /*-----------------------------------*\
