@@ -1,145 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- 
-    - primary meta tags
-  -->
+    <!-- Primary meta tags -->
     <title>SkillWise</title>
     <meta name="title" content="SkillWise" />
-    <meta
-      name="description"
-      content="This is a education html template made by Priya Ghosal"
-    />
+    <meta name="description" content="This is an education HTML template made by Priya Ghosal" />
 
-    <!-- 
-    - favicon
-  -->
+    <!-- Favicon -->
     <link rel="shortcut icon" href="../favicon.svg" type="image/svg+xml" />
 
-    <!-- 
-    - custom font link
-  -->
+    <!-- Custom font link -->
     <link rel="stylesheet" href="../assets/font/font.css" />
 
-    <!-- 
-    - custom css link
-  -->
+    <!-- Custom CSS link -->
     <link rel="stylesheet" href="../assets/css/style.css" />
 
-    <!-- 
-    - preload images
-  -->
+    <!-- Preload images -->
     <link rel="preload" as="image" href="../assets/images/hero-banner.png" />
     <link rel="preload" as="image" href="../assets/images/hero-bg.png" />
-  </head>
-  <body>
-    <!-- 
-    - PRELOADER
-  -->
-
+</head>
+<body>
+    <!-- Preloader -->
     <div class="preloader" data-preloader>
-      <div class="circle" data-circle></div>
+        <div class="circle" data-circle></div>
     </div>
 
-    <!-- 
-    - #HEADER
-  -->
-
+    <!-- Header -->
     <header class="header" data-header>
-      <div class="container">
-        <a>
-          <img
-            src="../assets/images/Skillwise_logo.jpg"
-            width="50"
-            height="10"
-            alt="SkillWise home"
-          />
-        </a>
-
-        <nav class="navbar" data-navbar>
-          <div class="navbar-top">
-            <a>
-              <img
-                src="../assets/images/Skillwise_logo.jpg"
-                width="50"
-                height="10"
-                alt="SkillWise home"
-              />
+        <div class="container">
+            <a href="#">
+                <img src="../assets/images/Skillwise_logo.jpg" width="50" height="50" alt="SkillWise home" />
             </a>
 
-            <button
-              class="nav-close-btn"
-              aria-label="close menu"
-              data-nav-toggler
-            >
-              <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+            <nav class="navbar" data-navbar>
+                <div class="navbar-top">
+                    <a href="#">
+                        <img src="../assets/images/Skillwise_logo.jpg" width="50" height="50" alt="SkillWise home" />
+                    </a>
+                    <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+                        <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                </div>
+
+                <ul class="navbar-list">
+                    <li class="navbar-item">
+                        <a href="/index.html" class="navbar-link title-sm" data-nav-link>Home</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="/pages/courses.html" class="navbar-link title-sm" data-nav-link>Courses</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="/pages/blog.html" class="navbar-link title-sm" data-nav-link>Blog</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="/pages/contact.html" class="navbar-link title-sm" data-nav-link>Contacts</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <a href="./signin.html" class="btn btn-secondary">Start Free Trial</a>
+
+            <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+                <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
             </button>
-          </div>
 
-          <ul class="navbar-list">
-            <li class="navbar-item">
-              <a href="/index.html" class="navbar-link title-sm" data-nav-link
-                >Home</a
-              >
-            </li>
-
-            <li class="navbar-item">
-              <a
-                href="/pages/courses.html"
-                class="navbar-link title-sm"
-                data-nav-link
-                >Courses</a
-              >
-            </li>
-
-            <li class="navbar-item">
-              <a
-                href="/pages/blog.html"
-                class="navbar-link title-sm"
-                data-nav-link
-                >Blog</a
-              >
-            </li>
-
-            <li class="navbar-item">
-              <a
-                href="/pages/contact.html"
-                class="navbar-link title-sm"
-                data-nav-link
-                >Contacts</a
-              >
-            </li>
-          </ul>
-        </nav>
-
-        <a href="./signin.html" class="btn btn-secondary">Start Free Trial</a>
-
-        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
-          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
-        </button>
-
-        <div class="overlay" data-overlay data-nav-toggler></div>
-      </div>
+            <div class="overlay" data-overlay data-nav-toggler></div>
+        </div>
     </header>
 
-    <!-- 
-   - custom js link
-  -->
+    <!-- Custom JS link -->
     <script src="../assets/js/script.js"></script>
 
-    <!-- 
-    - ionicon
-  -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-  </body>
+    <!-- Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
 </html>
