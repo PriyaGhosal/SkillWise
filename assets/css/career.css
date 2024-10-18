@@ -1,40 +1,90 @@
-* {
-    font-size: large;
+.section {
+    color: black;
+    margin: 0;
 }
 
-body {
-    margin-top: 180px;
+#position {
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.my-3 {
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+}
+
+.mb-3 {
+    margin-bottom: 1rem !important;
+}
+
+.mt-3 {
+    margin-top: 1rem !important;
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem !important;
+}
+
+.mb-5 {
+    margin-bottom: 3rem !important;
+}
+
+.p-5 {
+    padding: 3rem;
 }
 
 .application-form {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 500px;
+    color: #000;
 }
 
-.helpful-buttons {
-    margin-top: 10px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
+.fw-bold {
+    font-weight: bold !important;
 }
 
-.helpful-btn {
-    padding: 5px 10px;
-    border: none;
-    background-color: #007bff;
+.form-select {
+    border: 1px solid #ced4da;
+    border-radius: 0.3rem;
+}
+
+.form-select:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25) !important;
+}
+
+.submit-button {
+    background-color: hsl(357, 100%, 75%);
     color: white;
-    cursor: pointer;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
+    text-align: center !important;
+    display: inline-block;
+    font-weight: 400;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    padding: 1rem;
+    border-radius: 0.25rem;
+
 }
 
-.helpful-btn:hover {
-    background-color: #0056b3;
+.w-100 {
+    width: 100% !important;
 }
 
-.helpful-result {
-    margin-left: 10px;
-    font-weight: bold;
+.submit-button:hover {
+    background-color: hsl(357, 72%, 67%);
+
+}
+
+.form-group input {
+    background-color: #fff;
+}
+
+.internship-form {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25) !important;
+    border-radius: 45px;
+    padding: 2%;
 }
