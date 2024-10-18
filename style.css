@@ -1,13 +1,18 @@
 #contact {
     padding: 50px 0;
-    background-color: #008080; 
+    background-color: #ee03fa2f; 
     position: relative; 
+    width: 89%;
+    margin:5%;
+    border-radius: 10px;
   }
   
   #contact .container {
     max-width: 800px;
     margin: 0 auto;
     padding: 0 15px;
+   
+    
   }
   
   /* Section Title */

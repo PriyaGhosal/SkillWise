@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
   <!-- 
     - primary meta tags
   -->
@@ -1437,22 +1437,24 @@
     - #Contact Us
   -->
 
-    <section id="contact" class="cta" aria-labelledby="cta-label">
+    <section id="contact" class="cta" aria-labelledby="cta-label " style="background-color:#FF91A4 ">
      
       <div class="container" style="align-items: center;
       justify-content: center;
       display: flex;
       flex-direction: column;
-      gap: 10px;">
-  
-        <h2 class="headline-md section-title" id="cta-label" data-aos="fade-right" style="font-size: clamp(4rem, 100px, 3vw);">
+      gap: 10px;
+      ">
+ 
+        <h2 class="headline-md section-title" id="cta-label" data-aos="fade-right" style="font-size: clamp(4rem, 100px, 3vw);color:black">
           Contact Us.
         </h2>
         
-        <form id="contact-form" data-aos="fade-left" style="
+        <form id="contact-form"  data-tilt data-tilt-glare data-aos="fade-left" style="
         max-width: 90%;
         width: 400px;
-        background-color: #2e2e2e87;
+        background-color: #fa9cad ;
+        backdrop-filter: blur(10px);
         padding: 20px;
         border-radius: 10px;
         box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
@@ -1472,9 +1474,9 @@
           background-color: #f9f9f9;
           transition: border-color 0.3s ease, box-shadow 0.3s ease;
         " onfocus="this.style.borderColor='#ff66b2'; this.style.boxShadow='0 0 10px rgba(255, 102, 178, 0.3)'"
-            onblur="this.style.borderColor='#ccc'; this.style.boxShadow='none'">
+            onblur="this.style.borderColor='#ccc'; this.style.boxShadow='none'" autocomplete="off">
 
-          <input type="email" name="email" placeholder="Your Email" required style="
+          <input type="email" name="email" autocomplete="off"  placeholder="Your Email" required style="
           width: 100%;
           padding: 12px;
           margin: 8px 0;
@@ -1597,6 +1599,15 @@
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <script src="./assets/js/ScrollToTop.js"></script>
+  <script>
+    //vanilla-tilt.js for 3d effect
+    VanillaTilt.init(document.querySelectorAll('[data-tilt]'), {
+      max: 20,
+      speed: 1000,
+      glare: true, // Enables glare effect
+      'max-glare': 0.5, // Adjust glare opacity
+    });
+  </script>
 </body>
 
 </html>
