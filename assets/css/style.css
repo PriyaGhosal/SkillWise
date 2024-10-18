@@ -97,7 +97,7 @@ img,
 span,
 button,
 ion-icon {
-  display: flex;
+  display:flex;
 }
 
 a {
@@ -148,16 +148,13 @@ body.nav-active {
 .navbar-link {
   position: relative;
   display: inline-block;
-  color: #545454;
-  /* Default color for the regular navbar */
+  color: #545454; /* Default color for the regular navbar */
   text-decoration: none;
   font-weight: 500;
   padding-bottom: 5px;
 }
-
 body.nav-active .navbar-list .navbar-link {
-  color: #4c4b4b;
-  /* Set a different color for hamburger items */
+  color: #4c4b4b; /* Set a different color for hamburger items */
 }
 
 
@@ -170,8 +167,7 @@ body.nav-active .navbar-list .navbar-link {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #ff69b4;
-  /* Pink color for the underline */
+  background-color: #ff69b4; /* Pink color for the underline */
   transition: width 0.3s ease-in-out;
 }
 
@@ -181,10 +177,8 @@ body.nav-active .navbar-list .navbar-link {
 }
 
 .navbar-link:hover {
-  color: #ff69b4;
-  /* Change text color to pink on hover */
-  transition: color 0.3s ease-in-out;
-  /* Smooth transition for the text color */
+  color: #ff69b4; /* Change text color to pink on hover */
+  transition: color 0.3s ease-in-out; /* Smooth transition for the text color */
 }
 
 
@@ -307,9 +301,11 @@ body.nav-active .navbar-list .navbar-link {
   padding: 24px;
   border-radius: var(--radius-8);
   transition: var(--transition);
-  background: linear-gradient(135deg,
-      rgba(255, 255, 255, 0.1),
-      rgba(255, 255, 255, 0));
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-radius: 20px;
@@ -390,8 +386,6 @@ body.nav-active .navbar-list .navbar-link {
 }
 
 .header {
-  display: flex;
-  justify-content: center;
   position: absolute;
   top: 0;
   left: 0;
@@ -449,7 +443,6 @@ body.nav-active .navbar-list .navbar-link {
   transition: 0.5s var(--cubic-out);
   visibility: visible;
   transform: translateX(320px);
-  width: 22rem;
 }
 
 .navbar-top {
@@ -464,9 +457,9 @@ body.nav-active .navbar-list .navbar-link {
   margin: 0px;
 }
 
-/* .navbar-item:not(:last-child) {
+.navbar-item:not(:last-child) {
   border-block-end: 1px solid var(--black_10);
-} */
+}
 
 .navbar-link {
   padding-block: 8px;
@@ -496,7 +489,6 @@ body.nav-active .navbar-list .navbar-link {
   opacity: 1;
   visibility: visible;
   backdrop-filter: blur(15);
-  width: 25rem;
 }
 
 /*-----------------------------------*\
@@ -929,62 +921,60 @@ button:hover {
 .cta .headline-md {
   color: var(--white);
 }
-
 #contact-form textarea::placeholder {
   font-family: var(--ff-gilroy);
 }
 
-.livecounting {
+  .livecounting {
   margin-top: 100px;
-}
-
-
-.livecounting-container {
-  display: flex;
-  gap: 30px;
-  padding: 20px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.live-count {
-  min-width: 200px;
-  height: 150px;
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-
-.live-count-emoji {
-  font-size: 30px;
-  color: black;
-}
-
-.live-count-text-count {
-  font-size: 20px;
-  font-weight: bold;
-  color: black;
-}
-
-.live-count-text-wrapper {
-  font-size: 14px;
-  color: gray;
-}
-
-/* Media query for smaller screens */
-@media (max-width: 768px) {
-  .container {
-    /* flex-direction: column;
-    align-items: center; */
-    gap: 6rem;
   }
-}
 
+
+  .livecounting-container {
+    display: flex;
+    gap: 30px; 
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .live-count {
+    min-width: 200px;
+    height: 150px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .live-count-emoji {
+    font-size: 30px;
+    color: black;
+  }
+
+  .live-count-text-count {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+  }
+
+  .live-count-text-wrapper {
+    font-size: 14px;
+    color: gray;
+  }
+
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+  }
 .cta .btn {
   margin-inline: auto;
   color: var(--white);
@@ -1023,11 +1013,13 @@ button:hover {
   position: relative;
   display: flex;
   overflow: hidden;
-  -webkit-mask-image: linear-gradient(90deg,
-      transparent,
-      #fff 20%,
-      #fff 80%,
-      transparent);
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    transparent,
+    #fff 20%,
+    #fff 80%,
+    transparent
+  );
 }
 
 .scroll span img {
@@ -1478,12 +1470,12 @@ button:hover {
 /**
  * responsive for large than 768px screen
  */
- /* .nav-open-btn{
+ .nav-open-btn{
   position: absolute;
   right:0;
   margin-right: 5vw;
   margin-top: 0.8vw;
- } */
+ }
 
 @media (min-width: 768px) {
   /**
@@ -1805,8 +1797,9 @@ body.dark-mode .btn:hover {
 /* .navbar-link {
   color: var(--white);
   /* Dark text for visibility */
-/* } */
-*/ .navbar-link:hover {
+/* } */ */
+
+.navbar-link:hover {
   background-color: var(--light-background-hover);
   /* Highlight on hover */
   color: var(--dark-text);
@@ -1825,7 +1818,6 @@ textarea {
   border: 1px solid #ccc;
   border-radius: 5px;
 }
-
 button {
   padding: 15px;
   background-color: #007bff;
@@ -1885,7 +1877,7 @@ button:hover {
     justify-content: center;
   }
 
-  ul.footer-list.instagram>li>p.footer-list-title {
+  ul.footer-list.instagram > li > p.footer-list-title {
     display: block;
     margin-bottom: 5px;
   }
@@ -1920,8 +1912,10 @@ button:hover {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background: var(--gradient-2,
-      linear-gradient(90deg, var(--light-coral) 20%, var(--selective-yellow) 100%));
+  background: var(
+    --gradient-2,
+    linear-gradient(90deg, var(--light-coral) 20%, var(--selective-yellow) 100%)
+  );
   border: 0;
   display: inline-block;
   transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
