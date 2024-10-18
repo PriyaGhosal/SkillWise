@@ -88,6 +88,22 @@
         .signup-link a:hover {
             text-decoration: underline;
         }
+
+        .trial-button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-bottom: 10px; /* Add some spacing below the button */
+        }
+
+        .trial-button:hover {
+            background-color: #0056b3;
+        }
     </style>
 </head>
 <body>
@@ -107,6 +123,8 @@
             </div>
 
             <button type="submit">Login</button>
+
+            <button class="trial-button" onclick="window.location.href='/login';">Start Free Trial</button>
 
             <div class="signup-link">
                 Don't have an account? <a href="#">Sign up</a>
