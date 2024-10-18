@@ -154,7 +154,7 @@ body.nav-active {
   padding-bottom: 5px;
 }
 body.nav-active .navbar-list .navbar-link {
-  color: #4c4b4b; /* Set a different color for hamburger items */
+  color: #442e2e; /* Set a different color for hamburger items */
 }
 
 
@@ -177,7 +177,7 @@ body.nav-active .navbar-list .navbar-link {
 }
 
 .navbar-link:hover {
-  color: #ff69b4; /* Change text color to pink on hover */
+  color: #a64073; /* Change text color to pink on hover */
   transition: color 0.3s ease-in-out; /* Smooth transition for the text color */
 }
 
@@ -401,7 +401,7 @@ body.nav-active .navbar-list .navbar-link {
   animation: headerActive 0.5s ease forwards;
 
   .searchBox {
-    background: hsl(0deg 89.85% 94.83%);
+    background: hsla(0, 92%, 95%, 0.956);
   }
 }
 
@@ -1013,6 +1013,8 @@ button:hover {
   position: relative;
   display: flex;
   overflow: hidden;
+
+  /* Vendor-prefixed property for WebKit browsers */
   -webkit-mask-image: linear-gradient(
     90deg,
     transparent,
@@ -1020,8 +1022,16 @@ button:hover {
     #fff 80%,
     transparent
   );
-}
 
+  /* Standard property for other browsers */
+  mask-image: linear-gradient(
+    90deg,
+    transparent,
+    #fff 20%,
+    #fff 80%,
+    transparent
+  );
+}
 .scroll span img {
   max-width: 30px;
   margin-right: 8px;
