@@ -1,92 +1,110 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            font-family: Arial, sans-serif; 
+            background-color: #f4f4f4; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; 
             margin: 0;
         }
 
         .login-container {
-            background-color: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-            width: 350px;
+            background-color: white; 
+            padding: 30px; 
+            border-radius: 10px; 
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); 
+            width: 350px; 
         }
 
         h2 {
             text-align: center;
-            margin-bottom: 20px;
-            color: #333;
+            margin-bottom: 20px; 
+            color: #333; 
         }
 
-        input[type="text"], input[type="password"] {
-            width: 100%;
-            padding: 10px;
+        input[type="text"],
+        input[type="password"] {
+            width: 100%; 
+            padding: 10px; 
             margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 5px;
+            border: 1px solid #ccc; 
+            border-radius: 5px; 
             font-size: 14px;
         }
 
         .remember-me {
-            display: flex;
-            align-items: center;
-            margin: 10px 0;
+            display: flex; /* Flexbox for checkbox and label */
+            align-items: center; 
+            margin: 10px 0; 
         }
 
         .remember-me input[type="checkbox"] {
-            margin-right: 10px;
+            margin-right: 10px; 
         }
 
         .forgot-password {
-            text-align: right;
+            text-align: right; 
             margin-bottom: 15px;
         }
 
         .forgot-password a {
-            color: #007bff;
-            text-decoration: none;
-            font-size: 14px;
+            color: #007bff; 
+            text-decoration: none; 
+            font-size: 14px; 
         }
 
         .forgot-password a:hover {
-            text-decoration: underline;
+            text-decoration: underline; 
         }
 
         button {
             width: 100%;
-            padding: 10px;
-            background-color: #28a745;
+            padding: 10px; 
+            background-color: #28a745; 
             color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
+            border: none; 
+            border-radius: 5px; 
+            cursor: pointer; 
+            font-size: 16px; 
         }
 
         button:hover {
-            background-color: #218838;
+            background-color: #218838; /* Darker green on hover */
         }
 
         .signup-link {
-            text-align: center;
-            margin-top: 20px;
+            text-align: center; /* Center the signup link */
+            margin-top: 20px; 
         }
 
         .signup-link a {
-            color: #007bff;
-            text-decoration: none;
+            color: #007bff; /* Blue color for link */
+            text-decoration: none; 
         }
 
         .signup-link a:hover {
-            text-decoration: underline;
+            text-decoration: underline; 
+        }
+
+        footer {
+            text-align: center; 
+            margin-top: 20px; 
+        }
+
+        footer a {
+            color: #007bff; /* Blue color for license link */
+            text-decoration: none; 
+        }
+
+        footer a:hover {
+            text-decoration: underline; /* Underline on hover */
         }
     </style>
 </head>
@@ -95,11 +113,12 @@
     <div class="login-container">
         <h2>Login</h2>
         <form action="/login" method="post">
-            <input type="text" name="username" placeholder="Username" required>
-            <input type="password" name="password" placeholder="Password" required>
+            <input type="text" name="username" placeholder="Enter your username" required>
+            <input type="password" name="password" placeholder="Enter your password" required>
             
             <div class="remember-me">
-                <input type="checkbox" name="remember"> <label for="remember">Remember Me</label>
+                <input type="checkbox" name="remember" id="remember">
+                <label for="remember">Remember Me</label>
             </div>
 
             <div class="forgot-password">
@@ -113,6 +132,7 @@
             </div>
         </form>
     </div>
+
     <footer>
         <p><a href="SkillWise/LICENSE/MIT_License.txt">MIT License</a></p>
     </footer>
