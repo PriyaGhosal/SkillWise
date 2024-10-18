@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        /* Your existing CSS styling for the form */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #00a79d;
+        }
+        .contact-form {
+            width: 300px;
+            padding: 20px;
+            background-color: #033f46;
+            margin: 50px auto;
+            border-radius: 10px;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: none;
+        }
+        .contact-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #ff007f;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        /* Notification styling */
+        .notification {
+            display: none;
+            width: 300px;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contact-form">
+        <h2>Contact Us</h2>
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit" onclick="submitForm()">Send</button>
+    </div>
+
+    <div id="notification" class="notification">
+        Your message has been sent successfully!
+    </div>
+
+    <script>
+        function submitForm() {
+            // Get the form data
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            // Perform form validation
+            if (name && email && message) {
+                // Simulate form submission (you can replace this with actual form handling code)
+                setTimeout(() => {
+                    // Show notification
+                    const notification = document.getElementById('notification');
+                    notification.style.display = 'block';
+
+                    // Hide notification after 3 seconds
+                    setTimeout(() => {
+                        notification.style.display = 'none';
+                    }, 3000);
+
+                    // Clear form
+                    document.getElementById('name').value = '';
+                    document.getElementById('email').value = '';
+                    document.getElementById('message').value = '';
+                }, 500);
+            } else {
+                alert('Please fill out all fields.');
+            }
+        }
+    </script>
+
+</body>
+</html>
