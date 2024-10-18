@@ -62,7 +62,7 @@
 
             <nav class="navbar" data-navbar>
                 <div class="navbar-top">
-                    <a>
+                    <a href="./index.html">
                         <img src="./assets/images/Skillwise_logo.jpg" width="50" height="10" alt="SkillWise home">
                     </a>
                     <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
@@ -83,8 +83,9 @@
                     <li class="navbar-item">
                         <a href="./index.html#contact" class="navbar-link title-sm" data-nav-link>Contacts</a>
                     </li>
+                    <!-- Make sure the FAQ link is correct -->
                     <li class="navbar-item">
-                        <a href="Faq.html" class="navbar-link title-sm" data-nav-link>FAQ</a>
+                        <a href="./Faq.html" class="navbar-link title-sm" data-nav-link>FAQ</a>
                     </li>
                 </ul>
             </nav>
@@ -93,7 +94,7 @@
 
             <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
                 <i class="fa-solid fa-bars"></i>
-              </button>
+            </button>
 
             <div class="overlay" data-overlay data-nav-toggler></div>
         </div>
@@ -106,12 +107,10 @@
                     Frequently <span class="span">Asked</span> Questions
                 </h1>
                 <p class="title-md has-before" data-aos="fade-right">
-                  
-                   <p> <b>Welcome to SkillWise’s Learning Hub!</b></p>
-                   
-                   <p> At SkillWise, we’re committed to delivering an exceptional learning experience tailored to your goals. Whether you’re exploring new courses, seeking flexible payment options, or curious about certifications, our FAQ section has you covered. We’ve crafted it to ensure you find clear, helpful answers that guide you every step of the way. Your success is our priority, and we’re here to make your journey enriching, seamless, and empowering—so you can focus on what truly matters: achieving your full potential.
-                   </p>               
-                </p>
+                   <b>Welcome to SkillWise’s Learning Hub!</b>
+                   <br>
+                   At SkillWise, we’re committed to delivering an exceptional learning experience tailored to your goals. Whether you’re exploring new courses, seeking flexible payment options, or curious about certifications, our FAQ section has you covered.
+                </p>             
             </div>
 
             <figure class="hero-banner" data-aos="zoom-out-up">
@@ -137,9 +136,7 @@
                     <span class="expandToggle"><p class="expand">+</p><p class="revert">-</p></span>
                 </div>
                 <div class="FAQ-content">
-                    <p>SkillWise offers a wide range of courses across various categories, including Data Science, UI/UX
-                        Design, Modern Physics, Music Production, Finances, and more. All courses are designed by
-                        experts and provide practical knowledge for learners of all levels.</p>
+                    <p>SkillWise offers a wide range of courses across various categories, including Data Science, UI/UX Design, Modern Physics, Music Production, Finances, and more.</p>
                 </div>
 
                 <div class="helpful-buttons">
@@ -150,100 +147,8 @@
                 </div>
             </div>
 
-            <div class="item" data-aos="fade-down">
-                <div class="FAQ-title">
-                    <p class="faqQuestion">2. What payment methods are accepted?</p>
-                    <span class="expandToggle"><p class="expand">+</p><p class="revert">-</p></span>
-                </div>
-                <div class="FAQ-content">
-                    <p>We accept a variety of payment methods including credit/debit cards, PayPal, and other online
-                        payment gateways. For more details, please refer to our Payment Method section.</p>
-                </div>
+            <!-- Additional FAQ items here -->
 
-                <div class="helpful-buttons">
-                    <p>Was this helpful?</p>
-                    <button class="helpful-btn" onclick="handleHelpful(this, 'yes')">Yes</button>
-                    <button class="helpful-btn" onclick="handleHelpful(this, 'no')">No</button>
-                    <p class="helpful-result"></p>
-                </div>
-            </div>
-
-            <div class="item" data-aos="fade-down">
-                <div class="FAQ-title">
-                    <p class="faqQuestion">3. Will I receive a certificate after completing a course?</p>
-                    <span class="expandToggle"><p class="expand">+</p><p class="revert">-</p></span>
-                </div>
-                <div class="FAQ-content">
-                    <p>Yes! All courses provide a certificate of completion that can be downloaded and added to your
-                        resume or LinkedIn profile.</p>
-                </div>
-
-                <div class="helpful-buttons">
-                    <p>Was this helpful?</p>
-                    <button class="helpful-btn" onclick="handleHelpful(this, 'yes')">Yes</button>
-                    <button class="helpful-btn" onclick="handleHelpful(this, 'no')">No</button>
-                    <p class="helpful-result"></p>
-                </div>
-            </div>
-
-            <div class="item" data-aos="fade-down">
-                <div class="FAQ-title">
-                    <p class="faqQuestion">4. What should I do if I encounter issues with the course videos?</p>
-                    <span class="expandToggle"><p class="expand">+</p><p class="revert">-</p></span>
-                </div>
-                <div class="FAQ-content">
-                    <p>If you're experiencing problems with video playback or course content, try refreshing your
-                        browser or checking your internet connection. You can also reach out to our support team for
-                        further assistance.</p>
-                </div>
-
-                <div class="helpful-buttons">
-                    <p>Was this helpful?</p>
-                    <button class="helpful-btn" onclick="handleHelpful(this, 'yes')">Yes</button>
-                    <button class="helpful-btn" onclick="handleHelpful(this, 'no')">No</button>
-                    <p class="helpful-result"></p>
-                </div>
-            </div>
-
-            <div class="item" data-aos="fade-down">
-                <div class="FAQ-title">
-                    <p class="faqQuestion">5. Can I get a refund if I'm not satisfied with a course?</p>
-                    <span class="expandToggle"><p class="expand">+</p><p class="revert">-</p></span>
-                </div>
-                <div class="FAQ-content">
-                    <p>Yes, we have a refund policy in place. Please refer to our Refund Policy section for more details
-                        on how to request a refund.</p>
-                </div>
-
-                <div class="helpful-buttons">
-                    <p>Was this helpful?</p>
-                    <button class="helpful-btn" onclick="handleHelpful(this, 'yes')">Yes</button>
-                    <button class="helpful-btn" onclick="handleHelpful(this, 'no')">No</button>
-                    <p class="helpful-result"></p>
-                </div>
-            </div>
-
-            <div class="item" data-aos="fade-down">
-                <div class="FAQ-title">
-                    <p class="faqQuestion">6. How long do I have access to a course after purchasing it?</p>
-                    <span class="expandToggle"><p class="expand">+</p><p class="revert">-</p></span>
-                </div>
-                <div class="FAQ-content">
-                    <p>Once you purchase a course, you get lifetime access, allowing you to learn at your own pace.</p>
-                </div>
-
-                <div class="helpful-buttons">
-                    <p>Was this helpful?</p>
-                    <button class="helpful-btn" onclick="handleHelpful(this, 'yes')">Yes</button>
-                    <button class="helpful-btn" onclick="handleHelpful(this, 'no')">No</button>
-                    <p class="helpful-result"></p>
-                </div>
-            </div>
-
-
-            <div class="FAQ-ShowMore">
-                <button id="showMoreBtn">Show More</button>
-            </div>
         </div>
     </div>
 
@@ -256,21 +161,11 @@
     <script>
         function handleHelpful(button, response) {
             const resultText = button.parentElement.querySelector(".helpful-result");
-            
-            // Disable the buttons after one selection
             const buttons = button.parentElement.querySelectorAll("button");
             buttons.forEach(btn => {
                 btn.disabled = true;
             });
-
-            // Display feedback based on the user's choice
-            if (response === "yes") {
-                resultText.textContent = "Thank you for your feedback!";
-                resultText.style.color = "black";
-            } else {
-                resultText.textContent = "We're sorry to hear that. We'll work on improving!";
-                resultText.style.color = "black";
-            }
+            resultText.textContent = response === "yes" ? "Thank you for your feedback!" : "We'll work on improving!";
         }
     </script>
 </body>
