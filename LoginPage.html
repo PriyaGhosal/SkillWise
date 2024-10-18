@@ -1,10 +1,13 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            background-color: #e9ecef; /* Light gray background */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -13,36 +16,39 @@
         }
 
         .login-container {
-            background-color: white;
+            background-color: #ffffff; /* White background for the container */
             padding: 30px;
             border-radius: 10px;
-            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
             width: 350px;
+            text-align: center;
         }
 
         h2 {
-            text-align: center;
             margin-bottom: 20px;
-            color: #333;
+            color: #333; /* Dark text color */
         }
 
         input[type="text"], input[type="password"] {
             width: 100%;
             padding: 10px;
             margin: 10px 0;
-            border: 1px solid #ccc;
+            border: 1px solid #ced4da; /* Light gray border */
             border-radius: 5px;
             font-size: 14px;
+            transition: border-color 0.3s;
+        }
+
+        input[type="text"]:focus, input[type="password"]:focus {
+            border-color: #007bff; /* Blue border on focus */
+            outline: none;
         }
 
         .remember-me {
             display: flex;
             align-items: center;
+            justify-content: flex-start;
             margin: 10px 0;
-        }
-
-        .remember-me input[type="checkbox"] {
-            margin-right: 10px;
         }
 
         .forgot-password {
@@ -51,9 +57,8 @@
         }
 
         .forgot-password a {
-            color: #007bff;
+            color: #007bff; /* Blue link color */
             text-decoration: none;
-            font-size: 14px;
         }
 
         .forgot-password a:hover {
@@ -63,30 +68,38 @@
         button {
             width: 100%;
             padding: 10px;
-            background-color: #28a745;
+            background-color: #28a745; /* Green button */
             color: white;
             border: none;
             border-radius: 5px;
             cursor: pointer;
             font-size: 16px;
+            transition: background-color 0.3s, transform 0.2s;
         }
 
         button:hover {
-            background-color: #218838;
+            background-color: #218838; /* Darker green on hover */
+            transform: translateY(-2px); /* Lift effect on hover */
         }
 
         .signup-link {
-            text-align: center;
             margin-top: 20px;
         }
 
         .signup-link a {
-            color: #007bff;
+            color: #007bff; /* Blue sign-up link */
             text-decoration: none;
         }
 
         .signup-link a:hover {
             text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 12px;
+            color: #666; /* Gray color for footer text */
         }
     </style>
 </head>
@@ -99,7 +112,8 @@
             <input type="password" name="password" placeholder="Password" required>
             
             <div class="remember-me">
-                <input type="checkbox" name="remember"> <label for="remember">Remember Me</label>
+                <input type="checkbox" id="remember" name="remember"> 
+                <label for="remember">Remember Me</label>
             </div>
 
             <div class="forgot-password">
@@ -113,9 +127,5 @@
             </div>
         </form>
     </div>
-    <footer>
-        <p><a href="SkillWise/LICENSE/MIT_License.txt">MIT License</a></p>
-    </footer>
-
 </body>
 </html>
