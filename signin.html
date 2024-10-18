@@ -5,22 +5,182 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SkillWise - Sign In</title>
     <link rel="stylesheet" href="assets/css/signin.css">
-  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+    <style>
+        /* Global body styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #f5af19, #f12711); /* Bright gradient background */
+            color: white;
+        }
+
+        /* Container for Sign-In form */
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 40px;
+            background-color: rgba(255, 255, 255, 0.9); /* Light overlay with transparency */
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .form-container {
+            text-align: center;
+        }
+
+        /* Logo */
+        .logo {
+            width: 100px;
+            height: 100px;
+            margin: 20px auto;
+            border-radius: 50%;
+            border: 5px solid #11f133; /* Accent color for logo border */
+        }
+
+        /* Heading styles */
+        h1 {
+            font-size: 32px;
+            font-weight: bold;
+            color: #f12711; /* Bright color for the heading */
+            margin-bottom: 20px;
+            text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Description Text */
+        p {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        /* Input fields */
+        .input-group {
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            text-align: left;
+            color: #f12711;
+            font-weight: bold;
+        }
+
+        input[type="text"], input[type="email"], input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            border: 1px solid #f12711;
+            border-radius: 5px;
+            outline: none;
+            transition: border 0.3s ease;
+        }
+
+        input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
+            border-color: #ff6f00;
+            box-shadow: 0 0 10px rgba(255, 111, 0, 0.5); /* Focus effect */
+        }
+
+        /* Password input with eye icon */
+        .password {
+            position: relative;
+        }
+
+        #togglePassword {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            cursor: pointer;
+            color: #ff6f00;
+            transition: color 0.3s ease;
+        }
+
+        #togglePassword:hover {
+            color: #f12711;
+        }
+
+        /* Sign-in button */
+        .signin-btn {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            background: linear-gradient(135deg, #ff6f00, #f12711); /* Gradient button */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            outline: none;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .signin-btn:hover {
+            background: linear-gradient(135deg, #f12711, #ff6f00); /* Reverse gradient on hover */
+            transform: scale(1.05);
+        }
+
+        /* Link to Sign Up */
+        .signup-link {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .signup-link a {
+            color: #ff007b;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .signup-link a:hover {
+            color: #f12711;
+        }
+
+        /* Footer navbar */
+        .navbar {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #333;
+            padding: 10px 20px;
+            text-align: center;
+            color: #fff;
+        }
+
+        .navbar .nav-link {
+            color: #fff;
+            text-decoration: none;
+            font-size: 14px;
+            margin: 0 15px;
+            transition: color 0.3s ease;
+        }
+
+        .navbar .nav-link:hover {
+            text-decoration: underline;
+            color: #00ff7b;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+                margin: 0 10px;
+            }
+        }
+    </style>
 </head>
-<body style="overflow: hidden;">
-  <header>
-    <nav class="navbar">
-      <a href="./index.html" class="logo">SkillWise</a>
-      <ul style="margin-right: 2rem;">
-        <li>
-          <a href="./index.html" class="nav-link" style="margin-right: 0.5rem;">Home</a>
-          <i class="fa-solid fa-house"></i>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  
+<body>
+
+    <!-- Sign-In Form -->
     <div class="container">
         <div class="form-container">
             <!-- Add SkillWise Icon/Logo -->
@@ -28,48 +188,57 @@
             
             <h1>Welcome to <span class="brand">SkillWise</span></h1>
             <p><strong>Sign in</strong> to access your learning dashboard</p>
-            
+
+            <!-- Form starts here -->
             <form action="#" method="POST">
+                <!-- Username Input -->
                 <div class="input-group">
                     <label for="username">Username</label>
                     <input type="text" id="username" name="username" placeholder="Enter your username" required>
                 </div>
+
+                <!-- Email Input -->
                 <div class="input-group">
                     <label for="email">Email</label>
                     <input type="email" id="email" name="email" placeholder="Enter your email" required>
                 </div>
-                <div class="input-group">
+
+                <!-- Password Input -->
+                <div class="input-group password">
                     <label for="password">Password</label>
-                    <div class="password">
-                        <input type="password" id="password" name="password" placeholder="Enter your password">
-                        <i class="fa-solid fa-eye-slash" id="togglePassword"></i>
-                    </div>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                    <i id="togglePassword" class="fa fa-eye"></i> <!-- Eye Icon for password visibility toggle -->
                 </div>
-                <!-- <div class="strength-bar">
-                    <div id="strengthBar" class="strength-bar-inner"></div>
-                </div>
-                <p class="suggestion">
-                  <small>Use special characters and numbers for a strong password</small>
-                </p> -->
+
+                <!-- Sign-in Button -->
                 <button type="submit" class="signin-btn">Sign In</button>
-                <p class="signup-link">Don't have an account? <a href="./signup.html">Sign up here</a></p>
             </form>
+
+            <!-- Link to Sign Up Page -->
+            <div class="signup-link">
+                Don't have an account? <a href="#">Sign up here</a>
+            </div>
         </div>
     </div>
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script >
-        const togglePassword = document.querySelector("#togglePassword");
-const passwordInput = document.querySelector("#password");
 
-togglePassword.addEventListener("click", function () {
-  const type = passwordInput.getAttribute("type") === "password" ?  "text": "password";
-  passwordInput.setAttribute("type", type);
+    <!-- Footer Navigation -->
+    <footer class="navbar">
+        <a href="./index.html" class="nav-link">Home</a>
+    </footer>
 
-  this.classList.toggle("fa-eye-slash");
-  this.classList.toggle("fa-eye");
-});
+    <!-- Script for password visibility toggle -->
+    <script>
+        const togglePassword = document.querySelector('#togglePassword');
+        const password = document.querySelector('#password');
 
+        togglePassword.addEventListener('click', function (e) {
+            // Toggle the type attribute
+            const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+            password.setAttribute('type', type);
+
+            // Toggle the eye icon
+            this.classList.toggle('fa-eye-slash');
+        });
     </script>
-
 </body>
 </html>
