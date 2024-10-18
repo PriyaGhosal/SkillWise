@@ -75,44 +75,7 @@
         this.classList.toggle("fa-eye");
       });
     
-      function checkPasswordStrength() {
-        const password = document.getElementById('password').value;
-        const strengthBar = document.getElementById('strengthBar');
-        let strength = 0;
-    
-        if (password.length >= 8) strength += 1;
-        if (/[A-Z]/.test(password)) strength += 1;
-        if (/[a-z]/.test(password)) strength += 1;
-        if (/[0-9]/.test(password)) strength += 1;
-        if (/[\W]/.test(password)) strength += 1;
-    
-        switch (strength) {
-          case 1:
-            strengthBar.style.width = '20%';
-            strengthBar.style.backgroundColor = 'red';
-            break;
-          case 2:
-            strengthBar.style.width = '40%';
-            strengthBar.style.backgroundColor = 'orange';
-            break;
-          case 3:
-            strengthBar.style.width = '60%';
-            strengthBar.style.backgroundColor = 'yellow';
-            break;
-          case 4:
-            strengthBar.style.width = '80%';
-            strengthBar.style.backgroundColor = 'lightgreen';
-            break;
-          case 5:
-            strengthBar.style.width = '100%';
-            strengthBar.style.backgroundColor = 'green';
-            break;
-          default:
-            strengthBar.style.width = '0%';
-            break;
-        }
-      }
-    
+     
     
       submitBtn.addEventListener("click", (e) => {
          e.preventDefault();
