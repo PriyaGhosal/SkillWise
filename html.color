@@ -1,0 +1,6 @@
+<div class="main-container">
+  <div class="box">Content 1</div>
+  <div class="box">Content 2</div>
+  <div class="box">Content 3</div>
+</div>
+<button onclick="toggleTheme()">Toggle Dark Theme</button>
