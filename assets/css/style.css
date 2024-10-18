@@ -390,6 +390,8 @@ body.nav-active .navbar-list .navbar-link {
 }
 
 .header {
+  display: flex;
+  justify-content: center;
   position: absolute;
   top: 0;
   left: 0;
@@ -977,9 +979,9 @@ button:hover {
 /* Media query for smaller screens */
 @media (max-width: 768px) {
   .container {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+    /* flex-direction: column;
+    align-items: center; */
+    gap: 6rem;
   }
 }
 
@@ -1476,12 +1478,12 @@ button:hover {
 /**
  * responsive for large than 768px screen
  */
- .nav-open-btn{
+ /* .nav-open-btn{
   position: absolute;
   right:0;
   margin-right: 5vw;
   margin-top: 0.8vw;
- }
+ } */
 
 @media (min-width: 768px) {
   /**
