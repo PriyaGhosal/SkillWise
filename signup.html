@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SkillWise - Sign up</title>
     <link rel="stylesheet" href="assets/css/signin.css">
-  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
 </head>
 <body>
     <header>
@@ -19,7 +19,7 @@
             </li>
           </ul>
         </nav>
-      </header>
+    </header>
     <div class="container">
         <div class="form-container">
             <!-- Add SkillWise Icon/Logo -->
@@ -30,8 +30,8 @@
             
             <form action="#" method="POST">
                 <div class="input-group">
-                    <label for="username">Full Name</label>
-                    <input type="text" id="fullname" name="fullname" placeholder="Create your username" required required pattern="[a-zA-Z ]+" oninvalid="this.setCustomValidity('Numbers and Symbols are not allowed')" 
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required pattern="[a-zA-Z ]+" oninvalid="this.setCustomValidity('Numbers and Symbols are not allowed')" 
                     oninput="this.setCustomValidity('')">
                 </div>
                 <div class="input-group">
@@ -45,85 +45,78 @@
                 <div class="input-group">
                     <label for="password">Password</label>
                     <div class="password">
-                        <input type="password" id="password" name="password" placeholder="Enter your password" oninput="checkPasswordStrength()"  required>
+                        <input type="password" id="password" name="password" placeholder="Enter your password" oninput="checkPasswordStrength()" required>
                         <i class="fa-solid fa-eye-slash" id="togglePassword"></i>
                     </div> 
                 </div>
-                    <div class="strength-bar">
-                        <div id="strengthBar" class="strength-bar-inner"></div>
-                    </div>
-                    <p class="suggestion">
-                      <small id="strength_msg">Use special characters and numbers for a strong password</small>
-
-                    </p>
+                <div class="strength-bar">
+                    <div id="strengthBar" class="strength-bar-inner"></div>
+                </div>
+                <p class="suggestion">
+                    <small id="strength_msg">Use special characters and numbers for a strong password</small>
+                </p>
                 <button type="submit" class="signin-btn">Sign Up</button>
                 <p class="signup-link">Already have an account? <a href="./signin.html">Sign in here</a></p>
             </form>
         </div>
     </div>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script >
+    <script>
         const togglePassword = document.querySelector("#togglePassword");
-const passwordInput = document.querySelector("#password");
+        const passwordInput = document.querySelector("#password");
 
-togglePassword.addEventListener("click", function () {
-  const type = passwordInput.getAttribute("type") === "password" ?  "text": "password";
-  passwordInput.setAttribute("type", type);
+        togglePassword.addEventListener("click", function () {
+            const type = passwordInput.getAttribute("type") === "password" ? "text" : "password";
+            passwordInput.setAttribute("type", type);
+            this.classList.toggle("fa-eye-slash");
+            this.classList.toggle("fa-eye");
+        });
 
-  this.classList.toggle("fa-eye-slash");
-  this.classList.toggle("fa-eye");
-});
+        function checkPasswordStrength() {
+            const password = document.getElementById('password').value;
+            const strengthBar = document.getElementById('strengthBar');
+            const strength_text = document.getElementById('strength_msg');
 
+            let strength = 0;
 
-function checkPasswordStrength() {
-      const password = document.getElementById('password').value;
-      const strengthBar = document.getElementById('strengthBar');
-      const strength_text = document.getElementById('strength_msg');
+            if (password.length >= 8) strength += 1;
+            if (/[A-Z]/.test(password)) strength += 1;
+            if (/[a-z]/.test(password)) strength += 1;
+            if (/[0-9]/.test(password)) strength += 1;
+            if (/[\W_]/.test(password)) strength += 1;  // Include underscores as special characters
 
-      let strength = 0;
-
-      if (password.length >= 8) strength += 1;
-      if (/[A-Z]/.test(password)) strength += 1;
-      if (/[a-z]/.test(password)) strength += 1;
-      if (/[0-9]/.test(password)) strength += 1;
-      if (/[\W]/.test(password)) strength += 1;
-
-
-
-      switch (strength) {
-        case 1:
-          strengthBar.style.width = '20%';
-          strengthBar.style.backgroundColor = 'red';
-          strength_text.textContent = "Password Strength : Very Weak";
-          break;
-        case 2:
-          strengthBar.style.width = '40%';
-          strengthBar.style.backgroundColor = 'orange';
-          strength_text.textContent = "Password Strength : Weak";
-          break;
-        case 3:
-          strengthBar.style.width = '60%';
-          strengthBar.style.backgroundColor = 'yellow';
-          strength_text.textContent = "Password Strength : Moderate";
-          break;
-        case 4:
-          strengthBar.style.width = '80%';
-          strengthBar.style.backgroundColor = 'lightgreen';
-          strength_text.textContent = "Password Strength : Good";
-          break;
-        case 5:
-          strengthBar.style.width = '100%';
-          strengthBar.style.backgroundColor = 'green';
-          strength_text.textContent = "Password Strength : Strong";
-          break;
-        default:
-          strengthBar.style.width = '0%';
-          strength_text.textContent ="Use special characters and numbers for a strong password";
-          break;
+            switch (strength) {
+                case 1:
+                    strengthBar.style.width = '20%';
+                    strengthBar.style.backgroundColor = 'red';
+                    strength_text.textContent = "Password Strength : Very Weak";
+                    break;
+                case 2:
+                    strengthBar.style.width = '40%';
+                    strengthBar.style.backgroundColor = 'orange';
+                    strength_text.textContent = "Password Strength : Weak";
+                    break;
+                case 3:
+                    strengthBar.style.width = '60%';
+                    strengthBar.style.backgroundColor = 'yellow';
+                    strength_text.textContent = "Password Strength : Moderate";
+                    break;
+                case 4:
+                    strengthBar.style.width = '80%';
+                    strengthBar.style.backgroundColor = 'lightgreen';
+                    strength_text.textContent = "Password Strength : Good";
+                    break;
+                case 5:
+                    strengthBar.style.width = '100%';
+                    strengthBar.style.backgroundColor = 'green';
+                    strength_text.textContent = "Password Strength : Strong";
+                    break;
+                default:
+                    strengthBar.style.width = '0%';
+                    strength_text.textContent = "Use special characters and numbers for a strong password";
+                    break;
+            }
         }
-    }
-
-
     </script>
 </body>
 </html>
