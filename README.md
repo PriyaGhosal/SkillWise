@@ -65,7 +65,7 @@ Ensure you have the following installed:
 
 Follow these steps to start your learning journey with SkillWise:
 
-1. **Sign Up**📝: Create your SkillWise account by visiting our [sign-up page](#).
+1. **Sign Up**📝: Create your SkillWise account by visiting our [sign-up page](https://skillwise.netlify.app/signup).
 2. **Browse Courses**📚: Discover a variety of courses across different fields. Use the search and filter options to find courses that match your interests.
 3. **Enroll**🎓: Join the courses that interest you by clicking the "Enroll" button on the course page.
 4. **Learn and Grow**📈: Start learning at your own pace. Track your progress through the course dashboard and complete assignments to reinforce your knowledge.
