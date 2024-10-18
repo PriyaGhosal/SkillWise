@@ -916,11 +916,20 @@ button:hover {
   background-color: #008080;
   padding: 48px 24px;
   text-align: center;
+ 
+}
+
+.cta-container {
+  display: flex; 
+  justify-content: space-around;
+  align-items: center;
 }
 
 .cta .headline-md {
   color: var(--white);
 }
+
+
 #contact-form textarea::placeholder {
   font-family: var(--ff-gilroy);
 }
@@ -976,13 +985,20 @@ button:hover {
     }
   }
 .cta .btn {
-  margin-inline: auto;
-  color: var(--white);
-  background-color: var(--light-coral);
+  background-color: transparent;
+  border: 2px solid var(--white); /* Keppei color for button borders */
+  padding: 16px 28px; /* Bigger padding for a larger button */
+  border-radius: 10px;
+  font-size: 1.4rem; /* Larger font size for buttons */
+  color: var(--white); /* Keppei color for the text */
+  text-decoration: none;
+  font-weight: bold; /* Bolder button text */
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 
 .cta .btn:is(:hover, :focus-within) {
-  box-shadow: 0 0 0 2px var(--white), 0 0 0 5px var(--light-coral);
+  background-color: var(--light-coral); /* Keppei background on hover */
+  transform: scale(1.1); /* Slightly bigger button on hover */
 }
 
 .parent {
