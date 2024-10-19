@@ -180,7 +180,8 @@
 #freeTrial{
   position: absolute;
  right: 80px;
-
+margin-right: 60px;
+ 
 
 }
 
@@ -188,5 +189,5 @@
   position: absolute;
   right: 5px;
   top: 20px;
-  
+  margin-right: 60px;
 }
