@@ -86,6 +86,7 @@
   flex-direction: column;
   gap: 15px; /* Adds more space between the event items */
   margin-bottom: 20px;
+  margin-top: 20px; /* Adding top margin */
 }
 
 /* Individual event item */
@@ -179,7 +180,8 @@
 #freeTrial{
   position: absolute;
  right: 80px;
-
+margin-right: 60px;
+ 
 
 }
 
@@ -187,5 +189,24 @@
   position: absolute;
   right: 5px;
   top: 20px;
+  margin-right: 60px;
+}
+
+.cta-btn{
+  width: 40%;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 20px;
+  text-align: center; 
+  font-weight: bold;
   
+}
+
+#cta-label {
+  font-weight: bold;  /* Makes the text bold */
+  color: #fff;        /* Sets the text color to white */
+  margin-bottom: 10px;
+  font-size: 36px;
+  width: 50%;
 }

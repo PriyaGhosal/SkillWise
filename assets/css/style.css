@@ -324,6 +324,7 @@ body.nav-active .navbar-list .navbar-link {
   left: 0;
   width: 100%;
   height: 100%;
+  z-index: 1;
 }
 
 .w-100 {
@@ -434,6 +435,9 @@ body.nav-active .navbar-list .navbar-link {
   z-index: 2;
   transition: 0.25s var(--cubic-in);
   visibility: hidden;
+}
+.navbarContain{
+  display: flex;
 }
 
 .navbar.active {
@@ -857,6 +861,7 @@ button:hover {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  z-index: 2;
 }
 
 .course-card:is(:hover, :focus-within) {
@@ -913,11 +918,20 @@ button:hover {
   background-color: #008080;
   padding: 48px 24px;
   text-align: center;
+ 
+}
+
+.cta-container {
+  display: flex; 
+  justify-content: space-around;
+  align-items: center;
 }
 
 .cta .headline-md {
   color: var(--white);
 }
+
+
 #contact-form textarea::placeholder {
   font-family: var(--ff-gilroy);
 }
@@ -973,13 +987,20 @@ button:hover {
     }
   }
 .cta .btn {
-  margin-inline: auto;
-  color: var(--white);
-  background-color: var(--light-coral);
+  background-color: transparent;
+  border: 2px solid var(--white); /* Keppei color for button borders */
+  padding: 16px 28px; /* Bigger padding for a larger button */
+  border-radius: 10px;
+  font-size: 1.4rem; /* Larger font size for buttons */
+  color: var(--white); /* Keppei color for the text */
+  text-decoration: none;
+  font-weight: bold; /* Bolder button text */
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 
 .cta .btn:is(:hover, :focus-within) {
-  box-shadow: 0 0 0 2px var(--white), 0 0 0 5px var(--light-coral);
+  background-color: var(--light-coral); /* Keppei background on hover */
+  transform: scale(1.1); /* Slightly bigger button on hover */
 }
 
 .parent {
@@ -1467,6 +1488,12 @@ button:hover {
 /**
  * responsive for large than 768px screen
  */
+ .nav-open-btn{
+  position: absolute;
+  right:0;
+  margin-right: 5vw;
+  margin-top: 0.8vw;
+ }
 
 @media (min-width: 768px) {
   /**
@@ -1513,7 +1540,7 @@ button:hover {
  * responsive for large than 992px screen
  */
 
-@media (min-width: 992px) {
+@media (min-width: 1485px) {
   :root {
     /**
      * typography
@@ -1558,16 +1585,17 @@ button:hover {
   .navbar.active {
     all: unset;
     display: block;
+    width: 100%;
   }
 
   .navbar-list {
     display: flex;
-    gap: 8px;
   }
 
   .navbar-item:not(:last-child) {
     border-block-end: none;
   }
+
 
   .navbar-link {
     padding: 8px 16px;
@@ -1728,8 +1756,6 @@ body.dark-mode h1 {
 }
 
 #theme-toggle {
-  /* position: fixed; */
-
   background-color: var(--light-gray);
   border-radius: var(--radius-circle);
   padding: 10px;
@@ -1773,7 +1799,7 @@ body.dark-mode .btn:hover {
   /* Light background for the navbar */
   color: var(--dark-text);
   /* Dark text color */
-  padding: 0;
+  width:90vw;
   /* No padding for box-less design */
   box-shadow: none;
   /* No shadow in light mode */
@@ -1782,11 +1808,9 @@ body.dark-mode .btn:hover {
 }
 
 .navbar-list {
-  padding: 0;
-  /* No padding */
-  gap: 15px;
-  /* Keep spacing between items */
+  width:100%; 
 }
+
 
 /* .navbar-link {
   color: var(--white);

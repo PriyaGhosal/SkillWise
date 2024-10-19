@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class LoginPage {
+    
+    public static void main(String[] args) {
+        // Create a scanner object for user input
+        Scanner scanner = new Scanner(System.in);
+
+        // Prompt the user to enter an email address
+        System.out.print("Enter your email address: ");
+        String email = scanner.nextLine();
+
+        // Validate the email address
+        if (EmailValidation.isValidEmail(email)) {
+            // If valid, prompt for password
+            System.out.print("Enter your password: ");
+            String password = scanner.nextLine();
+
+            // Simulate login (for demonstration purposes)
+            // In a real application, you would check the credentials against a database
+            System.out.println("Login successful for email: " + email);
+        } else {
+            // If invalid, print an error message
+            System.out.println("The email address \"" + email + "\" is invalid. Please enter a valid email.");
+        }
+
+        // Close the scanner to prevent resource leaks
+        scanner.close();
+    }
+}
