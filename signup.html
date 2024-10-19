@@ -3,23 +3,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SkillWise - Sign up</title>
+    <title>SkillWise - Sign Up</title>
     <link rel="stylesheet" href="assets/css/signin.css">
-  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        /* Enhanced styles for clear, modern UI */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #6E48AA 0%, #9D50BB 100%);
+            color: #fff;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem 2rem;
+            background-color: rgba(0, 0, 0, 0.4);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+        }
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #fff;
+            text-decoration: none;
+        }
+        .nav-link {
+            font-size: 1.2rem;
+            color: #fff;
+            text-decoration: none;
+            margin-left: 1rem;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            padding-top: 100px;
+        }
+        .form-container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem 3rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+        }
+        .form-container img {
+            width: 100px;
+            margin-bottom: 1.5rem;
+        }
+        h1 {
+            font-size: 1.8rem;
+            font-weight: 600;
+        }
+        h1 .brand {
+            color: #FFD700;
+        }
+        p {
+            margin-bottom: 1rem;
+            color: #f0f0f0;
+        }
+        .input-group {
+            margin-bottom: 1.5rem;
+            text-align: left;
+        }
+        .input-group label {
+            display: block;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+        .input-group input {
+            width: 100%;
+            padding: 0.8rem 1rem;
+            border: none;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.15);
+            color: #fff;
+            font-size: 1rem;
+            outline: none;
+        }
+        .input-group input::placeholder {
+            color: #ddd;
+        }
+        .password {
+            position: relative;
+        }
+        .password i {
+            position: absolute;
+            top: 50%;
+            right: 15px;
+            transform: translateY(-50%);
+            cursor: pointer;
+            color: #fff;
+        }
+        .strength-bar {
+            width: 100%;
+            height: 10px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+            margin-top: 0.5rem;
+            overflow: hidden;
+        }
+        .strength-bar-inner {
+            height: 100%;
+            width: 0;
+            transition: width 0.3s ease;
+        }
+        .signin-btn {
+            width: 100%;
+            padding: 0.8rem;
+            background: #FFD700;
+            color: #6E48AA;
+            font-size: 1rem;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+        .signin-btn:hover {
+            background: #e5c100;
+        }
+        .signup-link {
+            margin-top: 1.5rem;
+            color: #fff;
+        }
+        .signup-link a {
+            color: #FFD700;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        /* Media Query for Responsive Design */
+        @media (max-width: 768px) {
+            .form-container {
+                padding: 1.5rem 2rem;
+                max-width: 90%;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
         <nav class="navbar">
-          <a href="./index.html" class="logo">SkillWise</a>
-          <ul style="margin-right: 2rem;">
-            <li>
-              <a href="./index.html" class="nav-link" style="margin-right: 0.5rem;">Home</a>
-              <i class="fa-solid fa-house"></i>
-            </li>
-          </ul>
+            <a href="./index.html" class="logo">SkillWise</a>
+            <ul style="margin-right: 2rem;">
+                <li>
+                    <a href="./index.html" class="nav-link" style="margin-right: 0.5rem;">Home</a>
+                    <i class="fa-solid fa-house"></i>
+                </li>
+            </ul>
         </nav>
-      </header>
+    </header>
+
     <div class="container">
         <div class="form-container">
             <!-- Add SkillWise Icon/Logo -->
@@ -30,9 +175,9 @@
             
             <form action="#" method="POST">
                 <div class="input-group">
-                    <label for="username">Full Name</label>
-                    <input type="text" id="fullname" name="fullname" placeholder="Create your username" required required pattern="[a-zA-Z ]+" oninvalid="this.setCustomValidity('Numbers and Symbols are not allowed')" 
-                    oninput="this.setCustomValidity('')">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required pattern="[a-zA-Z ]+" 
+                    oninvalid="this.setCustomValidity('Numbers and Symbols are not allowed')" oninput="this.setCustomValidity('')">
                 </div>
                 <div class="input-group">
                     <label for="username">Username</label>
@@ -45,85 +190,79 @@
                 <div class="input-group">
                     <label for="password">Password</label>
                     <div class="password">
-                        <input type="password" id="password" name="password" placeholder="Enter your password" oninput="checkPasswordStrength()"  required>
+                        <input type="password" id="password" name="password" placeholder="Enter your password" oninput="checkPasswordStrength()" required>
                         <i class="fa-solid fa-eye-slash" id="togglePassword"></i>
                     </div> 
                 </div>
-                    <div class="strength-bar">
-                        <div id="strengthBar" class="strength-bar-inner"></div>
-                    </div>
-                    <p class="suggestion">
-                      <small id="strength_msg">Use special characters and numbers for a strong password</small>
-
-                    </p>
+                <div class="strength-bar">
+                    <div id="strengthBar" class="strength-bar-inner"></div>
+                </div>
+                <p class="suggestion">
+                    <small id="strength_msg">Use special characters and numbers for a strong password</small>
+                </p>
                 <button type="submit" class="signin-btn">Sign Up</button>
                 <p class="signup-link">Already have an account? <a href="./signin.html">Sign in here</a></p>
             </form>
         </div>
     </div>
+
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script >
+    <script>
         const togglePassword = document.querySelector("#togglePassword");
-const passwordInput = document.querySelector("#password");
+        const passwordInput = document.querySelector("#password");
 
-togglePassword.addEventListener("click", function () {
-  const type = passwordInput.getAttribute("type") === "password" ?  "text": "password";
-  passwordInput.setAttribute("type", type);
+        togglePassword.addEventListener("click", function () {
+            const type = passwordInput.getAttribute("type") === "password" ? "text" : "password";
+            passwordInput.setAttribute("type", type);
+            this.classList.toggle("fa-eye-slash");
+            this.classList.toggle("fa-eye");
+        });
 
-  this.classList.toggle("fa-eye-slash");
-  this.classList.toggle("fa-eye");
-});
+        function checkPasswordStrength() {
+            const password = document.getElementById('password').value;
+            const strengthBar = document.getElementById('strengthBar');
+            const strength_text = document.getElementById('strength_msg');
 
+            let strength = 0;
 
-function checkPasswordStrength() {
-      const password = document.getElementById('password').value;
-      const strengthBar = document.getElementById('strengthBar');
-      const strength_text = document.getElementById('strength_msg');
+            if (password.length >= 8) strength += 1;
+            if (/[A-Z]/.test(password)) strength += 1;
+            if (/[a-z]/.test(password)) strength += 1;
+            if (/[0-9]/.test(password)) strength += 1;
+            if (/[\W]/.test(password)) strength += 1;
 
-      let strength = 0;
-
-      if (password.length >= 8) strength += 1;
-      if (/[A-Z]/.test(password)) strength += 1;
-      if (/[a-z]/.test(password)) strength += 1;
-      if (/[0-9]/.test(password)) strength += 1;
-      if (/[\W]/.test(password)) strength += 1;
-
-
-
-      switch (strength) {
-        case 1:
-          strengthBar.style.width = '20%';
-          strengthBar.style.backgroundColor = 'red';
-          strength_text.textContent = "Password Strength : Very Weak";
-          break;
-        case 2:
-          strengthBar.style.width = '40%';
-          strengthBar.style.backgroundColor = 'orange';
-          strength_text.textContent = "Password Strength : Weak";
-          break;
-        case 3:
-          strengthBar.style.width = '60%';
-          strengthBar.style.backgroundColor = 'yellow';
-          strength_text.textContent = "Password Strength : Moderate";
-          break;
-        case 4:
-          strengthBar.style.width = '80%';
-          strengthBar.style.backgroundColor = 'lightgreen';
-          strength_text.textContent = "Password Strength : Good";
-          break;
-        case 5:
-          strengthBar.style.width = '100%';
-          strengthBar.style.backgroundColor = 'green';
-          strength_text.textContent = "Password Strength : Strong";
-          break;
-        default:
-          strengthBar.style.width = '0%';
-          strength_text.textContent ="Use special characters and numbers for a strong password";
-          break;
+            switch (strength) {
+                case 1:
+                    strengthBar.style.width = '20%';
+                    strengthBar.style.backgroundColor = 'red';
+                    strength_text.textContent = "Password Strength: Very Weak";
+                    break;
+                case 2:
+                    strengthBar.style.width = '40%';
+                    strengthBar.style.backgroundColor = 'orange';
+                    strength_text.textContent = "Password Strength: Weak";
+                    break;
+                case 3:
+                    strengthBar.style.width = '60%';
+                    strengthBar.style.backgroundColor = 'yellow';
+                    strength_text.textContent = "Password Strength: Moderate";
+                    break;
+                case 4:
+                    strengthBar.style.width = '80%';
+                    strengthBar.style.backgroundColor = 'lightgreen';
+                    strength_text.textContent = "Password Strength: Good";
+                    break;
+                case 5:
+                    strengthBar.style.width = '100%';
+                    strengthBar.style.backgroundColor = 'green';
+                    strength_text.textContent = "Password Strength: Strong";
+                    break;
+                default:
+                    strengthBar.style.width = '0%';
+                    strength_text.textContent = "Use special characters and numbers for a strong password";
+                    break;
+            }
         }
-    }
-
-
     </script>
 </body>
 </html>

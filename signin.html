@@ -5,22 +5,153 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SkillWise - Sign In</title>
     <link rel="stylesheet" href="assets/css/signin.css">
-  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        /* Enhanced styles for clear, modern UI */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #6E48AA 0%, #9D50BB 100%);
+            color: #fff;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem 2rem;
+            background-color: rgba(0, 0, 0, 0.4);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+        }
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #fff;
+            text-decoration: none;
+        }
+        .nav-link {
+            font-size: 1.2rem;
+            color: #fff;
+            text-decoration: none;
+            margin-left: 1rem;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            padding-top: 100px;
+        }
+        .form-container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem 3rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+        }
+        .form-container img {
+            width: 100px;
+            margin-bottom: 1.5rem;
+        }
+        h1 {
+            font-size: 1.8rem;
+            font-weight: 600;
+        }
+        h1 .brand {
+            color: #FFD700;
+        }
+        p {
+            margin-bottom: 1rem;
+            color: #f0f0f0;
+        }
+        .input-group {
+            margin-bottom: 1.5rem;
+            text-align: left;
+        }
+        .input-group label {
+            display: block;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+        .input-group input {
+            width: 100%;
+            padding: 0.8rem 1rem;
+            border: none;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.15);
+            color: #fff;
+            font-size: 1rem;
+            outline: none;
+        }
+        .input-group input::placeholder {
+            color: #ddd;
+        }
+        .password {
+            position: relative;
+        }
+        .password i {
+            position: absolute;
+            top: 50%;
+            right: 15px;
+            transform: translateY(-50%);
+            cursor: pointer;
+            color: #fff;
+        }
+        .signin-btn {
+            width: 100%;
+            padding: 0.8rem;
+            background: #FFD700;
+            color: #6E48AA;
+            font-size: 1rem;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+        .signin-btn:hover {
+            background: #e5c100;
+        }
+        .signup-link {
+            margin-top: 1.5rem;
+            color: #fff;
+        }
+        .signup-link a {
+            color: #FFD700;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        /* Media Query for Responsive Design */
+        @media (max-width: 768px) {
+            .form-container {
+                padding: 1.5rem 2rem;
+                max-width: 90%;
+            }
+        }
+    </style>
 </head>
-<body style="overflow: hidden;">
-  <header>
-    <nav class="navbar">
-      <a href="./index.html" class="logo">SkillWise</a>
-      <ul style="margin-right: 2rem;">
-        <li>
-          <a href="./index.html" class="nav-link" style="margin-right: 0.5rem;">Home</a>
-          <i class="fa-solid fa-house"></i>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="./index.html" class="logo">SkillWise</a>
+            <ul style="margin-right: 2rem;">
+                <li>
+                    <a href="./index.html" class="nav-link" style="margin-right: 0.5rem;">Home</a>
+                    <i class="fa-solid fa-house"></i>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
     <div class="container">
         <div class="form-container">
             <!-- Add SkillWise Icon/Logo -->
@@ -41,35 +172,27 @@
                 <div class="input-group">
                     <label for="password">Password</label>
                     <div class="password">
-                        <input type="password" id="password" name="password" placeholder="Enter your password">
+                        <input type="password" id="password" name="password" placeholder="Enter your password" required>
                         <i class="fa-solid fa-eye-slash" id="togglePassword"></i>
                     </div>
                 </div>
-                <!-- <div class="strength-bar">
-                    <div id="strengthBar" class="strength-bar-inner"></div>
-                </div>
-                <p class="suggestion">
-                  <small>Use special characters and numbers for a strong password</small>
-                </p> -->
                 <button type="submit" class="signin-btn">Sign In</button>
                 <p class="signup-link">Don't have an account? <a href="./signup.html">Sign up here</a></p>
             </form>
         </div>
     </div>
+
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script >
+    <script>
         const togglePassword = document.querySelector("#togglePassword");
-const passwordInput = document.querySelector("#password");
+        const passwordInput = document.querySelector("#password");
 
-togglePassword.addEventListener("click", function () {
-  const type = passwordInput.getAttribute("type") === "password" ?  "text": "password";
-  passwordInput.setAttribute("type", type);
-
-  this.classList.toggle("fa-eye-slash");
-  this.classList.toggle("fa-eye");
-});
-
+        togglePassword.addEventListener("click", function () {
+            const type = passwordInput.getAttribute("type") === "password" ? "text" : "password";
+            passwordInput.setAttribute("type", type);
+            this.classList.toggle("fa-eye-slash");
+            this.classList.toggle("fa-eye");
+        });
     </script>
-
 </body>
 </html>
