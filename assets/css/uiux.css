@@ -1,3 +1,9 @@
+
+
+
+
+
+
 body {
   font-family: Arial, sans-serif;
   background-color: #f0f0f0; /* Light gray background */
@@ -86,3 +92,112 @@ h1 {
 .buy-now-btn:hover {
   background-color: #ff69b4; /* Soft pink color on hover */
 }
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Body and Background */
+body {
+  background-color: #f5f5f5;
+  color: #333;
+  padding: 20px;
+}
+
+/* Header Styling */
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #4A4A4A;
+  text-transform: uppercase;
+}
+
+/* Course List */
+.course-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  list-style-type: none;
+}
+
+/* Card Styling */
+.category-card {
+  width: 300px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+  position: relative;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Card Content */
+.card-icon img {
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.category-card div {
+  padding: 15px;
+}
+
+.title-lg {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.title-sm {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 15px;
+}
+
+/* Button Styling */
+.buy-now-btn {
+  display: inline-block;
+  background-color: #ff6b6b;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.buy-now-btn:hover {
+  background-color: #ff4757;
+}
+
+/* Layer Link (for accessible navigation) */
+.layer-link {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  opacity: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .category-card {
+    width: 90%;
+  }
+}
+
+
+
+
