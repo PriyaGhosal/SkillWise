@@ -2,8 +2,6 @@
 
 # `SkillWise`
 <br>
-Website Preview
-<br>
 
 https://github.com/user-attachments/assets/f52272a5-0d62-4812-8700-bdb07ab21a57
 
