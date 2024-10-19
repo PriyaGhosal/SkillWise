@@ -2,7 +2,11 @@
 
 # `SkillWise`
 <br>
-https://github.com/user-attachments/assets/c43af3c7-5655-4e31-8ef8-25a0abfe34e5
+
+
+https://github.com/user-attachments/assets/f52272a5-0d62-4812-8700-bdb07ab21a57
+
+
 <br>
 <img src='./readme-images/desktop.png'>
 <br>
