@@ -1437,89 +1437,118 @@
     - #Contact Us
   -->
 
-    <section id="contact" class="cta" aria-labelledby="cta-label">
-     
-      <div class="container" style="align-items: center;
-      justify-content: center;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;">
-  
-        <h2 class="headline-md section-title" id="cta-label" data-aos="fade-right" style="font-size: clamp(4rem, 100px, 3vw);">
-          Contact Us.
-        </h2>
-        
-        <form id="contact-form" data-aos="fade-left" style="
-        max-width: 90%;
-        width: 400px;
-        background-color: #2e2e2e87;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-        transition: box-shadow 0.3s ease;
-      " onmouseover="this.style.boxShadow='0 10px 20px rgba(0, 0, 0, 0.2)'"
-          onmouseout="this.style.boxShadow='0 6px 12px rgba(0, 0, 0, 0.15)'">
+<section id="contact" class="cta" aria-labelledby="cta-label">
+  <div class="container" style="align-items: center; justify-content: center; display: flex; flex-direction: column; gap: 10px;">
+    <h2 class="headline-md section-title" id="cta-label" data-aos="fade-right" style="font-size: clamp(4rem, 100px, 3vw);">
+      Contact Us.
+    </h2>
 
-          <input type="text" name="name" placeholder="Your Name" required  required pattern="[a-zA-Z ]+" oninvalid="this.setCustomValidity('Numbers and Symbols are not allowed')" 
-          oninput="this.setCustomValidity('')" style="
-          width: 100%;
-          padding: 12px;
-          margin: 8px 0;
-          border: 1px solid #ccc;
-          border-radius: 5px;
-          font-size: 14px;
-          color: black;
-          background-color: #f9f9f9;
-          transition: border-color 0.3s ease, box-shadow 0.3s ease;
-        " onfocus="this.style.borderColor='#ff66b2'; this.style.boxShadow='0 0 10px rgba(255, 102, 178, 0.3)'"
-            onblur="this.style.borderColor='#ccc'; this.style.boxShadow='none'">
+    <!-- Notification Popup -->
+    <div id="notification" style="
+      display: none;
+      background-color: #4caf50;
+      color: white;
+      padding: 12px;
+      margin-bottom: 10px;
+      border-radius: 10px;
+      width: 44vh;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    ">
+      ✅ Form successfully submitted!
+    </div>
 
-          <input type="email" name="email" placeholder="Your Email" required style="
-          width: 100%;
-          padding: 12px;
-          margin: 8px 0;
-          border: 1px solid #ccc;
-          border-radius: 5px;
-          font-size: 14px;
-          color: black;
-          background-color: #f9f9f9;
-          transition: border-color 0.3s ease, box-shadow 0.3s ease;
-        " onfocus="this.style.borderColor='#ff66b2'; this.style.boxShadow='0 0 10px rgba(255, 102, 178, 0.3)'"
-            onblur="this.style.borderColor='#ccc'; this.style.boxShadow='none'">
+    <form id="contact-form" data-aos="fade-left" style="
+      max-width: 90%;
+      width: 400px;
+      background-color: #2e2e2e87;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+      transition: box-shadow 0.3s ease;
+    " onmouseover="this.style.boxShadow='0 10px 20px rgba(0, 0, 0, 0.2)'"
+      onmouseout="this.style.boxShadow='0 6px 12px rgba(0, 0, 0, 0.15)'">
 
-          <textarea name="message" placeholder="Your Message" required style="
-          width: 100%;
-          padding: 12px;
-          margin: 8px 0;
-          border: 1px solid #ccc;
-          border-radius: 5px;
-          font-size: 14px;
-          color: black;
-          background-color: #f9f9f9;
-          height: 150px;
-          resize: none;
-          transition: border-color 0.3s ease, box-shadow 0.3s ease;
-        " onfocus="this.style.borderColor='#ff66b2'; this.style.boxShadow='0 0 10px rgba(255, 102, 178, 0.3)'" 
-           onblur="this.style.borderColor='#ccc'; this.style.boxShadow='none'"></textarea>
+      <input type="text" name="name" placeholder="Your Name" required pattern="[a-zA-Z ]+" oninvalid="this.setCustomValidity('Numbers and Symbols are not allowed')" 
+      oninput="this.setCustomValidity('')" style="
+        width: 100%;
+        padding: 12px;
+        margin: 8px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 14px;
+        color: black;
+        background-color: #f9f9f9;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+      " onfocus="this.style.borderColor='#ff66b2'; this.style.boxShadow='0 0 10px rgba(255, 102, 178, 0.3)'"
+        onblur="this.style.borderColor='#ccc'; this.style.boxShadow='none'">
+
+      <input type="email" name="email" placeholder="Your Email" required style="
+        width: 100%;
+        padding: 12px;
+        margin: 8px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 14px;
+        color: black;
+        background-color: #f9f9f9;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+      " onfocus="this.style.borderColor='#ff66b2'; this.style.boxShadow='0 0 10px rgba(255, 102, 178, 0.3)'"
+        onblur="this.style.borderColor='#ccc'; this.style.boxShadow='none'">
+
+      <textarea name="message" placeholder="Your Message" required style="
+        width: 100%;
+        padding: 12px;
+        margin: 8px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 14px;
+        color: black;
+        background-color: #f9f9f9;
+        height: 150px;
+        resize: none;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+      " onfocus="this.style.borderColor='#ff66b2'; this.style.boxShadow='0 0 10px rgba(255, 102, 178, 0.3)'" 
+        onblur="this.style.borderColor='#ccc'; this.style.boxShadow='none'"></textarea>
+
+      <button type="submit" style="
+        background-color: #ff66b2;
+        color: white;
+        padding: 12px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        width: 100%;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+      " onmouseover="this.style.backgroundColor='#ff3385'; this.style.transform='scale(1.05)'"
+        onmouseout="this.style.backgroundColor='#ff66b2'; this.style.transform='scale(1)'">Send</button>
+    </form>
+  </div>
+</section>
+
+<script>
+  // Handling form submission
+  const form = document.getElementById('contact-form');
+  const notification = document.getElementById('notification');
+
+  form.addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent default form submission
+
+    // Show notification
+    notification.style.display = 'block';
+
+    // Hide notification after 3 seconds
+    setTimeout(function() {
+      notification.style.display = 'none';
+    }, 3000);
+
+    // Clear input fields
+    form.reset();
     
-        <button type="submit" style="
-          background-color: #ff66b2;
-          color: white;
-          padding: 12px;
-          border: none;
-          border-radius: 5px;
-          cursor: pointer;
-          font-size: 16px;
-          width: 100%;
-          transition: background-color 0.3s ease, transform 0.3s ease;
-        " onmouseover="this.style.backgroundColor='#ff3385'; this.style.transform='scale(1.05)'"
-            onmouseout="this.style.backgroundColor='#ff66b2'; this.style.transform='scale(1)'">Send</button>
-        </form>
+    // You can add your form processing logic here (e.g., sending data to the server)
+  });
+</script>
 
-
-
-      </div>
-    </section>
 
 
     <div class="footer-bottom">
