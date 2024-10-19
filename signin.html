@@ -18,6 +18,7 @@
             <p><strong>Sign in</strong> to access your learning dashboard</p>
             
             <form action="#" method="POST">
+                {% csrf_token %}
                 <div class="input-group">
                     <label for="username">Username</label>
                     <input type="text" id="username" name="username" placeholder="Enter your username" required>
