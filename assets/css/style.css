@@ -1492,7 +1492,6 @@ button:hover {
   position: absolute;
   right:0;
   margin-right: 5vw;
-  margin-top: 0.8vw;
  }
 
 @media (min-width: 768px) {
@@ -1865,10 +1864,9 @@ button:hover {
     gap: 30px;
   }
 
-  #theme-toggle {
-    right: 125px;
-    top: 5px;
-  }
+  /* #theme-toggle {
+    right: 12px;
+  } */
 
   /* Can be used if wanting a more linear Instagram post feed but as a viewer I like the grid better
   .footer-top .grid-list {
@@ -2194,4 +2192,44 @@ body {
 .testimonial-content {
   margin-bottom: 10px;
   /* Space between quote and name (optional) */
+}
+
+
+@media (max-width: 1484px) {
+  #theme-toggle{
+    right:80px;
+  }
+}
+@media (max-width: 1440px) {
+  #theme-toggle{
+    right:70px;
+  }
+}
+@media (max-width: 1200px) {
+  #theme-toggle{
+    right:60px;
+  }
+}
+@media (max-width: 1024px) {
+  #theme-toggle{
+    right:45px;
+  }
+}
+@media (max-width: 768px) {
+  #theme-toggle{
+    right:30px;
+  }
+  .nav-open-btn {
+    margin-top: 5px;
+  }
+}
+@media (max-width:425px) {
+  #theme-toggle{
+    right:30px;
+  }
+}
+@media (max-width:375px) {
+  #theme-toggle{
+    right:20px;
+  }
 }
