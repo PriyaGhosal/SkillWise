@@ -155,7 +155,7 @@ body.nav-active {
 }
 
 .title-lg {
-  font-size: var(--title-lg);
+  font-size: 20px;
   line-height: 1.4;
 }
 

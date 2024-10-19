@@ -6,27 +6,59 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>UI/UX Design Courses</title>
   <link rel="stylesheet" href="assets/css/uiux.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  
+
 </head>
+<style>
 
+.span {
+    color: var(--light-coral); /* Use your existing color variable */
+    display: inline;
+    position: relative; /* Required for positioning the pseudo-element */
+}
+header {
+    border: none; /* Remove any borders */
+    margin: 0; /* Reset margin */
+    padding: 0; /* Reset padding */
+}
+
+h1 {
+    margin: 0; /* Remove margin around h1 */
+    padding: 0; /* Remove padding around h1 */
+    border: none; /* Remove any borders */
+    text-decoration: none; /* Remove underline if applied */
+}
+
+/* Additional reset for the section, if needed */
+.section {
+    border: none; /* Ensure no borders */
+}
+
+  </style>
 <body>
-  <header>
-    <h1>UI/UX Design Courses</h1>
+  <header style="margin-bottom: 20px;">
+    <h1>UI/UX Design <span class="span has-after">Courses</span></h1>
   </header>
-
+  
   <ul class="course-list">
+    <div class="header1"> 
     <li class="card category-card">
+      
       <div class="card-icon">
         <img src="./assets/images/img1.jpg" width="72" height="72" alt="Course 1 icon">
       </div>
+      
       <div>
         <h3 class="title-lg">Intro to UI/UX Design</h3>
         <p class="title-sm">Beginner-friendly introduction to the basics of UI/UX.</p>
         <a href="#" class="buy-now-btn">Buy Now</a>
       </div>
       <a href="#" class="layer-link" aria-label="Intro to UI/UX Design"></a>
-    </li>
-
+    </li></div>
+    <div class="header2">
     <li class="card category-card">
+      
       <div class="card-icon">
         <img src="./assets/images/img2.jpg" width="72" height="72" alt="Course 2 icon">
       </div>
@@ -36,8 +68,8 @@
         <a href="#" class="buy-now-btn">Buy Now</a>
       </div>
       <a href="#" class="layer-link" aria-label="Advanced Prototyping Techniques"></a>
-    </li>
-
+    </li></div>
+    <div class="header1">
     <li class="card category-card">
       <div class="card-icon">
         <img src="./assets/images/img3.jpg" width="72" height="72" alt="Course 3 icon">
@@ -48,8 +80,8 @@
         <a href="#" class="buy-now-btn">Buy Now</a>
       </div>
       <a href="#" class="layer-link" aria-label="User Research Fundamentals"></a>
-    </li>
-
+    </li></div>
+    <div class="header2">
     <li class="card category-card">
       <div class="card-icon">
         <img src="./assets/images/img4.jpg" width="72" height="72" alt="Course 4 icon">
@@ -60,8 +92,8 @@
         <a href="#" class="buy-now-btn">Buy Now</a>
       </div>
       <a href="#" class="layer-link" aria-label="Design Systems & Guidelines"></a>
-    </li>
-
+    </li></div>
+    <div class="header1">
     <li class="card category-card">
       <div class="card-icon">
         <img src="./assets/images/img5.jpg" width="72" height="72" alt="Course 5 icon">
@@ -72,8 +104,8 @@
         <a href="#" class="buy-now-btn">Buy Now</a>
       </div>
       <a href="#" class="layer-link" aria-label="UX for Mobile Devices"></a>
-    </li>
-
+    </li></div>
+    <div class="header2">
     <li class="card category-card">
       <div class="card-icon">
         <img src="./assets/images/img6.jpg" width="72" height="72" alt="Course 6 icon">
@@ -84,7 +116,7 @@
         <a href="#" class="buy-now-btn">Buy Now</a>
       </div>
       <a href="#" class="layer-link" aria-label="Web Accessibility in UI/UX"></a>
-    </li>
+    </li></div>
   </ul>
 
 </body>
