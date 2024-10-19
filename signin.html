@@ -50,26 +50,63 @@
                 </div>
                 <p class="suggestion">
                   <small>Use special characters and numbers for a strong password</small>
+
                 </p> -->
-                <button type="submit" class="signin-btn">Sign In</button>
+               
+                <button type="submit" class="signin-btn" id="submit">Sign In</button>
+
                 <p class="signup-link">Don't have an account? <a href="./signup.html">Sign up here</a></p>
             </form>
         </div>
     </div>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script >
-        const togglePassword = document.querySelector("#togglePassword");
-const passwordInput = document.querySelector("#password");
 
-togglePassword.addEventListener("click", function () {
-  const type = passwordInput.getAttribute("type") === "password" ?  "text": "password";
-  passwordInput.setAttribute("type", type);
-
-  this.classList.toggle("fa-eye-slash");
-  this.classList.toggle("fa-eye");
-});
+    <script>
+      const togglePassword = document.querySelector("#togglePassword");
+      const passwordInput = document.querySelector("#password");
+      const submitBtn = document.querySelector("#submit");
+      const emailInput = document.querySelector("#email");
+    
+      togglePassword.addEventListener("click", function () {
+        const type = passwordInput.getAttribute("type") === "password" ? "text" : "password";
+        passwordInput.setAttribute("type", type);
+    
+        this.classList.toggle("fa-eye-slash");
+        this.classList.toggle("fa-eye");
+      });
+    
+     
+    
+      submitBtn.addEventListener("click", (e) => {
+         e.preventDefault();
+    
+        const email = emailInput.value;
+        const emailError = document.getElementById("emailError");
+        
+      
+        const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+    
+        if (!emailPattern.test(email)) {
+         
+          if (!emailError) {
+            const errorMsg = document.createElement("p");
+            errorMsg.id = "emailError";
+            errorMsg.style.color = "red";
+            errorMsg.textContent = "Email is incorrect. Please enter a valid email address.";
+            emailInput.parentElement.appendChild(errorMsg);
+          }
+        } else {
+         
+          if (emailError) {
+            emailError.remove();
+          }
+        
+          e.target.closest("form").submit();
+        }
+      });
 
     </script>
+    
 
 </body>
 </html>
