@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- 
+  <!--
     - primary meta tags
   -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -16,27 +16,27 @@
   <meta name="title" content="SkillWise">
   <meta name="description" content="This is a education html template made by Priya Ghosal">
 
-  <!-- 
+  <!--
     - favicon
   -->
   <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
 
-  <!-- 
+  <!--
     - custom font link
   -->
   <link rel="stylesheet" href="./assets/font/font.css">
 
-  <!-- 
+  <!--
     - custom css link
   -->
   <link rel="stylesheet" href="./assets/css/style.css" id="theme-style">
 
-  <!-- 
+  <!--
     -dark mode css link disabled
    -->
   <!-- <link rel="stylesheet" href="./assets/css/darkmode.css" id="theme-style" > -->
 
-  <!-- 
+  <!--
     - preload images
   -->
   <link rel="preload" as="image" href="./assets/images/hero-banner.png">
@@ -49,7 +49,7 @@
 
 <body>
 
-  <!-- 
+  <!--
     - PRELOADER
   -->
 
@@ -60,12 +60,12 @@
 
 
 
-    <!-- 
+    <!--
     - #HEADER
   -->
   <header class="header" data-header>
 
-    <div class="container" style="margin-left: 13rem;">
+    <div class="container" style="margin-left: 5rem;">
 
       <a href="#">
         <img src="./assets/images/Skillwise_logo-removebg-preview.png" width="50" height="10" alt="SkillWise home">
@@ -119,11 +119,11 @@
           </li>
           <li class="navbar-item">
           <div class="searchBox">
-            <input class="searchInput" id = "search-bar" type="text" name="" placeholder="Search something">
+            <input class="searchInput" id = "search-bar" type="text" name="" placeholder="Search courses">
           <button  onclick="searchCourses()" class="searchButton SearchBTN" href="#">
             <div id="search-results"></div>
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 29 29" fill="none">
-    
+
                 <g clip-path="url(#clip0_2_17)">
                   <g filter="url(#filter0_d_2_17)">
                     <path
@@ -150,13 +150,14 @@
                   </clipPath>
                 </defs>
               </svg>
-    
+
             </button>
           </div>
           </li>
         </ul>
       </nav>
-      <a href="../signin.html" class="btn" id = "freeTrial">Start Free Trial</a>
+       
+      <a href="../signin.html" class="btn" id = "freeTrial"  >Start Free Trial</a> 
 
       <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
         <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
@@ -176,7 +177,7 @@
   <main>
     <article>
 
-      <!-- 
+      <!--
         - #HERO
       -->
 
@@ -257,7 +258,7 @@
 
 
 
-      <!-- 
+      <!--
         - #CATEGORY
       -->
 
@@ -401,7 +402,7 @@
 
 
 
-      <!-- 
+      <!--
         - #ABOUT
       -->
 
@@ -476,7 +477,7 @@
 
 
 
-      <!-- 
+      <!--
         - #COURSE
       -->
 
@@ -486,8 +487,10 @@
           <p id="keppi" class="title-sm section-subtitle text-center ">Featured Courses</p>
 
           <h2 class="headline-md section-title text-center" id="course-label" data-aos="fade-down">
-            <div class="header1">Choose Unlimited <span class="span has-after">Courses</span< /div> >
+            Choose Unlimited <span class="span has-after">Courses</span>
           </h2>
+          
+          
 
           <ul class="grid-list">
 
@@ -822,18 +825,18 @@
 
 
 
-      <!-- 
+      <!--
         - #CTA
       -->
 
       <section class="cta" aria-labelledby="cta-label">
-        <div class="container">
+        <div class="container cta-container">
 
-          <h2 class="headline-md section-title" id="cta-label" data-aos="zoom-in">
+          <h2 class="" id="cta-label" data-aos="zoom-in">
             Education Is About Creating Leaders For Tomorrow
           </h2>
 
-          <a href="signin.html" class="btn btn-tertiary" data-aos="fade-left">Register Today</a>
+          <a href="signin.html" class="cta-btn" data-aos="fade-left">Register Today</a>
 
         </div>
       </section>
@@ -925,7 +928,7 @@
       </div>
 
 
-      <!-- 
+      <!--
         - #BLOG
       -->
 
@@ -1006,7 +1009,7 @@
       </section>
 
 
-      <!-- 
+      <!--
         - #PRICING
       -->
 
@@ -1121,7 +1124,7 @@
         </div>
       </section>
 
-      <!-- 
+      <!--
         #Testimonials
        -->
 
@@ -1174,23 +1177,23 @@
               </div>
             </li>
           </ul>
-          
+
           <div class="button-container">
             <a href="./pages/testimonials.html" class="btn btn-primary" data-aos="zoom-in">See All Testimonials</a>
           </div>
-          
+
         </div>
 
       </section>
-      
+
       <section id="events" class="section events" aria-labelledby="events-label">
         <div class="container">
           <p class="title-sm text-center section-subtitle" id="events-label">Upcoming Workshops</p>
-      
+
           <h2 class="headline-md text-center section-title" data-aos="fade-down">
             Join Our Skill Development <span class="span has-after">Events</span>
           </h2>
-      
+
           <div class="event-list">
             <!-- Event 1 -->
             <div class="event-item" data-aos="fade-right">
@@ -1204,7 +1207,7 @@
               </div>
               <a href="#" class="event-button">View Event</a>
             </div>
-      
+
             <!-- Event 2 -->
             <div class="event-item" data-aos="fade-right">
               <div class="event-date-box">
@@ -1217,7 +1220,7 @@
               </div>
               <a href="#" class="event-button">View Event</a>
             </div>
-      
+
             <!-- Event 3 -->
             <div class="event-item" data-aos="fade-right">
               <div class="event-date-box">
@@ -1231,16 +1234,16 @@
               <a href="#" class="event-button">View Event</a>
             </div>
           </div>
-          
+
           <div class="button-container">
             <a href="./pages/events.html" class="btn btn-primary see-all" data-aos="zoom-in">View All Workshops</a>
           </div>
         </div>
       </section>
-      
-      
-      
-      
+
+
+
+
 
     </article>
   </main>
@@ -1303,11 +1306,11 @@
               </a>
             </li>
             <li>
-              <a href="https://www.Youtube.com" class="social-link" id="social-link6">
-                <img src="https://icons.getbootstrap.com/assets/icons/youtube.svg" width="40" height="40" loading="lazy" alt="Youtube">
+              <a href="https://www.Youtube.com" class="social-link" id="social-link5">
+                <img src="./assets/images/youtube.svg" width="40" height="40" loading="lazy" alt="Youtube">
                 </a>
             </li>
-              
+
 
           </ul>
 
@@ -1381,7 +1384,7 @@
           </li>
 
           <li>
-            <a href="copy.html" class="title-sm footer-link">Copyright Policy</a>
+            <a href="Copyright.html" class="title-sm footer-link">Copyright Policy</a>
           </li>
 
         </ul>
@@ -1437,6 +1440,7 @@
     - #Contact Us
   -->
 
+
 <section id="contact" class="cta" aria-labelledby="cta-label">
   <div class="container" style="align-items: center; justify-content: center; display: flex; flex-direction: column; gap: 10px;">
     <h2 class="headline-md section-title" id="cta-label" data-aos="fade-right" style="font-size: clamp(4rem, 100px, 3vw);">
@@ -1457,74 +1461,86 @@
       ✅ Form successfully submitted!
     </div>
 
-    <form id="contact-form" data-aos="fade-left" style="
-      max-width: 90%;
-      width: 400px;
-      background-color: #2e2e2e87;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-      transition: box-shadow 0.3s ease;
-    " onmouseover="this.style.boxShadow='0 10px 20px rgba(0, 0, 0, 0.2)'"
-      onmouseout="this.style.boxShadow='0 6px 12px rgba(0, 0, 0, 0.15)'">
+    <section id="contact" class="cta" aria-labelledby="cta-label">
 
-      <input type="text" name="name" placeholder="Your Name" required pattern="[a-zA-Z ]+" oninvalid="this.setCustomValidity('Numbers and Symbols are not allowed')" 
-      oninput="this.setCustomValidity('')" style="
-        width: 100%;
-        padding: 12px;
-        margin: 8px 0;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        font-size: 14px;
-        color: black;
-        background-color: #f9f9f9;
-        transition: border-color 0.3s ease, box-shadow 0.3s ease;
-      " onfocus="this.style.borderColor='#ff66b2'; this.style.boxShadow='0 0 10px rgba(255, 102, 178, 0.3)'"
-        onblur="this.style.borderColor='#ccc'; this.style.boxShadow='none'">
+      <div class="container" style="align-items: center;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;">
 
-      <input type="email" name="email" placeholder="Your Email" required style="
-        width: 100%;
-        padding: 12px;
-        margin: 8px 0;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        font-size: 14px;
-        color: black;
-        background-color: #f9f9f9;
-        transition: border-color 0.3s ease, box-shadow 0.3s ease;
-      " onfocus="this.style.borderColor='#ff66b2'; this.style.boxShadow='0 0 10px rgba(255, 102, 178, 0.3)'"
-        onblur="this.style.borderColor='#ccc'; this.style.boxShadow='none'">
+        <h2 class="headline-md section-title" id="cta-label" data-aos="fade-right" style="font-size: clamp(4rem, 100px, 3vw);">
+          Contact Us.
+        </h2>
 
-      <textarea name="message" placeholder="Your Message" required style="
-        width: 100%;
-        padding: 12px;
-        margin: 8px 0;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        font-size: 14px;
-        color: black;
-        background-color: #f9f9f9;
-        height: 150px;
-        resize: none;
-        transition: border-color 0.3s ease, box-shadow 0.3s ease;
-      " onfocus="this.style.borderColor='#ff66b2'; this.style.boxShadow='0 0 10px rgba(255, 102, 178, 0.3)'" 
-        onblur="this.style.borderColor='#ccc'; this.style.boxShadow='none'"></textarea>
+        <form id="contact-form" data-aos="fade-left" style="
+        max-width: 90%;
+        width: 400px;
+        background-color: #2e2e2e87;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        transition: box-shadow 0.3s ease;
+      " onmouseover="this.style.boxShadow='0 10px 20px rgba(0, 0, 0, 0.2)'"
+          onmouseout="this.style.boxShadow='0 6px 12px rgba(0, 0, 0, 0.15)'">
 
-      <button type="submit" style="
-        background-color: #ff66b2;
-        color: white;
-        padding: 12px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        font-size: 16px;
-        width: 100%;
-        transition: background-color 0.3s ease, transform 0.3s ease;
-      " onmouseover="this.style.backgroundColor='#ff3385'; this.style.transform='scale(1.05)'"
-        onmouseout="this.style.backgroundColor='#ff66b2'; this.style.transform='scale(1)'">Send</button>
-    </form>
-  </div>
-</section>
+          <input type="text" name="name" placeholder="Your Name" required  required pattern="[a-zA-Z ]+" oninvalid="this.setCustomValidity('Numbers and Symbols are not allowed')"
+          oninput="this.setCustomValidity('')" style="
+          width: 100%;
+          padding: 12px;
+          margin: 8px 0;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          font-size: 14px;
+          color: black;
+          background-color: #f9f9f9;
+          transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        " onfocus="this.style.borderColor='#ff66b2'; this.style.boxShadow='0 0 10px rgba(255, 102, 178, 0.3)'"
+            onblur="this.style.borderColor='#ccc'; this.style.boxShadow='none'">
+
+          <input type="email" name="email" placeholder="Your Email" required style="
+          width: 100%;
+          padding: 12px;
+          margin: 8px 0;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          font-size: 14px;
+          color: black;
+          background-color: #f9f9f9;
+          transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        " onfocus="this.style.borderColor='#ff66b2'; this.style.boxShadow='0 0 10px rgba(255, 102, 178, 0.3)'"
+            onblur="this.style.borderColor='#ccc'; this.style.boxShadow='none'">
+
+          <textarea name="message" placeholder="Your Message" required style="
+          width: 100%;
+          padding: 12px;
+          margin: 8px 0;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          font-size: 14px;
+          color: black;
+          background-color: #f9f9f9;
+          height: 150px;
+          resize: none;
+          transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        " onfocus="this.style.borderColor='#ff66b2'; this.style.boxShadow='0 0 10px rgba(255, 102, 178, 0.3)'"
+           onblur="this.style.borderColor='#ccc'; this.style.boxShadow='none'"></textarea>
+
+        <button type="submit" style="
+          background-color: #ff66b2;
+          color: white;
+          padding: 12px;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          font-size: 16px;
+          width: 100%;
+          transition: background-color 0.3s ease, transform 0.3s ease;
+        " onmouseover="this.style.backgroundColor='#ff3385'; this.style.transform='scale(1.05)'"
+            onmouseout="this.style.backgroundColor='#ff66b2'; this.style.transform='scale(1)'">Send</button>
+        </form>
+
+
 
 <script>
   // Handling form submission
@@ -1568,33 +1584,55 @@
 
    <!--JS for searching courses -->
  <script>
-    
-        // Define searchCourses function
-        function searchCourses() {
-    const searchTerm = document.getElementById('search-bar').value.toLowerCase();
-    const courses = document.querySelectorAll('.category-card');
-    const resultsDiv = document.getElementById('search-results');
-    resultsDiv.innerHTML = ''; // Clear previous results
-    let found = false; // Flag to track if any course is found
 
-    courses.forEach((course) => {
-        const courseTitle = course.querySelector('.title-lg').innerText.toLowerCase();
-        if (courseTitle.includes(searchTerm)) {
-            const resultCard = course.cloneNode(true); // Clone the course card
-            resultsDiv.appendChild(resultCard); // Show matching result at the top
-            found = true; // Set flag to true if a course is found
-        }
-    });
+    document.addEventListener("DOMContentLoaded", () => {
+  const searchInput = document.getElementById('search-bar');
 
-    // If no courses match, show "No results found"
-    if (!found) {
-        resultsDiv.innerHTML = '<p>No results found</p>';
+  // Add event listener for Enter key press
+  searchInput.addEventListener('keypress', (event) => {
+    if (event.key === 'Enter') {
+      event.preventDefault(); // Prevent form submission if inside a form
+      searchCourses(); // Call the search function
     }
+  });
+});
+
+function searchCourses() {
+  const searchTerm = document.getElementById('search-bar').value.toLowerCase();
+  const courses = document.querySelectorAll('.category-card');
+  const resultsDiv = document.getElementById('search-results');
+  resultsDiv.innerHTML = ''; // Clear previous results
+
+  // Exit early if search term is empty
+  if (!searchTerm.trim()) {
+    resultsDiv.innerHTML = '<p class="no-results">Please enter a search term</p>';
+    return;
+  }
+
+  let found = false; // Flag to track if any course is found
+  const uniqueCourses = new Set(); // Set to track unique courses
+
+  courses.forEach((course) => {
+    const courseTitle = course.querySelector('.title-lg').innerText.toLowerCase();
+    if (courseTitle.includes(searchTerm)) {
+      if (!uniqueCourses.has(courseTitle)) {
+        uniqueCourses.add(courseTitle); // Add course title to the set
+        const resultCard = course.cloneNode(true); // Clone the course card
+        resultsDiv.appendChild(resultCard); // Show matching result at the top
+        found = true; // Set flag to true if a course is found
+      }
+    }
+  });
+
+  // If no courses match, show "No results found"
+  if (!found) {
+    resultsDiv.innerHTML = '<p class="no-results">No results found</p>';
+  }
 }
 
     </script>
 
-  <!-- 
+  <!--
    - custom js link
   -->
   <!-- Custom JS Links -->
@@ -1620,7 +1658,7 @@
 
   <script src="./assets/js/blogs.js"></script>
 
-  <!-- 
+  <!--
     - ionicon
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
