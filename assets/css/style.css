@@ -615,7 +615,7 @@ body.nav-active .navbar-list .navbar-link {
   background-color: white;
   padding: 20px;
   border-radius: 5px;
-  width: 300px;
+  width: 450px;
   text-align: center;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
 }
@@ -634,6 +634,7 @@ body.nav-active .navbar-list .navbar-link {
   cursor: pointer;
 }
 
+/* Styling for Emoji Section */
 .emojis {
   font-size: 30px;
   margin: 20px 0;
@@ -642,22 +643,31 @@ body.nav-active .navbar-list .navbar-link {
   justify-content: space-evenly;
 }
 
-.emoji {
+.emoji-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   cursor: pointer;
   margin: 0 10px;
   transition: transform 0.2s;
 }
 
-.emoji:hover {
+.emoji-option p {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #555;
+}
+
+.emoji-option:hover .emoji {
   transform: scale(1.2);
 }
 
 .emoji.selected {
-  border: 1px solid black;
-  /* Highlight selected emoji */
+  border: 2px solid #4caf50;
   border-radius: 5px;
 }
 
+/* Step Navigation Buttons */
 .buttons {
   display: flex;
   align-items: center;
