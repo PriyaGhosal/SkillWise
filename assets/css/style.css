@@ -476,11 +476,9 @@ body.nav-active .navbar-list .navbar-link {
   position: fixed;
   top: 0;
   left: 0;
-  width: 50%;
+  width: 22%;
   height: 100vh;
-  background-color: white;
-
-  opacity: 0;
+  background-color: whitesmoke;
   visibility: hidden;
   transition: var(--transition);
   /* z-index: 999; */
@@ -589,7 +587,7 @@ body.nav-active .navbar-list .navbar-link {
   position: fixed;
   left: 20px;
   bottom: 20px;
-  background-color: hsl(357, 100%, 75%);
+  background-color: black;
   color: white;
   padding: 15px;
   border-radius: 5px;
