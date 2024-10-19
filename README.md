@@ -3,7 +3,6 @@
 # `SkillWise`
 <br>
 https://github.com/user-attachments/assets/c43af3c7-5655-4e31-8ef8-25a0abfe34e5
-
 <br>
 <img src='./readme-images/desktop.png'>
 <br>
