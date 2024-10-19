@@ -508,7 +508,7 @@ body.nav-active {
   position: fixed;
   left: 20px;
   bottom: 20px;
-  background-color: hsl(357, 100%, 75%);
+  background-color: #FF4D4D;
   color: white;
   padding: 15px;
   border-radius: 5px;
