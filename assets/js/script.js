@@ -108,6 +108,7 @@ document.querySelectorAll('.emoji').forEach(emoji => {
         emoji.classList.add('selected');
         document.getElementById('emoji-not-selected').hidden= true;
         document.getElementsByClassName('emojis')[0].style.margin="20px 0";
+        
     }
 });
 
