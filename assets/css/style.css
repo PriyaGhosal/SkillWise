@@ -476,7 +476,7 @@ body.nav-active .navbar-list .navbar-link {
   position: fixed;
   top: 0;
   left: 0;
-  width: 50%;
+  width: 320px;
   height: 100vh;
   background-color: white;
 
