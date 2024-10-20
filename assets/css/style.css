@@ -92,6 +92,10 @@ li {
   list-style: none;
 }
 
+.plansList li {
+  list-style-type: disc;
+}
+
 a,
 img,
 span,
