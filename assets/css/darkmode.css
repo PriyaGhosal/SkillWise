@@ -586,7 +586,7 @@ body.nav-active {
   gap: 24px;
 }
 
-.course-card:is(:hover, :focus-within) {
+.card-container .course-card:is(:hover, :focus-within) {
   border-color: var(--light-coral);
 }
 
@@ -928,7 +928,7 @@ body.nav-active {
 .live-count-emoji{
   font-size: xx-large;
 }
-@media
+
 
 
 
