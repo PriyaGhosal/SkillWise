@@ -1486,6 +1486,27 @@
     - #Contact Us
   -->
 
+
+<section id="contact" class="cta" aria-labelledby="cta-label">
+  <div class="container" style="align-items: center; justify-content: center; display: flex; flex-direction: column; gap: 10px;">
+    <h2 class="headline-md section-title" id="cta-label" data-aos="fade-right" style="font-size: clamp(4rem, 100px, 3vw);">
+      Contact Us.
+    </h2>
+
+    <!-- Notification Popup -->
+    <div id="notification" style="
+      display: none;
+      background-color: #4caf50;
+      color: white;
+      padding: 12px;
+      margin-bottom: 10px;
+      border-radius: 10px;
+      width: 44vh;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    ">
+      ✅ Form successfully submitted!
+    </div>
+
     <section id="contact" class="cta" aria-labelledby="cta-label">
 
       <div class="container" style="align-items: center;
@@ -1567,8 +1588,29 @@
 
 
 
-      </div>
-    </section>
+<script>
+  // Handling form submission
+  const form = document.getElementById('contact-form');
+  const notification = document.getElementById('notification');
+
+  form.addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent default form submission
+
+    // Show notification
+    notification.style.display = 'block';
+
+    // Hide notification after 3 seconds
+    setTimeout(function() {
+      notification.style.display = 'none';
+    }, 3000);
+
+    // Clear input fields
+    form.reset();
+    
+    // You can add your form processing logic here (e.g., sending data to the server)
+  });
+</script>
+
 
 
     <div class="footer-bottom">
