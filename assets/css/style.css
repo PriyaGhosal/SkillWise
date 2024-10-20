@@ -1848,15 +1848,17 @@ textarea {
 }
 button {
   padding: 15px;
-  background-color: #007bff;
-  color: white;
+  background-color: #eef1f4;
+  font-weight: bold;
+  font-size: large;
+  color: rgb(39, 37, 37);
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #dbdfe4;
 }
 
 @media (max-width: 1037px) {
