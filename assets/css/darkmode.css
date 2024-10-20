@@ -898,6 +898,39 @@ body.nav-active {
     margin: 0 10px;
   }
 }
+/* LIVE COUNTING */
+.livecounting{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.livecounting-container{
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.live-count{
+   padding: 15px 15px; 
+  width: 140px;
+  height: 140px;
+  border: 2px solid bisque;
+  border-radius: 20%;
+  box-shadow: 7px 7px 10px gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+
+}
+.live-count-emoji{
+  font-size: xx-large;
+}
+@media
+
+
 
 /*-----------------------------------*\
     #BLOG
@@ -1145,7 +1178,7 @@ body.nav-active {
      */
 
   .container {
-    max-width: 640px;
+    max-width: 740px;
     width: 100%;
     margin-inline: auto;
   }
