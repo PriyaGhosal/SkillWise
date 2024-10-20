@@ -15,7 +15,12 @@
   <title>SkillWise</title>
   <meta name="title" content="SkillWise">
   <meta name="description" content="This is a education html template made by Priya Ghosal">
+  <style>
+    /* footer{
+      color:white
+    } */
 
+  </style>
   <!--
     - favicon
   -->
@@ -1488,10 +1493,9 @@
 
 
 <section id="contact" class="cta" aria-labelledby="cta-label">
+ 
   <div class="container" style="align-items: center; justify-content: center; display: flex; flex-direction: column; gap: 10px;">
-    <h2 class="headline-md section-title" id="cta-label" data-aos="fade-right" style="font-size: clamp(4rem, 100px, 3vw);">
-      Contact Us.
-    </h2>
+    
 
     <!-- Notification Popup -->
     <div id="notification" style="
@@ -1509,107 +1513,130 @@
 
     <section id="contact" class="cta" aria-labelledby="cta-label">
 
-      <div class="container" style="align-items: center;
-      justify-content: center;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;">
-
-        <h2 class="headline-md section-title" id="cta-label" data-aos="fade-right" style="font-size: clamp(4rem, 100px, 3vw);">
-          Contact Us.
-        </h2>
-
-        <form id="contact-form" data-aos="fade-left" style="
-        max-width: 90%;
-        width: 400px;
-        background-color: #2e2e2e87;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-        transition: box-shadow 0.3s ease;
-      " onmouseover="this.style.boxShadow='0 10px 20px rgba(0, 0, 0, 0.2)'"
-          onmouseout="this.style.boxShadow='0 6px 12px rgba(0, 0, 0, 0.15)'">
-
-          <input type="text" name="name" placeholder="Your Name" required  required pattern="[a-zA-Z ]+" oninvalid="this.setCustomValidity('Numbers and Symbols are not allowed')"
-          oninput="this.setCustomValidity('')" style="
-          width: 100%;
-          padding: 12px;
-          margin: 8px 0;
-          border: 1px solid #ccc;
-          border-radius: 5px;
-          font-size: 14px;
-          color: black;
-          background-color: #f9f9f9;
-          transition: border-color 0.3s ease, box-shadow 0.3s ease;
-        " onfocus="this.style.borderColor='#ff66b2'; this.style.boxShadow='0 0 10px rgba(255, 102, 178, 0.3)'"
-            onblur="this.style.borderColor='#ccc'; this.style.boxShadow='none'">
-
-          <input type="email" name="email" placeholder="Your Email" required style="
-          width: 100%;
-          padding: 12px;
-          margin: 8px 0;
-          border: 1px solid #ccc;
-          border-radius: 5px;
-          font-size: 14px;
-          color: black;
-          background-color: #f9f9f9;
-          transition: border-color 0.3s ease, box-shadow 0.3s ease;
-        " onfocus="this.style.borderColor='#ff66b2'; this.style.boxShadow='0 0 10px rgba(255, 102, 178, 0.3)'"
-            onblur="this.style.borderColor='#ccc'; this.style.boxShadow='none'">
-
-          <textarea name="message" placeholder="Your Message" required style="
-          width: 100%;
-          padding: 12px;
-          margin: 8px 0;
-          border: 1px solid #ccc;
-          border-radius: 5px;
-          font-size: 14px;
-          color: black;
-          background-color: #f9f9f9;
-          height: 150px;
-          resize: none;
-          transition: border-color 0.3s ease, box-shadow 0.3s ease;
-        " onfocus="this.style.borderColor='#ff66b2'; this.style.boxShadow='0 0 10px rgba(255, 102, 178, 0.3)'"
-           onblur="this.style.borderColor='#ccc'; this.style.boxShadow='none'"></textarea>
-
-        <button type="submit" style="
-          background-color: #ff66b2;
-          color: white;
-          padding: 12px;
-          border: none;
-          border-radius: 5px;
-          cursor: pointer;
-          font-size: 16px;
-          width: 100%;
-          transition: background-color 0.3s ease, transform 0.3s ease;
-        " onmouseover="this.style.backgroundColor='#ff3385'; this.style.transform='scale(1.05)'"
-            onmouseout="this.style.backgroundColor='#ff66b2'; this.style.transform='scale(1)'">Send</button>
-        </form>
-
-
-
-<script>
-  // Handling form submission
-  const form = document.getElementById('contact-form');
-  const notification = document.getElementById('notification');
-
-  form.addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent default form submission
-
-    // Show notification
-    notification.style.display = 'block';
-
-    // Hide notification after 3 seconds
-    setTimeout(function() {
-      notification.style.display = 'none';
-    }, 3000);
-
-    // Clear input fields
-    form.reset();
+      <section class="container" style="
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        gap: 20px; /* Increased spacing for better layout */
+      ">
     
-    // You can add your form processing logic here (e.g., sending data to the server)
-  });
-</script>
+        <h2 class="headline-md section-title" id="cta-label" data-aos="fade-right" style="
+          font-size: clamp(3rem, 6vw, 4rem); 
+          color: #ffc5e2;
+          margin-bottom: 20px; 
+        ">
+          Contact Us
+        </h2>
+    
+        <form id="contact-form" data-aos="fade-left" style="
+          max-width: 100%;
+          width: 400px;
+          background-color: rgba(46, 46, 46, 0.9); /* Slightly darkened */
+          padding: 25px; /* Added padding */
+          border-radius: 15px; /* Softer corners */
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+          transition: box-shadow 0.4s ease;
+        " onmouseover="this.style.boxShadow='0 12px 24px rgba(0, 0, 0, 0.25)'"
+          onmouseout="this.style.boxShadow='0 8px 16px rgba(0, 0, 0, 0.2)'">
+    
+          <input type="text" name="name" placeholder="Your Name" required pattern="[a-zA-Z ]+" 
+          oninvalid="this.setCustomValidity('Numbers and symbols are not allowed')"
+          oninput="this.setCustomValidity('')" style="
+            width: 100%;
+            padding: 14px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 15px;
+            color: #333;
+            background-color: #f0f0f0;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+          " onfocus="this.style.borderColor='#ff66b2'; this.style.boxShadow='0 0 12px rgba(255, 102, 178, 0.4)'"
+            onblur="this.style.borderColor='#ccc'; this.style.boxShadow='none'">
+    
+          <input type="email" name="email" placeholder="Your Email" required style="
+            width: 100%;
+            padding: 14px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 15px;
+            color: #333;
+            background-color: #f0f0f0;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+          " onfocus="this.style.borderColor='#ff66b2'; this.style.boxShadow='0 0 12px rgba(255, 102, 178, 0.4)'"
+            onblur="this.style.borderColor='#ccc'; this.style.boxShadow='none'">
+    
+          <textarea name="message" placeholder="Your Message" required style="
+            width: 100%;
+            padding: 14px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 15px;
+            color: #333;
+            background-color: #f0f0f0;
+            height: 160px;
+            resize: none;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+          " onfocus="this.style.borderColor='#ff66b2'; this.style.boxShadow='0 0 12px rgba(255, 102, 178, 0.4)'"
+            onblur="this.style.borderColor='#ccc'; this.style.boxShadow='none'"></textarea>
+    
+          <button type="submit" style="
+            background-color: #ff66b2;
+            color: white;
+            padding: 14px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 17px;
+            width: 100%;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+          " onmouseover="this.style.backgroundColor='#ff3385'; this.style.transform='scale(1.05)'"
+            onmouseout="this.style.backgroundColor='#ff66b2'; this.style.transform='scale(1)'">Send</button>
+    
+        </form>
+    
+        <div id="notification" style="
+          display: none;
+          color: white;
+          background-color: #4CAF50;
+          padding: 10px;
+          border-radius: 5px;
+          margin-top: 10px;
+          font-size: 16px;
+          text-align: center;
+        ">Message Sent!</div>
+    
+        <script>
+          // Handling form submission
+          const form = document.getElementById('contact-form');
+          const notification = document.getElementById('notification');
+    
+          form.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+    
+            // Show notification
+            notification.style.display = 'block';
+    
+            // Hide notification after 3 seconds
+            setTimeout(function() {
+              notification.style.display = 'none';
+            }, 3000);
+    
+            // Clear input fields
+            form.reset();
+            
+            // You can add your form processing logic here (e.g., sending data to the server)
+          });
+        </script>
+    
+      </section>
+    
+    </section>
+    
 
 
 
