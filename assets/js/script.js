@@ -92,10 +92,11 @@ document.getElementById('closeModal').onclick = function() {
 
 document.getElementById('nextToFeedback').onclick = function() {
     const selectedEmoji = document.querySelector('.emoji.selected');
-    if (!selectedEmoji) {
-        alert('Please select an emotion!');
+    if (!selectedEmoji) {    
+        document.getElementsByClassName('emojis')[0].style.margin="0 0 20px 0";
+        document.getElementById('emoji-not-selected').removeAttribute("hidden");
         return;
-    }
+      }
     selectedEmotion = selectedEmoji.dataset.value;
     document.getElementById('step1').style.display = 'none';
     document.getElementById('step2').style.display = 'block';
@@ -105,6 +106,9 @@ document.querySelectorAll('.emoji').forEach(emoji => {
     emoji.onclick = function() {
         document.querySelectorAll('.emoji').forEach(e => e.classList.remove('selected'));
         emoji.classList.add('selected');
+        document.getElementById('emoji-not-selected').hidden= true;
+        document.getElementsByClassName('emojis')[0].style.margin="20px 0";
+        
     }
 });
 
