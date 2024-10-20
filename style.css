@@ -83,3 +83,18 @@
     box-shadow: 0 0 5px rgba(52, 152, 219, 0.5); 
   }
   
+  .btn-secondary {
+    background-color: var(--secondary-accent);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-secondary:hover {
+    /* background-color: var(--primary-accent); */
+    background-color: rgba(0, 0, 0, 0.61);
+  }
+  
