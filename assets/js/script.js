@@ -109,7 +109,6 @@ document.querySelectorAll('.emoji').forEach(emoji => {
         document.getElementById('emoji-not-selected').hidden= true;
         document.getElementsByClassName('emojis')[0].style.margin="20px 0";
     }
-    
 });
 
 document.getElementById('nextToEmail').onclick = function() {
