@@ -1,124 +1,190 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>UI/UX Design Courses</title>
-  <link rel="stylesheet" href="assets/css/uiux.css">
-  <link rel="stylesheet" href="assets/css/style.css">
-  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI/UX Design Courses</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7e8e0;
+            margin: 0;
+            padding: 20px;
+        }
 
+        h1 {
+            text-align: center;
+            color: #ff6a6a;
+            margin-bottom: 40px;
+        }
+
+        .back-btn {
+          color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+            background-color: #ff4a4a;
+        }
+
+        .back-btn:hover {
+          
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+            background-color: #ff4a4a;
+        }
+
+        .course-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .course-card {
+            background-color: #ffe3bf;
+            border: 2px solid #f7c7c7;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .course-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .course-card img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .course-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .course-description {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .buy-now-btn {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .buy-now-btn:hover {
+            background-color: #555;
+        }
+
+        .course-details {
+            display: flex;
+            align-items: center;
+        }
+
+        .course-details div {
+            margin-left: 15px;
+        }
+    </style>
 </head>
-<style>
-
-.span {
-    color: var(--light-coral); /* Use your existing color variable */
-    display: inline;
-    position: relative; /* Required for positioning the pseudo-element */
-}
-header {
-    border: none; /* Remove any borders */
-    margin: 0; /* Reset margin */
-    padding: 0; /* Reset padding */
-}
-
-h1 {
-    margin: 0; /* Remove margin around h1 */
-    padding: 0; /* Remove padding around h1 */
-    border: none; /* Remove any borders */
-    text-decoration: none; /* Remove underline if applied */
-}
-
-/* Additional reset for the section, if needed */
-.section {
-    border: none; /* Ensure no borders */
-}
-
-  </style>
 <body>
-  <header style="margin-bottom: 20px;">
-    <h1>UI/UX Design <span class="span has-after">Courses</span></h1>
-  </header>
-  
-  <ul class="course-list">
-    <div class="header1"> 
-    <li class="card category-card">
-      
-      <div class="card-icon">
-        <img src="./assets/images/img1.jpg" width="72" height="72" alt="Course 1 icon">
-      </div>
-      
-      <div>
-        <h3 class="title-lg">Intro to UI/UX Design</h3>
-        <p class="title-sm">Beginner-friendly introduction to the basics of UI/UX.</p>
-        <a href="#" class="buy-now-btn">Buy Now</a>
-      </div>
-      <a href="#" class="layer-link" aria-label="Intro to UI/UX Design"></a>
-    </li></div>
-    <div class="header2">
-    <li class="card category-card">
-      
-      <div class="card-icon">
-        <img src="./assets/images/img2.jpg" width="72" height="72" alt="Course 2 icon">
-      </div>
-      <div>
-        <h3 class="title-lg">Advanced Prototyping Techniques</h3>
-        <p class="title-sm">Master advanced prototyping for smooth UI/UX transitions.</p>
-        <a href="#" class="buy-now-btn">Buy Now</a>
-      </div>
-      <a href="#" class="layer-link" aria-label="Advanced Prototyping Techniques"></a>
-    </li></div>
-    <div class="header1">
-    <li class="card category-card">
-      <div class="card-icon">
-        <img src="./assets/images/img3.jpg" width="72" height="72" alt="Course 3 icon">
-      </div>
-      <div>
-        <h3 class="title-lg">User Research Fundamentals</h3>
-        <p class="title-sm">Understand your users and their needs to design better experiences.</p>
-        <a href="#" class="buy-now-btn">Buy Now</a>
-      </div>
-      <a href="#" class="layer-link" aria-label="User Research Fundamentals"></a>
-    </li></div>
-    <div class="header2">
-    <li class="card category-card">
-      <div class="card-icon">
-        <img src="./assets/images/img4.jpg" width="72" height="72" alt="Course 4 icon">
-      </div>
-      <div>
-        <h3 class="title-lg">Design Systems & Guidelines</h3>
-        <p class="title-sm">Learn how to create consistent and scalable design systems.</p>
-        <a href="#" class="buy-now-btn">Buy Now</a>
-      </div>
-      <a href="#" class="layer-link" aria-label="Design Systems & Guidelines"></a>
-    </li></div>
-    <div class="header1">
-    <li class="card category-card">
-      <div class="card-icon">
-        <img src="./assets/images/img5.jpg" width="72" height="72" alt="Course 5 icon">
-      </div>
-      <div>
-        <h3 class="title-lg">UX for Mobile Devices</h3>
-        <p class="title-sm">Design user-friendly experiences for mobile applications.</p>
-        <a href="#" class="buy-now-btn">Buy Now</a>
-      </div>
-      <a href="#" class="layer-link" aria-label="UX for Mobile Devices"></a>
-    </li></div>
-    <div class="header2">
-    <li class="card category-card">
-      <div class="card-icon">
-        <img src="./assets/images/img6.jpg" width="72" height="72" alt="Course 6 icon">
-      </div>
-      <div>
-        <h3 class="title-lg">Web Accessibility in UI/UX</h3>
-        <p class="title-sm">Ensure your designs are accessible to all users.</p>
-        <a href="#" class="buy-now-btn">Buy Now</a>
-      </div>
-      <a href="#" class="layer-link" aria-label="Web Accessibility in UI/UX"></a>
-    </li></div>
-  </ul>
+
+    
+    <a href="index.html" class="back-btn">Back</a>
+    
+
+    <h1>UI/UX Design Courses</h1>
+
+    <div class="course-container">
+
+        <div class="course-card">
+            <div class="course-details">
+                <img src="./assets/images/img1.jpg" alt="Intro to UI/UX Design">
+                <div>
+                    <div class="course-title">Intro to UI/UX Design</div>
+                    <div class="course-description">Beginner-friendly introduction to the basics of UI/UX.</div>
+                    <a href="buy.html" class="buy-now-btn">Buy Now</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="course-card">
+            <div class="course-details">
+                <img src="./assets/images/img2.jpg" alt="Advanced Prototyping Techniques">
+                <div>
+                    <div class="course-title">Advanced Prototyping Techniques</div>
+                    <div class="course-description">Master advanced prototyping for smooth UI/UX transitions.</div>
+                    <a href="buy.html" class="buy-now-btn">Buy Now</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="course-card">
+            <div class="course-details">
+                <img src="./assets/images/img3.jpg" alt="User Research Fundamentals">
+                <div>
+                    <div class="course-title">User Research Fundamentals</div>
+                    <div class="course-description">Understand your users and their needs to design better experiences.</div>
+                    <a href="buy.html" class="buy-now-btn">Buy Now</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="course-card">
+            <div class="course-details">
+                <img src="./assets/images/img4.jpg" alt="Design Systems & Guidelines">
+                <div>
+                    <div class="course-title">Design Systems & Guidelines</div>
+                    <div class="course-description">Learn how to create consistent and scalable design systems.</div>
+                    <a href="buy.html" class="buy-now-btn">Buy Now</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="course-card">
+            <div class="course-details">
+                <img src="./assets/images/img5.jpg" alt="UX for Mobile Devices">
+                <div>
+                    <div class="course-title">UX for Mobile Devices</div>
+                    <div class="course-description">Design user-friendly experiences for mobile applications.</div>
+                    <a href="buy.html" class="buy-now-btn">Buy Now</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="course-card">
+            <div class="course-details">
+                <img src="./assets/images/img6.jpg" alt="Web Accessibility in UI/UX">
+                <div>
+                    <div class="course-title">Web Accessibility in UI/UX</div>
+                    <div class="course-description">Ensure your designs are accessible to all users.</div>
+                    <a href="buy.html" class="buy-now-btn">Buy Now</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
 
 </body>
-
 </html>
