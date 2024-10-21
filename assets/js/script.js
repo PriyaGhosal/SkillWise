@@ -93,7 +93,7 @@ document.getElementById('closeModal').onclick = function() {
 document.getElementById('nextToFeedback').onclick = function() {
     const selectedEmoji = document.querySelector('.emoji.selected');
     if (!selectedEmoji) {
-        alert('Please select an emotion!');
+        selectEmotionPopUpDisplay()
         return;
     }
     selectedEmotion = selectedEmoji.dataset.value;
@@ -110,7 +110,7 @@ document.querySelectorAll('.emoji').forEach(emoji => {
 
 document.getElementById('nextToEmail').onclick = function() {
     if (!document.getElementById('feedback').value) {
-        alert('Please provide your feedback!');
+        selectFeedbackRequestPopUp()
         return;
     }
     document.getElementById('step2').style.display = 'none';
@@ -129,7 +129,7 @@ document.getElementById('backToFeedback').onclick = function() {
 
 window.onload = () => {
   if (sessionStorage.getItem('showPopUp') === 'true') {
-      popUpDisplay();
+      feedbackPopUpSuccessDisplay()
       sessionStorage.removeItem('showPopUp'); 
   }
 };
@@ -143,11 +143,26 @@ document.getElementById('feedbackForm').onsubmit = function(event) {
   window.location.reload(); 
 };
 
-const popUpDisplay = () => {
+const showAndHidePopUp = (selector, delayShow = 100, delayHide = 3000, showTranslate = 'translate(0)', hideTranslate = 'translate(120%)') => {
   setTimeout(() => {
-      document.querySelector('.feedbackPopUp').style.transform = 'translate(0)';
+    const element = document.querySelector(selector)
+    if (element) {
+      element.style.transform = showTranslate
       setTimeout(() => {
-          document.querySelector('.feedbackPopUp').style.transform = 'translate(120%)';
-      }, 3000);
-  }, 1000);
-};
+        element.style.transform = hideTranslate
+      }, delayHide)
+    }
+  }, delayShow)
+}
+
+const selectFeedbackRequestPopUp = () => {
+  showAndHidePopUp('.feedbackRequestPopUp', 100, 3000)
+}
+
+const feedbackPopUpSuccessDisplay = () => {
+  showAndHidePopUp('.feedbackPopUpSuccess', 100, 3000)
+}
+
+const selectEmotionPopUpDisplay = () => {
+  showAndHidePopUp('.selectEmotionPopUp', 100, 3000)
+}
