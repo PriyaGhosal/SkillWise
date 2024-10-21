@@ -97,10 +97,11 @@ img,
 span,
 button,
 ion-icon {
-  display: block;
+  display:flex;
 }
 
 a {
+  display: block;
   text-decoration: none;
   color: inherit;
 }
@@ -323,6 +324,7 @@ body.nav-active .navbar-list .navbar-link {
   left: 0;
   width: 100%;
   height: 100%;
+  z-index: 1;
 }
 
 .w-100 {
@@ -425,7 +427,7 @@ body.nav-active .navbar-list .navbar-link {
   position: fixed;
   top: 0;
   left: -320px;
-  max-width: 320px;
+  max-width: 100vw;
   width: 100%;
   background-color: var(--white);
   height: 100vh;
@@ -433,6 +435,9 @@ body.nav-active .navbar-list .navbar-link {
   z-index: 2;
   transition: 0.25s var(--cubic-in);
   visibility: hidden;
+}
+.navbarContain{
+  display: flex;
 }
 
 .navbar.active {
@@ -471,7 +476,7 @@ body.nav-active .navbar-list .navbar-link {
   position: fixed;
   top: 0;
   left: 0;
-  width: 50%;
+  width: 100vw;
   height: 100vh;
   background-color: white;
 
@@ -610,7 +615,7 @@ body.nav-active .navbar-list .navbar-link {
   background-color: white;
   padding: 20px;
   border-radius: 5px;
-  width: 300px;
+  width: 450px;
   text-align: center;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
 }
@@ -629,6 +634,7 @@ body.nav-active .navbar-list .navbar-link {
   cursor: pointer;
 }
 
+/* Styling for Emoji Section */
 .emojis {
   font-size: 30px;
   margin: 20px 0;
@@ -637,22 +643,31 @@ body.nav-active .navbar-list .navbar-link {
   justify-content: space-evenly;
 }
 
-.emoji {
+.emoji-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   cursor: pointer;
   margin: 0 10px;
   transition: transform 0.2s;
 }
 
-.emoji:hover {
+.emoji-option p {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #555;
+}
+
+.emoji-option:hover .emoji {
   transform: scale(1.2);
 }
 
 .emoji.selected {
-  border: 1px solid black;
-  /* Highlight selected emoji */
+  border: 2px solid #4caf50;
   border-radius: 5px;
 }
 
+/* Step Navigation Buttons */
 .buttons {
   display: flex;
   align-items: center;
@@ -856,6 +871,7 @@ button:hover {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  z-index: 2;
 }
 
 .course-card:is(:hover, :focus-within) {
@@ -912,11 +928,20 @@ button:hover {
   background-color: #008080;
   padding: 48px 24px;
   text-align: center;
+ 
+}
+
+.cta-container {
+  display: flex; 
+  justify-content: space-around;
+  align-items: center;
 }
 
 .cta .headline-md {
   color: var(--white);
 }
+
+
 #contact-form textarea::placeholder {
   font-family: var(--ff-gilroy);
 }
@@ -972,13 +997,20 @@ button:hover {
     }
   }
 .cta .btn {
-  margin-inline: auto;
-  color: var(--white);
-  background-color: var(--light-coral);
+  background-color: transparent;
+  border: 2px solid var(--white); /* Keppei color for button borders */
+  padding: 16px 28px; /* Bigger padding for a larger button */
+  border-radius: 10px;
+  font-size: 1.4rem; /* Larger font size for buttons */
+  color: var(--white); /* Keppei color for the text */
+  text-decoration: none;
+  font-weight: bold; /* Bolder button text */
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 
 .cta .btn:is(:hover, :focus-within) {
-  box-shadow: 0 0 0 2px var(--white), 0 0 0 5px var(--light-coral);
+  background-color: var(--light-coral); /* Keppei background on hover */
+  transform: scale(1.1); /* Slightly bigger button on hover */
 }
 
 .parent {
@@ -1466,6 +1498,11 @@ button:hover {
 /**
  * responsive for large than 768px screen
  */
+ .nav-open-btn{
+  position: absolute;
+  right:0;
+  margin-right: 5vw;
+ }
 
 @media (min-width: 768px) {
   /**
@@ -1512,7 +1549,7 @@ button:hover {
  * responsive for large than 992px screen
  */
 
-@media (min-width: 992px) {
+@media (min-width: 1485px) {
   :root {
     /**
      * typography
@@ -1557,16 +1594,17 @@ button:hover {
   .navbar.active {
     all: unset;
     display: block;
+    width: 100%;
   }
 
   .navbar-list {
     display: flex;
-    gap: 8px;
   }
 
   .navbar-item:not(:last-child) {
     border-block-end: none;
   }
+
 
   .navbar-link {
     padding: 8px 16px;
@@ -1727,8 +1765,6 @@ body.dark-mode h1 {
 }
 
 #theme-toggle {
-  /* position: fixed; */
-
   background-color: var(--light-gray);
   border-radius: var(--radius-circle);
   padding: 10px;
@@ -1772,7 +1808,7 @@ body.dark-mode .btn:hover {
   /* Light background for the navbar */
   color: var(--dark-text);
   /* Dark text color */
-  padding: 0;
+  width:90vw;
   /* No padding for box-less design */
   box-shadow: none;
   /* No shadow in light mode */
@@ -1781,11 +1817,9 @@ body.dark-mode .btn:hover {
 }
 
 .navbar-list {
-  padding: 0;
-  /* No padding */
-  gap: 15px;
-  /* Keep spacing between items */
+  width:100%; 
 }
+
 
 /* .navbar-link {
   color: var(--white);
@@ -1812,17 +1846,18 @@ textarea {
   border-radius: 5px;
 }
 button {
-  margin: auto;
-  padding: 10px;
-  background-color: #007bff;
-  color: white;
+  padding: 15px;
+  background-color: #eef1f4;
+  font-weight: bold;
+  font-size: large;
+  color: rgb(39, 37, 37);
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #dbdfe4;
 }
 
 @media (max-width: 1037px) {
@@ -1841,10 +1876,9 @@ button:hover {
     gap: 30px;
   }
 
-  #theme-toggle {
-    right: 125px;
-    top: 5px;
-  }
+  /* #theme-toggle {
+    right: 12px;
+  } */
 
   /* Can be used if wanting a more linear Instagram post feed but as a viewer I like the grid better
   .footer-top .grid-list {
@@ -2171,3 +2205,59 @@ body {
   margin-bottom: 10px;
   /* Space between quote and name (optional) */
 }
+
+
+@media (max-width: 1484px) {
+  #theme-toggle{
+    right:80px;
+  }
+}
+@media (max-width: 1440px) {
+  #theme-toggle{
+    right:70px;
+  }
+}
+@media (max-width: 1200px) {
+  #theme-toggle{
+    right:60px;
+  }
+}
+@media (max-width: 1024px) {
+  #theme-toggle{
+    right:45px;
+  }
+}
+@media (max-width: 768px) {
+  #theme-toggle{
+    right:30px;
+  }
+  .nav-open-btn {
+    margin-top: 5px;
+  }
+}
+@media (max-width:425px) {
+  #theme-toggle{
+    right:30px;
+  }
+}
+@media (max-width:375px) {
+  #theme-toggle{
+    right:20px;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .navbar {
+    max-width: 150vw;
+    
+  }
+}
+
+@media screen and (max-width: 768) {
+  .overlay {
+    width:110vw;
+    height:110vh;
+
+  }
+}
+  

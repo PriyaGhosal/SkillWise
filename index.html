@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- 
+  <!--
     - primary meta tags
   -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -15,28 +15,33 @@
   <title>SkillWise</title>
   <meta name="title" content="SkillWise">
   <meta name="description" content="This is a education html template made by Priya Ghosal">
+  <style>
+    /* footer{
+      color:white
+    } */
 
-  <!-- 
+  </style>
+  <!--
     - favicon
   -->
   <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
 
-  <!-- 
+  <!--
     - custom font link
   -->
   <link rel="stylesheet" href="./assets/font/font.css">
 
-  <!-- 
+  <!--
     - custom css link
   -->
   <link rel="stylesheet" href="./assets/css/style.css" id="theme-style">
 
-  <!-- 
+  <!--
     -dark mode css link disabled
    -->
   <!-- <link rel="stylesheet" href="./assets/css/darkmode.css" id="theme-style" > -->
 
-  <!-- 
+  <!--
     - preload images
   -->
   <link rel="preload" as="image" href="./assets/images/hero-banner.png">
@@ -46,10 +51,11 @@
 
 <!-- Animation on Scroll -->
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<link rel="stylesheet" href="registor_btn.css" />
 
 <body>
 
-  <!-- 
+  <!--
     - PRELOADER
   -->
 
@@ -60,14 +66,12 @@
 
 
 
-
-  <!-- 
+    <!--
     - #HEADER
   -->
   <header class="header" data-header>
 
-
-    <div class="container" style="margin-left: 13rem;">
+    <div class="container" style="margin-left: 5rem;">
 
       <a href="#">
         <img src="./assets/images/Skillwise_logo-removebg-preview.png" width="50" height="10" alt="SkillWise home">
@@ -75,21 +79,18 @@
 
       <nav class="navbar" data-navbar>
 
-
         <div class="navbar-top">
-
           <img src="./assets/images/Skillwise_logo.jpg" width="50" height="10" alt="SkillWise home">
           </a>
-
           <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
             <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
           </button>
         </div>
 
-        <ul class="navbar-list" style="width: 50vw;">
+        <ul class="navbar-list">
 
 
-          <li class="navbar-item" style="margin-left: 1rem;">
+          <li class="navbar-item" >
             <a href="#home" class="navbar-link title-sm" data-nav-link>Home</a>
           </li>
 
@@ -98,12 +99,8 @@
             <a href="#about" class="navbar-link title-sm" data-nav-link>About Us</a>
           </li>
 
-
-
-
-
           <li class="navbar-item">
-            <a href="#courses" class="navbar-link title-sm" data-nav-link>Courses</a>
+            <a href="#courses" class="navbar-link title-sm" data-nav-link>Course/Mentor</a>
           </li>
 
           <li class="navbar-item">
@@ -114,63 +111,59 @@
             <a href="#contact" class="navbar-link title-sm" data-nav-link>Contacts</a>
           </li>
 
-          <li class="navbar-item"></li>
+          <li class="navbar-item">
           <a href="../Faq.html" class="navbar-link title-sm" data-nav-link>FAQ</a>
           </li>
 
 
-          <li class="navbar-item"></li>
-          <a href="/signin.html" class="navbar-link title-sm" data-nav-link>LogIn</a>
+          <li class="navbar-item">
+          <a href="/signin.html" class="navbar-link title-sm" data-nav-link>Login/Register</a>
           </li>
 
-        </ul>
+           <li class="navbar-item">
+          <a href="/careers.html" class="navbar-link title-sm" data-nav-link>Opportunities</a>
+          </li>
+          <li class="navbar-item">
+          <div class="searchBox">
+            <input class="searchInput" id = "search-bar" type="text" name="" placeholder="Search courses">
+          <button  onclick="searchCourses()" class="searchButton SearchBTN" href="#">
+            <div id="search-results"></div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 29 29" fill="none">
 
-      </nav>
-
-<div class="navRightSide">
-        <div class="searchBox">
-          <input class="searchInput" id = "search-bar" type="text" name="" placeholder="Search something">
-        <button  onclick="searchCourses()" class="searchButton SearchBTN" href="#">
-          <div id="search-results"></div>
-
-
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 29 29" fill="none">
-
-              <g clip-path="url(#clip0_2_17)">
-                <g filter="url(#filter0_d_2_17)">
-                  <path
-                    d="M23.7953 23.9182L19.0585 19.1814M19.0585 19.1814C19.8188 18.4211 20.4219 17.5185 20.8333 16.5251C21.2448 15.5318 21.4566 14.4671 21.4566 13.3919C21.4566 12.3167 21.2448 11.252 20.8333 10.2587C20.4219 9.2653 19.8188 8.36271 19.0585 7.60242C18.2982 6.84214 17.3956 6.23905 16.4022 5.82759C15.4089 5.41612 14.3442 5.20435 13.269 5.20435C12.1938 5.20435 11.1291 5.41612 10.1358 5.82759C9.1424 6.23905 8.23981 6.84214 7.47953 7.60242C5.94407 9.13789 5.08145 11.2204 5.08145 13.3919C5.08145 15.5634 5.94407 17.6459 7.47953 19.1814C9.01499 20.7168 11.0975 21.5794 13.269 21.5794C15.4405 21.5794 17.523 20.7168 19.0585 19.1814Z"
-                    stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
-                    shape-rendering="crispEdges"></path>
+                <g clip-path="url(#clip0_2_17)">
+                  <g filter="url(#filter0_d_2_17)">
+                    <path
+                      d="M23.7953 23.9182L19.0585 19.1814M19.0585 19.1814C19.8188 18.4211 20.4219 17.5185 20.8333 16.5251C21.2448 15.5318 21.4566 14.4671 21.4566 13.3919C21.4566 12.3167 21.2448 11.252 20.8333 10.2587C20.4219 9.2653 19.8188 8.36271 19.0585 7.60242C18.2982 6.84214 17.3956 6.23905 16.4022 5.82759C15.4089 5.41612 14.3442 5.20435 13.269 5.20435C12.1938 5.20435 11.1291 5.41612 10.1358 5.82759C9.1424 6.23905 8.23981 6.84214 7.47953 7.60242C5.94407 9.13789 5.08145 11.2204 5.08145 13.3919C5.08145 15.5634 5.94407 17.6459 7.47953 19.1814C9.01499 20.7168 11.0975 21.5794 13.269 21.5794C15.4405 21.5794 17.523 20.7168 19.0585 19.1814Z"
+                      stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+                      shape-rendering="crispEdges"></path>
+                  </g>
                 </g>
-              </g>
-              <defs>
-                <filter id="filter0_d_2_17" x="-0.418549" y="3.70435" width="29.7139" height="29.7139"
-                  filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                  <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                    result="hardAlpha"></feColorMatrix>
-                  <feOffset dy="4"></feOffset>
-                  <feGaussianBlur stdDeviation="2"></feGaussianBlur>
-                  <feComposite in2="hardAlpha" operator="out"></feComposite>
-                  <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix>
-                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2_17"></feBlend>
-                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2_17" result="shape"></feBlend>
-                </filter>
-                <clipPath id="clip0_2_17">
-                  <rect width="28.0702" height="28.0702" fill="white" transform="translate(0.403503 0.526367)"></rect>
-                </clipPath>
-              </defs>
-            </svg>
+                <defs>
+                  <filter id="filter0_d_2_17" x="-0.418549" y="3.70435" width="29.7139" height="29.7139"
+                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                      result="hardAlpha"></feColorMatrix>
+                    <feOffset dy="4"></feOffset>
+                    <feGaussianBlur stdDeviation="2"></feGaussianBlur>
+                    <feComposite in2="hardAlpha" operator="out"></feComposite>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix>
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2_17"></feBlend>
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2_17" result="shape"></feBlend>
+                  </filter>
+                  <clipPath id="clip0_2_17">
+                    <rect width="28.0702" height="28.0702" fill="white" transform="translate(0.403503 0.526367)"></rect>
+                  </clipPath>
+                </defs>
+              </svg>
 
-
-          </button>
-        </div>
-
-
-
-      </div>
-      <a href="../signin.html" class="btn" id = "freeTrial">Start Free Trial</a>
+            </button>
+          </div>
+          </li>
+        </ul>
+      </nav>
+       
+      <a href="../signin.html" class="btn" id = "freeTrial"  >Start Free Trial</a> 
 
       <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
         <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
@@ -180,9 +173,7 @@
           <ion-icon id="theme-icon" name="sunny-outline"></ion-icon>
         </button>
       </div>
-
       <div class="overlay" data-overlay data-nav-toggler></div>
-
     </div>
   </header>
 
@@ -192,7 +183,7 @@
   <main>
     <article>
 
-      <!-- 
+      <!--
         - #HERO
       -->
 
@@ -226,25 +217,49 @@
       </section>
 
 
-      <!--
-        Feedback Section
-      -->
       <div class="feedback-button" id="feedbackButton">Feedback</div>
+
       <div class="feedback-modal" id="feedbackModal">
         <div class="modal-content">
           <span class="close" id="closeModal">&times;</span>
           <h2>We Value Your Feedback</h2>
+      
           <form id="feedbackForm">
+            <!-- Step 1: Emoji Selection -->
             <div class="step" id="step1">
               <h3>How do you feel?</h3>
+              <p id="emoji-not-selected" hidden="true">Please select an emotion!</p>
               <div class="emojis">
-                <span class="emoji" data-value="happy">😀</span>
-                <span class="emoji" data-value="neutral">😐</span>
-                <span class="emoji" data-value="sad">😢</span>
+                <div class="emoji-option">
+                  <span class="emoji" data-value="happy">😄</span>
+                  <p>Happy</p>
+                </div>
+                <div class="emoji-option">
+                  <span class="emoji" data-value="okay">🙂</span>
+                  <p>Okay</p>
+                </div>
+                <div class="emoji-option">
+                  <span class="emoji" data-value="neutral">😕</span>
+                  <p>Neutral</p>
+                </div>
+                <div class="emoji-option">
+                  <span class="emoji" data-value="disappointed">🙁</span>
+                  <p>Disappointed</p>
+                </div>
+                <div class="emoji-option">
+                  <span class="emoji" data-value="sad">😢</span>
+                  <p>Sad</p>
+                </div>
+                <div class="emoji-option">
+                  <span class="emoji" data-value="excited">😍</span>
+                  <p>Excited</p>
+                </div>
               </div>
+      
               <button type="button" id="nextToFeedback">Next</button>
             </div>
-
+      
+            <!-- Step 2: Feedback Input -->
             <div class="step" id="step2" style="display: none;">
               <h3>Your Feedback</h3>
               <textarea id="feedback" rows="5" placeholder="Write your feedback here..." required></textarea>
@@ -253,7 +268,8 @@
                 <button type="button" id="backToEmoji">Back</button>
               </div>
             </div>
-
+      
+            <!-- Step 3: Email Input -->
             <div class="step" id="step3" style="display: none;">
               <h3>Your Email</h3>
               <input type="email" id="email" placeholder="Enter your email" required />
@@ -267,7 +283,8 @@
       </div>
 
 
-      <div class="feedbackPopUpSuccess feedbackRequestPopUps">
+
+      <div class="feedbackPopUpSuccess feedbackRequestPopUps">1
         Thank you for your Feedback
       </div>
 
@@ -279,9 +296,6 @@
         Please provide your feedback!
       </div>
 
-      <!-- 
-        - #CATEGORY
-      -->
 
       <section class="section category has-bg-image" aria-labelledby="category-label">
         <div class="container">
@@ -411,7 +425,7 @@
           </ul>
 
           <div class="button-container">
-            <a href="#" class="btn btn-primary" data-aos="zoom-in">
+            <a href="Course.html" class="btn btn-primary" data-aos="zoom-in">
               View All Categories
             </a>
           </div>
@@ -423,7 +437,7 @@
 
 
 
-      <!-- 
+      <!--
         - #ABOUT
       -->
 
@@ -498,7 +512,7 @@
 
 
 
-      <!-- 
+      <!--
         - #COURSE
       -->
 
@@ -508,8 +522,10 @@
           <p id="keppi" class="title-sm section-subtitle text-center ">Featured Courses</p>
 
           <h2 class="headline-md section-title text-center" id="course-label" data-aos="fade-down">
-            <div class="header1">Choose Unlimited <span class="span has-after">Courses</span< /div> >
+            Choose Unlimited <span class="span has-after">Courses</span>
           </h2>
+          
+          
 
           <ul class="grid-list">
 
@@ -833,7 +849,7 @@
 
         </ul>
         <div class="button-container">
-          <a href="#" class="btn btn-primary" data-aos="zoom-in">
+          <a href="Course.html" class="btn btn-primary" data-aos="zoom-in">
             View All Courses
           </a>
         </div>
@@ -844,21 +860,43 @@
 
 
 
-      <!-- 
+      <!--
         - #CTA
       -->
 
       <section class="cta" aria-labelledby="cta-label">
-        <div class="container">
+        <div class="container cta-container">
 
-          <h2 class="headline-md section-title" id="cta-label" data-aos="zoom-in">
+          <h2 class="" id="cta-label" data-aos="zoom-in">
             Education Is About Creating Leaders For Tomorrow
           </h2>
 
-          <a href="signin.html" class="btn btn-tertiary" data-aos="fade-left">Register Today</a>
+          
+          <!-- <a href="signin.html" class="register-button" data-aos="fade-left">Register Today</a> -->
 
+          <!-- <div class="c1-button">
+            <button onclick="window.location.href='signin.html'">
+                Register Today
+            </button>
+        </div> -->
+      
+        <button class="register-b">
+          <span onclick="window.location.href='signin.html'">Register Today</span>
+        </button>
         </div>
       </section>
+
+
+      <!-- <section class="cta-section" aria-labelledby="cta-heading">
+        <div class="cta-wrapper">
+          <h2 class="cta-title" id="cta-heading" data-aos="zoom-in">
+            Education Is About Creating Leaders For Tomorrow
+          </h2>
+          <a href="signin.html" class="cta-button" data-aos="fade-left">Register Today</a>
+        </div>
+      </section> -->
+      
+      
 
       <!-- Live Counting -->
 
@@ -947,7 +985,7 @@
       </div>
 
 
-      <!-- 
+      <!--
         - #BLOG
       -->
 
@@ -1028,7 +1066,7 @@
       </section>
 
 
-      <!-- 
+      <!--
         - #PRICING
       -->
 
@@ -1143,7 +1181,7 @@
         </div>
       </section>
 
-      <!-- 
+      <!--
         #Testimonials
        -->
 
@@ -1197,19 +1235,22 @@
             </li>
           </ul>
 
-          <a href="./pages/testimonials.html" class="btn btn-primary" data-aos="zoom-in">See All Testimonials</a>
+          <div class="button-container">
+            <a href="./pages/testimonials.html" class="btn btn-primary" data-aos="zoom-in">See All Testimonials</a>
+          </div>
+
         </div>
 
       </section>
-      
+
       <section id="events" class="section events" aria-labelledby="events-label">
         <div class="container">
           <p class="title-sm text-center section-subtitle" id="events-label">Upcoming Workshops</p>
-      
+
           <h2 class="headline-md text-center section-title" data-aos="fade-down">
             Join Our Skill Development <span class="span has-after">Events</span>
           </h2>
-      
+
           <div class="event-list">
             <!-- Event 1 -->
             <div class="event-item" data-aos="fade-right">
@@ -1223,7 +1264,7 @@
               </div>
               <a href="#" class="event-button">View Event</a>
             </div>
-      
+
             <!-- Event 2 -->
             <div class="event-item" data-aos="fade-right">
               <div class="event-date-box">
@@ -1236,7 +1277,7 @@
               </div>
               <a href="#" class="event-button">View Event</a>
             </div>
-      
+
             <!-- Event 3 -->
             <div class="event-item" data-aos="fade-right">
               <div class="event-date-box">
@@ -1250,14 +1291,16 @@
               <a href="#" class="event-button">View Event</a>
             </div>
           </div>
-      
-          <a href="./pages/events.html" class="btn btn-primary see-all" data-aos="zoom-in">View All Workshops</a>
+
+          <div class="button-container">
+            <a href="./pages/events.html" class="btn btn-primary see-all" data-aos="zoom-in">View All Workshops</a>
+          </div>
         </div>
       </section>
-      
-      
-      
-      
+
+
+
+
 
     </article>
   </main>
@@ -1281,12 +1324,10 @@
                 alt="SkillWise home">
             </a>
 
-            <p class="title-sm footer-text">
-              Stay updated with the latest from SkillWise! Follow us on LinkedIn, Twitter, Pinterest, Facebook and
-              Instagram for exciting
-              content, course announcements, and learning tips. Don’t miss out—subscribe today and join our growing
-              community!
 
+            <p class="title-sm footer-text">
+              Stay updated with the latest from SkillWise! Follow us on LinkedIn, Twitter, Pinterest, Facebook,Youtube and Instagram for exciting content, course announcements, and learning tips. Don’t miss out—subscribe today and join our growing
+              community!
             </p>
           </div>
           <ul class="social-list">
@@ -1321,6 +1362,13 @@
                 <img src="./assets/images/linkedIn.svg" width="40" height="40" loading="lazy" alt="linkedin">
               </a>
             </li>
+            <li>
+              <a href="https://www.Youtube.com" class="social-link" id="social-link5">
+                <img src="./assets/images/youtube.svg" width="40" height="40" loading="lazy" alt="Youtube">
+                </a>
+            </li>
+
+
           </ul>
 
         </div>
@@ -1344,7 +1392,7 @@
           </li>
 
           <li>
-            <a href="#courses" class="title-sm footer-link">Courses</a>
+            <a href="#courses" class="title-sm footer-link">Courses/Mentor</a>
           </li>
 
           <li>
@@ -1362,9 +1410,8 @@
         </ul>
 
         <ul class="footer-list">
-
           <li>
-            <p class="headline-sm footer-list-title">Consumer Information</p>
+            <p class="headline-sm footer-list-title">Company</p>
           </li>
 
           <!-- <li>
@@ -1394,7 +1441,7 @@
           </li>
 
           <li>
-            <a href="copy.html" class="title-sm footer-link">Copyright Policy</a>
+            <a href="Copyright.html" class="title-sm footer-link">Copyright Policy</a>
           </li>
 
         </ul>
@@ -1450,89 +1497,153 @@
     - #Contact Us
   -->
 
-    <section id="contact" class="cta" aria-labelledby="cta-label">
-     
-      <div class="container" style="align-items: center;
-      justify-content: center;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;">
-  
-        <h2 class="headline-md section-title" id="cta-label" data-aos="fade-right" style="font-size: clamp(4rem, 100px, 3vw);">
-          Contact Us.
-        </h2>
-        
-        <form id="contact-form" data-aos="fade-left" style="
-        max-width: 90%;
-        width: 400px;
-        background-color: #2e2e2e87;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-        transition: box-shadow 0.3s ease;
-      " onmouseover="this.style.boxShadow='0 10px 20px rgba(0, 0, 0, 0.2)'"
-          onmouseout="this.style.boxShadow='0 6px 12px rgba(0, 0, 0, 0.15)'">
 
-          <input type="text" name="name" placeholder="Your Name" required  required pattern="[a-zA-Z ]+" oninvalid="this.setCustomValidity('Numbers and Symbols are not allowed')" 
-          oninput="this.setCustomValidity('')" style="
-          width: 100%;
-          padding: 12px;
-          margin: 8px 0;
-          border: 1px solid #ccc;
-          border-radius: 5px;
-          font-size: 14px;
-          color: black;
-          background-color: #f9f9f9;
-          transition: border-color 0.3s ease, box-shadow 0.3s ease;
-        " onfocus="this.style.borderColor='#ff66b2'; this.style.boxShadow='0 0 10px rgba(255, 102, 178, 0.3)'"
-            onblur="this.style.borderColor='#ccc'; this.style.boxShadow='none'">
-
-          <input type="email" name="email" placeholder="Your Email" required style="
-          width: 100%;
-          padding: 12px;
-          margin: 8px 0;
-          border: 1px solid #ccc;
-          border-radius: 5px;
-          font-size: 14px;
-          color: black;
-          background-color: #f9f9f9;
-          transition: border-color 0.3s ease, box-shadow 0.3s ease;
-        " onfocus="this.style.borderColor='#ff66b2'; this.style.boxShadow='0 0 10px rgba(255, 102, 178, 0.3)'"
-            onblur="this.style.borderColor='#ccc'; this.style.boxShadow='none'">
-
-          <textarea name="message" placeholder="Your Message" required style="
-          width: 100%;
-          padding: 12px;
-          margin: 8px 0;
-          border: 1px solid #ccc;
-          border-radius: 5px;
-          font-size: 14px;
-          color: black;
-          background-color: #f9f9f9;
-          height: 150px;
-          resize: none;
-          transition: border-color 0.3s ease, box-shadow 0.3s ease;
-        " onfocus="this.style.borderColor='#ff66b2'; this.style.boxShadow='0 0 10px rgba(255, 102, 178, 0.3)'" 
-           onblur="this.style.borderColor='#ccc'; this.style.boxShadow='none'"></textarea>
+<section id="contact" class="cta" aria-labelledby="cta-label">
+ 
+  <div class="container" style="align-items: center; justify-content: center; display: flex; flex-direction: column; gap: 10px;">
     
-        <button type="submit" style="
-          background-color: #ff66b2;
-          color: white;
-          padding: 12px;
-          border: none;
-          border-radius: 5px;
-          cursor: pointer;
-          font-size: 16px;
-          width: 100%;
-          transition: background-color 0.3s ease, transform 0.3s ease;
-        " onmouseover="this.style.backgroundColor='#ff3385'; this.style.transform='scale(1.05)'"
+
+    <!-- Notification Popup -->
+    <div id="notification" style="
+      display: none;
+      background-color: #4caf50;
+      color: white;
+      padding: 12px;
+      margin-bottom: 10px;
+      border-radius: 10px;
+      width: 44vh;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    ">
+      ✅ Form successfully submitted!
+    </div>
+
+    <section id="contact" class="cta" aria-labelledby="cta-label">
+
+      <section class="container" style="
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        gap: 20px; /* Increased spacing for better layout */
+      ">
+    
+        <h2 class="headline-md section-title" id="cta-label" data-aos="fade-right" style="
+          font-size: clamp(3rem, 6vw, 4rem); 
+          color: #ffc5e2;
+          margin-bottom: 20px; 
+        ">
+          Contact Us
+        </h2>
+    
+        <form id="contact-form" data-aos="fade-left" style="
+          max-width: 100%;
+          width: 400px;
+          background-color: rgba(46, 46, 46, 0.9); /* Slightly darkened */
+          padding: 25px; /* Added padding */
+          border-radius: 15px; /* Softer corners */
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+          transition: box-shadow 0.4s ease;
+        " onmouseover="this.style.boxShadow='0 12px 24px rgba(0, 0, 0, 0.25)'"
+          onmouseout="this.style.boxShadow='0 8px 16px rgba(0, 0, 0, 0.2)'">
+    
+          <input type="text" name="name" placeholder="Your Name" required pattern="[a-zA-Z ]+" 
+          oninvalid="this.setCustomValidity('Numbers and symbols are not allowed')"
+          oninput="this.setCustomValidity('')" style="
+            width: 100%;
+            padding: 14px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 15px;
+            color: #333;
+            background-color: #f0f0f0;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+          " onfocus="this.style.borderColor='#ff66b2'; this.style.boxShadow='0 0 12px rgba(255, 102, 178, 0.4)'"
+            onblur="this.style.borderColor='#ccc'; this.style.boxShadow='none'">
+    
+          <input type="email" name="email" placeholder="Your Email" required style="
+            width: 100%;
+            padding: 14px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 15px;
+            color: #333;
+            background-color: #f0f0f0;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+          " onfocus="this.style.borderColor='#ff66b2'; this.style.boxShadow='0 0 12px rgba(255, 102, 178, 0.4)'"
+            onblur="this.style.borderColor='#ccc'; this.style.boxShadow='none'">
+    
+          <textarea name="message" placeholder="Your Message" required style="
+            width: 100%;
+            padding: 14px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 15px;
+            color: #333;
+            background-color: #f0f0f0;
+            height: 160px;
+            resize: none;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+          " onfocus="this.style.borderColor='#ff66b2'; this.style.boxShadow='0 0 12px rgba(255, 102, 178, 0.4)'"
+            onblur="this.style.borderColor='#ccc'; this.style.boxShadow='none'"></textarea>
+    
+          <button type="submit" style="
+            background-color: #ff66b2;
+            color: white;
+            padding: 14px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 17px;
+            width: 100%;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+          " onmouseover="this.style.backgroundColor='#ff3385'; this.style.transform='scale(1.05)'"
             onmouseout="this.style.backgroundColor='#ff66b2'; this.style.transform='scale(1)'">Send</button>
+    
         </form>
-
-
-
-      </div>
+    
+        <div id="notification" style="
+          display: none;
+          color: white;
+          background-color: #4CAF50;
+          padding: 10px;
+          border-radius: 5px;
+          margin-top: 10px;
+          font-size: 16px;
+          text-align: center;
+        ">Message Sent!</div>
+    
+        <script>
+          // Handling form submission
+          const form = document.getElementById('contact-form');
+          const notification = document.getElementById('notification');
+    
+          form.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+    
+            // Show notification
+            notification.style.display = 'block';
+    
+            // Hide notification after 3 seconds
+            setTimeout(function() {
+              notification.style.display = 'none';
+            }, 3000);
+    
+            // Clear input fields
+            form.reset();
+            
+            // You can add your form processing logic here (e.g., sending data to the server)
+          });
+        </script>
+    
+      </section>
+    
     </section>
+    
+
 
 
     <div class="footer-bottom">
@@ -1552,33 +1663,55 @@
 
    <!--JS for searching courses -->
  <script>
-    
-        // Define searchCourses function
-        function searchCourses() {
-    const searchTerm = document.getElementById('search-bar').value.toLowerCase();
-    const courses = document.querySelectorAll('.category-card');
-    const resultsDiv = document.getElementById('search-results');
-    resultsDiv.innerHTML = ''; // Clear previous results
-    let found = false; // Flag to track if any course is found
 
-    courses.forEach((course) => {
-        const courseTitle = course.querySelector('.title-lg').innerText.toLowerCase();
-        if (courseTitle.includes(searchTerm)) {
-            const resultCard = course.cloneNode(true); // Clone the course card
-            resultsDiv.appendChild(resultCard); // Show matching result at the top
-            found = true; // Set flag to true if a course is found
-        }
-    });
+    document.addEventListener("DOMContentLoaded", () => {
+  const searchInput = document.getElementById('search-bar');
 
-    // If no courses match, show "No results found"
-    if (!found) {
-        resultsDiv.innerHTML = '<p>No results found</p>';
+  // Add event listener for Enter key press
+  searchInput.addEventListener('keypress', (event) => {
+    if (event.key === 'Enter') {
+      event.preventDefault(); // Prevent form submission if inside a form
+      searchCourses(); // Call the search function
     }
+  });
+});
+
+function searchCourses() {
+  const searchTerm = document.getElementById('search-bar').value.toLowerCase();
+  const courses = document.querySelectorAll('.category-card');
+  const resultsDiv = document.getElementById('search-results');
+  resultsDiv.innerHTML = ''; // Clear previous results
+
+  // Exit early if search term is empty
+  if (!searchTerm.trim()) {
+    resultsDiv.innerHTML = '<p class="no-results">Please enter a search term</p>';
+    return;
+  }
+
+  let found = false; // Flag to track if any course is found
+  const uniqueCourses = new Set(); // Set to track unique courses
+
+  courses.forEach((course) => {
+    const courseTitle = course.querySelector('.title-lg').innerText.toLowerCase();
+    if (courseTitle.includes(searchTerm)) {
+      if (!uniqueCourses.has(courseTitle)) {
+        uniqueCourses.add(courseTitle); // Add course title to the set
+        const resultCard = course.cloneNode(true); // Clone the course card
+        resultsDiv.appendChild(resultCard); // Show matching result at the top
+        found = true; // Set flag to true if a course is found
+      }
+    }
+  });
+
+  // If no courses match, show "No results found"
+  if (!found) {
+    resultsDiv.innerHTML = '<p class="no-results">No results found</p>';
+  }
 }
 
     </script>
 
-  <!-- 
+  <!--
    - custom js link
   -->
   <!-- Custom JS Links -->
@@ -1604,7 +1737,7 @@
 
   <script src="./assets/js/blogs.js"></script>
 
-  <!-- 
+  <!--
     - ionicon
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

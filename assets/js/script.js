@@ -95,7 +95,7 @@ document.getElementById('nextToFeedback').onclick = function() {
     if (!selectedEmoji) {
         selectEmotionPopUpDisplay()
         return;
-    }
+      }
     selectedEmotion = selectedEmoji.dataset.value;
     document.getElementById('step1').style.display = 'none';
     document.getElementById('step2').style.display = 'block';
@@ -105,6 +105,9 @@ document.querySelectorAll('.emoji').forEach(emoji => {
     emoji.onclick = function() {
         document.querySelectorAll('.emoji').forEach(e => e.classList.remove('selected'));
         emoji.classList.add('selected');
+        document.getElementById('emoji-not-selected').hidden= true;
+        document.getElementsByClassName('emojis')[0].style.margin="20px 0";
+        
     }
 });
 

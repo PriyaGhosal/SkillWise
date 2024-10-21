@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkillWise - Copyright Policy Page</title>
+
+  <!-- Internal CSS for Dark Mode, Animations, and UI Enhancements -->
+  <style>
+    :root {
+      --light-bg-color: #f0f4f8;
+      --light-text-color: #333;
+      --light-heading-color: #00796b;
+      --dark-bg-color: #263238;
+      --dark-text-color: #eceff1;
+      --dark-heading-color: #4db6ac;
+      --primary-accent: #81c784;
+      --secondary-accent: #ff6b81;
+      --highlight-yellow: #ffd700;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: var(--light-bg-color);
+      color: var(--light-text-color);
+      margin: 0;
+      padding: 0;
+      transition: all 0.3s ease;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    body.dark-mode {
+      background-color: var(--dark-bg-color);
+      color: var(--dark-text-color);
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.8rem;
+      font-weight: 700;
+      color: var(--light-heading-color);
+      transition: all 0.3s ease;
+    }
+
+    body.dark-mode h1 {
+      color: var(--dark-heading-color);
+    }
+
+    .policy-content {
+      background-color: rgba(129, 199, 132, 0.15);
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+      margin-bottom: 30px;
+      transition: all 0.3s ease;
+    }
+
+    body.dark-mode .policy-content {
+      background-color: rgba(38, 50, 56, 0.8);
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      color: var(--highlight-yellow);
+      margin-top: 20px;
+    }
+
+    body.dark-mode h2 {
+      color: var(--dark-heading-color);
+    }
+
+    p {
+      font-size: 1.125rem;
+      margin-bottom: 15px;
+    }
+
+    a {
+      color: var(--primary-accent);
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: var(--secondary-accent);
+    }
+
+    .toggle-dark-mode {
+      background-color: var(--primary-accent);
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1rem;
+      font-weight: 600;
+      border-radius: 30px;
+      cursor: pointer;
+      position: fixed;
+      top: 15px;
+      right: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      z-index: 1000;
+      transition: transform 0.2s ease;
+    }
+
+    .toggle-dark-mode:hover {
+      transform: scale(1.05);
+    }
+
+    .header {
+      background-color: var(--light-heading-color);
+      padding: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    body.dark-mode .header {
+      background-color: var(--dark-heading-color);
+    }
+
+    .header img {
+      height: 40px;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .navbar a {
+      color: white;
+      font-size: 1.1rem;
+      text-decoration: none;
+      padding: 10px;
+      transition: color 0.3s ease;
+    }
+
+    .navbar a:hover {
+      color: var(--highlight-yellow);
+    }
+
+    footer {
+      background-color: var(--light-heading-color);
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+    }
+
+    body.dark-mode footer {
+      background-color: var(--dark-heading-color);
+    }
+    
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2.5rem;
+      }
+      
+      h2 {
+        font-size: 1.6rem;
+      }
+      
+      p {
+        font-size: 1rem;
+      }
+      
+      .navbar {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Fixed Dark Mode Toggle Button -->
+  <button class="toggle-dark-mode" id="dark-mode-toggle" aria-label="Toggle Dark Mode">🌙 Toggle Mode</button>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <a href="#"><img src="assets/images/Skillwise_logo.jpg" alt="SkillWise Logo"></a>
+      <nav class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Courses</a>
+        <a href="#">Blog</a>
+        <a href="#">Contacts</a>
+        <a href="#" class="btn-secondary">Start Free Trial 🚀</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Content -->
+  <div class="container">
+    <h1>Copyright Policy</h1>
+    <div class="policy-content">
+      <h2>1. Ownership of Content</h2>
+      <p>All content on SkillWise, including text, images, and media, is owned by SkillWise or its content partners and is protected by copyright laws.</p>
+
+      <h2>2. User-Generated Content</h2>
+      <p>Users must own the copyright to the material they upload or have obtained permission to use it. By uploading content, you grant SkillWise a license to use it on our platform.</p>
+
+      <h2>3. Copyright Infringement</h2>
+      <p>If you believe content on SkillWise infringes your rights, notify us, and we will take action, including content removal if necessary.</p>
+
+      <h2>4. Reporting Copyright Violations</h2>
+      <p>To report a violation, provide a description of the copyrighted work, the infringing content’s location (URL), your contact information, and a statement of good faith belief in the violation.</p>
+
+      <h2>5. Fair Use and Educational Purpose</h2>
+      <p>Users must ensure their use of copyrighted materials aligns with fair use principles, particularly for educational purposes.</p>
+
+      <h2>6. License to Access and Use</h2>
+      <p>Content on SkillWise is for personal, non-commercial use. Redistribution or modification is prohibited without permission.</p>
+
+      <h2>7. DMCA Compliance</h2>
+      <p>SkillWise complies with the DMCA and responds to valid DMCA takedown notices. Repeat infringers may be banned.</p>
+
+      <h2>8. Copyright Dispute Resolution</h2>
+      <p>We encourage amicable resolution of disputes. However, SkillWise reserves the right to remove disputed content during an investigation.</p>
+
+      <h2>9. User Responsibilities</h2>
+      <p>Users are responsible for ensuring their use of content complies with copyright laws.</p>
+
+      <h2>10. Amendments</h2>
+      <p>SkillWise reserves the right to amend this policy at any time. Continued use of the platform signifies acceptance of the updated policy.</p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2024 SkillWise. All Rights Reserved. ✌️
+  </footer>
+
+  <!-- JavaScript for Dark Mode Toggle -->
+  <script>
+    const toggleButton = document.getElementById('dark-mode-toggle');
+    const body = document.body;
+
+    toggleButton.addEventListener('click', () => {
+      body.classList.toggle('dark-mode');
+    });
+  </script>
+
+</body>
+
+</html>
