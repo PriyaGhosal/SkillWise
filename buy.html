@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Course</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7e8e0;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #ff6a6a;
+            margin-bottom: 40px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffe0ae;
+            border: 2px solid #f7c7c7;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .summary-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .summary-item span {
+            font-size: 1.1rem;
+        }
+
+        .summary-item .price {
+            font-weight: bold;
+        }
+
+        .total {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #ff6a6a;
+            margin-top: 20px;
+            text-align: right;
+        }
+
+        .pay-btn {
+            display: block;
+            background-color: #333;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 30px;
+            transition: background-color 0.3s ease;
+        }
+
+        .pay-btn:hover {
+            background-color: #555;
+        }
+
+        .back-btn {
+            display: block;
+            margin-bottom: 20px;
+            padding: 10px 20px;
+            background-color: #ff6a6a;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-btn:hover {
+            background-color: #ff4a4a;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Back Button -->
+    <button class="back-btn" onclick="history.back()">Back</button>
+
+    <h1>Order Summary</h1>
+
+    <div class="container">
+
+        <div class="summary-item">
+            <span>Course Price:</span>
+            <span class="price">$100.00</span>
+        </div>
+
+        <div class="summary-item">
+            <span>Taxes (10%):</span>
+            <span class="price">$10.00</span>
+        </div>
+
+        <div class="summary-item">
+            <span>Discount (5%):</span>
+            <span class="price">-$5.00</span>
+        </div>
+
+        <hr>
+
+        <div class="total">
+            Total Price: $105.00
+        </div>
+
+        <button class="pay-btn" onclick="alert('Redirecting to payment gateway...')">Pay Online</button>
+
+    </div>
+
+</body>
+</html>

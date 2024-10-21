@@ -20,15 +20,15 @@
       </ul>
     </nav>
   </header>
-  
+
     <div class="container">
         <div class="form-container">
             <!-- Add SkillWise Icon/Logo -->
             <img src="assets/images/Skillwise_logo.jpg" alt="SkillWise Logo" class="logo">
-            
+
             <h1>Welcome to <span class="brand">SkillWise</span></h1>
             <p><strong>Sign in</strong> to access your learning dashboard</p>
-            
+
             <form action="#" method="POST">
                 <div class="input-group">
                     <label for="username">Username</label>
@@ -52,7 +52,7 @@
                   <small>Use special characters and numbers for a strong password</small>
 
                 </p> -->
-               
+
                 <button type="submit" class="signin-btn" id="submit">Sign In</button>
 
                 <p class="signup-link">Don't have an account? <a href="./signup.html">Sign up here</a></p>
@@ -66,28 +66,28 @@
       const passwordInput = document.querySelector("#password");
       const submitBtn = document.querySelector("#submit");
       const emailInput = document.querySelector("#email");
-    
+
       togglePassword.addEventListener("click", function () {
         const type = passwordInput.getAttribute("type") === "password" ? "text" : "password";
         passwordInput.setAttribute("type", type);
-    
+
         this.classList.toggle("fa-eye-slash");
         this.classList.toggle("fa-eye");
       });
-    
-     
-    
+
+
+
       submitBtn.addEventListener("click", (e) => {
          e.preventDefault();
-    
+
         const email = emailInput.value;
         const emailError = document.getElementById("emailError");
-        
-      
+
+
         const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
-    
+
         if (!emailPattern.test(email)) {
-         
+
           if (!emailError) {
             const errorMsg = document.createElement("p");
             errorMsg.id = "emailError";
@@ -96,17 +96,17 @@
             emailInput.parentElement.appendChild(errorMsg);
           }
         } else {
-         
+
           if (emailError) {
             emailError.remove();
           }
-        
+
           e.target.closest("form").submit();
         }
       });
 
     </script>
-    
+
 
 </body>
 </html>

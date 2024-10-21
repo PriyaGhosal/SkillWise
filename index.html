@@ -17,7 +17,12 @@
   <title>SkillWise</title>
   <meta name="title" content="SkillWise">
   <meta name="description" content="This is a education html template made by Priya Ghosal">
+  <style>
+    /* footer{
+      color:white
+    } */
 
+  </style>
   <!--
     - favicon
   -->
@@ -48,6 +53,7 @@
 
 <!-- Animation on Scroll -->
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<link rel="stylesheet" href="registor_btn.css" />
 
 <body>
 
@@ -117,7 +123,7 @@
           </li>
 
            <li class="navbar-item">
-          <a href="/careers.html" class="navbar-link title-sm" data-nav-link>Careers</a>
+          <a href="/careers.html" class="navbar-link title-sm" data-nav-link>Opportunities</a>
           </li>
           <li class="navbar-item">
           <div class="searchBox">
@@ -213,25 +219,49 @@
       </section>
 
 
-      <!--
-        Feedback Section
-      -->
       <div class="feedback-button" id="feedbackButton">Feedback</div>
+
       <div class="feedback-modal" id="feedbackModal">
         <div class="modal-content">
           <span class="close" id="closeModal">&times;</span>
           <h2>We Value Your Feedback</h2>
+      
           <form id="feedbackForm">
+            <!-- Step 1: Emoji Selection -->
             <div class="step" id="step1">
               <h3>How do you feel?</h3>
+              <p id="emoji-not-selected" hidden="true">Please select an emotion!</p>
               <div class="emojis">
-                <span class="emoji" data-value="happy">😀</span>
-                <span class="emoji" data-value="neutral">😐</span>
-                <span class="emoji" data-value="sad">😢</span>
+                <div class="emoji-option">
+                  <span class="emoji" data-value="happy">😄</span>
+                  <p>Happy</p>
+                </div>
+                <div class="emoji-option">
+                  <span class="emoji" data-value="okay">🙂</span>
+                  <p>Okay</p>
+                </div>
+                <div class="emoji-option">
+                  <span class="emoji" data-value="neutral">😕</span>
+                  <p>Neutral</p>
+                </div>
+                <div class="emoji-option">
+                  <span class="emoji" data-value="disappointed">🙁</span>
+                  <p>Disappointed</p>
+                </div>
+                <div class="emoji-option">
+                  <span class="emoji" data-value="sad">😢</span>
+                  <p>Sad</p>
+                </div>
+                <div class="emoji-option">
+                  <span class="emoji" data-value="excited">😍</span>
+                  <p>Excited</p>
+                </div>
               </div>
+      
               <button type="button" id="nextToFeedback">Next</button>
             </div>
-
+      
+            <!-- Step 2: Feedback Input -->
             <div class="step" id="step2" style="display: none;">
               <h3>Your Feedback</h3>
               <textarea id="feedback" rows="5" placeholder="Write your feedback here..." required></textarea>
@@ -240,7 +270,8 @@
                 <button type="button" id="backToEmoji">Back</button>
               </div>
             </div>
-
+      
+            <!-- Step 3: Email Input -->
             <div class="step" id="step3" style="display: none;">
               <h3>Your Email</h3>
               <input type="email" id="email" placeholder="Enter your email" required />
@@ -252,12 +283,10 @@
           </form>
         </div>
       </div>
-
-
+      
       <div class="feedbackPopUp">
         Thank you for your Feedback
       </div>
-
 
 
       <!--
@@ -392,7 +421,7 @@
           </ul>
 
           <div class="button-container">
-            <a href="#" class="btn btn-primary" data-aos="zoom-in">
+            <a href="Course.html" class="btn btn-primary" data-aos="zoom-in">
               View All Categories
             </a>
           </div>
@@ -816,7 +845,7 @@
 
         </ul>
         <div class="button-container">
-          <a href="#" class="btn btn-primary" data-aos="zoom-in">
+          <a href="Course.html" class="btn btn-primary" data-aos="zoom-in">
             View All Courses
           </a>
         </div>
@@ -838,10 +867,32 @@
             Education Is About Creating Leaders For Tomorrow
           </h2>
 
-          <a href="signin.html" class="cta-btn" data-aos="fade-left">Register Today</a>
+          
+          <!-- <a href="signin.html" class="register-button" data-aos="fade-left">Register Today</a> -->
 
+          <!-- <div class="c1-button">
+            <button onclick="window.location.href='signin.html'">
+                Register Today
+            </button>
+        </div> -->
+      
+        <button class="register-b">
+          <span onclick="window.location.href='signin.html'">Register Today</span>
+        </button>
         </div>
       </section>
+
+
+      <!-- <section class="cta-section" aria-labelledby="cta-heading">
+        <div class="cta-wrapper">
+          <h2 class="cta-title" id="cta-heading" data-aos="zoom-in">
+            Education Is About Creating Leaders For Tomorrow
+          </h2>
+          <a href="signin.html" class="cta-button" data-aos="fade-left">Register Today</a>
+        </div>
+      </section> -->
+      
+      
 
       <!-- Live Counting -->
 
@@ -1438,6 +1489,7 @@
       </div>
     </div>
 
+    
     <!-- #Contact Us -->
 
     <section id="contact" class="cta" aria-labelledby="cta-label" style="
@@ -1505,8 +1557,6 @@
       </div>
     </div>
   </section>
-
-  
 
 
 
