@@ -719,7 +719,7 @@ button:hover {
   gap: 24px;
 }
 
-.course-card:is(:hover, :focus-within) {
+.card-container .course-card:is(:hover, :focus-within) {
   border-color: var(--light-coral);
 }
 
@@ -1061,7 +1061,7 @@ button:hover {
 .live-count-emoji{
   font-size: xx-large;
 }
-@media
+
 
 
 
