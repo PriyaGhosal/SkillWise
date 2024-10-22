@@ -71,6 +71,7 @@
   
   /* Button Hover Effects */
   #contact-form button:hover {
+    cursor: pointer;
     background-color: #2980b9; 
     transform: translateY(-2px); 
   }
@@ -157,6 +158,7 @@
 }
 
 .event-button:hover {
+  cursor: pointer;
   background-color: var(--keppei); /* Keppei background on hover */
   color: var(--oxford-blue); /* Oxford blue text on hover */
   transform: scale(1.1); /* Slightly bigger button on hover */
@@ -165,6 +167,7 @@
 /* Hover effect for event items */
 .event-item:hover {
   transform: scale(1.03); /* Slightly enlarges the event item on hover */
+  cursor: pointer;
 }
 
 
