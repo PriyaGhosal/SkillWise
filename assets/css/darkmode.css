@@ -355,10 +355,9 @@ body.nav-active {
   }
 }
 
-.header .container,
+.header-container ,
 .navbar-top {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
@@ -374,7 +373,10 @@ body.nav-active {
   z-index: 2;
   transition: 0.25s var(--cubic-in);
   visibility: hidden;
-  gap: 2rem;
+}
+
+.navbarContain{
+  display: flex;
 }
 
 .navbar.active {

@@ -69,13 +69,12 @@
 
 
 
-
     <!--
     - #HEADER
   -->
   <header class="header" data-header>
 
-    <div class="container">
+    <div class="header-container">
 
       <a href="#">
         <img src="./assets/images/Skillwise_logo-removebg-preview.png" width="50" height="10" alt="SkillWise home">
@@ -1499,69 +1498,76 @@
 
     <section id="contact" class="cta" aria-labelledby="cta-label" style="
     background: linear-gradient(135deg, #009688, #00796b);
-    padding: 50px 0;
+    padding: 80px 0;
+    min-height: 100vh;
     display: flex;
-    justify-content: center;
     align-items: center;
-    min-height: 101vh;
-  ">
+">
     <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-12 col-md-8 col-lg-6">
-          <div class="card shadow-lg p-4" style="
-            border-radius: 20px;
-          ">
-            <div class="card-body">
-              <h2 class="card-title text-center mb-4" style="
-                font-weight: bold; 
-                color: #ff66b2; 
-                font-size: 2.5rem;
-              ">
-                Contact Us
-              </h2>
-              <form id="contact-form">
-                <div class="mb-3">
-                  <label for="name" class="form-label" style="
-                    font-size: 2.3rem;
-                  ">Your Name</label>
-                  <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required style="
-                    font-size: 1.5rem; 
-                    padding: 20px;
-                  ">
-                </div>
-                <div class="mb-3">
-                  <label for="email" class="form-label" style="
-                    font-size: 2.3rem;
-                  ">Your Email</label>
-                  <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required style="
-                    font-size: 1.5rem; 
-                    padding: 20px;
-                  ">
-                </div>
-                <div class="mb-3">
-                  <label for="message" class="form-label" style="
-                    font-size: 2.3rem;
-                  ">Your Message</label>
-                  <textarea class="form-control" id="message" name="message" rows="5" placeholder="Enter your message" required style="
-                    font-size: 1.5rem; 
-                    padding: 20px;
-                  "></textarea>
-                </div>
-                <div class="d-grid">
-                  <button type="submit" class="btn btn-primary btn-lg" style="
-                    background-color: #ff66b2;
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10 col-lg-8">
+                <div class="card shadow-lg" style="
+                    border-radius: 20px;
+                    background-color: rgba(255, 255, 255, 0.95);
                     border: none;
-                    font-size: 1.5rem;
-                    padding: 15px;
-                  ">Send Message</button>
+                ">
+                    <div class="card-body p-5">
+                        <h2 class="card-title text-center mb-5" style="
+                            font-weight: bold; 
+                            color: #009688; 
+                            font-size: 3rem;
+                            text-transform: uppercase;
+                            letter-spacing: 2px;
+                        ">
+                            Get in Touch
+                        </h2>
+                        <form id="contact-form">
+                            <div class="mb-4">
+                                <label for="name" class="form-label" style="font-size: 1.2rem; font-weight: 600; color: #333;">Your Name</label>
+                                <input type="text" class="form-control form-control-lg" id="name" name="name" placeholder="John Doe" required style="
+                                    font-size: 1.2rem; 
+                                    padding: 15px;
+                                    border: 2px solid #ddd;
+                                    border-radius: 10px;
+                                ">
+                            </div>
+                            <div class="mb-4">
+                                <label for="email" class="form-label" style="font-size: 1.2rem; font-weight: 600; color: #333;">Your Email</label>
+                                <input type="email" class="form-control form-control-lg" id="email" name="email" placeholder="johndoe@example.com" required style="
+                                    font-size: 1.2rem; 
+                                    padding: 15px;
+                                    border: 2px solid #ddd;
+                                    border-radius: 10px;
+                                ">
+                            </div>
+                            <div class="mb-4">
+                                <label for="message" class="form-label" style="font-size: 1.2rem; font-weight: 600; color: #333;">Your Message</label>
+                                <textarea class="form-control form-control-lg" id="message" name="message" rows="5" placeholder="Type your message here..." required style="
+                                    font-size: 1.2rem; 
+                                    padding: 15px;
+                                    border: 2px solid #ddd;
+                                    border-radius: 10px;
+                                "></textarea>
+                            </div>
+                            <div class="d-grid gap-2 mt-5">
+                                <button type="submit" class="btn btn-primary btn-lg" style="
+                                    background-color: #009688;
+                                    border: none;
+                                    font-size: 1.4rem;
+                                    padding: 15px 30px;
+                                    border-radius: 50px;
+                                    text-transform: uppercase;
+                                    letter-spacing: 1px;
+                                    transition: all 0.3s ease;
+                                ">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-              </form>
             </div>
-          </div>
         </div>
-      </div>
     </div>
-  </section>
+</section>
 
 
 
