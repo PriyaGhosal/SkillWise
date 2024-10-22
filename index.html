@@ -12,6 +12,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <!--   <link rel="stylesheet" href="style.css"> -->
   <link rel="stylesheet" href="style.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
   <title>SkillWise</title>
   <meta name="title" content="SkillWise">
   <meta name="description" content="This is a education html template made by Priya Ghosal">
@@ -1486,156 +1488,74 @@
       </div>
     </div>
 
-    <!--
-    - #Contact Us
-  -->
-
-
-<section id="contact" class="cta" aria-labelledby="cta-label">
- 
-  <div class="container" style="align-items: center; justify-content: center; display: flex; flex-direction: column; gap: 10px;">
     
+    <!-- #Contact Us -->
 
-    <!-- Notification Popup -->
-    <div id="notification" style="
-      display: none;
-      background-color: #4caf50;
-      color: white;
-      padding: 12px;
-      margin-bottom: 10px;
-      border-radius: 10px;
-      width: 44vh;
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-    ">
-      ✅ Form successfully submitted!
+    <section id="contact" class="cta" aria-labelledby="cta-label" style="
+    background: linear-gradient(135deg, #009688, #00796b);
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 101vh;
+  ">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-8 col-lg-6">
+          <div class="card shadow-lg p-4" style="
+            border-radius: 20px;
+          ">
+            <div class="card-body">
+              <h2 class="card-title text-center mb-4" style="
+                font-weight: bold; 
+                color: #ff66b2; 
+                font-size: 2.5rem;
+              ">
+                Contact Us
+              </h2>
+              <form id="contact-form">
+                <div class="mb-3">
+                  <label for="name" class="form-label" style="
+                    font-size: 2.3rem;
+                  ">Your Name</label>
+                  <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required style="
+                    font-size: 1.5rem; 
+                    padding: 20px;
+                  ">
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label" style="
+                    font-size: 2.3rem;
+                  ">Your Email</label>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required style="
+                    font-size: 1.5rem; 
+                    padding: 20px;
+                  ">
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label" style="
+                    font-size: 2.3rem;
+                  ">Your Message</label>
+                  <textarea class="form-control" id="message" name="message" rows="5" placeholder="Enter your message" required style="
+                    font-size: 1.5rem; 
+                    padding: 20px;
+                  "></textarea>
+                </div>
+                <div class="d-grid">
+                  <button type="submit" class="btn btn-primary btn-lg" style="
+                    background-color: #ff66b2;
+                    border: none;
+                    font-size: 1.5rem;
+                    padding: 15px;
+                  ">Send Message</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <section id="contact" class="cta" aria-labelledby="cta-label">
-
-      <section class="container" style="
-        align-items: center;
-        justify-content: center;
-        display: flex;
-        flex-direction: column;
-        gap: 20px; /* Increased spacing for better layout */
-      ">
-    
-        <h2 class="headline-md section-title" id="cta-label" data-aos="fade-right" style="
-          font-size: clamp(3rem, 6vw, 4rem); 
-          color: #ffc5e2;
-          margin-bottom: 20px; 
-        ">
-          Contact Us
-        </h2>
-    
-        <form id="contact-form" data-aos="fade-left" style="
-          max-width: 100%;
-          width: 400px;
-          background-color: rgba(46, 46, 46, 0.9); /* Slightly darkened */
-          padding: 25px; /* Added padding */
-          border-radius: 15px; /* Softer corners */
-          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-          transition: box-shadow 0.4s ease;
-        " onmouseover="this.style.boxShadow='0 12px 24px rgba(0, 0, 0, 0.25)'"
-          onmouseout="this.style.boxShadow='0 8px 16px rgba(0, 0, 0, 0.2)'">
-    
-          <input type="text" name="name" placeholder="Your Name" required pattern="[a-zA-Z ]+" 
-          oninvalid="this.setCustomValidity('Numbers and symbols are not allowed')"
-          oninput="this.setCustomValidity('')" style="
-            width: 100%;
-            padding: 14px;
-            margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            font-size: 15px;
-            color: #333;
-            background-color: #f0f0f0;
-            transition: border-color 0.3s ease, box-shadow 0.3s ease;
-          " onfocus="this.style.borderColor='#ff66b2'; this.style.boxShadow='0 0 12px rgba(255, 102, 178, 0.4)'"
-            onblur="this.style.borderColor='#ccc'; this.style.boxShadow='none'">
-    
-          <input type="email" name="email" placeholder="Your Email" required style="
-            width: 100%;
-            padding: 14px;
-            margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            font-size: 15px;
-            color: #333;
-            background-color: #f0f0f0;
-            transition: border-color 0.3s ease, box-shadow 0.3s ease;
-          " onfocus="this.style.borderColor='#ff66b2'; this.style.boxShadow='0 0 12px rgba(255, 102, 178, 0.4)'"
-            onblur="this.style.borderColor='#ccc'; this.style.boxShadow='none'">
-    
-          <textarea name="message" placeholder="Your Message" required style="
-            width: 100%;
-            padding: 14px;
-            margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            font-size: 15px;
-            color: #333;
-            background-color: #f0f0f0;
-            height: 160px;
-            resize: none;
-            transition: border-color 0.3s ease, box-shadow 0.3s ease;
-          " onfocus="this.style.borderColor='#ff66b2'; this.style.boxShadow='0 0 12px rgba(255, 102, 178, 0.4)'"
-            onblur="this.style.borderColor='#ccc'; this.style.boxShadow='none'"></textarea>
-    
-          <button type="submit" style="
-            background-color: #ff66b2;
-            color: white;
-            padding: 14px;
-            margin-top: 10px;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            font-size: 17px;
-            width: 100%;
-            transition: background-color 0.3s ease, transform 0.3s ease;
-          " onmouseover="this.style.backgroundColor='#ff3385'; this.style.transform='scale(1.05)'"
-            onmouseout="this.style.backgroundColor='#ff66b2'; this.style.transform='scale(1)'">Send</button>
-    
-        </form>
-    
-        <div id="notification" style="
-          display: none;
-          color: white;
-          background-color: #4CAF50;
-          padding: 10px;
-          border-radius: 5px;
-          margin-top: 10px;
-          font-size: 16px;
-          text-align: center;
-        ">Message Sent!</div>
-    
-        <script>
-          // Handling form submission
-          const form = document.getElementById('contact-form');
-          const notification = document.getElementById('notification');
-    
-          form.addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent default form submission
-    
-            // Show notification
-            notification.style.display = 'block';
-    
-            // Hide notification after 3 seconds
-            setTimeout(function() {
-              notification.style.display = 'none';
-            }, 3000);
-    
-            // Clear input fields
-            form.reset();
-            
-            // You can add your form processing logic here (e.g., sending data to the server)
-          });
-        </script>
-    
-      </section>
-    
-    </section>
-    
+  </section>
 
 
 
@@ -1736,6 +1656,12 @@ function searchCourses() {
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <script src="./assets/js/ScrollToTop.js"></script>
+
+
+
+  <!-- Bootstrap JS Bundle (Optional) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>
