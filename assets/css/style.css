@@ -679,7 +679,7 @@ input[type="email"] {
   width: 100%;
   padding: 10px;
   margin: 10px 0;
-  border: 1px solid #ccc;
+  border: 1px solid #ccc; 
   border-radius: 4px;
 }
 
@@ -692,14 +692,10 @@ button {
   cursor: pointer;
 }
 
-button:hover {
-  background-color: #45a049;
-}
-
-.feedbackPopUp {
+.feedbackRequestPopUps {
   position: fixed;
   transform: translate(120%);
-  transition: all 1s ease-in-out;
+  transition: all 0.1s ease-in-out;
   right: 20px;
   bottom: 100px;
   background-color: hsl(357, 100%, 75%);
@@ -709,6 +705,10 @@ button:hover {
   cursor: pointer;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   z-index: 1000;
+}
+
+button:hover {
+  background-color: #45a049;
 }
 
 .PopUpDisplay {
