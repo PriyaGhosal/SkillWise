@@ -1,92 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>UI/UX Design Courses</title>
-  <link rel="stylesheet" href="assets/css/uiux.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI/UX Design Courses</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #fff;
+            color: #333;
+            text-align: center;
+            padding: 1rem;
+            margin-bottom: 2rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            margin-bottom: 0.5rem;
+        }
+        .course-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            list-style-type: none;
+            padding: 0;
+        }
+        .course-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        .course-card:hover {
+            transform: translateY(-5px);
+        }
+        .card-content {
+            padding: 20px;
+        }
+        .card-icon {
+            float: left;
+            margin-right: 15px;
+        }
+        .card-icon img {
+            width: 72px;
+            height: 72px;
+            object-fit: cover;
+        }
+        .title-lg {
+            font-size: 1.2rem;
+            margin-top: 0;
+        }
+        .title-sm {
+            font-size: 0.9rem;
+            color: #666;
+        }
+        .price {
+            font-weight: bold;
+            color: #333;
+            margin: 10px 0;
+        }
+        .add-to-cart-btn {
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+        .add-to-cart-btn:hover {
+            background-color: #45a049;
+        }
+        #cart-icon {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        #cart-count {
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            background-color: #e74c3c;
+            color: white;
+            border-radius: 50%;
+            padding: 2px 6px;
+            font-size: 12px;
+        }
+        #cart-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        #cart-content {
+            background-color: white;
+            margin: 10% auto;
+            padding: 20px;
+            width: 70%;
+            max-width: 600px;
+            border-radius: 5px;
+        }
+        #cart-items {
+            list-style-type: none;
+            padding: 0;
+        }
+        #cart-items li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #eee;
+            padding: 10px 0;
+        }
+        #cart-total {
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .close:hover {
+            color: #000;
+        }
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
 </head>
-
 <body>
-  <header>
-    <h1>UI/UX Design Courses</h1>
-  </header>
+    <header>
+        <h1>UI/UX Design Courses</h1>
+        <p>Learn the art of crafting intuitive and beautiful digital experiences.</p>
+    </header>
 
-  <ul class="course-list">
-    <li class="card category-card">
-      <div class="card-icon">
-        <img src="./assets/images/img1.jpg" width="72" height="72" alt="Course 1 icon">
-      </div>
-      <div>
-        <h3 class="title-lg">Intro to UI/UX Design</h3>
-        <p class="title-sm">Beginner-friendly introduction to the basics of UI/UX.</p>
-        <a href="#" class="buy-now-btn">Buy Now</a>
-      </div>
-      <a href="#" class="layer-link" aria-label="Intro to UI/UX Design"></a>
-    </li>
+    <main>
+        <ul class="course-list" id="course-list">
+            <!-- Course list will be populated by JavaScript -->
+        </ul>
+    </main>
 
-    <li class="card category-card">
-      <div class="card-icon">
-        <img src="./assets/images/img2.jpg" width="72" height="72" alt="Course 2 icon">
-      </div>
-      <div>
-        <h3 class="title-lg">Advanced Prototyping Techniques</h3>
-        <p class="title-sm">Master advanced prototyping for smooth UI/UX transitions.</p>
-        <a href="#" class="buy-now-btn">Buy Now</a>
-      </div>
-      <a href="#" class="layer-link" aria-label="Advanced Prototyping Techniques"></a>
-    </li>
+    <div id="cart-icon">
+        🛒
+        <span id="cart-count">0</span>
+    </div>
 
-    <li class="card category-card">
-      <div class="card-icon">
-        <img src="./assets/images/img3.jpg" width="72" height="72" alt="Course 3 icon">
-      </div>
-      <div>
-        <h3 class="title-lg">User Research Fundamentals</h3>
-        <p class="title-sm">Understand your users and their needs to design better experiences.</p>
-        <a href="#" class="buy-now-btn">Buy Now</a>
-      </div>
-      <a href="#" class="layer-link" aria-label="User Research Fundamentals"></a>
-    </li>
+    <div id="cart-modal">
+        <div id="cart-content">
+            <span class="close">&times;</span>
+            <h2>Your Cart</h2>
+            <ul id="cart-items"></ul>
+            <p id="cart-total">Total: $0</p>
+            <button id="checkout-btn" class="add-to-cart-btn">Proceed to Checkout</button>
+        </div>
+    </div>
 
-    <li class="card category-card">
-      <div class="card-icon">
-        <img src="./assets/images/img4.jpg" width="72" height="72" alt="Course 4 icon">
-      </div>
-      <div>
-        <h3 class="title-lg">Design Systems & Guidelines</h3>
-        <p class="title-sm">Learn how to create consistent and scalable design systems.</p>
-        <a href="#" class="buy-now-btn">Buy Now</a>
-      </div>
-      <a href="#" class="layer-link" aria-label="Design Systems & Guidelines"></a>
-    </li>
+    <footer>
+        <p>&copy; 2024 UI/UX Design Academy. All Rights Reserved.</p>
+    </footer>
 
-    <li class="card category-card">
-      <div class="card-icon">
-        <img src="./assets/images/img5.jpg" width="72" height="72" alt="Course 5 icon">
-      </div>
-      <div>
-        <h3 class="title-lg">UX for Mobile Devices</h3>
-        <p class="title-sm">Design user-friendly experiences for mobile applications.</p>
-        <a href="#" class="buy-now-btn">Buy Now</a>
-      </div>
-      <a href="#" class="layer-link" aria-label="UX for Mobile Devices"></a>
-    </li>
+    <script>
+        const courses = [
+            { id: 1, title: "Intro to UI/UX Design", description: "Beginner-friendly introduction to the basics of UI/UX.", price: 49.99, image: "./assets/images/img1.jpg" },
+            { id: 2, title: "Advanced Prototyping Techniques", description: "Master advanced prototyping for smooth UI/UX transitions.", price: 79.99, image: "./assets/images/img2.jpg" },
+            { id: 3, title: "User Research Fundamentals", description: "Understand your users and their needs to design better experiences.", price: 59.99, image: "./assets/images/img3.jpg" },
+            { id: 4, title: "Design Systems & Guidelines", description: "Learn how to create consistent and scalable design systems.", price: 69.99, image: "./assets/images/img4.jpg" },
+            { id: 5, title: "UX for Mobile Devices", description: "Design user-friendly experiences for mobile applications.", price: 64.99, image: "./assets/images/img5.jpg" },
+            { id: 6, title: "Web Accessibility in UI/UX", description: "Ensure your designs are accessible to all users.", price: 54.99, image: "./assets/images/img6.jpg" }
+        ];
 
-    <li class="card category-card">
-      <div class="card-icon">
-        <img src="./assets/images/img6.jpg" width="72" height="72" alt="Course 6 icon">
-      </div>
-      <div>
-        <h3 class="title-lg">Web Accessibility in UI/UX</h3>
-        <p class="title-sm">Ensure your designs are accessible to all users.</p>
-        <a href="#" class="buy-now-btn">Buy Now</a>
-      </div>
-      <a href="#" class="layer-link" aria-label="Web Accessibility in UI/UX"></a>
-    </li>
-  </ul>
+        const cart = [];
 
+        function displayCourses() {
+            const courseList = document.getElementById('course-list');
+            courseList.innerHTML = '';
+            courses.forEach(course => {
+                const li = document.createElement('li');
+                li.className = 'course-card clearfix';
+                li.innerHTML = `
+                    <div class="card-icon">
+                        <img src="${course.image}" width="72" height="72" alt="Course ${course.id} icon">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="title-lg">${course.title}</h3>
+                        <p class="title-sm">${course.description}</p>
+                        <p class="price">$${course.price.toFixed(2)}</p>
+                        <a href="#" class="add-to-cart-btn" data-id="${course.id}">Add to Cart</a>
+                    </div>
+                `;
+                courseList.appendChild(li);
+            });
+        }
+
+        function addToCart(courseId) {
+            const course = courses.find(c => c.id === courseId);
+            if (course) {
+                cart.push(course);
+                updateCartCount();
+            }
+        }
+
+        function updateCartCount() {
+            const cartCount = document.getElementById('cart-count');
+            cartCount.textContent = cart.length;
+        }
+
+        function displayCart() {
+            const cartItems = document.getElementById('cart-items');
+            const cartTotal = document.getElementById('cart-total');
+            cartItems.innerHTML = '';
+            let total = 0;
+
+            cart.forEach(item => {
+                const li = document.createElement('li');
+                li.innerHTML = `
+                    <span>${item.title}</span>
+                    <span>$${item.price.toFixed(2)}</span>
+                `;
+                cartItems.appendChild(li);
+                total += item.price;
+            });
+
+            cartTotal.textContent = `Total: $${total.toFixed(2)}`;
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            displayCourses();
+
+            const courseList = document.getElementById('course-list');
+            courseList.addEventListener('click', (e) => {
+                if (e.target.classList.contains('add-to-cart-btn')) {
+                    e.preventDefault();
+                    const courseId = parseInt(e.target.getAttribute('data-id'));
+                    addToCart(courseId);
+                }
+            });
+
+            const cartIcon = document.getElementById('cart-icon');
+            const cartModal = document.getElementById('cart-modal');
+            const closeBtn = document.querySelector('.close');
+
+            cartIcon.addEventListener('click', () => {
+                cartModal.style.display = 'block';
+                displayCart();
+            });
+
+            closeBtn.addEventListener('click', () => {
+                cartModal.style.display = 'none';
+            });
+
+            window.addEventListener('click', (e) => {
+                if (e.target === cartModal) {
+                    cartModal.style.display = 'none';
+                }
+            });
+
+            const checkoutBtn = document.getElementById('checkout-btn');
+            checkoutBtn.addEventListener('click', () => {
+                alert('Thank you for your purchase! This is where the checkout process would begin.');
+                cart.length = 0;
+                updateCartCount();
+                cartModal.style.display = 'none';
+            });
+        });
+    </script>
 </body>
-
 </html>
