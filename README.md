@@ -1029,13 +1029,6 @@ Thank you for your contributions to SkillWise!Every contribution, no matter the 
                     <sub><b>Rishav Raj (rishavd3v)</b></sub>
                 </a>
             </td>
-            <td align="center">
-                <a href="https://github.com/rohan-cce">
-                    <img src="https://avatars.githubusercontent.com/u/59871907?v=4" width="100;" alt="rohan-cce"/>
-                    <br />
-                    <sub><b>Rohan j</b></sub>
-                </a>
-            </td>
 		</tr>
 	<tbody>
 </table>
