@@ -1177,6 +1177,7 @@ button:hover {
 
 .copyright {
   font-weight: var(--fw-500);
+  color:#ff8086;
 }
 
 #instapost1 {
