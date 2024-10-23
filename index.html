@@ -1564,6 +1564,37 @@
       </div>
     </div>
   </section>
+     <div class="reviews-section">
+    <h2>User Reviews</h2>
+    <form id="review-form">
+        <label for="username">Name:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="rating">Rating:</label>
+        <select id="rating" name="rating" required>
+            <option value="5">5 Stars</option>
+            <option value="4">4 Stars</option>
+            <option value="3">3 Stars</option>
+            <option value="2">2 Stars</option>
+            <option value="1">1 Star</option>
+        </select>
+
+        <label for="comment">Comment:</label>
+        <textarea id="comment" name="comment" rows="4" required></textarea>
+
+        <button type="submit">Submit Review</button>
+    </form>
+
+    <div class="reviews-list">
+        <h3>All Reviews</h3>
+        <div class="review">
+            <h4>John Doe - 5 Stars</h4>
+            <p>This course was fantastic! I learned so much.</p>
+        </div>
+        <!-- Additional reviews will be added here -->
+    </div>
+</div>
+
 
 
 
