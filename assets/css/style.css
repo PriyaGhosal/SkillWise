@@ -588,15 +588,30 @@ body.nav-active .navbar-list .navbar-link {
 .feedback-button {
   position: fixed;
   left: 20px;
-  bottom: 20px;
+  bottom: 20px; /* Position for the Feedback button */
   background-color: hsl(357, 100%, 75%);
   color: white;
   padding: 15px;
   border-radius: 5px;
   cursor: pointer;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  z-index: 1000;
+  z-index: 1000; /* Ensure it is on top */
 }
+
+.E-book-button {
+  position: fixed;
+  left: 20px;
+  bottom: 80px; /* Adjusted to be above the Feedback button */
+  background-color: hsl(357, 100%, 75%);
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1001; /* Higher z-index to ensure it appears above */
+}
+
+
 
 .feedback-modal {
   display: none;

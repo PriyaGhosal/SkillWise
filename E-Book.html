@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Books</title>
+    <style>
+        /* General styling for body */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #fff4f4; /* soft pastel pink */
+            color: #333;
+            padding: 0;
+            margin: 0;
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            background-color: hsl(357, 100%, 75%); /* New color */
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar-brand {
+            font-size: 1.5rem;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .nav-link {
+            color: white;
+            font-size: 1.2rem;
+            margin-right: 20px;
+            text-decoration: none;
+        }
+
+        .nav-link:hover {
+            color: #f1f1f1;
+        }
+
+        /* Shop Title */
+        .shop-title {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: hsl(357, 100%, 75%); /* New color */
+        }
+
+        /* Product Grid Styling */
+        .product-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin: 30px 20px;
+        }
+
+        .product-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            width: 250px;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+
+        .product-card img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        .product-card h3 {
+            font-size: 1.4rem;
+            margin: 10px 0;
+            color: hsl(357, 100%, 75%); /* New color */
+        }
+
+        .product-card p {
+            font-size: 1.2rem;
+            color: #ff6799; /* Soft pastel pink */
+            margin-bottom: 15px;
+        }
+
+        .product-card button {
+            background-color: hsl(357, 100%, 75%); /* New color */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .product-card button:hover {
+            background-color: hsl(357, 100%, 65%); /* Darker shade */
+        }
+
+        /* Cart Section Styling */
+        .cart-section {
+            text-align: center;
+            margin: 50px 0;
+        }
+
+        .cart-section h2 {
+            font-size: 2rem;
+            color: hsl(357, 100%, 75%); /* New color */
+        }
+
+        .cart-items {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .cart-items li {
+            margin: 10px 0;
+            font-size: 1.2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .cart-controls {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .cart-controls button {
+            background-color: hsl(357, 100%, 75%); /* New color */
+            color: white;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .cart-controls button:hover {
+            background-color: hsl(357, 100%, 65%); /* Darker shade */
+        }
+
+        /* E-book Section Styling */
+        .ebook-info {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid hsl(357, 100%, 75%); /* Border with new color */
+            border-radius: 10px;
+            display: none; /* Hidden by default */
+            background-color: #fff; /* White background for contrast */
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: hsl(357, 100%, 75%); /* New color */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .product-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .product-card {
+                width: 100%;
+                max-width: 300px;
+            }
+
+            .nav-link {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-brand">Buy Our eBooks</div>
+        <div>
+            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link" href="#">Products</a>
+            <a class="nav-link" href="#">Cart</a>
+        </div>
+    </nav>
+
+    <!-- Shop Title -->
+    <h1 class="shop-title">Our Books Collection</h1>
+
+    <!-- Product Container -->
+    <div class="product-container">
+        <div class="product-card">
+            <img src="https://rukminim2.flixcart.com/image/850/1000/l51d30w0/book/p/n/o/java-programming-language-learn-java-from-basic-to-advance-2022-original-imagfsqsfcqzzrjj.jpeg?q=90&crop=false" alt="Java Book">
+            <h3>Learn Java</h3>
+            <p>$15</p>
+            <button onclick="addToCart('Learn Java', 15)">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1577622829i/50076664.jpg" alt="Python Book">
+            <h3>Learn Python</h3>
+            <p>$12</p>
+            <button onclick="addToCart('Learn Python', 12)">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://d24f1whwu8r3u4.cloudfront.net/assets/book-covers/dsa-460d6841c2af7be347922d3d151987862d14b7f12d6c5caba28df01dbb7da687.png" alt="DSA Book">
+            <h3>DSA Mastery</h3>
+            <p>$18</p>
+            <button onclick="addToCart('DSA Mastery', 18)">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- Button to Show E-book Info -->
+    <button onclick="toggleEbookInfo()">Show E-Book Info</button>
+
+    <!-- E-book Info Section -->
+    <div class="ebook-info" id="ebook-info">
+        <h2>E-Book Details</h2>
+        <p>This is a collection of our amazing e-books. Explore different topics and enhance your knowledge!</p>
+    </div>
+
+    <!-- Cart Section -->
+    <div class="cart-section">
+        <h2>Your Cart</h2>
+        <ul class="cart-items" id="cart-items"></ul>
+        <h3>Total: $<span id="cart-total">0</span></h3>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Eco-Friendly Shop. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Cart Functionality -->
+    <script>
+        let cart = [];
+        let totalPrice = 0;
+
+        function addToCart(productName, productPrice) {
+            const product = cart.find(item => item.name === productName);
+            if (product) {
+                product.quantity += 1;
+            } else {
+                cart.push({ name: productName, price: productPrice, quantity: 1 });
+            }
+            updateCart();
+        }
+
+        function removeFromCart(productName) {
+            const productIndex = cart.findIndex(item => item.name === productName);
+            if (productIndex !== -1) {
+                cart[productIndex].quantity -= 1;
+                if (cart[productIndex].quantity === 0) {
+                    cart.splice(productIndex, 1);
+                }
+            }
+            updateCart();
+        }
+
+        function updateCart() {
+            const cartItemsElement = document.getElementById('cart-items');
+            const cartTotalElement = document.getElementById('cart-total');
+            cartItemsElement.innerHTML = '';
+            totalPrice = 0;
+
+            cart.forEach(item => {
+                totalPrice += item.price * item.quantity;
+                cartItemsElement.innerHTML += `
+                    <li>
+                        ${item.name} - $${item.price} x ${item.quantity}
+                        <div class="cart-controls">
+                            <button onclick="addToCart('${item.name}', ${item.price})">+</button>
+                            <button onclick="removeFromCart('${item.name}')">-</button>
+                        </div>
+                    </li>
+                `;
+            });
+
+            cartTotalElement.textContent = totalPrice;
+        }
+
+        function toggleEbookInfo() {
+            const ebookInfo = document.getElementById('ebook-info');
+            ebookInfo.style.display = ebookInfo.style.display === 'none' || ebookInfo.style.display === '' ? 'block' : 'none';
+        }
+    </script>
+</body>
+</html>
