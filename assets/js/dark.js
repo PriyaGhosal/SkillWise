@@ -7,11 +7,11 @@ themeToggleButton.addEventListener('click', function() {
   if (themeStyle.getAttribute('href') === './assets/css/style.css') {
     themeStyle.setAttribute('href', './assets/css/darkmode.css');
     themeIcon.name = 'moon-outline';
-    console.log("dark");
+   // console.log("dark");
   } else {
     themeStyle.setAttribute('href', './assets/css/style.css');
     themeIcon.name = 'sunny-outline';
-    console.log("light");
+   // console.log("light");
   }
 });
 
