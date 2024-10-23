@@ -125,7 +125,7 @@ html {
 
 body {
   background-color: var(--snow);
-  color: var(--roman-silver);
+  color: #ff8086;
   font-size: 1.6rem;
   line-height: 1.5;
   overflow: hidden;
