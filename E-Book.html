@@ -5,18 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-Books</title>
     <style>
-        /* General styling for body */
+        /* General styling */
         body {
             font-family: 'Roboto', sans-serif;
-            background-color: #fff4f4; /* soft pastel pink */
+            background-color: #fff4f4; /* Soft pastel pink */
             color: #333;
             padding: 0;
             margin: 0;
         }
 
-        /* Navbar Styling */
+        /* Navbar */
         .navbar {
-            background-color: hsl(357, 100%, 75%); /* New color */
+            background-color: hsl(357, 100%, 75%);
             padding: 10px 20px;
             display: flex;
             justify-content: space-between;
@@ -25,7 +25,7 @@
 
         .navbar-brand {
             font-size: 1.5rem;
-            color: #fff;
+            color: white;
             font-weight: bold;
         }
 
@@ -34,6 +34,7 @@
             font-size: 1.2rem;
             margin-right: 20px;
             text-decoration: none;
+            cursor: pointer; /* Change cursor to pointer */
         }
 
         .nav-link:hover {
@@ -46,10 +47,10 @@
             margin-top: 20px;
             font-size: 2.5rem;
             font-weight: bold;
-            color: hsl(357, 100%, 75%); /* New color */
+            color: hsl(357, 100%, 75%);
         }
 
-        /* Product Grid Styling */
+        /* Product Grid */
         .product-container {
             display: flex;
             justify-content: center;
@@ -81,17 +82,17 @@
         .product-card h3 {
             font-size: 1.4rem;
             margin: 10px 0;
-            color: hsl(357, 100%, 75%); /* New color */
+            color: hsl(357, 100%, 75%);
         }
 
         .product-card p {
             font-size: 1.2rem;
-            color: #ff6799; /* Soft pastel pink */
+            color: #ff6799;
             margin-bottom: 15px;
         }
 
         .product-card button {
-            background-color: hsl(357, 100%, 75%); /* New color */
+            background-color: hsl(357, 100%, 75%);
             color: white;
             padding: 10px 20px;
             border: none;
@@ -100,18 +101,13 @@
         }
 
         .product-card button:hover {
-            background-color: hsl(357, 100%, 65%); /* Darker shade */
+            background-color: hsl(357, 100%, 65%);
         }
 
-        /* Cart Section Styling */
+        /* Cart Section */
         .cart-section {
             text-align: center;
             margin: 50px 0;
-        }
-
-        .cart-section h2 {
-            font-size: 2rem;
-            color: hsl(357, 100%, 75%); /* New color */
         }
 
         .cart-items {
@@ -121,7 +117,6 @@
 
         .cart-items li {
             margin: 10px 0;
-            font-size: 1.2rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -129,36 +124,57 @@
 
         .cart-controls {
             display: flex;
-            align-items: center;
             gap: 10px;
         }
 
         .cart-controls button {
-            background-color: hsl(357, 100%, 75%); /* New color */
+            background-color: hsl(357, 100%, 75%);
             color: white;
-            padding: 5px 10px;
             border: none;
             border-radius: 3px;
             cursor: pointer;
         }
 
         .cart-controls button:hover {
-            background-color: hsl(357, 100%, 65%); /* Darker shade */
+            background-color: hsl(357, 100%, 65%);
         }
 
-        /* E-book Section Styling */
-        .ebook-info {
-            margin: 20px;
+        /* FAQ Section */
+        .faq-section {
+            margin: 50px 20px;
             padding: 20px;
-            border: 1px solid hsl(357, 100%, 75%); /* Border with new color */
             border-radius: 10px;
-            display: none; /* Hidden by default */
-            background-color: #fff; /* White background for contrast */
+            border: 1px solid hsl(357, 100%, 75%);
         }
 
-        /* Footer Styling */
+        .faq-question {
+            font-weight: bold;
+            margin-bottom: 10px;
+            cursor: pointer; /* Add pointer cursor for FAQ questions */
+        }
+
+        /* "Why Use Our Books" Section */
+        .why-section {
+            margin: 50px 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .why-section h2 {
+            margin-bottom: 10px;
+            color: hsl(357, 100%, 75%);
+        }
+
+        .why-section ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        /* Footer */
         footer {
-            background-color: hsl(357, 100%, 75%); /* New color */
+            background-color: hsl(357, 100%, 75%);
             color: white;
             padding: 20px 0;
             text-align: center;
@@ -175,10 +191,6 @@
                 width: 100%;
                 max-width: 300px;
             }
-
-            .nav-link {
-                font-size: 1rem;
-            }
         }
     </style>
 </head>
@@ -189,7 +201,7 @@
         <div>
             <a class="nav-link" href="#">Home</a>
             <a class="nav-link" href="#">Products</a>
-            <a class="nav-link" href="#">Cart</a>
+            <a class="nav-link" href="#cart-section" onclick="scrollToCart()">Cart</a> <!-- Add click event to scroll -->
         </div>
     </nav>
 
@@ -199,7 +211,7 @@
     <!-- Product Container -->
     <div class="product-container">
         <div class="product-card">
-            <img src="https://rukminim2.flixcart.com/image/850/1000/l51d30w0/book/p/n/o/java-programming-language-learn-java-from-basic-to-advance-2022-original-imagfsqsfcqzzrjj.jpeg?q=90&crop=false" alt="Java Book">
+            <img src="https://rukminim2.flixcart.com/image/850/1000/l51d30w0/book/p/n/o/java-programming-language-learn-java-from-basic-to-advance-2022-original-imagfsqsfcqzzrjj.jpeg?q=90" alt="Java Book">
             <h3>Learn Java</h3>
             <p>$15</p>
             <button onclick="addToCart('Learn Java', 15)">Add to Cart</button>
@@ -218,17 +230,43 @@
         </div>
     </div>
 
-    <!-- Button to Show E-book Info -->
-    <button onclick="toggleEbookInfo()">Show E-Book Info</button>
+    <!-- Why Use Our Books Section -->
+    <div class="why-section">
+        <h2>Why Use Our Books?</h2>
+        <ul>
+            <li>Comprehensive content tailored for all levels of learners.</li>
+            <li>Real-world coding challenges and examples.</li>
+            <li>Lifetime updates with new editions and content.</li>
+            <li>Accessible in multiple formats for convenience.</li>
+        </ul>
+    </div>
 
-    <!-- E-book Info Section -->
-    <div class="ebook-info" id="ebook-info">
-        <h2>E-Book Details</h2>
-        <p>This is a collection of our amazing e-books. Explore different topics and enhance your knowledge!</p>
+    <!-- FAQ Section -->
+    <div class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(this)">Q: What formats are the eBooks available in?</div>
+            <p class="faq-answer" style="display: none;">A: Our eBooks are available in PDF, EPUB, and MOBI formats.</p>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(this)">Q: Can I read the eBooks on my tablet?</div>
+            <p class="faq-answer" style="display: none;">A: Yes, our eBooks can be read on any device that supports the eBook format.</p>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(this)">Q: What payment methods are accepted?</div>
+            <p class="faq-answer" style="display: none;">A: We accept all major credit cards and PayPal for your convenience.</p>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(this)">Q: Is there a money-back guarantee?</div>
+            <p class="faq-answer" style="display: none;">A: Yes, we offer a 30-day money-back guarantee on all purchases.</p>
+        </div>
     </div>
 
     <!-- Cart Section -->
-    <div class="cart-section">
+    <div class="cart-section" id="cart-section">
         <h2>Your Cart</h2>
         <ul class="cart-items" id="cart-items"></ul>
         <h3>Total: $<span id="cart-total">0</span></h3>
@@ -239,27 +277,22 @@
         <p>&copy; 2024 Eco-Friendly Shop. All Rights Reserved.</p>
     </footer>
 
-    <!-- JavaScript for Cart Functionality -->
     <script>
         let cart = [];
-        let totalPrice = 0;
 
-        function addToCart(productName, productPrice) {
-            const product = cart.find(item => item.name === productName);
-            if (product) {
-                product.quantity += 1;
-            } else {
-                cart.push({ name: productName, price: productPrice, quantity: 1 });
-            }
+        function addToCart(name, price) {
+            const item = cart.find(product => product.name === name);
+            if (item) item.quantity++;
+            else cart.push({ name, price, quantity: 1 });
             updateCart();
         }
 
-        function removeFromCart(productName) {
-            const productIndex = cart.findIndex(item => item.name === productName);
-            if (productIndex !== -1) {
-                cart[productIndex].quantity -= 1;
-                if (cart[productIndex].quantity === 0) {
-                    cart.splice(productIndex, 1);
+        function removeFromCart(name) {
+            const item = cart.find(product => product.name === name);
+            if (item) {
+                item.quantity--;
+                if (item.quantity === 0) {
+                    cart = cart.filter(product => product.name !== name);
                 }
             }
             updateCart();
@@ -269,27 +302,36 @@
             const cartItemsElement = document.getElementById('cart-items');
             const cartTotalElement = document.getElementById('cart-total');
             cartItemsElement.innerHTML = '';
-            totalPrice = 0;
 
+            let total = 0;
             cart.forEach(item => {
-                totalPrice += item.price * item.quantity;
-                cartItemsElement.innerHTML += `
-                    <li>
-                        ${item.name} - $${item.price} x ${item.quantity}
-                        <div class="cart-controls">
-                            <button onclick="addToCart('${item.name}', ${item.price})">+</button>
-                            <button onclick="removeFromCart('${item.name}')">-</button>
-                        </div>
-                    </li>
-                `;
+                const listItem = document.createElement('li');
+                listItem.textContent = `${item.name} (x${item.quantity}) - $${item.price * item.quantity}`;
+                
+                const controls = document.createElement('div');
+                controls.className = 'cart-controls';
+                const removeButton = document.createElement('button');
+                removeButton.textContent = 'Remove';
+                removeButton.onclick = () => removeFromCart(item.name);
+                controls.appendChild(removeButton);
+                listItem.appendChild(controls);
+                
+                cartItemsElement.appendChild(listItem);
+                total += item.price * item.quantity;
             });
 
-            cartTotalElement.textContent = totalPrice;
+            cartTotalElement.textContent = total.toFixed(2);
         }
 
-        function toggleEbookInfo() {
-            const ebookInfo = document.getElementById('ebook-info');
-            ebookInfo.style.display = ebookInfo.style.display === 'none' || ebookInfo.style.display === '' ? 'block' : 'none';
+        function toggleAnswer(questionElement) {
+            const answerElement = questionElement.nextElementSibling;
+            const isVisible = answerElement.style.display === 'block';
+            answerElement.style.display = isVisible ? 'none' : 'block';
+        }
+
+        function scrollToCart() {
+            const cartSection = document.getElementById('cart-section');
+            cartSection.scrollIntoView({ behavior: 'smooth' });
         }
     </script>
 </body>
