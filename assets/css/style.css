@@ -1252,10 +1252,16 @@ button:hover {
 .blog-card a {
   color: var(--light-coral);
   font-size: 20px;
+  color: black;
 }
 
 .blog .btn {
   margin-inline: auto;
+  
+}
+#btn{
+  color: black;
+  background-color: var(--light-coral);
 }
 
 /*-----------------------------------*\
