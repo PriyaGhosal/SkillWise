@@ -22,12 +22,12 @@ const blogs = [
       blogCard.classList.add("blog-card");
       
       blogCard.innerHTML = `
-        <a href="${blog.link}">
-          <img src="${blog.image}" alt="${blog.title}" />
-          <h3>${blog.title}</h3>
-          <p>${blog.description}</p>
-        </a>
-      `;
+    <a href="${escapeHTML(blog.link)}">
+    <img src="${escapeHTML(blog.image)}" alt="${escapeHTML(blog.title)}" />
+    <h3>${escapeHTML(blog.title)}</h3>
+    <p>${escapeHTML(blog.description)}</p>
+  </a>
+`;
       
       blogList.appendChild(blogCard);
     });

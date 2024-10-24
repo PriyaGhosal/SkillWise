@@ -1,12 +1,17 @@
 <div align="center">
 
 # `SkillWise`
+<br>
+
+https://github.com/user-attachments/assets/f52272a5-0d62-4812-8700-bdb07ab21a57
+
 
 <br>
 <img src='./readme-images/desktop.png'>
 <br>
 
 _<i>SkillWise is an innovative online platform designed to help learners of all ages acquire new skills and knowledge. With a wide range of engaging courses and expert instructors, SkillWise provides the tools you need to succeed in today’s competitive world.</i>_
+
 
 <br>
 
@@ -65,7 +70,7 @@ Ensure you have the following installed:
 
 Follow these steps to start your learning journey with SkillWise:
 
-1. **Sign Up**📝: Create your SkillWise account by visiting our [sign-up page](#).
+1. **Sign Up**📝: Create your SkillWise account by visiting our [sign-up page](https://skillwise.netlify.app/signup).
 2. **Browse Courses**📚: Discover a variety of courses across different fields. Use the search and filter options to find courses that match your interests.
 3. **Enroll**🎓: Join the courses that interest you by clicking the "Enroll" button on the course page.
 4. **Learn and Grow**📈: Start learning at your own pace. Track your progress through the course dashboard and complete assignments to reinforce your knowledge.
@@ -168,6 +173,13 @@ Thank you for your contributions to SkillWise!Every contribution, no matter the 
                 </a>
             </td>
             <td align="center">
+                <a href="https://github.com/anuragverma108">
+                    <img src="https://avatars.githubusercontent.com/u/129655645?v=4" width="100;" alt="anuragverma108"/>
+                    <br />
+                    <sub><b>Anurag Verma</b></sub>
+                </a>
+            </td>
+            <td align="center">
                 <a href="https://github.com/yeshwanth-ds">
                     <img src="https://avatars.githubusercontent.com/u/119668086?v=4" width="100;" alt="yeshwanth-ds"/>
                     <br />
@@ -175,10 +187,10 @@ Thank you for your contributions to SkillWise!Every contribution, no matter the 
                 </a>
             </td>
             <td align="center">
-                <a href="https://github.com/anuragverma108">
-                    <img src="https://avatars.githubusercontent.com/u/129655645?v=4" width="100;" alt="anuragverma108"/>
+                <a href="https://github.com/kiran1901">
+                    <img src="https://avatars.githubusercontent.com/u/109973957?v=4" width="100;" alt="kiran1901"/>
                     <br />
-                    <sub><b>Anurag Verma</b></sub>
+                    <sub><b>Kiran S</b></sub>
                 </a>
             </td>
             <td align="center">
@@ -188,6 +200,15 @@ Thank you for your contributions to SkillWise!Every contribution, no matter the 
                     <sub><b>RAVICHANDRA L S</b></sub>
                 </a>
             </td>
+		</tr>
+		<tr>
+            <td align="center">
+                <a href="https://github.com/thedarkking01">
+                    <img src="https://avatars.githubusercontent.com/u/110977868?v=4" width="100;" alt="thedarkking01"/>
+                    <br />
+                    <sub><b>SOURABH SINGH BAIS</b></sub>
+                </a>
+            </td>
             <td align="center">
                 <a href="https://github.com/rahul-chakradhari">
                     <img src="https://avatars.githubusercontent.com/u/96400194?v=4" width="100;" alt="rahul-chakradhari"/>
@@ -195,13 +216,18 @@ Thank you for your contributions to SkillWise!Every contribution, no matter the 
                     <sub><b>Rahul Chakradhari</b></sub>
                 </a>
             </td>
-		</tr>
-		<tr>
             <td align="center">
                 <a href="https://github.com/Abhishek-IITP">
                     <img src="https://avatars.githubusercontent.com/u/165031056?v=4" width="100;" alt="Abhishek-IITP"/>
                     <br />
                     <sub><b>Abhishek Kumar Mohanty</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/Sankar-1110">
+                    <img src="https://avatars.githubusercontent.com/u/143268107?v=4" width="100;" alt="Sankar-1110"/>
+                    <br />
+                    <sub><b>NAKKA  SAI SANKAR</b></sub>
                 </a>
             </td>
             <td align="center">
@@ -212,12 +238,14 @@ Thank you for your contributions to SkillWise!Every contribution, no matter the 
                 </a>
             </td>
             <td align="center">
-                <a href="https://github.com/Sankar-1110">
-                    <img src="https://avatars.githubusercontent.com/u/143268107?v=4" width="100;" alt="Sankar-1110"/>
+                <a href="https://github.com/Srikar-1729">
+                    <img src="https://avatars.githubusercontent.com/u/159757865?v=4" width="100;" alt="Srikar-1729"/>
                     <br />
-                    <sub><b>NAKKA  SAI SANKAR</b></sub>
+                    <sub><b>Srikar-1729</b></sub>
                 </a>
             </td>
+		</tr>
+		<tr>
             <td align="center">
                 <a href="https://github.com/kavya-r30">
                     <img src="https://avatars.githubusercontent.com/u/161142013?v=4" width="100;" alt="kavya-r30"/>
@@ -237,6 +265,27 @@ Thank you for your contributions to SkillWise!Every contribution, no matter the 
                     <img src="https://avatars.githubusercontent.com/u/166685451?v=4" width="100;" alt="sainKunal"/>
                     <br />
                     <sub><b>Kunal Kumar</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/Shobhit1729Aryan">
+                    <img src="https://avatars.githubusercontent.com/u/182258530?v=4" width="100;" alt="Shobhit1729Aryan"/>
+                    <br />
+                    <sub><b>Shobhit Aryan</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/KartikG2">
+                    <img src="https://avatars.githubusercontent.com/u/151381164?v=4" width="100;" alt="KartikG2"/>
+                    <br />
+                    <sub><b>Kartik Gangavati</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/kanduru-abhiram">
+                    <img src="https://avatars.githubusercontent.com/u/85011280?v=4" width="100;" alt="kanduru-abhiram"/>
+                    <br />
+                    <sub><b>K Abhiram</b></sub>
                 </a>
             </td>
 		</tr>
@@ -263,13 +312,6 @@ Thank you for your contributions to SkillWise!Every contribution, no matter the 
                 </a>
             </td>
             <td align="center">
-                <a href="https://github.com/kanduru-abhiram">
-                    <img src="https://avatars.githubusercontent.com/u/85011280?v=4" width="100;" alt="kanduru-abhiram"/>
-                    <br />
-                    <sub><b>K Abhiram</b></sub>
-                </a>
-            </td>
-            <td align="center">
                 <a href="https://github.com/ankit071105">
                     <img src="https://avatars.githubusercontent.com/u/139707943?v=4" width="100;" alt="ankit071105"/>
                     <br />
@@ -283,15 +325,6 @@ Thank you for your contributions to SkillWise!Every contribution, no matter the 
                     <sub><b>swati mishra</b></sub>
                 </a>
             </td>
-		</tr>
-		<tr>
-            <td align="center">
-                <a href="https://github.com/Durgaprasad-Developer">
-                    <img src="https://avatars.githubusercontent.com/u/177651977?v=4" width="100;" alt="Durgaprasad-Developer"/>
-                    <br />
-                    <sub><b>Durgaprasad-Developer</b></sub>
-                </a>
-            </td>
             <td align="center">
                 <a href="https://github.com/shivamv02">
                     <img src="https://avatars.githubusercontent.com/u/91478433?v=4" width="100;" alt="shivamv02"/>
@@ -299,11 +332,27 @@ Thank you for your contributions to SkillWise!Every contribution, no matter the 
                     <sub><b>shivamv02</b></sub>
                 </a>
             </td>
+		</tr>
+		<tr>
             <td align="center">
                 <a href="https://github.com/codeforlifeee">
                     <img src="https://avatars.githubusercontent.com/u/168173457?v=4" width="100;" alt="codeforlifeee"/>
                     <br />
                     <sub><b>Tejas Surya</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/chawdamrunal">
+                    <img src="https://avatars.githubusercontent.com/u/32319538?v=4" width="100;" alt="chawdamrunal"/>
+                    <br />
+                    <sub><b>chawda mrunal</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/akash70629">
+                    <img src="https://avatars.githubusercontent.com/u/76689571?v=4" width="100;" alt="akash70629"/>
+                    <br />
+                    <sub><b>Akash Das</b></sub>
                 </a>
             </td>
             <td align="center">
@@ -314,10 +363,54 @@ Thank you for your contributions to SkillWise!Every contribution, no matter the 
                 </a>
             </td>
             <td align="center">
-                <a href="https://github.com/akash70629">
-                    <img src="https://avatars.githubusercontent.com/u/76689571?v=4" width="100;" alt="akash70629"/>
+                <a href="https://github.com/SubramanyaKS">
+                    <img src="https://avatars.githubusercontent.com/u/70049779?v=4" width="100;" alt="SubramanyaKS"/>
                     <br />
-                    <sub><b>Akash Das</b></sub>
+                    <sub><b>Subramanya K S</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/stutxi">
+                    <img src="https://avatars.githubusercontent.com/u/95741837?v=4" width="100;" alt="stutxi"/>
+                    <br />
+                    <sub><b>Stuti </b></sub>
+                </a>
+            </td>
+		</tr>
+		<tr>
+            <td align="center">
+                <a href="https://github.com/AustinVarshney">
+                    <img src="https://avatars.githubusercontent.com/u/151004156?v=4" width="100;" alt="AustinVarshney"/>
+                    <br />
+                    <sub><b>Austin Varshney</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/Mahendra2611">
+                    <img src="https://avatars.githubusercontent.com/u/132124880?v=4" width="100;" alt="Mahendra2611"/>
+                    <br />
+                    <sub><b>MAHENDRA PRATAP VERMA</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/Irtesaam">
+                    <img src="https://avatars.githubusercontent.com/u/96732970?v=4" width="100;" alt="Irtesaam"/>
+                    <br />
+                    <sub><b>Irtesaam Atfi</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/Durgaprasad-Developer">
+                    <img src="https://avatars.githubusercontent.com/u/177651977?v=4" width="100;" alt="Durgaprasad-Developer"/>
+                    <br />
+                    <sub><b>Durgaprasad-Developer</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/Shashankk99">
+                    <img src="https://avatars.githubusercontent.com/u/42234824?v=4" width="100;" alt="Shashankk99"/>
+                    <br />
+                    <sub><b>Shashankk Shekar Chaturvedi</b></sub>
                 </a>
             </td>
             <td align="center">
@@ -329,6 +422,13 @@ Thank you for your contributions to SkillWise!Every contribution, no matter the 
             </td>
 		</tr>
 		<tr>
+            <td align="center">
+                <a href="https://github.com/MOHIT-IITP">
+                    <img src="https://avatars.githubusercontent.com/u/136831716?v=4" width="100;" alt="MOHIT-IITP"/>
+                    <br />
+                    <sub><b>Mohit Kumar</b></sub>
+                </a>
+            </td>
             <td align="center">
                 <a href="https://github.com/shobhit15082003">
                     <img src="https://avatars.githubusercontent.com/u/124374867?v=4" width="100;" alt="shobhit15082003"/>
@@ -344,17 +444,33 @@ Thank you for your contributions to SkillWise!Every contribution, no matter the 
                 </a>
             </td>
             <td align="center">
+                <a href="https://github.com/sankaraxi">
+                    <img src="https://avatars.githubusercontent.com/u/128117256?v=4" width="100;" alt="sankaraxi"/>
+                    <br />
+                    <sub><b>Sankar K G</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/invincyx">
+                    <img src="https://avatars.githubusercontent.com/u/40611131?v=4" width="100;" alt="invincyx"/>
+                    <br />
+                    <sub><b>Tatenda </b></sub>
+                </a>
+            </td>
+            <td align="center">
                 <a href="https://github.com/SiddhanthKapoor">
                     <img src="https://avatars.githubusercontent.com/u/177930064?v=4" width="100;" alt="SiddhanthKapoor"/>
                     <br />
                     <sub><b>SiddhanthKapoor</b></sub>
                 </a>
             </td>
+		</tr>
+		<tr>
             <td align="center">
-                <a href="https://github.com/Shobhit1729Aryan">
-                    <img src="https://avatars.githubusercontent.com/u/182258530?v=4" width="100;" alt="Shobhit1729Aryan"/>
+                <a href="https://github.com/Rishika367">
+                    <img src="https://avatars.githubusercontent.com/u/116942537?v=4" width="100;" alt="Rishika367"/>
                     <br />
-                    <sub><b>Shobhit Aryan</b></sub>
+                    <sub><b>Rishika Ghosh</b></sub>
                 </a>
             </td>
             <td align="center">
@@ -371,8 +487,6 @@ Thank you for your contributions to SkillWise!Every contribution, no matter the 
                     <sub><b>NikhileshM24</b></sub>
                 </a>
             </td>
-		</tr>
-		<tr>
             <td align="center">
                 <a href="https://github.com/Gurpreet0022">
                     <img src="https://avatars.githubusercontent.com/u/140369686?v=4" width="100;" alt="Gurpreet0022"/>
@@ -388,31 +502,10 @@ Thank you for your contributions to SkillWise!Every contribution, no matter the 
                 </a>
             </td>
             <td align="center">
-                <a href="https://github.com/osmoosiis">
-                    <img src="https://avatars.githubusercontent.com/u/138987789?v=4" width="100;" alt="osmoosiis"/>
+                <a href="https://github.com/abhipariharr">
+                    <img src="https://avatars.githubusercontent.com/u/114382172?v=4" width="100;" alt="abhipariharr"/>
                     <br />
-                    <sub><b>Ishavdeep Kaur </b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/karraharichandana">
-                    <img src="https://avatars.githubusercontent.com/u/146167641?v=4" width="100;" alt="karraharichandana"/>
-                    <br />
-                    <sub><b>karraharichandana</b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/megh-bari">
-                    <img src="https://avatars.githubusercontent.com/u/142393952?v=4" width="100;" alt="megh-bari"/>
-                    <br />
-                    <sub><b>Megh Bari</b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/SreyaSudheeran">
-                    <img src="https://avatars.githubusercontent.com/u/157779286?v=4" width="100;" alt="SreyaSudheeran"/>
-                    <br />
-                    <sub><b>Sreya Sudheeran</b></sub>
+                    <sub><b>Abhishek parihar</b></sub>
                 </a>
             </td>
 		</tr>
@@ -425,47 +518,54 @@ Thank you for your contributions to SkillWise!Every contribution, no matter the 
                 </a>
             </td>
             <td align="center">
-                <a href="https://github.com/TeamSelenium">
-                    <img src="https://avatars.githubusercontent.com/u/32784221?v=4" width="100;" alt="TeamSelenium"/>
+                <a href="https://github.com/SreyaSudheeran">
+                    <img src="https://avatars.githubusercontent.com/u/157779286?v=4" width="100;" alt="SreyaSudheeran"/>
                     <br />
-                    <sub><b>TeamSelenium</b></sub>
+                    <sub><b>Sreya Sudheeran</b></sub>
                 </a>
             </td>
             <td align="center">
-                <a href="https://github.com/invincyx">
-                    <img src="https://avatars.githubusercontent.com/u/40611131?v=4" width="100;" alt="invincyx"/>
+                <a href="https://github.com/megh-bari">
+                    <img src="https://avatars.githubusercontent.com/u/142393952?v=4" width="100;" alt="megh-bari"/>
                     <br />
-                    <sub><b>Tatenda </b></sub>
+                    <sub><b>Megh Bari</b></sub>
                 </a>
             </td>
             <td align="center">
-                <a href="https://github.com/stutxi">
-                    <img src="https://avatars.githubusercontent.com/u/95741837?v=4" width="100;" alt="stutxi"/>
+                <a href="https://github.com/karraharichandana">
+                    <img src="https://avatars.githubusercontent.com/u/146167641?v=4" width="100;" alt="karraharichandana"/>
                     <br />
-                    <sub><b>Stuti </b></sub>
+                    <sub><b>karraharichandana</b></sub>
                 </a>
             </td>
             <td align="center">
-                <a href="https://github.com/Mritunjaii">
-                    <img src="https://avatars.githubusercontent.com/u/101278178?v=4" width="100;" alt="Mritunjaii"/>
+                <a href="https://github.com/osmoosiis">
+                    <img src="https://avatars.githubusercontent.com/u/138987789?v=4" width="100;" alt="osmoosiis"/>
                     <br />
-                    <sub><b>Mritunjai</b></sub>
+                    <sub><b>Ishavdeep Kaur </b></sub>
                 </a>
             </td>
             <td align="center">
-                <a href="https://github.com/kiran1901">
-                    <img src="https://avatars.githubusercontent.com/u/109973957?v=4" width="100;" alt="kiran1901"/>
+                <a href="https://github.com/DevGajjar28">
+                    <img src="https://avatars.githubusercontent.com/u/145287513?v=4" width="100;" alt="DevGajjar28"/>
                     <br />
-                    <sub><b>Kiran S</b></sub>
+                    <sub><b>Dev Gajjar</b></sub>
                 </a>
             </td>
 		</tr>
 		<tr>
             <td align="center">
-                <a href="https://github.com/Git-Suraj-hub">
-                    <img src="https://avatars.githubusercontent.com/u/177854812?v=4" width="100;" alt="Git-Suraj-hub"/>
+                <a href="https://github.com/anshumangahlot">
+                    <img src="https://avatars.githubusercontent.com/u/178735564?v=4" width="100;" alt="anshumangahlot"/>
                     <br />
-                    <sub><b>Git-Suraj-hub</b></sub>
+                    <sub><b>anshumangahlot</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/Yash-Bandal">
+                    <img src="https://avatars.githubusercontent.com/u/147707204?v=4" width="100;" alt="Yash-Bandal"/>
+                    <br />
+                    <sub><b>Yash Bandal</b></sub>
                 </a>
             </td>
             <td align="center">
@@ -476,10 +576,61 @@ Thank you for your contributions to SkillWise!Every contribution, no matter the 
                 </a>
             </td>
             <td align="center">
-                <a href="https://github.com/abhipariharr">
-                    <img src="https://avatars.githubusercontent.com/u/114382172?v=4" width="100;" alt="abhipariharr"/>
+                <a href="https://github.com/Git-Suraj-hub">
+                    <img src="https://avatars.githubusercontent.com/u/177854812?v=4" width="100;" alt="Git-Suraj-hub"/>
                     <br />
-                    <sub><b>Abhishek parihar</b></sub>
+                    <sub><b>Git-Suraj-hub</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/lipikasau">
+                    <img src="https://avatars.githubusercontent.com/u/173439735?v=4" width="100;" alt="lipikasau"/>
+                    <br />
+                    <sub><b>Lipika Sau</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/Mritunjaii">
+                    <img src="https://avatars.githubusercontent.com/u/101278178?v=4" width="100;" alt="Mritunjaii"/>
+                    <br />
+                    <sub><b>Mritunjai</b></sub>
+                </a>
+            </td>
+		</tr>
+		<tr>
+            <td align="center">
+                <a href="https://github.com/PranikaBaby">
+                    <img src="https://avatars.githubusercontent.com/u/123928079?v=4" width="100;" alt="PranikaBaby"/>
+                    <br />
+                    <sub><b>Pranika Kalimuthu</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/priyanshufox">
+                    <img src="https://avatars.githubusercontent.com/u/99524045?v=4" width="100;" alt="priyanshufox"/>
+                    <br />
+                    <sub><b>Priyanshu Rathore</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/TeamSelenium">
+                    <img src="https://avatars.githubusercontent.com/u/32784221?v=4" width="100;" alt="TeamSelenium"/>
+                    <br />
+                    <sub><b>TeamSelenium</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/Sakshar-Devgon">
+                    <img src="https://avatars.githubusercontent.com/u/121454018?v=4" width="100;" alt="Sakshar-Devgon"/>
+                    <br />
+                    <sub><b>Sakshar Devgon</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/Shivaraj2003">
+                    <img src="https://avatars.githubusercontent.com/u/96361349?v=4" width="100;" alt="Shivaraj2003"/>
+                    <br />
+                    <sub><b>Shivaraj Shetty</b></sub>
                 </a>
             </td>
             <td align="center">
@@ -487,6 +638,15 @@ Thank you for your contributions to SkillWise!Every contribution, no matter the 
                     <img src="https://avatars.githubusercontent.com/u/66905516?v=4" width="100;" alt="soumya1810"/>
                     <br />
                     <sub><b>Soumya Singh</b></sub>
+                </a>
+            </td>
+		</tr>
+		<tr>
+            <td align="center">
+                <a href="https://github.com/vijayalaxmi777">
+                    <img src="https://avatars.githubusercontent.com/u/28921368?v=4" width="100;" alt="vijayalaxmi777"/>
+                    <br />
+                    <sub><b>Vijayalaxmi Wakode</b></sub>
                 </a>
             </td>
             <td align="center">
@@ -503,8 +663,6 @@ Thank you for your contributions to SkillWise!Every contribution, no matter the 
                     <sub><b>Vyanktesh</b></sub>
                 </a>
             </td>
-		</tr>
-		<tr>
             <td align="center">
                 <a href="https://github.com/Yaser-2004">
                     <img src="https://avatars.githubusercontent.com/u/133482087?v=4" width="100;" alt="Yaser-2004"/>
@@ -513,24 +671,33 @@ Thank you for your contributions to SkillWise!Every contribution, no matter the 
                 </a>
             </td>
             <td align="center">
-                <a href="https://github.com/anshumangahlot">
-                    <img src="https://avatars.githubusercontent.com/u/178735564?v=4" width="100;" alt="anshumangahlot"/>
+                <a href="https://github.com/abhisheksaxena15">
+                    <img src="https://avatars.githubusercontent.com/u/180443569?v=4" width="100;" alt="abhisheksaxena15"/>
                     <br />
-                    <sub><b>anshumangahlot</b></sub>
+                    <sub><b>abhisheksaxena15</b></sub>
                 </a>
             </td>
             <td align="center">
-                <a href="https://github.com/chawdamrunal">
-                    <img src="https://avatars.githubusercontent.com/u/32319538?v=4" width="100;" alt="chawdamrunal"/>
+                <a href="https://github.com/yalsik86">
+                    <img src="https://avatars.githubusercontent.com/u/117988013?v=4" width="100;" alt="yalsik86"/>
                     <br />
-                    <sub><b>chawda mrunal</b></sub>
+                    <sub><b>yalsik86</b></sub>
                 </a>
             </td>
+		</tr>
+		<tr>
             <td align="center">
                 <a href="https://github.com/doctor-rutvik14">
                     <img src="https://avatars.githubusercontent.com/u/56031909?v=4" width="100;" alt="doctor-rutvik14"/>
                     <br />
                     <sub><b>Rutvik Doctor</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/shanolhere">
+                    <img src="https://avatars.githubusercontent.com/u/102300466?v=4" width="100;" alt="shanolhere"/>
+                    <br />
+                    <sub><b>Shanol</b></sub>
                 </a>
             </td>
             <td align="center">
@@ -541,14 +708,35 @@ Thank you for your contributions to SkillWise!Every contribution, no matter the 
                 </a>
             </td>
             <td align="center">
+                <a href="https://github.com/viki-777">
+                    <img src="https://avatars.githubusercontent.com/u/154072254?v=4" width="100;" alt="viki-777"/>
+                    <br />
+                    <sub><b>vikash kumar</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/umakant3525">
+                    <img src="https://avatars.githubusercontent.com/u/132107464?v=4" width="100;" alt="umakant3525"/>
+                    <br />
+                    <sub><b>Umakant Shinde</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/kayashth1">
+                    <img src="https://avatars.githubusercontent.com/u/142531728?v=4" width="100;" alt="kayashth1"/>
+                    <br />
+                    <sub><b>Yash Kumar Shrivastava</b></sub>
+                </a>
+            </td>
+		</tr>
+		<tr>
+            <td align="center">
                 <a href="https://github.com/lord-cyclone100">
                     <img src="https://avatars.githubusercontent.com/u/121711381?v=4" width="100;" alt="lord-cyclone100"/>
                     <br />
                     <sub><b>Sangneel Deb</b></sub>
                 </a>
             </td>
-		</tr>
-		<tr>
             <td align="center">
                 <a href="https://github.com/mitgajera">
                     <img src="https://avatars.githubusercontent.com/u/144581159?v=4" width="100;" alt="mitgajera"/>
@@ -584,6 +772,22 @@ Thank you for your contributions to SkillWise!Every contribution, no matter the 
                     <sub><b>rahulbamnuya</b></sub>
                 </a>
             </td>
+		</tr>
+		<tr>
+            <td align="center">
+                <a href="https://github.com/tusharmishra069">
+                    <img src="https://avatars.githubusercontent.com/u/118966111?v=4" width="100;" alt="tusharmishra069"/>
+                    <br />
+                    <sub><b>Tushar Mishra</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/rnihesh">
+                    <img src="https://avatars.githubusercontent.com/u/153965219?v=4" width="100;" alt="rnihesh"/>
+                    <br />
+                    <sub><b>Nihesh Rachakonda</b></sub>
+                </a>
+            </td>
             <td align="center">
                 <a href="https://github.com/sambhavbohra">
                     <img src="https://avatars.githubusercontent.com/u/177709981?v=4" width="100;" alt="sambhavbohra"/>
@@ -591,13 +795,18 @@ Thank you for your contributions to SkillWise!Every contribution, no matter the 
                     <sub><b>sambhavbohra</b></sub>
                 </a>
             </td>
-		</tr>
-		<tr>
             <td align="center">
                 <a href="https://github.com/srinivasthedeveloper">
                     <img src="https://avatars.githubusercontent.com/u/42977810?v=4" width="100;" alt="srinivasthedeveloper"/>
                     <br />
                     <sub><b>SRINIVAStheDEVELOPER</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/sugavanesh06">
+                    <img src="https://avatars.githubusercontent.com/u/185488084?v=4" width="100;" alt="sugavanesh06"/>
+                    <br />
+                    <sub><b>sugavanesh06</b></sub>
                 </a>
             </td>
             <td align="center">
@@ -607,6 +816,8 @@ Thank you for your contributions to SkillWise!Every contribution, no matter the 
                     <sub><b>Swami Malode</b></sub>
                 </a>
             </td>
+		</tr>
+		<tr>
             <td align="center">
                 <a href="https://github.com/tejasbenibagde">
                     <img src="https://avatars.githubusercontent.com/u/124677750?v=4" width="100;" alt="tejasbenibagde"/>
@@ -614,29 +825,6 @@ Thank you for your contributions to SkillWise!Every contribution, no matter the 
                     <sub><b>Tejas Benibagde</b></sub>
                 </a>
             </td>
-            <td align="center">
-                <a href="https://github.com/tusharmishra069">
-                    <img src="https://avatars.githubusercontent.com/u/118966111?v=4" width="100;" alt="tusharmishra069"/>
-                    <br />
-                    <sub><b>Tushar Mishra</b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/umakant3525">
-                    <img src="https://avatars.githubusercontent.com/u/132107464?v=4" width="100;" alt="umakant3525"/>
-                    <br />
-                    <sub><b>Umakant Shinde</b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/yalsik86">
-                    <img src="https://avatars.githubusercontent.com/u/117988013?v=4" width="100;" alt="yalsik86"/>
-                    <br />
-                    <sub><b>yalsik86</b></sub>
-                </a>
-            </td>
-		</tr>
-		<tr>
             <td align="center">
                 <a href="https://github.com/0-SiddharthJoshi-0">
                     <img src="https://avatars.githubusercontent.com/u/157290198?v=4" width="100;" alt="0-SiddharthJoshi-0"/>
@@ -666,6 +854,15 @@ Thank you for your contributions to SkillWise!Every contribution, no matter the 
                 </a>
             </td>
             <td align="center">
+                <a href="https://github.com/AnshVerma04">
+                    <img src="https://avatars.githubusercontent.com/u/126587833?v=4" width="100;" alt="AnshVerma04"/>
+                    <br />
+                    <sub><b>Ansh Verma</b></sub>
+                </a>
+            </td>
+		</tr>
+		<tr>
+            <td align="center">
                 <a href="https://github.com/AnshDwivedi03">
                     <img src="https://avatars.githubusercontent.com/u/138333395?v=4" width="100;" alt="AnshDwivedi03"/>
                     <br />
@@ -679,8 +876,13 @@ Thank you for your contributions to SkillWise!Every contribution, no matter the 
                     <sub><b>Arisha</b></sub>
                 </a>
             </td>
-		</tr>
-		<tr>
+            <td align="center">
+                <a href="https://github.com/BkPankaj">
+                    <img src="https://avatars.githubusercontent.com/u/62588059?v=4" width="100;" alt="BkPankaj"/>
+                    <br />
+                    <sub><b>Pankaj K Borade</b></sub>
+                </a>
+            </td>
             <td align="center">
                 <a href="https://github.com/Brijeshthummar02">
                     <img src="https://avatars.githubusercontent.com/u/178184249?v=4" width="100;" alt="Brijeshthummar02"/>
@@ -695,6 +897,15 @@ Thank you for your contributions to SkillWise!Every contribution, no matter the 
                     <sub><b>Deepak yadav</b></sub>
                 </a>
             </td>
+            <td align="center">
+                <a href="https://github.com/DhruvJohri">
+                    <img src="https://avatars.githubusercontent.com/u/111191087?v=4" width="100;" alt="DhruvJohri"/>
+                    <br />
+                    <sub><b>Dhruv Johri</b></sub>
+                </a>
+            </td>
+		</tr>
+		<tr>
             <td align="center">
                 <a href="https://github.com/iAmDiksha">
                     <img src="https://avatars.githubusercontent.com/u/89463068?v=4" width="100;" alt="iAmDiksha"/>
@@ -717,10 +928,24 @@ Thank you for your contributions to SkillWise!Every contribution, no matter the 
                 </a>
             </td>
             <td align="center">
-                <a href="https://github.com/Irtesaam">
-                    <img src="https://avatars.githubusercontent.com/u/96732970?v=4" width="100;" alt="Irtesaam"/>
+                <a href="https://github.com/Gokul0880">
+                    <img src="https://avatars.githubusercontent.com/u/146116779?v=4" width="100;" alt="Gokul0880"/>
                     <br />
-                    <sub><b>Irtesaam Atfi</b></sub>
+                    <sub><b>Gokul</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/IniyalPalanisamy">
+                    <img src="https://avatars.githubusercontent.com/u/123928113?v=4" width="100;" alt="IniyalPalanisamy"/>
+                    <br />
+                    <sub><b>Iniyal Palanisamy</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/ishapandey007">
+                    <img src="https://avatars.githubusercontent.com/u/154870417?v=4" width="100;" alt="ishapandey007"/>
+                    <br />
+                    <sub><b>Isha Pandey</b></sub>
                 </a>
             </td>
 		</tr>
@@ -730,6 +955,13 @@ Thank you for your contributions to SkillWise!Every contribution, no matter the 
                     <img src="https://avatars.githubusercontent.com/u/147548295?v=4" width="100;" alt="KanwalpreetSingh1823"/>
                     <br />
                     <sub><b>Kanwalpreet Singh</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/KasakAnand07">
+                    <img src="https://avatars.githubusercontent.com/u/126349215?v=4" width="100;" alt="KasakAnand07"/>
+                    <br />
+                    <sub><b>Kasak Anand</b></sub>
                 </a>
             </td>
             <td align="center">
@@ -754,6 +986,29 @@ Thank you for your contributions to SkillWise!Every contribution, no matter the 
                 </a>
             </td>
             <td align="center">
+                <a href="https://github.com/Mugunth140">
+                    <img src="https://avatars.githubusercontent.com/u/162331271?v=4" width="100;" alt="Mugunth140"/>
+                    <br />
+                    <sub><b>Mugunth</b></sub>
+                </a>
+            </td>
+		</tr>
+		<tr>
+            <td align="center">
+                <a href="https://github.com/Nikslegal">
+                    <img src="https://avatars.githubusercontent.com/u/147056606?v=4" width="100;" alt="Nikslegal"/>
+                    <br />
+                    <sub><b>Nikhil Kumar Singh</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/iceybubble">
+                    <img src="https://avatars.githubusercontent.com/u/103375436?v=4" width="100;" alt="iceybubble"/>
+                    <br />
+                    <sub><b>Pallavi Kathait</b></sub>
+                </a>
+            </td>
+            <td align="center">
                 <a href="https://github.com/PragyaTripathi990">
                     <img src="https://avatars.githubusercontent.com/u/177705627?v=4" width="100;" alt="PragyaTripathi990"/>
                     <br />
@@ -765,15 +1020,6 @@ Thank you for your contributions to SkillWise!Every contribution, no matter the 
                     <img src="https://avatars.githubusercontent.com/u/98505834?v=4" width="100;" alt="rajputpritesh1"/>
                     <br />
                     <sub><b>Pritesh Rajput</b></sub>
-                </a>
-            </td>
-		</tr>
-		<tr>
-            <td align="center">
-                <a href="https://github.com/priyanshufox">
-                    <img src="https://avatars.githubusercontent.com/u/99524045?v=4" width="100;" alt="priyanshufox"/>
-                    <br />
-                    <sub><b>Priyanshu Rathore</b></sub>
                 </a>
             </td>
             <td align="center">
@@ -790,18 +1036,13 @@ Thank you for your contributions to SkillWise!Every contribution, no matter the 
                     <sub><b>Rishav Raj (rishavd3v)</b></sub>
                 </a>
             </td>
+		</tr>
+		<tr>
             <td align="center">
-                <a href="https://github.com/Rishika367">
-                    <img src="https://avatars.githubusercontent.com/u/116942537?v=4" width="100;" alt="Rishika367"/>
+                <a href="https://github.com/rohan-cce">
+                    <img src="https://avatars.githubusercontent.com/u/59871907?v=4" width="100;" alt="rohan-cce"/>
                     <br />
-                    <sub><b>Rishika Ghosh</b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/Shivaraj2003">
-                    <img src="https://avatars.githubusercontent.com/u/96361349?v=4" width="100;" alt="Shivaraj2003"/>
-                    <br />
-                    <sub><b>Shivaraj Shetty</b></sub>
+                    <sub><b>Rohan j</b></sub>
                 </a>
             </td>
 		</tr>
