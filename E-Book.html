@@ -4,8 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-Books</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         /* General styling */
+
+        html{
+            scroll-behavior: smooth;
+        }
         body {
             font-family: 'Roboto', sans-serif;
             background-color: #fff4f4; /* Soft pastel pink */
@@ -112,13 +117,13 @@
 
         .cart-items {
             list-style-type: none;
-            padding: 0;
+            padding: 0px;
         }
 
         .cart-items li {
             margin: 10px 0;
             display: flex;
-            justify-content: space-between;
+            justify-content: space-evenly;
             align-items: center;
         }
 
@@ -129,9 +134,10 @@
 
         .cart-controls button {
             background-color: hsl(357, 100%, 75%);
+            padding: 10px;
             color: white;
             border: none;
-            border-radius: 3px;
+            border-radius: 10px;
             cursor: pointer;
         }
 
@@ -141,16 +147,40 @@
 
         /* FAQ Section */
         .faq-section {
+            font-size :1em;
             margin: 50px 20px;
             padding: 20px;
             border-radius: 10px;
             border: 1px solid hsl(357, 100%, 75%);
         }
+        .faq-section h2,.cart-section h2{
+           color: hsl(357, 100%, 75%)
+        }
 
+        .faq-item{
+            margin-bottom:10px;
+            padding: 10px;
+            border: hsl(357, 100%, 75%) solid 2px;
+            border-radius: 10px;
+        }
         .faq-question {
             font-weight: bold;
-            margin-bottom: 10px;
             cursor: pointer; /* Add pointer cursor for FAQ questions */
+            display:flex;
+            justify-content: space-between;
+        }
+        .toggle-btn {
+            background-color: hsl(357, 100%, 75%);
+            color: white;
+            border: none;
+            border-radius:10px;
+            width: 28px;
+            height: 28px;
+            font-size: 15px;
+            line-height: 24px;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         /* "Why Use Our Books" Section */
@@ -170,6 +200,9 @@
         .why-section ul {
             list-style-type: disc;
             padding-left: 20px;
+        }
+        .why-section li{
+            margin: 10px;
         }
 
         /* Footer */
@@ -199,9 +232,9 @@
     <nav class="navbar">
         <div class="navbar-brand">Buy Our eBooks</div>
         <div>
-            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link" href="index.html">Home</a>
             <a class="nav-link" href="#">Products</a>
-            <a class="nav-link" href="#cart-section" onclick="scrollToCart()">Cart</a> <!-- Add click event to scroll -->
+            <a class="nav-link" href="#cart-section" >Cart</a> <!-- Add click event to scroll -->
         </div>
     </nav>
 
@@ -245,22 +278,22 @@
     <div class="faq-section">
         <h2>Frequently Asked Questions</h2>
         <div class="faq-item">
-            <div class="faq-question" onclick="toggleAnswer(this)">Q: What formats are the eBooks available in?</div>
+            <div class="faq-question" onclick="toggleAnswer(this)">Q: What formats are the eBooks available in?<button class="toggle-btn"><i class="fa-solid fa-chevron-down"></i></button></div>
             <p class="faq-answer" style="display: none;">A: Our eBooks are available in PDF, EPUB, and MOBI formats.</p>
         </div>
 
         <div class="faq-item">
-            <div class="faq-question" onclick="toggleAnswer(this)">Q: Can I read the eBooks on my tablet?</div>
+            <div class="faq-question" onclick="toggleAnswer(this)">Q: Can I read the eBooks on my tablet?<button class="toggle-btn"><i class="fa-solid fa-chevron-down"></i></button></div>
             <p class="faq-answer" style="display: none;">A: Yes, our eBooks can be read on any device that supports the eBook format.</p>
         </div>
 
         <div class="faq-item">
-            <div class="faq-question" onclick="toggleAnswer(this)">Q: What payment methods are accepted?</div>
+            <div class="faq-question" onclick="toggleAnswer(this)">Q: What payment methods are accepted?<button class="toggle-btn"><i class="fa-solid fa-chevron-down"></i></button></div>
             <p class="faq-answer" style="display: none;">A: We accept all major credit cards and PayPal for your convenience.</p>
         </div>
 
         <div class="faq-item">
-            <div class="faq-question" onclick="toggleAnswer(this)">Q: Is there a money-back guarantee?</div>
+            <div class="faq-question" onclick="toggleAnswer(this)">Q: Is there a money-back guarantee?<button class="toggle-btn"><i class="fa-solid fa-chevron-down"></i></button></div>
             <p class="faq-answer" style="display: none;">A: Yes, we offer a 30-day money-back guarantee on all purchases.</p>
         </div>
     </div>
@@ -275,6 +308,7 @@
     <!-- Footer -->
     <footer>
         <p>&copy; 2024 Eco-Friendly Shop. All Rights Reserved.</p>
+        <p>Made with ♥ by Priya Ghosal</p>
     </footer>
 
     <script>
