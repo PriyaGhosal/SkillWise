@@ -58,6 +58,44 @@
 <link rel="stylesheet" href="registor_btn.css" />
 
 <body>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillWise Homepage</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+
+<!-- Skeleton loader section -->
+<div class="skeleton-loader">
+    <div class="skeleton skeleton-text"></div>
+    <div class="skeleton skeleton-text short"></div>
+    <div class="skeleton skeleton-image"></div>
+    <div class="skeleton skeleton-card"></div>
+</div>
+
+<!-- Actual content, initially hidden -->
+<div class="content" style="display: none;">
+    <h1>Welcome to SkillWise!</h1>
+    <p>This is the actual content that will appear after loading.</p>
+    <img src="path/to/image.jpg" alt="SkillWise image">
+</div>
+
+<script>
+    // Simulate loading time, toggle skeleton and content visibility
+    document.addEventListener("DOMContentLoaded", () => {
+        setTimeout(() => {
+            document.querySelector('.skeleton-loader').style.display = 'none';
+            document.querySelector('.content').style.display = 'block';
+        }, 2000); // Adjust delay based on loading time
+    });
+</script>
+
+</body>
+</html>
+
 
   <!--
     - PRELOADER
