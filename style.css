@@ -27,7 +27,7 @@
     border-radius: 8px; 
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
     padding: 30px; 
-    width:160%;
+    width:100%;
   }
   
   /* Input Fields */
@@ -212,4 +212,29 @@
   margin-bottom: 10px;
   font-size: 36px;
   width: 50%;
+}
+
+.btn-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button{
+  display: inline-block;
+  width: fit-content;
+  background-color: rgba(0, 0, 0, 0.753);
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  transition: all 0.9s ease;
+}
+
+.button:hover{
+  background-color: rgba(0, 0, 0, 0.977);
+  transform: scale(1.3);
+  color: white;
 }
