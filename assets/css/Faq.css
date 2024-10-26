@@ -184,3 +184,7 @@ body {
   overflow-y: auto; /* Enable vertical scroll */
 }
 
+.footer-bottom-faq p{
+  font-weight: bolder;
+  color: black;
+}
