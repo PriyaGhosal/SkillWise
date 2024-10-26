@@ -504,6 +504,19 @@ body.nav-active {
   padding: 3rem;
 }
 
+.E-book-button {
+  position: fixed;
+  left: 20px;
+  bottom: 80px;
+  background-color: #FF4D4D;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1001;
+}
+
 .feedback-button {
   position: fixed;
   left: 20px;
