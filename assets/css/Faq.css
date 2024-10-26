@@ -42,6 +42,10 @@
   background-color: hsl(357, 85%, 81%);
 }
 
+#freeTrial{
+  width: 240px;
+}
+
 .FAQ-title {
   display: flex;
   justify-content: space-between;
