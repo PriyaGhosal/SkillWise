@@ -7,13 +7,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         /* General styling */
-
-        html{
+        html {
             scroll-behavior: smooth;
         }
         body {
             font-family: 'Roboto', sans-serif;
-            background-color: #fff4f4; /* Soft pastel pink */
+            background-color: #fff4f4;
             color: #333;
             padding: 0;
             margin: 0;
@@ -39,7 +38,7 @@
             font-size: 1.2rem;
             margin-right: 20px;
             text-decoration: none;
-            cursor: pointer; /* Change cursor to pointer */
+            cursor: pointer;
         }
 
         .nav-link:hover {
@@ -117,7 +116,7 @@
 
         .cart-items {
             list-style-type: none;
-            padding: 0px;
+            padding: 0;
         }
 
         .cart-items li {
@@ -147,33 +146,36 @@
 
         /* FAQ Section */
         .faq-section {
-            font-size :1em;
+            font-size: 1em;
             margin: 50px 20px;
             padding: 20px;
             border-radius: 10px;
             border: 1px solid hsl(357, 100%, 75%);
         }
-        .faq-section h2,.cart-section h2{
-           color: hsl(357, 100%, 75%)
+
+        .faq-section h2, .cart-section h2 {
+            color: hsl(357, 100%, 75%);
         }
 
-        .faq-item{
-            margin-bottom:10px;
+        .faq-item {
+            margin-bottom: 10px;
             padding: 10px;
             border: hsl(357, 100%, 75%) solid 2px;
             border-radius: 10px;
         }
+
         .faq-question {
             font-weight: bold;
-            cursor: pointer; /* Add pointer cursor for FAQ questions */
-            display:flex;
+            cursor: pointer;
+            display: flex;
             justify-content: space-between;
         }
+
         .toggle-btn {
             background-color: hsl(357, 100%, 75%);
             color: white;
             border: none;
-            border-radius:10px;
+            border-radius: 10px;
             width: 28px;
             height: 28px;
             font-size: 15px;
@@ -201,7 +203,8 @@
             list-style-type: disc;
             padding-left: 20px;
         }
-        .why-section li{
+
+        .why-section li {
             margin: 10px;
         }
 
@@ -228,145 +231,29 @@
     </style>
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="navbar-brand">Buy Our eBooks</div>
-        <div>
-            <a class="nav-link" href="index.html">Home</a>
-            <a class="nav-link" href="#">Products</a>
-            <a class="nav-link" href="#cart-section" >Cart</a> <!-- Add click event to scroll -->
-        </div>
-    </nav>
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="navbar-brand">Buy Our eBooks</div>
+            <div>
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="#">Products</a>
+                <a class="nav-link" href="#cart-section" onclick="scrollToCart()">Cart</a>
+            </div>
+        </nav>
+    </header>
 
-    <!-- Shop Title -->
-    <h1 class="shop-title">Our Books Collection</h1>
+    <main>
+        <!-- Shop Title -->
+        <h1 class="shop-title">Our Books Collection</h1>
 
-    <!-- Product Container -->
-    <div class="product-container">
-        <div class="product-card">
-            <img src="https://rukminim2.flixcart.com/image/850/1000/l51d30w0/book/p/n/o/java-programming-language-learn-java-from-basic-to-advance-2022-original-imagfsqsfcqzzrjj.jpeg?q=90" alt="Java Book">
-            <h3>Learn Java</h3>
-            <p>$15</p>
-            <button onclick="addToCart('Learn Java', 15)">Add to Cart</button>
-        </div>
-        <div class="product-card">
-            <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1577622829i/50076664.jpg" alt="Python Book">
-            <h3>Learn Python</h3>
-            <p>$12</p>
-            <button onclick="addToCart('Learn Python', 12)">Add to Cart</button>
-        </div>
-        <div class="product-card">
-            <img src="https://d24f1whwu8r3u4.cloudfront.net/assets/book-covers/dsa-460d6841c2af7be347922d3d151987862d14b7f12d6c5caba28df01dbb7da687.png" alt="DSA Book">
-            <h3>DSA Mastery</h3>
-            <p>$18</p>
-            <button onclick="addToCart('DSA Mastery', 18)">Add to Cart</button>
-        </div>
-    </div>
-
-    <!-- Why Use Our Books Section -->
-    <div class="why-section">
-        <h2>Why Use Our Books?</h2>
-        <ul>
-            <li>Comprehensive content tailored for all levels of learners.</li>
-            <li>Real-world coding challenges and examples.</li>
-            <li>Lifetime updates with new editions and content.</li>
-            <li>Accessible in multiple formats for convenience.</li>
-        </ul>
-    </div>
-
-    <!-- FAQ Section -->
-    <div class="faq-section">
-        <h2>Frequently Asked Questions</h2>
-        <div class="faq-item">
-            <div class="faq-question" onclick="toggleAnswer(this)">Q: What formats are the eBooks available in?<button class="toggle-btn"><i class="fa-solid fa-chevron-down"></i></button></div>
-            <p class="faq-answer" style="display: none;">A: Our eBooks are available in PDF, EPUB, and MOBI formats.</p>
-        </div>
-
-        <div class="faq-item">
-            <div class="faq-question" onclick="toggleAnswer(this)">Q: Can I read the eBooks on my tablet?<button class="toggle-btn"><i class="fa-solid fa-chevron-down"></i></button></div>
-            <p class="faq-answer" style="display: none;">A: Yes, our eBooks can be read on any device that supports the eBook format.</p>
-        </div>
-
-        <div class="faq-item">
-            <div class="faq-question" onclick="toggleAnswer(this)">Q: What payment methods are accepted?<button class="toggle-btn"><i class="fa-solid fa-chevron-down"></i></button></div>
-            <p class="faq-answer" style="display: none;">A: We accept all major credit cards and PayPal for your convenience.</p>
-        </div>
-
-        <div class="faq-item">
-            <div class="faq-question" onclick="toggleAnswer(this)">Q: Is there a money-back guarantee?<button class="toggle-btn"><i class="fa-solid fa-chevron-down"></i></button></div>
-            <p class="faq-answer" style="display: none;">A: Yes, we offer a 30-day money-back guarantee on all purchases.</p>
-        </div>
-    </div>
-
-    <!-- Cart Section -->
-    <div class="cart-section" id="cart-section">
-        <h2>Your Cart</h2>
-        <ul class="cart-items" id="cart-items"></ul>
-        <h3>Total: $<span id="cart-total">0</span></h3>
-    </div>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Eco-Friendly Shop. All Rights Reserved.</p>
-        <p>Made with ♥ by Priya Ghosal</p>
-    </footer>
-
-    <script>
-        let cart = [];
-
-        function addToCart(name, price) {
-            const item = cart.find(product => product.name === name);
-            if (item) item.quantity++;
-            else cart.push({ name, price, quantity: 1 });
-            updateCart();
-        }
-
-        function removeFromCart(name) {
-            const item = cart.find(product => product.name === name);
-            if (item) {
-                item.quantity--;
-                if (item.quantity === 0) {
-                    cart = cart.filter(product => product.name !== name);
-                }
-            }
-            updateCart();
-        }
-
-        function updateCart() {
-            const cartItemsElement = document.getElementById('cart-items');
-            const cartTotalElement = document.getElementById('cart-total');
-            cartItemsElement.innerHTML = '';
-
-            let total = 0;
-            cart.forEach(item => {
-                const listItem = document.createElement('li');
-                listItem.textContent = `${item.name} (x${item.quantity}) - $${item.price * item.quantity}`;
-                
-                const controls = document.createElement('div');
-                controls.className = 'cart-controls';
-                const removeButton = document.createElement('button');
-                removeButton.textContent = 'Remove';
-                removeButton.onclick = () => removeFromCart(item.name);
-                controls.appendChild(removeButton);
-                listItem.appendChild(controls);
-                
-                cartItemsElement.appendChild(listItem);
-                total += item.price * item.quantity;
-            });
-
-            cartTotalElement.textContent = total.toFixed(2);
-        }
-
-        function toggleAnswer(questionElement) {
-            const answerElement = questionElement.nextElementSibling;
-            const isVisible = answerElement.style.display === 'block';
-            answerElement.style.display = isVisible ? 'none' : 'block';
-        }
-
-        function scrollToCart() {
-            const cartSection = document.getElementById('cart-section');
-            cartSection.scrollIntoView({ behavior: 'smooth' });
-        }
-    </script>
-</body>
-</html>
+        <!-- Product Container -->
+        <div class="product-container">
+            <div class="product-card">
+                <img src="https://rukminim2.flixcart.com/image/850/1000/l51d30w0/book/p/n/o/java-programming-language-learn-java-from-basic-to-advance-2022-original-imagfsqsfcqzzrjj.jpeg?q=90" alt="Java Book">
+                <h3>Learn Java</h3>
+                <p>$15</p>
+                <button onclick="addToCart('Learn Java', 15)">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://images-na.ssl-images-amazon
