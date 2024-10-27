@@ -633,7 +633,7 @@ button {
   transition: all 0.1s ease-in-out;
   right: 20px;
   bottom: 100px;
-  background-color: hsl(357, 100%, 75%);
+  background-color: #FF4D4D;
   color: white;
   padding: 15px;
   border-radius: 5px;
