@@ -85,7 +85,7 @@ html {
 *::after {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 
 li {
@@ -294,7 +294,30 @@ body.nav-active .navbar-list .navbar-link {
   display: grid;
   gap: 28px;
 }
-
+.grid-list-price {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+}
+.card-container-price {
+  padding: 2px;
+  font-size: 0.99rem;
+}
+.card-container-price-pro {
+  padding: 2px;
+  font-size: 0.94rem;
+}
+.card-container-price-pro .card-title {
+  font-size: 1.6rem;
+}
+.card-container-price .card-title {
+  font-size: 1.6rem;
+}
+#btn {
+  padding: 7px 14px; 
+  font-size: 0.5rem; 
+}
 .card {
   position: relative;
   background-color: var(--white);
