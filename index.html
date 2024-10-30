@@ -1555,74 +1555,76 @@
 
     
     <!-- #Contact Us -->
-
     <section id="contact" class="cta" aria-labelledby="cta-label" style="
     background: linear-gradient(135deg, #009688, #00796b);
-    padding: 50px 0;
+    padding: 80px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 101vh;
+    min-height: 100vh;
   ">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-12 col-md-8 col-lg-6" style="
-          width: auto;
-        ">
-          <div class="card shadow-lg p-4" style="
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-10 col-lg-8" style="width: 100%;">
+        <div class="card shadow-lg" style="
             border-radius: 20px;
+            width: 100%; /* Ensures the card takes the full width of the column */
           ">
-            <div class="card-body">
-              <h2 class="card-title text-center mb-4" style="
-                font-weight: bold; 
-                color: #ff66b2; 
-                font-size: 2.5rem;
-              ">
-                Contact Us
-              </h2>
-              <form id="contact-form">
-                <div class="mb-3">
-                  <label for="name" class="form-label" style="
-                    font-size: 2.3rem;
-                  ">Your Name</label>
-                  <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required style="
-                    font-size: 1.5rem; 
-                    padding: 20px;
-                  ">
-                </div>
-                <div class="mb-3">
-                  <label for="email" class="form-label" style="
-                    font-size: 2.3rem;
-                  ">Your Email</label>
-                  <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required style="
-                    font-size: 1.5rem; 
-                    padding: 20px;
-                  ">
-                </div>
-                <div class="mb-3">
-                  <label for="message" class="form-label" style="
-                    font-size: 2.3rem;
-                  ">Your Message</label>
-                  <textarea class="form-control" id="message" name="message" rows="5" placeholder="Enter your message" required style="
-                    font-size: 1.5rem; 
-                    padding: 20px;
-                  "></textarea>
-                </div>
-                <div class="d-grid">
-                  <button type="submit" class="btn btn-primary btn-lg" style="
-                    background-color: #ff66b2;
-                    border: none;
-                    font-size: 1.5rem;
-                    padding: 15px;
-                  ">Send Message</button>
-                </div>
-              </form>
-            </div>
+          <h2 class="card-title text-center mb-4" style="
+            font-weight: 700;
+            color: #090909;
+            font-size: 2.8rem;
+            width: 100%;
+            text-shadow: 1px 1px 2px rgba(251, 251, 251, 0.905);
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+            ">
+            Contact Us
+          </h2>
+
+          <div class="card-body p-0" style="width: 100%; display: flex; justify-content: center;">
+            <div id="contact-form" style="width: 100%; padding: 3%;">
+              <div class="mb-4">
+                <label for="name" class="form-label" style="font-size: 1.8rem;">Enter your Name<span style="font-size: large; color:red; display: inline;vertical-align: middle;"> *</span></label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required style="
+                  font-size: 1.3rem; 
+                  padding: 15px;
+                  width: 100%; 
+                ">
+              </div>
+              <div class="mb-4">
+                <label for="email" class="form-label" style="font-size: 1.8rem;">Enter your Email<span style="font-size: large; color:red;display: inline;vertical-align: middle;"> *</span></label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required style="
+                  font-size: 1.3rem; 
+                  padding: 15px;
+                  width: 100%; 
+                ">
+              </div>
+              <div class="mb-4">
+                <label for="message" class="form-label" style="font-size: 1.8rem;">Enter your Message <span style="font-size: medium; display: inline; vertical-align: middle;">(Optional)</span></label>
+                <textarea class="form-control" id="message" name="message" rows="5" placeholder="Enter your message" required style="
+                  font-size: 1.3rem; 
+                  padding: 15px;
+                  width: 100%; 
+                "></textarea>
+              </div>
+              <div class="d-grid">
+                <button type="submit" class="btn btn-primary btn-lg" style="
+                  background-color: #ff66b2;
+                  border: none;
+                  font-size: 1.3rem;
+                  padding: 15px;
+                  width: 100%;
+                ">Send Message</button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
 
 
 
