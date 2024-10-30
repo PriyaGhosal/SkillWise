@@ -184,3 +184,8 @@ body {
   overflow-y: auto; /* Enable vertical scroll */
 }
 
+#freeTrial{
+  width: 240px;
+  padding-top: 10px;
+  margin-top: 5px;
+}
