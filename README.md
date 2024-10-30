@@ -231,26 +231,10 @@ Thank you for your contributions to SkillWise!Every contribution, no matter the 
                 </a>
             </td>
             <td align="center">
-                <a href="https://github.com/tanmaysrivastava45">
-                    <img src="https://avatars.githubusercontent.com/u/168894520?v=4" width="100;" alt="tanmaysrivastava45"/>
+                <a href="https://github.com/KartikG2">
+                    <img src="https://avatars.githubusercontent.com/u/151381164?v=4" width="100;" alt="KartikG2"/>
                     <br />
-                    <sub><b>Tanmay Srivastava</b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/Srikar-1729">
-                    <img src="https://avatars.githubusercontent.com/u/159757865?v=4" width="100;" alt="Srikar-1729"/>
-                    <br />
-                    <sub><b>Srikar-1729</b></sub>
-                </a>
-            </td>
-		</tr>
-		<tr>
-            <td align="center">
-                <a href="https://github.com/rohan-cce">
-                    <img src="https://avatars.githubusercontent.com/u/59871907?v=4" width="100;" alt="rohan-cce"/>
-                    <br />
-                    <sub><b>Rohan j</b></sub>
+                    <sub><b>Kartik Gangavati</b></sub>
                 </a>
             </td>
             <td align="center">
@@ -260,18 +244,20 @@ Thank you for your contributions to SkillWise!Every contribution, no matter the 
                     <sub><b>FaiZ</b></sub>
                 </a>
             </td>
+		</tr>
+		<tr>
             <td align="center">
-                <a href="https://github.com/KartikG2">
-                    <img src="https://avatars.githubusercontent.com/u/151381164?v=4" width="100;" alt="KartikG2"/>
+                <a href="https://github.com/Srikar-1729">
+                    <img src="https://avatars.githubusercontent.com/u/159757865?v=4" width="100;" alt="Srikar-1729"/>
                     <br />
-                    <sub><b>Kartik Gangavati</b></sub>
+                    <sub><b>Srikar-1729</b></sub>
                 </a>
             </td>
             <td align="center">
-                <a href="https://github.com/sainKunal">
-                    <img src="https://avatars.githubusercontent.com/u/166685451?v=4" width="100;" alt="sainKunal"/>
+                <a href="https://github.com/kavya-r30">
+                    <img src="https://avatars.githubusercontent.com/u/161142013?v=4" width="100;" alt="kavya-r30"/>
                     <br />
-                    <sub><b>Kunal Kumar</b></sub>
+                    <sub><b>kavya-r30</b></sub>
                 </a>
             </td>
             <td align="center">
@@ -282,14 +268,35 @@ Thank you for your contributions to SkillWise!Every contribution, no matter the 
                 </a>
             </td>
             <td align="center">
-                <a href="https://github.com/kavya-r30">
-                    <img src="https://avatars.githubusercontent.com/u/161142013?v=4" width="100;" alt="kavya-r30"/>
+                <a href="https://github.com/tanmaysrivastava45">
+                    <img src="https://avatars.githubusercontent.com/u/168894520?v=4" width="100;" alt="tanmaysrivastava45"/>
                     <br />
-                    <sub><b>kavya-r30</b></sub>
+                    <sub><b>Tanmay Srivastava</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/sainKunal">
+                    <img src="https://avatars.githubusercontent.com/u/166685451?v=4" width="100;" alt="sainKunal"/>
+                    <br />
+                    <sub><b>Kunal Kumar</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/SunkaraboinaPraveenKumar">
+                    <img src="https://avatars.githubusercontent.com/u/160092930?v=4" width="100;" alt="SunkaraboinaPraveenKumar"/>
+                    <br />
+                    <sub><b>SunkaraboinaPraveenKumar</b></sub>
                 </a>
             </td>
 		</tr>
 		<tr>
+            <td align="center">
+                <a href="https://github.com/satyamkoshta340">
+                    <img src="https://avatars.githubusercontent.com/u/58166232?v=4" width="100;" alt="satyamkoshta340"/>
+                    <br />
+                    <sub><b>Satyam Koshta</b></sub>
+                </a>
+            </td>
             <td align="center">
                 <a href="https://github.com/kanduru-abhiram">
                     <img src="https://avatars.githubusercontent.com/u/85011280?v=4" width="100;" alt="kanduru-abhiram"/>
@@ -302,20 +309,6 @@ Thank you for your contributions to SkillWise!Every contribution, no matter the 
                     <img src="https://avatars.githubusercontent.com/u/106818821?v=4" width="100;" alt="swstkswstk"/>
                     <br />
                     <sub><b>Swastik</b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/SunkaraboinaPraveenKumar">
-                    <img src="https://avatars.githubusercontent.com/u/160092930?v=4" width="100;" alt="SunkaraboinaPraveenKumar"/>
-                    <br />
-                    <sub><b>SunkaraboinaPraveenKumar</b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/satyamkoshta340">
-                    <img src="https://avatars.githubusercontent.com/u/58166232?v=4" width="100;" alt="satyamkoshta340"/>
-                    <br />
-                    <sub><b>Satyam Koshta</b></sub>
                 </a>
             </td>
             <td align="center">
@@ -332,8 +325,6 @@ Thank you for your contributions to SkillWise!Every contribution, no matter the 
                     <sub><b>swati mishra</b></sub>
                 </a>
             </td>
-		</tr>
-		<tr>
             <td align="center">
                 <a href="https://github.com/shivamv02">
                     <img src="https://avatars.githubusercontent.com/u/91478433?v=4" width="100;" alt="shivamv02"/>
@@ -341,6 +332,8 @@ Thank you for your contributions to SkillWise!Every contribution, no matter the 
                     <sub><b>shivamv02</b></sub>
                 </a>
             </td>
+		</tr>
+		<tr>
             <td align="center">
                 <a href="https://github.com/codeforlifeee">
                     <img src="https://avatars.githubusercontent.com/u/168173457?v=4" width="100;" alt="codeforlifeee"/>
@@ -374,6 +367,13 @@ Thank you for your contributions to SkillWise!Every contribution, no matter the 
                     <img src="https://avatars.githubusercontent.com/u/70049779?v=4" width="100;" alt="SubramanyaKS"/>
                     <br />
                     <sub><b>Subramanya K S</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/stutxi">
+                    <img src="https://avatars.githubusercontent.com/u/95741837?v=4" width="100;" alt="stutxi"/>
+                    <br />
+                    <sub><b>Stuti </b></sub>
                 </a>
             </td>
 		</tr>
@@ -1067,12 +1067,21 @@ Thank you for your contributions to SkillWise!Every contribution, no matter the 
                 </a>
             </td>
             <td align="center">
+                <a href="https://github.com/rohan-cce">
+                    <img src="https://avatars.githubusercontent.com/u/59871907?v=4" width="100;" alt="rohan-cce"/>
+                    <br />
+                    <sub><b>Rohan j</b></sub>
+                </a>
+            </td>
+            <td align="center">
                 <a href="https://github.com/Shivaraj2003">
                     <img src="https://avatars.githubusercontent.com/u/96361349?v=4" width="100;" alt="Shivaraj2003"/>
                     <br />
                     <sub><b>Shivaraj Shetty</b></sub>
                 </a>
             </td>
+		</tr>
+		<tr>
             <td align="center">
                 <a href="https://github.com/soumya1810">
                     <img src="https://avatars.githubusercontent.com/u/66905516?v=4" width="100;" alt="soumya1810"/>
