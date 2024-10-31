@@ -100,4 +100,10 @@
    text-decoration: none;
    position: relative;
    transition: all 100ms ease;
+
+}
+
+.footer-bottom-career p {
+    font-weight: bolder;
+
 }
