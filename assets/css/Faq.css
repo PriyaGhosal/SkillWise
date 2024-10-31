@@ -84,7 +84,9 @@
   font-size: 18px;
   font-weight: 600;
 }
-
+.expandToggle:hover{
+  background: #f97c82;
+}
 .revert {
   display: none;
   padding-bottom: 2px;
