@@ -85,7 +85,7 @@ html {
 *::after {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 
 li {
@@ -294,7 +294,30 @@ body.nav-active .navbar-list .navbar-link {
   display: grid;
   gap: 28px;
 }
-
+.grid-list-price {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+}
+.card-container-price {
+  padding: 2px;
+  font-size: 0.99rem;
+}
+.card-container-price-pro {
+  padding: 2px;
+  font-size: 0.94rem;
+}
+.card-container-price-pro .card-title {
+  font-size: 1.6rem;
+}
+.card-container-price .card-title {
+  font-size: 1.6rem;
+}
+#btn {
+  padding: 7px 14px; 
+  font-size: 0.5rem; 
+}
 .card {
   position: relative;
   background-color: var(--white);
@@ -1470,6 +1493,76 @@ button:hover {
 }
 
 /*-----------------------------------*\
+  #CONTACT US SECTION IN BLOG
+\*-----------------------------------*/
+/* Styling for the custom contact section */
+#custom-contact.cta-custom {
+  background-color: #008080; /* Keeping the theme's teal color */
+  padding: 50px 0;          /* Reduced padding for a balanced height */
+}
+
+#custom-contact .container-custom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;           /* Center the form within the container */
+}
+
+/* Section title */
+#custom-contact .section-title-custom {
+  color: #ffffff;           /* White text for contrast */
+  margin-bottom: 30px;
+  font-size: 28px;          /* Larger title but keeping it compact */
+  text-align: center;       /* Center the title */
+}
+
+/* Custom contact form styling */
+#custom-contact-form {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+/* Input fields and textarea */
+#custom-contact-form input, #custom-contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Textarea size adjustment */
+#custom-contact-form textarea {
+  height: 120px;
+}
+
+/* Button styling */
+#custom-contact-form button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #008080;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+#custom-contact-form button:hover {
+  background-color: #006666; /* Darken on hover */
+}
+
+
+
+/*-----------------------------------*\
   #CONTAINER QUERIES
 \*-----------------------------------*/
 
@@ -1599,6 +1692,7 @@ button:hover {
     font-size: 1.8rem;
     border-radius: 10px;
     color: #fff;
+    margin-top: 25px;
   }
 
   /**
@@ -1628,7 +1722,7 @@ button:hover {
 
 
   .navbar-link {
-    padding: 8px 16px;
+    padding: 8px 13px;
   }
 
   .header .btn {

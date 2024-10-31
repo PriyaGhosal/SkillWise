@@ -945,6 +945,38 @@
         </button>
         </div>
       </section>
+      <style>
+        .register-b {
+          padding: 10px 20px;
+          text-transform: uppercase;
+          border-radius: 8px;
+          font-size: 17px;
+          font-weight: 500;
+          color: white;
+          text-shadow: none;
+          background: transparent;
+          cursor: pointer;
+          box-shadow: transparent;
+          border: 1px solid white;
+          transition: 0.5s ease;
+          user-select: none;
+        }
+        .register-b:hover {
+          color: #ffffff;
+          background: #FF8086;
+          border: 1px solid white;
+          text-shadow: 
+            0 0 5px #ffffff,
+            0 0 10px #ffffff,
+            0 0 20px #ffffff;
+          box-shadow: 
+            0 0 5px #FF8086,
+            0 0 20px #FF8086,
+            0 0 40px #FF8086,
+            0 0 60px #FF8086,
+            0 0 80px #FF8086;
+        }
+      </style>
 
 
       <!-- <section class="cta-section" aria-labelledby="cta-heading">
@@ -1141,8 +1173,8 @@
             <div class="header1">Select a Plan for better <span class="span has-after">Learning</span></div>
           </h2>
 
-          <ul class="grid-list cursor-pointer">
-            <li class="card-container" data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine">
+          <ul class="grid-list-price cursor-pointer">
+            <li class="card-container-price"  data-aos-offset="100" data-aos-easing="ease-in-sine">
               <div class="header1">
                 <div class="card blog-card">
 
@@ -1176,7 +1208,7 @@
                 </div>
               </div>
             </li>
-            <li class="card-container" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
+            <li class="card-container-price"  data-aos-offset="200" data-aos-easing="ease-in-sine">
               <div class="header2">
                 <div class="card blog-card">
 
@@ -1210,7 +1242,40 @@
                 </div>
               </div>
             </li>
-            <li class="card-container" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+            <li class="card-container-price-pro"  data-aos-offset="300" data-aos-easing="ease-in-sine">
+              <div class="header4">
+                <div class="card blog-card">
+                  <div class="card-content">
+                    <h3 class="title-lg card-title">
+                      Pro Plus Plan
+                    </h3>
+                    <h5> Starting at $1,500.00 per month.
+                      <p>
+                        <span class="span" style="font-weight: 400; font-style: italic;"> Billed monthly or annually.
+                          Cancel anytime.</span>
+                      </p>
+
+                    </h5>
+                    <ul>
+
+                      <li>-> Access to top courses & certifications</li>
+                      <li>-> Customizable Goal-focused AI driven recommendations</li>
+                      <li>-> Personalized onboarding & analytics</li>
+                      <li>-> Courses available in 15 languages</li>
+                      <li>-> Lifelong access to featured courses</li>
+                      <li>-> Quarterly Skill Assessments</li>
+                      
+
+                    </ul>
+                    <br>
+                    <button id="btn">
+                      <a   href="#pricing" >Subscribe Now</a>
+                      </button>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="card-container-price"  data-aos-offset="300" data-aos-easing="ease-in-sine">
               <div class="header3">
                 <div class="card blog-card">
                   <div class="card-content">
@@ -1561,72 +1626,76 @@
 
     
     <!-- #Contact Us -->
-
     <section id="contact" class="cta" aria-labelledby="cta-label" style="
     background: linear-gradient(135deg, #009688, #00796b);
-    padding: 50px 0;
+    padding: 80px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 101vh;
+    min-height: 100vh;
   ">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-12 col-md-8 col-lg-6">
-          <div class="card shadow-lg p-4" style="
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-10 col-lg-8" style="width: 100%;">
+        <div class="card shadow-lg" style="
             border-radius: 20px;
+            width: 100%; /* Ensures the card takes the full width of the column */
           ">
-            <div class="card-body">
-              <h2 class="card-title text-center mb-4" style="
-                font-weight: bold; 
-                color: #ff66b2; 
-                font-size: 2.5rem;
-              ">
-                Contact Us
-              </h2>
-              <form id="contact-form">
-                <div class="mb-3">
-                  <label for="name" class="form-label" style="
-                    font-size: 2.3rem;
-                  ">Your Name</label>
-                  <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required style="
-                    font-size: 1.5rem; 
-                    padding: 20px;
-                  ">
-                </div>
-                <div class="mb-3">
-                  <label for="email" class="form-label" style="
-                    font-size: 2.3rem;
-                  ">Your Email</label>
-                  <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required style="
-                    font-size: 1.5rem; 
-                    padding: 20px;
-                  ">
-                </div>
-                <div class="mb-3">
-                  <label for="message" class="form-label" style="
-                    font-size: 2.3rem;
-                  ">Your Message</label>
-                  <textarea class="form-control" id="message" name="message" rows="5" placeholder="Enter your message" required style="
-                    font-size: 1.5rem; 
-                    padding: 20px;
-                  "></textarea>
-                </div>
-                <div class="d-grid">
-                  <button type="submit" class="btn btn-primary btn-lg" style="
-                    background-color: #ff66b2;
-                    border: none;
-                    font-size: 1.5rem;
-                    padding: 15px;
-                  ">Send Message</button>
-                </div>
-              </form>
-            </div>
+          <h2 class="card-title text-center mb-4" style="
+            font-weight: 700;
+            color: #090909;
+            font-size: 2.8rem;
+            width: 100%;
+            text-shadow: 1px 1px 2px rgba(251, 251, 251, 0.905);
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+            ">
+            Contact Us
+          </h2>
+
+          <div class="card-body p-0" style="width: 100%; display: flex; justify-content: center;">
+            <div id="contact-form" style="width: 100%; padding: 3%;">
+              <div class="mb-4">
+                <label for="name" class="form-label" style="font-size: 1.8rem;">Enter your Name<span style="font-size: large; color:red; display: inline;vertical-align: middle;"> *</span></label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required style="
+                  font-size: 1.3rem; 
+                  padding: 15px;
+                  width: 100%; 
+                ">
+              </div>
+              <div class="mb-4">
+                <label for="email" class="form-label" style="font-size: 1.8rem;">Enter your Email<span style="font-size: large; color:red;display: inline;vertical-align: middle;"> *</span></label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required style="
+                  font-size: 1.3rem; 
+                  padding: 15px;
+                  width: 100%; 
+                ">
+              </div>
+              <div class="mb-4">
+                <label for="message" class="form-label" style="font-size: 1.8rem;">Enter your Message <span style="font-size: medium; display: inline; vertical-align: middle;">(Optional)</span></label>
+                <textarea class="form-control" id="message" name="message" rows="5" placeholder="Enter your message" required style="
+                  font-size: 1.3rem; 
+                  padding: 15px;
+                  width: 100%; 
+                "></textarea>
+              </div>
+              <div class="d-grid">
+                <button type="submit" class="btn btn-primary btn-lg" style="
+                  background-color: #ff66b2;
+                  border: none;
+                  font-size: 1.3rem;
+                  padding: 15px;
+                  width: 100%;
+                ">Send Message</button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
 
 
 
