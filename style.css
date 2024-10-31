@@ -165,10 +165,28 @@
 }
 
 /* Hover effect for event items */
+/* Individual event item */
+.event-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px; /* Increased padding for more space */
+  border: 2px solid var(--roman-silver); /* Border matching roman silver */
+  border-radius: 12px; /* Slightly more rounded corners */
+  background-color: var(--roman-silver_10); /* Light transparent background */
+  color: var(--roman-silver); /* Text color using roman silver */
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Added box-shadow transition */
+  font-size: 1.4rem; /* Bigger font size for better readability */
+}
+
+/* Hover effect on event items */
 .event-item:hover {
   transform: scale(1.03); /* Slightly enlarges the event item on hover */
   cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.05); /* Light background change on hover */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Adds shadow on hover */
 }
+
 
 
 #search-results{
