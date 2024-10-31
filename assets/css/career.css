@@ -88,6 +88,16 @@
     border-radius: 45px;
     padding: 2%;
 }
+
 #freeTrial{
     width:240px;
+    border: #000;
+}
+
+.btn:hover{
+   background-color: hsl(357, 100%, 75%);
+   border: #000;
+   text-decoration: none;
+   position: relative;
+   transition: all 100ms ease;
 }
