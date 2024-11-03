@@ -88,3 +88,10 @@
     border-radius: 45px;
     padding: 2%;
 }
+#freeTrial{
+    width:240px;
+}
+
+.footer-bottom-career p {
+    font-weight: bolder;
+}
