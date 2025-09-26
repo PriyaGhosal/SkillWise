@@ -182,7 +182,8 @@
 
 #freeTrial{
   position: absolute;
-  right: 90px;
+  right: 5vw;
+  top: -0.3vh;
   margin-right: 30px;
   margin-bottom: 30px; 
 
@@ -191,7 +192,7 @@
 #theme-toggle{
   position: absolute;
   right: 5px;
-  top: 20px;
+  top: 2vh;
   margin-right: 60px;
 }
 
