@@ -274,6 +274,13 @@ Thank you for your contributions to SkillWise!Every contribution, no matter the 
                     <sub><b>Kartik Gangavati</b></sub>
                 </a>
             </td>
+			  <td align="center">
+                <a href="https://github.com/Karthikgouda15">
+                    <img src="https://avatars.githubusercontent.com/u/151381164?v=4" width="100;" alt="Karthikgouda15"/>
+                    <br />
+                    <sub><b>Karthik Gouda</b></sub>
+                </a>
+            </td>
             <td align="center">
                 <a href="https://github.com/sainKunal">
                     <img src="https://avatars.githubusercontent.com/u/166685451?v=4" width="100;" alt="sainKunal"/>
